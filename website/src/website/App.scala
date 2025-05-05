@@ -45,7 +45,7 @@ case class App() {
                   ),
                   span(
                     tw.inline_block.font_bold,
-                    "Laminar[UI5 Web Components]"
+                    "Laminar UI5"
                   )
                 )
               ),
