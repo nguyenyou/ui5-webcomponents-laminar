@@ -54,6 +54,9 @@ object Pages {
   case object SplitButtonPage         extends Page("Split Button")
   case object SelectPage              extends Page("Select")
   case object SegmentedButtonPage     extends Page("Segmented Button")
+  case object SwitchPage              extends Page("Switch")
+  case object SliderPage              extends Page("Slider")
+  case object ToastPage               extends Page("Toast")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
@@ -92,6 +95,9 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(SplitButtonPage)(SplitButtonView())
   .handleValue(SelectPage)(SelectView())
   .handleValue(SegmentedButtonPage)(SegmentedButtonView())
+  .handleValue(SwitchPage)(SwitchView())
+  .handleValue(SliderPage)(SliderView())
+  .handleValue(ToastPage)(ToastView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -128,7 +134,10 @@ val docPages: List[Page] = List(
   RatingIndicatorPage,
   SplitButtonPage,
   SelectPage,
-  SegmentedButtonPage
+  SegmentedButtonPage,
+  SwitchPage,
+  SliderPage,
+  ToastPage
 )
 
 // Step 4: Map URL to Page
@@ -207,7 +216,13 @@ object AppRouter
         Route
           .static(SelectPage, root / SelectPage.path / endOfSegments, "/docs"),
         Route
-          .static(SegmentedButtonPage, root / SegmentedButtonPage.path / endOfSegments, "/docs")
+          .static(SegmentedButtonPage, root / SegmentedButtonPage.path / endOfSegments, "/docs"),
+        Route
+          .static(SwitchPage, root / SwitchPage.path / endOfSegments, "/docs"),
+        Route
+          .static(SliderPage, root / SliderPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ToastPage, root / ToastPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>

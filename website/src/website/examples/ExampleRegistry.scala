@@ -4,7 +4,10 @@ object ExampleRegistry {
 
   val examples = List(
     DialogExampleBasic,
-    PopoverExampleBasic
+    PopoverExampleBasic,
+    ToastExampleBasic,
+    ToastExampleDuration,
+    ToastExamplePlacement
   )
 
   def run(): Unit = {
