@@ -41,15 +41,16 @@ object Pages {
   case object DateRangePickerPage     extends Page("Date Range Picker")
   case object DateTimePickerPage      extends Page("Date Time Picker")
   case object DialogPage              extends Page("Dialog")
-  case object IntroductionPage        extends Page("Introduction")
-
+  case object InputPage               extends Page("Input")
+  case object LabelPage               extends Page("Label")
+  case object LinkPage                extends Page("Link")
+  case object ListViewPage            extends Page("List")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
 // Step 2: Map Page to View
 val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(HomePage)(HomeView())
-  .handleValue(IntroductionPage)(IntroductionView())
   .handleValue(ButtonPage)(ButtonView())
   .handleValue(AvatarPage)(AvatarView())
   .handleValue(AvatarGroupPage)(AvatarGroupView())
@@ -69,6 +70,10 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(DateRangePickerPage)(DateRangePickerView())
   .handleValue(DateTimePickerPage)(DateTimePickerView())
   .handleValue(DialogPage)(DialogView())
+  .handleValue(InputPage)(InputView())
+  .handleValue(LabelPage)(LabelView())
+  .handleValue(LinkPage)(LinkView())
+  .handleValue(ListViewPage)(ListView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -92,7 +97,11 @@ val docPages: List[Page] = List(
   DatePickerPage,
   DateRangePickerPage,
   DateTimePickerPage,
-  DialogPage
+  DialogPage,
+  InputPage,
+  LabelPage,
+  LinkPage,
+  ListViewPage
 )
 
 // Step 4: Map URL to Page
@@ -100,7 +109,6 @@ object AppRouter
     extends waypoint.Router[Page](
       routes = List(
         Route.static(HomePage, root / endOfSegments),
-        Route.static(IntroductionPage, root / "docs" / endOfSegments),
         Route
           .static(ButtonPage, root / ButtonPage.path / endOfSegments, "/docs"),
         Route
@@ -146,7 +154,15 @@ object AppRouter
         Route
           .static(DateTimePickerPage, root / DateTimePickerPage.path / endOfSegments, "/docs"),
         Route
-          .static(DialogPage, root / DialogPage.path / endOfSegments, "/docs")
+          .static(DialogPage, root / DialogPage.path / endOfSegments, "/docs"),
+        Route
+          .static(InputPage, root / InputPage.path / endOfSegments, "/docs"),
+        Route
+          .static(LabelPage, root / LabelPage.path / endOfSegments, "/docs"),
+        Route
+          .static(LinkPage, root / LinkPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ListViewPage, root / ListViewPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>

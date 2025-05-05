@@ -117,11 +117,11 @@ npm run dev
 
 There are two pieces needed in order to use this library.
 
-1. This library: `io.github.nguyenyou::ui5-webcomponents-laminar::0.2.9` (latest version at the moment of writing).
+1. This library: `io.github.nguyenyou::ui5-webcomponents-laminar::2.9.0` (latest version at the moment of writing).
 
 ```scala
 def ivyDeps = Agg(
-  ivy"io.github.nguyenyou::ui5-webcomponents-laminar::0.2.9",
+  ivy"io.github.nguyenyou::ui5-webcomponents-laminar::2.9.0",
 )
 ```
 

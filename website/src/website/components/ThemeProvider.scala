@@ -96,12 +96,12 @@ object ThemeProvider {
 
   val initialTheme: String = GlobalConfig.initialTheme
 
-  val websiteThemeVar: Var[String] = Var(initialTheme)
+  val websiteThemeVar: Var[String]       = Var(initialTheme)
   val websiteThemeSignal: Signal[String] = websiteThemeVar.signal.distinct
 
-  val contentDensityVar: Var[String] = Var("cozy")
+  val contentDensityVar: Var[String]       = Var("cozy")
   val contentDensitySignal: Signal[String] = contentDensityVar.signal.distinct
 
-  val directionVar: Var[String] = Var("ltr")
+  val directionVar: Var[String]       = Var("ltr")
   val directionSignal: Signal[String] = directionVar.signal.distinct
 }

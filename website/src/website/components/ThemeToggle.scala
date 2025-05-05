@@ -9,7 +9,6 @@ case class ThemeToggle() {
     val btn = Button(
     )("Click me")
 
-
     Button(
       _.design := "Transparent",
       _.icon <-- ThemeProvider.websiteThemeSignal.map { currentTheme =>
