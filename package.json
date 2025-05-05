@@ -1,0 +1,36 @@
+{
+  "name": "ui5-webcomponents-laminar-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "create-wrappers": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers && yarn ui5-webcomponents-laminar:fmt",
+    "generate-facades": "./mill ui5-webcomponents.scalablyTypedImportTask",
+    "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",
+    "release:ui5-webcomponents-laminar": "./mill -i ui5-webcomponents-laminar.publishSonatypeCentral",
+    "dev": "yarn website:dev && concurrently -c \"auto\" \"yarn website:dev-watch\" \"yarn website:dev-server\"",
+    "website:dev": "./mill website.fastLinkJS",
+    "website:dev-watch": "./mill -w website.fastLinkJS",
+    "website:dev-server": "yarn workspace website dev",
+    "website:prod": "./mill website.fullLinkJS && yarn workspace website build",
+    "website:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ website.sources",
+    "ui5-webcomponents-laminar:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ ui5-webcomponents-laminar.sources"
+  },
+  "packageManager": "yarn@4.9.1",
+  "workspaces": [
+    "cli",
+    "examples/*",
+    "website"
+  ],
+  "dependencies": {
+    "@ui5/webcomponents": "2.9.0",
+    "@ui5/webcomponents-ai": "2.9.0",
+    "@ui5/webcomponents-base": "2.9.0",
+    "@ui5/webcomponents-compat": "2.9.0",
+    "@ui5/webcomponents-fiori": "2.9.0"
+  },
+  "devDependencies": {
+    "@ui5/webcomponents-tools": "2.9.0",
+    "concurrently": "9.1.2",
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,83 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Converting UI5 Component Example Views
+
+When converting example views from different formats to this project's syntax, follow these guidelines:
+
+## Package and Imports
+
+```scala
+package website.views.docs
+
+import com.raquo.laminar.api.L.*
+import io.github.nguyenyou.scalawind.*
+import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import website.components.Demo
+import website.macros.Source
+```
+
+## View Structure
+
+Example views should:
+1. Extend `ExampleView` with the component name
+2. Implement the `component` method
+3. Use `Demo` components for each example section
+
+```scala
+object ComponentNameView extends ExampleView("Component Name") {
+  override def component: HtmlElement = {
+    div(
+      Demo(
+        title = "Example Title",
+        content = Source.annotate {
+          // Component example here
+        }
+      ),
+      // More demos...
+    )
+  }
+}
+```
+
+## Component Syntax Pattern
+
+When using UI5 components:
+
+1. **Props and Children**: 
+   ```scala
+   Component(
+     _.prop1 := "value1",
+     _.prop2 := "value2"
+   )(
+     // Children elements here
+   )
+   ```
+
+2. **Empty Components**: Components without children still need empty parentheses
+   ```scala
+   Component(
+     _.prop := "value"
+   )()
+   ```
+
+3. **String enums as literals**: Use string literals for enum values
+   ```scala
+   // Instead of AvatarSize.S
+   Component(
+     _.size := "S"
+   )()
+   ```
+
+4. **IconName references**: Use IconName object with camelCase names
+   ```scala
+   Component(
+     _.icon := IconName.clearAll
+   )()
+   ```
+
+## View Registration
+
+After creating a new view, remember to register it in [AppRouter.scala](mdc:website/src/website/AppRouter.scala) following the guidelines in [app-router-config.mdc](mdc:.cursor/rules/app-router-config.mdc).

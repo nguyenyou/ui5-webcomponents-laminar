@@ -1,0 +1,38 @@
+{
+  "name": "ui5-webcomponents-laminar-cli",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": "./dist/bin/index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "create-wrappers": "concurrently -c \"auto\" \"npm:create-wrappers-*\"",
+    "create-wrappers-base": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
+    "create-wrappers-fiori": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-fiori --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
+    "create-wrappers-ai": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-ai --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar/ai",
+    "create-wrappers-compat": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-compat --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar/compat",
+    "create-wrappers-copy-files": "bun src/bin/index.ts copy-files --packageName io.github.nguyenyou.ui5.webcomponents.laminar.shared --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
+    "create-wrappers-icons": "bun src/bin/index.ts generate-icons"
+  },
+  "devDependencies": {
+    "@types/node": "22.14.1",
+    "bun": "1.2.11",
+    "ts-morph": "25.0.1",
+    "typescript": "5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

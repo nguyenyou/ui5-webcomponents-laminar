@@ -1,0 +1,32 @@
+package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactPreactDotmoduleMod.h.JSX
+
+import org.scalajs.dom.EventTarget
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait BlockquoteHTMLAttributes[T /* <: EventTarget */]
+  extends StObject
+     with io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.HTMLAttributes[T] {
+  
+  var cite: js.UndefOr[
+    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.Signalish[js.UndefOr[String]]
+  ] = js.undefined
+}
+object BlockquoteHTMLAttributes {
+  
+  inline def apply[T /* <: EventTarget */](): BlockquoteHTMLAttributes[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[BlockquoteHTMLAttributes[T]]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockquoteHTMLAttributes[?], T /* <: EventTarget */] (val x: Self & BlockquoteHTMLAttributes[T]) extends AnyVal {
+    
+    inline def setCite(
+      value: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.Signalish[js.UndefOr[String]]
+    ): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+    
+    inline def setCiteUndefined: Self = StObject.set(x, "cite", js.undefined)
+  }
+}

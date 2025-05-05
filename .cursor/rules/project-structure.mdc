@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# UI5 Web Components Laminar Project Structure
+
+This project is organized into several main modules:
+
+1. **ui5-webcomponents**: Contains the Scala.js facades for the original UI5 Web Components
+   - Located in the [ui5-webcomponents](mdc:ui5-webcomponents) directory
+   - These are type-safe Scala.js bindings to the underlying JavaScript components
+
+2. **ui5-webcomponents-laminar**: Contains the Laminar-specific integrations
+   - Located in the [ui5-webcomponents-laminar](mdc:ui5-webcomponents-laminar) directory
+   - Provides a more idiomatic Scala/Laminar API on top of the Scala.js facades
+
+3. **website**: Documentation and examples site
+   - Located in the [website](mdc:website) directory
+   - Contains examples of component usage in [website/src/website/views/docs](mdc:website/src/website/views/docs)
+
+## Build System
+
+The project uses Mill as its build tool, with configuration defined in [build.mill](mdc:build.mill).

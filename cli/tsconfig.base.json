@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "target": "ES2021",
+      "lib": ["ESNext", "dom"],
+      "jsx": "react-jsx",
+      "baseUrl": "${configDir}/src",
+      "rootDir": "${configDir}/src",
+      "composite": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": false,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "removeComments": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "declaration": true,
+      "skipLibCheck": true,
+      "outDir": "${configDir}/dist",
+      "declarationDir": "${configDir}/dist",
+      "noUncheckedSideEffectImports": true
+    }
+  }
+  

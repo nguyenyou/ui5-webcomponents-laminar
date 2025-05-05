@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Documentation Example Views
+
+The website module contains example views for each UI5 component. These examples demonstrate different ways to use the components.
+
+## Structure of Example Views
+
+Each example view follows a consistent pattern:
+
+1. Extends `ExampleView` with a name for the component
+2. Implements the `component` method to render examples
+3. Uses the `Demo` component to showcase specific features
+4. Uses `Source.annotate` to capture the code for display
+5. Often uses `Variants` to display multiple examples side by side
+
+Example of a view structure:
+
+```scala
+object AvatarView extends ExampleView("Avatar") {
+  override def component: HtmlElement = {
+    div(
+      Demo(
+        title = "Feature Name",
+        content = Source.annotate {
+          // Component example
+        }
+      ),
+      // More demos...
+    )
+  }
+}
+```
+
+## Example Views
+
+- [AvatarView.scala](mdc:website/src/website/views/docs/AvatarView.scala) : Examples of Avatar component usage

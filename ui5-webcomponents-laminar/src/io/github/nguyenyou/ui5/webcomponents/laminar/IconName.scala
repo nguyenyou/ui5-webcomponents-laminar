@@ -1,0 +1,987 @@
+package io.github.nguyenyou.ui5.webcomponents.laminar
+
+import com.raquo.laminar.codecs.{Codec, StringAsIsCodec}
+import io.github.nguyenyou.ui5.webcomponents.laminar.IconImports.*
+
+import scala.scalajs.js
+
+@js.native
+sealed trait IconName extends js.Any
+
+//noinspection NoTargetNameAnnotationForOperatorLikeDefinition
+object IconName {
+  def AllIconsFetch: IconName =
+    _iconName(`import-AllIcons-fetch`, "AllIcons-fetch")
+  def AssetsFetch: IconName = _iconName(`import-Assets-fetch`, "Assets-fetch")
+  def ChartTreeMap: IconName =
+    _iconName(`import-Chart-Tree-Map`, "Chart-Tree-Map")
+  def NetweaverBusinessClient: IconName =
+    _iconName(`import-Netweaver-business-client`, "Netweaver-business-client")
+  def accelerated: IconName = _iconName(`import-accelerated`, "accelerated")
+  def accept: IconName = _iconName(`import-accept`, "accept")
+  def accessibility: IconName =
+    _iconName(`import-accessibility`, "accessibility")
+  def accidentalLeave: IconName =
+    _iconName(`import-accidental-leave`, "accidental-leave")
+  def account: IconName = _iconName(`import-account`, "account")
+  def accountingDocumentVerification: IconName = _iconName(
+    `import-accounting-document-verification`,
+    "accounting-document-verification"
+  )
+  def action: IconName = _iconName(`import-action`, "action")
+  def actionSettings: IconName =
+    _iconName(`import-action-settings`, "action-settings")
+  def activate: IconName = _iconName(`import-activate`, "activate")
+  def activities: IconName = _iconName(`import-activities`, "activities")
+  def activity2: IconName = _iconName(`import-activity-2`, "activity-2")
+  def activityAssignedToGoal: IconName =
+    _iconName(`import-activity-assigned-to-goal`, "activity-assigned-to-goal")
+  def activityIndividual: IconName =
+    _iconName(`import-activity-individual`, "activity-individual")
+  def activityItems: IconName =
+    _iconName(`import-activity-items`, "activity-items")
+  def add: IconName = _iconName(`import-add`, "add")
+  def addActivity: IconName = _iconName(`import-add-activity`, "add-activity")
+  def addActivity2: IconName =
+    _iconName(`import-add-activity-2`, "add-activity-2")
+  def addCalendar: IconName = _iconName(`import-add-calendar`, "add-calendar")
+  def addContact: IconName = _iconName(`import-add-contact`, "add-contact")
+  def addCoursebook: IconName =
+    _iconName(`import-add-coursebook`, "add-coursebook")
+  def addDocument: IconName = _iconName(`import-add-document`, "add-document")
+  def addEmployee: IconName = _iconName(`import-add-employee`, "add-employee")
+  def addEquipment: IconName =
+    _iconName(`import-add-equipment`, "add-equipment")
+  def addFavorite: IconName = _iconName(`import-add-favorite`, "add-favorite")
+  def addFilter: IconName = _iconName(`import-add-filter`, "add-filter")
+  def addFolder: IconName = _iconName(`import-add-folder`, "add-folder")
+  def addPhoto: IconName = _iconName(`import-add-photo`, "add-photo")
+  def addProcess: IconName = _iconName(`import-add-process`, "add-process")
+  def addProduct: IconName = _iconName(`import-add-product`, "add-product")
+  def addressBook: IconName = _iconName(`import-address-book`, "address-book")
+  def addresses: IconName = _iconName(`import-addresses`, "addresses")
+  def ai: IconName = _iconName(`import-ai`, "ai")
+  def alert: IconName = _iconName(`import-alert`, "alert")
+  def alongStackedChart: IconName =
+    _iconName(`import-along-stacked-chart`, "along-stacked-chart")
+  def alphabeticalOrder: IconName =
+    _iconName(`import-alphabetical-order`, "alphabetical-order")
+  def appearOffline: IconName =
+    _iconName(`import-appear-offline`, "appear-offline")
+  def appointment: IconName = _iconName(`import-appointment`, "appointment")
+  def appointment2: IconName =
+    _iconName(`import-appointment-2`, "appointment-2")
+  def approvals: IconName = _iconName(`import-approvals`, "approvals")
+  def areaChart: IconName = _iconName(`import-area-chart`, "area-chart")
+  def arobase: IconName = _iconName(`import-arobase`, "arobase")
+  def arrowBottom: IconName = _iconName(`import-arrow-bottom`, "arrow-bottom")
+  def arrowDown: IconName = _iconName(`import-arrow-down`, "arrow-down")
+  def arrowLeft: IconName = _iconName(`import-arrow-left`, "arrow-left")
+  def arrowRight: IconName = _iconName(`import-arrow-right`, "arrow-right")
+  def arrowTop: IconName = _iconName(`import-arrow-top`, "arrow-top")
+  def attachment: IconName = _iconName(`import-attachment`, "attachment")
+  def attachmentAudio: IconName =
+    _iconName(`import-attachment-audio`, "attachment-audio")
+  def attachmentEPub: IconName =
+    _iconName(`import-attachment-e-pub`, "attachment-e-pub")
+  def attachmentHtml: IconName =
+    _iconName(`import-attachment-html`, "attachment-html")
+  def attachmentPhoto: IconName =
+    _iconName(`import-attachment-photo`, "attachment-photo")
+  def attachmentTextFile: IconName =
+    _iconName(`import-attachment-text-file`, "attachment-text-file")
+  def attachmentVideo: IconName =
+    _iconName(`import-attachment-video`, "attachment-video")
+  def attachmentZipFile: IconName =
+    _iconName(`import-attachment-zip-file`, "attachment-zip-file")
+  def away: IconName = _iconName(`import-away`, "away")
+  def backToTop: IconName = _iconName(`import-back-to-top`, "back-to-top")
+  def background: IconName = _iconName(`import-background`, "background")
+  def badge: IconName = _iconName(`import-badge`, "badge")
+  def barChart: IconName = _iconName(`import-bar-chart`, "bar-chart")
+  def barCode: IconName = _iconName(`import-bar-code`, "bar-code")
+  def basket: IconName = _iconName(`import-basket`, "basket")
+  def batchPayments: IconName =
+    _iconName(`import-batch-payments`, "batch-payments")
+  def bbydActiveSales: IconName =
+    _iconName(`import-bbyd-active-sales`, "bbyd-active-sales")
+  def bbydDashboard: IconName =
+    _iconName(`import-bbyd-dashboard`, "bbyd-dashboard")
+  def bed: IconName = _iconName(`import-bed`, "bed")
+  def begin: IconName = _iconName(`import-begin`, "begin")
+  def bell: IconName = _iconName(`import-bell`, "bell")
+  def bell2: IconName = _iconName(`import-bell-2`, "bell-2")
+  def biometricFace: IconName =
+    _iconName(`import-biometric-face`, "biometric-face")
+  def biometricThumb: IconName =
+    _iconName(`import-biometric-thumb`, "biometric-thumb")
+  def blankTag: IconName = _iconName(`import-blank-tag`, "blank-tag")
+  def blankTag2: IconName = _iconName(`import-blank-tag-2`, "blank-tag-2")
+  def blur: IconName = _iconName(`import-blur`, "blur")
+  def boStrategyManagement: IconName =
+    _iconName(`import-bo-strategy-management`, "bo-strategy-management")
+  def boldText: IconName = _iconName(`import-bold-text`, "bold-text")
+  def bookmark: IconName = _iconName(`import-bookmark`, "bookmark")
+  def bookmark2: IconName = _iconName(`import-bookmark-2`, "bookmark-2")
+  def border: IconName = _iconName(`import-border`, "border")
+  def brokenLink: IconName = _iconName(`import-broken-link`, "broken-link")
+  def browseFolder: IconName =
+    _iconName(`import-browse-folder`, "browse-folder")
+  def bubbleChart: IconName = _iconName(`import-bubble-chart`, "bubble-chart")
+  def building: IconName = _iconName(`import-building`, "building")
+  def bulletText: IconName = _iconName(`import-bullet-text`, "bullet-text")
+  def burglary: IconName = _iconName(`import-burglary`, "burglary")
+  def busPublicTransport: IconName =
+    _iconName(`import-bus-public-transport`, "bus-public-transport")
+  def businessByDesign: IconName =
+    _iconName(`import-business-by-design`, "business-by-design")
+  def businessCard: IconName =
+    _iconName(`import-business-card`, "business-card")
+  def businessObjectsExperience: IconName = _iconName(
+    `import-business-objects-experience`,
+    "business-objects-experience"
+  )
+  def businessObjectsExplorer: IconName =
+    _iconName(`import-business-objects-explorer`, "business-objects-explorer")
+  def businessObjectsMobile: IconName =
+    _iconName(`import-business-objects-mobile`, "business-objects-mobile")
+  def businessOne: IconName = _iconName(`import-business-one`, "business-one")
+  def busy: IconName = _iconName(`import-busy`, "busy")
+  def calendar: IconName = _iconName(`import-calendar`, "calendar")
+  def call: IconName = _iconName(`import-call`, "call")
+  def camera: IconName = _iconName(`import-camera`, "camera")
+  def cancel: IconName = _iconName(`import-cancel`, "cancel")
+  def cancelMaintenance: IconName =
+    _iconName(`import-cancel-maintenance`, "cancel-maintenance")
+  def cancelShare: IconName = _iconName(`import-cancel-share`, "cancel-share")
+  def capitalProjects: IconName =
+    _iconName(`import-capital-projects`, "capital-projects")
+  def carRental: IconName = _iconName(`import-car-rental`, "car-rental")
+  def card: IconName = _iconName(`import-card`, "card")
+  def cargoTrain: IconName = _iconName(`import-cargo-train`, "cargo-train")
+  def cart: IconName = _iconName(`import-cart`, "cart")
+  def cart2: IconName = _iconName(`import-cart-2`, "cart-2")
+  def cart3: IconName = _iconName(`import-cart-3`, "cart-3")
+  def cart4: IconName = _iconName(`import-cart-4`, "cart-4")
+  def cart5: IconName = _iconName(`import-cart-5`, "cart-5")
+  def cartApproval: IconName =
+    _iconName(`import-cart-approval`, "cart-approval")
+  def cartFull: IconName = _iconName(`import-cart-full`, "cart-full")
+  def cause: IconName = _iconName(`import-cause`, "cause")
+  def chainLink: IconName = _iconName(`import-chain-link`, "chain-link")
+  def chalkboard: IconName = _iconName(`import-chalkboard`, "chalkboard")
+  def chartAxis: IconName = _iconName(`import-chart-axis`, "chart-axis")
+  def chartTableView: IconName =
+    _iconName(`import-chart-table-view`, "chart-table-view")
+  def checkAvailability: IconName =
+    _iconName(`import-check-availability`, "check-availability")
+  def checklist: IconName = _iconName(`import-checklist`, "checklist")
+  def checklist2: IconName = _iconName(`import-checklist-2`, "checklist-2")
+  def checklistItem: IconName =
+    _iconName(`import-checklist-item`, "checklist-item")
+  def checklistItem2: IconName =
+    _iconName(`import-checklist-item-2`, "checklist-item-2")
+  def chevronPhase: IconName =
+    _iconName(`import-chevron-phase`, "chevron-phase")
+  def chevronPhase2: IconName =
+    _iconName(`import-chevron-phase-2`, "chevron-phase-2")
+  def choroplethChart: IconName =
+    _iconName(`import-choropleth-chart`, "choropleth-chart")
+  def circleTask: IconName = _iconName(`import-circle-task`, "circle-task")
+  def circleTask2: IconName = _iconName(`import-circle-task-2`, "circle-task-2")
+  def citizenConnect: IconName =
+    _iconName(`import-citizen-connect`, "citizen-connect")
+  def clearAll: IconName = _iconName(`import-clear-all`, "clear-all")
+  def clearFilter: IconName = _iconName(`import-clear-filter`, "clear-filter")
+  def clinicalOrder: IconName =
+    _iconName(`import-clinical-order`, "clinical-order")
+  def clinicalTaskTracker: IconName =
+    _iconName(`import-clinical-task-tracker`, "clinical-task-tracker")
+  def clinicalTastTracker: IconName =
+    _iconName(`import-clinical-tast-tracker`, "clinical-tast-tracker")
+  def closeCommandField: IconName =
+    _iconName(`import-close-command-field`, "close-command-field")
+  def cloud: IconName = _iconName(`import-cloud`, "cloud")
+  def cloudCheck: IconName = _iconName(`import-cloud-check`, "cloud-check")
+  def co: IconName = _iconName(`import-co`, "co")
+  def collaborate: IconName = _iconName(`import-collaborate`, "collaborate")
+  def collapse: IconName = _iconName(`import-collapse`, "collapse")
+  def collapseAll: IconName = _iconName(`import-collapse-all`, "collapse-all")
+  def collapseGroup: IconName =
+    _iconName(`import-collapse-group`, "collapse-group")
+  def collectionsInsight: IconName =
+    _iconName(`import-collections-insight`, "collections-insight")
+  def collectionsManagement: IconName =
+    _iconName(`import-collections-management`, "collections-management")
+  def collision: IconName = _iconName(`import-collision`, "collision")
+  def colorFill: IconName = _iconName(`import-color-fill`, "color-fill")
+  def columnChartDualAxis: IconName =
+    _iconName(`import-column-chart-dual-axis`, "column-chart-dual-axis")
+  def combine: IconName = _iconName(`import-combine`, "combine")
+  def commandLineInterfaces: IconName =
+    _iconName(`import-command-line-interfaces`, "command-line-interfaces")
+  def comment: IconName = _iconName(`import-comment`, "comment")
+  def commissionCheck: IconName =
+    _iconName(`import-commission-check`, "commission-check")
+  def companyView: IconName = _iconName(`import-company-view`, "company-view")
+  def compare: IconName = _iconName(`import-compare`, "compare")
+  def compare2: IconName = _iconName(`import-compare-2`, "compare-2")
+  def competitor: IconName = _iconName(`import-competitor`, "competitor")
+  def complete: IconName = _iconName(`import-complete`, "complete")
+  def connected: IconName = _iconName(`import-connected`, "connected")
+  def contacts: IconName = _iconName(`import-contacts`, "contacts")
+  def copy: IconName = _iconName(`import-copy`, "copy")
+  def courseBook: IconName = _iconName(`import-course-book`, "course-book")
+  def courseProgram: IconName =
+    _iconName(`import-course-program`, "course-program")
+  def create: IconName = _iconName(`import-create`, "create")
+  def createEntryTime: IconName =
+    _iconName(`import-create-entry-time`, "create-entry-time")
+  def createForm: IconName = _iconName(`import-create-form`, "create-form")
+  def createLeaveRequest: IconName =
+    _iconName(`import-create-leave-request`, "create-leave-request")
+  def createSession: IconName =
+    _iconName(`import-create-session`, "create-session")
+  def creditCard: IconName = _iconName(`import-credit-card`, "credit-card")
+  def crmSales: IconName = _iconName(`import-crm-sales`, "crm-sales")
+  def crmServiceManager: IconName =
+    _iconName(`import-crm-service-manager`, "crm-service-manager")
+  def crop: IconName = _iconName(`import-crop`, "crop")
+  def crossedLineChart: IconName =
+    _iconName(`import-crossed-line-chart`, "crossed-line-chart")
+  def currency: IconName = _iconName(`import-currency`, "currency")
+  def curriculum: IconName = _iconName(`import-curriculum`, "curriculum")
+  def cursorArrow: IconName = _iconName(`import-cursor-arrow`, "cursor-arrow")
+  def customer: IconName = _iconName(`import-customer`, "customer")
+  def customerAndContacts: IconName =
+    _iconName(`import-customer-and-contacts`, "customer-and-contacts")
+  def customerAndSupplier: IconName =
+    _iconName(`import-customer-and-supplier`, "customer-and-supplier")
+  def customerBriefing: IconName =
+    _iconName(`import-customer-briefing`, "customer-briefing")
+  def customerFinancialFactSheet: IconName = _iconName(
+    `import-customer-financial-fact-sheet`,
+    "customer-financial-fact-sheet"
+  )
+  def customerHistory: IconName =
+    _iconName(`import-customer-history`, "customer-history")
+  def customerOrderEntry: IconName =
+    _iconName(`import-customer-order-entry`, "customer-order-entry")
+  def customerView: IconName =
+    _iconName(`import-customer-view`, "customer-view")
+  def customize: IconName = _iconName(`import-customize`, "customize")
+  def da: IconName = _iconName(`import-da`, "da")
+  def da2: IconName = _iconName(`import-da-2`, "da-2")
+  def darkMode: IconName = _iconName(`import-dark-mode`, "dark-mode")
+  def database: IconName = _iconName(`import-database`, "database")
+  def dateTime: IconName = _iconName(`import-date-time`, "date-time")
+  def decision: IconName = _iconName(`import-decision`, "decision")
+  def decline: IconName = _iconName(`import-decline`, "decline")
+  def decreaseLineHeight: IconName =
+    _iconName(`import-decrease-line-height`, "decrease-line-height")
+  def delete: IconName = _iconName(`import-delete`, "delete")
+  def desktopMobile: IconName =
+    _iconName(`import-desktop-mobile`, "desktop-mobile")
+  def detailLess: IconName = _iconName(`import-detail-less`, "detail-less")
+  def detailMore: IconName = _iconName(`import-detail-more`, "detail-more")
+  def detailView: IconName = _iconName(`import-detail-view`, "detail-view")
+  def developerSettings: IconName =
+    _iconName(`import-developer-settings`, "developer-settings")
+  def dimension: IconName = _iconName(`import-dimension`, "dimension")
+  def directionArrows: IconName =
+    _iconName(`import-direction-arrows`, "direction-arrows")
+  def disconnected: IconName = _iconName(`import-disconnected`, "disconnected")
+  def discussion: IconName = _iconName(`import-discussion`, "discussion")
+  def discussion2: IconName = _iconName(`import-discussion-2`, "discussion-2")
+  def dishwasher: IconName = _iconName(`import-dishwasher`, "dishwasher")
+  def display: IconName = _iconName(`import-display`, "display")
+  def displayMore: IconName = _iconName(`import-display-more`, "display-more")
+  def docAttachment: IconName =
+    _iconName(`import-doc-attachment`, "doc-attachment")
+  def doctor: IconName = _iconName(`import-doctor`, "doctor")
+  def document: IconName = _iconName(`import-document`, "document")
+  def documentText: IconName =
+    _iconName(`import-document-text`, "document-text")
+  def documents: IconName = _iconName(`import-documents`, "documents")
+  def donutChart: IconName = _iconName(`import-donut-chart`, "donut-chart")
+  def down: IconName = _iconName(`import-down`, "down")
+  def download: IconName = _iconName(`import-download`, "download")
+  def downloadFromCloud: IconName =
+    _iconName(`import-download-from-cloud`, "download-from-cloud")
+  def drawRectangle: IconName =
+    _iconName(`import-draw-rectangle`, "draw-rectangle")
+  def drillDown: IconName = _iconName(`import-drill-down`, "drill-down")
+  def drillUp: IconName = _iconName(`import-drill-up`, "drill-up")
+  def dropDownList: IconName =
+    _iconName(`import-drop-down-list`, "drop-down-list")
+  def dropdown: IconName = _iconName(`import-dropdown`, "dropdown")
+  def duplicate: IconName = _iconName(`import-duplicate`, "duplicate")
+  def eCare: IconName = _iconName(`import-e-care`, "e-care")
+  def eLearning: IconName = _iconName(`import-e-learning`, "e-learning")
+  def eamWorkOrder: IconName =
+    _iconName(`import-eam-work-order`, "eam-work-order")
+  def edit: IconName = _iconName(`import-edit`, "edit")
+  def editOutside: IconName = _iconName(`import-edit-outside`, "edit-outside")
+  def education: IconName = _iconName(`import-education`, "education")
+  def electrocardiogram: IconName =
+    _iconName(`import-electrocardiogram`, "electrocardiogram")
+  def electronicMedicalRecord: IconName =
+    _iconName(`import-electronic-medical-record`, "electronic-medical-record")
+  def email: IconName = _iconName(`import-email`, "email")
+  def emailRead: IconName = _iconName(`import-email-read`, "email-read")
+  def employee: IconName = _iconName(`import-employee`, "employee")
+  def employeeApprovals: IconName =
+    _iconName(`import-employee-approvals`, "employee-approvals")
+  def employeeLookup: IconName =
+    _iconName(`import-employee-lookup`, "employee-lookup")
+  def employeePane: IconName =
+    _iconName(`import-employee-pane`, "employee-pane")
+  def employeeRejections: IconName =
+    _iconName(`import-employee-rejections`, "employee-rejections")
+  def enablement: IconName = _iconName(`import-enablement`, "enablement")
+  def endUserExperienceMonitoring: IconName = _iconName(
+    `import-end-user-experience-monitoring`,
+    "end-user-experience-monitoring"
+  )
+  def endoscopy: IconName = _iconName(`import-endoscopy`, "endoscopy")
+  def energySavingLightbulb: IconName =
+    _iconName(`import-energy-saving-lightbulb`, "energy-saving-lightbulb")
+  def enterMore: IconName = _iconName(`import-enter-more`, "enter-more")
+  def eraser: IconName = _iconName(`import-eraser`, "eraser")
+  def error: IconName = _iconName(`import-error`, "error")
+  def example: IconName = _iconName(`import-example`, "example")
+  def excelAttachment: IconName =
+    _iconName(`import-excel-attachment`, "excel-attachment")
+  def exitFullScreen: IconName =
+    _iconName(`import-exit-full-screen`, "exit-full-screen")
+  def expand: IconName = _iconName(`import-expand`, "expand")
+  def expandAll: IconName = _iconName(`import-expand-all`, "expand-all")
+  def expandGroup: IconName = _iconName(`import-expand-group`, "expand-group")
+  def expenseReport: IconName =
+    _iconName(`import-expense-report`, "expense-report")
+  def explorer: IconName = _iconName(`import-explorer`, "explorer")
+  def factory: IconName = _iconName(`import-factory`, "factory")
+  def fallback: IconName = _iconName(`import-fallback`, "fallback")
+  def familyCare: IconName = _iconName(`import-family-care`, "family-care")
+  def familyProtection: IconName =
+    _iconName(`import-family-protection`, "family-protection")
+  def favorite: IconName = _iconName(`import-favorite`, "favorite")
+  def favoriteList: IconName =
+    _iconName(`import-favorite-list`, "favorite-list")
+  def faxMachine: IconName = _iconName(`import-fax-machine`, "fax-machine")
+  def feed: IconName = _iconName(`import-feed`, "feed")
+  def feedback: IconName = _iconName(`import-feedback`, "feedback")
+  def feederArrow: IconName = _iconName(`import-feeder-arrow`, "feeder-arrow")
+  def female: IconName = _iconName(`import-female`, "female")
+  def filter: IconName = _iconName(`import-filter`, "filter")
+  def filterAnalytics: IconName =
+    _iconName(`import-filter-analytics`, "filter-analytics")
+  def filterFacets: IconName =
+    _iconName(`import-filter-facets`, "filter-facets")
+  def filterFields: IconName =
+    _iconName(`import-filter-fields`, "filter-fields")
+  def flag: IconName = _iconName(`import-flag`, "flag")
+  def flag2: IconName = _iconName(`import-flag-2`, "flag-2")
+  def flight: IconName = _iconName(`import-flight`, "flight")
+  def fobWatch: IconName = _iconName(`import-fob-watch`, "fob-watch")
+  def folder: IconName = _iconName(`import-folder`, "folder")
+  def folder2: IconName = _iconName(`import-folder-2`, "folder-2")
+  def folderBlank: IconName = _iconName(`import-folder-blank`, "folder-blank")
+  def folderFull: IconName = _iconName(`import-folder-full`, "folder-full")
+  def form: IconName = _iconName(`import-form`, "form")
+  def forward: IconName = _iconName(`import-forward`, "forward")
+  def fridge: IconName = _iconName(`import-fridge`, "fridge")
+  def fullScreen: IconName = _iconName(`import-full-screen`, "full-screen")
+  def fullStackedChart: IconName =
+    _iconName(`import-full-stacked-chart`, "full-stacked-chart")
+  def fullStackedColumnChart: IconName =
+    _iconName(`import-full-stacked-column-chart`, "full-stacked-column-chart")
+  def functionalLocation: IconName =
+    _iconName(`import-functional-location`, "functional-location")
+  def future: IconName = _iconName(`import-future`, "future")
+  def fx: IconName = _iconName(`import-fx`, "fx")
+  def ganttBars: IconName = _iconName(`import-gantt-bars`, "gantt-bars")
+  def genderMaleAndFemale: IconName =
+    _iconName(`import-gender-male-and-female`, "gender-male-and-female")
+  def generalLeaveRequest: IconName =
+    _iconName(`import-general-leave-request`, "general-leave-request")
+  def generateShortcut: IconName =
+    _iconName(`import-generate-shortcut`, "generate-shortcut")
+  def geographicBubbleChart: IconName =
+    _iconName(`import-geographic-bubble-chart`, "geographic-bubble-chart")
+  def globe: IconName = _iconName(`import-globe`, "globe")
+  def goal: IconName = _iconName(`import-goal`, "goal")
+  def goalseek: IconName = _iconName(`import-goalseek`, "goalseek")
+  def grid: IconName = _iconName(`import-grid`, "grid")
+  def group: IconName = _iconName(`import-group`, "group")
+  def group2: IconName = _iconName(`import-group-2`, "group-2")
+  def header: IconName = _iconName(`import-header`, "header")
+  def heading1: IconName = _iconName(`import-heading1`, "heading1")
+  def heading2: IconName = _iconName(`import-heading2`, "heading2")
+  def heading3: IconName = _iconName(`import-heading3`, "heading3")
+  def headset: IconName = _iconName(`import-headset`, "headset")
+  def heart: IconName = _iconName(`import-heart`, "heart")
+  def heart2: IconName = _iconName(`import-heart-2`, "heart-2")
+  def heatingCooling: IconName =
+    _iconName(`import-heating-cooling`, "heating-cooling")
+  def heatmapChart: IconName =
+    _iconName(`import-heatmap-chart`, "heatmap-chart")
+  def helloWorld: IconName = _iconName(`import-hello-world`, "hello-world")
+  def hide: IconName = _iconName(`import-hide`, "hide")
+  def highPriority: IconName =
+    _iconName(`import-high-priority`, "high-priority")
+  def hint: IconName = _iconName(`import-hint`, "hint")
+  def history: IconName = _iconName(`import-history`, "history")
+  def home: IconName = _iconName(`import-home`, "home")
+  def homeShare: IconName = _iconName(`import-home-share`, "home-share")
+  def horizontalBarChart: IconName =
+    _iconName(`import-horizontal-bar-chart`, "horizontal-bar-chart")
+  def horizontalBarChart2: IconName =
+    _iconName(`import-horizontal-bar-chart-2`, "horizontal-bar-chart-2")
+  def horizontalBulletChart: IconName =
+    _iconName(`import-horizontal-bullet-chart`, "horizontal-bullet-chart")
+  def horizontalCombinationChart: IconName = _iconName(
+    `import-horizontal-combination-chart`,
+    "horizontal-combination-chart"
+  )
+  def horizontalGrip: IconName =
+    _iconName(`import-horizontal-grip`, "horizontal-grip")
+  def horizontalStackedChart: IconName =
+    _iconName(`import-horizontal-stacked-chart`, "horizontal-stacked-chart")
+  def horizontalWaterfallChart: IconName =
+    _iconName(`import-horizontal-waterfall-chart`, "horizontal-waterfall-chart")
+  def hrApproval: IconName = _iconName(`import-hr-approval`, "hr-approval")
+  def ideaWall: IconName = _iconName(`import-idea-wall`, "idea-wall")
+  def imageViewer: IconName = _iconName(`import-image-viewer`, "image-viewer")
+  def inProgress: IconName = _iconName(`import-in-progress`, "in-progress")
+  def inProgress2: IconName = _iconName(`import-in-progress-2`, "in-progress-2")
+  def inbox: IconName = _iconName(`import-inbox`, "inbox")
+  def incident: IconName = _iconName(`import-incident`, "incident")
+  def incomingCall: IconName =
+    _iconName(`import-incoming-call`, "incoming-call")
+  def increaseLineHeight: IconName =
+    _iconName(`import-increase-line-height`, "increase-line-height")
+  def indent: IconName = _iconName(`import-indent`, "indent")
+  def information: IconName = _iconName(`import-information`, "information")
+  def initiative: IconName = _iconName(`import-initiative`, "initiative")
+  def inspect: IconName = _iconName(`import-inspect`, "inspect")
+  def inspectDown: IconName = _iconName(`import-inspect-down`, "inspect-down")
+  def inspection: IconName = _iconName(`import-inspection`, "inspection")
+  def instance: IconName = _iconName(`import-instance`, "instance")
+  def insuranceCar: IconName =
+    _iconName(`import-insurance-car`, "insurance-car")
+  def insuranceHouse: IconName =
+    _iconName(`import-insurance-house`, "insurance-house")
+  def insuranceLife: IconName =
+    _iconName(`import-insurance-life`, "insurance-life")
+  def internetBrowser: IconName =
+    _iconName(`import-internet-browser`, "internet-browser")
+  def inventory: IconName = _iconName(`import-inventory`, "inventory")
+  def ipad: IconName = _iconName(`import-ipad`, "ipad")
+  def ipad2: IconName = _iconName(`import-ipad-2`, "ipad-2")
+  def iphone: IconName = _iconName(`import-iphone`, "iphone")
+  def iphone2: IconName = _iconName(`import-iphone-2`, "iphone-2")
+  def itHost: IconName = _iconName(`import-it-host`, "it-host")
+  def itInstance: IconName = _iconName(`import-it-instance`, "it-instance")
+  def itSystem: IconName = _iconName(`import-it-system`, "it-system")
+  def italicText: IconName = _iconName(`import-italic-text`, "italic-text")
+  def jam: IconName = _iconName(`import-jam`, "jam")
+  def journeyArrive: IconName =
+    _iconName(`import-journey-arrive`, "journey-arrive")
+  def journeyChange: IconName =
+    _iconName(`import-journey-change`, "journey-change")
+  def journeyDepart: IconName =
+    _iconName(`import-journey-depart`, "journey-depart")
+  def key: IconName = _iconName(`import-key`, "key")
+  def keyUserSettings: IconName =
+    _iconName(`import-key-user-settings`, "key-user-settings")
+  def keyboardAndMouse: IconName =
+    _iconName(`import-keyboard-and-mouse`, "keyboard-and-mouse")
+  def kpiCorporatePerformance: IconName =
+    _iconName(`import-kpi-corporate-performance`, "kpi-corporate-performance")
+  def kpiManagingMyArea: IconName =
+    _iconName(`import-kpi-managing-my-area`, "kpi-managing-my-area")
+  def lab: IconName = _iconName(`import-lab`, "lab")
+  def laptop: IconName = _iconName(`import-laptop`, "laptop")
+  def lateness: IconName = _iconName(`import-lateness`, "lateness")
+  def lead: IconName = _iconName(`import-lead`, "lead")
+  def leadOutdated: IconName =
+    _iconName(`import-lead-outdated`, "lead-outdated")
+  def leads: IconName = _iconName(`import-leads`, "leads")
+  def learningAssistant: IconName =
+    _iconName(`import-learning-assistant`, "learning-assistant")
+  def legend: IconName = _iconName(`import-legend`, "legend")
+  def less: IconName = _iconName(`import-less`, "less")
+  def letter: IconName = _iconName(`import-letter`, "letter")
+  def lightMode: IconName = _iconName(`import-light-mode`, "light-mode")
+  def lightbulb: IconName = _iconName(`import-lightbulb`, "lightbulb")
+  def lineChart: IconName = _iconName(`import-line-chart`, "line-chart")
+  def lineChartDualAxis: IconName =
+    _iconName(`import-line-chart-dual-axis`, "line-chart-dual-axis")
+  def lineChartTimeAxis: IconName =
+    _iconName(`import-line-chart-time-axis`, "line-chart-time-axis")
+  def lineCharts: IconName = _iconName(`import-line-charts`, "line-charts")
+  def list: IconName = _iconName(`import-list`, "list")
+  def loan: IconName = _iconName(`import-loan`, "loan")
+  def locateMe: IconName = _iconName(`import-locate-me`, "locate-me")
+  def locateMe2: IconName = _iconName(`import-locate-me-2`, "locate-me-2")
+  def locked: IconName = _iconName(`import-locked`, "locked")
+  def log: IconName = _iconName(`import-log`, "log")
+  def machine: IconName = _iconName(`import-machine`, "machine")
+  def male: IconName = _iconName(`import-male`, "male")
+  def manager: IconName = _iconName(`import-manager`, "manager")
+  def managerInsight: IconName =
+    _iconName(`import-manager-insight`, "manager-insight")
+  def map: IconName = _iconName(`import-map`, "map")
+  def map2: IconName = _iconName(`import-map-2`, "map-2")
+  def map3: IconName = _iconName(`import-map-3`, "map-3")
+  def mapFill: IconName = _iconName(`import-map-fill`, "map-fill")
+  def marketingCampaign: IconName =
+    _iconName(`import-marketing-campaign`, "marketing-campaign")
+  def masterTaskTriangle: IconName =
+    _iconName(`import-master-task-triangle`, "master-task-triangle")
+  def masterTaskTriangle2: IconName =
+    _iconName(`import-master-task-triangle-2`, "master-task-triangle-2")
+  def meal: IconName = _iconName(`import-meal`, "meal")
+  def measure: IconName = _iconName(`import-measure`, "measure")
+  def measurementDocument: IconName =
+    _iconName(`import-measurement-document`, "measurement-document")
+  def measuringPoint: IconName =
+    _iconName(`import-measuring-point`, "measuring-point")
+  def mediaForward: IconName =
+    _iconName(`import-media-forward`, "media-forward")
+  def mediaPause: IconName = _iconName(`import-media-pause`, "media-pause")
+  def mediaPlay: IconName = _iconName(`import-media-play`, "media-play")
+  def mediaReverse: IconName =
+    _iconName(`import-media-reverse`, "media-reverse")
+  def mediaRewind: IconName = _iconName(`import-media-rewind`, "media-rewind")
+  def meetingRoom: IconName = _iconName(`import-meeting-room`, "meeting-room")
+  def megamenu: IconName = _iconName(`import-megamenu`, "megamenu")
+  def menu: IconName = _iconName(`import-menu`, "menu")
+  def menu2: IconName = _iconName(`import-menu2`, "menu2")
+  def messageError: IconName =
+    _iconName(`import-message-error`, "message-error")
+  def messageInformation: IconName =
+    _iconName(`import-message-information`, "message-information")
+  def messagePopup: IconName =
+    _iconName(`import-message-popup`, "message-popup")
+  def messageSuccess: IconName =
+    _iconName(`import-message-success`, "message-success")
+  def messageWarning: IconName =
+    _iconName(`import-message-warning`, "message-warning")
+  def microphone: IconName = _iconName(`import-microphone`, "microphone")
+  def mileage: IconName = _iconName(`import-mileage`, "mileage")
+  def minimize: IconName = _iconName(`import-minimize`, "minimize")
+  def mirroredTaskCircle: IconName =
+    _iconName(`import-mirrored-task-circle`, "mirrored-task-circle")
+  def mirroredTaskCircle2: IconName =
+    _iconName(`import-mirrored-task-circle-2`, "mirrored-task-circle-2")
+  def moneyBills: IconName = _iconName(`import-money-bills`, "money-bills")
+  def monitorPayments: IconName =
+    _iconName(`import-monitor-payments`, "monitor-payments")
+  def move: IconName = _iconName(`import-move`, "move")
+  def mriScan: IconName = _iconName(`import-mri-scan`, "mri-scan")
+  def multiSelect: IconName = _iconName(`import-multi-select`, "multi-select")
+  def multipleBarChart: IconName =
+    _iconName(`import-multiple-bar-chart`, "multiple-bar-chart")
+  def multipleLineChart: IconName =
+    _iconName(`import-multiple-line-chart`, "multiple-line-chart")
+  def multiplePieChart: IconName =
+    _iconName(`import-multiple-pie-chart`, "multiple-pie-chart")
+  def multipleRadarChart: IconName =
+    _iconName(`import-multiple-radar-chart`, "multiple-radar-chart")
+  def multiselectAll: IconName =
+    _iconName(`import-multiselect-all`, "multiselect-all")
+  def multiselectNone: IconName =
+    _iconName(`import-multiselect-none`, "multiselect-none")
+  def mySalesOrder: IconName =
+    _iconName(`import-my-sales-order`, "my-sales-order")
+  def myView: IconName = _iconName(`import-my-view`, "my-view")
+  def navBack: IconName = _iconName(`import-nav-back`, "nav-back")
+  def navigationDownArrow: IconName =
+    _iconName(`import-navigation-down-arrow`, "navigation-down-arrow")
+  def navigationLeftArrow: IconName =
+    _iconName(`import-navigation-left-arrow`, "navigation-left-arrow")
+  def navigationRightArrow: IconName =
+    _iconName(`import-navigation-right-arrow`, "navigation-right-arrow")
+  def navigationUpArrow: IconName =
+    _iconName(`import-navigation-up-arrow`, "navigation-up-arrow")
+  def negative: IconName = _iconName(`import-negative`, "negative")
+  def newspaper: IconName = _iconName(`import-newspaper`, "newspaper")
+  def nonBinary: IconName = _iconName(`import-non-binary`, "non-binary")
+  def notEditable: IconName = _iconName(`import-not-editable`, "not-editable")
+  def notes: IconName = _iconName(`import-notes`, "notes")
+  def notification: IconName = _iconName(`import-notification`, "notification")
+  def notification2: IconName =
+    _iconName(`import-notification-2`, "notification-2")
+  def numberSign: IconName = _iconName(`import-number-sign`, "number-sign")
+  def numberedText: IconName =
+    _iconName(`import-numbered-text`, "numbered-text")
+  def nurse: IconName = _iconName(`import-nurse`, "nurse")
+  def nutritionActivity: IconName =
+    _iconName(`import-nutrition-activity`, "nutrition-activity")
+  def officialService: IconName =
+    _iconName(`import-official-service`, "official-service")
+  def offsiteWork: IconName = _iconName(`import-offsite-work`, "offsite-work")
+  def openCommandField: IconName =
+    _iconName(`import-open-command-field`, "open-command-field")
+  def openFolder: IconName = _iconName(`import-open-folder`, "open-folder")
+  def opportunities: IconName =
+    _iconName(`import-opportunities`, "opportunities")
+  def opportunity: IconName = _iconName(`import-opportunity`, "opportunity")
+  def orderStatus: IconName = _iconName(`import-order-status`, "order-status")
+  def orgChart: IconName = _iconName(`import-org-chart`, "org-chart")
+  def outbox: IconName = _iconName(`import-outbox`, "outbox")
+  def outdent: IconName = _iconName(`import-outdent`, "outdent")
+  def outgoingCall: IconName =
+    _iconName(`import-outgoing-call`, "outgoing-call")
+  def overflow: IconName = _iconName(`import-overflow`, "overflow")
+  def overlay: IconName = _iconName(`import-overlay`, "overlay")
+  def overviewChart: IconName =
+    _iconName(`import-overview-chart`, "overview-chart")
+  def paging: IconName = _iconName(`import-paging`, "paging")
+  def paidLeave: IconName = _iconName(`import-paid-leave`, "paid-leave")
+  def paintBucket: IconName = _iconName(`import-paint-bucket`, "paint-bucket")
+  def palette: IconName = _iconName(`import-palette`, "palette")
+  def paperPlane: IconName = _iconName(`import-paper-plane`, "paper-plane")
+  def passengerTrain: IconName =
+    _iconName(`import-passenger-train`, "passenger-train")
+  def past: IconName = _iconName(`import-past`, "past")
+  def paste: IconName = _iconName(`import-paste`, "paste")
+  def pause: IconName = _iconName(`import-pause`, "pause")
+  def paymentApproval: IconName =
+    _iconName(`import-payment-approval`, "payment-approval")
+  def pdfAttachment: IconName =
+    _iconName(`import-pdf-attachment`, "pdf-attachment")
+  def pdfReader: IconName = _iconName(`import-pdf-reader`, "pdf-reader")
+  def pending: IconName = _iconName(`import-pending`, "pending")
+  def peopleConnected: IconName =
+    _iconName(`import-people-connected`, "people-connected")
+  def perDiem: IconName = _iconName(`import-per-diem`, "per-diem")
+  def performance: IconName = _iconName(`import-performance`, "performance")
+  def permission: IconName = _iconName(`import-permission`, "permission")
+  def personPlaceholder: IconName =
+    _iconName(`import-person-placeholder`, "person-placeholder")
+  def personnelView: IconName =
+    _iconName(`import-personnel-view`, "personnel-view")
+  def pharmacy: IconName = _iconName(`import-pharmacy`, "pharmacy")
+  def phone: IconName = _iconName(`import-phone`, "phone")
+  def photoVoltaic: IconName =
+    _iconName(`import-photo-voltaic`, "photo-voltaic")
+  def physicalActivity: IconName =
+    _iconName(`import-physical-activity`, "physical-activity")
+  def picture: IconName = _iconName(`import-picture`, "picture")
+  def pieChart: IconName = _iconName(`import-pie-chart`, "pie-chart")
+  def pipelineAnalysis: IconName =
+    _iconName(`import-pipeline-analysis`, "pipeline-analysis")
+  def pixelate: IconName = _iconName(`import-pixelate`, "pixelate")
+  def play: IconName = _iconName(`import-play`, "play")
+  def pool: IconName = _iconName(`import-pool`, "pool")
+  def popupWindow: IconName = _iconName(`import-popup-window`, "popup-window")
+  def positive: IconName = _iconName(`import-positive`, "positive")
+  def post: IconName = _iconName(`import-post`, "post")
+  def pptAttachment: IconName =
+    _iconName(`import-ppt-attachment`, "ppt-attachment")
+  def present: IconName = _iconName(`import-present`, "present")
+  def primaryKey: IconName = _iconName(`import-primary-key`, "primary-key")
+  def print: IconName = _iconName(`import-print`, "print")
+  def `private`: IconName = _iconName(`import-private`, "private")
+  def process: IconName = _iconName(`import-process`, "process")
+  def product: IconName = _iconName(`import-product`, "product")
+  def programTriangles: IconName =
+    _iconName(`import-program-triangles`, "program-triangles")
+  def programTriangles2: IconName =
+    _iconName(`import-program-triangles-2`, "program-triangles-2")
+  def projectDefinitionTriangle: IconName = _iconName(
+    `import-project-definition-triangle`,
+    "project-definition-triangle"
+  )
+  def projectDefinitionTriangle2: IconName = _iconName(
+    `import-project-definition-triangle-2`,
+    "project-definition-triangle-2"
+  )
+  def projector: IconName = _iconName(`import-projector`, "projector")
+  def provision: IconName = _iconName(`import-provision`, "provision")
+  def pullDown: IconName = _iconName(`import-pull-down`, "pull-down")
+  def pushpinOff: IconName = _iconName(`import-pushpin-off`, "pushpin-off")
+  def pushpinOn: IconName = _iconName(`import-pushpin-on`, "pushpin-on")
+  def puzzle: IconName = _iconName(`import-puzzle`, "puzzle")
+  def qrCode: IconName = _iconName(`import-qr-code`, "qr-code")
+  def qualityIssue: IconName =
+    _iconName(`import-quality-issue`, "quality-issue")
+  def questionMark: IconName =
+    _iconName(`import-question-mark`, "question-mark")
+  def radarChart: IconName = _iconName(`import-radar-chart`, "radar-chart")
+  def receipt: IconName = _iconName(`import-receipt`, "receipt")
+  def record: IconName = _iconName(`import-record`, "record")
+  def redo: IconName = _iconName(`import-redo`, "redo")
+  def refresh: IconName = _iconName(`import-refresh`, "refresh")
+  def repost: IconName = _iconName(`import-repost`, "repost")
+  def request: IconName = _iconName(`import-request`, "request")
+  def reset: IconName = _iconName(`import-reset`, "reset")
+  def resize: IconName = _iconName(`import-resize`, "resize")
+  def resizeCorner: IconName =
+    _iconName(`import-resize-corner`, "resize-corner")
+  def resizeHorizontal: IconName =
+    _iconName(`import-resize-horizontal`, "resize-horizontal")
+  def resizeVertical: IconName =
+    _iconName(`import-resize-vertical`, "resize-vertical")
+  def response: IconName = _iconName(`import-response`, "response")
+  def responsive: IconName = _iconName(`import-responsive`, "responsive")
+  def restart: IconName = _iconName(`import-restart`, "restart")
+  def retailStore: IconName = _iconName(`import-retail-store`, "retail-store")
+  def retailStoreManager: IconName =
+    _iconName(`import-retail-store-manager`, "retail-store-manager")
+  def rhombusMilestone: IconName =
+    _iconName(`import-rhombus-milestone`, "rhombus-milestone")
+  def rhombusMilestone2: IconName =
+    _iconName(`import-rhombus-milestone-2`, "rhombus-milestone-2")
+  def role: IconName = _iconName(`import-role`, "role")
+  def rotate: IconName = _iconName(`import-rotate`, "rotate")
+  def s4hana: IconName = _iconName(`import-s4hana`, "s4hana")
+  def salesDocument: IconName =
+    _iconName(`import-sales-document`, "sales-document")
+  def salesNotification: IconName =
+    _iconName(`import-sales-notification`, "sales-notification")
+  def salesOrder: IconName = _iconName(`import-sales-order`, "sales-order")
+  def salesOrderItem: IconName =
+    _iconName(`import-sales-order-item`, "sales-order-item")
+  def salesQuote: IconName = _iconName(`import-sales-quote`, "sales-quote")
+  def sapBox: IconName = _iconName(`import-sap-box`, "sap-box")
+  def sapLogoShape: IconName =
+    _iconName(`import-sap-logo-shape`, "sap-logo-shape")
+  def sapUi5: IconName = _iconName(`import-sap-ui5`, "sap-ui5")
+  def save: IconName = _iconName(`import-save`, "save")
+  def scatterChart: IconName =
+    _iconName(`import-scatter-chart`, "scatter-chart")
+  def scissors: IconName = _iconName(`import-scissors`, "scissors")
+  def screenSplitOne: IconName =
+    _iconName(`import-screen-split-one`, "screen-split-one")
+  def screenSplitThree: IconName =
+    _iconName(`import-screen-split-three`, "screen-split-three")
+  def screenSplitTwo: IconName =
+    _iconName(`import-screen-split-two`, "screen-split-two")
+  def search: IconName = _iconName(`import-search`, "search")
+  def selectAppointments: IconName =
+    _iconName(`import-select-appointments`, "select-appointments")
+  def settings: IconName = _iconName(`import-settings`, "settings")
+  def share: IconName = _iconName(`import-share`, "share")
+  def share2: IconName = _iconName(`import-share-2`, "share-2")
+  def shelf: IconName = _iconName(`import-shelf`, "shelf")
+  def shield: IconName = _iconName(`import-shield`, "shield")
+  def shippingStatus: IconName =
+    _iconName(`import-shipping-status`, "shipping-status")
+  def shortcut: IconName = _iconName(`import-shortcut`, "shortcut")
+  def show: IconName = _iconName(`import-show`, "show")
+  def showEdit: IconName = _iconName(`import-show-edit`, "show-edit")
+  def signature: IconName = _iconName(`import-signature`, "signature")
+  def simplePayment: IconName =
+    _iconName(`import-simple-payment`, "simple-payment")
+  def simulate: IconName = _iconName(`import-simulate`, "simulate")
+  def slimArrowDown: IconName =
+    _iconName(`import-slim-arrow-down`, "slim-arrow-down")
+  def slimArrowLeft: IconName =
+    _iconName(`import-slim-arrow-left`, "slim-arrow-left")
+  def slimArrowRight: IconName =
+    _iconName(`import-slim-arrow-right`, "slim-arrow-right")
+  def slimArrowUp: IconName = _iconName(`import-slim-arrow-up`, "slim-arrow-up")
+  def soccer: IconName = _iconName(`import-soccer`, "soccer")
+  def sonography: IconName = _iconName(`import-sonography`, "sonography")
+  def sort: IconName = _iconName(`import-sort`, "sort")
+  def sortAscending: IconName =
+    _iconName(`import-sort-ascending`, "sort-ascending")
+  def sortDescending: IconName =
+    _iconName(`import-sort-descending`, "sort-descending")
+  def sortingRanking: IconName =
+    _iconName(`import-sorting-ranking`, "sorting-ranking")
+  def sound: IconName = _iconName(`import-sound`, "sound")
+  def soundLoud: IconName = _iconName(`import-sound-loud`, "sound-loud")
+  def soundOff: IconName = _iconName(`import-sound-off`, "sound-off")
+  def sourceCode: IconName = _iconName(`import-source-code`, "source-code")
+  def spaceNavigation: IconName =
+    _iconName(`import-space-navigation`, "space-navigation")
+  def split: IconName = _iconName(`import-split`, "split")
+  def statusCompleted: IconName =
+    _iconName(`import-status-completed`, "status-completed")
+  def statusCritical: IconName =
+    _iconName(`import-status-critical`, "status-critical")
+  def statusError: IconName = _iconName(`import-status-error`, "status-error")
+  def statusInProcess: IconName =
+    _iconName(`import-status-in-process`, "status-in-process")
+  def statusInactive: IconName =
+    _iconName(`import-status-inactive`, "status-inactive")
+  def statusNegative: IconName =
+    _iconName(`import-status-negative`, "status-negative")
+  def statusPositive: IconName =
+    _iconName(`import-status-positive`, "status-positive")
+  def step: IconName = _iconName(`import-step`, "step")
+  def stethoscope: IconName = _iconName(`import-stethoscope`, "stethoscope")
+  def stop: IconName = _iconName(`import-stop`, "stop")
+  def strikethrough: IconName =
+    _iconName(`import-strikethrough`, "strikethrough")
+  def studyLeave: IconName = _iconName(`import-study-leave`, "study-leave")
+  def subwayTrain: IconName = _iconName(`import-subway-train`, "subway-train")
+  def suitcase: IconName = _iconName(`import-suitcase`, "suitcase")
+  def sum: IconName = _iconName(`import-sum`, "sum")
+  def supplier: IconName = _iconName(`import-supplier`, "supplier")
+  def survey: IconName = _iconName(`import-survey`, "survey")
+  def switchClasses: IconName =
+    _iconName(`import-switch-classes`, "switch-classes")
+  def switchViews: IconName = _iconName(`import-switch-views`, "switch-views")
+  def synchronize: IconName = _iconName(`import-synchronize`, "synchronize")
+  def syntax: IconName = _iconName(`import-syntax`, "syntax")
+  def syringe: IconName = _iconName(`import-syringe`, "syringe")
+  def sysAdd: IconName = _iconName(`import-sys-add`, "sys-add")
+  def sysBack: IconName = _iconName(`import-sys-back`, "sys-back")
+  def sysBack2: IconName = _iconName(`import-sys-back-2`, "sys-back-2")
+  def sysCancel: IconName = _iconName(`import-sys-cancel`, "sys-cancel")
+  def sysCancel2: IconName = _iconName(`import-sys-cancel-2`, "sys-cancel-2")
+  def sysEnter: IconName = _iconName(`import-sys-enter`, "sys-enter")
+  def sysEnter2: IconName = _iconName(`import-sys-enter-2`, "sys-enter-2")
+  def sysFind: IconName = _iconName(`import-sys-find`, "sys-find")
+  def sysFindNext: IconName = _iconName(`import-sys-find-next`, "sys-find-next")
+  def sysFirstPage: IconName =
+    _iconName(`import-sys-first-page`, "sys-first-page")
+  def sysHelp: IconName = _iconName(`import-sys-help`, "sys-help")
+  def sysHelp2: IconName = _iconName(`import-sys-help-2`, "sys-help-2")
+  def sysLastPage: IconName = _iconName(`import-sys-last-page`, "sys-last-page")
+  def sysMinus: IconName = _iconName(`import-sys-minus`, "sys-minus")
+  def sysMonitor: IconName = _iconName(`import-sys-monitor`, "sys-monitor")
+  def sysNextPage: IconName = _iconName(`import-sys-next-page`, "sys-next-page")
+  def sysPrevPage: IconName = _iconName(`import-sys-prev-page`, "sys-prev-page")
+  def systemExit: IconName = _iconName(`import-system-exit`, "system-exit")
+  def systemExit2: IconName = _iconName(`import-system-exit-2`, "system-exit-2")
+  def tableChart: IconName = _iconName(`import-table-chart`, "table-chart")
+  def tableColumn: IconName = _iconName(`import-table-column`, "table-column")
+  def tableRow: IconName = _iconName(`import-table-row`, "table-row")
+  def tableView: IconName = _iconName(`import-table-view`, "table-view")
+  def tag: IconName = _iconName(`import-tag`, "tag")
+  def tagCloudChart: IconName =
+    _iconName(`import-tag-cloud-chart`, "tag-cloud-chart")
+  def tags: IconName = _iconName(`import-tags`, "tags")
+  def targetGroup: IconName = _iconName(`import-target-group`, "target-group")
+  def task: IconName = _iconName(`import-task`, "task")
+  def taxi: IconName = _iconName(`import-taxi`, "taxi")
+  def technicalObject: IconName =
+    _iconName(`import-technical-object`, "technical-object")
+  def temperature: IconName = _iconName(`import-temperature`, "temperature")
+  def text: IconName = _iconName(`import-text`, "text")
+  def textAlignCenter: IconName =
+    _iconName(`import-text-align-center`, "text-align-center")
+  def textAlignJustified: IconName =
+    _iconName(`import-text-align-justified`, "text-align-justified")
+  def textAlignLeft: IconName =
+    _iconName(`import-text-align-left`, "text-align-left")
+  def textAlignRight: IconName =
+    _iconName(`import-text-align-right`, "text-align-right")
+  def textColor: IconName = _iconName(`import-text-color`, "text-color")
+  def textFormatting: IconName =
+    _iconName(`import-text-formatting`, "text-formatting")
+  def theater: IconName = _iconName(`import-theater`, "theater")
+  def thingType: IconName = _iconName(`import-thing-type`, "thing-type")
+  def thumbDown: IconName = _iconName(`import-thumb-down`, "thumb-down")
+  def thumbUp: IconName = _iconName(`import-thumb-up`, "thumb-up")
+  def timeAccount: IconName = _iconName(`import-time-account`, "time-account")
+  def timeEntryRequest: IconName =
+    _iconName(`import-time-entry-request`, "time-entry-request")
+  def timeOff: IconName = _iconName(`import-time-off`, "time-off")
+  def timeOvertime: IconName =
+    _iconName(`import-time-overtime`, "time-overtime")
+  def timesheet: IconName = _iconName(`import-timesheet`, "timesheet")
+  def toBeReviewed: IconName =
+    _iconName(`import-to-be-reviewed`, "to-be-reviewed")
+  def toasterDown: IconName = _iconName(`import-toaster-down`, "toaster-down")
+  def toasterTop: IconName = _iconName(`import-toaster-top`, "toaster-top")
+  def toasterUp: IconName = _iconName(`import-toaster-up`, "toaster-up")
+  def toolsOpportunity: IconName =
+    _iconName(`import-tools-opportunity`, "tools-opportunity")
+  def touch: IconName = _iconName(`import-touch`, "touch")
+  def translate: IconName = _iconName(`import-translate`, "translate")
+  def travelExpense: IconName =
+    _iconName(`import-travel-expense`, "travel-expense")
+  def travelExpenseReport: IconName =
+    _iconName(`import-travel-expense-report`, "travel-expense-report")
+  def travelItinerary: IconName =
+    _iconName(`import-travel-itinerary`, "travel-itinerary")
+  def travelRequest: IconName =
+    _iconName(`import-travel-request`, "travel-request")
+  def tree: IconName = _iconName(`import-tree`, "tree")
+  def trendDown: IconName = _iconName(`import-trend-down`, "trend-down")
+  def trendUp: IconName = _iconName(`import-trend-up`, "trend-up")
+  def triState: IconName = _iconName(`import-tri-state`, "tri-state")
+  def tripReport: IconName = _iconName(`import-trip-report`, "trip-report")
+  def twoKeys: IconName = _iconName(`import-two-keys`, "two-keys")
+  def uiNotifications: IconName =
+    _iconName(`import-ui-notifications`, "ui-notifications")
+  def umbrella: IconName = _iconName(`import-umbrella`, "umbrella")
+  def underlineText: IconName =
+    _iconName(`import-underline-text`, "underline-text")
+  def undo: IconName = _iconName(`import-undo`, "undo")
+  def unfavorite: IconName = _iconName(`import-unfavorite`, "unfavorite")
+  def unlocked: IconName = _iconName(`import-unlocked`, "unlocked")
+  def unpaidLeave: IconName = _iconName(`import-unpaid-leave`, "unpaid-leave")
+  def unsynchronize: IconName =
+    _iconName(`import-unsynchronize`, "unsynchronize")
+  def unwired: IconName = _iconName(`import-unwired`, "unwired")
+  def up: IconName = _iconName(`import-up`, "up")
+  def upload: IconName = _iconName(`import-upload`, "upload")
+  def uploadToCloud: IconName =
+    _iconName(`import-upload-to-cloud`, "upload-to-cloud")
+  def upstackedChart: IconName =
+    _iconName(`import-upstacked-chart`, "upstacked-chart")
+  def userEdit: IconName = _iconName(`import-user-edit`, "user-edit")
+  def userSettings: IconName =
+    _iconName(`import-user-settings`, "user-settings")
+  def validate: IconName = _iconName(`import-validate`, "validate")
+  def valueHelp: IconName = _iconName(`import-value-help`, "value-help")
+  def vdsFile: IconName = _iconName(`import-vds-file`, "vds-file")
+  def vehicleRepair: IconName =
+    _iconName(`import-vehicle-repair`, "vehicle-repair")
+  def verified: IconName = _iconName(`import-verified`, "verified")
+  def verticalBarChart: IconName =
+    _iconName(`import-vertical-bar-chart`, "vertical-bar-chart")
+  def verticalBarChart2: IconName =
+    _iconName(`import-vertical-bar-chart-2`, "vertical-bar-chart-2")
+  def verticalBulletChart: IconName =
+    _iconName(`import-vertical-bullet-chart`, "vertical-bullet-chart")
+  def verticalGrip: IconName =
+    _iconName(`import-vertical-grip`, "vertical-grip")
+  def verticalStackedChart: IconName =
+    _iconName(`import-vertical-stacked-chart`, "vertical-stacked-chart")
+  def verticalWaterfallChart: IconName =
+    _iconName(`import-vertical-waterfall-chart`, "vertical-waterfall-chart")
+  def video: IconName = _iconName(`import-video`, "video")
+  def visits: IconName = _iconName(`import-visits`, "visits")
+  def waiver: IconName = _iconName(`import-waiver`, "waiver")
+  def walkMe: IconName = _iconName(`import-walk-me`, "walk-me")
+  def wallet: IconName = _iconName(`import-wallet`, "wallet")
+  def warning: IconName = _iconName(`import-warning`, "warning")
+  def warning2: IconName = _iconName(`import-warning2`, "warning2")
+  def washingMachine: IconName =
+    _iconName(`import-washing-machine`, "washing-machine")
+  def weatherProofing: IconName =
+    _iconName(`import-weather-proofing`, "weather-proofing")
+  def webCam: IconName = _iconName(`import-web-cam`, "web-cam")
+  def widgets: IconName = _iconName(`import-widgets`, "widgets")
+  def windowsDoors: IconName =
+    _iconName(`import-windows-doors`, "windows-doors")
+  def workHistory: IconName = _iconName(`import-work-history`, "work-history")
+  def workflowTasks: IconName =
+    _iconName(`import-workflow-tasks`, "workflow-tasks")
+  def world: IconName = _iconName(`import-world`, "world")
+  def woundsDoc: IconName = _iconName(`import-wounds-doc`, "wounds-doc")
+  def wrench: IconName = _iconName(`import-wrench`, "wrench")
+  def writeNew: IconName = _iconName(`import-write-new`, "write-new")
+  def writeNewDocument: IconName =
+    _iconName(`import-write-new-document`, "write-new-document")
+  def xRay: IconName = _iconName(`import-x-ray`, "x-ray")
+  def zoomIn: IconName = _iconName(`import-zoom-in`, "zoom-in")
+  def zoomOut: IconName = _iconName(`import-zoom-out`, "zoom-out")
+
+  def AsStringCodec: Codec[IconName, String] = new Codec[IconName, String] {
+    override def encode(scalaValue: IconName): String =
+      scalaValue.asInstanceOf[String]
+    override def decode(domValue: String): IconName =
+      domValue.asInstanceOf[IconName]
+  }
+}

@@ -1,0 +1,104 @@
+package build
+
+import mill._, scalalib._, scalajslib._, scalajslib.api._, publish._
+import $ivy.`io.github.nguyenyou::mill-scalablytyped::0.0.2`
+import io.github.nguyenyou.mill.scalablytyped._
+import $ivy.`com.lihaoyi::mill-contrib-sonatypecentral:`
+import mill.contrib.sonatypecentral.SonatypeCentralPublishModule
+
+object Versions {
+  val scala3 = "3.3.5"
+  val sjs = "1.19.0"
+  val scalajsDom = "2.8.0"
+  val laminar = "17.2.1"
+  val scalawind = "1.0.1"
+  val `ui5-webcomponents` = "0.0.9"
+  val `ui5-webcomponents-laminar` = "0.0.31"
+  val waypoint = "9.0.0"
+  val macrotask = "1.1.1"
+  val borer = "1.14.0"
+}
+
+object Dependencies {
+  val `ui5-webcomponents` = Agg(
+    ivy"io.github.nguyenyou::ui5-webcomponents::${Versions.`ui5-webcomponents`}"
+  )
+
+  val laminar = Agg(
+    ivy"com.raquo::laminar::${Versions.laminar}"
+  )
+
+  val scalajsDom = Agg(
+    ivy"org.scala-js::scalajs-dom::${Versions.scalajsDom}"
+  )
+
+  val scalawind = Agg(
+    ivy"io.github.nguyenyou::scalawind::${Versions.scalawind}"
+  )
+
+
+  val waypoint = Seq(
+    ivy"com.raquo::waypoint::${Versions.waypoint}"
+  )
+
+  val macrotask = Seq(
+    ivy"org.scala-js::scala-js-macrotask-executor::${Versions.macrotask}"
+  )
+
+  val borer = Seq(
+    ivy"io.bullet::borer-core::${Versions.borer}",
+    ivy"io.bullet::borer-derivation::${Versions.borer}",
+  )
+}
+
+trait WebModule extends ScalaJSModule {
+  def scalaVersion = Versions.scala3
+  def scalaJSVersion = Versions.sjs
+}
+
+trait NoDoc extends ScalaModule {
+  override def docJar = T {
+    val outPath = T.dest / "empty-doc.jar"
+    os.write(outPath, Array.emptyByteArray)
+    PathRef(outPath)
+  }
+}
+
+trait CommonPublish extends SonatypeCentralPublishModule {
+  def pomSettings = PomSettings(
+    description = "UI5 Webcomponents Facades",
+    organization = "io.github.nguyenyou",
+    url = "https://github.com/nguyenyou/ui5-webcomponents-laminar",
+    licenses = Seq(License.MIT),
+    versionControl = VersionControl.github("nguyenyou", "ui5-webcomponents-laminar"),
+    developers = Seq(Developer("nguyenyou", "Nguyen You", "https://github.com/nguyenyou")),
+  )
+}
+
+object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc {
+  def publishVersion = Versions.`ui5-webcomponents-laminar`
+  def ivyDeps = super.ivyDeps() ++ Dependencies.laminar ++ Dependencies.scalajsDom ++ Dependencies.`ui5-webcomponents`
+
+  // def moduleDeps = Seq(`ui5-webcomponents`)
+}
+
+object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish with NoDoc {
+  def publishVersion = Versions.`ui5-webcomponents`
+  def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
+  override def stOutputPackage = "io.github.nguyenyou.ui5.webcomponents"
+  override def stOutputPath = millSourcePath / "src"
+  override def stMinimize = MinimizeSelection.AllExcept(
+    "@ui5/webcomponents", 
+    "@ui5/webcomponents-fiori", 
+    "@ui5/webcomponents-ai", 
+    "@ui5/webcomponents-compat", 
+    "@ui5/webcomponents-base"
+  )
+}
+
+object website extends WebModule with NoDoc {
+  def moduleKind = ModuleKind.ESModule
+  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+
+ def ivyDeps = super.ivyDeps() ++ Dependencies.scalawind ++ Dependencies.waypoint ++ Dependencies.macrotask ++ Dependencies.borer
+}

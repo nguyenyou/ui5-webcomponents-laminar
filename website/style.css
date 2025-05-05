@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--sapBackgroundColor);
+  color: var(--sapTextColor);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+}
+
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+pre {
+  @apply font-mono;
+}
+
+.border-grid {
+  border-style: dashed;
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+}
+
+.border-border {
+  border-style: solid;
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+}
+
+
+.container-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1400px;
+  border-style: dashed;
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+}
+
+.container-wrapper:is(.dark *) {
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+}
+
+@media (min-width: 1400px) {
+  .container-wrapper {
+      border-left-width:1px;
+      border-right-width: 1px
+  }
+}
+
+@media (min-width: 1800px) {
+  .container-wrapper {
+      max-width:1536px
+  }
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1536px;
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media (min-width: 1280px) {
+  .container {
+      padding-left:1.5rem;
+      padding-right: 1.5rem
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}

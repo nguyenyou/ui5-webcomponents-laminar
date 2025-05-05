@@ -1,0 +1,52 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Application Router Configuration
+
+The [AppRouter.scala](mdc:website/src/website/AppRouter.scala) file manages the application routing for the UI5 Web Components Laminar documentation site.
+
+## Adding a New Page
+
+When adding a new component documentation page to the application, follow these steps:
+
+1. **Define a Page object** in the `Pages` object:
+   ```scala
+   case object NewComponentPage extends Page("New Component")
+   ```
+
+2. **Add a handler** to the `pageViews` signal mapping:
+   ```scala
+   .handleValue(NewComponentPage)(NewComponentView())
+   ```
+
+3. **Add the page to the documentation pages list** in alphabetical order:
+   ```scala
+   val docPages: List[Page] = List(
+     AvatarPage,
+     // Insert your new page here in alphabetical order
+     NewComponentPage,
+     ButtonPage
+   )
+   ```
+
+4. **Add a route** for the new page:
+   ```scala
+   Route.static(NewComponentPage, root / NewComponentPage.path / endOfSegments, "/docs")
+   ```
+
+## Example
+
+For a component called "DatePicker", you would:
+
+1. Add `case object DatePickerPage extends Page("Date Picker")`
+2. Add `.handleValue(DatePickerPage)(DatePickerView())`
+3. Add to docPages list in alphabetical order
+4. Add `Route.static(DatePickerPage, root / DatePickerPage.path / endOfSegments, "/docs")`
+
+## Important Notes
+
+- The sidebar navigation automatically displays all pages listed in `docPages`
+- The URL path is automatically generated from the page title (lowercase, hyphenated)
+- Always follow alphabetical order when adding to the `docPages` list
