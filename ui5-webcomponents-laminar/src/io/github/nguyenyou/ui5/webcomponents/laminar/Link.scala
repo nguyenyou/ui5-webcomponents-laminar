@@ -11,9 +11,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesInteracti
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesLinkAccessibleRoleMod.LinkAccessibleRole
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesLinkDesignMod.LinkDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesWrappingTypeMod.WrappingType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.{
-  Link as LinkComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.{Link as LinkComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -33,41 +31,34 @@ object Link extends WebComponent("ui5-link") {
 
   /** Defines the accessible description of the component.
     *
-    * **Note:** Available since
-    * [v2.5.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.5.0) of
+    * **Note:** Available since [v2.5.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.5.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleDescription: HtmlAttr[String] =
-    htmlAttr("accessible-description", StringAsIsCodec)
+  lazy val accessibleDescription: HtmlAttr[String] = htmlAttr("accessible-description", StringAsIsCodec)
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
+    * **Note:** Available since [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the input
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines the ARIA role of the component.
     *
-    * **Note:** Use the <code>LinkAccessibleRole.Button</code> role in cases
-    * when navigation is not expected to occur and the href property is not
-    * defined.
+    * **Note:** Use the <code>LinkAccessibleRole.Button</code> role in cases when navigation is not expected to occur
+    * and the href property is not defined.
     *
-    * **Note:** Available since
-    * [v1.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.9.0) of
+    * **Note:** Available since [v1.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.9.0) of
     * **@ui5/webcomponents**.
     *
     * Default: "Link"
@@ -82,8 +73,7 @@ object Link extends WebComponent("ui5-link") {
     *
     * Default: "Default"
     */
-  lazy val design: HtmlAttr[LinkDesign] =
-    htmlAttr("design", StringUnionCodec[LinkDesign])
+  lazy val design: HtmlAttr[LinkDesign] = htmlAttr("design", StringUnionCodec[LinkDesign])
   type LinkDesign = "Default" | "Subtle" | "Emphasized"
 
   /** Defines whether the component is disabled.
@@ -92,29 +82,24 @@ object Link extends WebComponent("ui5-link") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Defines the icon, displayed as graphical element within the component
-    * after the link's text. The SAP-icons font provides numerous options.
+  /** Defines the icon, displayed as graphical element within the component after the link's text. The SAP-icons font
+    * provides numerous options.
     *
-    * **Note:** Usage of icon-only link is not supported, the link must always
-    * have a text.
+    * **Note:** Usage of icon-only link is not supported, the link must always have a text.
     *
-    * **Note:** We recommend using аn icon in the beginning or the end only, and
-    * with text.
+    * **Note:** We recommend using аn icon in the beginning or the end only, and with text.
     *
     * See all the available icons within the [Icon
     * Explorer](https://sdk.openui5.org/test-resources/sap/m/demokit/iconExplorer/webapp/index.html).
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val endIcon: HtmlAttr[IconName] =
-    htmlAttr("end-icon", IconName.AsStringCodec)
+  lazy val endIcon: HtmlAttr[IconName] = htmlAttr("end-icon", IconName.AsStringCodec)
 
   /** Defines the component href.
     *
@@ -124,20 +109,17 @@ object Link extends WebComponent("ui5-link") {
     */
   lazy val href: HtmlAttr[String] = htmlAttr("href", StringAsIsCodec)
 
-  /** Defines the icon, displayed as graphical element within the component
-    * before the link's text. The SAP-icons font provides numerous options.
+  /** Defines the icon, displayed as graphical element within the component before the link's text. The SAP-icons font
+    * provides numerous options.
     *
-    * **Note:** Usage of icon-only link is not supported, the link must always
-    * have a text.
+    * **Note:** Usage of icon-only link is not supported, the link must always have a text.
     *
-    * **Note:** We recommend using аn icon in the beginning or the end only, and
-    * with text.
+    * **Note:** We recommend using аn icon in the beginning or the end only, and with text.
     *
     * See all the available icons within the [Icon
     * Explorer](https://sdk.openui5.org/test-resources/sap/m/demokit/iconExplorer/webapp/index.html).
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
@@ -146,25 +128,18 @@ object Link extends WebComponent("ui5-link") {
 
   /** Defines the target area size of the link:
     *   - **InteractiveAreaSize.Normal**: The default target area size.
-    *   - **InteractiveAreaSize.Large**: The target area size is enlarged to
-    *     24px in height.
+    *   - **InteractiveAreaSize.Large**: The target area size is enlarged to 24px in height.
     *
-    * **Note:**The property is designed to make links easier to activate and
-    * helps meet the WCAG 2.2 Target Size requirement. It is applicable only for
-    * the SAP Horizon themes. **Note:**To improve <code>ui5-link</code>'s
-    * reliability and usability, it is recommended to use the
-    * <code>InteractiveAreaSize.Large</code> value in scenarios where the
-    * <code>ui5-link</code> component is placed inside another interactive
-    * component, such as a list item or a table cell. Setting the
-    * <code>interactiveAreaSize</code> property to
-    * <code>InteractiveAreaSize.Large</code> increases the
-    * <code>ui5-link</code>'s invisible touch area. As a result, the user's
-    * intended one-time selection command is more likely to activate the desired
-    * <code>ui5-link</code>, with minimal chance of unintentionally activating
-    * the underlying component.
+    * **Note:**The property is designed to make links easier to activate and helps meet the WCAG 2.2 Target Size
+    * requirement. It is applicable only for the SAP Horizon themes. **Note:**To improve <code>ui5-link</code>'s
+    * reliability and usability, it is recommended to use the <code>InteractiveAreaSize.Large</code> value in scenarios
+    * where the <code>ui5-link</code> component is placed inside another interactive component, such as a list item or a
+    * table cell. Setting the <code>interactiveAreaSize</code> property to <code>InteractiveAreaSize.Large</code>
+    * increases the <code>ui5-link</code>'s invisible touch area. As a result, the user's intended one-time selection
+    * command is more likely to activate the desired <code>ui5-link</code>, with minimal chance of unintentionally
+    * activating the underlying component.
     *
-    * **Note:** Available since
-    * [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
     * **@ui5/webcomponents**.
     *
     * Default: "Normal"
@@ -191,41 +166,33 @@ object Link extends WebComponent("ui5-link") {
 
   /** Defines the tooltip of the component.
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
   lazy val tooltip: HtmlAttr[String] = htmlAttr("tooltip", StringAsIsCodec)
 
-  /** Defines how the text of a component will be displayed when there is not
-    * enough space.
+  /** Defines how the text of a component will be displayed when there is not enough space.
     *
-    * **Note:** By default the text will wrap. If "None" is set - the text will
-    * truncate.
+    * **Note:** By default the text will wrap. If "None" is set - the text will truncate.
     *
     * Default: "Normal"
     */
-  lazy val wrappingType: HtmlAttr[WrappingType] =
-    htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
+  lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
   type WrappingType = "None" | "Normal"
 
   // -- Events --
 
-  /** Fired when the component is triggered either with a mouse/tap or by using
-    * the Enter key.
+  /** Fired when the component is triggered either with a mouse/tap or by using the Enter key.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onClick
-      : EventProp[Ui5CustomEvent[Ref] & EventDetail[LinkClickEventDetail]] =
-    new EventProp("click")
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[LinkClickEventDetail]] = new EventProp("click")
 
   // -- Slots --
 

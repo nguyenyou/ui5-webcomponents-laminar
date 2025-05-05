@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBarDesignMod.BarDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBarMod.{
-  Bar as BarComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBarMod.{Bar as BarComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -28,8 +26,7 @@ object Bar extends WebComponent("ui5-bar") {
     *
     * Default: "Header"
     */
-  lazy val design: HtmlAttr[BarDesign] =
-    htmlAttr("design", StringUnionCodec[BarDesign])
+  lazy val design: HtmlAttr[BarDesign] = htmlAttr("design", StringUnionCodec[BarDesign])
   type BarDesign = "Header" | "Subheader" | "Footer" | "FloatingFooter"
 
   // -- Events --
@@ -39,17 +36,14 @@ object Bar extends WebComponent("ui5-bar") {
   /** Defines the content at the end of the bar.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="endContent"`). Since you can't change the DOM order of
-    * slots when declaring them within a prop, it might prove beneficial to
-    * manually mount them as part of the component's children, especially when
-    * facing problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="endContent"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val endContent: Slot = new Slot("endContent")
@@ -57,17 +51,14 @@ object Bar extends WebComponent("ui5-bar") {
   /** Defines the content at the start of the bar.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="startContent"`). Since you can't change the DOM order of
-    * slots when declaring them within a prop, it might prove beneficial to
-    * manually mount them as part of the component's children, especially when
-    * facing problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute
+    * (`slot="startContent"`). Since you can't change the DOM order of slots when declaring them within a prop, it might
+    * prove beneficial to manually mount them as part of the component's children, especially when facing problems with
+    * the reading order of screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val startContent: Slot = new Slot("startContent")

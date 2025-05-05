@@ -25,41 +25,34 @@ object ProgressIndicator extends WebComponent("ui5-progress-indicator") {
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v1.16.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.16.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.16.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.16.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Specifies the text value to be displayed in the bar.
     *
     * **Note:**
     *
-    *   - If there is no value provided or the value is empty, the default
-    *     percentage value is shown.
-    *   - If `hideValue` property is `true` both the `displayValue` and `value`
-    *     property values are not shown.
+    *   - If there is no value provided or the value is empty, the default percentage value is shown.
+    *   - If `hideValue` property is `true` both the `displayValue` and `value` property values are not shown.
     *
     * Default: undefined
     */
-  lazy val displayValue: HtmlAttr[String] =
-    htmlAttr("display-value", StringAsIsCodec)
+  lazy val displayValue: HtmlAttr[String] = htmlAttr("display-value", StringAsIsCodec)
 
   /** Defines whether the component value is shown.
     *
     * Default: false
     */
-  lazy val hideValue: HtmlAttr[Boolean] =
-    htmlAttr("hide-value", BooleanAsAttrPresenceCodec)
+  lazy val hideValue: HtmlAttr[Boolean] = htmlAttr("hide-value", BooleanAsAttrPresenceCodec)
 
   /** Specifies the numerical value in percent for the length of the component.
     *
-    * **Note:** If a value greater than 100 is provided, the percentValue is set
-    * to 100. In other cases of invalid value, percentValue is set to its
-    * default of 0.
+    * **Note:** If a value greater than 100 is provided, the percentValue is set to 100. In other cases of invalid
+    * value, percentValue is set to its default of 0.
     *
     * Default: 0
     */
@@ -69,10 +62,8 @@ object ProgressIndicator extends WebComponent("ui5-progress-indicator") {
     *
     * Default: "None"
     */
-  lazy val valueState: HtmlAttr[ValueState] =
-    htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" |
-    "Information"
+  lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
+  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

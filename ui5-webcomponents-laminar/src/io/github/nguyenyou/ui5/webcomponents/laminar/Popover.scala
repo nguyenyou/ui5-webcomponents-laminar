@@ -8,9 +8,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverHo
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverPlacementMod.PopoverPlacement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverVerticalAlignMod.PopoverVerticalAlign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopupAccessibleRoleMod.PopupAccessibleRole
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.{
-  Popover as PopoverComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.{Popover as PopoverComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -32,25 +30,21 @@ object Popover extends WebComponent("ui5-popover") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines the IDs of the elements that label the component.
     *
-    * **Note:** Available since
-    * [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
+    * **Note:** Available since [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Allows setting a custom role.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: "Dialog"
     */
@@ -58,13 +52,11 @@ object Popover extends WebComponent("ui5-popover") {
     htmlAttr("accessible-role", StringUnionCodec[PopupAccessibleRole])
   type PopupAccessibleRole = "None" | "Dialog" | "AlertDialog"
 
-  /** Determines if there is no enough space, the component can be placed over
-    * the target.
+  /** Determines if there is no enough space, the component can be placed over the target.
     *
     * Default: false
     */
-  lazy val allowTargetOverlap: HtmlAttr[Boolean] =
-    htmlAttr("allow-target-overlap", BooleanAsAttrPresenceCodec)
+  lazy val allowTargetOverlap: HtmlAttr[Boolean] = htmlAttr("allow-target-overlap", BooleanAsAttrPresenceCodec)
 
   /** Defines the header text.
     *
@@ -72,15 +64,13 @@ object Popover extends WebComponent("ui5-popover") {
     *
     * Default: undefined
     */
-  lazy val headerText: HtmlAttr[String] =
-    htmlAttr("header-text", StringAsIsCodec)
+  lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
   /** Determines whether the component arrow is hidden.
     *
     * Default: false
     */
-  lazy val hideArrow: HtmlAttr[Boolean] =
-    htmlAttr("hide-arrow", BooleanAsAttrPresenceCodec)
+  lazy val hideArrow: HtmlAttr[Boolean] = htmlAttr("hide-arrow", BooleanAsAttrPresenceCodec)
 
   /** Determines the horizontal alignment of the component.
     *
@@ -92,41 +82,34 @@ object Popover extends WebComponent("ui5-popover") {
 
   /** Defines the ID of the HTML Element, which will get the initial focus.
     *
-    * **Note:** If an element with `autofocus` attribute is added inside the
-    * component, `initialFocus` won't take effect.
+    * **Note:** If an element with `autofocus` attribute is added inside the component, `initialFocus` won't take
+    * effect.
     *
     * Default: undefined
     */
-  lazy val initialFocus: HtmlAttr[String] =
-    htmlAttr("initial-focus", StringAsIsCodec)
+  lazy val initialFocus: HtmlAttr[String] = htmlAttr("initial-focus", StringAsIsCodec)
 
-  /** Defines whether the component should close when clicking/tapping outside
-    * of the popover. If enabled, it blocks any interaction with the background.
+  /** Defines whether the component should close when clicking/tapping outside of the popover. If enabled, it blocks any
+    * interaction with the background.
     *
     * Default: false
     */
-  lazy val modal: HtmlAttr[Boolean] =
-    htmlAttr("modal", BooleanAsAttrPresenceCodec)
+  lazy val modal: HtmlAttr[Boolean] = htmlAttr("modal", BooleanAsAttrPresenceCodec)
 
   /** Indicates if the element is open
     *
-    * **Note:** Available since
-    * [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
+    * **Note:** Available since [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
     * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val open: HtmlAttr[Boolean] =
-    htmlAttr("open", BooleanAsAttrPresenceCodec)
+  lazy val open: HtmlAttr[Boolean] = htmlAttr("open", BooleanAsAttrPresenceCodec)
 
-  /** Defines the ID or DOM Reference of the element at which the popover is
-    * shown. When using this attribute in a declarative way, you must only use
-    * the `id` (as a string) of the element at which you want to show the
-    * popover. You can only set the `opener` attribute to a DOM Reference when
-    * using JavaScript.
+  /** Defines the ID or DOM Reference of the element at which the popover is shown. When using this attribute in a
+    * declarative way, you must only use the `id` (as a string) of the element at which you want to show the popover.
+    * You can only set the `opener` attribute to a DOM Reference when using JavaScript.
     *
-    * **Note:** Available since
-    * [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
+    * **Note:** Available since [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
@@ -137,28 +120,23 @@ object Popover extends WebComponent("ui5-popover") {
     *
     * Default: "End"
     */
-  lazy val placement: HtmlAttr[PopoverPlacement] =
-    htmlAttr("placement", StringUnionCodec[PopoverPlacement])
+  lazy val placement: HtmlAttr[PopoverPlacement] = htmlAttr("placement", StringUnionCodec[PopoverPlacement])
   type PopoverPlacement = "Start" | "End" | "Top" | "Bottom"
 
-  /** Defines if the focus should be returned to the previously focused element,
-    * when the popup closes.
+  /** Defines if the focus should be returned to the previously focused element, when the popup closes.
     *
     * Default: false
     */
-  lazy val preventFocusRestore: HtmlAttr[Boolean] =
-    htmlAttr("prevent-focus-restore", BooleanAsAttrPresenceCodec)
+  lazy val preventFocusRestore: HtmlAttr[Boolean] = htmlAttr("prevent-focus-restore", BooleanAsAttrPresenceCodec)
 
   /** Indicates whether initial focus should be prevented.
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val preventInitialFocus: HtmlAttr[Boolean] =
-    htmlAttr("prevent-initial-focus", BooleanAsAttrPresenceCodec)
+  lazy val preventInitialFocus: HtmlAttr[Boolean] = htmlAttr("prevent-initial-focus", BooleanAsAttrPresenceCodec)
 
   /** Determines the vertical alignment of the component.
     *
@@ -170,33 +148,27 @@ object Popover extends WebComponent("ui5-popover") {
 
   // -- Events --
 
-  /** Fired before the component is closed. This event can be cancelled, which
-    * will prevent the popup from closing.
+  /** Fired before the component is closed. This event can be cancelled, which will prevent the popup from closing.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ❌    |
     */
-  lazy val onBeforeClose: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[PopupBeforeCloseEventDetail]
-  ] = new EventProp("before-close")
-
-  /** Fired before the component is opened. This event can be cancelled, which
-    * will prevent the popup from opening.
-    *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
-    *
-    * | cancelable | bubbles |
-    * |:----------:|:-------:|
-    * |     ✅      |    ❌    |
-    */
-  lazy val onBeforeOpen: EventProp[Ui5CustomEvent[Ref]] = new EventProp(
-    "before-open"
+  lazy val onBeforeClose: EventProp[Ui5CustomEvent[Ref] & EventDetail[PopupBeforeCloseEventDetail]] = new EventProp(
+    "before-close"
   )
+
+  /** Fired before the component is opened. This event can be cancelled, which will prevent the popup from opening.
+    *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ✅      |    ❌    |
+    */
+  lazy val onBeforeOpen: EventProp[Ui5CustomEvent[Ref]] = new EventProp("before-open")
 
   /** Fired after the component is closed.
     *
@@ -219,17 +191,14 @@ object Popover extends WebComponent("ui5-popover") {
   /** Defines the footer HTML Element.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="footer"`). Since you can't change the DOM order of slots
-    * when declaring them within a prop, it might prove beneficial to manually
-    * mount them as part of the component's children, especially when facing
-    * problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="footer"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val footer: Slot = new Slot("footer")
@@ -237,17 +206,14 @@ object Popover extends WebComponent("ui5-popover") {
   /** Defines the header HTML Element.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="header"`). Since you can't change the DOM order of slots
-    * when declaring them within a prop, it might prove beneficial to manually
-    * mount them as part of the component's children, especially when facing
-    * problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="header"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val header: Slot = new Slot("header")

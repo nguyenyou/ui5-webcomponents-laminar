@@ -3,9 +3,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchItemMod.{
-  SearchItem as SearchItemComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchItemMod.{SearchItem as SearchItemComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -37,8 +35,7 @@ object SearchItem extends WebComponent("ui5-search-item") {
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the heading text of the search item.
     */

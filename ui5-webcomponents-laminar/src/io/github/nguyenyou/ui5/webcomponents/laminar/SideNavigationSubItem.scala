@@ -13,13 +13,9 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object SideNavigationSubItem
-    extends WebComponent("ui5-side-navigation-sub-item") {
+object SideNavigationSubItem extends WebComponent("ui5-side-navigation-sub-item") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/SideNavigationSubItem.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSubItem.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -33,35 +29,29 @@ object SideNavigationSubItem
     *
     * **Note:** Items with "Action" design must not have sub-items.
     *
-    * **Note:** Available since
-    * [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of
+    * **Note:** Available since [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: "Default"
     */
-  lazy val design: HtmlAttr[SideNavigationItemDesign] =
-    htmlAttr("design", StringUnionCodec[SideNavigationItemDesign])
+  lazy val design: HtmlAttr[SideNavigationItemDesign] = htmlAttr("design", StringUnionCodec[SideNavigationItemDesign])
   type SideNavigationItemDesign = "Default" | "Action"
 
-  /** Defines whether the component is disabled. A disabled component can't be
-    * pressed or focused, and it is not in the tab chain.
+  /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
+    * tab chain.
     *
-    * **Note:** Available since
-    * [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0)
-    * of **@ui5/webcomponents-fiori**.
+    * **Note:** Available since [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0) of
+    * **@ui5/webcomponents-fiori**.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Defines the link target URI. Supports standard hyperlink behavior. If a
-    * JavaScript action should be triggered, this should not be set, but instead
-    * an event handler for the `click` event should be registered.
+  /** Defines the link target URI. Supports standard hyperlink behavior. If a JavaScript action should be triggered,
+    * this should not be set, but instead an event handler for the `click` event should be registered.
     *
-    * **Note:** Available since
-    * [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0)
-    * of **@ui5/webcomponents-fiori**.
+    * **Note:** Available since [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0) of
+    * **@ui5/webcomponents-fiori**.
     *
     * Default: undefined
     */
@@ -82,8 +72,7 @@ object SideNavigationSubItem
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the component target.
     *
@@ -97,9 +86,8 @@ object SideNavigationSubItem
     *
     * **This property must only be used when the `href` property is set.**
     *
-    * **Note:** Available since
-    * [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0)
-    * of **@ui5/webcomponents-fiori**.
+    * **Note:** Available since [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0) of
+    * **@ui5/webcomponents-fiori**.
     *
     * Default: undefined
     */
@@ -113,44 +101,36 @@ object SideNavigationSubItem
 
   /** Defines the tooltip of the component.
     *
-    * A tooltip attribute should be provided, in order to represent
-    * meaning/function, when the component is collapsed(icon only is
-    * visualized).
+    * A tooltip attribute should be provided, in order to represent meaning/function, when the component is
+    * collapsed(icon only is visualized).
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: undefined
     */
   lazy val tooltip: HtmlAttr[String] = htmlAttr("tooltip", StringAsIsCodec)
 
-  /** Indicates whether the navigation item is selectable. By default all items
-    * are selectable unless specifically marked as unselectable.
+  /** Indicates whether the navigation item is selectable. By default all items are selectable unless specifically
+    * marked as unselectable.
     *
-    * When a parent item is marked as unselectable, selecting it will only
-    * expand or collapse its sub-items. To improve user experience do not mix
-    * unselectable parent items with selectable parent items in a single side
-    * navigation.
+    * When a parent item is marked as unselectable, selecting it will only expand or collapse its sub-items. To improve
+    * user experience do not mix unselectable parent items with selectable parent items in a single side navigation.
     *
     * **Guidelines**:
     *   - External links should be unselectable.
-    *   - Items that trigger actions (with design "Action") should be
-    *     unselectable.
+    *   - Items that trigger actions (with design "Action") should be unselectable.
     *
-    * **Note:** Available since
-    * [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of
+    * **Note:** Available since [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: false
     */
-  lazy val unselectable: HtmlAttr[Boolean] =
-    htmlAttr("unselectable", BooleanAsAttrPresenceCodec)
+  lazy val unselectable: HtmlAttr[Boolean] = htmlAttr("unselectable", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
-  /** Fired when the component is activated either with a click/tap or by using
-    * the [Enter] or [Space] keys.
+  /** Fired when the component is activated either with a click/tap or by using the [Enter] or [Space] keys.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

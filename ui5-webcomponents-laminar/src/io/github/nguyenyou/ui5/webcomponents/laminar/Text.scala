@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesTextEmptyIndicatorModeMod.TextEmptyIndicatorMode
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTextMod.{
-  Text as TextComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTextMod.{Text as TextComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -26,8 +24,7 @@ object Text extends WebComponent("ui5-text") {
 
   /** Specifies if an empty indicator should be displayed when there is no text.
     *
-    * **Note:** Available since
-    * [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
+    * **Note:** Available since [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
     * **@ui5/webcomponents**.
     *
     * Default: "Off"
@@ -40,8 +37,7 @@ object Text extends WebComponent("ui5-text") {
     *
     * Default: Infinity
     */
-  lazy val maxLines: HtmlAttr[Double] =
-    htmlAttr("max-lines", DoubleAsStringCodec)
+  lazy val maxLines: HtmlAttr[Double] = htmlAttr("max-lines", DoubleAsStringCodec)
 
   // -- Events --
 

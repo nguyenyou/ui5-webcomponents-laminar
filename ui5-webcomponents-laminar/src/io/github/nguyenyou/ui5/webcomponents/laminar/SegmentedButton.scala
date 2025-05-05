@@ -27,20 +27,17 @@ object SegmentedButton extends WebComponent("ui5-segmented-button") {
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v1.0.3](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.0.3) of
+    * **Note:** Available since [v1.0.3](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.0.3) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines the component selection mode.
     *
-    * **Note:** Available since
-    * [v1.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: "Single"
     */
@@ -56,9 +53,8 @@ object SegmentedButton extends WebComponent("ui5-segmented-button") {
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onSelectionChange: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[SegmentedButtonSelectionChangeEventDetail]
-  ] = new EventProp("selection-change")
+  lazy val onSelectionChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[SegmentedButtonSelectionChangeEventDetail]] =
+    new EventProp("selection-change")
 
   // -- Slots --
 

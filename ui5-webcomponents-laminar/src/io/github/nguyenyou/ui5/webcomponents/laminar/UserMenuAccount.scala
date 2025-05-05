@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object UserMenuAccount extends WebComponent("ui5-user-menu-account") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/UserMenuAccount.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/UserMenuAccount.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -30,8 +27,7 @@ object UserMenuAccount extends WebComponent("ui5-user-menu-account") {
     *
     * Default: undefined
     */
-  lazy val avatarInitials: HtmlAttr[String] =
-    htmlAttr("avatar-initials", StringAsIsCodec)
+  lazy val avatarInitials: HtmlAttr[String] = htmlAttr("avatar-initials", StringAsIsCodec)
 
   /** Defines the avatar image url of the user.
     */
@@ -39,31 +35,26 @@ object UserMenuAccount extends WebComponent("ui5-user-menu-account") {
 
   /** Defines description of the user.
     */
-  lazy val description: HtmlAttr[String] =
-    htmlAttr("description", StringAsIsCodec)
+  lazy val description: HtmlAttr[String] = htmlAttr("description", StringAsIsCodec)
 
   /** Indicates whether a loading indicator should be shown.
     *
-    * **Note:** Available since
-    * [v2.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.9.0) of
+    * **Note:** Available since [v2.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.9.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: false
     */
-  lazy val loading: HtmlAttr[Boolean] =
-    htmlAttr("loading", BooleanAsAttrPresenceCodec)
+  lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
   /** Defines if the user is selected.
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines additional text of the user.
     */
-  lazy val subtitleText: HtmlAttr[String] =
-    htmlAttr("subtitle-text", StringAsIsCodec)
+  lazy val subtitleText: HtmlAttr[String] = htmlAttr("subtitle-text", StringAsIsCodec)
 
   /** Defines the title text of the user.
     */

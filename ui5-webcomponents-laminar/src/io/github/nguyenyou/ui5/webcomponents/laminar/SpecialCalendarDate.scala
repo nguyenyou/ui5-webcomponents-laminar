@@ -28,16 +28,12 @@ object SpecialCalendarDate extends WebComponent("ui5-special-date") {
     *
     * Default: "None"
     */
-  lazy val tpe: HtmlAttr[CalendarLegendItemType] =
-    htmlAttr("type", StringUnionCodec[CalendarLegendItemType])
-  type CalendarLegendItemType = "Today" | "Selected" | "None" | "Working" |
-    "NonWorking" | "Type01" | "Type02" | "Type03" | "Type04" | "Type05" |
-    "Type06" | "Type07" | "Type08" | "Type09" | "Type10" | "Type11" | "Type12" |
-    "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" |
-    "Type20"
+  lazy val tpe: HtmlAttr[CalendarLegendItemType] = htmlAttr("type", StringUnionCodec[CalendarLegendItemType])
+  type CalendarLegendItemType = "Today" | "Selected" | "None" | "Working" | "NonWorking" | "Type01" | "Type02" |
+    "Type03" | "Type04" | "Type05" | "Type06" | "Type07" | "Type08" | "Type09" | "Type10" | "Type11" | "Type12" |
+    "Type13" | "Type14" | "Type15" | "Type16" | "Type17" | "Type18" | "Type19" | "Type20"
 
-  /** The date formatted according to the `formatPattern` property of the
-    * `Calendar` that hosts the component.
+  /** The date formatted according to the `formatPattern` property of the `Calendar` that hosts the component.
     */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
 

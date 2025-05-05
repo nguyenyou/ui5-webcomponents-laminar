@@ -12,13 +12,9 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object NotificationListGroupItem
-    extends WebComponent("ui5-li-notification-group") {
+object NotificationListGroupItem extends WebComponent("ui5-li-notification-group") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/NotificationListGroupItem.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListGroupItem.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -32,14 +28,12 @@ object NotificationListGroupItem
     *
     * Default: false
     */
-  lazy val collapsed: HtmlAttr[Boolean] =
-    htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
+  lazy val collapsed: HtmlAttr[Boolean] = htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
 
-  /** Defines whether the component will have growing capability by pressing a
-    * `More` button. When button is pressed `load-more` event will be fired.
+  /** Defines whether the component will have growing capability by pressing a `More` button. When button is pressed
+    * `load-more` event will be fired.
     *
-    * **Note:** Available since
-    * [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
+    * **Note:** Available since [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: "None"
@@ -52,26 +46,21 @@ object NotificationListGroupItem
     *
     * Default: false
     */
-  lazy val loading: HtmlAttr[Boolean] =
-    htmlAttr("loading", BooleanAsAttrPresenceCodec)
+  lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
-  /** Defines the delay in milliseconds, after which the busy indicator will
-    * show up for this component.
+  /** Defines the delay in milliseconds, after which the busy indicator will show up for this component.
     *
     * Default: 1000
     */
-  lazy val loadingDelay: HtmlAttr[Double] =
-    htmlAttr("loading-delay", DoubleAsStringCodec)
+  lazy val loadingDelay: HtmlAttr[Double] = htmlAttr("loading-delay", DoubleAsStringCodec)
 
   /** Defines if the `notification` is new or has been already read.
     *
-    * **Note:** if set to `false` the `titleText` has bold font, if set to true
-    * \- it has a normal font.
+    * **Note:** if set to `false` the `titleText` has bold font, if set to true - it has a normal font.
     *
     * Default: false
     */
-  lazy val read: HtmlAttr[Boolean] =
-    htmlAttr("read", BooleanAsAttrPresenceCodec)
+  lazy val read: HtmlAttr[Boolean] = htmlAttr("read", BooleanAsAttrPresenceCodec)
 
   /** Defines the `titleText` of the item.
     *
@@ -83,20 +72,16 @@ object NotificationListGroupItem
 
   /** Fired when additional items are requested.
     *
-    * **Note:** Available since
-    * [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
+    * **Note:** Available since [v2.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.2.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onLoadMore: EventProp[Ui5CustomEvent[Ref]] = new EventProp(
-    "load-more"
-  )
+  lazy val onLoadMore: EventProp[Ui5CustomEvent[Ref]] = new EventProp("load-more")
 
-  /** Fired when the `NotificationListGroupItem` is expanded/collapsed by user
-    * interaction.
+  /** Fired when the `NotificationListGroupItem` is expanded/collapsed by user interaction.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

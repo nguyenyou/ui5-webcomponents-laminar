@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object SideNavigationGroup extends WebComponent("ui5-side-navigation-group") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/SideNavigationGroup.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -26,24 +23,21 @@ object SideNavigationGroup extends WebComponent("ui5-side-navigation-group") {
 
   // -- Attributes --
 
-  /** Defines whether the component is disabled. A disabled component can't be
-    * pressed or focused, and it is not in the tab chain.
+  /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
+    * tab chain.
     *
-    * **Note:** Available since
-    * [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0)
-    * of **@ui5/webcomponents-fiori**.
+    * **Note:** Available since [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0) of
+    * **@ui5/webcomponents-fiori**.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
   /** Defines if the item is expanded
     *
     * Default: false
     */
-  lazy val expanded: HtmlAttr[Boolean] =
-    htmlAttr("expanded", BooleanAsAttrPresenceCodec)
+  lazy val expanded: HtmlAttr[Boolean] = htmlAttr("expanded", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the item.
     *
@@ -53,12 +47,10 @@ object SideNavigationGroup extends WebComponent("ui5-side-navigation-group") {
 
   /** Defines the tooltip of the component.
     *
-    * A tooltip attribute should be provided, in order to represent
-    * meaning/function, when the component is collapsed(icon only is
-    * visualized).
+    * A tooltip attribute should be provided, in order to represent meaning/function, when the component is
+    * collapsed(icon only is visualized).
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: undefined

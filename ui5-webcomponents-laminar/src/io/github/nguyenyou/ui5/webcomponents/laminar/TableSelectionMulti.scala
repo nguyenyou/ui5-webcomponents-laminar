@@ -23,8 +23,7 @@ object TableSelectionMulti extends WebComponent("ui5-table-selection-multi") {
 
   // -- Attributes --
 
-  /** Defines the `row-key` values of selected rows, with each value separated
-    * by a space.
+  /** Defines the `row-key` values of selected rows, with each value separated by a space.
     *
     * Default: undefined
     */

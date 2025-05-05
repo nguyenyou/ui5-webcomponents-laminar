@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.distButtonStateMod.{
-  ButtonState as ButtonStateComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.distButtonStateMod.{ButtonState as ButtonStateComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -24,8 +22,8 @@ object ButtonState extends WebComponent("ui5-ai-button-state") {
 
   // -- Attributes --
 
-  /** Defines the icon to be displayed as graphical element within the component
-    * after the text. The SAP-icons font provides numerous options.
+  /** Defines the icon to be displayed as graphical element within the component after the text. The SAP-icons font
+    * provides numerous options.
     *
     * **Example:**
     *
@@ -34,11 +32,10 @@ object ButtonState extends WebComponent("ui5-ai-button-state") {
     *
     * Default: undefined
     */
-  lazy val endIcon: HtmlAttr[IconName] =
-    htmlAttr("end-icon", IconName.AsStringCodec)
+  lazy val endIcon: HtmlAttr[IconName] = htmlAttr("end-icon", IconName.AsStringCodec)
 
-  /** Defines the icon to be displayed as graphical element within the component
-    * before the text. The SAP-icons font provides numerous options.
+  /** Defines the icon to be displayed as graphical element within the component before the text. The SAP-icons font
+    * provides numerous options.
     *
     * **Example:**
     *
@@ -57,14 +54,12 @@ object ButtonState extends WebComponent("ui5-ai-button-state") {
 
   /** Defines if the component is in split button mode.
     *
-    * **Note:** Available since
-    * [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
+    * **Note:** Available since [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
     * **@ui5/webcomponents-ai**.
     *
     * Default: false
     */
-  lazy val showArrowButton: HtmlAttr[Boolean] =
-    htmlAttr("show-arrow-button", BooleanAsAttrPresenceCodec)
+  lazy val showArrowButton: HtmlAttr[Boolean] = htmlAttr("show-arrow-button", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the button in this state.
     *

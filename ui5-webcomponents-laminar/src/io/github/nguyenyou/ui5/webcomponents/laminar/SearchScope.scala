@@ -27,8 +27,7 @@ object SearchScope extends WebComponent("ui5-search-scope") {
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the component.
     */

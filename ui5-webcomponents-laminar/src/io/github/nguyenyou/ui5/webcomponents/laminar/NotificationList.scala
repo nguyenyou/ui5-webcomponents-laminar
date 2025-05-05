@@ -18,10 +18,7 @@ import scala.scalajs.js.annotation.*
 
 object NotificationList extends WebComponent("ui5-notification-list") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/NotificationList.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationList.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -35,49 +32,44 @@ object NotificationList extends WebComponent("ui5-notification-list") {
     *
     * Default: undefined
     */
-  lazy val noDataText: HtmlAttr[String] =
-    htmlAttr("no-data-text", StringAsIsCodec)
+  lazy val noDataText: HtmlAttr[String] = htmlAttr("no-data-text", StringAsIsCodec)
 
   // -- Events --
 
   /** Fired when an item is clicked.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onItemClick: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[NotificationItemClickEventDetail]
-  ] = new EventProp("item-click")
+  lazy val onItemClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[NotificationItemClickEventDetail]] = new EventProp(
+    "item-click"
+  )
 
   /** Fired when the `Close` button of any item is clicked.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onItemClose: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[NotificationItemCloseEventDetail]
-  ] = new EventProp("item-close")
+  lazy val onItemClose: EventProp[Ui5CustomEvent[Ref] & EventDetail[NotificationItemCloseEventDetail]] = new EventProp(
+    "item-close"
+  )
 
   /** Fired when an item is toggled.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onItemToggle: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[NotificationItemToggleEventDetail]
-  ] = new EventProp("item-toggle")
+  lazy val onItemToggle: EventProp[Ui5CustomEvent[Ref] & EventDetail[NotificationItemToggleEventDetail]] =
+    new EventProp("item-toggle")
 
   // -- Slots --
 

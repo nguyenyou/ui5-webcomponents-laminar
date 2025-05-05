@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.JSGlobal
 
 @js.native
 @JSGlobal
-class Ui5CustomEvent[T <: EventTarget](
-    typeArg: String,
-    init: js.UndefOr[EventInit] = js.undefined
-) extends dom.Event(typeArg, init) {
+class Ui5CustomEvent[T <: EventTarget](typeArg: String, init: js.UndefOr[EventInit] = js.undefined)
+    extends dom.Event(typeArg, init) {
 
   override def target: T = js.native
 

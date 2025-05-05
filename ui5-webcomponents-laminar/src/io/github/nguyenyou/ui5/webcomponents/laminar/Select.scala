@@ -7,9 +7,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.{
   SelectChangeEventDetail,
   SelectLiveChangeEventDetail
 }
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.{
-  Select as SelectComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.{Select as SelectComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -31,15 +29,13 @@ object Select extends WebComponent("ui5-select") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the select.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines whether the component is in disabled state.
     *
@@ -47,14 +43,11 @@ object Select extends WebComponent("ui5-select") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Determines the name by which the component will be identified upon
-    * submission in an HTML form.
+  /** Determines the name by which the component will be identified upon submission in an HTML form.
     *
-    * **Note:** This property is only applicable within the context of an HTML
-    * Form element.
+    * **Note:** This property is only applicable within the context of an HTML Form element.
     *
     * Default: undefined
     */
@@ -62,29 +55,24 @@ object Select extends WebComponent("ui5-select") {
 
   /** Defines whether the component is read-only.
     *
-    * **Note:** A read-only component is not editable, but still provides visual
-    * feedback upon user interaction.
+    * **Note:** A read-only component is not editable, but still provides visual feedback upon user interaction.
     *
-    * **Note:** Available since
-    * [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val readonly: HtmlAttr[Boolean] =
-    htmlAttr("readonly", BooleanAsAttrPresenceCodec)
+  lazy val readonly: HtmlAttr[Boolean] = htmlAttr("readonly", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is required.
     *
     * Default: false
     */
-  lazy val required: HtmlAttr[Boolean] =
-    htmlAttr("required", BooleanAsAttrPresenceCodec)
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines the tooltip of the select.
     *
-    * **Note:** Available since
-    * [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
@@ -93,20 +81,17 @@ object Select extends WebComponent("ui5-select") {
 
   /** Defines the value of the component:
     *
-    *   - when get - returns the value of the component or the value/text
-    *     content of the selected option.
-    *   - when set - selects the option with matching `value` property or text
-    *     content.
+    *   - when get - returns the value of the component or the value/text content of the selected option.
+    *   - when set - selects the option with matching `value` property or text content.
     *
-    * **Note:** Use either the Select's value or the Options' selected property.
-    * Mixed usage could result in unexpected behavior.
+    * **Note:** Use either the Select's value or the Options' selected property. Mixed usage could result in unexpected
+    * behavior.
     *
-    * **Note:** If the given value does not match any existing option, no option
-    * will be selected and the Select component will be displayed as empty.
+    * **Note:** If the given value does not match any existing option, no option will be selected and the Select
+    * component will be displayed as empty.
     *
-    * **Note:** Available since
-    * [v1.20.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.20.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.20.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.20.0) of
+    * **@ui5/webcomponents**.
     */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
 
@@ -114,25 +99,20 @@ object Select extends WebComponent("ui5-select") {
     *
     * Default: "None"
     */
-  lazy val valueState: HtmlAttr[ValueState] =
-    htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" |
-    "Information"
+  lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
+  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 
   /** Fired when the selected option changes.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onChange
-      : EventProp[Ui5CustomEvent[Ref] & EventDetail[SelectChangeEventDetail]] =
-    new EventProp("change")
+  lazy val onChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[SelectChangeEventDetail]] = new EventProp("change")
 
   /** Fired after the component's dropdown menu closes.
     *
@@ -142,21 +122,19 @@ object Select extends WebComponent("ui5-select") {
     */
   lazy val onClose: EventProp[Ui5CustomEvent[Ref]] = new EventProp("close")
 
-  /** Fired when the user navigates through the options, but the selection is
-    * not finalized, or when pressing the ESC key to revert the current
-    * selection.
+  /** Fired when the user navigates through the options, but the selection is not finalized, or when pressing the ESC
+    * key to revert the current selection.
     *
-    * **Note:** Available since
-    * [v1.17.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.17.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.17.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.17.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onLiveChange: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[SelectLiveChangeEventDetail]
-  ] = new EventProp("live-change")
+  lazy val onLiveChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[SelectLiveChangeEventDetail]] = new EventProp(
+    "live-change"
+  )
 
   /** Fired after the component's dropdown menu opens.
     *
@@ -168,60 +146,48 @@ object Select extends WebComponent("ui5-select") {
 
   // -- Slots --
 
-  /** Defines the HTML element that will be displayed in the component input
-    * part, representing the selected option.
+  /** Defines the HTML element that will be displayed in the component input part, representing the selected option.
     *
-    * **Note:** If not specified and `OptionCustom` is used, either the option's
-    * `display-text` or its textContent will be displayed.
+    * **Note:** If not specified and `OptionCustom` is used, either the option's `display-text` or its textContent will
+    * be displayed.
     *
-    * **Note:** If not specified and `Option` is used, the option's textContent
-    * will be displayed.
+    * **Note:** If not specified and `Option` is used, the option's textContent will be displayed.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="label"`). Since you can't change the DOM order of slots
-    * when declaring them within a prop, it might prove beneficial to manually
-    * mount them as part of the component's children, especially when facing
-    * problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="label"`). Since
+    * you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to manually
+    * mount them as part of the component's children, especially when facing problems with the reading order of screen
+    * readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     *
-    * **Note:** Available since
-    * [v1.17.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.17.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.17.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.17.0) of
+    * **@ui5/webcomponents**.
     */
   lazy val label: Slot = new Slot("label")
 
-  /** Defines the value state message that will be displayed as pop up under the
-    * component.
+  /** Defines the value state message that will be displayed as pop up under the component.
     *
-    * **Note:** If not specified, a default text (in the respective language)
-    * will be displayed.
+    * **Note:** If not specified, a default text (in the respective language) will be displayed.
     *
-    * **Note:** The `valueStateMessage` would be displayed, when the component
-    * is in `Information`, `Critical` or `Negative` value state.
+    * **Note:** The `valueStateMessage` would be displayed, when the component is in `Information`, `Critical` or
+    * `Negative` value state.
     *
-    * **Note:** If the component has `suggestionItems`, the `valueStateMessage`
-    * would be displayed as part of the same popover, if used on desktop, or
-    * dialog - on phone.
+    * **Note:** If the component has `suggestionItems`, the `valueStateMessage` would be displayed as part of the same
+    * popover, if used on desktop, or dialog - on phone.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="valueStateMessage"`). Since you can't change the DOM
-    * order of slots when declaring them within a prop, it might prove
-    * beneficial to manually mount them as part of the component's children,
-    * especially when facing problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute
+    * (`slot="valueStateMessage"`). Since you can't change the DOM order of slots when declaring them within a prop, it
+    * might prove beneficial to manually mount them as part of the component's children, especially when facing problems
+    * with the reading order of screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val valueStateMessage: Slot = new Slot("valueStateMessage")

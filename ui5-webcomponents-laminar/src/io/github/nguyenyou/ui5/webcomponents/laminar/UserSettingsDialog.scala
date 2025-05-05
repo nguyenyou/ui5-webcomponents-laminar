@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation.*
 
 object UserSettingsDialog extends WebComponent("ui5-user-settings-dialog") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/UserSettingsDialog.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsDialog.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -31,15 +28,13 @@ object UserSettingsDialog extends WebComponent("ui5-user-settings-dialog") {
     *
     * Default: undefined
     */
-  lazy val headerText: HtmlAttr[String] =
-    htmlAttr("header-text", StringAsIsCodec)
+  lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
   /** Defines, if the User Settings Dialog is opened.
     *
     * Default: false
     */
-  lazy val open: HtmlAttr[Boolean] =
-    htmlAttr("open", BooleanAsAttrPresenceCodec)
+  lazy val open: HtmlAttr[Boolean] = htmlAttr("open", BooleanAsAttrPresenceCodec)
 
   /** Defines if the Search Field would be displayed.
     *
@@ -47,23 +42,19 @@ object UserSettingsDialog extends WebComponent("ui5-user-settings-dialog") {
     *
     * Default: false
     */
-  lazy val showSearchField: HtmlAttr[Boolean] =
-    htmlAttr("show-search-field", BooleanAsAttrPresenceCodec)
+  lazy val showSearchField: HtmlAttr[Boolean] = htmlAttr("show-search-field", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
   /** Fired before the settings dialog is closed.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ❌    |
     */
-  lazy val onBeforeClose: EventProp[Ui5CustomEvent[Ref]] = new EventProp(
-    "before-close"
-  )
+  lazy val onBeforeClose: EventProp[Ui5CustomEvent[Ref]] = new EventProp("before-close")
 
   /** Fired when a settings dialog is closed.
     *
@@ -83,33 +74,28 @@ object UserSettingsDialog extends WebComponent("ui5-user-settings-dialog") {
 
   /** Fired when an item is selected.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ❌    |
     */
-  lazy val onSelectionChange: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[UserSettingsItemSelectEventDetail]
-  ] = new EventProp("selection-change")
+  lazy val onSelectionChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[UserSettingsItemSelectEventDetail]] =
+    new EventProp("selection-change")
 
   // -- Slots --
 
   /** Defines the fixed user settings items.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="fixedItems"`). Since you can't change the DOM order of
-    * slots when declaring them within a prop, it might prove beneficial to
-    * manually mount them as part of the component's children, especially when
-    * facing problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="fixedItems"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val fixedItems: Slot = new Slot("fixedItems")

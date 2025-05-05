@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesWrappingTypeMod.WrappingType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLabelMod.{
-  Label as LabelComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLabelMod.{Label as LabelComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -34,14 +32,12 @@ object Label extends WebComponent("ui5-label") {
 
   /** Defines whether an asterisk character is added to the component text.
     *
-    * **Note:** Usually indicates that user input (bound with the `for`
-    * property) is required. In that case the `required` property of the
-    * corresponding input should also be set.
+    * **Note:** Usually indicates that user input (bound with the `for` property) is required. In that case the
+    * `required` property of the corresponding input should also be set.
     *
     * Default: false
     */
-  lazy val required: HtmlAttr[Boolean] =
-    htmlAttr("required", BooleanAsAttrPresenceCodec)
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines whether colon is added to the component text.
     *
@@ -49,19 +45,15 @@ object Label extends WebComponent("ui5-label") {
     *
     * Default: false
     */
-  lazy val showColon: HtmlAttr[Boolean] =
-    htmlAttr("show-colon", BooleanAsAttrPresenceCodec)
+  lazy val showColon: HtmlAttr[Boolean] = htmlAttr("show-colon", BooleanAsAttrPresenceCodec)
 
-  /** Defines how the text of a component will be displayed when there is not
-    * enough space.
+  /** Defines how the text of a component will be displayed when there is not enough space.
     *
-    * **Note:** for option "Normal" the text will wrap and the words will not be
-    * broken based on hyphenation.
+    * **Note:** for option "Normal" the text will wrap and the words will not be broken based on hyphenation.
     *
     * Default: "Normal"
     */
-  lazy val wrappingType: HtmlAttr[WrappingType] =
-    htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
+  lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
   type WrappingType = "None" | "Normal"
 
   // -- Events --

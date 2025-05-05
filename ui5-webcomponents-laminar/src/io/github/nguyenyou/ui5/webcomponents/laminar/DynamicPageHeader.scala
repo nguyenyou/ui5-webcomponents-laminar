@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object DynamicPageHeader extends WebComponent("ui5-dynamic-page-header") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/DynamicPageHeader.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPageHeader.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 

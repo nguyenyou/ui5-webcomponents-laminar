@@ -9,12 +9,10 @@ import scala.annotation.targetName
 
 /** A [[Slot]] represents a special child component of web components.
   *
-  * Many web components reserve a `slot` attribute for some of their children,
-  * with a particular meaning.
+  * Many web components reserve a `slot` attribute for some of their children, with a particular meaning.
   *
-  * In order to have compile-time fixed slots for your elements, you can define
-  * a variable with their name, and it will allow you to attach child in a
-  * simple manner.
+  * In order to have compile-time fixed slots for your elements, you can define a variable with their name, and it will
+  * allow you to attach child in a simple manner.
   */
 final class Slot(name: String) {
 
@@ -22,16 +20,12 @@ final class Slot(name: String) {
 
   def :=(element: HtmlElement): Inserter = <--(Val(element.amend(slot := name)))
 
-  def :=(elements: Seq[HtmlElement])(using DummyImplicit): Inserter = <--(
-    Val(elements)
-  )
+  def :=(elements: Seq[HtmlElement])(using DummyImplicit): Inserter = <--(Val(elements))
 
   def <--(elementObservable: Observable[HtmlElement]): Inserter =
     child <-- elementObservable.map(_.amend(slot := name))
 
-  def <--(elementsObservable: Observable[Seq[HtmlElement]])(using
-      DummyImplicit
-  ): Inserter =
+  def <--(elementsObservable: Observable[Seq[HtmlElement]])(using DummyImplicit): Inserter =
     children <-- elementsObservable.map(_.map(_.amend(slot := name)))
 
 }

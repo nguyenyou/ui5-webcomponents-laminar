@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object ProductSwitchItem extends WebComponent("ui5-product-switch-item") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/ProductSwitchItem.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/ProductSwitchItem.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -26,8 +23,7 @@ object ProductSwitchItem extends WebComponent("ui5-product-switch-item") {
 
   // -- Attributes --
 
-  /** Defines the icon to be displayed as a graphical element within the
-    * component.
+  /** Defines the icon to be displayed as a graphical element within the component.
     *
     * Example:
     *
@@ -44,8 +40,7 @@ object ProductSwitchItem extends WebComponent("ui5-product-switch-item") {
     *
     * Default: undefined
     */
-  lazy val subtitleText: HtmlAttr[String] =
-    htmlAttr("subtitle-text", StringAsIsCodec)
+  lazy val subtitleText: HtmlAttr[String] = htmlAttr("subtitle-text", StringAsIsCodec)
 
   /** Defines a target where the `targetSrc` content must be open.
     *
@@ -57,8 +52,7 @@ object ProductSwitchItem extends WebComponent("ui5-product-switch-item") {
     *   - `_parent`
     *   - `_search`
     *
-    * **Note:** By default target will be open in the same frame as it was
-    * clicked.
+    * **Note:** By default target will be open in the same frame as it was clicked.
     *
     * Default: undefined
     */
@@ -78,8 +72,7 @@ object ProductSwitchItem extends WebComponent("ui5-product-switch-item") {
 
   // -- Events --
 
-  /** Fired when the `ProductSwitchItem` is activated either with a click/tap or
-    * by using the Enter or Space key.
+  /** Fired when the `ProductSwitchItem` is activated either with a click/tap or by using the Enter or Space key.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

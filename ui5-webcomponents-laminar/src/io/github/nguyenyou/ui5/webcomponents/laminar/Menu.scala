@@ -8,9 +8,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuMod.{
   MenuBeforeOpenEventDetail,
   MenuItemClickEventDetail
 }
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuMod.{
-  Menu as MenuComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuMod.{Menu as MenuComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -32,53 +30,42 @@ object Menu extends WebComponent("ui5-menu") {
     *
     * Default: undefined
     */
-  lazy val headerText: HtmlAttr[String] =
-    htmlAttr("header-text", StringAsIsCodec)
+  lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
-  /** Defines if a loading indicator would be displayed inside the corresponding
-    * ui5-menu popover.
+  /** Defines if a loading indicator would be displayed inside the corresponding ui5-menu popover.
     *
-    * **Note:** Available since
-    * [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val loading: HtmlAttr[Boolean] =
-    htmlAttr("loading", BooleanAsAttrPresenceCodec)
+  lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
-  /** Defines the delay in milliseconds, after which the loading indicator will
-    * be displayed inside the corresponding ui5-menu popover..
+  /** Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding
+    * ui5-menu popover..
     *
-    * **Note:** Available since
-    * [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: 1000
     */
-  lazy val loadingDelay: HtmlAttr[Double] =
-    htmlAttr("loading-delay", DoubleAsStringCodec)
+  lazy val loadingDelay: HtmlAttr[Double] = htmlAttr("loading-delay", DoubleAsStringCodec)
 
   /** Indicates if the menu is open
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val open: HtmlAttr[Boolean] =
-    htmlAttr("open", BooleanAsAttrPresenceCodec)
+  lazy val open: HtmlAttr[Boolean] = htmlAttr("open", BooleanAsAttrPresenceCodec)
 
-  /** Defines the ID or DOM Reference of the element at which the menu is shown.
-    * When using this attribute in a declarative way, you must only use the `id`
-    * (as a string) of the element at which you want to show the popover. You
-    * can only set the `opener` attribute to a DOM Reference when using
-    * JavaScript.
+  /** Defines the ID or DOM Reference of the element at which the menu is shown. When using this attribute in a
+    * declarative way, you must only use the `id` (as a string) of the element at which you want to show the popover.
+    * You can only set the `opener` attribute to a DOM Reference when using JavaScript.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
@@ -86,49 +73,42 @@ object Menu extends WebComponent("ui5-menu") {
 
   // -- Events --
 
-  /** Fired before the menu is closed. This event can be cancelled, which will
-    * prevent the menu from closing.
+  /** Fired before the menu is closed. This event can be cancelled, which will prevent the menu from closing.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onBeforeClose: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[MenuBeforeCloseEventDetail]
-  ] = new EventProp("before-close")
+  lazy val onBeforeClose: EventProp[Ui5CustomEvent[Ref] & EventDetail[MenuBeforeCloseEventDetail]] = new EventProp(
+    "before-close"
+  )
 
-  /** Fired before the menu is opened. This event can be cancelled, which will
-    * prevent the menu from opening.
+  /** Fired before the menu is opened. This event can be cancelled, which will prevent the menu from opening.
     *
     * **Note:** Since 1.14.0 the event is also fired before a sub-menu opens.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onBeforeOpen: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[MenuBeforeOpenEventDetail]
-  ] = new EventProp("before-open")
+  lazy val onBeforeOpen: EventProp[Ui5CustomEvent[Ref] & EventDetail[MenuBeforeOpenEventDetail]] = new EventProp(
+    "before-open"
+  )
 
   /** Fired after the menu is closed.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
@@ -138,25 +118,22 @@ object Menu extends WebComponent("ui5-menu") {
 
   /** Fired when an item is being clicked.
     *
-    * **Note:** Since 1.17.0 the event is preventable, allowing the menu to
-    * remain open after an item is pressed.
+    * **Note:** Since 1.17.0 the event is preventable, allowing the menu to remain open after an item is pressed.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ❌    |
     */
-  lazy val onItemClick
-      : EventProp[Ui5CustomEvent[Ref] & EventDetail[MenuItemClickEventDetail]] =
-    new EventProp("item-click")
+  lazy val onItemClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[MenuItemClickEventDetail]] = new EventProp(
+    "item-click"
+  )
 
   /** Fired after the menu is opened.
     *
-    * **Note:** Available since
-    * [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

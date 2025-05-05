@@ -12,13 +12,9 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object TableHeaderCellActionAI
-    extends WebComponent("ui5-table-header-cell-action-ai") {
+object TableHeaderCellActionAI extends WebComponent("ui5-table-header-cell-action-ai") {
 
-  @JSImport(
-    "@ui5/webcomponents/dist/TableHeaderCellActionAI.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents/dist/TableHeaderCellActionAI.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -32,17 +28,16 @@ object TableHeaderCellActionAI
 
   /** Fired when a header cell action is clicked.
     *
-    * **Note:** Available since
-    * [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
     * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onClick: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[TableHeaderCellActionClickEventDetail]
-  ] = new EventProp("click")
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[TableHeaderCellActionClickEventDetail]] = new EventProp(
+    "click"
+  )
 
   // -- Slots --
 

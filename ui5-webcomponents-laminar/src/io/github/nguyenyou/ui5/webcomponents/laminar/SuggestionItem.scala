@@ -27,8 +27,7 @@ object SuggestionItem extends WebComponent("ui5-suggestion-item") {
     *
     * Default: undefined
     */
-  lazy val additionalText: HtmlAttr[String] =
-    htmlAttr("additional-text", StringAsIsCodec)
+  lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
 
   /** Defines the text of the component.
     *

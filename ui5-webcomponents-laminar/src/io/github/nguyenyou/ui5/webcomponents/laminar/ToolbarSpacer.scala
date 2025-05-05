@@ -24,29 +24,24 @@ object ToolbarSpacer extends WebComponent("ui5-toolbar-spacer") {
 
   // -- Attributes --
 
-  /** Property used to define the access of the item to the overflow Popover. If
-    * "NeverOverflow" option is set, the item never goes in the Popover, if
-    * "AlwaysOverflow" - it never comes out of it.
+  /** Property used to define the access of the item to the overflow Popover. If "NeverOverflow" option is set, the item
+    * never goes in the Popover, if "AlwaysOverflow" - it never comes out of it.
     *
     * Default: "Default"
     */
   lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
     htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" |
-    "AlwaysOverflow"
+  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" | "AlwaysOverflow"
 
-  /** Defines if the toolbar overflow popup should close upon intereaction with
-    * the item. It will close by default.
+  /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
     *
     * Default: false
     */
-  lazy val preventOverflowClosing: HtmlAttr[Boolean] =
-    htmlAttr("prevent-overflow-closing", BooleanAsAttrPresenceCodec)
+  lazy val preventOverflowClosing: HtmlAttr[Boolean] = htmlAttr("prevent-overflow-closing", BooleanAsAttrPresenceCodec)
 
   /** Defines the width of the spacer.
     *
-    * **Note:** all CSS sizes are supported - 'percentage', 'px', 'rem', 'auto',
-    * etc.
+    * **Note:** all CSS sizes are supported - 'percentage', 'px', 'rem', 'auto', etc.
     *
     * Default: undefined
     */

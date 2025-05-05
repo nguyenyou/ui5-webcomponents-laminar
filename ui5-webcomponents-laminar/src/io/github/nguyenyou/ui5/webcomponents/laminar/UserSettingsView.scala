@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object UserSettingsView extends WebComponent("ui5-user-settings-view") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/UserSettingsView.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsView.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -26,22 +23,18 @@ object UserSettingsView extends WebComponent("ui5-user-settings-view") {
 
   // -- Attributes --
 
-  /** Indicates whether the view is secondary. It is relevant only if the view
-    * is used in `pages` slot of `UserSettingsItem` and controls the visibility
-    * of the back button.
+  /** Indicates whether the view is secondary. It is relevant only if the view is used in `pages` slot of
+    * `UserSettingsItem` and controls the visibility of the back button.
     *
     * Default: false
     */
-  lazy val secondary: HtmlAttr[Boolean] =
-    htmlAttr("secondary", BooleanAsAttrPresenceCodec)
+  lazy val secondary: HtmlAttr[Boolean] = htmlAttr("secondary", BooleanAsAttrPresenceCodec)
 
-  /** Defines whether the view is selected. There can be just one selected view
-    * at a time.
+  /** Defines whether the view is selected. There can be just one selected view at a time.
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the title text of the user settings view.
     *

@@ -23,16 +23,14 @@ object CalendarDateRange extends WebComponent("ui5-date-range") {
 
   // -- Attributes --
 
-  /** End of date range formatted according to the `formatPattern` property of
-    * the `Calendar` that hosts the component.
+  /** End of date range formatted according to the `formatPattern` property of the `Calendar` that hosts the component.
     */
   lazy val endValue: HtmlAttr[String] = htmlAttr("end-value", StringAsIsCodec)
 
-  /** Start of date range formatted according to the `formatPattern` property of
-    * the `Calendar` that hosts the component.
+  /** Start of date range formatted according to the `formatPattern` property of the `Calendar` that hosts the
+    * component.
     */
-  lazy val startValue: HtmlAttr[String] =
-    htmlAttr("start-value", StringAsIsCodec)
+  lazy val startValue: HtmlAttr[String] = htmlAttr("start-value", StringAsIsCodec)
 
   // -- Events --
 

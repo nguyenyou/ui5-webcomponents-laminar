@@ -23,8 +23,7 @@ object SuggestionItemCustom extends WebComponent("ui5-suggestion-item-custom") {
 
   // -- Attributes --
 
-  /** Defines the text of the `SuggestionItemCustom`. **Note:** The text
-    * property is considered only for autocomplete.
+  /** Defines the text of the `SuggestionItemCustom`. **Note:** The text property is considered only for autocomplete.
     *
     * Default: undefined
     */

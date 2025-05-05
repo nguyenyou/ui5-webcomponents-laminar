@@ -30,41 +30,33 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the component.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines the action design.
     *
     * Default: "Default"
     */
-  lazy val design: HtmlAttr[ButtonDesign] =
-    htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" |
-    "Emphasized" | "Attention"
+  lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
+  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
   /** Defines if the action is disabled.
     *
-    * **Note:** a disabled action can't be pressed or focused, and it is not in
-    * the tab chain.
+    * **Note:** a disabled action can't be pressed or focused, and it is not in the tab chain.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Defines the icon, displayed as graphical element within the component
-    * after the button text.
+  /** Defines the icon, displayed as graphical element within the component after the button text.
     *
-    * **Note:** It is highly recommended to use `endIcon` property only together
-    * with `icon` and/or `text` properties. Usage of `endIcon` only should be
-    * avoided.
+    * **Note:** It is highly recommended to use `endIcon` property only together with `icon` and/or `text` properties.
+    * Usage of `endIcon` only should be avoided.
     *
     * The SAP-icons font provides numerous options.
     *
@@ -73,37 +65,31 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
     *
     * Default: undefined
     */
-  lazy val endIcon: HtmlAttr[IconName] =
-    htmlAttr("end-icon", IconName.AsStringCodec)
+  lazy val endIcon: HtmlAttr[IconName] = htmlAttr("end-icon", IconName.AsStringCodec)
 
   /** Defines the `icon` source URI.
     *
-    * **Note:** SAP-icons font provides numerous buil-in icons. To find all the
-    * available icons, see the [Icon
+    * **Note:** SAP-icons font provides numerous buil-in icons. To find all the available icons, see the [Icon
     * Explorer](https://sdk.openui5.org/test-resources/sap/m/demokit/iconExplorer/webapp/index.html).
     *
     * Default: undefined
     */
   lazy val icon: HtmlAttr[IconName] = htmlAttr("icon", IconName.AsStringCodec)
 
-  /** Property used to define the access of the item to the overflow Popover. If
-    * "NeverOverflow" option is set, the item never goes in the Popover, if
-    * "AlwaysOverflow" - it never comes out of it.
+  /** Property used to define the access of the item to the overflow Popover. If "NeverOverflow" option is set, the item
+    * never goes in the Popover, if "AlwaysOverflow" - it never comes out of it.
     *
     * Default: "Default"
     */
   lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
     htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" |
-    "AlwaysOverflow"
+  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" | "AlwaysOverflow"
 
-  /** Defines if the toolbar overflow popup should close upon intereaction with
-    * the item. It will close by default.
+  /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
     *
     * Default: false
     */
-  lazy val preventOverflowClosing: HtmlAttr[Boolean] =
-    htmlAttr("prevent-overflow-closing", BooleanAsAttrPresenceCodec)
+  lazy val preventOverflowClosing: HtmlAttr[Boolean] = htmlAttr("prevent-overflow-closing", BooleanAsAttrPresenceCodec)
 
   /** Button text
     *
@@ -113,8 +99,8 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
 
   /** Defines the tooltip of the component.
     *
-    * **Note:** A tooltip attribute should be provided for icon-only buttons, in
-    * order to represent their exact meaning/function.
+    * **Note:** A tooltip attribute should be provided for icon-only buttons, in order to represent their exact
+    * meaning/function.
     *
     * Default: undefined
     */
@@ -122,8 +108,7 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
 
   /** Defines the width of the button.
     *
-    * **Note:** all CSS sizes are supported - 'percentage', 'px', 'rem', 'auto',
-    * etc.
+    * **Note:** all CSS sizes are supported - 'percentage', 'px', 'rem', 'auto', etc.
     *
     * Default: undefined
     */
@@ -131,14 +116,11 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
 
   // -- Events --
 
-  /** Fired when the component is activated either with a mouse/tap or by using
-    * the Enter or Space key.
+  /** Fired when the component is activated either with a mouse/tap or by using the Enter or Space key.
     *
-    * **Note:** The event will not be fired if the `disabled` property is set to
-    * `true`.
+    * **Note:** The event will not be fired if the `disabled` property is set to `true`.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesButtonDesignMod.ButtonDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSplitButtonMod.{
-  SplitButton as SplitButtonComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSplitButtonMod.{SplitButton as SplitButtonComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -28,40 +26,33 @@ object SplitButton extends WebComponent("ui5-split-button") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
-  /** Defines whether the arrow button should have the active state styles or
-    * not.
+  /** Defines whether the arrow button should have the active state styles or not.
     *
-    * **Note:** Available since
-    * [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val activeArrowButton: HtmlAttr[Boolean] =
-    htmlAttr("active-arrow-button", BooleanAsAttrPresenceCodec)
+  lazy val activeArrowButton: HtmlAttr[Boolean] = htmlAttr("active-arrow-button", BooleanAsAttrPresenceCodec)
 
   /** Defines the component design.
     *
     * Default: "Default"
     */
-  lazy val design: HtmlAttr[ButtonDesign] =
-    htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" |
-    "Emphasized" | "Attention"
+  lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
+  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
-  /** Defines whether the component is disabled. A disabled component can't be
-    * pressed or focused, and it is not in the tab chain.
+  /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
+    * tab chain.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Defines the icon to be displayed as graphical element within the
-    * component. The SAP-icons font provides numerous options.
+  /** Defines the icon to be displayed as graphical element within the component. The SAP-icons font provides numerous
+    * options.
     *
     * Example:
     *
@@ -80,9 +71,7 @@ object SplitButton extends WebComponent("ui5-split-button") {
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onArrowClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp(
-    "arrow-click"
-  )
+  lazy val onArrowClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp("arrow-click")
 
   /** Fired when the user clicks on the default action.
     *

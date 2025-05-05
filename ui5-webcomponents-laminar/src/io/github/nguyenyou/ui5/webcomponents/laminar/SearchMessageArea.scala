@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object SearchMessageArea extends WebComponent("ui5-search-message-area") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/SearchMessageArea.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/SearchMessageArea.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -30,8 +27,7 @@ object SearchMessageArea extends WebComponent("ui5-search-message-area") {
     *
     * Default: undefined
     */
-  lazy val description: HtmlAttr[String] =
-    htmlAttr("description", StringAsIsCodec)
+  lazy val description: HtmlAttr[String] = htmlAttr("description", StringAsIsCodec)
 
   /** Defines the text to be displayed.
     *

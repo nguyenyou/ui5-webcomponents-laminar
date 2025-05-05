@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation.*
 
 object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/UserSettingsItem.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsItem.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -31,8 +28,7 @@ object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines whether the component is in disabled state.
     *
@@ -40,13 +36,11 @@ object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
   /** Defines the headerText of the item.
     */
-  lazy val headerText: HtmlAttr[String] =
-    htmlAttr("header-text", StringAsIsCodec)
+  lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
   /** Defines the icon of the component.
     *
@@ -58,22 +52,19 @@ object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
     *
     * Default: false
     */
-  lazy val loading: HtmlAttr[Boolean] =
-    htmlAttr("loading", BooleanAsAttrPresenceCodec)
+  lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
   /** Indicates why the control is in loading state.
     *
     * Default: undefined
     */
-  lazy val loadingReason: HtmlAttr[String] =
-    htmlAttr("loading-reason", StringAsIsCodec)
+  lazy val loadingReason: HtmlAttr[String] = htmlAttr("loading-reason", StringAsIsCodec)
 
   /** Shows item tab.
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the user settings item.
     */
@@ -81,8 +72,8 @@ object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
 
   /** Defines the tooltip of the component.
     *
-    * A tooltip attribute should be provided to represent the meaning or
-    * function when the component is collapsed and only the icon is visible.
+    * A tooltip attribute should be provided to represent the meaning or function when the component is collapsed and
+    * only the icon is visible.
     */
   lazy val tooltip: HtmlAttr[String] = htmlAttr("tooltip", StringAsIsCodec)
 
@@ -90,37 +81,31 @@ object UserSettingsItem extends WebComponent("ui5-user-settings-item") {
 
   /** Fired when a selected view changed.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ❌    |
     */
-  lazy val onSelectionChange: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[UserSettingsItemViewSelectEventDetail]
-  ] = new EventProp("selection-change")
+  lazy val onSelectionChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[UserSettingsItemViewSelectEventDetail]] =
+    new EventProp("selection-change")
 
   // -- Slots --
 
   /** Defines the page views of the user settings item.
     *
-    * If there are no tab views, the first page view will be shown unless there
-    * is selected one. If there is selected page view it will be shown no matter
-    * if there are tab views.
+    * If there are no tab views, the first page view will be shown unless there is selected one. If there is selected
+    * page view it will be shown no matter if there are tab views.
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="pages"`). Since you can't change the DOM order of slots
-    * when declaring them within a prop, it might prove beneficial to manually
-    * mount them as part of the component's children, especially when facing
-    * problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="pages"`). Since
+    * you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to manually
+    * mount them as part of the component's children, especially when facing problems with the reading order of screen
+    * readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val pages: Slot = new Slot("pages")

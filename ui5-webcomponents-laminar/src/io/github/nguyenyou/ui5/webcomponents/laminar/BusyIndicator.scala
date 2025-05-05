@@ -25,16 +25,13 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
 
   // -- Attributes --
 
-  /** Defines if the busy indicator is visible on the screen. By default it is
-    * not.
+  /** Defines if the busy indicator is visible on the screen. By default it is not.
     *
     * Default: false
     */
-  lazy val active: HtmlAttr[Boolean] =
-    htmlAttr("active", BooleanAsAttrPresenceCodec)
+  lazy val active: HtmlAttr[Boolean] = htmlAttr("active", BooleanAsAttrPresenceCodec)
 
-  /** Defines the delay in milliseconds, after which the busy indicator will be
-    * visible on the screen.
+  /** Defines the delay in milliseconds, after which the busy indicator will be visible on the screen.
     *
     * Default: 1000
     */
@@ -44,12 +41,10 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
     *
     * Default: "M"
     */
-  lazy val size: HtmlAttr[BusyIndicatorSize] =
-    htmlAttr("size", StringUnionCodec[BusyIndicatorSize])
+  lazy val size: HtmlAttr[BusyIndicatorSize] = htmlAttr("size", StringUnionCodec[BusyIndicatorSize])
   type BusyIndicatorSize = "S" | "M" | "L"
 
-  /** Defines text to be displayed below the component. It can be used to inform
-    * the user of the current operation.
+  /** Defines text to be displayed below the component. It can be used to inform the user of the current operation.
     *
     * Default: undefined
     */

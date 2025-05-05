@@ -27,15 +27,13 @@ object MultiComboBoxItem extends WebComponent("ui5-mcb-item") {
     *
     * Default: undefined
     */
-  lazy val additionalText: HtmlAttr[String] =
-    htmlAttr("additional-text", StringAsIsCodec)
+  lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
 
   /** Defines the selected state of the component.
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the component.
     *

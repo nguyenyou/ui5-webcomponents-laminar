@@ -32,9 +32,9 @@ object ColorPalette extends WebComponent("ui5-color-palette") {
     * |:----------:|:-------:|
     * |     ❌      |    ❌    |
     */
-  lazy val onItemClick: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[ColorPaletteItemClickEventDetail]
-  ] = new EventProp("item-click")
+  lazy val onItemClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ColorPaletteItemClickEventDetail]] = new EventProp(
+    "item-click"
+  )
 
   // -- Slots --
 

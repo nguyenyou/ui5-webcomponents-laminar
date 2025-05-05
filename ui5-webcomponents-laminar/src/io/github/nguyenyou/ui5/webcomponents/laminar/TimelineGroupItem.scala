@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation.*
 
 object TimelineGroupItem extends WebComponent("ui5-timeline-group-item") {
 
-  @JSImport(
-    "@ui5/webcomponents-fiori/dist/TimelineGroupItem.js",
-    JSImport.Default
-  )
+  @JSImport("@ui5/webcomponents-fiori/dist/TimelineGroupItem.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
@@ -30,8 +27,7 @@ object TimelineGroupItem extends WebComponent("ui5-timeline-group-item") {
     *
     * Default: false
     */
-  lazy val collapsed: HtmlAttr[Boolean] =
-    htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
+  lazy val collapsed: HtmlAttr[Boolean] = htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the button that expands and collapses the group.
     *

@@ -3,9 +3,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPickerMod.{
-  ColorPicker as ColorPickerComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPickerMod.{ColorPicker as ColorPickerComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -23,36 +21,29 @@ object ColorPicker extends WebComponent("ui5-color-picker") {
 
   // -- Attributes --
 
-  /** Determines the name by which the component will be identified upon
-    * submission in an HTML form.
+  /** Determines the name by which the component will be identified upon submission in an HTML form.
     *
-    * **Note:** This property is only applicable within the context of an HTML
-    * Form element.
+    * **Note:** This property is only applicable within the context of an HTML Form element.
     *
-    * **Note:** Available since
-    * [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
   lazy val name: HtmlAttr[String] = htmlAttr("name", StringAsIsCodec)
 
-  /** When set to `true`, the alpha slider and inputs for RGB values will not be
-    * displayed.
+  /** When set to `true`, the alpha slider and inputs for RGB values will not be displayed.
     *
-    * **Note:** Available since
-    * [v2.5.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.5.0) of
+    * **Note:** Available since [v2.5.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.5.0) of
     * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val simplified: HtmlAttr[Boolean] =
-    htmlAttr("simplified", BooleanAsAttrPresenceCodec)
+  lazy val simplified: HtmlAttr[Boolean] = htmlAttr("simplified", BooleanAsAttrPresenceCodec)
 
   /** Defines the currently selected color of the component.
     *
-    * **Note**: use HEX, RGB, RGBA, HSV formats or a CSS color name when
-    * modifying this property.
+    * **Note**: use HEX, RGB, RGBA, HSV formats or a CSS color name when modifying this property.
     *
     * Default: "rgba(255,255,255,1)"
     */

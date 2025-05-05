@@ -41,8 +41,7 @@ object ShellBarItem extends WebComponent("ui5-shellbar-item") {
 
   /** Defines the item text.
     *
-    * **Note:** The text is only displayed inside the overflow popover list
-    * view.
+    * **Note:** The text is only displayed inside the overflow popover list view.
     *
     * Default: undefined
     */
@@ -52,16 +51,13 @@ object ShellBarItem extends WebComponent("ui5-shellbar-item") {
 
   /** Fired, when the item is pressed.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onClick: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[ShellBarItemClickEventDetail]
-  ] = new EventProp("click")
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ShellBarItemClickEventDetail]] = new EventProp("click")
 
   // -- Slots --
 

@@ -33,14 +33,12 @@ object ExpandableText extends WebComponent("ui5-expandable-text") {
     htmlAttr("empty-indicator-mode", StringUnionCodec[TextEmptyIndicatorMode])
   type TextEmptyIndicatorMode = "Off" | "On"
 
-  /** Maximum number of characters to be displayed initially. If the text length
-    * exceeds this limit, the text will be truncated with an ellipsis, and the
-    * "More" link will be displayed.
+  /** Maximum number of characters to be displayed initially. If the text length exceeds this limit, the text will be
+    * truncated with an ellipsis, and the "More" link will be displayed.
     *
     * Default: 100
     */
-  lazy val maxCharacters: HtmlAttr[Double] =
-    htmlAttr("max-characters", DoubleAsStringCodec)
+  lazy val maxCharacters: HtmlAttr[Double] = htmlAttr("max-characters", DoubleAsStringCodec)
 
   /** Determines how the full text will be displayed.
     *

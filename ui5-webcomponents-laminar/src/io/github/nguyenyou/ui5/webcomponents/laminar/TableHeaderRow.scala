@@ -25,13 +25,12 @@ object TableHeaderRow extends WebComponent("ui5-table-header-row") {
 
   /** Sticks the `TableHeaderRow` to the top of a table.
     *
-    * Note: If used in combination with overflowMode "Scroll", the table needs a
-    * defined height for the sticky header to work as expected.
+    * Note: If used in combination with overflowMode "Scroll", the table needs a defined height for the sticky header to
+    * work as expected.
     *
     * Default: false
     */
-  lazy val sticky: HtmlAttr[Boolean] =
-    htmlAttr("sticky", BooleanAsAttrPresenceCodec)
+  lazy val sticky: HtmlAttr[Boolean] = htmlAttr("sticky", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 

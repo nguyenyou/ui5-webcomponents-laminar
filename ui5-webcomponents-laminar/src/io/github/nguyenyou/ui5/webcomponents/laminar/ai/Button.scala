@@ -5,9 +5,7 @@ import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesButtonDesignMod.ButtonDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.distButtonMod.{
-  Button as ButtonComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.distButtonMod.{Button as ButtonComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -25,35 +23,29 @@ object Button extends WebComponent("ui5-ai-button") {
 
   // -- Attributes --
 
-  /** Defines the active state of the arrow button in split mode. Set to true
-    * when the button is in split mode and a menu with additional options is
-    * opened by the arrow button. Set back to false when the menu is closed.
+  /** Defines the active state of the arrow button in split mode. Set to true when the button is in split mode and a
+    * menu with additional options is opened by the arrow button. Set back to false when the menu is closed.
     *
-    * **Note:** Available since
-    * [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
+    * **Note:** Available since [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
     * **@ui5/webcomponents-ai**.
     *
     * Default: false
     */
-  lazy val arrowButtonPressed: HtmlAttr[Boolean] =
-    htmlAttr("arrow-button-pressed", BooleanAsAttrPresenceCodec)
+  lazy val arrowButtonPressed: HtmlAttr[Boolean] = htmlAttr("arrow-button-pressed", BooleanAsAttrPresenceCodec)
 
   /** Defines the component design.
     *
     * Default: "Default"
     */
-  lazy val design: HtmlAttr[ButtonDesign] =
-    htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" |
-    "Emphasized" | "Attention"
+  lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
+  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
-  /** Defines whether the component is disabled. A disabled component can't be
-    * pressed or focused, and it is not in the tab chain.
+  /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
+    * tab chain.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
   /** Defines the current state of the component.
     *
@@ -63,20 +55,16 @@ object Button extends WebComponent("ui5-ai-button") {
 
   // -- Events --
 
-  /** Fired when the component is in split mode and after the arrow button is
-    * activated either by clicking or tapping it or by using the [Arrow Up] /
-    * [Arrow Down], [Alt] + [Arrow Up]/ [Arrow Down], or [F4] keyboard keys.
+  /** Fired when the component is in split mode and after the arrow button is activated either by clicking or tapping it
+    * or by using the [Arrow Up] / [Arrow Down], [Alt] + [Arrow Up]/ [Arrow Down], or [F4] keyboard keys.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onArrowButtonClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp(
-    "arrow-button-click"
-  )
+  lazy val onArrowButtonClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp("arrow-button-click")
 
-  /** Fired when the component is activated either with a mouse/tap or by using
-    * the Enter or Space key.
+  /** Fired when the component is activated either with a mouse/tap or by using the Enter or Space key.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

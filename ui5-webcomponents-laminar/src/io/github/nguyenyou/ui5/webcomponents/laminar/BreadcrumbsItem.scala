@@ -27,8 +27,7 @@ object BreadcrumbsItem extends WebComponent("ui5-breadcrumbs-item") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines the link href.
     *

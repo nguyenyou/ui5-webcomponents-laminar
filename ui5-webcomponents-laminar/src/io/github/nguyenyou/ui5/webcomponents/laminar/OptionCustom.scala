@@ -23,20 +23,17 @@ object OptionCustom extends WebComponent("ui5-option-custom") {
 
   // -- Attributes --
 
-  /** Defines the text, displayed inside the `Select` input filed when the
-    * option gets selected.
+  /** Defines the text, displayed inside the `Select` input filed when the option gets selected.
     *
     * Default: undefined
     */
-  lazy val displayText: HtmlAttr[String] =
-    htmlAttr("display-text", StringAsIsCodec)
+  lazy val displayText: HtmlAttr[String] = htmlAttr("display-text", StringAsIsCodec)
 
   /** Defines the selected state of the component.
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the tooltip of the option.
     *
@@ -44,9 +41,8 @@ object OptionCustom extends WebComponent("ui5-option-custom") {
     */
   lazy val tooltip: HtmlAttr[String] = htmlAttr("tooltip", StringAsIsCodec)
 
-  /** Defines the value of the `Select` inside an HTML Form element when this
-    * component is selected. For more information on HTML Form support, see the
-    * `name` property of `Select`.
+  /** Defines the value of the `Select` inside an HTML Form element when this component is selected. For more
+    * information on HTML Form support, see the `name` property of `Select`.
     *
     * Default: undefined
     */

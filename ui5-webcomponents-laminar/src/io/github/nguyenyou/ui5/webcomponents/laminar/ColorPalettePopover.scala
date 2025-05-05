@@ -30,29 +30,23 @@ object ColorPalettePopover extends WebComponent("ui5-color-palette-popover") {
     *
     * Default: undefined
     */
-  lazy val defaultColor: HtmlAttr[String] =
-    htmlAttr("default-color", StringAsIsCodec)
+  lazy val defaultColor: HtmlAttr[String] = htmlAttr("default-color", StringAsIsCodec)
 
   /** Defines the open | closed state of the popover.
     *
-    * **Note:** Available since
-    * [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val open: HtmlAttr[Boolean] =
-    htmlAttr("open", BooleanAsAttrPresenceCodec)
+  lazy val open: HtmlAttr[Boolean] = htmlAttr("open", BooleanAsAttrPresenceCodec)
 
-  /** Defines the ID or DOM Reference of the element that the popover is shown
-    * at. When using this attribute in a declarative way, you must only use the
-    * `id` (as a string) of the element at which you want to show the popover.
-    * You can only set the `opener` attribute to a DOM Reference when using
-    * JavaScript.
+  /** Defines the ID or DOM Reference of the element that the popover is shown at. When using this attribute in a
+    * declarative way, you must only use the `id` (as a string) of the element at which you want to show the popover.
+    * You can only set the `opener` attribute to a DOM Reference when using JavaScript.
     *
-    * **Note:** Available since
-    * [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
@@ -62,31 +56,26 @@ object ColorPalettePopover extends WebComponent("ui5-color-palette-popover") {
     *
     * Default: false
     */
-  lazy val showDefaultColor: HtmlAttr[Boolean] =
-    htmlAttr("show-default-color", BooleanAsAttrPresenceCodec)
+  lazy val showDefaultColor: HtmlAttr[Boolean] = htmlAttr("show-default-color", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the user can choose a custom color from a component.
     *
     * Default: false
     */
-  lazy val showMoreColors: HtmlAttr[Boolean] =
-    htmlAttr("show-more-colors", BooleanAsAttrPresenceCodec)
+  lazy val showMoreColors: HtmlAttr[Boolean] = htmlAttr("show-more-colors", BooleanAsAttrPresenceCodec)
 
-  /** Defines whether the user can see the last used colors in the bottom of the
-    * component
+  /** Defines whether the user can see the last used colors in the bottom of the component
     *
     * Default: false
     */
-  lazy val showRecentColors: HtmlAttr[Boolean] =
-    htmlAttr("show-recent-colors", BooleanAsAttrPresenceCodec)
+  lazy val showRecentColors: HtmlAttr[Boolean] = htmlAttr("show-recent-colors", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
   /** Fired when the `ColorPalettePopover` is closed due to user interaction.
     *
-    * **Note:** Available since
-    * [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.21.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.21.0) of
+    * **@ui5/webcomponents**.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
@@ -100,9 +89,8 @@ object ColorPalettePopover extends WebComponent("ui5-color-palette-popover") {
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onItemClick: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[ColorPalettePopoverItemClickEventDetail]
-  ] = new EventProp("item-click")
+  lazy val onItemClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ColorPalettePopoverItemClickEventDetail]] =
+    new EventProp("item-click")
 
   // -- Slots --
 

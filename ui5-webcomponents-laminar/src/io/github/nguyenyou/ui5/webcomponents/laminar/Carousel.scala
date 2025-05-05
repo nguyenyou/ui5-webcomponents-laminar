@@ -8,9 +8,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBackgroun
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBorderDesignMod.BorderDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesCarouselArrowsPlacementMod.CarouselArrowsPlacement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesCarouselPageIndicatorTypeMod.CarouselPageIndicatorType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCarouselMod.{
-  Carousel as CarouselComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCarouselMod.{Carousel as CarouselComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -30,33 +28,28 @@ object Carousel extends WebComponent("ui5-carousel") {
 
   /** Defines the accessible name of the component.
     *
-    * **Note:** Available since
-    * [v1.24](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.24) of
+    * **Note:** Available since [v1.24](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.24) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines the IDs of the elements that label the input.
     *
-    * **Note:** Available since
-    * [v1.24](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.24) of
+    * **Note:** Available since [v1.24](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.24) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines the position of arrows.
     *
     * Available options are:
     *
     *   - `Content` - the arrows are placed on the sides of the current page.
-    *   - `Navigation` - the arrows are placed on the sides of the page
-    *     indicator.
+    *   - `Navigation` - the arrows are placed on the sides of the page indicator.
     *
     * Default: "Content"
     */
@@ -66,8 +59,7 @@ object Carousel extends WebComponent("ui5-carousel") {
 
   /** Defines the carousel's background design.
     *
-    * **Note:** Available since
-    * [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
+    * **Note:** Available since [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
     * **@ui5/webcomponents**.
     *
     * Default: "Translucent"
@@ -76,63 +68,50 @@ object Carousel extends WebComponent("ui5-carousel") {
     htmlAttr("background-design", StringUnionCodec[BackgroundDesign])
   type BackgroundDesign = "Solid" | "Transparent" | "Translucent"
 
-  /** Defines whether the carousel should loop, i.e show the first page after
-    * the last page is reached and vice versa.
+  /** Defines whether the carousel should loop, i.e show the first page after the last page is reached and vice versa.
     *
     * Default: false
     */
-  lazy val cyclic: HtmlAttr[Boolean] =
-    htmlAttr("cyclic", BooleanAsAttrPresenceCodec)
+  lazy val cyclic: HtmlAttr[Boolean] = htmlAttr("cyclic", BooleanAsAttrPresenceCodec)
 
-  /** Defines the visibility of the navigation arrows. If set to true the
-    * navigation arrows will be hidden.
+  /** Defines the visibility of the navigation arrows. If set to true the navigation arrows will be hidden.
     *
     * Default: false
     */
-  lazy val hideNavigationArrows: HtmlAttr[Boolean] =
-    htmlAttr("hide-navigation-arrows", BooleanAsAttrPresenceCodec)
+  lazy val hideNavigationArrows: HtmlAttr[Boolean] = htmlAttr("hide-navigation-arrows", BooleanAsAttrPresenceCodec)
 
-  /** Defines the visibility of the page indicator. If set to true the page
-    * indicator will be hidden.
+  /** Defines the visibility of the page indicator. If set to true the page indicator will be hidden.
     *
     * Default: false
     */
-  lazy val hidePageIndicator: HtmlAttr[Boolean] =
-    htmlAttr("hide-page-indicator", BooleanAsAttrPresenceCodec)
+  lazy val hidePageIndicator: HtmlAttr[Boolean] = htmlAttr("hide-page-indicator", BooleanAsAttrPresenceCodec)
 
   /** Defines the number of items per page depending on the carousel width.
     *
     *   - 'S' for screens smaller than 600 pixels.
-    *   - 'M' for screens greater than or equal to 600 pixels and smaller than
-    *     1024 pixels.
-    *   - 'L' for screens greater than or equal to 1024 pixels and smaller than
-    *     1440 pixels.
+    *   - 'M' for screens greater than or equal to 600 pixels and smaller than 1024 pixels.
+    *   - 'L' for screens greater than or equal to 1024 pixels and smaller than 1440 pixels.
     *   - 'XL' for screens greater than or equal to 1440 pixels.
     *
     * One item per page is shown by default.
     *
     * Default: "S1 M1 L1 XL1"
     */
-  lazy val itemsPerPage: HtmlAttr[String] =
-    htmlAttr("items-per-page", StringAsIsCodec)
+  lazy val itemsPerPage: HtmlAttr[String] = htmlAttr("items-per-page", StringAsIsCodec)
 
   /** Defines the page indicator background design.
     *
-    * **Note:** Available since
-    * [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
+    * **Note:** Available since [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
     * **@ui5/webcomponents**.
     *
     * Default: "Solid"
     */
-  lazy val pageIndicatorBackgroundDesign: HtmlAttr[BackgroundDesign] = htmlAttr(
-    "page-indicator-background-design",
-    StringUnionCodec[BackgroundDesign]
-  )
+  lazy val pageIndicatorBackgroundDesign: HtmlAttr[BackgroundDesign] =
+    htmlAttr("page-indicator-background-design", StringUnionCodec[BackgroundDesign])
 
   /** Defines the page indicator border design.
     *
-    * **Note:** Available since
-    * [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
+    * **Note:** Available since [v1.14](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.14) of
     * **@ui5/webcomponents**.
     *
     * Default: "Solid"
@@ -143,15 +122,12 @@ object Carousel extends WebComponent("ui5-carousel") {
 
   /** Defines the style of the page indicator. Available options are:
     *
-    *   - `Default` - The page indicator will be visualized as dots if there are
-    *     fewer than 9 pages. If there are more pages, the page indicator will
-    *     switch to displaying the current page and the total number of pages.
-    *     (e.g. X of Y)
-    *   - `Numeric` - The page indicator will display the current page and the
-    *     total number of pages. (e.g. X of Y)
+    *   - `Default` - The page indicator will be visualized as dots if there are fewer than 9 pages. If there are more
+    *     pages, the page indicator will switch to displaying the current page and the total number of pages. (e.g. X of
+    *     Y)
+    *   - `Numeric` - The page indicator will display the current page and the total number of pages. (e.g. X of Y)
     *
-    * **Note:** Available since
-    * [v1.10](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10) of
+    * **Note:** Available since [v1.10](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10) of
     * **@ui5/webcomponents**.
     *
     * Default: "Default"
@@ -162,17 +138,16 @@ object Carousel extends WebComponent("ui5-carousel") {
 
   // -- Events --
 
-  /** Fired whenever the page changes due to user interaction, when the user
-    * clicks on the navigation arrows or while resizing, based on the
-    * `items-per-page` property.
+  /** Fired whenever the page changes due to user interaction, when the user clicks on the navigation arrows or while
+    * resizing, based on the `items-per-page` property.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |
     */
-  lazy val onNavigate: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[CarouselNavigateEventDetail]
-  ] = new EventProp("navigate")
+  lazy val onNavigate: EventProp[Ui5CustomEvent[Ref] & EventDetail[CarouselNavigateEventDetail]] = new EventProp(
+    "navigate"
+  )
 
   // -- Slots --
 

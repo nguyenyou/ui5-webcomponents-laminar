@@ -27,8 +27,7 @@ object ToolbarSelectOption extends WebComponent("ui5-toolbar-select-option") {
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 

@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesWrappingTypeMod.WrappingType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distRadioButtonMod.{
-  RadioButton as RadioButtonComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distRadioButtonMod.{RadioButton as RadioButtonComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -26,38 +24,33 @@ object RadioButton extends WebComponent("ui5-radio-button") {
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v1.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.6.0) of
+    * **Note:** Available since [v1.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.6.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines the IDs of the elements that label the component.
     *
-    * **Note:** Available since
-    * [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
+    * **Note:** Available since [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines whether the component is checked or not.
     *
-    * **Note:** The property value can be changed with user interaction, either
-    * by clicking/tapping on the component, or by using the Space or Enter key.
+    * **Note:** The property value can be changed with user interaction, either by clicking/tapping on the component, or
+    * by using the Space or Enter key.
     *
-    * **Note:** Only enabled radio buttons can be checked. Read-only radio
-    * buttons are not selectable, and therefore are always unchecked.
+    * **Note:** Only enabled radio buttons can be checked. Read-only radio buttons are not selectable, and therefore are
+    * always unchecked.
     *
     * Default: false
     */
-  lazy val checked: HtmlAttr[Boolean] =
-    htmlAttr("checked", BooleanAsAttrPresenceCodec)
+  lazy val checked: HtmlAttr[Boolean] = htmlAttr("checked", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is disabled.
     *
@@ -65,19 +58,16 @@ object RadioButton extends WebComponent("ui5-radio-button") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Determines the name by which the component will be identified upon
-    * submission in an HTML form.
+  /** Determines the name by which the component will be identified upon submission in an HTML form.
     *
     * Radio buttons with the same `name` will form a radio button group.
     *
-    * **Note:** By this name the component will be identified upon submission in
-    * an HTML form.
+    * **Note:** By this name the component will be identified upon submission in an HTML form.
     *
-    * **Note:** The selection can be changed with `ARROW_UP/DOWN` and
-    * `ARROW_LEFT/RIGHT` keys between radio buttons in same group.
+    * **Note:** The selection can be changed with `ARROW_UP/DOWN` and `ARROW_LEFT/RIGHT` keys between radio buttons in
+    * same group.
     *
     * **Note:** Only one radio button can be selected per group.
     *
@@ -87,25 +77,21 @@ object RadioButton extends WebComponent("ui5-radio-button") {
 
   /** Defines whether the component is read-only.
     *
-    * **Note:** A read-only component isn't editable or selectable. However,
-    * because it's focusable, it still provides visual feedback upon user
-    * interaction.
+    * **Note:** A read-only component isn't editable or selectable. However, because it's focusable, it still provides
+    * visual feedback upon user interaction.
     *
     * Default: false
     */
-  lazy val readonly: HtmlAttr[Boolean] =
-    htmlAttr("readonly", BooleanAsAttrPresenceCodec)
+  lazy val readonly: HtmlAttr[Boolean] = htmlAttr("readonly", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is required.
     *
-    * **Note:** Available since
-    * [v1.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.9.0) of
+    * **Note:** Available since [v1.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.9.0) of
     * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val required: HtmlAttr[Boolean] =
-    htmlAttr("required", BooleanAsAttrPresenceCodec)
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the component.
     *
@@ -113,9 +99,8 @@ object RadioButton extends WebComponent("ui5-radio-button") {
     */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
-  /** Defines the form value of the component. When a form with a radio button
-    * group is submitted, the group's value will be the value of the currently
-    * selected radio button.
+  /** Defines the form value of the component. When a form with a radio button group is submitted, the group's value
+    * will be the value of the currently selected radio button.
     */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
 
@@ -123,20 +108,16 @@ object RadioButton extends WebComponent("ui5-radio-button") {
     *
     * Default: "None"
     */
-  lazy val valueState: HtmlAttr[ValueState] =
-    htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" |
-    "Information"
+  lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
+  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines whether the component text wraps when there is not enough space.
     *
-    * **Note:** for option "Normal" the text will wrap and the words will not be
-    * broken based on hyphenation.
+    * **Note:** for option "Normal" the text will wrap and the words will not be broken based on hyphenation.
     *
     * Default: "Normal"
     */
-  lazy val wrappingType: HtmlAttr[WrappingType] =
-    htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
+  lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
   type WrappingType = "None" | "Normal"
 
   // -- Events --

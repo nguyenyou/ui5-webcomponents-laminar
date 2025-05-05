@@ -24,16 +24,13 @@ object TableVirtualizer extends WebComponent("ui5-table-virtualizer") {
 
   // -- Attributes --
 
-  /** Defines the count of extra rows to be rendered at the top and bottom of
-    * the table.
+  /** Defines the count of extra rows to be rendered at the top and bottom of the table.
     *
-    * **Note:** This property is experimental and may be changed or deleted in
-    * the future.
+    * **Note:** This property is experimental and may be changed or deleted in the future.
     *
     * Default: 0
     */
-  lazy val extraRows: HtmlAttr[Double] =
-    htmlAttr("extra-rows", DoubleAsStringCodec)
+  lazy val extraRows: HtmlAttr[Double] = htmlAttr("extra-rows", DoubleAsStringCodec)
 
   /** Defines the total count of rows in the table.
     *
@@ -41,8 +38,7 @@ object TableVirtualizer extends WebComponent("ui5-table-virtualizer") {
     *
     * Default: 100
     */
-  lazy val rowCount: HtmlAttr[Double] =
-    htmlAttr("row-count", DoubleAsStringCodec)
+  lazy val rowCount: HtmlAttr[Double] = htmlAttr("row-count", DoubleAsStringCodec)
 
   /** Defines the height of the rows in the table.
     *
@@ -50,21 +46,19 @@ object TableVirtualizer extends WebComponent("ui5-table-virtualizer") {
     *
     * Default: 45
     */
-  lazy val rowHeight: HtmlAttr[Double] =
-    htmlAttr("row-height", DoubleAsStringCodec)
+  lazy val rowHeight: HtmlAttr[Double] = htmlAttr("row-height", DoubleAsStringCodec)
 
   // -- Events --
 
-  /** Fired when the virtualizer is changed by user interaction e.g. on
-    * scrolling.
+  /** Fired when the virtualizer is changed by user interaction e.g. on scrolling.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ❌    |
     */
-  lazy val onRangeChange
-      : EventProp[Ui5CustomEvent[Ref] & EventDetail[RangeChangeEventDetail]] =
-    new EventProp("range-change")
+  lazy val onRangeChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[RangeChangeEventDetail]] = new EventProp(
+    "range-change"
+  )
 
   // -- Slots --
 

@@ -28,19 +28,16 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the component.
     *
-    * **Note:** Available since
-    * [v1.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.15.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.15.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines whether the component is disabled.
     *
@@ -48,8 +45,7 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
   /** The number of displayed rating symbols.
     *
@@ -59,42 +55,35 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
 
   /** Defines whether the component is read-only.
     *
-    * **Note:** A read-only component is not editable, but still provides visual
-    * feedback upon user interaction.
+    * **Note:** A read-only component is not editable, but still provides visual feedback upon user interaction.
     *
     * Default: false
     */
-  lazy val readonly: HtmlAttr[Boolean] =
-    htmlAttr("readonly", BooleanAsAttrPresenceCodec)
+  lazy val readonly: HtmlAttr[Boolean] = htmlAttr("readonly", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is required.
     *
-    * **Note:** Available since
-    * [v1.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.15.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.15.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val required: HtmlAttr[Boolean] =
-    htmlAttr("required", BooleanAsAttrPresenceCodec)
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines the size of the component.
     *
-    * **Note:** Available since
-    * [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
+    * **Note:** Available since [v2.6.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.6.0) of
     * **@ui5/webcomponents**.
     *
     * Default: "M"
     */
-  lazy val size: HtmlAttr[RatingIndicatorSize] =
-    htmlAttr("size", StringUnionCodec[RatingIndicatorSize])
+  lazy val size: HtmlAttr[RatingIndicatorSize] = htmlAttr("size", StringUnionCodec[RatingIndicatorSize])
   type RatingIndicatorSize = "S" | "M" | "L"
 
   /** Defines the tooltip of the component.
     *
-    * **Note:** Available since
-    * [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.19.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.19.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
@@ -102,8 +91,7 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
 
   /** The indicated value of the rating.
     *
-    * **Note:** If you set a number which is not round, it would be shown as
-    * follows:
+    * **Note:** If you set a number which is not round, it would be shown as follows:
     *
     *   - 1.0 - 1.2 -> 1
     *   - 1.3 - 1.7 -> 1.5

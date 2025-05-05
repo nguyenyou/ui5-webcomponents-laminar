@@ -24,31 +24,25 @@ object TableColumn extends WebComponent("ui5-table-column") {
 
   // -- Attributes --
 
-  /** According to your `minWidth` settings, the component can be hidden in
-    * different screen sizes.
+  /** According to your `minWidth` settings, the component can be hidden in different screen sizes.
     *
-    * Setting this property to `true`, shows this column as pop-in instead of
-    * hiding it.
+    * Setting this property to `true`, shows this column as pop-in instead of hiding it.
     *
     * Default: false
     */
-  lazy val demandPopin: HtmlAttr[Boolean] =
-    htmlAttr("demand-popin", BooleanAsAttrPresenceCodec)
+  lazy val demandPopin: HtmlAttr[Boolean] = htmlAttr("demand-popin", BooleanAsAttrPresenceCodec)
 
-  /** Defines the minimum table width required to display this column. By
-    * default it is always displayed.
+  /** Defines the minimum table width required to display this column. By default it is always displayed.
     *
-    * The responsive behavior of the `Table` is determined by this property. As
-    * an example, by setting `minWidth` property to `400` sets the minimum width
-    * to 400 pixels, and shows this column on tablet (and desktop) but hides it
+    * The responsive behavior of the `Table` is determined by this property. As an example, by setting `minWidth`
+    * property to `400` sets the minimum width to 400 pixels, and shows this column on tablet (and desktop) but hides it
     * on mobile.
     *
     * For further responsive design options, see `demandPopin` property.
     *
     * Default: Infinity
     */
-  lazy val minWidth: HtmlAttr[Double] =
-    htmlAttr("min-width", DoubleAsStringCodec)
+  lazy val minWidth: HtmlAttr[Double] = htmlAttr("min-width", DoubleAsStringCodec)
 
   /** Defines how the popin row is displayed.
     *

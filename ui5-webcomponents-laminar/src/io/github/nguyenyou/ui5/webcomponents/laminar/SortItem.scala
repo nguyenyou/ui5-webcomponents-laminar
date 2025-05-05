@@ -3,9 +3,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSortItemMod.{
-  SortItem as SortItemComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSortItemMod.{SortItem as SortItemComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -27,8 +25,7 @@ object SortItem extends WebComponent("ui5-sort-item") {
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the component.
     *

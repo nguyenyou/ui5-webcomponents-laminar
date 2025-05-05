@@ -4,9 +4,7 @@ import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesWrappingTypeMod.WrappingType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCheckBoxMod.{
-  CheckBox as CheckBoxComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCheckBoxMod.{CheckBox as CheckBoxComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -26,35 +24,30 @@ object CheckBox extends WebComponent("ui5-checkbox") {
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
+    * **Note:** Available since [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the component
     *
-    * **Note:** Available since
-    * [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
+    * **Note:** Available since [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines if the component is checked.
     *
-    * **Note:** The property can be changed with user interaction, either by
-    * cliking/tapping on the component, or by pressing the Enter or Space key.
+    * **Note:** The property can be changed with user interaction, either by cliking/tapping on the component, or by
+    * pressing the Enter or Space key.
     *
     * Default: false
     */
-  lazy val checked: HtmlAttr[Boolean] =
-    htmlAttr("checked", BooleanAsAttrPresenceCodec)
+  lazy val checked: HtmlAttr[Boolean] = htmlAttr("checked", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is disabled.
     *
@@ -62,50 +55,39 @@ object CheckBox extends WebComponent("ui5-checkbox") {
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
   /** Determines whether the `CheckBox` is in display only state.
     *
-    * When set to `true`, the `CheckBox` is not interactive, not editable, not
-    * focusable and not in the tab chain. This setting is used for forms in
-    * review mode.
+    * When set to `true`, the `CheckBox` is not interactive, not editable, not focusable and not in the tab chain. This
+    * setting is used for forms in review mode.
     *
-    * **Note:** When the property `disabled` is set to `true` this property has
-    * no effect.
+    * **Note:** When the property `disabled` is set to `true` this property has no effect.
     *
-    * **Note:** Available since
-    * [v1.22.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.22.0)
-    * of **@ui5/webcomponents**.
+    * **Note:** Available since [v1.22.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.22.0) of
+    * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val displayOnly: HtmlAttr[Boolean] =
-    htmlAttr("display-only", BooleanAsAttrPresenceCodec)
+  lazy val displayOnly: HtmlAttr[Boolean] = htmlAttr("display-only", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is displayed as partially checked.
     *
-    * **Note:** The indeterminate state can be set only programmatically and
-    * can’t be achieved by user interaction and the resulting visual state
-    * depends on the values of the `indeterminate` and `checked` properties:
+    * **Note:** The indeterminate state can be set only programmatically and can’t be achieved by user interaction and
+    * the resulting visual state depends on the values of the `indeterminate` and `checked` properties:
     *
-    *   - If the component is checked and indeterminate, it will be displayed as
-    *     partially checked
-    *   - If the component is checked and it is not indeterminate, it will be
-    *     displayed as checked
-    *   - If the component is not checked, it will be displayed as not checked
-    *     regardless value of the indeterminate attribute
+    *   - If the component is checked and indeterminate, it will be displayed as partially checked
+    *   - If the component is checked and it is not indeterminate, it will be displayed as checked
+    *   - If the component is not checked, it will be displayed as not checked regardless value of the indeterminate
+    *     attribute
     *
     * Default: false
     */
-  lazy val indeterminate: HtmlAttr[Boolean] =
-    htmlAttr("indeterminate", BooleanAsAttrPresenceCodec)
+  lazy val indeterminate: HtmlAttr[Boolean] = htmlAttr("indeterminate", BooleanAsAttrPresenceCodec)
 
-  /** Determines the name by which the component will be identified upon
-    * submission in an HTML form.
+  /** Determines the name by which the component will be identified upon submission in an HTML form.
     *
-    * **Note:** This property is only applicable within the context of an HTML
-    * Form element.
+    * **Note:** This property is only applicable within the context of an HTML Form element.
     *
     * Default: undefined
     */
@@ -113,24 +95,20 @@ object CheckBox extends WebComponent("ui5-checkbox") {
 
   /** Defines whether the component is read-only.
     *
-    * **Note:** A read-only component is not editable, but still provides visual
-    * feedback upon user interaction.
+    * **Note:** A read-only component is not editable, but still provides visual feedback upon user interaction.
     *
     * Default: false
     */
-  lazy val readonly: HtmlAttr[Boolean] =
-    htmlAttr("readonly", BooleanAsAttrPresenceCodec)
+  lazy val readonly: HtmlAttr[Boolean] = htmlAttr("readonly", BooleanAsAttrPresenceCodec)
 
   /** Defines whether the component is required.
     *
-    * **Note:** Available since
-    * [v1.3.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.3.0) of
+    * **Note:** Available since [v1.3.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.3.0) of
     * **@ui5/webcomponents**.
     *
     * Default: false
     */
-  lazy val required: HtmlAttr[Boolean] =
-    htmlAttr("required", BooleanAsAttrPresenceCodec)
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines the text of the component.
     *
@@ -142,29 +120,24 @@ object CheckBox extends WebComponent("ui5-checkbox") {
     *
     * Default: "None"
     */
-  lazy val valueState: HtmlAttr[ValueState] =
-    htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" |
-    "Information"
+  lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
+  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines whether the component text wraps when there is not enough space.
     *
-    * **Note:** for option "Normal" the text will wrap and the words will not be
-    * broken based on hyphenation. **Note:** for option "None" the text will be
-    * truncated with an ellipsis.
+    * **Note:** for option "Normal" the text will wrap and the words will not be broken based on hyphenation. **Note:**
+    * for option "None" the text will be truncated with an ellipsis.
     *
     * Default: "Normal"
     */
-  lazy val wrappingType: HtmlAttr[WrappingType] =
-    htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
+  lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
   type WrappingType = "None" | "Normal"
 
   // -- Events --
 
   /** Fired when the component checked state changes.
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|

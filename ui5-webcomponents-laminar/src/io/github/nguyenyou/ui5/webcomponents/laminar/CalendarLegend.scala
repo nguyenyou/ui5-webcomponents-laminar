@@ -27,29 +27,25 @@ object CalendarLegend extends WebComponent("ui5-calendar-legend") {
     *
     * Default: false
     */
-  lazy val hideNonWorkingDay: HtmlAttr[Boolean] =
-    htmlAttr("hide-non-working-day", BooleanAsAttrPresenceCodec)
+  lazy val hideNonWorkingDay: HtmlAttr[Boolean] = htmlAttr("hide-non-working-day", BooleanAsAttrPresenceCodec)
 
   /** Hides the Selected day item in the legend.
     *
     * Default: false
     */
-  lazy val hideSelectedDay: HtmlAttr[Boolean] =
-    htmlAttr("hide-selected-day", BooleanAsAttrPresenceCodec)
+  lazy val hideSelectedDay: HtmlAttr[Boolean] = htmlAttr("hide-selected-day", BooleanAsAttrPresenceCodec)
 
   /** Hides the Today item in the legend.
     *
     * Default: false
     */
-  lazy val hideToday: HtmlAttr[Boolean] =
-    htmlAttr("hide-today", BooleanAsAttrPresenceCodec)
+  lazy val hideToday: HtmlAttr[Boolean] = htmlAttr("hide-today", BooleanAsAttrPresenceCodec)
 
   /** Hides the Working day item in the legend.
     *
     * Default: false
     */
-  lazy val hideWorkingDay: HtmlAttr[Boolean] =
-    htmlAttr("hide-working-day", BooleanAsAttrPresenceCodec)
+  lazy val hideWorkingDay: HtmlAttr[Boolean] = htmlAttr("hide-working-day", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 

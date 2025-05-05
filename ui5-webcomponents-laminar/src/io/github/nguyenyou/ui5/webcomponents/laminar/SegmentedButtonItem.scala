@@ -27,30 +27,26 @@ object SegmentedButtonItem extends WebComponent("ui5-segmented-button-item") {
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Receives id(or many ids) of the elements that label the component.
     *
-    * **Note:** Available since
-    * [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
+    * **Note:** Available since [v1.1.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.1.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined
     */
-  lazy val accessibleNameRef: HtmlAttr[String] =
-    htmlAttr("accessible-name-ref", StringAsIsCodec)
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
-  /** Defines whether the component is disabled. A disabled component can't be
-    * selected or focused, and it is not in the tab chain.
+  /** Defines whether the component is disabled. A disabled component can't be selected or focused, and it is not in the
+    * tab chain.
     *
     * Default: false
     */
-  lazy val disabled: HtmlAttr[Boolean] =
-    htmlAttr("disabled", BooleanAsAttrPresenceCodec)
+  lazy val disabled: HtmlAttr[Boolean] = htmlAttr("disabled", BooleanAsAttrPresenceCodec)
 
-  /** Defines the icon, displayed as graphical element within the component. The
-    * SAP-icons font provides numerous options.
+  /** Defines the icon, displayed as graphical element within the component. The SAP-icons font provides numerous
+    * options.
     *
     * Example: See all the available icons within the [Icon
     * Explorer](https://sdk.openui5.org/test-resources/sap/m/demokit/iconExplorer/webapp/index.html).
@@ -63,16 +59,14 @@ object SegmentedButtonItem extends WebComponent("ui5-segmented-button-item") {
     *
     * Default: false
     */
-  lazy val selected: HtmlAttr[Boolean] =
-    htmlAttr("selected", BooleanAsAttrPresenceCodec)
+  lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   /** Defines the tooltip of the component.
     *
-    * **Note:** A tooltip attribute should be provided for icon-only buttons, in
-    * order to represent their exact meaning/function.
+    * **Note:** A tooltip attribute should be provided for icon-only buttons, in order to represent their exact
+    * meaning/function.
     *
-    * **Note:** Available since
-    * [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
+    * **Note:** Available since [v1.2.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.2.0) of
     * **@ui5/webcomponents**.
     *
     * Default: undefined

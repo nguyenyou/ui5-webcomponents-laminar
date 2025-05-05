@@ -3,9 +3,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distFormGroupMod.{
-  FormGroup as FormGroupComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distFormGroupMod.{FormGroup as FormGroupComponent}
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -23,20 +21,17 @@ object FormGroup extends WebComponent("ui5-form-group") {
 
   // -- Attributes --
 
-  /** Defines column span of the component, e.g how many columns the group
-    * should span to.
+  /** Defines column span of the component, e.g how many columns the group should span to.
     *
     * Default: undefined
     */
-  lazy val columnSpan: HtmlAttr[Double] =
-    htmlAttr("column-span", DoubleAsStringCodec)
+  lazy val columnSpan: HtmlAttr[Double] = htmlAttr("column-span", DoubleAsStringCodec)
 
   /** Defines header text of the component.
     *
     * Default: undefined
     */
-  lazy val headerText: HtmlAttr[String] =
-    htmlAttr("header-text", StringAsIsCodec)
+  lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
   // -- Events --
 

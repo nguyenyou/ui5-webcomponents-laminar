@@ -26,77 +26,65 @@ object SideNavigation extends WebComponent("ui5-side-navigation") {
 
   /** Defines the accessible ARIA name of the component.
     *
-    * **Note:** Available since
-    * [v2.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.9.0) of
+    * **Note:** Available since [v2.9.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.9.0) of
     * **@ui5/webcomponents-fiori**.
     *
     * Default: undefined
     */
-  lazy val accessibleName: HtmlAttr[String] =
-    htmlAttr("accessible-name", StringAsIsCodec)
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
   /** Defines whether the `SideNavigation` is expanded or collapsed.
     *
     * Default: false
     */
-  lazy val collapsed: HtmlAttr[Boolean] =
-    htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
+  lazy val collapsed: HtmlAttr[Boolean] = htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
   /** Fired when the selection has changed via user interaction
     *
-    * **Note:** Call `event.preventDefault()` inside the handler of this event
-    * to prevent its default action/s.
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ✅      |    ✅    |
     */
-  lazy val onSelectionChange: EventProp[
-    Ui5CustomEvent[Ref] & EventDetail[SideNavigationSelectionChangeEventDetail]
-  ] = new EventProp("selection-change")
+  lazy val onSelectionChange: EventProp[Ui5CustomEvent[Ref] & EventDetail[SideNavigationSelectionChangeEventDetail]] =
+    new EventProp("selection-change")
 
   // -- Slots --
 
   /** Defines the fixed items at the bottom of the component.
     *
-    * **Note:** In order to achieve the best user experience, it is recommended
-    * that you keep the fixed items "flat" (do not pass sub-items)
+    * **Note:** In order to achieve the best user experience, it is recommended that you keep the fixed items "flat" (do
+    * not pass sub-items)
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="fixedItems"`). Since you can't change the DOM order of
-    * slots when declaring them within a prop, it might prove beneficial to
-    * manually mount them as part of the component's children, especially when
-    * facing problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="fixedItems"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val fixedItems: Slot = new Slot("fixedItems")
 
   /** Defines the header of the `SideNavigation`.
     *
-    * **Note:** The header is displayed when the component is expanded - the
-    * property `collapsed` is false;
+    * **Note:** The header is displayed when the component is expanded - the property `collapsed` is false;
     *
     * __Note:__ The content of the prop will be rendered into a
-    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
-    * by assigning the respective
-    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot)
-    * attribute (`slot="header"`). Since you can't change the DOM order of slots
-    * when declaring them within a prop, it might prove beneficial to manually
-    * mount them as part of the component's children, especially when facing
-    * problems with the reading order of screen readers.
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="header"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
     *
-    * __Note:__ When passing a custom React component to this prop, you have to
-    * make sure your component reads the `slot` prop and appends it to the most
-    * outer element of your component. Learn more about it
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
     * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
     */
   lazy val header: Slot = new Slot("header")
