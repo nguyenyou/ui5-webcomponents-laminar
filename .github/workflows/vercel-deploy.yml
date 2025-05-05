@@ -28,15 +28,15 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           
-      - name: Cache Mill output
-        uses: actions/cache@v3
-        with:
-          path: |
-            out
-            ~/.mill
-          key: ${{ runner.os }}-mill-${{ hashFiles('build.mill') }}-${{ hashFiles('**/*.scala') }}
-          restore-keys: |
-            ${{ runner.os }}-mill-
+      # - name: Cache Mill output
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: |
+      #       out
+      #       ~/.mill
+      #     key: ${{ runner.os }}-mill-${{ hashFiles('build.mill') }}-${{ hashFiles('**/*.scala') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-mill-
           
       - name: Build ScalaJS
         run: ./mill -i website.fullLinkJS
