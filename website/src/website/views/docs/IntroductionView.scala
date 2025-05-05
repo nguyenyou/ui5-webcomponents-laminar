@@ -77,8 +77,10 @@ object IntroductionView extends ExampleView("Introduction") {
       ),
       div(
         Select(
-          _.onChange.map(_.detail.selectedOption.id) --> selectedOptionVar.writer
-        )(),
+          _.onChange.map(_.detail.selectedOption.id) --> websiteThemeVar.writer
+        )(
+          THEMES.map(theme => Opt(_.id := theme._1)(theme._2))
+        ),
         Select(
           _.onChange.map(
             _.detail.selectedOption.id
