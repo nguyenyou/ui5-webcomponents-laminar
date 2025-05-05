@@ -38,6 +38,8 @@ object Pages {
   case object ColorPickerPage         extends Page("Color Picker")
   case object ComboBoxPage            extends Page("ComboBox")
   case object DatePickerPage          extends Page("Date Picker")
+  case object DateRangePickerPage     extends Page("Date Range Picker")
+  case object DateTimePickerPage      extends Page("Date Time Picker")
   case object IntroductionPage        extends Page("Introduction")
 
   given pageCodec: Codec[Page] = deriveAllCodecs
@@ -63,6 +65,8 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(ColorPickerPage)(ColorPickerView())
   .handleValue(ComboBoxPage)(ComboBoxView())
   .handleValue(DatePickerPage)(DatePickerView())
+  .handleValue(DateRangePickerPage)(DateRangePickerView())
+  .handleValue(DateTimePickerPage)(DateTimePickerView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -83,7 +87,9 @@ val docPages: List[Page] = List(
   ColorPalettePopoverPage,
   ColorPickerPage,
   ComboBoxPage,
-  DatePickerPage
+  DatePickerPage,
+  DateRangePickerPage,
+  DateTimePickerPage
 )
 
 // Step 4: Map URL to Page
@@ -131,7 +137,11 @@ object AppRouter
         Route
           .static(ComboBoxPage, root / ComboBoxPage.path / endOfSegments, "/docs"),
         Route
-          .static(DatePickerPage, root / DatePickerPage.path / endOfSegments, "/docs")
+          .static(DatePickerPage, root / DatePickerPage.path / endOfSegments, "/docs"),
+        Route
+          .static(DateRangePickerPage, root / DateRangePickerPage.path / endOfSegments, "/docs"),
+        Route
+          .static(DateTimePickerPage, root / DateTimePickerPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
