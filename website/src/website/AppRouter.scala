@@ -25,6 +25,7 @@ object Pages {
   case object AvatarPage        extends Page("Avatar")
   case object AvatarGroupPage   extends Page("Avatar Group")
   case object BarPage           extends Page("Bar")
+  case object BreadcrumbsPage   extends Page("Breadcrumbs")
   case object BusyIndicatorPage extends Page("Busy Indicator")
   case object ButtonPage        extends Page("Button")
   case object IntroductionPage  extends Page("Introduction")
@@ -40,6 +41,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(AvatarPage)(AvatarView())
   .handleValue(AvatarGroupPage)(AvatarGroupView())
   .handleValue(BarPage)(BarView())
+  .handleValue(BreadcrumbsPage)(BreadcrumbsView())
   .handleValue(BusyIndicatorPage)(BusyIndicatorView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
@@ -49,6 +51,7 @@ val docPages: List[Page] = List(
   AvatarPage,
   AvatarGroupPage,
   BarPage,
+  BreadcrumbsPage,
   BusyIndicatorPage,
   ButtonPage
 )
@@ -71,6 +74,12 @@ object AppRouter
           ),
         Route
           .static(BarPage, root / BarPage.path / endOfSegments, "/docs"),
+        Route
+          .static(
+            BreadcrumbsPage,
+            root / BreadcrumbsPage.path / endOfSegments,
+            "/docs"
+          ),
         Route
           .static(BusyIndicatorPage, root / BusyIndicatorPage.path / endOfSegments, "/docs")
       ),

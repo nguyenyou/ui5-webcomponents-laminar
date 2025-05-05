@@ -1,5 +1,3 @@
-// Copyright (C) 2014-2025 Anduin Transactions Inc.
-
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
@@ -17,7 +15,7 @@ object BreadcrumbsView extends ExampleView("Breadcrumbs") {
         content = Source.annotate {
           Breadcrumbs()(
             BreadcrumbsItem(
-              _.href := "#",
+              _.href   := "#",
               _.target := "_blank"
             )("Root page"),
             BreadcrumbsItem(
