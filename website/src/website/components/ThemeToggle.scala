@@ -21,9 +21,7 @@ case class ThemeToggle() {
         val theme =
           ThemeProvider.Theme.values.find(_.key == currentTheme).get
         theme.pair
-      }) --> Observer[String] { newTheme =>
-        ThemeProvider.websiteThemeVar.set(newTheme)
-      }
+      }) --> ThemeProvider.websiteThemeVar.writer
     )()
   }
 }

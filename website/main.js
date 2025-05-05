@@ -1,5 +1,5 @@
 import { setTheme } from "@ui5/webcomponents-base/config/Theme.js";
-setTheme("sap_horizon_dark");
+setTheme(initialTheme);
 
 import "scalajs:main.js";
 import "./style.css";

@@ -98,7 +98,6 @@ case class Sidebar() {
     }
 
   def apply(): HtmlElement = {
-    println(docPages)
     asideTag(
       tw.border_grid.fixed.top_14.z_30.hidden.raw("h-[calc(100vh-3.5rem)]"),
       tw.w_full.shrink_0.border_r.md(tw.sticky.block),

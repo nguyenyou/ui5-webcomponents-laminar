@@ -25,9 +25,14 @@ object IframePreview {
        |<head>
        |  <meta charset="UTF-8">
        |  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       |  <script>
+       |    var initialTheme = "${theme}";
+       |    var initialContentDensity = "${contentDensity}";
+       |    var initialDirection = "${direction}";
+       |  </script>
        |</head>
        |<body class="font-sans antialiased">
-       |  <div id="${id}" data-theme="${theme}" data-content-density="${contentDensity}" data-direction="${direction}"></div>
+       |  <div id="${id}"></div>
        |  <script type="module" src="/main.js"></script>
        |</body>
        |</html>
@@ -48,9 +53,15 @@ object IframePreview {
        |  <meta name="viewport" content="width=device-width, initial-scale=1.0">
        |  <link rel="stylesheet" crossorigin href="/assets/index-[REPLACE_THIS_WITH_INDEX_CSS_HASH].css">
        |  <script type="module" crossorigin src="/assets/index-[REPLACE_THIS_WITH_INDEX_JS_HASH].js"></script>
+       |  <script>
+       |    var initialTheme = "${theme}";
+       |    var initialContentDensity = "${contentDensity}";
+       |    var initialDirection = "${direction}";
+       |  </script>
        |</head>
        |<body class="font-sans antialiased">
-       |  <div id="${id}" data-theme="${theme}" data-content-density="${contentDensity}" data-direction="${direction}"></div>
+       |  <div id="${id}"></div>
+       |  <script type="module" src="/main.js"></script>
        |</body>
        |</html>
       """.stripMargin
@@ -61,22 +72,26 @@ object IframePreview {
   ): HtmlElement = {
     val exampleId = example.id
 
-    div(
-      child <-- websiteThemeSignal
-        .combineWith(contentDensitySignal, directionSignal)
-        .map { case (theme, contentDensity, direction) =>
-          iframe(
-            tw.border_0,
-            width.percent(100),
-            height.px(iframeHeight),
-            srcDocAttr := {
-              if (isDevelopment)
-                srcDocDevelopment(exampleId, theme, contentDensity, direction)
-              else srcDocProduction(exampleId, theme, contentDensity, direction)
-            }
-          )
-        }
-    )
+    Preview(title) {
+      div(
+        child <-- websiteThemeSignal
+          .combineWith(contentDensitySignal, directionSignal)
+          .map { case (theme, contentDensity, direction) =>
+            iframe(
+              tw.border_0,
+              width.percent(100),
+              height.px(iframeHeight),
+              srcDocAttr := {
+                if (isDevelopment)
+                  srcDocDevelopment(exampleId, theme, contentDensity, direction)
+                else srcDocProduction(exampleId, theme, contentDensity, direction)
+              }
+            )
+          }
+      )
+    } {
+      sourceCode
+    }
   }
 
 }

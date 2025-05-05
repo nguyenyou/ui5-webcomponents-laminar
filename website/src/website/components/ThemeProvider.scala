@@ -6,6 +6,9 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThem
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
 import org.scalajs.dom
 import website.components.ThemeProvider.{contentDensitySignal, directionSignal, websiteThemeSignal}
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSGlobal
+import website.facades.GlobalConfig
 
 case class ThemeProvider() {
   // Documentation: https://sap.github.io/ui5-webcomponents/docs/development/styling/#theming-assets
@@ -41,24 +44,6 @@ case class ThemeProvider() {
 }
 
 object ThemeProvider {
-  val lightTheme = Seq(
-    Theme.SapHorizon,
-    Theme.SapHorizonHcw,
-    Theme.SapFiori3,
-    Theme.SapFiori3Hcw
-  )
-
-  val themePairMap = Map(
-    "sap_horizon"      -> "sap_horizon_dark",
-    "sap_horizon_dark" -> "sap_horizon",
-    "sap_horizon_hcb"  -> "sap_horizon_hcb",
-    "sap_horizon_hcw"  -> "sap_horizon_hcw",
-    "sap_fiori_3"      -> "sap_fiori_3_dark",
-    "sap_fiori_3_dark" -> "sap_fiori_3",
-    "sap_fiori_3_hcb"  -> "sap_fiori_3_hcb",
-    "sap_fiori_3_hcw"  -> "sap_fiori_3_hcw"
-  )
-
   val Themes = Seq(
     ("sap_horizon", "Morning Horizon (Light)"),
     ("sap_horizon_dark", "Evening Horizon (Dark)"),
@@ -122,7 +107,9 @@ object ThemeProvider {
         )
   }
 
-  val websiteThemeVar    = Var(Theme.SapHorizonDark.key)
+  val initialTheme = GlobalConfig.initialTheme
+
+  val websiteThemeVar    = Var(initialTheme)
   val websiteThemeSignal = websiteThemeVar.signal
 
   val contentDensityVar    = Var("cozy")

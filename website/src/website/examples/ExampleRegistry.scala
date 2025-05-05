@@ -3,6 +3,7 @@ package website.examples
 object ExampleRegistry {
 
   val examples = List(
+    DialogExampleBasic,
     PopoverExampleBasic
   )
 
