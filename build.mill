@@ -24,6 +24,10 @@ object Dependencies {
     ivy"io.github.nguyenyou::ui5-webcomponents::${Versions.`ui5-webcomponents`}"
   )
 
+  val `ui5-webcomponents-laminar` = Agg(
+    ivy"io.github.nguyenyou::ui5-webcomponents-laminar::${Versions.`ui5-webcomponents-laminar`}"
+  )
+
   val laminar = Agg(
     ivy"com.raquo::laminar::${Versions.laminar}"
   )
@@ -77,7 +81,10 @@ trait CommonPublish extends SonatypeCentralPublishModule {
 
 object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
-  def ivyDeps = super.ivyDeps() ++ Dependencies.laminar ++ Dependencies.scalajsDom ++ Dependencies.`ui5-webcomponents`
+  def ivyDeps = super.ivyDeps() ++ 
+  Dependencies.laminar ++ 
+  Dependencies.scalajsDom ++ 
+  Dependencies.`ui5-webcomponents`
 
   // def moduleDeps = Seq(`ui5-webcomponents`)
 }
@@ -98,7 +105,11 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
 
 object website extends WebModule with NoDoc {
   def moduleKind = ModuleKind.ESModule
-  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
-
- def ivyDeps = super.ivyDeps() ++ Dependencies.scalawind ++ Dependencies.waypoint ++ Dependencies.macrotask ++ Dependencies.borer
+  // def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+  def ivyDeps = super.ivyDeps() ++ 
+  Dependencies.scalawind ++ 
+  Dependencies.waypoint ++ 
+  Dependencies.macrotask ++ 
+  Dependencies.borer ++ 
+  Dependencies.`ui5-webcomponents-laminar`
 }
