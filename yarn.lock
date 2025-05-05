@@ -8251,11 +8251,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quickstart-mill@workspace:examples/quickstart-mill":
+"quickstart@workspace:examples/quickstart":
   version: 0.0.0-use.local
-  resolution: "quickstart-mill@workspace:examples/quickstart-mill"
+  resolution: "quickstart@workspace:examples/quickstart"
   dependencies:
     "@ui5/webcomponents": "npm:2.9.0"
+    concurrently: "npm:9.1.2"
     vite: "npm:6.3.4"
   languageName: unknown
   linkType: soft
