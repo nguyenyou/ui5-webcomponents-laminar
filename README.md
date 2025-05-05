@@ -32,6 +32,8 @@ We maintain a clear separation between component properties and children.
 
 For more examples, visit our [conversion playground](https://ui5webcomponents-to-laminar.vercel.app/) (fun fact: this site is 100% vibe coded) This tool helps you quickly translate UI5 Web Components examples into Laminar wrappers.
 
+An additional benefit of separating properties from children is significantly improved IDE support. This approach avoids a known Scala compiler limitation ([SCL-21713](https://youtrack.jetbrains.com/issue/SCL-21713/Method-accepting-a-union-of-types-that-includes-a-Function-type-problems-with-go-to-definition-type-hints-and-autocomplete-Scala)) that otherwise breaks code completion, type hints, and go-to-definition functionality when methods accept unions of types including function types.
+
 ### 2. Leveraging Scala 3 Type Unions
 
 Instead of traditional enums:
