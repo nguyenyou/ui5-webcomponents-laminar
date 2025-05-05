@@ -86,7 +86,7 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoD
   Dependencies.scalajsDom ++ 
   Dependencies.`ui5-webcomponents`
 
-  // def moduleDeps = Seq(`ui5-webcomponents`)
+  def moduleDeps = Seq(`ui5-webcomponents`)
 }
 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish with NoDoc {
