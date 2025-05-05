@@ -105,11 +105,10 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
 
 object website extends WebModule with NoDoc {
   def moduleKind = ModuleKind.ESModule
-  // def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
   def ivyDeps = super.ivyDeps() ++ 
   Dependencies.scalawind ++ 
   Dependencies.waypoint ++ 
   Dependencies.macrotask ++ 
-  Dependencies.borer ++ 
-  Dependencies.`ui5-webcomponents-laminar`
+  Dependencies.borer
 }
