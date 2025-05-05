@@ -20,15 +20,17 @@ object Pages {
     def path = if (url.isEmpty) title.toLowerCase.replace(" ", "-") else url
   }
 
-  case object HomePage          extends Page("Home")
-  case object NotFoundPage      extends Page("Not Found")
-  case object AvatarPage        extends Page("Avatar")
-  case object AvatarGroupPage   extends Page("Avatar Group")
-  case object BarPage           extends Page("Bar")
-  case object BreadcrumbsPage   extends Page("Breadcrumbs")
-  case object BusyIndicatorPage extends Page("Busy Indicator")
-  case object ButtonPage        extends Page("Button")
-  case object IntroductionPage  extends Page("Introduction")
+  case object HomePage           extends Page("Home")
+  case object NotFoundPage       extends Page("Not Found")
+  case object AvatarPage         extends Page("Avatar")
+  case object AvatarGroupPage    extends Page("Avatar Group")
+  case object BarPage            extends Page("Bar")
+  case object BreadcrumbsPage    extends Page("Breadcrumbs")
+  case object BusyIndicatorPage  extends Page("Busy Indicator")
+  case object ButtonPage         extends Page("Button")
+  case object CalendarPage       extends Page("Calendar")
+  case object CalendarLegendPage extends Page("Calendar Legend")
+  case object IntroductionPage   extends Page("Introduction")
 
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
@@ -43,6 +45,8 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(BarPage)(BarView())
   .handleValue(BreadcrumbsPage)(BreadcrumbsView())
   .handleValue(BusyIndicatorPage)(BusyIndicatorView())
+  .handleValue(CalendarPage)(CalendarView())
+  .handleValue(CalendarLegendPage)(CalendarLegendView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -53,7 +57,9 @@ val docPages: List[Page] = List(
   BarPage,
   BreadcrumbsPage,
   BusyIndicatorPage,
-  ButtonPage
+  ButtonPage,
+  CalendarPage,
+  CalendarLegendPage
 )
 
 // Step 4: Map URL to Page
@@ -81,7 +87,11 @@ object AppRouter
             "/docs"
           ),
         Route
-          .static(BusyIndicatorPage, root / BusyIndicatorPage.path / endOfSegments, "/docs")
+          .static(BusyIndicatorPage, root / BusyIndicatorPage.path / endOfSegments, "/docs"),
+        Route
+          .static(CalendarPage, root / CalendarPage.path / endOfSegments, "/docs"),
+        Route
+          .static(CalendarLegendPage, root / CalendarLegendPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
