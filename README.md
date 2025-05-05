@@ -155,7 +155,7 @@ This project is meant to serve the community, and I'm eager to learn from your i
 
 This project wouldn't be possible without the brilliant work and generous sharing of knowledge from many wonderful people:
 
-- **[Antoine Doeraene (sherpal)](https://github.com/sherpal)** - For creating [LaminarSAPUI5Bindings](https://github.com/sherpal/LaminarSAPUI5Bindings), which provided the foundation and inspiration for this project.em.
+- **[Antoine Doeraene (sherpal)](https://github.com/sherpal)** - For creating [LaminarSAPUI5Bindings](https://github.com/sherpal/LaminarSAPUI5Bindings), which provided the foundation and inspiration for this project.
 
 - **[Nikita Gazarov (raquo)](https://github.com/raquo)** - For developing [laminar-shoelace-components](https://github.com/raquo/laminar-shoelace-components) and pioneering the concept of generating bindings from CEM.
 
