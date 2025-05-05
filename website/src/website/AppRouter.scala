@@ -20,20 +20,21 @@ object Pages {
     def path = if (url.isEmpty) title.toLowerCase.replace(" ", "-") else url
   }
 
-  case object HomePage           extends Page("Home")
-  case object NotFoundPage       extends Page("Not Found")
-  case object AvatarPage         extends Page("Avatar")
-  case object AvatarGroupPage    extends Page("Avatar Group")
-  case object BarPage            extends Page("Bar")
-  case object BreadcrumbsPage    extends Page("Breadcrumbs")
-  case object BusyIndicatorPage  extends Page("Busy Indicator")
-  case object ButtonPage         extends Page("Button")
-  case object CalendarPage       extends Page("Calendar")
-  case object CalendarLegendPage extends Page("Calendar Legend")
-  case object CardPage           extends Page("Card")
-  case object CarouselPage       extends Page("Carousel")
-  case object ColorPalettePage   extends Page("Color Palette")
-  case object IntroductionPage   extends Page("Introduction")
+  case object HomePage                extends Page("Home")
+  case object NotFoundPage            extends Page("Not Found")
+  case object AvatarPage              extends Page("Avatar")
+  case object AvatarGroupPage         extends Page("Avatar Group")
+  case object BarPage                 extends Page("Bar")
+  case object BreadcrumbsPage         extends Page("Breadcrumbs")
+  case object BusyIndicatorPage       extends Page("Busy Indicator")
+  case object ButtonPage              extends Page("Button")
+  case object CalendarPage            extends Page("Calendar")
+  case object CalendarLegendPage      extends Page("Calendar Legend")
+  case object CardPage                extends Page("Card")
+  case object CarouselPage            extends Page("Carousel")
+  case object ColorPalettePage        extends Page("Color Palette")
+  case object ColorPalettePopoverPage extends Page("Color Palette Popover")
+  case object IntroductionPage        extends Page("Introduction")
 
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
@@ -53,6 +54,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(CardPage)(CardView())
   .handleValue(CarouselPage)(CarouselView())
   .handleValue(ColorPalettePage)(ColorPaletteView())
+  .handleValue(ColorPalettePopoverPage)(ColorPalettePopoverView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -68,7 +70,8 @@ val docPages: List[Page] = List(
   CalendarLegendPage,
   CardPage,
   CarouselPage,
-  ColorPalettePage
+  ColorPalettePage,
+  ColorPalettePopoverPage
 )
 
 // Step 4: Map URL to Page
@@ -106,7 +109,9 @@ object AppRouter
         Route
           .static(CarouselPage, root / CarouselPage.path / endOfSegments, "/docs"),
         Route
-          .static(ColorPalettePage, root / ColorPalettePage.path / endOfSegments, "/docs")
+          .static(ColorPalettePage, root / ColorPalettePage.path / endOfSegments, "/docs"),
+        Route
+          .static(ColorPalettePopoverPage, root / ColorPalettePopoverPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
