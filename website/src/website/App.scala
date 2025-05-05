@@ -121,11 +121,7 @@ case class App() {
   }
 
   def renderApp(): HtmlElement = {
-    div(
-      child <-- AppRouter.currentPageSignal.distinct.map { case _ =>
-        renderDefaultLayout()
-      }
-    )
+    renderDefaultLayout()
   }
 
   def apply(): HtmlElement = {

@@ -150,6 +150,37 @@ object BreadcrumbsView extends ExampleView("Breadcrumbs") {
             )
           )
         }
+      ),
+      Demo(
+        title = "Current Page Appearance",
+        content = Source.annotate {
+          div(
+            Breadcrumbs(
+              _.design := "NoCurrentPage"
+            )(
+              BreadcrumbsItem(
+                _.href   := "https://www.sap.com",
+                _.target := "_blank"
+              )("Root Page"),
+              BreadcrumbsItem(
+                _.href := "https://www.sap.com"
+              )("Parent Page"),
+              BreadcrumbsItem()("Parent Page")
+            ),
+            Breadcrumbs(
+              _.design := "Standard"
+            )(
+              BreadcrumbsItem(
+                _.href   := "https://www.sap.com",
+                _.target := "_blank"
+              )("Root Page"),
+              BreadcrumbsItem(
+                _.href := "https://www.sap.com"
+              )("Parent Page"),
+              BreadcrumbsItem()("Current Page")
+            )
+          )
+        }
       )
     )
   }
