@@ -8,9 +8,9 @@ import website.Pages.AvatarPage
 object HomeView extends ExampleView("Home") {
   override def component: HtmlElement = {
     div(
-      // onMountCallback { _ =>
-      //   AppRouter.pushState(AvatarPage)
-      // }
+      onMountCallback { _ =>
+        AppRouter.pushState(AvatarPage)
+      }
     )
   }
 
