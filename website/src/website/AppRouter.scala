@@ -32,6 +32,7 @@ object Pages {
   case object CalendarLegendPage      extends Page("Calendar Legend")
   case object CardPage                extends Page("Card")
   case object CarouselPage            extends Page("Carousel")
+  case object CheckBoxPage            extends Page("CheckBox")
   case object ColorPalettePage        extends Page("Color Palette")
   case object ColorPalettePopoverPage extends Page("Color Palette Popover")
   case object ColorPickerPage         extends Page("Color Picker")
@@ -55,6 +56,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(CalendarLegendPage)(CalendarLegendView())
   .handleValue(CardPage)(CardView())
   .handleValue(CarouselPage)(CarouselView())
+  .handleValue(CheckBoxPage)(CheckboxView())
   .handleValue(ColorPalettePage)(ColorPaletteView())
   .handleValue(ColorPalettePopoverPage)(ColorPalettePopoverView())
   .handleValue(ColorPickerPage)(ColorPickerView())
@@ -74,6 +76,7 @@ val docPages: List[Page] = List(
   CalendarLegendPage,
   CardPage,
   CarouselPage,
+  CheckBoxPage,
   ColorPalettePage,
   ColorPalettePopoverPage,
   ColorPickerPage,
@@ -114,6 +117,8 @@ object AppRouter
           .static(CardPage, root / CardPage.path / endOfSegments, "/docs"),
         Route
           .static(CarouselPage, root / CarouselPage.path / endOfSegments, "/docs"),
+        Route
+          .static(CheckBoxPage, root / CheckBoxPage.path / endOfSegments, "/docs"),
         Route
           .static(ColorPalettePage, root / ColorPalettePage.path / endOfSegments, "/docs"),
         Route
