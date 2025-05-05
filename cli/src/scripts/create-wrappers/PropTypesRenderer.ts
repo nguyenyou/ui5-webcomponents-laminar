@@ -183,24 +183,6 @@ export class PropTypesRenderer extends AbstractRenderer {
   }
 
   prepare(context: WebComponentWrapper) {
-    const interfacesImportPath =
-      process.env.INTERFACES_IMPORT_PATH ?? "@ui5/webcomponents-react-base";
-
-    context.addTypeImport(interfacesImportPath, "CommonProps");
-    context.typeExportSet.add(`${context.componentName}PropTypes`);
-    if (this._slots.some((s) => s.name === "children" || s.name === "")) {
-      context.addTypeImport("react", "ReactNode");
-    }
-    if (this._slots.some((s) => s.name !== "children" && s.name !== "")) {
-      context.addTypeImport(interfacesImportPath, "UI5WCSlotsNode");
-    }
-    const customEvents = this._events.filter((event) =>
-      event.type.text.includes("CustomEvent")
-    );
-    if (customEvents.length > 0) {
-      context.addTypeImport(interfacesImportPath, "Ui5CustomEvent");
-    }
-
     for (const event of this._events) {
       const reactEventName = `on${capitalizeFirstLetter(
         snakeCaseToCamelCase(event.name)
@@ -211,17 +193,6 @@ export class PropTypesRenderer extends AbstractRenderer {
         this.eventHasDetails(event)
       ) {
         resolveReferenceImports(event.type?.references ?? [], context);
-      } else if (event.type.text === "Event") {
-        switch (event.name) {
-          case "click":
-            context.addTypeImport("react", "MouseEventHandler");
-            break;
-          case "drop":
-            context.addTypeImport("react", "DragEventHandler");
-            break;
-          default:
-            console.warn("Unknown Native Event", event.name);
-        }
       }
     }
   }
