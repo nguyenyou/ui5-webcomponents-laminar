@@ -6,6 +6,10 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 
 case class ThemeToggle() {
   def apply(): HtmlElement = {
+    val btn = Button(
+    )("Click me")
+
+
     Button(
       _.design := "Transparent",
       _.icon <-- ThemeProvider.websiteThemeSignal.map { currentTheme =>

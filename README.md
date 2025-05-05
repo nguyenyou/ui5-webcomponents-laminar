@@ -62,11 +62,36 @@ Button(
 
 This approach offers excellent IDE support in both IntelliJ and Metals while reducing imports and maintaining type safety. It also aligns perfectly with our goal of seamless translation from HTML.
 
-### 3. Auto-Generated from Component Elements Manifest (CEM)
+### 3. Auto-Generated Wrappers
 
-UI5 Web Components evolve rapidly, with new features and changes added frequently. To keep pace, our wrappers are automatically generated from the same CEM (Component Elements Manifest) used by the official [ui5-webcomponents-react](https://github.com/SAP/ui5-webcomponents-react) library.
+#### Generated from Component Elements Manifest (CEM)
+
+UI5 Web Components evolve rapidly with frequent feature additions and changes. To keep pace, our wrappers are automatically generated from the same Component Elements Manifest (CEM) used by the official [ui5-webcomponents-react](https://github.com/SAP/ui5-webcomponents-react) library.
 
 This approach ensures long-term maintainability and compatibility with the underlying UI5 components.
+
+#### Leveraging ScalablyTyped for Facades Generation
+
+We use ScalablyTyped to generate type-safe facades for the UI5 Web Components. This provides two key benefits:
+
+1. **Type-Safe DOM References**  
+   Access the underlying UI5 web component with complete type safety via the `ref` attribute. All component properties and methods are fully typed:
+
+   ```scala
+   val button = Button()("Click me")
+   button.ref.accessibilityAttributes.setExpanded(true)
+   ```
+
+2. **Type-Safe Custom Events**  
+   UI5 components emit custom events with detailed payloads. Our wrappers provide type-safe access to these event details:
+
+   ```scala
+   Select(
+     _.onChange.map(_.detail.selectedOption.id) --> selectedOptionVar.writer
+   )()
+   ```
+
+This approach eliminates the need to manually define types for complex TypeScript interfaces while ensuring your code remains type-safe.
 
 ### 4. Standing on the Shoulders of Giants
 

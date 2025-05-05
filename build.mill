@@ -12,7 +12,7 @@ object Versions {
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
   val scalawind = "1.0.1"
-  val `ui5-webcomponents` = "0.0.9"
+  val `ui5-webcomponents` = "2.9.0"
   val `ui5-webcomponents-laminar` = "0.0.31"
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
@@ -77,9 +77,9 @@ trait CommonPublish extends SonatypeCentralPublishModule {
 
 object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
-  def ivyDeps = super.ivyDeps() ++ Dependencies.laminar ++ Dependencies.scalajsDom ++ Dependencies.`ui5-webcomponents`
+  def ivyDeps = super.ivyDeps() ++ Dependencies.laminar ++ Dependencies.scalajsDom
 
-  // def moduleDeps = Seq(`ui5-webcomponents`)
+  def moduleDeps = Seq(`ui5-webcomponents`)
 }
 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish with NoDoc {

@@ -22,13 +22,11 @@ case class ThemeProvider() {
       websiteThemeSignal.changes --> Observer[String] { theme =>
         setTheme(theme)
       },
-      contentDensitySignal.changes --> Observer[String] { contentDensity =>
-        contentDensity match {
-          case "cozy" =>
-            dom.document.body.classList.remove("ui5-content-density-compact")
-          case "compact" =>
-            dom.document.body.classList.add("ui5-content-density-compact")
-        }
+      contentDensitySignal.changes --> Observer[String] {
+        case "cozy" =>
+          dom.document.body.classList.remove("ui5-content-density-compact")
+        case "compact" =>
+          dom.document.body.classList.add("ui5-content-density-compact")
       },
       directionSignal.changes --> Observer[String] { direction =>
         direction match {
@@ -44,17 +42,6 @@ case class ThemeProvider() {
 }
 
 object ThemeProvider {
-  val Themes = Seq(
-    ("sap_horizon", "Morning Horizon (Light)"),
-    ("sap_horizon_dark", "Evening Horizon (Dark)"),
-    ("sap_horizon_hcb", "Horizon High Contrast Black"),
-    ("sap_horizon_hcw", "Horizon High Contrast White"),
-    ("sap_fiori_3", "Quartz Light"),
-    ("sap_fiori_3_dark", "Quartz Dark"),
-    ("sap_fiori_3_hcb", "Quartz High Contrast Black"),
-    ("sap_fiori_3_hcw", "Quartz High Contrast White")
-  )
-
   enum Theme(
       val key: String,
       val name: String,
@@ -107,14 +94,14 @@ object ThemeProvider {
         )
   }
 
-  val initialTheme = GlobalConfig.initialTheme
+  val initialTheme: String = GlobalConfig.initialTheme
 
-  val websiteThemeVar    = Var(initialTheme)
-  val websiteThemeSignal = websiteThemeVar.signal
+  val websiteThemeVar: Var[String] = Var(initialTheme)
+  val websiteThemeSignal: Signal[String] = websiteThemeVar.signal.distinct
 
-  val contentDensityVar    = Var("cozy")
-  val contentDensitySignal = contentDensityVar.signal
+  val contentDensityVar: Var[String] = Var("cozy")
+  val contentDensitySignal: Signal[String] = contentDensityVar.signal.distinct
 
-  val directionVar    = Var("ltr")
-  val directionSignal = directionVar.signal
+  val directionVar: Var[String] = Var("ltr")
+  val directionSignal: Signal[String] = directionVar.signal.distinct
 }
