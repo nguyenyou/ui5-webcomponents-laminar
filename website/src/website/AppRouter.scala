@@ -32,6 +32,7 @@ object Pages {
   case object CalendarLegendPage extends Page("Calendar Legend")
   case object CardPage           extends Page("Card")
   case object CarouselPage       extends Page("Carousel")
+  case object ColorPalettePage   extends Page("Color Palette")
   case object IntroductionPage   extends Page("Introduction")
 
   given pageCodec: Codec[Page] = deriveAllCodecs
@@ -51,6 +52,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(CalendarLegendPage)(CalendarLegendView())
   .handleValue(CardPage)(CardView())
   .handleValue(CarouselPage)(CarouselView())
+  .handleValue(ColorPalettePage)(ColorPaletteView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -65,7 +67,8 @@ val docPages: List[Page] = List(
   CalendarPage,
   CalendarLegendPage,
   CardPage,
-  CarouselPage
+  CarouselPage,
+  ColorPalettePage
 )
 
 // Step 4: Map URL to Page
@@ -101,7 +104,9 @@ object AppRouter
         Route
           .static(CardPage, root / CardPage.path / endOfSegments, "/docs"),
         Route
-          .static(CarouselPage, root / CarouselPage.path / endOfSegments, "/docs")
+          .static(CarouselPage, root / CarouselPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ColorPalettePage, root / ColorPalettePage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
