@@ -45,6 +45,7 @@ object Pages {
   case object LabelPage               extends Page("Label")
   case object LinkPage                extends Page("Link")
   case object ListViewPage            extends Page("List")
+  case object MenuPage                extends Page("Menu")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
@@ -74,6 +75,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(LabelPage)(LabelView())
   .handleValue(LinkPage)(LinkView())
   .handleValue(ListViewPage)(ListView())
+  .handleValue(MenuPage)(MenuView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -101,7 +103,8 @@ val docPages: List[Page] = List(
   InputPage,
   LabelPage,
   LinkPage,
-  ListViewPage
+  ListViewPage,
+  MenuPage
 )
 
 // Step 4: Map URL to Page
@@ -162,7 +165,9 @@ object AppRouter
         Route
           .static(LinkPage, root / LinkPage.path / endOfSegments, "/docs"),
         Route
-          .static(ListViewPage, root / ListViewPage.path / endOfSegments, "/docs")
+          .static(ListViewPage, root / ListViewPage.path / endOfSegments, "/docs"),
+        Route
+          .static(MenuPage, root / MenuPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
