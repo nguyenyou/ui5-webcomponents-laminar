@@ -31,9 +31,9 @@ trait ExampleView(val name: String) {
 
   def apply(): HtmlElement = {
     div(
-      cls("p-6"),
+      tw.p_6,
       h1(
-        cls("text-2xl font-bold mb-5 mt-0"),
+        tw.text_2xl.font_bold.mb_5.mt_0,
         name
       ),
       div(

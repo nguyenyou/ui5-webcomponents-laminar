@@ -14,11 +14,38 @@ body {
 ::before,
 ::after {
   box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
+  /* border-width: 0; */
+  /* border-style: solid;
+  border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent) */
 }
 
+.border-b {
+  border-bottom-width: 1px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.border-t {
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.border-l {
+  border-left-width: 1px;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+.border-r {
+  border-right-width: 1px;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
 a {
   color: inherit;
   -webkit-text-decoration: inherit;
@@ -45,7 +72,7 @@ pre {
   margin-right: auto;
   width: 100%;
   max-width: 1400px;
-  border-style: dashed;
+  /* border-style: dashed; */
   border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
 }
 

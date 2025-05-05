@@ -27,11 +27,11 @@ case class App() {
     div(
       tw.relative.flex.min_h_svh.flex_col.bg_sap_background,
       div(
-        tw.border_grid.flex.flex_col.flex_1,
+        tw.flex.flex_col.flex_1,
         headerTag(
-          tw.border_b.border_grid.sticky.top_0.z_50.w_full.bg_sap_background.bg_opacity_95.backdrop_blur,
+          tw.sticky.border_b.border_grid.top_0.z_50.w_full.bg_sap_background.bg_opacity_95.backdrop_blur,
           div(
-            tw.container_wrapper,
+            tw.container_wrapper.border_l.border_r.border_grid,
             div(
               tw.container.flex.h_14.items_center.gap_2.md(tw.gap_4),
               div(
@@ -62,7 +62,7 @@ case class App() {
         mainTag(
           tw.flex.flex_1.flex_col,
           div(
-            tw.container_wrapper.flex_1.flex.flex_col,
+            tw.container_wrapper.border_l.border_r.border_grid.flex_1.flex.flex_col,
             div(
               tw.container.flex_1.items_start,
               tw.md(tw.grid.gap_6),
@@ -94,7 +94,7 @@ case class App() {
         footerTag(
           tw.border_grid.border_t.py_6.md(tw.py_0),
           div(
-            tw.container_wrapper,
+            tw.container_wrapper.border_l.border_r.border_grid,
             div(
               tw.container.py_4,
               div(

@@ -5,16 +5,17 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
 import website.macros.Source
 
-object MessageStripView extends ExampleView("Message Strip") {
+object RatingIndicatorView extends ExampleView("Rating Indicator") {
 
   override def component: HtmlElement = {
     div(
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          MessageStrip(
-            _.design := "Information"
-          )("Information Message")
+          RatingIndicator(
+            _.value := 4,
+            _.max   := 7
+          )()
         }
       )
     )

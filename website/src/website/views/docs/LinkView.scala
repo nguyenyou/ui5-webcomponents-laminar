@@ -10,7 +10,7 @@ object LinkView extends ExampleView("Link") {
   override def component: HtmlElement = {
     div(
       Demo(
-        title = "Basic",
+        title = "Basic Sample",
         content = Source.annotate {
           div(
             cls("flex gap-2"),

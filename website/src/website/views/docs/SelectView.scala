@@ -5,16 +5,18 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
 import website.macros.Source
 
-object MessageStripView extends ExampleView("Message Strip") {
+object SelectView extends ExampleView("Select") {
 
   override def component: HtmlElement = {
     div(
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          MessageStrip(
-            _.design := "Information"
-          )("Information Message")
+          Select()(
+            Opt(_.icon := IconName.laptop)("Desktop"),
+            Opt(_.icon := IconName.ipad, _.selected := true)("Tablet"),
+            Opt(_.icon := IconName.phone)("Phone")
+          )
         }
       )
     )

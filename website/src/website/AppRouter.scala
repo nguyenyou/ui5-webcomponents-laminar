@@ -47,6 +47,13 @@ object Pages {
   case object ListViewPage            extends Page("List")
   case object MenuPage                extends Page("Menu")
   case object MessageStripPage        extends Page("Message Strip")
+  case object MultiComboBoxPage       extends Page("Multi Combo Box")
+  case object RadioButtonPage         extends Page("Radio Button")
+  case object RangeSliderPage         extends Page("Range Slider")
+  case object RatingIndicatorPage     extends Page("Rating Indicator")
+  case object SplitButtonPage         extends Page("Split Button")
+  case object SelectPage              extends Page("Select")
+  case object SegmentedButtonPage     extends Page("Segmented Button")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
@@ -78,6 +85,13 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(ListViewPage)(ListView())
   .handleValue(MenuPage)(MenuView())
   .handleValue(MessageStripPage)(MessageStripView())
+  .handleValue(MultiComboBoxPage)(MultiComboBoxView())
+  .handleValue(RadioButtonPage)(RadioButtonView())
+  .handleValue(RangeSliderPage)(RangeSliderView())
+  .handleValue(RatingIndicatorPage)(RatingIndicatorView())
+  .handleValue(SplitButtonPage)(SplitButtonView())
+  .handleValue(SelectPage)(SelectView())
+  .handleValue(SegmentedButtonPage)(SegmentedButtonView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -107,7 +121,14 @@ val docPages: List[Page] = List(
   LinkPage,
   ListViewPage,
   MenuPage,
-  MessageStripPage
+  MessageStripPage,
+  MultiComboBoxPage,
+  RadioButtonPage,
+  RangeSliderPage,
+  RatingIndicatorPage,
+  SplitButtonPage,
+  SelectPage,
+  SegmentedButtonPage
 )
 
 // Step 4: Map URL to Page
@@ -172,7 +193,21 @@ object AppRouter
         Route
           .static(MenuPage, root / MenuPage.path / endOfSegments, "/docs"),
         Route
-          .static(MessageStripPage, root / MessageStripPage.path / endOfSegments, "/docs")
+          .static(MessageStripPage, root / MessageStripPage.path / endOfSegments, "/docs"),
+        Route
+          .static(MultiComboBoxPage, root / MultiComboBoxPage.path / endOfSegments, "/docs"),
+        Route
+          .static(RadioButtonPage, root / RadioButtonPage.path / endOfSegments, "/docs"),
+        Route
+          .static(RangeSliderPage, root / RangeSliderPage.path / endOfSegments, "/docs"),
+        Route
+          .static(RatingIndicatorPage, root / RatingIndicatorPage.path / endOfSegments, "/docs"),
+        Route
+          .static(SplitButtonPage, root / SplitButtonPage.path / endOfSegments, "/docs"),
+        Route
+          .static(SelectPage, root / SelectPage.path / endOfSegments, "/docs"),
+        Route
+          .static(SegmentedButtonPage, root / SegmentedButtonPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>

@@ -5,16 +5,20 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
 import website.macros.Source
 
-object MessageStripView extends ExampleView("Message Strip") {
+object RangeSliderView extends ExampleView("Range Slider") {
 
   override def component: HtmlElement = {
     div(
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          MessageStrip(
-            _.design := "Information"
-          )("Information Message")
+          RangeSlider(
+            _.min        := 0,
+            _.max        := 100,
+            _.step       := 5,
+            _.startValue := 20,
+            _.endValue   := 60
+          )()
         }
       )
     )
