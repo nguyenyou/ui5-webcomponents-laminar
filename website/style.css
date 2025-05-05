@@ -63,6 +63,13 @@ pre {
   border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
 }
 
+.sidebar-item-hover {
+  background-color: color-mix(in oklab,var(--sapBrandColor)10%,transparent);
+}
+
+.hover\:sidebar-item-hover:hover {
+  background-color: color-mix(in oklab,var(--sapBrandColor)10%,transparent);
+}
 
 .container-wrapper {
   margin-left: auto;
