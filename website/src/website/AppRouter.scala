@@ -57,6 +57,12 @@ object Pages {
   case object SwitchPage              extends Page("Switch")
   case object SliderPage              extends Page("Slider")
   case object ToastPage               extends Page("Toast")
+  case object TagPage                 extends Page("Tag")
+  case object TextPage                extends Page("Text")
+  case object TitlePage               extends Page("Title")
+  case object PanelPage               extends Page("Panel")
+  case object ProgressIndicatorPage   extends Page("Progress Indicator")
+  case object PopoverPage             extends Page("Popover")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
@@ -98,6 +104,13 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(SwitchPage)(SwitchView())
   .handleValue(SliderPage)(SliderView())
   .handleValue(ToastPage)(ToastView())
+  .handleValue(TagPage)(TagView())
+  .handleValue(TextView)(TextView())
+  .handleValue(TextPage)(TextView())
+  .handleValue(TitlePage)(TitleView())
+  .handleValue(PanelPage)(PanelView())
+  .handleValue(ProgressIndicatorPage)(ProgressIndicatorView())
+  .handleValue(PopoverPage)(PopoverView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -137,7 +150,13 @@ val docPages: List[Page] = List(
   SegmentedButtonPage,
   SwitchPage,
   SliderPage,
-  ToastPage
+  ToastPage,
+  TagPage,
+  TextPage,
+  TitlePage,
+  PanelPage,
+  ProgressIndicatorPage,
+  PopoverPage
 )
 
 // Step 4: Map URL to Page
@@ -222,7 +241,19 @@ object AppRouter
         Route
           .static(SliderPage, root / SliderPage.path / endOfSegments, "/docs"),
         Route
-          .static(ToastPage, root / ToastPage.path / endOfSegments, "/docs")
+          .static(ToastPage, root / ToastPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TagPage, root / TagPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TextPage, root / TextPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TitlePage, root / TitlePage.path / endOfSegments, "/docs"),
+        Route
+          .static(PanelPage, root / PanelPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ProgressIndicatorPage, root / ProgressIndicatorPage.path / endOfSegments, "/docs"),
+        Route
+          .static(PopoverPage, root / PopoverPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
