@@ -79,6 +79,7 @@ export class ImportsRenderer extends AbstractRenderer {
     }
     
     writer
+      .blankLine()
       .writeLine("import com.raquo.laminar.api.L.*")
       .writeLine("import com.raquo.laminar.codecs.*")
       .writeLine("import com.raquo.laminar.tags.CustomHtmlTag")

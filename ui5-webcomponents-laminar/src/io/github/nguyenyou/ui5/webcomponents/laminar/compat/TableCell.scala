@@ -1,4 +1,5 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar.compat
+
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import com.raquo.laminar.tags.CustomHtmlTag
