@@ -57,9 +57,11 @@ object Dependencies {
   )
 }
 
-trait WebModule extends ScalaJSModule {
+trait WebModule extends ScalaJSModule with ScalafixModule with NoDoc {
   def scalaVersion = Versions.scala3
   def scalaJSVersion = Versions.sjs
+
+  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
 
 trait NoDoc extends ScalaModule {
@@ -81,7 +83,7 @@ trait CommonPublish extends SonatypeCentralPublishModule {
   )
 }
 
-object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc with ScalafixModule {
+object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
   def ivyDeps = super.ivyDeps() ++ 
   Dependencies.laminar ++ 
@@ -90,10 +92,9 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoD
 
   // def moduleDeps = Seq(`ui5-webcomponents`)
 
-  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
 
-object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish with NoDoc {
+object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents`
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
   override def stOutputPackage = "io.github.nguyenyou.ui5.webcomponents"
@@ -107,7 +108,7 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
   )
 }
 
-object website extends WebModule with NoDoc with ScalafixModule {
+object website extends WebModule {
   def moduleKind = ModuleKind.ESModule
   def moduleDeps = Seq(`ui5-webcomponents-laminar`)
   def ivyDeps = super.ivyDeps() ++ 
@@ -115,6 +116,4 @@ object website extends WebModule with NoDoc with ScalafixModule {
   Dependencies.waypoint ++ 
   Dependencies.macrotask ++ 
   Dependencies.borer
-  
-  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
