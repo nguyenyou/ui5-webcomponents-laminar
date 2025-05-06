@@ -67,7 +67,6 @@ case class Sidebar() {
     div(
       tw.absolute.rounded.transition_all.duration_300.ease_out,
       tw.sidebar_item_hover,
-      hoverLinkSignal --> Observer { x => println(x) },
       cls <-- hoverLinkSignal.map {
         case Some(_) => tw.opacity_100.css
         case None    => tw.opacity_0.css
