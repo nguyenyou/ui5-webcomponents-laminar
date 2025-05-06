@@ -3,11 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distMediaGalleryMod.MediaGallerySelectionChangeEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesMediaGalleryLayoutMod.MediaGalleryLayout
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesMediaGalleryMenuHorizontalAlignMod.MediaGalleryMenuHorizontalAlign
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesMediaGalleryMenuVerticalAlignMod.MediaGalleryMenuVerticalAlign
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distMediaGalleryMod.MediaGallery as MediaGalleryComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distMediaGalleryMod.MediaGallerySelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

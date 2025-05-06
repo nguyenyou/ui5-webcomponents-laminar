@@ -3,16 +3,13 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.{
-  TreeItemClickEventDetail,
-  TreeItemDeleteEventDetail,
-  TreeItemMouseoutEventDetail,
-  TreeItemMouseoverEventDetail,
-  TreeItemToggleEventDetail,
-  TreeSelectionChangeEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelectionModeMod.ListSelectionMode
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.Tree as TreeComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemDeleteEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemMouseoutEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemMouseoverEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemToggleEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

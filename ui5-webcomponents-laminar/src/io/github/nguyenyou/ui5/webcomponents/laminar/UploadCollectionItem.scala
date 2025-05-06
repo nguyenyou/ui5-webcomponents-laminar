@@ -3,10 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesUploadStateMod.UploadState
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemMod.ListItemAccessibilityAttributes
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesHighlightMod.Highlight
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListItemTypeMod.ListItemType
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUploadCollectionItemMod.UploadCollectionItem as UploadCollectionItemComponent
 import org.scalajs.dom
 

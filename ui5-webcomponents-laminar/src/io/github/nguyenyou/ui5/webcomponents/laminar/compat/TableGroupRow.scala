@@ -1,7 +1,4 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar.compat
-
-import com.raquo.laminar.api.L.*
-import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableGroupRowMod.TableGroupRow as TableGroupRowComponent
 import org.scalajs.dom

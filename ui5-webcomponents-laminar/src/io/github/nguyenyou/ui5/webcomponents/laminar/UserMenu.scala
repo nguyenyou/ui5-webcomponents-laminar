@@ -3,11 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuMod.{
-  UserMenuOtherAccountClickEventDetail,
-  UserMenuItemClickEventDetail
-}
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuMod.UserMenu as UserMenuComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuMod.UserMenuItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuMod.UserMenuOtherAccountClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

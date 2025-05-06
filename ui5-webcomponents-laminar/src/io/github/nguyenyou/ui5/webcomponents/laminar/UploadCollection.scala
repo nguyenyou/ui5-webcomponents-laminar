@@ -3,12 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesUploadCollectionSelectionModeMod.UploadCollectionSelectionMode
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUploadCollectionMod.{
-  UploadCollectionItemDeleteEventDetail,
-  UploadCollectionSelectionChangeEventDetail
-}
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUploadCollectionMod.UploadCollection as UploadCollectionComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUploadCollectionMod.UploadCollectionItemDeleteEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUploadCollectionMod.UploadCollectionSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

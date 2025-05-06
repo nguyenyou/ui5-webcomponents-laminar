@@ -3,7 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distIllustratedMessageMod.IllustratedMessage as IllustratedMessageComponent
 import org.scalajs.dom
 

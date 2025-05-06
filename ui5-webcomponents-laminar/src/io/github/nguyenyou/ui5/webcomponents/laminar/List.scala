@@ -3,19 +3,13 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.{
-  ListItemClickEventDetail,
-  ListItemCloseEventDetail,
-  ListItemDeleteEventDetail,
-  ListItemToggleEventDetail,
-  ListMoveEventDetail,
-  ListSelectionChangeEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListAccessibleRoleMod.ListAccessibleRole
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListGrowingModeMod.ListGrowingMode
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelectionModeMod.ListSelectionMode
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSeparatorMod.ListSeparator
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.List as ListComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListItemCloseEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListItemDeleteEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListItemToggleEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListMoveEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.ListSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

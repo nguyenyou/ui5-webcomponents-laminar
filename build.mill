@@ -81,7 +81,7 @@ trait CommonPublish extends SonatypeCentralPublishModule {
   )
 }
 
-object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc {
+object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoDoc with ScalafixModule {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
   def ivyDeps = super.ivyDeps() ++ 
   Dependencies.laminar ++ 
@@ -89,6 +89,8 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with NoD
   Dependencies.`ui5-webcomponents`
 
   // def moduleDeps = Seq(`ui5-webcomponents`)
+
+  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish with NoDoc {

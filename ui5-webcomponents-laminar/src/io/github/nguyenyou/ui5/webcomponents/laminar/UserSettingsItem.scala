@@ -3,8 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserSettingsItemMod.UserSettingsItemViewSelectEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserSettingsItemMod.UserSettingsItem as UserSettingsItemComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserSettingsItemMod.UserSettingsItemViewSelectEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

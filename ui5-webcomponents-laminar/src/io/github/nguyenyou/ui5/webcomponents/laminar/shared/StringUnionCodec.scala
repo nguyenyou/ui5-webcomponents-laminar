@@ -16,6 +16,6 @@ object StringUnionCodec {
     */
   def apply[T <: String]: Codec[T, String] = new Codec[T, String] {
     override def encode(scalaValue: T): String = scalaValue
-    override def decode(domValue: String): T   = domValue.asInstanceOf[T]
+    override def decode(domValue: String): T   = domValue.asInstanceOf[T] // scalafix:ok
   }
 }

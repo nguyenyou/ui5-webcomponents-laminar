@@ -3,13 +3,10 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.{
-  TableMoveEventDetail,
-  TableRowActionClickEventDetail,
-  TableRowClickEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesTableOverflowModeMod.TableOverflowMode
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.Table as TableComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.TableMoveEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.TableRowActionClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.TableRowClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

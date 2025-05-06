@@ -3,11 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTimePickerMod.{
-  TimePickerChangeEventDetail,
-  TimePickerInputEventDetail
-}
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTimePickerMod.TimePicker as TimePickerComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTimePickerMod.TimePickerChangeEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTimePickerMod.TimePickerInputEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

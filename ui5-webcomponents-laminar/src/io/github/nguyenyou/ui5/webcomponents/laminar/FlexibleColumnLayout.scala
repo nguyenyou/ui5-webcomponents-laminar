@@ -3,12 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.{
-  FCLAccessibilityAttributes,
-  FlexibleColumnLayoutLayoutChangeEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesFcllayoutMod.FCLLayout
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FlexibleColumnLayout as FlexibleColumnLayoutComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FlexibleColumnLayoutLayoutChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

@@ -1,10 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
-import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteMod.ColorPaletteItemClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteMod.ColorPalette as ColorPaletteComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteMod.ColorPaletteItemClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

@@ -3,17 +3,14 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.{
-  ShellBarAccessibilityAttributes,
-  ShellBarContentItemVisibilityChangeEventDetail,
-  ShellBarLogoClickEventDetail,
-  ShellBarMenuItemClickEventDetail,
-  ShellBarNotificationsClickEventDetail,
-  ShellBarProductSwitchClickEventDetail,
-  ShellBarProfileClickEventDetail,
-  ShellBarSearchButtonEventDetail
-}
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBar as ShellBarComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarContentItemVisibilityChangeEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarLogoClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarMenuItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarNotificationsClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProductSwitchClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProfileClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchButtonEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

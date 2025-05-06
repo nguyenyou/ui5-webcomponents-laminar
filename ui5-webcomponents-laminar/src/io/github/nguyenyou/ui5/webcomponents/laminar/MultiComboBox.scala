@@ -3,9 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMultiComboBoxMod.MultiComboBoxSelectionChangeEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesComboBoxFilterMod.ComboBoxFilter
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMultiComboBoxMod.MultiComboBox as MultiComboBoxComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMultiComboBoxMod.MultiComboBoxSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

@@ -3,9 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.InputSelectionChangeEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesInputTypeMod.InputType
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.Input as InputComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.InputSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

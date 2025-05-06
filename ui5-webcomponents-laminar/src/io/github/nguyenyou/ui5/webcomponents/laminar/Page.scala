@@ -3,7 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesPageBackgroundDesignMod.PageBackgroundDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distPageMod.Page as PageComponent
 import org.scalajs.dom
 

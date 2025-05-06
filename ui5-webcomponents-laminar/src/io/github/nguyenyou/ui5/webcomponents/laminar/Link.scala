@@ -3,15 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.{
-  LinkAccessibilityAttributes,
-  LinkClickEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesInteractiveAreaSizeMod.InteractiveAreaSize
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesLinkAccessibleRoleMod.LinkAccessibleRole
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesLinkDesignMod.LinkDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesWrappingTypeMod.WrappingType
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.Link as LinkComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

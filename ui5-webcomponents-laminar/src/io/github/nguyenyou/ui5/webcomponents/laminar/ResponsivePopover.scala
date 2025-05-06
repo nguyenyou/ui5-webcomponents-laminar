@@ -4,10 +4,6 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopupMod.PopupBeforeCloseEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverHorizontalAlignMod.PopoverHorizontalAlign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverPlacementMod.PopoverPlacement
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverVerticalAlignMod.PopoverVerticalAlign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopupAccessibleRoleMod.PopupAccessibleRole
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.ResponsivePopover as ResponsivePopoverComponent
 import org.scalajs.dom
 

@@ -3,11 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.{
-  SelectChangeEventDetail,
-  SelectLiveChangeEventDetail
-}
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.Select as SelectComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.SelectChangeEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSelectMod.SelectLiveChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

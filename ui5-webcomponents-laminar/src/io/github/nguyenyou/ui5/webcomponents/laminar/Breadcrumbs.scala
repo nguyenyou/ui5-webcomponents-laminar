@@ -1,12 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
-import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.BreadcrumbsItemClickEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBreadcrumbsDesignMod.BreadcrumbsDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBreadcrumbsSeparatorMod.BreadcrumbsSeparator
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.Breadcrumbs as BreadcrumbsComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.BreadcrumbsItemClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

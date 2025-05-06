@@ -3,8 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBusyIndicatorSizeMod.BusyIndicatorSize
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBusyIndicatorTextPlacementMod.BusyIndicatorTextPlacement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBusyIndicatorMod.BusyIndicator as BusyIndicatorComponent
 import org.scalajs.dom
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.JSImport
 //noinspection NoTargetNameAnnotationForOperatorLikeDefinition
 private[laminar] object IconImports {
   @inline def _iconName(obj: js.Object, name: String): IconName =
-    name.asInstanceOf[IconName]
+    name.asInstanceOf[IconName] // scalafix:ok
 
   @js.native @JSImport("@ui5/webcomponents-icons/dist/AllIcons-fetch.js", JSImport.Namespace)
   object `import-AllIcons-fetch` extends js.Object

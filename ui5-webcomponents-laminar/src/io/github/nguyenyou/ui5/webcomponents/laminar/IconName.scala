@@ -1,6 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
-import com.raquo.laminar.codecs.{Codec, StringAsIsCodec}
+import com.raquo.laminar.codecs.Codec
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconImports.*
 
 import scala.scalajs.js
@@ -724,7 +724,7 @@ object IconName {
   def zoomOut: IconName                = _iconName(`import-zoom-out`, "zoom-out")
 
   def AsStringCodec: Codec[IconName, String] = new Codec[IconName, String] {
-    override def encode(scalaValue: IconName): String = scalaValue.asInstanceOf[String]
-    override def decode(domValue: String): IconName   = domValue.asInstanceOf[IconName]
+    override def encode(scalaValue: IconName): String = scalaValue.asInstanceOf[String] // scalafix:ok
+    override def decode(domValue: String): IconName   = domValue.asInstanceOf[IconName] // scalafix:ok
   }
 }

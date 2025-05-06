@@ -3,8 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar.ai
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesButtonDesignMod.ButtonDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.distButtonMod.Button as ButtonComponent
 import org.scalajs.dom
 

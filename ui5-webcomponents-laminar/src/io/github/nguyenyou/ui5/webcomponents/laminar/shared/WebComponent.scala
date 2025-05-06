@@ -1,10 +1,11 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
 import com.raquo.laminar.api.L.*
-import org.scalajs.dom
-import com.raquo.laminar.nodes.ReactiveHtmlElement
 import com.raquo.laminar.modifiers.Modifier
+import com.raquo.laminar.nodes.ReactiveHtmlElement
 import com.raquo.laminar.tags.CustomHtmlTag
+import org.scalajs.dom
+
 import scala.scalajs.js
 
 /** Marker trait that all web components inherit.

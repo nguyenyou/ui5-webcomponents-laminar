@@ -3,8 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesToolbarAlignMod.ToolbarAlign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesToolbarDesignMod.ToolbarDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarMod.Toolbar as ToolbarComponent
 import org.scalajs.dom
 

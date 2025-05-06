@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.JSImport
 //noinspection NoTargetNameAnnotationForOperatorLikeDefinition
 private[${packageName}] object IconImports {
   @inline def _iconName(obj: js.Object, name: String): IconName =
-    name.asInstanceOf[IconName]
+    name.asInstanceOf[IconName] // scalafix:ok
 
 ${allIconImports.join("\n")}
 }
@@ -79,8 +79,8 @@ object IconName {
 ${allIconValues.map(line => "  " + line).join("\n")}
 
   def AsStringCodec: Codec[IconName, String] = new Codec[IconName, String] {
-    override def encode(scalaValue: IconName): String = scalaValue.asInstanceOf[String]
-    override def decode(domValue: String): IconName = domValue.asInstanceOf[IconName]
+    override def encode(scalaValue: IconName): String = scalaValue.asInstanceOf[String] // scalafix:ok
+    override def decode(domValue: String): IconName = domValue.asInstanceOf[IconName] // scalafix:ok
   }
 }
 `.trim();

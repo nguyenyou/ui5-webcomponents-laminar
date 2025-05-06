@@ -3,11 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distNotificationListMod.{
-  NotificationItemClickEventDetail,
-  NotificationItemCloseEventDetail,
-  NotificationItemToggleEventDetail
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distNotificationListMod.NotificationItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distNotificationListMod.NotificationItemCloseEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distNotificationListMod.NotificationItemToggleEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distNotificationListMod.NotificationList as NotificationListComponent
 import org.scalajs.dom
 

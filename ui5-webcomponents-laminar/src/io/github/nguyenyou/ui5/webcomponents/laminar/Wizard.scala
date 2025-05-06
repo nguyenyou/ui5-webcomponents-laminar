@@ -1,11 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
-import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesWizardContentLayoutMod.WizardContentLayout
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distWizardMod.WizardStepChangeEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distWizardMod.Wizard as WizardComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distWizardMod.WizardStepChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

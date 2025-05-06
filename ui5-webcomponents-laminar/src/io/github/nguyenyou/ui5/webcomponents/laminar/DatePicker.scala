@@ -3,13 +3,10 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDatePickerMod.{
-  DatePickerChangeEventDetail,
-  DatePickerInputEventDetail,
-  DatePickerValueStateChangeEventDetail
-}
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesCalendarWeekNumberingMod.CalendarWeekNumbering
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDatePickerMod.DatePicker as DatePickerComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDatePickerMod.DatePickerChangeEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDatePickerMod.DatePickerInputEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDatePickerMod.DatePickerValueStateChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

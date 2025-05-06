@@ -3,7 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar.compat
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTypesTableColumnPopinDisplayMod.TableColumnPopinDisplay
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableColumnMod.TableColumn as TableColumnComponent
 import org.scalajs.dom
 

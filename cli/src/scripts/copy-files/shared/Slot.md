@@ -1,12 +1,8 @@
-```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
-import com.raquo.laminar.codecs.StringAsIsCodec
 import com.raquo.laminar.api.L.*
+import com.raquo.laminar.codecs.StringAsIsCodec
 import com.raquo.laminar.keys.HtmlAttr
-import com.raquo.laminar.nodes.ReactiveElement.Base
-
-import scala.annotation.targetName
 
 /** A [[Slot]] represents a special child component of web components.
   *
@@ -30,4 +26,3 @@ final class Slot(name: String) {
     children <-- elementsObservable.map(_.map(_.amend(slot := name)))
 
 }
-```

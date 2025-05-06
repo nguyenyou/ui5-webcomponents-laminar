@@ -3,9 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSegmentedButtonMod.SegmentedButtonSelectionChangeEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesSegmentedButtonSelectionModeMod.SegmentedButtonSelectionMode
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSegmentedButtonMod.SegmentedButton as SegmentedButtonComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distSegmentedButtonMod.SegmentedButtonSelectionChangeEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js

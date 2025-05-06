@@ -1,9 +1,7 @@
-```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
-import scala.scalajs.js.annotation.JSImport
-
 import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
 
 object Assets {
   @JSImport("@ui5/webcomponents/dist/Assets.js", JSImport.Namespace)
@@ -22,4 +20,3 @@ object Assets {
   @js.native
   object WebComponentsAi extends js.Object
 }
-```

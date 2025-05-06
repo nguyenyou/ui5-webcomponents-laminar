@@ -1,10 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
-import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableHeaderCellActionBaseMod.TableHeaderCellActionClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableHeaderCellActionAIMod.TableHeaderCellActionAI as TableHeaderCellActionAIComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableHeaderCellActionBaseMod.TableHeaderCellActionClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js
