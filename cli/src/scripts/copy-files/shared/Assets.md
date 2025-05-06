@@ -1,3 +1,4 @@
+```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
 import scala.scalajs.js
@@ -20,3 +21,4 @@ object Assets {
   @js.native
   object WebComponentsAi extends js.Object
 }
+```

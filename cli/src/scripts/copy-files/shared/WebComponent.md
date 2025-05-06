@@ -1,3 +1,4 @@
+```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
 import com.raquo.laminar.api.L.*
@@ -50,3 +51,4 @@ abstract class WebComponent(tagName: String) { this: Self =>
     el
   }
 }
+```

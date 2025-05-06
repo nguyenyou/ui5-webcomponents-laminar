@@ -1,3 +1,4 @@
+```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
 import org.scalajs.dom
@@ -15,3 +16,4 @@ class Ui5CustomEvent[T <: EventTarget](typeArg: String, init: js.UndefOr[EventIn
   override def target: T = js.native
 
 }
+```

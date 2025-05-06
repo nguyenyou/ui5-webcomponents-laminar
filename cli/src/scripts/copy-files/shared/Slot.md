@@ -1,3 +1,4 @@
+```scala
 package io.github.nguyenyou.ui5.webcomponents.laminar.shared
 
 import com.raquo.laminar.api.L.*
@@ -26,3 +27,4 @@ final class Slot(name: String) {
     children <-- elementsObservable.map(_.map(_.amend(slot := name)))
 
 }
+```
