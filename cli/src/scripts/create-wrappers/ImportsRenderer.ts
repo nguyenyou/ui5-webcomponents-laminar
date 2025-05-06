@@ -82,7 +82,6 @@ export class ImportsRenderer extends AbstractRenderer {
       .blankLine()
       .writeLine("import com.raquo.laminar.api.L.*")
       .writeLine("import com.raquo.laminar.codecs.*")
-      .writeLine("import com.raquo.laminar.tags.CustomHtmlTag")
       .writeLine("import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*");
     
     if (context.isAiPackage) {
@@ -159,7 +158,7 @@ export class ImportsRenderer extends AbstractRenderer {
     
     if (packageName) {
       writer.writeLine(
-        `import io.github.nguyenyou.ui5.webcomponents.${packageName}.dist${context.componentName}Mod.{${context.componentName} as ${context.componentName}Component}`
+        `import io.github.nguyenyou.ui5.webcomponents.${packageName}.dist${context.componentName}Mod.${context.componentName} as ${context.componentName}Component`
       );
     }
   }

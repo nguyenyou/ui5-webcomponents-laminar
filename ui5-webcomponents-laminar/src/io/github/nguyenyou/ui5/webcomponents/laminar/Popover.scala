@@ -2,14 +2,13 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopupMod.PopupBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverHorizontalAlignMod.PopoverHorizontalAlign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverPlacementMod.PopoverPlacement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopoverVerticalAlignMod.PopoverVerticalAlign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPopupAccessibleRoleMod.PopupAccessibleRole
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.{Popover as PopoverComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.Popover as PopoverComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

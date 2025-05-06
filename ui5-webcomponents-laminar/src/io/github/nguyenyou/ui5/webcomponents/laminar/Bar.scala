@@ -2,10 +2,9 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBarDesignMod.BarDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBarMod.{Bar as BarComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBarMod.Bar as BarComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

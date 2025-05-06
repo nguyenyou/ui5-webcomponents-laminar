@@ -2,7 +2,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.{
   TreeItemClickEventDetail,
@@ -13,7 +12,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.{
   TreeSelectionChangeEventDetail
 }
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelectionModeMod.ListSelectionMode
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.{Tree as TreeComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.Tree as TreeComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

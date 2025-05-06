@@ -2,16 +2,13 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.{
   FCLAccessibilityAttributes,
   FlexibleColumnLayoutLayoutChangeEventDetail
 }
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesFcllayoutMod.FCLLayout
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.{
-  FlexibleColumnLayout as FlexibleColumnLayoutComponent
-}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FlexibleColumnLayout as FlexibleColumnLayoutComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

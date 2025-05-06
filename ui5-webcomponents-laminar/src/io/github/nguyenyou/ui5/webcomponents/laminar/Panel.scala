@@ -2,11 +2,10 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPanelAccessibleRoleMod.PanelAccessibleRole
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesTitleLevelMod.TitleLevel
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPanelMod.{Panel as PanelComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPanelMod.Panel as PanelComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

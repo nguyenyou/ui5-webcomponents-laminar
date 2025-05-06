@@ -2,7 +2,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar.compat
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableMod.{
   TablePopinChangeEventDetail,
@@ -11,7 +10,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableMod
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableRowMod.TableRowClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTypesTableGrowingModeMod.TableGrowingMode
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTypesTableModeMod.TableMode
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableMod.{Table as TableComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsCompat.distTableMod.Table as TableComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

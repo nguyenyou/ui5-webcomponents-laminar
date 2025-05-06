@@ -2,14 +2,13 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCarouselMod.CarouselNavigateEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBackgroundDesignMod.BackgroundDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBorderDesignMod.BorderDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesCarouselArrowsPlacementMod.CarouselArrowsPlacement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesCarouselPageIndicatorTypeMod.CarouselPageIndicatorType
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCarouselMod.{Carousel as CarouselComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCarouselMod.Carousel as CarouselComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

@@ -2,12 +2,11 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.BreadcrumbsItemClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBreadcrumbsDesignMod.BreadcrumbsDesign
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesBreadcrumbsSeparatorMod.BreadcrumbsSeparator
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.{Breadcrumbs as BreadcrumbsComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distBreadcrumbsMod.Breadcrumbs as BreadcrumbsComponent
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -63,4 +62,3 @@ object Breadcrumbs extends WebComponent("ui5-breadcrumbs") {
   // -- Slots --
 
 }
- 

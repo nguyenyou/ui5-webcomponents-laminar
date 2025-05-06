@@ -2,13 +2,12 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarMod.AvatarAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarColorSchemeMod.AvatarColorScheme
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarShapeMod.AvatarShape
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarSizeMod.AvatarSize
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarMod.{Avatar as AvatarComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarMod.Avatar as AvatarComponent
 import org.scalajs.dom
 
 import scala.scalajs.js

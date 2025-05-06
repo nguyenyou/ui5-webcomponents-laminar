@@ -2,7 +2,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
-import com.raquo.laminar.tags.CustomHtmlTag
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.{
   ListItemClickEventDetail,
@@ -16,7 +15,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListAcces
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListGrowingModeMod.ListGrowingMode
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelectionModeMod.ListSelectionMode
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSeparatorMod.ListSeparator
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.{List as ListComponent}
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.List as ListComponent
 import org.scalajs.dom
 
 import scala.scalajs.js
