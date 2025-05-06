@@ -21,7 +21,8 @@ export default async function copySharedFiles(
     const sourceFilePath = resolve(sharedSourceDir, file);
     const fileContent = await readFile(sourceFilePath, "utf-8");
     
-    const contentLines = fileContent.split('\n');
+    // Trim whitespace from the beginning and end before splitting
+    const contentLines = fileContent.trim().split('\n');
     // remove the first and last line
     contentLines.shift();
     contentLines.pop();
