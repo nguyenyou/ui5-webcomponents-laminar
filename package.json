@@ -13,6 +13,7 @@
     "website:dev-server": "yarn workspace website dev",
     "website:prod": "./mill website.fullLinkJS && yarn workspace website build",
     "website:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ website.sources",
+    "website:fix": "./mill website.fix",
     "ui5-webcomponents-laminar:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ ui5-webcomponents-laminar.sources",
     "ui5-webcomponents-laminar:fix": "./mill ui5-webcomponents-laminar.fix"
   },
