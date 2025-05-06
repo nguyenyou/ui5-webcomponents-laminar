@@ -83,6 +83,7 @@ trait CommonPublish extends SonatypeCentralPublishModule {
   )
 }
 
+
 object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
   def ivyDeps = super.ivyDeps() ++ 
@@ -94,6 +95,19 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
 
 }
 
+
+object website extends WebModule {
+  def moduleKind = ModuleKind.ESModule
+  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+  def ivyDeps = super.ivyDeps() ++
+    Dependencies.scalawind ++
+    Dependencies.waypoint ++
+    Dependencies.macrotask ++
+    Dependencies.borer
+}
+
+// We will uncomment this when we need to release a new version of ui5-webcomponents
+/*
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents`
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
@@ -107,13 +121,4 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
     "@ui5/webcomponents-base"
   )
 }
-
-object website extends WebModule {
-  def moduleKind = ModuleKind.ESModule
-  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
-  def ivyDeps = super.ivyDeps() ++ 
-  Dependencies.scalawind ++ 
-  Dependencies.waypoint ++ 
-  Dependencies.macrotask ++ 
-  Dependencies.borer
-}
+*/

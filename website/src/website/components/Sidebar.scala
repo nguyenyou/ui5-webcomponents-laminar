@@ -9,6 +9,7 @@ import website.docPages
 import website.extensions.scalawind.*
 import website.facades.ScrollOptions
 import website.facades.scrollIntoViewIfNeeded
+
 case class Sidebar() {
   private case class IndicatorStyles(height: Int, width: Int, top: Int)
 
@@ -27,7 +28,7 @@ case class Sidebar() {
 
   private val hoverStylesSignal = hoverStylesVar.signal
 
-  val scrollContainer = div(tw.relative.h_full.overflow_y_auto)
+  private val scrollContainer = div(tw.relative.h_full.overflow_y_auto)
 
   private def pageLink(
       page: Page,
@@ -65,7 +66,7 @@ case class Sidebar() {
 
   private val hoverIndicator: HtmlElement = {
     div(
-      tw.absolute.rounded.transition_all.duration_300.ease_out,
+      tw.absolute.rounded_lg.transition_all.duration_300.ease_out,
       tw.sidebar_item_hover,
       cls <-- hoverLinkSignal.map {
         case Some(_) => tw.opacity_100.css
@@ -111,8 +112,16 @@ case class Sidebar() {
               "Components"
             ),
             div(
-              tw.grid.grid_flow_row.auto_rows_max.text_sm,
+              tw.grid.grid_flow_row.auto_rows_max.`gap_0.5`.text_sm,
               docPages.map(page => pageLink(page))
+            ),
+            div(
+              tw.rounded_md.px_2.py_1.text_sm.font_medium,
+              "AI"
+            ),
+            div(
+              tw.grid.grid_flow_row.auto_rows_max.`gap_0.5`.text_sm,
+              pageLink(AiButtonPage)
             )
           )
         )

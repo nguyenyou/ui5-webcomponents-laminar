@@ -63,6 +63,9 @@ object Pages {
   case object PanelPage               extends Page("Panel")
   case object ProgressIndicatorPage   extends Page("Progress Indicator")
   case object PopoverPage             extends Page("Popover")
+
+  // AI
+  case object AiButtonPage extends Page("AI Button")
   given pageCodec: Codec[Page] = deriveAllCodecs
 }
 
@@ -111,6 +114,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(PanelPage)(PanelView())
   .handleValue(ProgressIndicatorPage)(ProgressIndicatorView())
   .handleValue(PopoverPage)(PopoverView())
+  .handleValue(AiButtonPage)(AiButtonView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -253,7 +257,9 @@ object AppRouter
         Route
           .static(ProgressIndicatorPage, root / ProgressIndicatorPage.path / endOfSegments, "/docs"),
         Route
-          .static(PopoverPage, root / PopoverPage.path / endOfSegments, "/docs")
+          .static(PopoverPage, root / PopoverPage.path / endOfSegments, "/docs"),
+        Route
+          .static(AiButtonPage, root / AiButtonPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
