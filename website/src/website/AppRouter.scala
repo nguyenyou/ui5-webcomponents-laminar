@@ -1,15 +1,15 @@
 package website
 
+import com.raquo.laminar.api.L.*
+import com.raquo.waypoint
+import com.raquo.waypoint.*
 import io.bullet.borer.*
 import io.bullet.borer.derivation.MapBasedCodecs.*
-import com.raquo.waypoint.*
+import org.scalajs.dom
+import website.utils.JsonUtils.*
+
 import Pages.*
 import AppRouter.*
-import com.raquo.waypoint.SplitRender
-import com.raquo.laminar.api.L.{*, given}
-import com.raquo.waypoint
-import website.utils.JsonUtils.*
-import org.scalajs.dom
 import views.docs.*
 import views.HomeView
 

@@ -5,6 +5,8 @@ import $ivy.`io.github.nguyenyou::mill-scalablytyped::0.0.2`
 import io.github.nguyenyou.mill.scalablytyped._
 import $ivy.`com.lihaoyi::mill-contrib-sonatypecentral:`
 import mill.contrib.sonatypecentral.SonatypeCentralPublishModule
+import $ivy.`com.goyeau::mill-scalafix::0.5.0`
+import com.goyeau.mill.scalafix.ScalafixModule
 
 object Versions {
   val scala3 = "3.3.5"
@@ -103,7 +105,7 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
   )
 }
 
-object website extends WebModule with NoDoc {
+object website extends WebModule with NoDoc with ScalafixModule {
   def moduleKind = ModuleKind.ESModule
   def moduleDeps = Seq(`ui5-webcomponents-laminar`)
   def ivyDeps = super.ivyDeps() ++ 
@@ -111,4 +113,6 @@ object website extends WebModule with NoDoc {
   Dependencies.waypoint ++ 
   Dependencies.macrotask ++ 
   Dependencies.borer
+  
+  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }

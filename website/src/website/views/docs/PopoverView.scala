@@ -1,11 +1,10 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
-import website.macros.Source
-import website.examples.PopoverExampleBasic
 import website.components.IframePreview
+import website.examples.PopoverExampleBasic
+import website.macros.Source
 
 object PopoverView extends ExampleView("Popover") {
 

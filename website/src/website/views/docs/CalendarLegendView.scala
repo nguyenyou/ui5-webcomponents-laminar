@@ -1,11 +1,11 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
-import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.SpecialCalendarDate.CalendarLegendItemType
 import website.components.Demo
 import website.macros.Source
+
 import scala.scalajs.js
 
 object CalendarLegendView extends ExampleView("Calendar Legend") {
@@ -34,6 +34,11 @@ object CalendarLegendView extends ExampleView("Calendar Legend") {
 
   def formatDate(date: js.Date): String = date.toISOString().take(10)
 
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.asInstanceOf"
+    )
+  )
   override def component: HtmlElement = {
     div(
       Demo(

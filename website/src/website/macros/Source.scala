@@ -1,7 +1,8 @@
 package website.macros
 
-import scala.quoted.*
 import com.raquo.laminar.api.L
+
+import scala.quoted.*
 
 object Source {
 
@@ -25,6 +26,11 @@ object Source {
   private def indexWhereNotWhitespace(string: Option[String]) =
     string.fold(-1)(_.indexWhere(c => !c.isWhitespace))
 
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.var"
+    )
+  )
   def annotateImpl(
       element: Expr[L.HtmlElement]
   )(using

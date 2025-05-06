@@ -2,12 +2,16 @@ package website.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import io.github.nguyenyou.ui5.webcomponents.laminar.DateTimePicker.CalendarWeekNumbering
 import website.components.Demo
 import website.macros.Source
-import io.github.nguyenyou.ui5.webcomponents.laminar.DateTimePicker.CalendarWeekNumbering
 
 object DatePickerView extends ExampleView("Date Picker") {
-
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.asInstanceOf"
+    )
+  )
   override def component: HtmlElement = {
     div(
       Demo(

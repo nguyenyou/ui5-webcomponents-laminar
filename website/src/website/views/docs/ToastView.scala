@@ -2,10 +2,7 @@ package website.views.docs
 
 import com.raquo.laminar.api.L.*
 import website.components.IframePreview
-import scala.scalajs.js
-import scala.concurrent.duration.*
 import website.examples.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.*
 
 object ToastView extends ExampleView("Toast") {
 

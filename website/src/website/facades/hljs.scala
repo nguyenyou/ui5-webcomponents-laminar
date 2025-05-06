@@ -1,6 +1,7 @@
 package website.facades
 
 import org.scalajs.dom
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobal
 

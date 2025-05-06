@@ -1,8 +1,9 @@
 package website.facades
 
 import org.scalajs.dom
+
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, JSGlobal}
+import scala.scalajs.js.annotation.JSImport
 
 /** Scala.js facade for the scroll-into-view-if-needed library
   * @see
@@ -51,7 +52,11 @@ trait ScrollOptions extends js.Object {
 }
 
 object ScrollOptions {
-
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.asInstanceOf"
+    )
+  )
   def apply(
       scrollMode: js.UndefOr[String] = js.undefined,
       behavior: js.UndefOr[String] = js.undefined,

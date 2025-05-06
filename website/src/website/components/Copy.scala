@@ -1,7 +1,8 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import org.scalajs.dom.{HTMLTextAreaElement, document}
+import org.scalajs.dom.HTMLTextAreaElement
+import org.scalajs.dom.document
 
 case class Copy(
     content: Signal[String],
@@ -10,6 +11,11 @@ case class Copy(
 
   private val isCopied = Var(false)
 
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.asInstanceOf"
+    )
+  )
   private def copy(text: String) = {
     val textAreaEle =
       document.createElement("textarea").asInstanceOf[HTMLTextAreaElement]

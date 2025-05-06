@@ -1,13 +1,8 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import website.facades.ScrollOptions
-import website.facades.scrollIntoViewIfNeeded
-import website.facades.Clipboard
-import org.scalajs.dom
-import scala.concurrent.ExecutionContext.Implicits.global
-import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.scalawind.*
+import org.scalajs.dom
 import website.extensions.scalawind.*
 
 object Preview {

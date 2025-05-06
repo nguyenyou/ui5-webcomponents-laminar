@@ -1,7 +1,7 @@
 package website.components
 
-import com.raquo.laminar.api.L.*
 import com.raquo.laminar.api.L
+import com.raquo.laminar.api.L.*
 
 object Icons {
 
@@ -13,7 +13,7 @@ object Icons {
     svg.svg(
       svg.height         := height,
       svg.strokeLineJoin := "round",
-      svg.viewBox        := s"0 0 16 16",
+      svg.viewBox        := "0 0 16 16",
       svg.width          := width,
       svg.path(
         svg.fillRule := "evenodd",

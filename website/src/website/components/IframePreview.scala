@@ -1,13 +1,14 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import com.raquo.laminar.keys.HtmlAttr
 import com.raquo.laminar.codecs.StringAsIsCodec
+import com.raquo.laminar.keys.HtmlAttr
+import io.github.nguyenyou.scalawind.*
+import website.components.ThemeProvider.contentDensitySignal
+import website.components.ThemeProvider.directionSignal
+import website.components.ThemeProvider.websiteThemeSignal
 import website.examples.ExampleRenderer
 import website.utils.isDevelopment
-import website.components.ThemeProvider.{websiteThemeSignal, contentDensitySignal, directionSignal}
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
-import io.github.nguyenyou.scalawind.*
 
 val srcDocAttr = HtmlAttr[String]("srcDoc", StringAsIsCodec)
 

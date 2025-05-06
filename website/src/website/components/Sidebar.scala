@@ -1,15 +1,14 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import website.views
-import website.Pages.*
-import website.AppRouter.*
-import website.docPages
-import website.facades.scrollIntoViewIfNeeded
-import org.scalajs.dom
-import website.facades.ScrollOptions
 import io.github.nguyenyou.scalawind.*
+import org.scalajs.dom
+import website.AppRouter.*
+import website.Pages.*
+import website.docPages
 import website.extensions.scalawind.*
+import website.facades.ScrollOptions
+import website.facades.scrollIntoViewIfNeeded
 case class Sidebar() {
   private case class IndicatorStyles(height: Int, width: Int, top: Int)
 

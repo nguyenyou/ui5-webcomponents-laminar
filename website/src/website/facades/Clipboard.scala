@@ -1,16 +1,24 @@
 package website.facades
 
 import org.scalajs.dom
+
+import scala.concurrent.Future
+import scala.concurrent.Promise
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSGlobal}
-import scala.concurrent.{Future, Promise}
-import scala.util.{Try, Success, Failure}
+import scala.util.Failure
+import scala.util.Success
+import scala.util.Try
 
 @js.native
 trait Clipboard extends js.Object {
   def writeText(text: String): js.Promise[Unit] = js.native
 }
 
+@SuppressWarnings(
+  Array(
+    "scalafix:DisableSyntax.asInstanceOf"
+  )
+)
 object Clipboard {
   def writeText(text: String): Future[Unit] = {
     val promise = Promise[Unit]()

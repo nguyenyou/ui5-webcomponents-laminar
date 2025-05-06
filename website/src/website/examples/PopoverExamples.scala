@@ -1,11 +1,7 @@
 package website.examples
 
-import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import com.raquo.laminar.api.L.*
-import org.scalajs.dom
-import org.scalajs.dom.HTMLElement
-import scala.concurrent.duration.DurationInt
-import scala.util.Random
+import io.github.nguyenyou.ui5.webcomponents.laminar.*
 
 object PopoverExampleBasic extends ExampleRenderer {
 

@@ -1,7 +1,6 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
-import website.components.Preview
 import website.components.IframePreview
 import website.examples.*
 

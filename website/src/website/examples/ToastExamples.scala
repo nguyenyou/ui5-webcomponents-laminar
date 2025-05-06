@@ -1,9 +1,6 @@
 package website.examples
 
 import com.raquo.laminar.api.L.*
-import org.scalajs.dom
-import scala.util.Random
-import scala.concurrent.duration.DurationInt
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 
 case object ToastExampleBasic extends ExampleRenderer {

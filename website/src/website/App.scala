@@ -3,24 +3,10 @@ package website
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.Button.ButtonDesign
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
-import org.scalajs.dom
-import website.components.Demo
-import website.components.IframePreview
-import website.components.PreviewCode
 import website.components.Sidebar
 import website.components.TableOfContents
-import website.components.ThemeProvider.contentDensityVar
-import website.components.ThemeProvider.directionVar
-import website.components.ThemeProvider.websiteThemeSignal
-import website.components.ThemeProvider.websiteThemeVar
-import website.examples.PopoverExampleBasic
-import website.extensions.scalawind.*
-import website.macros.Source
 import website.components.ThemeToggle
-import website.components.Icons
+import website.extensions.scalawind.*
 
 case class App() {
   def renderDefaultLayout(): HtmlElement = {

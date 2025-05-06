@@ -2,11 +2,7 @@ package website.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import org.scalajs.dom
 import org.scalajs.dom.HTMLElement
-
-import scala.concurrent.duration.DurationInt
-import scala.util.Random
 
 object DialogExampleBasic extends ExampleRenderer {
 

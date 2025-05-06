@@ -1,15 +1,17 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
+import io.github.nguyenyou.scalawind.*
 import org.scalajs.dom
+import org.scalajs.dom.IntersectionObserver
+import org.scalajs.dom.IntersectionObserverEntry
+import website.AppRouter.currentPageSignal
+import website.extensions.scalawind.*
 import website.facades.ScrollOptions
 import website.facades.scrollIntoViewIfNeeded
+
 import scala.scalajs.js
-import website.AppRouter.currentPageSignal
 import scala.util.Random
-import org.scalajs.dom.{IntersectionObserver, IntersectionObserverEntry}
-import io.github.nguyenyou.scalawind.*
-import website.extensions.scalawind.*
 
 case class TableOfContents() {
 
@@ -25,8 +27,7 @@ case class TableOfContents() {
   private val headingsSignal = headingsVar.signal.distinct
 
   private def handleIntersection(
-      entries: js.Array[IntersectionObserverEntry],
-      observer: IntersectionObserver
+      entries: js.Array[IntersectionObserverEntry]
   ): Unit = {
     val visibilities = entries.toList
       .map(entry => entry.target.getAttribute("id") -> entry.isIntersecting)
@@ -39,7 +40,7 @@ case class TableOfContents() {
     }
   }
 
-  private val intersectionObserver = IntersectionObserver((entries, observer) => handleIntersection(entries, observer))
+  private val intersectionObserver = IntersectionObserver((entries, _) => handleIntersection(entries))
 
   private def findHeadings(): Unit = {
     val mainContentElement = Option(dom.document.querySelector("main"))
@@ -83,6 +84,11 @@ case class TableOfContents() {
     }
   }
 
+  @SuppressWarnings(
+    Array(
+      "scalafix:DisableSyntax.null"
+    )
+  )
   private def renderHeadingLink(heading: Heading): HtmlElement = {
     val indentClass = heading.level match {
       case 2 => tw.ml_0.css
@@ -100,6 +106,7 @@ case class TableOfContents() {
       heading.text,
       onClick.preventDefault --> { _ =>
         // Update URL with hash
+        // [DisableSyntax.null
         dom.window.history.pushState(
           null,
           "",
