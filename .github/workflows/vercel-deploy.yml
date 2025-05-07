@@ -8,6 +8,10 @@ env:
 on:
   workflow_dispatch:
 
+concurrency:
+  group: "vercel-deploy"
+  cancel-in-progress: true
+
 jobs:
   deploy-to-vercel:
     runs-on: ubuntu-latest
