@@ -149,6 +149,79 @@ object CardView extends ExampleView("Card") {
             )
           )
         }
+      ),
+      Demo(
+        title = "Timeline Card",
+        content = Source.annotate {
+          Card(
+            _.header := CardHeader(
+              _.titleText    := "Upcoming Activities",
+              _.subtitleText := "Today"
+            )()
+          )(
+            Timeline()(
+              TimelineItem(
+                _.titleText     := "called",
+                _.icon          := IconName.phone,
+                _.name          := "John Smith",
+                _.nameClickable := true
+              )(),
+              TimelineItem(
+                _.titleText := "Weekly Sync - BTP Design",
+                _.icon      := IconName.calendar
+              )(
+                "MR SOF02 2.43"
+              ),
+              TimelineItem(
+                _.titleText := "Video Conference Call - UI5",
+                _.icon      := IconName.calendar
+              )(
+                "Online meeting"
+              )
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Object Card",
+        content = Source.annotate {
+          Card(
+            _.header := CardHeader(
+              _.titleText    := "Donna Maria Moore",
+              _.subtitleText := "Senior Sales Executive",
+              _.avatar := img(
+                src := Images.manAvatar1
+              )
+            )()
+          )(
+            div(
+              tw.space_y_4.p_4,
+              Title(
+                _.level := "H5"
+              )("Contact details"),
+              div(
+                Label(
+                  _.showColon := true
+                )("Company Name"),
+                Text()("Company A")
+              ),
+              div(
+                Label(
+                  _.showColon := true
+                )("Address"),
+                Text()("481 West Street, Anytown 45066, USA")
+              ),
+              div(
+                Label(
+                  _.showColon := true
+                )("Website"),
+                Link(
+                  _.target := "_blank"
+                )("www.company_a.example.com")
+              )
+            )
+          )
+        }
       )
     )
   }
