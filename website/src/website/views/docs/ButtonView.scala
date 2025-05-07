@@ -1,6 +1,7 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
+import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
 import website.macros.Source
@@ -162,6 +163,52 @@ object ButtonView extends ExampleView("Button") {
                 _.text := "Exit",
                 _.icon := IconName.journeyArrive
               )()
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Button with badge",
+        content = Source.annotate {
+          div(
+            div(
+              Label()("Cozy"),
+              div(
+                tw.space_x_2,
+                Button(
+                  _.design := "Emphasized",
+                  _.icon   := IconName.employee,
+                  _.badge := ButtonBadge(
+                    _.design := "OverlayText",
+                    _.text   := "999+"
+                  )()
+                )(
+                  "Requests"
+                ),
+                Button(
+                  _.badge := ButtonBadge(
+                    _.design := "AttentionDot"
+                  )()
+                )("Reviews")
+              )
+            ),
+            div(
+              cls("ui5-content-density-compact"),
+              Label()("Compact"),
+              div(
+                tw.space_x_2,
+                Button(
+                  _.badge := ButtonBadge(
+                    _.design := "InlineText",
+                    _.text   := "72"
+                  )()
+                )("Messages"),
+                Button(
+                  _.badge := ButtonBadge(
+                    _.design := "AttentionDot"
+                  )()
+                )("Reviews")
+              )
             )
           )
         }
