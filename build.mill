@@ -42,7 +42,6 @@ object Dependencies {
     ivy"io.github.nguyenyou::scalawind::${Versions.scalawind}"
   )
 
-
   val waypoint = Seq(
     ivy"com.raquo::waypoint::${Versions.waypoint}"
   )
@@ -98,12 +97,15 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
 
 object website extends WebModule {
   def moduleKind = ModuleKind.ESModule
-  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+  
   def ivyDeps = super.ivyDeps() ++
     Dependencies.scalawind ++
     Dependencies.waypoint ++
     Dependencies.macrotask ++
-    Dependencies.borer
+    Dependencies.borer ++
+    Dependencies.`ui5-webcomponents-laminar`
+
+  // def moduleDeps = Seq(`ui5-webcomponents-laminar`)
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
