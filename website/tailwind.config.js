@@ -34,8 +34,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      mono: ["Source Code Pro", "monospace"],
+      sans: ["Geist", "sans-serif"],
+      mono: ["Geist Mono", "monospace"],
     },
   },
   corePlugins: {

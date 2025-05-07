@@ -49,7 +49,7 @@ a {
   text-decoration: inherit;
 }
 
-pre {
+pre, code {
   @apply font-mono;
 }
 
