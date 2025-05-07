@@ -1,7 +1,12 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
+import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import io.github.nguyenyou.ui5.webcomponents.laminar.compat.Table
+import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableCell
+import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableColumn
+import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableRow
 import website.components.Demo
 import website.macros.Source
 
@@ -63,6 +68,83 @@ object CardView extends ExampleView("Card") {
                 )
               )(
                 "John Miller"
+              )
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Table Card",
+        content = Source.annotate {
+          Card(
+            _.header := CardHeader(
+              _.titleText      := "New Purchase Orders",
+              _.subtitleText   := "Today",
+              _.additionalText := "3 of 15"
+            )()
+          )(
+            Table(
+              _.columns := TableColumn(
+              )(
+                Label()("Sales Order")
+              ),
+              _.columns := TableColumn(
+              )(
+                Label()("Customer")
+              ),
+              _.columns := TableColumn(
+              )(
+                Label()("Net Amount")
+              ),
+              _.columns := TableColumn(
+                _.popinText   := "Status",
+                _.minWidth    := 450,
+                _.demandPopin := true
+              )(
+                Label()("Status")
+              )
+            )(
+              TableRow()(
+                TableCell()(
+                  Label()("5000010050")
+                ),
+                TableCell()(
+                  Label()("Entertainment Argentina")
+                ),
+                TableCell()(
+                  Label()("6k USD")
+                ),
+                TableCell()(
+                  Text()(tw.text_green_500, "Approved")
+                )
+              ),
+              TableRow()(
+                TableCell()(
+                  Label()("5000010051")
+                ),
+                TableCell()(
+                  Label()("Brazil Technologies")
+                ),
+                TableCell()(
+                  Label()("2k USD")
+                ),
+                TableCell()(
+                  Text()(tw.text_red_500, "Rejected")
+                )
+              ),
+              TableRow()(
+                TableCell()(
+                  Label()("5000010052")
+                ),
+                TableCell()(
+                  Label()("Robert Brown Ent.")
+                ),
+                TableCell()(
+                  Label()("17k USD")
+                ),
+                TableCell()(
+                  Text()(tw.text_orange_500, "Pending")
+                )
               )
             )
           )
