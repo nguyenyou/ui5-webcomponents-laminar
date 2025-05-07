@@ -59,7 +59,7 @@ object Preview {
       case "Code"    => codeNode
     }
 
-    val PreviewTabWidth = 101
+    val PreviewTabWidth = 99
 
     val initialIndicatorStyles =
       IndicatorStyles(PreviewTabWidth, initialNode.ref.offsetLeft.toInt)
