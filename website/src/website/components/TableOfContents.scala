@@ -5,9 +5,9 @@ import org.scalajs.dom
 import org.scalajs.dom.IntersectionObserver
 import org.scalajs.dom.IntersectionObserverEntry
 import website.AppRouter.currentPageSignal
-import website.extensions.scalawind.*
 import website.facades.ScrollOptions
 import website.facades.scrollIntoViewIfNeeded
+import website.libs.scalawind.*
 
 import scala.scalajs.js
 import scala.util.Random

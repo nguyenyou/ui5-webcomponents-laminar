@@ -5,7 +5,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.Avatar.AvatarColorScheme
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.IAvatarGroupItem
 import website.components.Demo
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 import website.macros.Source
 
 object AvatarGroupView extends ExampleView("Avatar Group") {

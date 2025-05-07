@@ -7,7 +7,7 @@ import website.components.ThemeProvider.contentDensitySignal
 import website.components.ThemeProvider.directionSignal
 import website.components.ThemeProvider.websiteThemeSignal
 import website.examples.ExampleRenderer
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 import website.utils.isDevelopment
 
 val srcDocAttr = HtmlAttr[String]("srcDoc", StringAsIsCodec)

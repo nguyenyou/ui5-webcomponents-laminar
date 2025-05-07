@@ -1,7 +1,7 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 
 trait ExampleView(val name: String) {
   def component: HtmlElement

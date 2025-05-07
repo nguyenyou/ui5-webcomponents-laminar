@@ -3,7 +3,7 @@ package website.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 import website.macros.Source
 
 object ButtonView extends ExampleView("Button") {

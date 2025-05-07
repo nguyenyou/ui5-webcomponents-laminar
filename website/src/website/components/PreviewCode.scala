@@ -1,7 +1,7 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 
 case class PreviewCode(
     content: (String, HtmlElement)

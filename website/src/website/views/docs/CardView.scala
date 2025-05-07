@@ -7,7 +7,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableCell
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableColumn
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableRow
 import website.components.Demo
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 import website.macros.Source
 
 object CardView extends ExampleView("Card") {

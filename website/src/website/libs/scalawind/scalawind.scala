@@ -1,4 +1,4 @@
-package website.extensions.scalawind
+package website.libs.scalawind
 
 import com.raquo.laminar.api.L
 import com.raquo.laminar.nodes.ReactiveHtmlElement

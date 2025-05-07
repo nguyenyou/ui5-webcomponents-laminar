@@ -5,7 +5,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Sidebar
 import website.components.TableOfContents
 import website.components.ThemeToggle
-import website.extensions.scalawind.*
+import website.libs.scalawind.*
 
 case class App() {
   def renderDefaultLayout(): HtmlElement = {
