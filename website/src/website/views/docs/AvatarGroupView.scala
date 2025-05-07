@@ -3,6 +3,7 @@ package website.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import io.github.nguyenyou.ui5.webcomponents.laminar.Avatar.AvatarColorScheme
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.IAvatarGroupItem
 import website.components.Demo
 import website.macros.Source
@@ -207,6 +208,7 @@ object AvatarGroupView extends ExampleView("Avatar Group") {
             )
           )
 
+          val peoplePopoverPlaceholder = div(tw.flex.flex_wrap)
           val peoplePopover = Popover(
             _.headerText          := "My people",
             _.placement           := "Bottom",
@@ -214,10 +216,7 @@ object AvatarGroupView extends ExampleView("Avatar Group") {
           )(
             width.px(400),
             cls("peoplePopover"),
-            div(
-              cls("placeholder"),
-              tw.flex.flex_wrap
-            )
+            peoplePopoverPlaceholder
           )
 
           val avatarGroup = AvatarGroup(
@@ -252,12 +251,51 @@ object AvatarGroupView extends ExampleView("Avatar Group") {
             )
           )
 
-          def onButtonClicked(targetRef: IAvatarGroupItem) = {
-            println(targetRef)
+          @SuppressWarnings(
+            Array(
+              "scalafix:DisableSyntax.asInstanceOf"
+            )
+          )
+          def onButtonClicked(targetRef: IAvatarGroupItem): Unit = {
+            val hiddenItems      = avatarGroup.ref.hiddenItems
+            val firstHiddenIndex = avatarGroup.ref.items.length - hiddenItems.length
+            peoplePopoverPlaceholder.ref.innerHTML = ""
+            val avatars = hiddenItems.zipWithIndex.map { (hiddenItem, index) =>
+              val item       = hiddenItem.asInstanceOf[Avatar.Ref]
+              val colorIndex = firstHiddenIndex + index
+              avatarGroup.ref.colorScheme.lift(colorIndex).map { colorScheme =>
+                val avatar = Avatar(
+                  _.interactive := true,
+                  _.initials    := item.initials.toOption.getOrElse(""),
+                  _.colorScheme := colorScheme.asInstanceOf[AvatarColorScheme]
+                )(
+                  item.image.headOption.map { i =>
+                    img(
+                      src := i.getAttribute("src")
+                    )
+                  }
+                )
+                item.icon match {
+                  case y: String => avatar.amend(Avatar.icon := y.asInstanceOf[IconName])
+                  case _         => ""
+                }
+                div(
+                  padding.px(5),
+                  avatar
+                )
+              }
+            }.flatten
+            peoplePopoverPlaceholder.amend(avatars)
+            peoplePopover.ref.opener = targetRef.asInstanceOf[org.scalajs.dom.HTMLElement]
+            peoplePopover.ref.open = true
           }
 
-          def onAvatarClicked(avatarRef: IAvatarGroupItem) = {
-            // scalafix:off
+          @SuppressWarnings(
+            Array(
+              "scalafix:DisableSyntax.asInstanceOf"
+            )
+          )
+          def onAvatarClicked(avatarRef: IAvatarGroupItem): Unit = {
             val avatarIndex = avatarGroup.ref.items.indexOf(avatarRef)
             avatarGroup.ref.colorScheme.lift(avatarIndex).foreach { colorScheme =>
               popAvatar.ref.colorScheme = colorScheme.asInstanceOf[String]
@@ -274,8 +312,6 @@ object AvatarGroupView extends ExampleView("Avatar Group") {
               personPopover.ref.opener = avatarRef.asInstanceOf[org.scalajs.dom.HTMLElement]
               personPopover.ref.open = true
             }
-            // scalafix:on
-
           }
 
           avatarGroup.amend(
