@@ -1,7 +1,6 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import io.github.nguyenyou.scalawind.*
 import org.scalajs.dom
 import website.extensions.scalawind.*
 

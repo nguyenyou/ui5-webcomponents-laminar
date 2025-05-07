@@ -1,7 +1,6 @@
 package website
 
 import com.raquo.laminar.api.L.*
-import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Sidebar
 import website.components.TableOfContents

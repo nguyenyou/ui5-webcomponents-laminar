@@ -1,13 +1,13 @@
 package website.views.docs
 
 import com.raquo.laminar.api.L.*
-import io.github.nguyenyou.scalawind.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.Table
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableCell
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableColumn
 import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableRow
 import website.components.Demo
+import website.extensions.scalawind.*
 import website.macros.Source
 
 object CardView extends ExampleView("Card") {

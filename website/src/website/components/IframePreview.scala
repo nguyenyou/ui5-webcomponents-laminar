@@ -3,11 +3,11 @@ package website.components
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.StringAsIsCodec
 import com.raquo.laminar.keys.HtmlAttr
-import io.github.nguyenyou.scalawind.*
 import website.components.ThemeProvider.contentDensitySignal
 import website.components.ThemeProvider.directionSignal
 import website.components.ThemeProvider.websiteThemeSignal
 import website.examples.ExampleRenderer
+import website.extensions.scalawind.*
 import website.utils.isDevelopment
 
 val srcDocAttr = HtmlAttr[String]("srcDoc", StringAsIsCodec)

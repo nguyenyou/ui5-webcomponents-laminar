@@ -13,7 +13,6 @@ object Versions {
   val sjs = "1.19.0"
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
-  val scalawind = "1.0.1"
   val `ui5-webcomponents` = "2.9.0"
   val `ui5-webcomponents-laminar` = "2.9.1"
   val waypoint = "9.0.0"
@@ -36,10 +35,6 @@ object Dependencies {
 
   val scalajsDom = Agg(
     ivy"org.scala-js::scalajs-dom::${Versions.scalajsDom}"
-  )
-
-  val scalawind = Agg(
-    ivy"io.github.nguyenyou::scalawind::${Versions.scalawind}"
   )
 
   val waypoint = Seq(
@@ -99,7 +94,6 @@ object website extends WebModule {
   def moduleKind = ModuleKind.ESModule
   
   def ivyDeps = super.ivyDeps() ++
-    Dependencies.scalawind ++
     Dependencies.waypoint ++
     Dependencies.macrotask ++
     Dependencies.borer ++
