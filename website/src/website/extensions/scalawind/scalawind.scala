@@ -180,14 +180,18 @@ case class Tailwind() {
   def hover(@unused styles: Tailwind): Tailwind     = this
   def focus(@unused styles: Tailwind): Tailwind     = this
   def active(@unused styles: Tailwind): Tailwind    = this
-  def group: Tailwind                               = this
   def sm(@unused styles: Tailwind): Tailwind        = this
   def md(@unused styles: Tailwind): Tailwind        = this
   def lg(@unused styles: Tailwind): Tailwind        = this
   def xl(@unused styles: Tailwind): Tailwind        = this
   def _2xl(@unused styles: Tailwind): Tailwind      = this
   def important(@unused styles: Tailwind): Tailwind = this
-  def raw(@unused classString: String): Tailwind    = this
+  def raw(@unused value: String): Tailwind          = this
+  def min_h_(@unused value: String): Tailwind       = tw
+  def w_(@unused value: String): Tailwind           = tw
+  def h_(@unused value: String): Tailwind           = tw
+  def grid_cols_(@unused value: String): Tailwind   = tw
+  def group: Tailwind                               = this
   def flex: Tailwind                                = tw
   def flex_1: Tailwind                              = tw
   def flex_col: Tailwind                            = tw
@@ -291,7 +295,6 @@ case class Tailwind() {
   def mb_5: Tailwind                                = tw
   def z_10: Tailwind                                = tw
   def p_10: Tailwind                                = tw
-  def min_h_(value: String): Tailwind               = tw
   def border: Tailwind                              = tw
   def h_full: Tailwind                              = tw
   def overflow_y_auto: Tailwind                     = tw
@@ -316,8 +319,6 @@ case class Tailwind() {
   def p_4: Tailwind                                 = tw
   def space_y_4: Tailwind                           = tw
   def flex_wrap: Tailwind                           = tw
-  def w_(value: String): Tailwind                   = tw
-  def h_(value: String): Tailwind                   = tw
   def space_x_2: Tailwind                           = tw
   def space_x_4: Tailwind                           = tw
   def text_green_500: Tailwind                      = tw
@@ -326,5 +327,4 @@ case class Tailwind() {
   def p_6: Tailwind                                 = tw
   def text_2xl: Tailwind                            = tw
   def mt_0: Tailwind                                = tw
-  def grid_cols_(value: String): Tailwind           = tw
 }
