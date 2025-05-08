@@ -14,7 +14,7 @@ object Preview {
 
   private def render(
       title: => String,
-      preview: => Node = emptyNode,
+      preview: => Node,
       sourceCode: => String
   ) = {
     val hoverTabVar     = Var[Option[Tab]](None)
@@ -81,7 +81,7 @@ object Preview {
 
     val activeTabHandler: Binder.Base =
       activeTabSignal.changes --> Observer[Tab] { tab =>
-        activeStylesVar.update { prev =>
+        activeStylesVar.update { _ =>
           tab match {
             case "Preview" => getIndicatorStyles(previewNode)
             case "Code"    => getIndicatorStyles(codeNode)
