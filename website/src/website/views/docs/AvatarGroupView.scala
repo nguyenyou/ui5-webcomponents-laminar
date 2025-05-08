@@ -2,7 +2,7 @@ package website.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.Avatar.AvatarColorScheme
+import io.github.nguyenyou.ui5.webcomponents.laminar.shared.AvatarColorScheme
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.IAvatarGroupItem
 import website.components.Demo
 import website.libs.scalawind.*
