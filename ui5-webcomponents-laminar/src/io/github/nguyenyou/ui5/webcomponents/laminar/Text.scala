@@ -30,7 +30,6 @@ object Text extends WebComponent("ui5-text") {
     */
   lazy val emptyIndicatorMode: HtmlAttr[TextEmptyIndicatorMode] =
     htmlAttr("empty-indicator-mode", StringUnionCodec[TextEmptyIndicatorMode])
-  type TextEmptyIndicatorMode = "Off" | "On"
 
   /** Defines the number of lines the text should wrap before it truncates.
     *

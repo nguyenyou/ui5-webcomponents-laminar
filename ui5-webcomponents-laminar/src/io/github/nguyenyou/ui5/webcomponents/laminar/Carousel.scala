@@ -51,7 +51,6 @@ object Carousel extends WebComponent("ui5-carousel") {
     */
   lazy val arrowsPlacement: HtmlAttr[CarouselArrowsPlacement] =
     htmlAttr("arrows-placement", StringUnionCodec[CarouselArrowsPlacement])
-  type CarouselArrowsPlacement = "Content" | "Navigation"
 
   /** Defines the carousel's background design.
     *
@@ -62,7 +61,6 @@ object Carousel extends WebComponent("ui5-carousel") {
     */
   lazy val backgroundDesign: HtmlAttr[BackgroundDesign] =
     htmlAttr("background-design", StringUnionCodec[BackgroundDesign])
-  type BackgroundDesign = "Solid" | "Transparent" | "Translucent"
 
   /** Defines whether the carousel should loop, i.e show the first page after the last page is reached and vice versa.
     *
@@ -114,7 +112,6 @@ object Carousel extends WebComponent("ui5-carousel") {
     */
   lazy val pageIndicatorBorderDesign: HtmlAttr[BorderDesign] =
     htmlAttr("page-indicator-border-design", StringUnionCodec[BorderDesign])
-  type BorderDesign = "Solid" | "None"
 
   /** Defines the style of the page indicator. Available options are:
     *
@@ -130,7 +127,6 @@ object Carousel extends WebComponent("ui5-carousel") {
     */
   lazy val pageIndicatorType: HtmlAttr[CarouselPageIndicatorType] =
     htmlAttr("page-indicator-type", StringUnionCodec[CarouselPageIndicatorType])
-  type CarouselPageIndicatorType = "Default" | "Numeric"
 
   // -- Events --
 

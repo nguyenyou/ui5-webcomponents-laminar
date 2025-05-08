@@ -108,7 +108,6 @@ object TimePicker extends WebComponent("ui5-time-picker") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

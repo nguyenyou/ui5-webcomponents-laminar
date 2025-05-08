@@ -25,7 +25,6 @@ object NavigationLayout extends WebComponent("ui5-navigation-layout") {
     * Default: "Auto"
     */
   lazy val mode: HtmlAttr[NavigationLayoutMode] = htmlAttr("mode", StringUnionCodec[NavigationLayoutMode])
-  type NavigationLayoutMode = "Auto" | "Collapsed" | "Expanded"
 
   // -- Events --
 

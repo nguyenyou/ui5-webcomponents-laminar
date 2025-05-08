@@ -31,7 +31,6 @@ object SideNavigationSubItem extends WebComponent("ui5-side-navigation-sub-item"
     * Default: "Default"
     */
   lazy val design: HtmlAttr[SideNavigationItemDesign] = htmlAttr("design", StringUnionCodec[SideNavigationItemDesign])
-  type SideNavigationItemDesign = "Default" | "Action"
 
   /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
     * tab chain.

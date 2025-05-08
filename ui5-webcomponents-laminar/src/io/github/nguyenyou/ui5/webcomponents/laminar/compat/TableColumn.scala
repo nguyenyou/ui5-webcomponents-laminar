@@ -50,9 +50,8 @@ object TableColumn extends WebComponent("ui5-table-column") {
     *
     * Default: "Block"
     */
-  lazy val popinDisplay: HtmlAttr[TableColumnPopinDisplay] =
-    htmlAttr("popin-display", StringUnionCodec[TableColumnPopinDisplay])
-  type TableColumnPopinDisplay = "Block" | "Inline"
+  lazy val popinDisplay: HtmlAttr[CompatTableColumnPopinDisplay] =
+    htmlAttr("popin-display", StringUnionCodec[CompatTableColumnPopinDisplay])
 
   /** The text for the column when it pops in.
     *

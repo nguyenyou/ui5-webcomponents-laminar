@@ -41,7 +41,6 @@ object ListItemStandard extends WebComponent("ui5-li") {
     * Default: "None"
     */
   lazy val additionalTextState: HtmlAttr[ValueState] = htmlAttr("additional-text-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the description displayed right under the item text, if such is present.
     *
@@ -58,7 +57,6 @@ object ListItemStandard extends WebComponent("ui5-li") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the `icon` source URI.
     *
@@ -127,7 +125,6 @@ object ListItemStandard extends WebComponent("ui5-li") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   /** Defines if the text of the component should wrap when it's too long. When set to "Normal", the content (title,
     * description) will be wrapped using the `ExpandableText` component.<br/>
@@ -145,7 +142,6 @@ object ListItemStandard extends WebComponent("ui5-li") {
     * Default: "None"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

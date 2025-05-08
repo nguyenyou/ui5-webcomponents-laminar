@@ -61,7 +61,6 @@ object ProgressIndicator extends WebComponent("ui5-progress-indicator") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

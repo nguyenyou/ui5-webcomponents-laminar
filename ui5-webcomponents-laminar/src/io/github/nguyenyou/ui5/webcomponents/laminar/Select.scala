@@ -98,7 +98,6 @@ object Select extends WebComponent("ui5-select") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

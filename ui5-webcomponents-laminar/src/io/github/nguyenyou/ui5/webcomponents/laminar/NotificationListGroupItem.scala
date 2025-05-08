@@ -37,7 +37,6 @@ object NotificationListGroupItem extends WebComponent("ui5-li-notification-group
     */
   lazy val growing: HtmlAttr[NotificationListGrowingMode] =
     htmlAttr("growing", StringUnionCodec[NotificationListGrowingMode])
-  type NotificationListGrowingMode = "Button" | "None"
 
   /** Defines if a busy indicator would be displayed over the item.
     *

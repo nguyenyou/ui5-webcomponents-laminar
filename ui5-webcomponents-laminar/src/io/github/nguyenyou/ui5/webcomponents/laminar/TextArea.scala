@@ -120,7 +120,6 @@ object TextArea extends WebComponent("ui5-textarea") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

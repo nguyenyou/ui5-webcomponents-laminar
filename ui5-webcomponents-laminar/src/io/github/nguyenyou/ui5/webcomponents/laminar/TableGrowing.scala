@@ -33,7 +33,6 @@ object TableGrowing extends WebComponent("ui5-table-growing") {
     * Default: "Button"
     */
   lazy val mode: HtmlAttr[TableGrowingMode] = htmlAttr("mode", StringUnionCodec[TableGrowingMode])
-  type TableGrowingMode = "Button" | "Scroll"
 
   /** Defines the text that will be displayed below the `text` inside the growing button. Has no effect when mode is set
     * to Scroll.

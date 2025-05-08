@@ -27,7 +27,6 @@ object ExpandableText extends WebComponent("ui5-expandable-text") {
     */
   lazy val emptyIndicatorMode: HtmlAttr[TextEmptyIndicatorMode] =
     htmlAttr("empty-indicator-mode", StringUnionCodec[TextEmptyIndicatorMode])
-  type TextEmptyIndicatorMode = "Off" | "On"
 
   /** Maximum number of characters to be displayed initially. If the text length exceeds this limit, the text will be
     * truncated with an ellipsis, and the "More" link will be displayed.
@@ -42,7 +41,6 @@ object ExpandableText extends WebComponent("ui5-expandable-text") {
     */
   lazy val overflowMode: HtmlAttr[ExpandableTextOverflowMode] =
     htmlAttr("overflow-mode", StringUnionCodec[ExpandableTextOverflowMode])
-  type ExpandableTextOverflowMode = "InPlace" | "Popover"
 
   /** Text of the component.
     *

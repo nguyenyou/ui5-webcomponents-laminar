@@ -66,7 +66,6 @@ object Table extends WebComponent("ui5-table") {
     * Default: "Scroll"
     */
   lazy val overflowMode: HtmlAttr[TableOverflowMode] = htmlAttr("overflow-mode", StringUnionCodec[TableOverflowMode])
-  type TableOverflowMode = "Scroll" | "Popin"
 
   /** Defines the maximum number of row actions that is displayed, which determines the width of the row action column.
     *

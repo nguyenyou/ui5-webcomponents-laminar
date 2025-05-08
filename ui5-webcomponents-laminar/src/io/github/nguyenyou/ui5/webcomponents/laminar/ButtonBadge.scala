@@ -33,7 +33,6 @@ object ButtonBadge extends WebComponent("ui5-button-badge") {
     * Default: "AttentionDot"
     */
   lazy val design: HtmlAttr[ButtonBadgeDesign] = htmlAttr("design", StringUnionCodec[ButtonBadgeDesign])
-  type ButtonBadgeDesign = "InlineText" | "OverlayText" | "AttentionDot"
 
   /** Defines the text of the component.
     *

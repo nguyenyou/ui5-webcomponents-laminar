@@ -19,6 +19,8 @@ export class WebComponentWrapper {
 
   public typeExportSet = new Set<string>();
   public attributesMap = new Map<string, string>();
+
+  public enumSet
   public readonly packageName: string;
   public readonly isMainPackage: boolean;
   public readonly isAiPackage: boolean;
@@ -36,7 +38,8 @@ export class WebComponentWrapper {
     tagName: string,
     componentName: string,
     modulePath: string,
-    packageName: string
+    packageName: string,
+    enumSet: Set<string>
   ) {
     this.tagName = tagName;
     this.componentName = componentName;
@@ -46,6 +49,7 @@ export class WebComponentWrapper {
     this.isFioriPackage = packageName === "@ui5/webcomponents-fiori";
     this.isMainPackage = packageName === "@ui5/webcomponents";
     this.isCompatPackage = packageName === "@ui5/webcomponents-compat";
+    this.enumSet = enumSet;
   }
 
   addDefaultImport(pkgName: string, localName: string) {

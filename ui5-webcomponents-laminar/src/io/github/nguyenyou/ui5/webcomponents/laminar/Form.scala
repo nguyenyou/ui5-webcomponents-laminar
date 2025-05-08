@@ -56,7 +56,6 @@ object Form extends WebComponent("ui5-form") {
     * Default: "H2"
     */
   lazy val headerLevel: HtmlAttr[TitleLevel] = htmlAttr("header-level", StringUnionCodec[TitleLevel])
-  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
 
   /** Defines the header text of the component.
     *
@@ -75,7 +74,6 @@ object Form extends WebComponent("ui5-form") {
     * Default: "Normal"
     */
   lazy val itemSpacing: HtmlAttr[FormItemSpacing] = htmlAttr("item-spacing", StringUnionCodec[FormItemSpacing])
-  type FormItemSpacing = "Normal" | "Large"
 
   /** Defines the width proportion of the labels and fields of a form item by breakpoint.
     *

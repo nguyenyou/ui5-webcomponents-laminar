@@ -30,7 +30,6 @@ object Wizard extends WebComponent("ui5-wizard") {
     */
   lazy val contentLayout: HtmlAttr[WizardContentLayout] =
     htmlAttr("content-layout", StringUnionCodec[WizardContentLayout])
-  type WizardContentLayout = "MultipleSteps" | "SingleStep"
 
   // -- Events --
 

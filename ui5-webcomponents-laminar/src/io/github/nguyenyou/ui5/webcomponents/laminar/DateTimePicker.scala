@@ -46,7 +46,6 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
     */
   lazy val calendarWeekNumbering: HtmlAttr[CalendarWeekNumbering] =
     htmlAttr("calendar-week-numbering", StringUnionCodec[CalendarWeekNumbering])
-  type CalendarWeekNumbering = "Default" | "ISO_8601" | "MiddleEastern" | "WesternTraditional"
 
   /** Determines whether the component is displayed as disabled.
     *
@@ -114,7 +113,6 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
     */
   lazy val primaryCalendarType: HtmlAttr[CalendarType] =
     htmlAttr("primary-calendar-type", StringUnionCodec[CalendarType])
-  type CalendarType = "Gregorian" | "Islamic" | "Japanese" | "Buddhist" | "Persian"
 
   /** Determines whether the component is displayed as read-only.
     *
@@ -144,7 +142,6 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

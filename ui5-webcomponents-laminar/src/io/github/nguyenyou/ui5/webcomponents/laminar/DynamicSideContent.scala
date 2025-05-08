@@ -4,6 +4,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContent as DynamicSideContentComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContentAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContentLayoutChangeEventDetail
 import org.scalajs.dom
 
@@ -48,7 +49,6 @@ object DynamicSideContent extends WebComponent("ui5-dynamic-side-content") {
     */
   lazy val sideContentFallDown: HtmlAttr[SideContentFallDown] =
     htmlAttr("side-content-fall-down", StringUnionCodec[SideContentFallDown])
-  type SideContentFallDown = "BelowXL" | "BelowL" | "BelowM" | "OnMinimumWidth"
 
   /** Defines whether the side content is positioned before the main content (left side in LTR mode), or after the the
     * main content (right side in LTR mode).
@@ -57,7 +57,6 @@ object DynamicSideContent extends WebComponent("ui5-dynamic-side-content") {
     */
   lazy val sideContentPosition: HtmlAttr[SideContentPosition] =
     htmlAttr("side-content-position", StringUnionCodec[SideContentPosition])
-  type SideContentPosition = "End" | "Start"
 
   /** Defines on which breakpoints the side content is visible.
     *
@@ -65,7 +64,6 @@ object DynamicSideContent extends WebComponent("ui5-dynamic-side-content") {
     */
   lazy val sideContentVisibility: HtmlAttr[SideContentVisibility] =
     htmlAttr("side-content-visibility", StringUnionCodec[SideContentVisibility])
-  type SideContentVisibility = "AlwaysShow" | "ShowAboveL" | "ShowAboveM" | "ShowAboveS" | "NeverShow"
 
   // -- Events --
 

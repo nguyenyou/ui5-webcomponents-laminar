@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.AvatarGroup as AvatarGroupComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.AvatarGroupAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.AvatarGroupClickEventDetail
 import org.scalajs.dom
 
@@ -26,7 +27,6 @@ object AvatarGroup extends WebComponent("ui5-avatar-group") {
     * Default: "Group"
     */
   lazy val tpe: HtmlAttr[AvatarGroupType] = htmlAttr("type", StringUnionCodec[AvatarGroupType])
-  type AvatarGroupType = "Group" | "Individual"
 
   // -- Events --
 

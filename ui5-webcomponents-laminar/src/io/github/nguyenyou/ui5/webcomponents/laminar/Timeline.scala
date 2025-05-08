@@ -47,14 +47,12 @@ object Timeline extends WebComponent("ui5-timeline") {
     * Default: "None"
     */
   lazy val growing: HtmlAttr[TimelineGrowingMode] = htmlAttr("growing", StringUnionCodec[TimelineGrowingMode])
-  type TimelineGrowingMode = "Button" | "Scroll" | "None"
 
   /** Defines the items orientation.
     *
     * Default: "Vertical"
     */
   lazy val layout: HtmlAttr[TimelineLayout] = htmlAttr("layout", StringUnionCodec[TimelineLayout])
-  type TimelineLayout = "Vertical" | "Horizontal"
 
   /** Defines if the component should display a loading indicator over the Timeline.
     *

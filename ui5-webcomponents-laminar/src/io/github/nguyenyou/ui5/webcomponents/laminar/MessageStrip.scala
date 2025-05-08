@@ -36,7 +36,6 @@ object MessageStrip extends WebComponent("ui5-message-strip") {
     * Default: "Information"
     */
   lazy val design: HtmlAttr[MessageStripDesign] = htmlAttr("design", StringUnionCodec[MessageStripDesign])
-  type MessageStripDesign = "Information" | "Positive" | "Negative" | "Critical" | "ColorSet1" | "ColorSet2"
 
   /** Defines whether the MessageStrip renders close button.
     *

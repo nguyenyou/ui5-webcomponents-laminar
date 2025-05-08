@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "create-wrappers": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers && yarn ui5-webcomponents-laminar:fmt && yarn ui5-webcomponents-laminar:fix",
+    "create-wrappers": "yarn create-wrappers:only && yarn collect-enums && yarn ui5-webcomponents-laminar:fmt && yarn ui5-webcomponents-laminar:fix",
+    "create-wrappers:only": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers",
+    "collect-enums": "yarn workspace ui5-webcomponents-laminar-cli collect-enums",
     "generate-facades": "./mill ui5-webcomponents.scalablyTypedImportTask",
     "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",
     "release:ui5-webcomponents-laminar": "./mill -i ui5-webcomponents-laminar.publishSonatypeCentral",
@@ -15,7 +17,7 @@
     "website:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ website.sources",
     "website:fix": "./mill website.fix",
     "ui5-webcomponents-laminar:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ ui5-webcomponents-laminar.sources",
-    "ui5-webcomponents-laminar:fix": "./mill ui5-webcomponents-laminar.fix"
+    "ui5-webcomponents-laminar:fix": "./mill clean ui5-webcomponents-laminar && ./mill ui5-webcomponents-laminar.fix"
   },
   "packageManager": "yarn@4.9.1",
   "workspaces": [

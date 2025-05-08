@@ -49,8 +49,7 @@ object TableRow extends WebComponent("ui5-table-row") {
     *
     * Default: "Inactive"
     */
-  lazy val tpe: HtmlAttr[TableRowType] = htmlAttr("type", StringUnionCodec[TableRowType])
-  type TableRowType = "Inactive" | "Active"
+  lazy val tpe: HtmlAttr[CompatTableRowType] = htmlAttr("type", StringUnionCodec[CompatTableRowType])
 
   // -- Events --
 

@@ -37,7 +37,6 @@ object TreeItemCustom extends WebComponent("ui5-tree-item-custom") {
     * Default: "None"
     */
   lazy val additionalTextState: HtmlAttr[ValueState] = htmlAttr("additional-text-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines whether the tree list item will show a collapse or expand icon inside its toggle button.
     *
@@ -71,7 +70,6 @@ object TreeItemCustom extends WebComponent("ui5-tree-item-custom") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** If set, an icon will be displayed before the text of the tree list item.
     *
@@ -141,7 +139,6 @@ object TreeItemCustom extends WebComponent("ui5-tree-item-custom") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   // -- Events --
 

@@ -57,7 +57,6 @@ object UploadCollection extends WebComponent("ui5-upload-collection") {
     */
   lazy val selectionMode: HtmlAttr[UploadCollectionSelectionMode] =
     htmlAttr("selection-mode", StringUnionCodec[UploadCollectionSelectionMode])
-  type UploadCollectionSelectionMode = "None" | "Single" | "SingleStart" | "SingleEnd" | "SingleAuto" | "Multiple"
 
   // -- Events --
 

@@ -35,7 +35,6 @@ object FormGroup extends WebComponent("ui5-form-group") {
     * Default: "H3"
     */
   lazy val headerLevel: HtmlAttr[TitleLevel] = htmlAttr("header-level", StringUnionCodec[TitleLevel])
-  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
 
   /** Defines header text of the component.
     *

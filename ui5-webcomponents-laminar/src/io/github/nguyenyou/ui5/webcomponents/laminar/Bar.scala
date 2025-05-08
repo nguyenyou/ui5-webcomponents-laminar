@@ -25,7 +25,6 @@ object Bar extends WebComponent("ui5-bar") {
     * Default: "Header"
     */
   lazy val design: HtmlAttr[BarDesign] = htmlAttr("design", StringUnionCodec[BarDesign])
-  type BarDesign = "Header" | "Subheader" | "Footer" | "FloatingFooter"
 
   // -- Events --
 

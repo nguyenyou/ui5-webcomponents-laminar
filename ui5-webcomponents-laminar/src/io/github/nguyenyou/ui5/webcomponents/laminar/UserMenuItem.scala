@@ -5,6 +5,7 @@ import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeOpenEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItemAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuItemMod.UserMenuItem as UserMenuItemComponent
 import org.scalajs.dom
 
@@ -64,7 +65,6 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the icon to be displayed as graphical element within the component. The SAP-icons font provides numerous
     * options.
@@ -141,7 +141,6 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   // -- Events --
 

@@ -46,7 +46,6 @@ object Popover extends WebComponent("ui5-popover") {
     */
   lazy val accessibleRole: HtmlAttr[PopupAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[PopupAccessibleRole])
-  type PopupAccessibleRole = "None" | "Dialog" | "AlertDialog"
 
   /** Determines if there is no enough space, the component can be placed over the target.
     *
@@ -74,7 +73,6 @@ object Popover extends WebComponent("ui5-popover") {
     */
   lazy val horizontalAlign: HtmlAttr[PopoverHorizontalAlign] =
     htmlAttr("horizontal-align", StringUnionCodec[PopoverHorizontalAlign])
-  type PopoverHorizontalAlign = "Center" | "Start" | "End" | "Stretch"
 
   /** Defines the ID of the HTML Element, which will get the initial focus.
     *
@@ -117,7 +115,6 @@ object Popover extends WebComponent("ui5-popover") {
     * Default: "End"
     */
   lazy val placement: HtmlAttr[PopoverPlacement] = htmlAttr("placement", StringUnionCodec[PopoverPlacement])
-  type PopoverPlacement = "Start" | "End" | "Top" | "Bottom"
 
   /** Defines if the focus should be returned to the previously focused element, when the popup closes.
     *
@@ -140,7 +137,6 @@ object Popover extends WebComponent("ui5-popover") {
     */
   lazy val verticalAlign: HtmlAttr[PopoverVerticalAlign] =
     htmlAttr("vertical-align", StringUnionCodec[PopoverVerticalAlign])
-  type PopoverVerticalAlign = "Center" | "Top" | "Bottom" | "Stretch"
 
   // -- Events --
 

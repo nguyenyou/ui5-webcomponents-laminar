@@ -64,7 +64,6 @@ object UploadCollectionItem extends WebComponent("ui5-upload-collection-item") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** The navigated state of the list item. If set to `true`, a navigation indicator is displayed at the end of the list
     * item.
@@ -108,7 +107,6 @@ object UploadCollectionItem extends WebComponent("ui5-upload-collection-item") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   /** Upload state.
     *
@@ -124,7 +122,6 @@ object UploadCollectionItem extends WebComponent("ui5-upload-collection-item") {
     * Default: "Ready"
     */
   lazy val uploadState: HtmlAttr[UploadState] = htmlAttr("upload-state", StringUnionCodec[UploadState])
-  type UploadState = "Complete" | "Error" | "Ready" | "Uploading"
 
   // -- Events --
 

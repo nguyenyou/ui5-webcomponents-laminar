@@ -29,7 +29,6 @@ object Page extends WebComponent("ui5-page") {
     */
   lazy val backgroundDesign: HtmlAttr[PageBackgroundDesign] =
     htmlAttr("background-design", StringUnionCodec[PageBackgroundDesign])
-  type PageBackgroundDesign = "List" | "Solid" | "Transparent"
 
   /** Defines if the footer is fixed at the very bottom of the page.
     *

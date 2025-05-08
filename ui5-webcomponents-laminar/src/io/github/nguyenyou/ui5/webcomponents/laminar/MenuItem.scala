@@ -6,6 +6,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeOpenEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItem as MenuItemComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItemAccessibilityAttributes
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -64,7 +65,6 @@ object MenuItem extends WebComponent("ui5-menu-item") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the icon to be displayed as graphical element within the component. The SAP-icons font provides numerous
     * options.
@@ -141,7 +141,6 @@ object MenuItem extends WebComponent("ui5-menu-item") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   // -- Events --
 

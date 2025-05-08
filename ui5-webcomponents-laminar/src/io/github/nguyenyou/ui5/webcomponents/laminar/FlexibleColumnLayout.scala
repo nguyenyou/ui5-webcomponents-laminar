@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FCLAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FlexibleColumnLayout as FlexibleColumnLayoutComponent
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FlexibleColumnLayoutLayoutChangeEventDetail
 import org.scalajs.dom
@@ -42,10 +43,6 @@ object FlexibleColumnLayout extends WebComponent("ui5-flexible-column-layout") {
     * Default: "OneColumn"
     */
   lazy val layout: HtmlAttr[FCLLayout] = htmlAttr("layout", StringUnionCodec[FCLLayout])
-  type FCLLayout = "OneColumn" | "TwoColumnsStartExpanded" | "TwoColumnsMidExpanded" | "ThreeColumnsMidExpanded" |
-    "ThreeColumnsEndExpanded" | "ThreeColumnsStartExpandedEndHidden" | "ThreeColumnsMidExpandedEndHidden" |
-    "ThreeColumnsStartHiddenMidExpanded" | "ThreeColumnsStartHiddenEndExpanded" | "MidColumnFullScreen" |
-    "EndColumnFullScreen"
 
   // -- Events --
 

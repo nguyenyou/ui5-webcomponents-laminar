@@ -142,9 +142,13 @@ export class AttributesRenderer extends AbstractRenderer {
       // Add the source file to the project
       for (const reference of references || []) {
         if (reference.name && reference.package && reference.module) {
+          let typeName = reference.name
+          if(context.isCompatPackage) {
+            typeName = `Compat${reference.name}`
+          }
           // Skip if this enum has already been processed
-          if (this.processedEnums.has(reference.name)) {
-            this.createHtmlAttrForEnum(attribute, context, attribute.name, reference.name, writer);
+          if (this.processedEnums.has(typeName)) {
+            this.createHtmlAttrForEnum(attribute, context, attribute.name, typeName, writer);
             return;
           }
 
@@ -177,15 +181,17 @@ export class AttributesRenderer extends AbstractRenderer {
                 // Use the enum values to create a union type
                 type = enumValues.join(" | ");
                 // Mark this enum as processed
-                this.processedEnums.add(reference.name);
+                this.processedEnums.add(typeName);
                 this.createHtmlAttrForEnum(
                   attribute,
                   context,
                   attribute.name,
-                  reference.name,
+                  typeName,
                   writer
                 );
-                writer.writeLine(`type ${reference.name} = ${type}`);
+                
+                const unionType = `type ${typeName} = ${type}`
+                context.enumSet.add(unionType);
                 return;
               }
             }

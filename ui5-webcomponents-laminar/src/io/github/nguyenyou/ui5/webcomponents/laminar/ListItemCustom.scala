@@ -38,7 +38,6 @@ object ListItemCustom extends WebComponent("ui5-li-custom") {
     * Default: "None"
     */
   lazy val highlight: HtmlAttr[Highlight] = htmlAttr("highlight", StringUnionCodec[Highlight])
-  type Highlight = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines whether the item is movable.
     *
@@ -83,7 +82,6 @@ object ListItemCustom extends WebComponent("ui5-li-custom") {
     * Default: "Active"
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
-  type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
 
   // -- Events --
 

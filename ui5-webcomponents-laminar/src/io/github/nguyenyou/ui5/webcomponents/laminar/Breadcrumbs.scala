@@ -30,15 +30,12 @@ object Breadcrumbs extends WebComponent("ui5-breadcrumbs") {
     * Default: "Standard"
     */
   lazy val design: HtmlAttr[BreadcrumbsDesign] = htmlAttr("design", StringUnionCodec[BreadcrumbsDesign])
-  type BreadcrumbsDesign = "Standard" | "NoCurrentPage"
 
   /** Determines the visual style of the separator between the breadcrumb items.
     *
     * Default: "Slash"
     */
   lazy val separators: HtmlAttr[BreadcrumbsSeparator] = htmlAttr("separators", StringUnionCodec[BreadcrumbsSeparator])
-  type BreadcrumbsSeparator = "Slash" | "BackSlash" | "DoubleBackSlash" | "DoubleGreaterThan" | "DoubleSlash" |
-    "GreaterThan"
 
   // -- Events --
 

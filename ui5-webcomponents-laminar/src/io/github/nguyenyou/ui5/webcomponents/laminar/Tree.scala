@@ -89,7 +89,6 @@ object Tree extends WebComponent("ui5-tree") {
     * Default: "None"
     */
   lazy val selectionMode: HtmlAttr[ListSelectionMode] = htmlAttr("selection-mode", StringUnionCodec[ListSelectionMode])
-  type ListSelectionMode = "None" | "Single" | "SingleStart" | "SingleEnd" | "SingleAuto" | "Multiple" | "Delete"
 
   // -- Events --
 

@@ -53,7 +53,6 @@ object MultiComboBox extends WebComponent("ui5-multi-combobox") {
     * Default: "StartsWithPerTerm"
     */
   lazy val filter: HtmlAttr[ComboBoxFilter] = htmlAttr("filter", StringUnionCodec[ComboBoxFilter])
-  type ComboBoxFilter = "StartsWithPerTerm" | "StartsWith" | "Contains" | "None"
 
   /** Determines the name by which the component will be identified upon submission in an HTML form.
     *
@@ -138,7 +137,6 @@ object MultiComboBox extends WebComponent("ui5-multi-combobox") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

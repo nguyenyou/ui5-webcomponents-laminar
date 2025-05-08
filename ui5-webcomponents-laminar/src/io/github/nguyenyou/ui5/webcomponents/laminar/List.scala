@@ -63,7 +63,6 @@ object List extends WebComponent("ui5-list") {
     */
   lazy val accessibleRole: HtmlAttr[ListAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[ListAccessibleRole])
-  type ListAccessibleRole = "List" | "Menu" | "Tree" | "ListBox"
 
   /** Defines the footer text.
     *
@@ -80,7 +79,6 @@ object List extends WebComponent("ui5-list") {
     * Default: "None"
     */
   lazy val growing: HtmlAttr[ListGrowingMode] = htmlAttr("growing", StringUnionCodec[ListGrowingMode])
-  type ListGrowingMode = "Button" | "Scroll" | "None"
 
   /** Defines the text that will be displayed inside the growing button.
     *
@@ -132,14 +130,12 @@ object List extends WebComponent("ui5-list") {
     * Default: "None"
     */
   lazy val selectionMode: HtmlAttr[ListSelectionMode] = htmlAttr("selection-mode", StringUnionCodec[ListSelectionMode])
-  type ListSelectionMode = "None" | "Single" | "SingleStart" | "SingleEnd" | "SingleAuto" | "Multiple" | "Delete"
 
   /** Defines the item separator style that is used.
     *
     * Default: "All"
     */
   lazy val separators: HtmlAttr[ListSeparator] = htmlAttr("separators", StringUnionCodec[ListSeparator])
-  type ListSeparator = "All" | "Inner" | "None"
 
   // -- Events --
 

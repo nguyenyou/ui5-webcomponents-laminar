@@ -78,8 +78,7 @@ object Table extends WebComponent("ui5-table") {
     *
     * Default: "None"
     */
-  lazy val growing: HtmlAttr[TableGrowingMode] = htmlAttr("growing", StringUnionCodec[TableGrowingMode])
-  type TableGrowingMode = "Button" | "Scroll" | "None"
+  lazy val growing: HtmlAttr[CompatTableGrowingMode] = htmlAttr("growing", StringUnionCodec[CompatTableGrowingMode])
 
   /** Defines the subtext that will be displayed under the `growingButtonText`.
     *
@@ -122,8 +121,7 @@ object Table extends WebComponent("ui5-table") {
     *
     * Default: "None"
     */
-  lazy val mode: HtmlAttr[TableMode] = htmlAttr("mode", StringUnionCodec[TableMode])
-  type TableMode = "None" | "SingleSelect" | "MultiSelect"
+  lazy val mode: HtmlAttr[CompatTableMode] = htmlAttr("mode", StringUnionCodec[CompatTableMode])
 
   /** Defines the text that will be displayed when there is no data and `hideNoData` is not present.
     *

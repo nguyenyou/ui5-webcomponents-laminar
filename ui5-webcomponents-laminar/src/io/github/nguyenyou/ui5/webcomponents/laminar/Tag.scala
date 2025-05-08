@@ -36,7 +36,6 @@ object Tag extends WebComponent("ui5-tag") {
     * Default: "Neutral"
     */
   lazy val design: HtmlAttr[TagDesign] = htmlAttr("design", StringUnionCodec[TagDesign])
-  type TagDesign = "Set1" | "Set2" | "Neutral" | "Information" | "Positive" | "Negative" | "Critical"
 
   /** Defines if the default state icon is shown.
     *
@@ -64,7 +63,6 @@ object Tag extends WebComponent("ui5-tag") {
     * Default: "S"
     */
   lazy val size: HtmlAttr[TagSize] = htmlAttr("size", StringUnionCodec[TagSize])
-  type TagSize = "S" | "L"
 
   /** Defines how the text of a component will be displayed when there is not enough space.
     *
@@ -76,7 +74,6 @@ object Tag extends WebComponent("ui5-tag") {
     * Default: "Normal"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

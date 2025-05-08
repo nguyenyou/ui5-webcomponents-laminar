@@ -75,7 +75,6 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
     * Default: "M"
     */
   lazy val size: HtmlAttr[RatingIndicatorSize] = htmlAttr("size", StringUnionCodec[RatingIndicatorSize])
-  type RatingIndicatorSize = "S" | "M" | "L"
 
   /** Defines the tooltip of the component.
     *

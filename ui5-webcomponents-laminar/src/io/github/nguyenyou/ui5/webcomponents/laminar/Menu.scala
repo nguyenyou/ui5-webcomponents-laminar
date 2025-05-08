@@ -36,7 +36,6 @@ object Menu extends WebComponent("ui5-menu") {
     */
   lazy val horizontalAlign: HtmlAttr[PopoverHorizontalAlign] =
     htmlAttr("horizontal-align", StringUnionCodec[PopoverHorizontalAlign])
-  type PopoverHorizontalAlign = "Center" | "Start" | "End" | "Stretch"
 
   /** Defines if a loading indicator would be displayed inside the corresponding ui5-menu popover.
     *

@@ -46,7 +46,6 @@ object Dialog extends WebComponent("ui5-dialog") {
     */
   lazy val accessibleRole: HtmlAttr[PopupAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[PopupAccessibleRole])
-  type PopupAccessibleRole = "None" | "Dialog" | "AlertDialog"
 
   /** Determines whether the component is draggable. If this property is set to true, the Dialog will be draggable by
     * its header.
@@ -122,7 +121,6 @@ object Dialog extends WebComponent("ui5-dialog") {
     * Default: "None"
     */
   lazy val state: HtmlAttr[ValueState] = htmlAttr("state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Determines if the dialog will be stretched to full screen on mobile. On desktop, the dialog will be stretched to
     * approximately 90% of the viewport.

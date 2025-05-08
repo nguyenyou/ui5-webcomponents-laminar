@@ -52,7 +52,6 @@ object IllustratedMessage extends WebComponent("ui5-illustrated-message") {
     * Default: "Auto"
     */
   lazy val design: HtmlAttr[IllustrationMessageDesign] = htmlAttr("design", StringUnionCodec[IllustrationMessageDesign])
-  type IllustrationMessageDesign = "Auto" | "Base" | "Dot" | "Spot" | "Dialog" | "Scene"
 
   /** Defines the illustration name that will be displayed in the component.
     *

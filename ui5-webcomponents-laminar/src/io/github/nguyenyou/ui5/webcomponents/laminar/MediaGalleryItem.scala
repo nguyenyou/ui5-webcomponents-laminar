@@ -32,7 +32,6 @@ object MediaGalleryItem extends WebComponent("ui5-media-gallery-item") {
     * Default: "Square"
     */
   lazy val layout: HtmlAttr[MediaGalleryItemLayout] = htmlAttr("layout", StringUnionCodec[MediaGalleryItemLayout])
-  type MediaGalleryItemLayout = "Square" | "Wide"
 
   /** Defines the selected state of the component.
     *

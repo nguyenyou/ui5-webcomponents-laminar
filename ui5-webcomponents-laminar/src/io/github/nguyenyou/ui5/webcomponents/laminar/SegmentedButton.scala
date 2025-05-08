@@ -40,7 +40,6 @@ object SegmentedButton extends WebComponent("ui5-segmented-button") {
     */
   lazy val selectionMode: HtmlAttr[SegmentedButtonSelectionMode] =
     htmlAttr("selection-mode", StringUnionCodec[SegmentedButtonSelectionMode])
-  type SegmentedButtonSelectionMode = "Single" | "Multiple"
 
   // -- Events --
 

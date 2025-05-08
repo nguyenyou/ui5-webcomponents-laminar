@@ -35,7 +35,6 @@ object MediaGallery extends WebComponent("ui5-media-gallery") {
     * Default: "Auto"
     */
   lazy val layout: HtmlAttr[MediaGalleryLayout] = htmlAttr("layout", StringUnionCodec[MediaGalleryLayout])
-  type MediaGalleryLayout = "Auto" | "Vertical" | "Horizontal"
 
   /** Determines the horizontal alignment of the thumbnails menu vs. the central display area.
     *
@@ -43,7 +42,6 @@ object MediaGallery extends WebComponent("ui5-media-gallery") {
     */
   lazy val menuHorizontalAlign: HtmlAttr[MediaGalleryMenuHorizontalAlign] =
     htmlAttr("menu-horizontal-align", StringUnionCodec[MediaGalleryMenuHorizontalAlign])
-  type MediaGalleryMenuHorizontalAlign = "Left" | "Right"
 
   /** Determines the vertical alignment of the thumbnails menu vs. the central display area.
     *
@@ -51,7 +49,6 @@ object MediaGallery extends WebComponent("ui5-media-gallery") {
     */
   lazy val menuVerticalAlign: HtmlAttr[MediaGalleryMenuVerticalAlign] =
     htmlAttr("menu-vertical-align", StringUnionCodec[MediaGalleryMenuVerticalAlign])
-  type MediaGalleryMenuVerticalAlign = "Top" | "Bottom"
 
   /** If set to `true`, all thumbnails are rendered in a scrollable container. If `false`, only up to five thumbnails
     * are rendered, followed by an overflow button that shows the count of the remaining thumbnails.

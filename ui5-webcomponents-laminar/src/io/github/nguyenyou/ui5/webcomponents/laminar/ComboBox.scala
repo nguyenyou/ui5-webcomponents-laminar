@@ -47,7 +47,6 @@ object ComboBox extends WebComponent("ui5-combobox") {
     * Default: "StartsWithPerTerm"
     */
   lazy val filter: HtmlAttr[ComboBoxFilter] = htmlAttr("filter", StringUnionCodec[ComboBoxFilter])
-  type ComboBoxFilter = "StartsWithPerTerm" | "StartsWith" | "Contains" | "None"
 
   /** Indicates whether a loading indicator should be shown in the picker.
     *
@@ -122,7 +121,6 @@ object ComboBox extends WebComponent("ui5-combobox") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

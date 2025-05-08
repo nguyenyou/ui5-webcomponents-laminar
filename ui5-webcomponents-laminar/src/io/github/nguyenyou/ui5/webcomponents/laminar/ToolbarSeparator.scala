@@ -28,7 +28,6 @@ object ToolbarSeparator extends WebComponent("ui5-toolbar-separator") {
     */
   lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
     htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" | "AlwaysOverflow"
 
   /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
     *

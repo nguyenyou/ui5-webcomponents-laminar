@@ -38,7 +38,6 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
     * Default: "M"
     */
   lazy val size: HtmlAttr[BusyIndicatorSize] = htmlAttr("size", StringUnionCodec[BusyIndicatorSize])
-  type BusyIndicatorSize = "S" | "M" | "L"
 
   /** Defines text to be displayed below the component. It can be used to inform the user of the current operation.
     *
@@ -52,7 +51,6 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
     */
   lazy val textPlacement: HtmlAttr[BusyIndicatorTextPlacement] =
     htmlAttr("text-placement", StringUnionCodec[BusyIndicatorTextPlacement])
-  type BusyIndicatorTextPlacement = "Top" | "Bottom"
 
   // -- Events --
 

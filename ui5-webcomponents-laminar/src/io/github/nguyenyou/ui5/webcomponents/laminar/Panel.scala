@@ -34,7 +34,6 @@ object Panel extends WebComponent("ui5-panel") {
     */
   lazy val accessibleRole: HtmlAttr[PanelAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[PanelAccessibleRole])
-  type PanelAccessibleRole = "Complementary" | "Form" | "Region"
 
   /** Indicates whether the component is collapsed and only the header is displayed.
     *
@@ -53,7 +52,6 @@ object Panel extends WebComponent("ui5-panel") {
     * Default: "H2"
     */
   lazy val headerLevel: HtmlAttr[TitleLevel] = htmlAttr("header-level", StringUnionCodec[TitleLevel])
-  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
 
   /** This property is used to set the header text of the component. The text is visible in both expanded and collapsed
     * states.

@@ -63,7 +63,6 @@ object Switch extends WebComponent("ui5-switch") {
     * Default: "Textual"
     */
   lazy val design: HtmlAttr[SwitchDesign] = htmlAttr("design", StringUnionCodec[SwitchDesign])
-  type SwitchDesign = "Textual" | "Graphical"
 
   /** Defines whether the component is disabled.
     *

@@ -37,8 +37,6 @@ object Icon extends WebComponent("ui5-icon") {
     * Default: "Default"
     */
   lazy val design: HtmlAttr[IconDesign] = htmlAttr("design", StringUnionCodec[IconDesign])
-  type IconDesign = "Contrast" | "Critical" | "Default" | "Information" | "Negative" | "Neutral" | "NonInteractive" |
-    "Positive"
 
   /** Defines the mode of the component.
     *
@@ -48,7 +46,6 @@ object Icon extends WebComponent("ui5-icon") {
     * Default: "Decorative"
     */
   lazy val mode: HtmlAttr[IconMode] = htmlAttr("mode", StringUnionCodec[IconMode])
-  type IconMode = "Image" | "Decorative" | "Interactive"
 
   /** Defines the unique identifier (icon name) of the component.
     *

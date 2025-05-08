@@ -51,7 +51,6 @@ object TimelineItem extends WebComponent("ui5-timeline-item") {
     * Default: "None"
     */
   lazy val state: HtmlAttr[ValueState] = htmlAttr("state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the subtitle text of the component.
     *

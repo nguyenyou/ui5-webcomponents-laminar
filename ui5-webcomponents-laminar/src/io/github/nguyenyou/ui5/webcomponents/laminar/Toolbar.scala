@@ -38,7 +38,6 @@ object Toolbar extends WebComponent("ui5-toolbar") {
     * Default: "End"
     */
   lazy val alignContent: HtmlAttr[ToolbarAlign] = htmlAttr("align-content", StringUnionCodec[ToolbarAlign])
-  type ToolbarAlign = "Start" | "End"
 
   /** Defines the toolbar design.
     *
@@ -48,7 +47,6 @@ object Toolbar extends WebComponent("ui5-toolbar") {
     * Default: "Solid"
     */
   lazy val design: HtmlAttr[ToolbarDesign] = htmlAttr("design", StringUnionCodec[ToolbarDesign])
-  type ToolbarDesign = "Solid" | "Transparent"
 
   // -- Events --
 

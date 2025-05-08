@@ -4,6 +4,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.Link as LinkComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkClickEventDetail
 import org.scalajs.dom
 
@@ -58,7 +59,6 @@ object Link extends WebComponent("ui5-link") {
     */
   lazy val accessibleRole: HtmlAttr[LinkAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[LinkAccessibleRole])
-  type LinkAccessibleRole = "Link" | "Button"
 
   /** Defines the component design.
     *
@@ -67,7 +67,6 @@ object Link extends WebComponent("ui5-link") {
     * Default: "Default"
     */
   lazy val design: HtmlAttr[LinkDesign] = htmlAttr("design", StringUnionCodec[LinkDesign])
-  type LinkDesign = "Default" | "Subtle" | "Emphasized"
 
   /** Defines whether the component is disabled.
     *
@@ -139,7 +138,6 @@ object Link extends WebComponent("ui5-link") {
     */
   lazy val interactiveAreaSize: HtmlAttr[InteractiveAreaSize] =
     htmlAttr("interactive-area-size", StringUnionCodec[InteractiveAreaSize])
-  type InteractiveAreaSize = "Normal" | "Large"
 
   /** Defines the component target.
     *
@@ -173,7 +171,6 @@ object Link extends WebComponent("ui5-link") {
     * Default: "Normal"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

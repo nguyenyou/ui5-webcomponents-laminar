@@ -26,7 +26,6 @@ object Title extends WebComponent("ui5-title") {
     * Default: "H2"
     */
   lazy val level: HtmlAttr[TitleLevel] = htmlAttr("level", StringUnionCodec[TitleLevel])
-  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
 
   /** Defines the visual appearance of the title. Available options are: `"H6"` to `"H1"`.
     *
@@ -41,7 +40,6 @@ object Title extends WebComponent("ui5-title") {
     * Default: "Normal"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

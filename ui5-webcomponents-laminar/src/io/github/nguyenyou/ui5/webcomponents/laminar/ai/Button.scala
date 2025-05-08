@@ -36,7 +36,6 @@ object Button extends WebComponent("ui5-ai-button") {
     * Default: "Default"
     */
   lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
   /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
     * tab chain.

@@ -28,7 +28,6 @@ object NotificationListItem extends WebComponent("ui5-li-notification") {
     */
   lazy val importance: HtmlAttr[NotificationListItemImportance] =
     htmlAttr("importance", StringUnionCodec[NotificationListItemImportance])
-  type NotificationListItemImportance = "Standard" | "Important"
 
   /** Defines if a busy indicator would be displayed over the item.
     *
@@ -61,7 +60,6 @@ object NotificationListItem extends WebComponent("ui5-li-notification") {
     * Default: "None"
     */
   lazy val state: HtmlAttr[ValueState] = htmlAttr("state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the `titleText` of the item.
     *
@@ -76,7 +74,6 @@ object NotificationListItem extends WebComponent("ui5-li-notification") {
     * Default: "None"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

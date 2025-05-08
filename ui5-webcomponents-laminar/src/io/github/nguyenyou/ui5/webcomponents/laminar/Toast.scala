@@ -44,8 +44,6 @@ object Toast extends WebComponent("ui5-toast") {
     * Default: "BottomCenter"
     */
   lazy val placement: HtmlAttr[ToastPlacement] = htmlAttr("placement", StringUnionCodec[ToastPlacement])
-  type ToastPlacement = "TopStart" | "TopCenter" | "TopEnd" | "MiddleStart" | "MiddleCenter" | "MiddleEnd" |
-    "BottomStart" | "BottomCenter" | "BottomEnd"
 
   // -- Events --
 

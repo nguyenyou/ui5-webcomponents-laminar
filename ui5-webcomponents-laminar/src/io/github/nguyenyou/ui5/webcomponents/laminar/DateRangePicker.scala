@@ -46,7 +46,6 @@ object DateRangePicker extends WebComponent("ui5-daterange-picker") {
     */
   lazy val calendarWeekNumbering: HtmlAttr[CalendarWeekNumbering] =
     htmlAttr("calendar-week-numbering", StringUnionCodec[CalendarWeekNumbering])
-  type CalendarWeekNumbering = "Default" | "ISO_8601" | "MiddleEastern" | "WesternTraditional"
 
   /** Determines the symbol which separates the dates. If not supplied, the default time interval delimiter for the
     * current locale will be used.
@@ -121,7 +120,6 @@ object DateRangePicker extends WebComponent("ui5-daterange-picker") {
     */
   lazy val primaryCalendarType: HtmlAttr[CalendarType] =
     htmlAttr("primary-calendar-type", StringUnionCodec[CalendarType])
-  type CalendarType = "Gregorian" | "Islamic" | "Japanese" | "Buddhist" | "Persian"
 
   /** Determines whether the component is displayed as read-only.
     *
@@ -151,7 +149,6 @@ object DateRangePicker extends WebComponent("ui5-daterange-picker") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

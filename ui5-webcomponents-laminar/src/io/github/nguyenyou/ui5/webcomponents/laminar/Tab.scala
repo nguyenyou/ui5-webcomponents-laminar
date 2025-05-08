@@ -43,7 +43,6 @@ object Tab extends WebComponent("ui5-tab") {
     * Default: "Default"
     */
   lazy val design: HtmlAttr[SemanticColor] = htmlAttr("design", StringUnionCodec[SemanticColor])
-  type SemanticColor = "Default" | "Positive" | "Negative" | "Critical" | "Neutral"
 
   /** Disabled tabs can't be selected.
     *

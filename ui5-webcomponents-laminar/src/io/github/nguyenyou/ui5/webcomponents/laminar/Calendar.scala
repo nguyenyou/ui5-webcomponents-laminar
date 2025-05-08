@@ -32,7 +32,6 @@ object Calendar extends WebComponent("ui5-calendar") {
     */
   lazy val calendarWeekNumbering: HtmlAttr[CalendarWeekNumbering] =
     htmlAttr("calendar-week-numbering", StringUnionCodec[CalendarWeekNumbering])
-  type CalendarWeekNumbering = "Default" | "ISO_8601" | "MiddleEastern" | "WesternTraditional"
 
   /** Determines the format, displayed in the input field.
     *
@@ -68,7 +67,6 @@ object Calendar extends WebComponent("ui5-calendar") {
     */
   lazy val primaryCalendarType: HtmlAttr[CalendarType] =
     htmlAttr("primary-calendar-type", StringUnionCodec[CalendarType])
-  type CalendarType = "Gregorian" | "Islamic" | "Japanese" | "Buddhist" | "Persian"
 
   /** Defines the secondary calendar type. If not set, the calendar will only show the primary calendar type.
     *
@@ -87,7 +85,6 @@ object Calendar extends WebComponent("ui5-calendar") {
     */
   lazy val selectionMode: HtmlAttr[CalendarSelectionMode] =
     htmlAttr("selection-mode", StringUnionCodec[CalendarSelectionMode])
-  type CalendarSelectionMode = "Single" | "Multiple" | "Range"
 
   // -- Events --
 

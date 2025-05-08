@@ -27,7 +27,6 @@ object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
     */
   lazy val horizontalAlign: HtmlAttr[TableCellHorizontalAlign] =
     htmlAttr("horizontal-align", StringUnionCodec[TableCellHorizontalAlign])
-  type TableCellHorizontalAlign = "Left" | "Start" | "Right" | "End" | "Center"
 
   /** Defines the importance of the column.
     *
@@ -81,7 +80,6 @@ object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
     * Default: "None"
     */
   lazy val sortIndicator: HtmlAttr[SortOrder] = htmlAttr("sort-indicator", StringUnionCodec[SortOrder])
-  type SortOrder = "None" | "Ascending" | "Descending"
 
   /** Defines the width of the column.
     *

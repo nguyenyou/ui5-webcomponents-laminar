@@ -154,7 +154,6 @@ object MultiInput extends WebComponent("ui5-multi-input") {
     * Default: "Text"
     */
   lazy val tpe: HtmlAttr[InputType] = htmlAttr("type", StringUnionCodec[InputType])
-  type InputType = "Text" | "Email" | "Number" | "Password" | "Tel" | "URL" | "Search"
 
   /** Defines the value of the component.
     *
@@ -167,7 +166,6 @@ object MultiInput extends WebComponent("ui5-multi-input") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   // -- Events --
 

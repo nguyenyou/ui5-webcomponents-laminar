@@ -33,8 +33,6 @@ object Avatar extends WebComponent("ui5-avatar") {
     * Default: "Auto"
     */
   lazy val colorScheme: HtmlAttr[AvatarColorScheme] = htmlAttr("color-scheme", StringUnionCodec[AvatarColorScheme])
-  type AvatarColorScheme = "Auto" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Accent7" |
-    "Accent8" | "Accent9" | "Accent10" | "Placeholder"
 
   /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
     * tab chain.
@@ -104,14 +102,12 @@ object Avatar extends WebComponent("ui5-avatar") {
     * Default: "Circle"
     */
   lazy val shape: HtmlAttr[AvatarShape] = htmlAttr("shape", StringUnionCodec[AvatarShape])
-  type AvatarShape = "Circle" | "Square"
 
   /** Defines predefined size of the component.
     *
     * Default: "S"
     */
   lazy val size: HtmlAttr[AvatarSize] = htmlAttr("size", StringUnionCodec[AvatarSize])
-  type AvatarSize = "XS" | "S" | "M" | "L" | "XL"
 
   // -- Events --
 

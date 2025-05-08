@@ -26,7 +26,6 @@ object TableSelection extends WebComponent("ui5-table-selection") {
     * Default: "Multiple"
     */
   lazy val mode: HtmlAttr[TableSelectionMode] = htmlAttr("mode", StringUnionCodec[TableSelectionMode])
-  type TableSelectionMode = "None" | "Single" | "Multiple"
 
   /** Defines the selected rows separated by a space.
     */

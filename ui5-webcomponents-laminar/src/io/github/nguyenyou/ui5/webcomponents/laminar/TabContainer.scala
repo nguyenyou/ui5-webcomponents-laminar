@@ -38,7 +38,6 @@ object TabContainer extends WebComponent("ui5-tabcontainer") {
     */
   lazy val contentBackgroundDesign: HtmlAttr[BackgroundDesign] =
     htmlAttr("content-background-design", StringUnionCodec[BackgroundDesign])
-  type BackgroundDesign = "Solid" | "Transparent" | "Translucent"
 
   /** Sets the background color of the Tab Container's header as `Solid`, `Transparent`, or `Translucent`.
     *
@@ -75,7 +74,6 @@ object TabContainer extends WebComponent("ui5-tabcontainer") {
     * Default: "End"
     */
   lazy val overflowMode: HtmlAttr[OverflowMode] = htmlAttr("overflow-mode", StringUnionCodec[OverflowMode])
-  type OverflowMode = "End" | "StartAndEnd"
 
   /** Defines the alignment of the content and the `additionalText` of a tab.
     *
@@ -85,7 +83,6 @@ object TabContainer extends WebComponent("ui5-tabcontainer") {
     * Default: "Standard"
     */
   lazy val tabLayout: HtmlAttr[TabLayout] = htmlAttr("tab-layout", StringUnionCodec[TabLayout])
-  type TabLayout = "Inline" | "Standard"
 
   // -- Events --
 

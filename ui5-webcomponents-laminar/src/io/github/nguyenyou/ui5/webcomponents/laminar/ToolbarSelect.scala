@@ -49,7 +49,6 @@ object ToolbarSelect extends WebComponent("ui5-toolbar-select") {
     */
   lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
     htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" | "AlwaysOverflow"
 
   /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
     *
@@ -62,7 +61,6 @@ object ToolbarSelect extends WebComponent("ui5-toolbar-select") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines the width of the select.
     *

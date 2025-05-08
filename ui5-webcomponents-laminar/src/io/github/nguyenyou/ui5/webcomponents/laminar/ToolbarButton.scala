@@ -38,7 +38,6 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
     * Default: "Default"
     */
   lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
   /** Defines if the action is disabled.
     *
@@ -78,7 +77,6 @@ object ToolbarButton extends WebComponent("ui5-toolbar-button") {
     */
   lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
     htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  type ToolbarItemOverflowBehavior = "Default" | "NeverOverflow" | "AlwaysOverflow"
 
   /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
     *

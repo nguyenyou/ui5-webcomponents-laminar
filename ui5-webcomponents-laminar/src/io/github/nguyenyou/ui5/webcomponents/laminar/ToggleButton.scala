@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToggleButtonMod.ToggleButton as ToggleButtonComponent
 import org.scalajs.dom
@@ -58,14 +59,12 @@ object ToggleButton extends WebComponent("ui5-toggle-button") {
     */
   lazy val accessibleRole: HtmlAttr[ButtonAccessibleRole] =
     htmlAttr("accessible-role", StringUnionCodec[ButtonAccessibleRole])
-  type ButtonAccessibleRole = "Button" | "Link"
 
   /** Defines the component design.
     *
     * Default: "Default"
     */
   lazy val design: HtmlAttr[ButtonDesign] = htmlAttr("design", StringUnionCodec[ButtonDesign])
-  type ButtonDesign = "Default" | "Positive" | "Negative" | "Transparent" | "Emphasized" | "Attention"
 
   /** Defines whether the component is disabled. A disabled component can't be pressed or focused, and it is not in the
     * tab chain.
@@ -137,7 +136,6 @@ object ToggleButton extends WebComponent("ui5-toggle-button") {
     * Default: "Button"
     */
   lazy val tpe: HtmlAttr[ButtonType] = htmlAttr("type", StringUnionCodec[ButtonType])
-  type ButtonType = "Button" | "Submit" | "Reset"
 
   // -- Events --
 

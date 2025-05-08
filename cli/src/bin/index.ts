@@ -8,6 +8,12 @@ const { positionals } = parseArgs({ allowPositionals: true, strict: false });
 const [command] = positionals;
 
 switch (command) {
+  case 'collect-enums': {
+    const collectEnumsModule = await import('../scripts/collect-enums/main.js');
+    await collectEnumsModule.default();
+    break;
+  }
+
   case 'generate-icons': {
     const generateIconsModule = await import('../scripts/generate-icons/main.js');
     await generateIconsModule.default();

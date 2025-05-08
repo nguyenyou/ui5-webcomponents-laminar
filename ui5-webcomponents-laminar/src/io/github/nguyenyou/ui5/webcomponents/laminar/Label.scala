@@ -53,7 +53,6 @@ object Label extends WebComponent("ui5-label") {
     * Default: "Normal"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

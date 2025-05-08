@@ -26,7 +26,6 @@ object TableCell extends WebComponent("ui5-table-cell") {
     */
   lazy val horizontalAlign: HtmlAttr[TableCellHorizontalAlign] =
     htmlAttr("horizontal-align", StringUnionCodec[TableCellHorizontalAlign])
-  type TableCellHorizontalAlign = "Left" | "Start" | "Right" | "End" | "Center"
 
   // -- Events --
 

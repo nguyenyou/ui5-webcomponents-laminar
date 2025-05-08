@@ -108,7 +108,6 @@ object RadioButton extends WebComponent("ui5-radio-button") {
     * Default: "None"
     */
   lazy val valueState: HtmlAttr[ValueState] = htmlAttr("value-state", StringUnionCodec[ValueState])
-  type ValueState = "None" | "Positive" | "Critical" | "Negative" | "Information"
 
   /** Defines whether the component text wraps when there is not enough space.
     *
@@ -117,7 +116,6 @@ object RadioButton extends WebComponent("ui5-radio-button") {
     * Default: "Normal"
     */
   lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
-  type WrappingType = "None" | "Normal"
 
   // -- Events --
 
