@@ -109,10 +109,9 @@ object website extends WebModule with Scalafix {
   def ivyDeps = super.ivyDeps() ++
     Dependencies.waypoint ++
     Dependencies.macrotask ++
-    Dependencies.borer ++
-    Dependencies.`ui5-webcomponents-laminar`
+    Dependencies.borer
 
-  // def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
