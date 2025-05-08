@@ -11,6 +11,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarM
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProductSwitchClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProfileClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchButtonEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldToggleEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -27,6 +28,22 @@ object ShellBar extends WebComponent("ui5-shellbar") {
   type Ref = ShellBarComponent with dom.HTMLElement
 
   // -- Attributes --
+
+  /** Disables the automatic search field expansion/collapse when the available space is not enough.
+    *
+    * **Note:** The `disableSearchCollapse` property is in an experimental state and is a subject to change.
+    *
+    * Default: false
+    */
+  lazy val disableSearchCollapse: HtmlAttr[Boolean] = htmlAttr("disable-search-collapse", BooleanAsAttrPresenceCodec)
+
+  /** Defines the visibility state of the search button.
+    *
+    * **Note:** The `hideSearchButton` property is in an experimental state and is a subject to change.
+    *
+    * Default: false
+    */
+  lazy val hideSearchButton: HtmlAttr[Boolean] = htmlAttr("hide-search-button", BooleanAsAttrPresenceCodec)
 
   /** Defines the `notificationsCount`, displayed in the notification icon top-right corner.
     *
@@ -155,6 +172,18 @@ object ShellBar extends WebComponent("ui5-shellbar") {
     */
   lazy val onSearchButtonClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ShellBarSearchButtonEventDetail]] =
     new EventProp("search-button-click")
+
+  /** Fired, when the search field is expanded or collapsed.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents-fiori**.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onSearchFieldToggle: EventProp[Ui5CustomEvent[Ref] & EventDetail[ShellBarSearchFieldToggleEventDetail]] =
+    new EventProp("search-field-toggle")
 
   // -- Slots --
 

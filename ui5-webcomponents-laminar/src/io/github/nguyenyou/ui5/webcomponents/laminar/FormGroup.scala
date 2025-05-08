@@ -27,6 +27,16 @@ object FormGroup extends WebComponent("ui5-form-group") {
     */
   lazy val columnSpan: HtmlAttr[Double] = htmlAttr("column-span", DoubleAsStringCodec)
 
+  /** Defines the compoennt heading level, set by the `headerText`.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "H3"
+    */
+  lazy val headerLevel: HtmlAttr[TitleLevel] = htmlAttr("header-level", StringUnionCodec[TitleLevel])
+  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
+
   /** Defines header text of the component.
     *
     * Default: undefined

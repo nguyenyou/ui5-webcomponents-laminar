@@ -38,19 +38,17 @@ object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
     */
   lazy val importance: HtmlAttr[Double] = htmlAttr("importance", DoubleAsStringCodec)
 
-  /** Defines the maximum width of the column.
-    *
-    * Default: "auto"
-    */
-  lazy val maxWidth: HtmlAttr[String] = htmlAttr("max-width", StringAsIsCodec)
-
   /** Defines the minimum width of the column.
     *
     * If the table is in `Popin` mode and the minimum width does not fit anymore, the column will move into the popin.
     *
-    * **Note:** If `minWidth` has the `auto` value, the table ensures that the column is wider than at least `3rem`.
+    * By default, the table prevents the column from becoming too small. Changing this value to a small value might lead
+    * to accessibility issues.
     *
-    * Default: "auto"
+    * **Note:** This property only takes effect for columns with a
+    * [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) value or the default width.
+    *
+    * Default: undefined
     */
   lazy val minWidth: HtmlAttr[String] = htmlAttr("min-width", StringAsIsCodec)
 
@@ -85,9 +83,15 @@ object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
   lazy val sortIndicator: HtmlAttr[SortOrder] = htmlAttr("sort-indicator", StringUnionCodec[SortOrder])
   type SortOrder = "None" | "Ascending" | "Descending"
 
-  /** Defines the width of column.
+  /** Defines the width of the column.
     *
-    * Default: "auto"
+    * By default, the column will grow and shrink according to the available space. This will distribute the space
+    * proportionally among all columns with no specific width set.
+    *
+    * See [\<length\>](https://developer.mozilla.org/en-US/docs/Web/CSS/length) and
+    * [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) for possible width values.
+    *
+    * Default: undefined
     */
   lazy val width: HtmlAttr[String] = htmlAttr("width", StringAsIsCodec)
 

@@ -100,6 +100,15 @@ object ListItemStandard extends WebComponent("ui5-li") {
     */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
+  /** Defines the text of the component.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
+
   /** Defines the text of the tooltip that would be displayed for the list item.
     *
     * **Note:** Available since [v1.23.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.23.0) of
@@ -119,6 +128,24 @@ object ListItemStandard extends WebComponent("ui5-li") {
     */
   lazy val tpe: HtmlAttr[ListItemType] = htmlAttr("type", StringUnionCodec[ListItemType])
   type ListItemType = "Inactive" | "Active" | "Detail" | "Navigation"
+
+  /** Defines if the text of the component should wrap when it's too long. When set to "Normal", the content (title,
+    * description) will be wrapped using the `ExpandableText` component.<br/>
+    *
+    * The text can wrap up to 100 characters on small screens (size S) and up to 300 characters on larger screens (size
+    * M and above). When text exceeds these limits, it truncates with an ellipsis followed by a text expansion trigger.
+    *
+    * Available options are:
+    *   - `None` (default) - The text will truncate with an ellipsis.
+    *   - `Normal` - The text will wrap (without truncation).
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "None"
+    */
+  lazy val wrappingType: HtmlAttr[WrappingType] = htmlAttr("wrapping-type", StringUnionCodec[WrappingType])
+  type WrappingType = "None" | "Normal"
 
   // -- Events --
 

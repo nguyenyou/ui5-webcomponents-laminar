@@ -30,6 +30,14 @@ object Menu extends WebComponent("ui5-menu") {
     */
   lazy val headerText: HtmlAttr[String] = htmlAttr("header-text", StringAsIsCodec)
 
+  /** Determines the horizontal alignment of the menu relative to its opener control.
+    *
+    * Default: "Start"
+    */
+  lazy val horizontalAlign: HtmlAttr[PopoverHorizontalAlign] =
+    htmlAttr("horizontal-align", StringUnionCodec[PopoverHorizontalAlign])
+  type PopoverHorizontalAlign = "Center" | "Start" | "End" | "Stretch"
+
   /** Defines if a loading indicator would be displayed inside the corresponding ui5-menu popover.
     *
     * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
@@ -40,7 +48,7 @@ object Menu extends WebComponent("ui5-menu") {
   lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
   /** Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding
-    * ui5-menu popover..
+    * ui5-menu popover.
     *
     * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
     * **@ui5/webcomponents**.
@@ -49,7 +57,7 @@ object Menu extends WebComponent("ui5-menu") {
     */
   lazy val loadingDelay: HtmlAttr[Double] = htmlAttr("loading-delay", DoubleAsStringCodec)
 
-  /** Indicates if the menu is open
+  /** Indicates if the menu is open.
     *
     * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
     * **@ui5/webcomponents**.

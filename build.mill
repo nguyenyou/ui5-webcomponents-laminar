@@ -19,7 +19,7 @@ object Versions {
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
   val `ui5-webcomponents` = "2.10.0"
-  val `ui5-webcomponents-laminar` = "2.9.1"
+  val `ui5-webcomponents-laminar` = "2.10.0"
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
   val borer = "1.14.0"
