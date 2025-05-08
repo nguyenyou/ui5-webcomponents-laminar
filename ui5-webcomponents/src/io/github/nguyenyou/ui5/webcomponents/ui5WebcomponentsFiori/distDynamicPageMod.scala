@@ -4,6 +4,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Pinbutto
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriBooleans.`false`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`0`
+import org.scalajs.dom.Element
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -183,6 +184,8 @@ object distDynamicPageMod {
       * @public
       */
     var footerArea: js.Array[HTMLElement] = js.native
+    
+    def footerWrapper: js.UndefOr[Element | Null] = js.native
     
     def hasHeading: Boolean = js.native
     

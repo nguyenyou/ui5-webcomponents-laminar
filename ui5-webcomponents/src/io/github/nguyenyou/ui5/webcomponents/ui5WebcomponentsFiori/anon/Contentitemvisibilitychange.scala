@@ -7,6 +7,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarM
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProductSwitchClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProfileClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchButtonEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldToggleEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +27,8 @@ trait Contentitemvisibilitychange extends StObject {
   var `profile-click`: ShellBarProfileClickEventDetail
   
   var `search-button-click`: ShellBarSearchButtonEventDetail
+  
+  var `search-field-toggle`: ShellBarSearchFieldToggleEventDetail
 }
 object Contentitemvisibilitychange {
   
@@ -36,7 +39,8 @@ object Contentitemvisibilitychange {
     `notifications-click`: ShellBarNotificationsClickEventDetail,
     `product-switch-click`: ShellBarProductSwitchClickEventDetail,
     `profile-click`: ShellBarProfileClickEventDetail,
-    `search-button-click`: ShellBarSearchButtonEventDetail
+    `search-button-click`: ShellBarSearchButtonEventDetail,
+    `search-field-toggle`: ShellBarSearchFieldToggleEventDetail
   ): Contentitemvisibilitychange = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("content-item-visibility-change")(`content-item-visibility-change`.asInstanceOf[js.Any])
@@ -46,6 +50,7 @@ object Contentitemvisibilitychange {
     __obj.updateDynamic("product-switch-click")(`product-switch-click`.asInstanceOf[js.Any])
     __obj.updateDynamic("profile-click")(`profile-click`.asInstanceOf[js.Any])
     __obj.updateDynamic("search-button-click")(`search-button-click`.asInstanceOf[js.Any])
+    __obj.updateDynamic("search-field-toggle")(`search-field-toggle`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contentitemvisibilitychange]
   }
   
@@ -65,5 +70,7 @@ object Contentitemvisibilitychange {
     inline def `setProfile-click`(value: ShellBarProfileClickEventDetail): Self = StObject.set(x, "profile-click", value.asInstanceOf[js.Any])
     
     inline def `setSearch-button-click`(value: ShellBarSearchButtonEventDetail): Self = StObject.set(x, "search-button-click", value.asInstanceOf[js.Any])
+    
+    inline def `setSearch-field-toggle`(value: ShellBarSearchFieldToggleEventDetail): Self = StObject.set(x, "search-field-toggle", value.asInstanceOf[js.Any])
   }
 }

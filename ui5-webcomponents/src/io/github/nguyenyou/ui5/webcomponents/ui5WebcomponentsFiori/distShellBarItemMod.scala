@@ -2,9 +2,10 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.LowercaseString
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.ClickShellBarItemClickEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.click
 import org.scalajs.dom.HTMLElement
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,7 +85,13 @@ object distShellBarItemMod {
     @JSName("eventDetails")
     var eventDetails_ShellBarItem: ClickShellBarItemClickEventDetail = js.native
     
-    def fireClickEvent(e: MouseEvent): Boolean = js.native
+    @JSName("fireClickEvent")
+    def fireClickEvent_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Boolean = js.native
     
     /**
       * Defines the name of the item's icon.

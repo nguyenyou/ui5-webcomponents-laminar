@@ -27,7 +27,7 @@ object distSearchMod {
     *
     * ### ES6 Module Import
     *
-    * `import "@ui5/webcomponents/fiori/dist/Search.js";`
+    * `import "@ui5/webcomponents-fiori/dist/Search.js";`
     *
     * @constructor
     * @extends SearchField
@@ -78,7 +78,7 @@ object distSearchMod {
     *
     * ### ES6 Module Import
     *
-    * `import "@ui5/webcomponents/fiori/dist/Search.js";`
+    * `import "@ui5/webcomponents-fiori/dist/Search.js";`
     *
     * @constructor
     * @extends SearchField
@@ -180,7 +180,7 @@ object distSearchMod {
       */
     var _shouldAutocomplete: js.UndefOr[Boolean] = js.native
     
-    def _shouldPerformSelectionOnMobile(e: CustomEvent): Boolean = js.native
+    def _shouldPerformSelectionOnMobile(inputType: String): Boolean = js.native
     
     def _startsWithMatchingItems(str: String): js.Array[ISearchSuggestionItem] = js.native
     
@@ -246,7 +246,7 @@ object distSearchMod {
     
     def mobileInput: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default | Null = js.native
     
-    def nativeInput: HTMLInputElement | Null = js.native
+    def nativeInput: js.UndefOr[HTMLInputElement | Null] = js.native
     
     /**
       * Defines whether the value will be autcompleted to match an item.

@@ -24,14 +24,14 @@
     "website"
   ],
   "dependencies": {
-    "@ui5/webcomponents": "2.9.0",
-    "@ui5/webcomponents-ai": "2.9.0",
-    "@ui5/webcomponents-base": "2.9.0",
-    "@ui5/webcomponents-compat": "2.9.0",
-    "@ui5/webcomponents-fiori": "2.9.0"
+    "@ui5/webcomponents": "2.10.0",
+    "@ui5/webcomponents-ai": "2.10.0",
+    "@ui5/webcomponents-base": "2.10.0",
+    "@ui5/webcomponents-compat": "2.10.0",
+    "@ui5/webcomponents-fiori": "2.10.0"
   },
   "devDependencies": {
-    "@ui5/webcomponents-tools": "2.9.0",
+    "@ui5/webcomponents-tools": "2.10.0",
     "concurrently": "9.1.2",
     "typescript": "5.8.3"
   }

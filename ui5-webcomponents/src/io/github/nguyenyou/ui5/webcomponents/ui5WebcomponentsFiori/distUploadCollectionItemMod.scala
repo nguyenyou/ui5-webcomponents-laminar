@@ -3,12 +3,13 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Detailclick
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Focused
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesValueStateMod.ValueState
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Filenameclick
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.click
 import org.scalajs.dom.File
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,9 +98,16 @@ object distUploadCollectionItemMod {
     def _onRename(): Unit = js.native
     
     def _onRenameCancel(e: KeyboardEvent): js.Promise[Unit] = js.native
-    def _onRenameCancel(e: MouseEvent): js.Promise[Unit] = js.native
     
     def _onRenameCancelKeyup(e: KeyboardEvent): Unit = js.native
+    
+    @JSName("_onRenameCancel")
+    def _onRenameCancel_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): js.Promise[Unit] = js.native
     
     def _onRenameKeyup(e: KeyboardEvent): Unit = js.native
     

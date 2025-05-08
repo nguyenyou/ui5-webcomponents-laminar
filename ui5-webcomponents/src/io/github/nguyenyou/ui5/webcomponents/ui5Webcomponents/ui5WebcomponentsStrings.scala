@@ -1660,10 +1660,6 @@ object ui5WebcomponentsStrings {
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait `ui5-button-hiddenText-type` extends StObject
-  inline def `ui5-button-hiddenText-type`: `ui5-button-hiddenText-type` = "ui5-button-hiddenText-type".asInstanceOf[`ui5-button-hiddenText-type`]
-  
-  @js.native
   sealed trait `ui5-multi-combobox-valueStateDesc` extends StObject
   inline def `ui5-multi-combobox-valueStateDesc`: `ui5-multi-combobox-valueStateDesc` = "ui5-multi-combobox-valueStateDesc".asInstanceOf[`ui5-multi-combobox-valueStateDesc`]
   

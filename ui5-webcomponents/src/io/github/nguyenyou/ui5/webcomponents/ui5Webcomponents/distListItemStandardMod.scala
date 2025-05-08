@@ -1,5 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesExpandableTextTemplateParamsMod.ExpandableTextTemplateParams
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +27,9 @@ object distListItemStandardMod {
     * @csspart checkbox - Used to style the checkbox rendered when the list item is in multiple selection mode
     * @slot {Node[]} default - Defines the text of the component.
     *
-    * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
+    * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design. <br/>
+    * **Note:** Deprecated since version `2.10.0`. Use the `text` property instead. <br/>
+    * Only use the default slot if you need to apply custom text formatting with HTML elements (like `<b>`, `<i>`, etc.).
     * @constructor
     * @extends ListItem
     * @public
@@ -34,6 +37,26 @@ object distListItemStandardMod {
   @JSImport("@ui5/webcomponents/dist/ListItemStandard", JSImport.Default)
   @js.native
   open class default () extends ListItemStandard
+  object default {
+    
+    @JSImport("@ui5/webcomponents/dist/ListItemStandard", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents/dist/ListItemStandard", "default.ExpandableTextTemplate")
+    @js.native
+    def ExpandableTextTemplate: js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemStandardMod.ExpandableTextTemplate
+      ] = js.native
+    inline def ExpandableTextTemplate_=(x: js.UndefOr[ExpandableTextTemplate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExpandableTextTemplate")(x.asInstanceOf[js.Any])
+  }
+  
+  type ExpandableTextTemplate = js.ThisFunction1[
+    /* this */ ListItemStandard, 
+    /* params */ ExpandableTextTemplateParams, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any
+  ]
   
   /**
     * @class
@@ -54,7 +77,9 @@ object distListItemStandardMod {
     * @csspart checkbox - Used to style the checkbox rendered when the list item is in multiple selection mode
     * @slot {Node[]} default - Defines the text of the component.
     *
-    * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
+    * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design. <br/>
+    * **Note:** Deprecated since version `2.10.0`. Use the `text` property instead. <br/>
+    * Only use the default slot if you need to apply custom text formatting with HTML elements (like `<b>`, `<i>`, etc.).
     * @constructor
     * @extends ListItem
     * @public
@@ -65,6 +90,20 @@ object distListItemStandardMod {
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemMod.default {
     
     var _hasImage: Boolean = js.native
+    
+    /**
+      * Determines the maximum characters to display based on the current media range.
+      * - Size S: 100 characters
+      * - Size M and larger: 300 characters
+      * @private
+      */
+    def _maxCharacters: Double = js.native
+    
+    /**
+      * Returns the content text, either from text property or from the default slot
+      * @private
+      */
+    def _textContent: String = js.native
     
     var accessibleNameRef: js.UndefOr[String] = js.native
     
@@ -97,6 +136,12 @@ object distListItemStandardMod {
     def displayIconBegin: Boolean = js.native
     
     def displayIconEnd: Boolean = js.native
+    
+    /**
+      * The expandableText template.
+      * @private
+      */
+    var expandableTextTemplate: js.UndefOr[ExpandableTextTemplate] = js.native
     
     def hasImage: Boolean = js.native
     
@@ -137,12 +182,30 @@ object distListItemStandardMod {
     var image: js.Array[HTMLElement] = js.native
     
     /**
-      * Defines if the text of the component should wrap, they truncate by default.
+      * Defines the text of the component.
       *
-      * **Note:** this property takes affect only if text node is provided to default slot of the component
+      * @default undefined
+      * @public
+      * @since 2.10.0
+      */
+    var text: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines if the text of the component should wrap when it's too long.
+      * When set to "Normal", the content (title, description) will be wrapped
+      * using the `ui5-expandable-text` component.<br/>
+      *
+      * The text can wrap up to 100 characters on small screens (size S) and
+      * up to 300 characters on larger screens (size M and above). When text exceeds
+      * these limits, it truncates with an ellipsis followed by a text expansion trigger.
+      *
+      * Available options are:
+      * - `None` (default) - The text will truncate with an ellipsis.
+      * - `Normal` - The text will wrap (without truncation).
+      *
       * @default "None"
-      * @private
-      * @since 1.5.0
+      * @public
+      * @since 2.10.0
       */
     var wrappingType: /* template literal string: ${WrappingType} */ String = js.native
   }

@@ -283,6 +283,13 @@ object distListItemMod {
     
     def listItemAccessibleRole: js.UndefOr[AriaRole] = js.native
     
+    /**
+      * Defines the current media query size.
+      * @default "S"
+      * @private
+      */
+    var mediaRange: String = js.native
+    
     def modeDelete: Boolean = js.native
     
     def modeMultiple: Boolean = js.native

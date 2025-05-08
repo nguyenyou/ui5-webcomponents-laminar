@@ -156,6 +156,16 @@ object distIllustratedMessageMod {
     def ariaLabelText: js.UndefOr[String] = js.native
     
     /**
+      * Defines whether the illustration is decorative.
+      *
+      * When set to `true`, the attributes `role="presentation"` and `aria-hidden="true"` are applied to the SVG element.
+      * @default false
+      * @public
+      * @since 2.10.0
+      */
+    var decorative: Boolean = js.native
+    
+    /**
       * Determines which illustration breakpoint variant is used.
       *
       * As `IllustratedMessage` adapts itself around the `Illustration`, the other

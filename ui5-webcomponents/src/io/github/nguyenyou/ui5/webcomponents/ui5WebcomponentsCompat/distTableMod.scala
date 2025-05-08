@@ -489,6 +489,8 @@ object distTableMod {
     
     def onRowFocused(e: CustomEvent): Unit = js.native
     
+    def onRowKeyDown(e: KeyboardEvent): Unit = js.native
+    
     def popinContent(): Unit = js.native
     
     /**

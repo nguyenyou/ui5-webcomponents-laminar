@@ -1,11 +1,13 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Stepchange
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.ZIndex
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`0`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`1`
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.click
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.Element
 import org.scalajs.dom.Event
@@ -340,7 +342,13 @@ object distWizardMod {
     
     def _onGroupedTabClick(e: MouseEvent): Unit = js.native
     
-    def _onOverflowStepButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("_onOverflowStepButtonClick")
+    def _onOverflowStepButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _onStepResize(): js.Promise[Unit] | Unit = js.native
     @JSName("_onStepResize")

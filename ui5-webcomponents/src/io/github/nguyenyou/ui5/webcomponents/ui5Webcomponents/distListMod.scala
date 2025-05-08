@@ -191,9 +191,11 @@ object distListMod {
     
     def _handleLodeMoreUp(e: KeyboardEvent): Unit = js.native
     
-    def _handleResize(): js.Promise[Unit] | Unit = js.native
-    @JSName("_handleResize")
-    var _handleResize_Original: ResizeObserverCallback = js.native
+    def _handleResize(): Unit = js.native
+    
+    def _handleResizeCallback(): js.Promise[Unit] | Unit = js.native
+    @JSName("_handleResizeCallback")
+    var _handleResizeCallback_Original: ResizeObserverCallback = js.native
     
     def _handleTabNext(e: KeyboardEvent): Unit = js.native
     
@@ -299,8 +301,6 @@ object distListMod {
     def ariaLabelTxt: js.UndefOr[String] = js.native
     
     def ariaLabelledBy: js.UndefOr[String] = js.native
-    
-    def attachForResize(): Unit = js.native
     
     def attachGroupHeaderEvents(): Unit = js.native
     
@@ -513,6 +513,13 @@ object distListMod {
       */
     var loadingDelay: Double = js.native
     
+    /**
+      * Defines the current media query size.
+      * @default "S"
+      * @private
+      */
+    var mediaRange: String = js.native
+    
     def modeLabelID: String = js.native
     
     /**
@@ -553,8 +560,6 @@ object distListMod {
     def onSelectionRequested(e: CustomEvent): Unit = js.native
     
     def prepareListItems(): Unit = js.native
-    
-    var resizeListenerAttached: Boolean = js.native
     
     def scrollContainer: HTMLElement | Null = js.native
     

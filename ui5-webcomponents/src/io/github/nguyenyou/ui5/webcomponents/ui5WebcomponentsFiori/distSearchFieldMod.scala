@@ -30,7 +30,7 @@ object distSearchFieldMod {
     *
     * ### ES6 Module Import
     *
-    * `import "@ui5/webcomponents/fiori/dist/SearchField.js";`
+    * `import "@ui5/webcomponents-fiori/dist/SearchField.js";`
     *
     * @constructor
     * @extends UI5Element
@@ -82,7 +82,7 @@ object distSearchFieldMod {
     *
     * ### ES6 Module Import
     *
-    * `import "@ui5/webcomponents/fiori/dist/SearchField.js";`
+    * `import "@ui5/webcomponents-fiori/dist/SearchField.js";`
     *
     * @constructor
     * @extends UI5Element
@@ -128,6 +128,13 @@ object distSearchFieldMod {
     def _translations: ClearIcon = js.native
     
     /**
+      * Defines the accessible ARIA description of the field.
+      * @public
+      * @default undefined
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
       * Defines the accessible ARIA name of the component.
       * @public
       * @default undefined
@@ -141,7 +148,7 @@ object distSearchFieldMod {
       * Defines whether the component is collapsed.
       *
       * @default false
-      * @public
+      * @private
       */
     var collapsed: Boolean = js.native
     
@@ -166,13 +173,6 @@ object distSearchFieldMod {
       * @public
       */
     var scopes: js.Array[ISearchScope] = js.native
-    
-    /**
-      * Defines the tooltip of the search icon component.
-      * @public
-      * @default undefined
-      */
-    var searchIconTooltip: js.UndefOr[String] = js.native
     
     /**
       * Defines whether the clear icon of the search will be shown.

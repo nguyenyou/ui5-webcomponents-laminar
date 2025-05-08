@@ -8,7 +8,6 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Layoutch
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Name
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFclUtilsFcllayoutMod.LayoutConfiguration
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesFcllayoutMod.FCLLayout
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`0`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`2`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.EndColumnFullScreen
@@ -370,6 +369,8 @@ object distFlexibleColumnLayoutMod {
     
     def calculateNewColumnWidth(columnToResize: `0` | `2`, widthDelta: Double): Double = js.native
     
+    def collapseColumn(columnDOM: HTMLElement): Unit = js.native
+    
     /**
       * Returns the current column layout, based on both the `layout` property and the screen size.
       *
@@ -379,8 +380,6 @@ object distFlexibleColumnLayoutMod {
       * @public
       */
     def columnLayout: js.UndefOr[FlexibleColumnLayoutColumnLayout] = js.native
-    
-    def columnResizeHandler(e: Event): Unit = js.native
     
     def convertColumnWidthToPixels(width: String): Double = js.native
     def convertColumnWidthToPixels(width: Double): Double = js.native
@@ -423,12 +422,15 @@ object distFlexibleColumnLayoutMod {
     
     def endSeparatorGripVisibility: js.UndefOr[Boolean] = js.native
     
-    def endSeparatorTabIndex: `0` | `-1` = js.native
+    def endSeparatorTabIndex: js.UndefOr[`0`] = js.native
     
     @JSName("eventDetails")
     var eventDetails_FlexibleColumnLayout: LayoutchangeFlexibleColumnLayoutLayoutChangeEventDetail = js.native
     
     def exitSeparatorMovementSession(): Unit = js.native
+    
+    def expandColumn(columnDOM: HTMLElement, columnWidth: String): Unit = js.native
+    def expandColumn(columnDOM: HTMLElement, columnWidth: Double): Unit = js.native
     
     def fireLayoutChange(separatorUsed: Boolean, resized: Boolean): Unit = js.native
     
@@ -486,6 +488,8 @@ object distFlexibleColumnLayoutMod {
     def moveSeparator(separator: HTMLElement, offsetX: Double, fclLayoutBeforeMove: FCLLayout): FCLLayout = js.native
     
     def nextColumnLayout(layout: /* template literal string: ${FCLLayout} */ String): FlexibleColumnLayoutColumnLayout = js.native
+    
+    def onColumnCollapseAnimationEnd(e: Event): Unit = js.native
     
     def onSeparatorMove(e: MouseEvent): Unit = js.native
     def onSeparatorMove(e: TouchEvent): Unit = js.native

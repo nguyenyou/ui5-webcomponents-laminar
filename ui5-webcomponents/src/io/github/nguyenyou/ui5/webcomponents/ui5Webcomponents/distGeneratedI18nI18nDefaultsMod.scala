@@ -103,6 +103,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val BUTTON_ARIA_TYPE_ACCEPT: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults", "BUTTON_ARIA_TYPE_ATTENTION")
+  @js.native
+  val BUTTON_ARIA_TYPE_ATTENTION: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults", "BUTTON_ARIA_TYPE_EMPHASIZED")
   @js.native
   val BUTTON_ARIA_TYPE_EMPHASIZED: I18nText = js.native
@@ -346,6 +350,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults", "FILEUPLOAD_BROWSE")
   @js.native
   val FILEUPLOAD_BROWSE: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults", "FORM_ACCESSIBLE_NAME")
+  @js.native
+  val FORM_ACCESSIBLE_NAME: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults", "FORM_CHECKABLE_REQUIRED")
   @js.native

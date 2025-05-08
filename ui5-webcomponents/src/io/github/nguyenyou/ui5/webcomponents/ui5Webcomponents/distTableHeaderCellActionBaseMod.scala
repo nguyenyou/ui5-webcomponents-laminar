@@ -2,8 +2,9 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ClickTableHeaderCellActionClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Icon
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.HTMLElement
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,13 @@ object distTableHeaderCellActionBaseMod {
     
     def _icon: String = js.native
     
-    def _onClick(e: MouseEvent): Unit = js.native
+    @JSName("_onClick")
+    def _onClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _tooltip: String = js.native
     

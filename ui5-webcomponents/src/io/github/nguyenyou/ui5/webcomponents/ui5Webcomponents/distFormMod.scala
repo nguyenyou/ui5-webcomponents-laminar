@@ -159,6 +159,18 @@ object distFormMod {
   @JSImport("@ui5/webcomponents/dist/Form", JSImport.Default)
   @js.native
   open class default () extends Form
+  object default {
+    
+    @JSImport("@ui5/webcomponents/dist/Form", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents/dist/Form", "default.i18nBundle")
+    @js.native
+    def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
+    inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * @class
@@ -310,6 +322,14 @@ object distFormMod {
   trait Form
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    /**
+      * Defines the accessible ARIA name of the component.
+      * @default undefined
+      * @public
+      * @since 2.10.0
+      */
+    var accessibleName: js.UndefOr[String] = js.native
+    
     var columnsL: Double = js.native
     
     var columnsM: Double = js.native
@@ -322,6 +342,8 @@ object distFormMod {
     var columnsXl: Double = js.native
     
     def createAdditionalCSSStyleSheet(): Unit = js.native
+    
+    def effectiveAccessibleName: js.UndefOr[String] = js.native
     
     def effectiveAccessibleRole: form | region = js.native
     
@@ -368,6 +390,8 @@ object distFormMod {
     
     def hasHeader: Boolean = js.native
     
+    def hasHeaderText: Boolean = js.native
+    
     /**
       * Defines the component header area.
       *
@@ -375,6 +399,15 @@ object distFormMod {
       * @public
       */
     var header: js.Array[HTMLElement] = js.native
+    
+    /**
+      * Defines the compoennt heading level,
+      * set by the `headerText`.
+      * @default "H2"
+      * @since 2.10.0
+      * @public
+      */
+    var headerLevel: /* template literal string: ${TitleLevel} */ String = js.native
     
     /**
       * Defines the header text of the component.
@@ -457,6 +490,8 @@ object distFormMod {
     def setFormItemLayout(): Unit = js.native
     
     def setGroupsColSpan(): Unit = js.native
+    
+    def setItemSpacing(): Unit = js.native
   }
   
   trait GroupItemsInfo extends StObject {
@@ -507,6 +542,8 @@ object distFormMod {
     var colsXl: js.UndefOr[Double] = js.native
     
     var columnSpan: js.UndefOr[Double] = js.native
+    
+    var headerLevel: js.UndefOr[/* template literal string: ${TitleLevel} */ String] = js.native
     
     var headerText: js.UndefOr[String] = js.native
     

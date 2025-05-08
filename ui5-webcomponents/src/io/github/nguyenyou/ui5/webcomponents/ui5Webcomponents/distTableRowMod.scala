@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
-import org.scalajs.dom.MouseEvent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +62,13 @@ object distTableRowMod {
     
     def _isInteractive: Boolean = js.native
     
-    def _onOverflowButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("_onOverflowButtonClick")
+    def _onOverflowButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _onclick(): Unit = js.native
     
