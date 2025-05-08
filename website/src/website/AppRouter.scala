@@ -63,6 +63,10 @@ object Pages {
   case object PanelPage               extends Page("Panel")
   case object ProgressIndicatorPage   extends Page("Progress Indicator")
   case object PopoverPage             extends Page("Popover")
+  case object TreeViewPage            extends Page("Tree")
+  case object ToggleButtonPage        extends Page("Toggle Button")
+  case object TokenPage               extends Page("Token")
+  case object TextAreaPage            extends Page("TextArea")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -114,6 +118,10 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(PanelPage)(PanelView())
   .handleValue(ProgressIndicatorPage)(ProgressIndicatorView())
   .handleValue(PopoverPage)(PopoverView())
+  .handleValue(TreeViewPage)(TreeView())
+  .handleValue(ToggleButtonPage)(ToggleButtonView())
+  .handleValue(TokenPage)(TokenView())
+  .handleValue(TextAreaPage)(TextAreaView())
   .handleValue(AiButtonPage)(AiButtonView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
@@ -155,12 +163,16 @@ val docPages: List[Page] = List(
   SwitchPage,
   SliderPage,
   ToastPage,
+  ToggleButtonPage,
+  TokenPage,
   TagPage,
+  TextAreaPage,
   TextPage,
   TitlePage,
   PanelPage,
   ProgressIndicatorPage,
-  PopoverPage
+  PopoverPage,
+  TreeViewPage
 )
 
 // Step 4: Map URL to Page
@@ -258,6 +270,14 @@ object AppRouter
           .static(ProgressIndicatorPage, root / ProgressIndicatorPage.path / endOfSegments, "/docs"),
         Route
           .static(PopoverPage, root / PopoverPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TreeViewPage, root / TreeViewPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ToggleButtonPage, root / ToggleButtonPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TokenPage, root / TokenPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TextAreaPage, root / TextAreaPage.path / endOfSegments, "/docs"),
         Route
           .static(AiButtonPage, root / AiButtonPage.path / endOfSegments, "/docs")
       ),

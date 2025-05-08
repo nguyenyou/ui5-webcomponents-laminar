@@ -3,6 +3,7 @@ package website.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
+import website.libs.scalawind.*
 import website.macros.Source
 
 object LinkView extends ExampleView("Link") {
@@ -13,7 +14,7 @@ object LinkView extends ExampleView("Link") {
         title = "Basic Sample",
         content = Source.annotate {
           div(
-            cls("flex gap-2"),
+            tw.flex.gap_2,
             Link(
               _.href   := "#",
               _.target := "_blank"
