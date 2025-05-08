@@ -10,6 +10,6 @@ object myapp extends ScalaJSModule {
   def ivyDeps = Agg(
     ivy"org.scala-js::scalajs-dom::2.8.0",
     ivy"com.raquo::laminar::17.2.1",
-    ivy"io.github.nguyenyou::ui5-webcomponents-laminar::2.9.1",
+    ivy"io.github.nguyenyou::ui5-webcomponents-laminar::2.10.0",
   )
 }
