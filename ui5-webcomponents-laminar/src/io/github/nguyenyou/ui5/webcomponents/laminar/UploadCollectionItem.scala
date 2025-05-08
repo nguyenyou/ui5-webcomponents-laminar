@@ -17,7 +17,7 @@ object UploadCollectionItem extends WebComponent("ui5-upload-collection-item") {
 
   type Self = UploadCollectionItem.type
 
-  type Ref = UploadCollectionItemComponent with dom.HTMLElement
+  type Ref = UploadCollectionItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

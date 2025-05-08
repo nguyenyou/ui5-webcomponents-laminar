@@ -17,7 +17,7 @@ object MessageStrip extends WebComponent("ui5-message-strip") {
 
   type Self = MessageStrip.type
 
-  type Ref = MessageStripComponent with dom.HTMLElement
+  type Ref = MessageStripComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -19,7 +19,7 @@ object MultiInput extends WebComponent("ui5-multi-input") {
 
   type Self = MultiInput.type
 
-  type Ref = MultiInputComponent with dom.HTMLElement
+  type Ref = MultiInputComponent & dom.HTMLElement
 
   // -- Attributes --
 

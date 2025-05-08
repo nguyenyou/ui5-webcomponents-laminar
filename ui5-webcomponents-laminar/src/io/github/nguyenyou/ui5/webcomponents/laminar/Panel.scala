@@ -17,7 +17,7 @@ object Panel extends WebComponent("ui5-panel") {
 
   type Self = Panel.type
 
-  type Ref = PanelComponent with dom.HTMLElement
+  type Ref = PanelComponent & dom.HTMLElement
 
   // -- Attributes --
 

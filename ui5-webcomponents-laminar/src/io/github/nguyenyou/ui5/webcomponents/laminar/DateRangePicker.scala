@@ -20,7 +20,7 @@ object DateRangePicker extends WebComponent("ui5-daterange-picker") {
 
   type Self = DateRangePicker.type
 
-  type Ref = DateRangePickerComponent with dom.HTMLElement
+  type Ref = DateRangePickerComponent & dom.HTMLElement
 
   // -- Attributes --
 

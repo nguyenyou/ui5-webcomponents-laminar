@@ -18,7 +18,7 @@ object ColorPalettePopover extends WebComponent("ui5-color-palette-popover") {
 
   type Self = ColorPalettePopover.type
 
-  type Ref = ColorPalettePopoverComponent with dom.HTMLElement
+  type Ref = ColorPalettePopoverComponent & dom.HTMLElement
 
   // -- Attributes --
 

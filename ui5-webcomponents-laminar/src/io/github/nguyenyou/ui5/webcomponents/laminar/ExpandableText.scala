@@ -17,7 +17,7 @@ object ExpandableText extends WebComponent("ui5-expandable-text") {
 
   type Self = ExpandableText.type
 
-  type Ref = ExpandableTextComponent with dom.HTMLElement
+  type Ref = ExpandableTextComponent & dom.HTMLElement
 
   // -- Attributes --
 

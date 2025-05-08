@@ -18,7 +18,7 @@ object Search extends WebComponent("ui5-search") {
 
   type Self = Search.type
 
-  type Ref = SearchComponent with dom.HTMLElement
+  type Ref = SearchComponent & dom.HTMLElement
 
   // -- Attributes --
 

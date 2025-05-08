@@ -17,7 +17,7 @@ object Avatar extends WebComponent("ui5-avatar") {
 
   type Self = Avatar.type
 
-  type Ref = AvatarComponent with dom.HTMLElement
+  type Ref = AvatarComponent & dom.HTMLElement
 
   // -- Attributes --
 

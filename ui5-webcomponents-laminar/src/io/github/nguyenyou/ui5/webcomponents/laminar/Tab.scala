@@ -17,7 +17,7 @@ object Tab extends WebComponent("ui5-tab") {
 
   type Self = Tab.type
 
-  type Ref = TabComponent with dom.HTMLElement
+  type Ref = TabComponent & dom.HTMLElement
 
   // -- Attributes --
 

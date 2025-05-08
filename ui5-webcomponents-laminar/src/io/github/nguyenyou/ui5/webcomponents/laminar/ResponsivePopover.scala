@@ -18,7 +18,7 @@ object ResponsivePopover extends WebComponent("ui5-responsive-popover") {
 
   type Self = ResponsivePopover.type
 
-  type Ref = ResponsivePopoverComponent with dom.HTMLElement
+  type Ref = ResponsivePopoverComponent & dom.HTMLElement
 
   // -- Attributes --
 

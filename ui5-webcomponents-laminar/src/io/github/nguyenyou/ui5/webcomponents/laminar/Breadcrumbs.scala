@@ -17,7 +17,7 @@ object Breadcrumbs extends WebComponent("ui5-breadcrumbs") {
 
   type Self = Breadcrumbs.type
 
-  type Ref = BreadcrumbsComponent with dom.HTMLElement
+  type Ref = BreadcrumbsComponent & dom.HTMLElement
 
   // -- Attributes --
 

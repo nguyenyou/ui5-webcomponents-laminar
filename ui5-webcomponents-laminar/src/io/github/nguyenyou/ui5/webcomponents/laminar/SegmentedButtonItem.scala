@@ -17,7 +17,7 @@ object SegmentedButtonItem extends WebComponent("ui5-segmented-button-item") {
 
   type Self = SegmentedButtonItem.type
 
-  type Ref = SegmentedButtonItemComponent with dom.HTMLElement
+  type Ref = SegmentedButtonItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

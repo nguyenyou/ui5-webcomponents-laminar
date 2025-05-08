@@ -17,7 +17,7 @@ object Token extends WebComponent("ui5-token") {
 
   type Self = Token.type
 
-  type Ref = TokenComponent with dom.HTMLElement
+  type Ref = TokenComponent & dom.HTMLElement
 
   // -- Attributes --
 

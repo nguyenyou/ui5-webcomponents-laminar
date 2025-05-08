@@ -17,7 +17,7 @@ object OptionCustom extends WebComponent("ui5-option-custom") {
 
   type Self = OptionCustom.type
 
-  type Ref = OptionCustomComponent with dom.HTMLElement
+  type Ref = OptionCustomComponent & dom.HTMLElement
 
   // -- Attributes --
 

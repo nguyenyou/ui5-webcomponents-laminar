@@ -23,7 +23,7 @@ object Tree extends WebComponent("ui5-tree") {
 
   type Self = Tree.type
 
-  type Ref = TreeComponent with dom.HTMLElement
+  type Ref = TreeComponent & dom.HTMLElement
 
   // -- Attributes --
 

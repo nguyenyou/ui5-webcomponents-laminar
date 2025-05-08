@@ -17,7 +17,7 @@ object SearchScope extends WebComponent("ui5-search-scope") {
 
   type Self = SearchScope.type
 
-  type Ref = SearchScopeComponent with dom.HTMLElement
+  type Ref = SearchScopeComponent & dom.HTMLElement
 
   // -- Attributes --
 

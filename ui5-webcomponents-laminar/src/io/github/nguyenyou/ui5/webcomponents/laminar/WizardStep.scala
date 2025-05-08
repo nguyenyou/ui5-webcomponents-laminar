@@ -17,7 +17,7 @@ object WizardStep extends WebComponent("ui5-wizard-step") {
 
   type Self = WizardStep.type
 
-  type Ref = WizardStepComponent with dom.HTMLElement
+  type Ref = WizardStepComponent & dom.HTMLElement
 
   // -- Attributes --
 

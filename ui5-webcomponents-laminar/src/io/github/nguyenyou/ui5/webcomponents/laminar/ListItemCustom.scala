@@ -17,7 +17,7 @@ object ListItemCustom extends WebComponent("ui5-li-custom") {
 
   type Self = ListItemCustom.type
 
-  type Ref = ListItemCustomComponent with dom.HTMLElement
+  type Ref = ListItemCustomComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object PromptInput extends WebComponent("ui5-ai-prompt-input") {
 
   type Self = PromptInput.type
 
-  type Ref = PromptInputComponent with dom.HTMLElement
+  type Ref = PromptInputComponent & dom.HTMLElement
 
   // -- Attributes --
 

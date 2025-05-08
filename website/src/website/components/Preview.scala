@@ -1,7 +1,6 @@
 package website.components
 
 import com.raquo.laminar.api.L.*
-import org.scalajs.dom
 import website.libs.scalawind.*
 
 object Preview {

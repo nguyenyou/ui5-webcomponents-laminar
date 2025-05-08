@@ -18,7 +18,7 @@ object DynamicSideContent extends WebComponent("ui5-dynamic-side-content") {
 
   type Self = DynamicSideContent.type
 
-  type Ref = DynamicSideContentComponent with dom.HTMLElement
+  type Ref = DynamicSideContentComponent & dom.HTMLElement
 
   // -- Attributes --
 

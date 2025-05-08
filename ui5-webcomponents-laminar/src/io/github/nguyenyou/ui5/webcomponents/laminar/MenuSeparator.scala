@@ -14,7 +14,7 @@ object MenuSeparator extends WebComponent("ui5-menu-separator") {
 
   type Self = MenuSeparator.type
 
-  type Ref = MenuSeparatorComponent with dom.HTMLElement
+  type Ref = MenuSeparatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

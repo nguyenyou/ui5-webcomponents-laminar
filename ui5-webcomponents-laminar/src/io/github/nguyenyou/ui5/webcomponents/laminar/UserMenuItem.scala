@@ -19,7 +19,7 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
 
   type Self = UserMenuItem.type
 
-  type Ref = UserMenuItemComponent with dom.HTMLElement
+  type Ref = UserMenuItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

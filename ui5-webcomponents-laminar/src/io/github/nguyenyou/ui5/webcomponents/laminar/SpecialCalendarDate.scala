@@ -17,7 +17,7 @@ object SpecialCalendarDate extends WebComponent("ui5-special-date") {
 
   type Self = SpecialCalendarDate.type
 
-  type Ref = SpecialCalendarDateComponent with dom.HTMLElement
+  type Ref = SpecialCalendarDateComponent & dom.HTMLElement
 
   // -- Attributes --
 

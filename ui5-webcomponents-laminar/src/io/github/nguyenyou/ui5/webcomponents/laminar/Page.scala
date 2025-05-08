@@ -17,7 +17,7 @@ object Page extends WebComponent("ui5-page") {
 
   type Self = Page.type
 
-  type Ref = PageComponent with dom.HTMLElement
+  type Ref = PageComponent & dom.HTMLElement
 
   // -- Attributes --
 

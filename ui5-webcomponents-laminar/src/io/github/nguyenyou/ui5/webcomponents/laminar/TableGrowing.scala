@@ -17,7 +17,7 @@ object TableGrowing extends WebComponent("ui5-table-growing") {
 
   type Self = TableGrowing.type
 
-  type Ref = TableGrowingComponent with dom.HTMLElement
+  type Ref = TableGrowingComponent & dom.HTMLElement
 
   // -- Attributes --
 

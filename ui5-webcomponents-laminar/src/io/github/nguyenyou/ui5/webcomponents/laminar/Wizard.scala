@@ -17,7 +17,7 @@ object Wizard extends WebComponent("ui5-wizard") {
 
   type Self = Wizard.type
 
-  type Ref = WizardComponent with dom.HTMLElement
+  type Ref = WizardComponent & dom.HTMLElement
 
   // -- Attributes --
 

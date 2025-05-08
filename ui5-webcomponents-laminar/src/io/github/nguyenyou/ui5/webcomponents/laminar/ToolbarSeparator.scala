@@ -17,7 +17,7 @@ object ToolbarSeparator extends WebComponent("ui5-toolbar-separator") {
 
   type Self = ToolbarSeparator.type
 
-  type Ref = ToolbarSeparatorComponent with dom.HTMLElement
+  type Ref = ToolbarSeparatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

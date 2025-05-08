@@ -18,7 +18,7 @@ object Carousel extends WebComponent("ui5-carousel") {
 
   type Self = Carousel.type
 
-  type Ref = CarouselComponent with dom.HTMLElement
+  type Ref = CarouselComponent & dom.HTMLElement
 
   // -- Attributes --
 

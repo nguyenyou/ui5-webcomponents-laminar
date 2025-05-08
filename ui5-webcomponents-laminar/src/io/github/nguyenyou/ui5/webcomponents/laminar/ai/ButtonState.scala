@@ -18,7 +18,7 @@ object ButtonState extends WebComponent("ui5-ai-button-state") {
 
   type Self = ButtonState.type
 
-  type Ref = ButtonStateComponent with dom.HTMLElement
+  type Ref = ButtonStateComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -18,7 +18,7 @@ object ShellBarSearch extends WebComponent("ui5-shellbar-search") {
 
   type Self = ShellBarSearch.type
 
-  type Ref = ShellBarSearchComponent with dom.HTMLElement
+  type Ref = ShellBarSearchComponent & dom.HTMLElement
 
   // -- Attributes --
 

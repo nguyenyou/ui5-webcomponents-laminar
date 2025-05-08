@@ -19,7 +19,7 @@ object Select extends WebComponent("ui5-select") {
 
   type Self = Select.type
 
-  type Ref = SelectComponent with dom.HTMLElement
+  type Ref = SelectComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object TableHeaderCellActionAI extends WebComponent("ui5-table-header-cell-actio
 
   type Self = TableHeaderCellActionAI.type
 
-  type Ref = TableHeaderCellActionAIComponent with dom.HTMLElement
+  type Ref = TableHeaderCellActionAIComponent & dom.HTMLElement
 
   // -- Attributes --
 

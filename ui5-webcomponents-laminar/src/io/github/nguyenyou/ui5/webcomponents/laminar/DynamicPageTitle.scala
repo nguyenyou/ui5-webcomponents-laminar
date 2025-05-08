@@ -14,7 +14,7 @@ object DynamicPageTitle extends WebComponent("ui5-dynamic-page-title") {
 
   type Self = DynamicPageTitle.type
 
-  type Ref = DynamicPageTitleComponent with dom.HTMLElement
+  type Ref = DynamicPageTitleComponent & dom.HTMLElement
 
   // -- Attributes --
 

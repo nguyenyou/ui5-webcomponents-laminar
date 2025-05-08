@@ -20,7 +20,7 @@ object Menu extends WebComponent("ui5-menu") {
 
   type Self = Menu.type
 
-  type Ref = MenuComponent with dom.HTMLElement
+  type Ref = MenuComponent & dom.HTMLElement
 
   // -- Attributes --
 

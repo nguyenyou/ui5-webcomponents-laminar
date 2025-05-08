@@ -17,7 +17,7 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
 
   type Self = BusyIndicator.type
 
-  type Ref = BusyIndicatorComponent with dom.HTMLElement
+  type Ref = BusyIndicatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

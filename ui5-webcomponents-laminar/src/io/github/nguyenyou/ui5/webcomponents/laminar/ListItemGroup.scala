@@ -18,7 +18,7 @@ object ListItemGroup extends WebComponent("ui5-li-group") {
 
   type Self = ListItemGroup.type
 
-  type Ref = ListItemGroupComponent with dom.HTMLElement
+  type Ref = ListItemGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

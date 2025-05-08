@@ -18,7 +18,7 @@ object Popover extends WebComponent("ui5-popover") {
 
   type Self = Popover.type
 
-  type Ref = PopoverComponent with dom.HTMLElement
+  type Ref = PopoverComponent & dom.HTMLElement
 
   // -- Attributes --
 

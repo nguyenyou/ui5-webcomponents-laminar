@@ -17,7 +17,7 @@ object Icon extends WebComponent("ui5-icon") {
 
   type Self = Icon.type
 
-  type Ref = IconComponent with dom.HTMLElement
+  type Ref = IconComponent & dom.HTMLElement
 
   // -- Attributes --
 

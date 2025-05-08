@@ -17,7 +17,7 @@ object AvatarGroup extends WebComponent("ui5-avatar-group") {
 
   type Self = AvatarGroup.type
 
-  type Ref = AvatarGroupComponent with dom.HTMLElement
+  type Ref = AvatarGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

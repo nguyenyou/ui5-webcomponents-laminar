@@ -17,7 +17,7 @@ object Card extends WebComponent("ui5-card") {
 
   type Self = Card.type
 
-  type Ref = CardComponent with dom.HTMLElement
+  type Ref = CardComponent & dom.HTMLElement
 
   // -- Attributes --
 

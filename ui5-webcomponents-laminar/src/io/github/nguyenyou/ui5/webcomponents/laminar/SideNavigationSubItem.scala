@@ -17,7 +17,7 @@ object SideNavigationSubItem extends WebComponent("ui5-side-navigation-sub-item"
 
   type Self = SideNavigationSubItem.type
 
-  type Ref = SideNavigationSubItemComponent with dom.HTMLElement
+  type Ref = SideNavigationSubItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

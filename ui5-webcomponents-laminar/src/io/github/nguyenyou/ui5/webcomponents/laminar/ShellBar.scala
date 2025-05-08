@@ -25,7 +25,7 @@ object ShellBar extends WebComponent("ui5-shellbar") {
 
   type Self = ShellBar.type
 
-  type Ref = ShellBarComponent with dom.HTMLElement
+  type Ref = ShellBarComponent & dom.HTMLElement
 
   // -- Attributes --
 

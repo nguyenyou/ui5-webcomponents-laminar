@@ -18,7 +18,7 @@ object ToggleButton extends WebComponent("ui5-toggle-button") {
 
   type Self = ToggleButton.type
 
-  type Ref = ToggleButtonComponent with dom.HTMLElement
+  type Ref = ToggleButtonComponent & dom.HTMLElement
 
   // -- Attributes --
 

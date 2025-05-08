@@ -17,7 +17,7 @@ object TextArea extends WebComponent("ui5-textarea") {
 
   type Self = TextArea.type
 
-  type Ref = TextAreaComponent with dom.HTMLElement
+  type Ref = TextAreaComponent & dom.HTMLElement
 
   // -- Attributes --
 

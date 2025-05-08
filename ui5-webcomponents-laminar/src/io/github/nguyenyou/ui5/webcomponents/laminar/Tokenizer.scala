@@ -19,7 +19,7 @@ object Tokenizer extends WebComponent("ui5-tokenizer") {
 
   type Self = Tokenizer.type
 
-  type Ref = TokenizerComponent with dom.HTMLElement
+  type Ref = TokenizerComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object Opt extends WebComponent("ui5-option") {
 
   type Self = Opt.type
 
-  type Ref = OptionComponent with dom.HTMLElement
+  type Ref = OptionComponent & dom.HTMLElement
 
   // -- Attributes --
 

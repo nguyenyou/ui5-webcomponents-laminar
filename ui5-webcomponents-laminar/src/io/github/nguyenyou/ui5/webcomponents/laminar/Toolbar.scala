@@ -17,7 +17,7 @@ object Toolbar extends WebComponent("ui5-toolbar") {
 
   type Self = Toolbar.type
 
-  type Ref = ToolbarComponent with dom.HTMLElement
+  type Ref = ToolbarComponent & dom.HTMLElement
 
   // -- Attributes --
 

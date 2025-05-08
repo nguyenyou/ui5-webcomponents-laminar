@@ -17,7 +17,7 @@ object TableSelectionMulti extends WebComponent("ui5-table-selection-multi") {
 
   type Self = TableSelectionMulti.type
 
-  type Ref = TableSelectionMultiComponent with dom.HTMLElement
+  type Ref = TableSelectionMultiComponent & dom.HTMLElement
 
   // -- Attributes --
 

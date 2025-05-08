@@ -17,7 +17,7 @@ object RadioButton extends WebComponent("ui5-radio-button") {
 
   type Self = RadioButton.type
 
-  type Ref = RadioButtonComponent with dom.HTMLElement
+  type Ref = RadioButtonComponent & dom.HTMLElement
 
   // -- Attributes --
 

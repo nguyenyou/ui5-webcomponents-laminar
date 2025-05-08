@@ -16,7 +16,7 @@ object Bar extends WebComponent("ui5-bar") {
 
   type Self = Bar.type
 
-  type Ref = BarComponent with dom.HTMLElement
+  type Ref = BarComponent & dom.HTMLElement
 
   // -- Attributes --
 

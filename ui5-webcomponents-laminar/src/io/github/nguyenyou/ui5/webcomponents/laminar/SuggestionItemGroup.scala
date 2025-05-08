@@ -18,7 +18,7 @@ object SuggestionItemGroup extends WebComponent("ui5-suggestion-item-group") {
 
   type Self = SuggestionItemGroup.type
 
-  type Ref = SuggestionItemGroupComponent with dom.HTMLElement
+  type Ref = SuggestionItemGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

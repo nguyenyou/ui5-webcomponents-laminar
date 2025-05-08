@@ -17,7 +17,7 @@ object ToolbarSpacer extends WebComponent("ui5-toolbar-spacer") {
 
   type Self = ToolbarSpacer.type
 
-  type Ref = ToolbarSpacerComponent with dom.HTMLElement
+  type Ref = ToolbarSpacerComponent & dom.HTMLElement
 
   // -- Attributes --
 

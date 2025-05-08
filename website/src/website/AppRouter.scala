@@ -67,6 +67,7 @@ object Pages {
   case object ToggleButtonPage        extends Page("Toggle Button")
   case object TokenPage               extends Page("Token")
   case object TextAreaPage            extends Page("TextArea")
+  case object MultiInputPage          extends Page("MultiInput")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -122,6 +123,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(ToggleButtonPage)(ToggleButtonView())
   .handleValue(TokenPage)(TokenView())
   .handleValue(TextAreaPage)(TextAreaView())
+  .handleValue(MultiInputPage)(MultiInputView())
   .handleValue(AiButtonPage)(AiButtonView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
@@ -153,6 +155,7 @@ val docPages: List[Page] = List(
   ListViewPage,
   MenuPage,
   MessageStripPage,
+  MultiInputPage,
   MultiComboBoxPage,
   RadioButtonPage,
   RangeSliderPage,
@@ -238,6 +241,8 @@ object AppRouter
           .static(MenuPage, root / MenuPage.path / endOfSegments, "/docs"),
         Route
           .static(MessageStripPage, root / MessageStripPage.path / endOfSegments, "/docs"),
+        Route
+          .static(MultiInputPage, root / MultiInputPage.path / endOfSegments, "/docs"),
         Route
           .static(MultiComboBoxPage, root / MultiComboBoxPage.path / endOfSegments, "/docs"),
         Route

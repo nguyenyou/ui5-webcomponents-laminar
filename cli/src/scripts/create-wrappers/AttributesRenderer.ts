@@ -235,7 +235,7 @@ export class AttributesRenderer extends AbstractRenderer {
       .blankLine()
       .writeLine(`type Self = ${context.handleReservedScalaKeywords(context.componentName)}.type`)
       .blankLine()
-      .writeLine(`type Ref = ${context.componentName}Component with dom.HTMLElement`)
+      .writeLine(`type Ref = ${context.componentName}Component & dom.HTMLElement`)
       .blankLine()
       .writeLine(`// -- Attributes --`)
       .blankLine()

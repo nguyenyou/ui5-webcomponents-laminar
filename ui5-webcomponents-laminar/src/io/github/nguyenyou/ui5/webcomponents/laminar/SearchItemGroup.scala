@@ -18,7 +18,7 @@ object SearchItemGroup extends WebComponent("ui5-search-item-group") {
 
   type Self = SearchItemGroup.type
 
-  type Ref = SearchItemGroupComponent with dom.HTMLElement
+  type Ref = SearchItemGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

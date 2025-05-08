@@ -17,7 +17,7 @@ object UserSettingsView extends WebComponent("ui5-user-settings-view") {
 
   type Self = UserSettingsView.type
 
-  type Ref = UserSettingsViewComponent with dom.HTMLElement
+  type Ref = UserSettingsViewComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -14,7 +14,7 @@ object TabSeparator extends WebComponent("ui5-tab-separator") {
 
   type Self = TabSeparator.type
 
-  type Ref = TabSeparatorComponent with dom.HTMLElement
+  type Ref = TabSeparatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

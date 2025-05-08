@@ -18,7 +18,7 @@ object Calendar extends WebComponent("ui5-calendar") {
 
   type Self = Calendar.type
 
-  type Ref = CalendarComponent with dom.HTMLElement
+  type Ref = CalendarComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -18,7 +18,7 @@ object Dialog extends WebComponent("ui5-dialog") {
 
   type Self = Dialog.type
 
-  type Ref = DialogComponent with dom.HTMLElement
+  type Ref = DialogComponent & dom.HTMLElement
 
   // -- Attributes --
 

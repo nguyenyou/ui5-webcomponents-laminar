@@ -18,7 +18,7 @@ object TableVirtualizer extends WebComponent("ui5-table-virtualizer") {
 
   type Self = TableVirtualizer.type
 
-  type Ref = TableVirtualizerComponent with dom.HTMLElement
+  type Ref = TableVirtualizerComponent & dom.HTMLElement
 
   // -- Attributes --
 

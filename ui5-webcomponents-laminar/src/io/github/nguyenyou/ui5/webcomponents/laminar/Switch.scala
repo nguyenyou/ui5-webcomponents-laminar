@@ -17,7 +17,7 @@ object Switch extends WebComponent("ui5-switch") {
 
   type Self = Switch.type
 
-  type Ref = SwitchComponent with dom.HTMLElement
+  type Ref = SwitchComponent & dom.HTMLElement
 
   // -- Attributes --
 

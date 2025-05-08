@@ -17,7 +17,7 @@ object TreeItem extends WebComponent("ui5-tree-item") {
 
   type Self = TreeItem.type
 
-  type Ref = TreeItemComponent with dom.HTMLElement
+  type Ref = TreeItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

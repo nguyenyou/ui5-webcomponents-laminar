@@ -10,8 +10,6 @@ import website.components.ThemeProvider.directionSignal
 import website.components.ThemeProvider.websiteThemeSignal
 import website.facades.GlobalConfig
 
-import scala.scalajs.js
-
 case class ThemeProvider() {
   // Documentation: https://sap.github.io/ui5-webcomponents/docs/development/styling/#theming-assets
   Assets.WebComponents

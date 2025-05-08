@@ -17,7 +17,7 @@ object FilterItem extends WebComponent("ui5-filter-item") {
 
   type Self = FilterItem.type
 
-  type Ref = FilterItemComponent with dom.HTMLElement
+  type Ref = FilterItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

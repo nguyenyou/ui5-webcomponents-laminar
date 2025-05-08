@@ -16,7 +16,7 @@ object TableCell extends WebComponent("ui5-table-cell") {
 
   type Self = TableCell.type
 
-  type Ref = TableCellComponent with dom.HTMLElement
+  type Ref = TableCellComponent & dom.HTMLElement
 
   // -- Attributes --
 

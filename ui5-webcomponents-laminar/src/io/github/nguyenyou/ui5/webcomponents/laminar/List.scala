@@ -23,7 +23,7 @@ object List extends WebComponent("ui5-list") {
 
   type Self = List.type
 
-  type Ref = ListComponent with dom.HTMLElement
+  type Ref = ListComponent & dom.HTMLElement
 
   // -- Attributes --
 

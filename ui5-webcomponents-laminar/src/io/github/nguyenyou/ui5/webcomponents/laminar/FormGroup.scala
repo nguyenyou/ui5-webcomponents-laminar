@@ -17,7 +17,7 @@ object FormGroup extends WebComponent("ui5-form-group") {
 
   type Self = FormGroup.type
 
-  type Ref = FormGroupComponent with dom.HTMLElement
+  type Ref = FormGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

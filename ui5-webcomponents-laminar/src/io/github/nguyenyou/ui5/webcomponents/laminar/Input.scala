@@ -18,7 +18,7 @@ object Input extends WebComponent("ui5-input") {
 
   type Self = Input.type
 
-  type Ref = InputComponent with dom.HTMLElement
+  type Ref = InputComponent & dom.HTMLElement
 
   // -- Attributes --
 

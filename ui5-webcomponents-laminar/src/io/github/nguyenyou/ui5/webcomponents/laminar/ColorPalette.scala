@@ -17,7 +17,7 @@ object ColorPalette extends WebComponent("ui5-color-palette") {
 
   type Self = ColorPalette.type
 
-  type Ref = ColorPaletteComponent with dom.HTMLElement
+  type Ref = ColorPaletteComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object ListItemStandard extends WebComponent("ui5-li") {
 
   type Self = ListItemStandard.type
 
-  type Ref = ListItemStandardComponent with dom.HTMLElement
+  type Ref = ListItemStandardComponent & dom.HTMLElement
 
   // -- Attributes --
 

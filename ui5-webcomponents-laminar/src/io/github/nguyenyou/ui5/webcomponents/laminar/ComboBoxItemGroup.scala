@@ -18,7 +18,7 @@ object ComboBoxItemGroup extends WebComponent("ui5-cb-item-group") {
 
   type Self = ComboBoxItemGroup.type
 
-  type Ref = ComboBoxItemGroupComponent with dom.HTMLElement
+  type Ref = ComboBoxItemGroupComponent & dom.HTMLElement
 
   // -- Attributes --
 

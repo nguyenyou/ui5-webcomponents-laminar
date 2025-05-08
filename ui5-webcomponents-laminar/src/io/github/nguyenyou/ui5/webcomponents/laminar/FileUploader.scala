@@ -19,7 +19,7 @@ object FileUploader extends WebComponent("ui5-file-uploader") {
 
   type Self = FileUploader.type
 
-  type Ref = FileUploaderComponent with dom.HTMLElement
+  type Ref = FileUploaderComponent & dom.HTMLElement
 
   // -- Attributes --
 

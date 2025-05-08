@@ -17,7 +17,7 @@ object ToolbarSelectOption extends WebComponent("ui5-toolbar-select-option") {
 
   type Self = ToolbarSelectOption.type
 
-  type Ref = ToolbarSelectOptionComponent with dom.HTMLElement
+  type Ref = ToolbarSelectOptionComponent & dom.HTMLElement
 
   // -- Attributes --
 

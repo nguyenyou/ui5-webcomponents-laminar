@@ -17,7 +17,7 @@ object IllustratedMessage extends WebComponent("ui5-illustrated-message") {
 
   type Self = IllustratedMessage.type
 
-  type Ref = IllustratedMessageComponent with dom.HTMLElement
+  type Ref = IllustratedMessageComponent & dom.HTMLElement
 
   // -- Attributes --
 

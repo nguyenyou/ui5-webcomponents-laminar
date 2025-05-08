@@ -14,7 +14,7 @@ object ProductSwitch extends WebComponent("ui5-product-switch") {
 
   type Self = ProductSwitch.type
 
-  type Ref = ProductSwitchComponent with dom.HTMLElement
+  type Ref = ProductSwitchComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object CalendarLegendItem extends WebComponent("ui5-calendar-legend-item") {
 
   type Self = CalendarLegendItem.type
 
-  type Ref = CalendarLegendItemComponent with dom.HTMLElement
+  type Ref = CalendarLegendItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

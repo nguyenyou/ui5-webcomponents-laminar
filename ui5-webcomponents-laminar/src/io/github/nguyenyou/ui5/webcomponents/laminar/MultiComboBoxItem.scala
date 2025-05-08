@@ -17,7 +17,7 @@ object MultiComboBoxItem extends WebComponent("ui5-mcb-item") {
 
   type Self = MultiComboBoxItem.type
 
-  type Ref = MultiComboBoxItemComponent with dom.HTMLElement
+  type Ref = MultiComboBoxItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -20,7 +20,7 @@ object Table extends WebComponent("ui5-table") {
 
   type Self = Table.type
 
-  type Ref = TableComponent with dom.HTMLElement
+  type Ref = TableComponent & dom.HTMLElement
 
   // -- Attributes --
 

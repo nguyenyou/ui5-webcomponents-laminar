@@ -17,7 +17,7 @@ object FormItem extends WebComponent("ui5-form-item") {
 
   type Self = FormItem.type
 
-  type Ref = FormItemComponent with dom.HTMLElement
+  type Ref = FormItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

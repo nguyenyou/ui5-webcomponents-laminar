@@ -16,7 +16,7 @@ object Title extends WebComponent("ui5-title") {
 
   type Self = Title.type
 
-  type Ref = TitleComponent with dom.HTMLElement
+  type Ref = TitleComponent & dom.HTMLElement
 
   // -- Attributes --
 

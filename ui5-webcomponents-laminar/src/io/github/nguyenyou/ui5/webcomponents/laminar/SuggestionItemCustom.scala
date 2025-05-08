@@ -17,7 +17,7 @@ object SuggestionItemCustom extends WebComponent("ui5-suggestion-item-custom") {
 
   type Self = SuggestionItemCustom.type
 
-  type Ref = SuggestionItemCustomComponent with dom.HTMLElement
+  type Ref = SuggestionItemCustomComponent & dom.HTMLElement
 
   // -- Attributes --
 

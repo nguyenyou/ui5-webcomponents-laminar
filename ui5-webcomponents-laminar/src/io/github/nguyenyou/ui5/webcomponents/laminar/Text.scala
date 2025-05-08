@@ -17,7 +17,7 @@ object Text extends WebComponent("ui5-text") {
 
   type Self = Text.type
 
-  type Ref = TextComponent with dom.HTMLElement
+  type Ref = TextComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object CardHeader extends WebComponent("ui5-card-header") {
 
   type Self = CardHeader.type
 
-  type Ref = CardHeaderComponent with dom.HTMLElement
+  type Ref = CardHeaderComponent & dom.HTMLElement
 
   // -- Attributes --
 

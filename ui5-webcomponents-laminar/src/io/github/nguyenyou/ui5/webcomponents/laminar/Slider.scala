@@ -17,7 +17,7 @@ object Slider extends WebComponent("ui5-slider") {
 
   type Self = Slider.type
 
-  type Ref = SliderComponent with dom.HTMLElement
+  type Ref = SliderComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -19,7 +19,7 @@ object ViewSettingsDialog extends WebComponent("ui5-view-settings-dialog") {
 
   type Self = ViewSettingsDialog.type
 
-  type Ref = ViewSettingsDialogComponent with dom.HTMLElement
+  type Ref = ViewSettingsDialogComponent & dom.HTMLElement
 
   // -- Attributes --
 

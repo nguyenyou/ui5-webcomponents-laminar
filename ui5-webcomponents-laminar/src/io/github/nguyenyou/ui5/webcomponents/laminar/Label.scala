@@ -17,7 +17,7 @@ object Label extends WebComponent("ui5-label") {
 
   type Self = Label.type
 
-  type Ref = LabelComponent with dom.HTMLElement
+  type Ref = LabelComponent & dom.HTMLElement
 
   // -- Attributes --
 

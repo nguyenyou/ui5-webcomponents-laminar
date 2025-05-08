@@ -17,7 +17,7 @@ object TimelineGroupItem extends WebComponent("ui5-timeline-group-item") {
 
   type Self = TimelineGroupItem.type
 
-  type Ref = TimelineGroupItemComponent with dom.HTMLElement
+  type Ref = TimelineGroupItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

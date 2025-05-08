@@ -17,7 +17,7 @@ object MediaGalleryItem extends WebComponent("ui5-media-gallery-item") {
 
   type Self = MediaGalleryItem.type
 
-  type Ref = MediaGalleryItemComponent with dom.HTMLElement
+  type Ref = MediaGalleryItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

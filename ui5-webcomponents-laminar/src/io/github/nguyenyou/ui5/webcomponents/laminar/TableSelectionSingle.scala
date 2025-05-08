@@ -17,7 +17,7 @@ object TableSelectionSingle extends WebComponent("ui5-table-selection-single") {
 
   type Self = TableSelectionSingle.type
 
-  type Ref = TableSelectionSingleComponent with dom.HTMLElement
+  type Ref = TableSelectionSingleComponent & dom.HTMLElement
 
   // -- Attributes --
 

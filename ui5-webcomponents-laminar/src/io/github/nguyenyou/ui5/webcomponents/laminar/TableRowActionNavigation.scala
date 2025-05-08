@@ -17,7 +17,7 @@ object TableRowActionNavigation extends WebComponent("ui5-table-row-action-navig
 
   type Self = TableRowActionNavigation.type
 
-  type Ref = TableRowActionNavigationComponent with dom.HTMLElement
+  type Ref = TableRowActionNavigationComponent & dom.HTMLElement
 
   // -- Attributes --
 

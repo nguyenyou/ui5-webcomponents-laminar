@@ -17,7 +17,7 @@ object TableColumn extends WebComponent("ui5-table-column") {
 
   type Self = TableColumn.type
 
-  type Ref = TableColumnComponent with dom.HTMLElement
+  type Ref = TableColumnComponent & dom.HTMLElement
 
   // -- Attributes --
 

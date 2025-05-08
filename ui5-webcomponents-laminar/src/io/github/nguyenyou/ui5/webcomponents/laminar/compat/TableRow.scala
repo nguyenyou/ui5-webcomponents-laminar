@@ -17,7 +17,7 @@ object TableRow extends WebComponent("ui5-table-row") {
 
   type Self = TableRow.type
 
-  type Ref = TableRowComponent with dom.HTMLElement
+  type Ref = TableRowComponent & dom.HTMLElement
 
   // -- Attributes --
 

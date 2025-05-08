@@ -17,7 +17,7 @@ object RangeSlider extends WebComponent("ui5-range-slider") {
 
   type Self = RangeSlider.type
 
-  type Ref = RangeSliderComponent with dom.HTMLElement
+  type Ref = RangeSliderComponent & dom.HTMLElement
 
   // -- Attributes --
 

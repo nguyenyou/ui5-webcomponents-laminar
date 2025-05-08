@@ -17,7 +17,7 @@ object CheckBox extends WebComponent("ui5-checkbox") {
 
   type Self = CheckBox.type
 
-  type Ref = CheckBoxComponent with dom.HTMLElement
+  type Ref = CheckBoxComponent & dom.HTMLElement
 
   // -- Attributes --
 

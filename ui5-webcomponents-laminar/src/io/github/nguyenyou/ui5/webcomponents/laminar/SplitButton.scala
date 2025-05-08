@@ -17,7 +17,7 @@ object SplitButton extends WebComponent("ui5-split-button") {
 
   type Self = SplitButton.type
 
-  type Ref = SplitButtonComponent with dom.HTMLElement
+  type Ref = SplitButtonComponent & dom.HTMLElement
 
   // -- Attributes --
 

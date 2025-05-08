@@ -19,7 +19,7 @@ object BarcodeScannerDialog extends WebComponent("ui5-barcode-scanner-dialog") {
 
   type Self = BarcodeScannerDialog.type
 
-  type Ref = BarcodeScannerDialogComponent with dom.HTMLElement
+  type Ref = BarcodeScannerDialogComponent & dom.HTMLElement
 
   // -- Attributes --
 

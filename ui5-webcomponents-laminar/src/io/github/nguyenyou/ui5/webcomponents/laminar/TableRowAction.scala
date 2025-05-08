@@ -17,7 +17,7 @@ object TableRowAction extends WebComponent("ui5-table-row-action") {
 
   type Self = TableRowAction.type
 
-  type Ref = TableRowActionComponent with dom.HTMLElement
+  type Ref = TableRowActionComponent & dom.HTMLElement
 
   // -- Attributes --
 

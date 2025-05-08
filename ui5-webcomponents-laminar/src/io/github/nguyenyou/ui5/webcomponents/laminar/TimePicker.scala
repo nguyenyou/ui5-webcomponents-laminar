@@ -19,7 +19,7 @@ object TimePicker extends WebComponent("ui5-time-picker") {
 
   type Self = TimePicker.type
 
-  type Ref = TimePickerComponent with dom.HTMLElement
+  type Ref = TimePickerComponent & dom.HTMLElement
 
   // -- Attributes --
 

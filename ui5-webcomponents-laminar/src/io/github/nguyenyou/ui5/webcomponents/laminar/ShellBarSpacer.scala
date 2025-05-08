@@ -14,7 +14,7 @@ object ShellBarSpacer extends WebComponent("ui5-shellbar-spacer") {
 
   type Self = ShellBarSpacer.type
 
-  type Ref = ShellBarSpacerComponent with dom.HTMLElement
+  type Ref = ShellBarSpacerComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -16,7 +16,7 @@ object NavigationLayout extends WebComponent("ui5-navigation-layout") {
 
   type Self = NavigationLayout.type
 
-  type Ref = NavigationLayoutComponent with dom.HTMLElement
+  type Ref = NavigationLayoutComponent & dom.HTMLElement
 
   // -- Attributes --
 

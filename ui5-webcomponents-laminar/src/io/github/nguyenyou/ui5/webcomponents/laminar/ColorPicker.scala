@@ -17,7 +17,7 @@ object ColorPicker extends WebComponent("ui5-color-picker") {
 
   type Self = ColorPicker.type
 
-  type Ref = ColorPickerComponent with dom.HTMLElement
+  type Ref = ColorPickerComponent & dom.HTMLElement
 
   // -- Attributes --
 

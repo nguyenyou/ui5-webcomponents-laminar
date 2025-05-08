@@ -17,7 +17,7 @@ object RatingIndicator extends WebComponent("ui5-rating-indicator") {
 
   type Self = RatingIndicator.type
 
-  type Ref = RatingIndicatorComponent with dom.HTMLElement
+  type Ref = RatingIndicatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

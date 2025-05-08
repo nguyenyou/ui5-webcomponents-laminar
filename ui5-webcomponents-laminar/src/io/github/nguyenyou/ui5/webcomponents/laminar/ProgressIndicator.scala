@@ -17,7 +17,7 @@ object ProgressIndicator extends WebComponent("ui5-progress-indicator") {
 
   type Self = ProgressIndicator.type
 
-  type Ref = ProgressIndicatorComponent with dom.HTMLElement
+  type Ref = ProgressIndicatorComponent & dom.HTMLElement
 
   // -- Attributes --
 

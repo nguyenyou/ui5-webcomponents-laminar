@@ -18,7 +18,7 @@ object StepInput extends WebComponent("ui5-step-input") {
 
   type Self = StepInput.type
 
-  type Ref = StepInputComponent with dom.HTMLElement
+  type Ref = StepInputComponent & dom.HTMLElement
 
   // -- Attributes --
 

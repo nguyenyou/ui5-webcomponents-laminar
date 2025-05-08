@@ -18,7 +18,7 @@ object ComboBox extends WebComponent("ui5-combobox") {
 
   type Self = ComboBox.type
 
-  type Ref = ComboBoxComponent with dom.HTMLElement
+  type Ref = ComboBoxComponent & dom.HTMLElement
 
   // -- Attributes --
 

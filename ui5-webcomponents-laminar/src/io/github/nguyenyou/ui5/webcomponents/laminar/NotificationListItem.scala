@@ -18,7 +18,7 @@ object NotificationListItem extends WebComponent("ui5-li-notification") {
 
   type Self = NotificationListItem.type
 
-  type Ref = NotificationListItemComponent with dom.HTMLElement
+  type Ref = NotificationListItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

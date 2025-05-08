@@ -17,7 +17,7 @@ object Toast extends WebComponent("ui5-toast") {
 
   type Self = Toast.type
 
-  type Ref = ToastComponent with dom.HTMLElement
+  type Ref = ToastComponent & dom.HTMLElement
 
   // -- Attributes --
 

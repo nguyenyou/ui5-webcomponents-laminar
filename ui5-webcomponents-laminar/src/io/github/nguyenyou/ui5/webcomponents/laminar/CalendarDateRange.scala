@@ -17,7 +17,7 @@ object CalendarDateRange extends WebComponent("ui5-date-range") {
 
   type Self = CalendarDateRange.type
 
-  type Ref = CalendarDateRangeComponent with dom.HTMLElement
+  type Ref = CalendarDateRangeComponent & dom.HTMLElement
 
   // -- Attributes --
 

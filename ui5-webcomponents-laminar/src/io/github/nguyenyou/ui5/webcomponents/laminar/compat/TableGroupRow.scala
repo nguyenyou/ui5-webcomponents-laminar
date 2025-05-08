@@ -14,7 +14,7 @@ object TableGroupRow extends WebComponent("ui5-table-group-row") {
 
   type Self = TableGroupRow.type
 
-  type Ref = TableGroupRowComponent with dom.HTMLElement
+  type Ref = TableGroupRowComponent & dom.HTMLElement
 
   // -- Attributes --
 

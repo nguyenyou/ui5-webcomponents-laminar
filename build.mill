@@ -14,7 +14,7 @@ import mill.contrib.sonatypecentral.SonatypeCentralPublishModule.{
 }
 
 object Versions {
-  val scala3 = "3.3.5"
+  val scala3 = "3.7.0"
   val sjs = "1.19.0"
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"

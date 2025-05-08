@@ -17,7 +17,7 @@ object Timeline extends WebComponent("ui5-timeline") {
 
   type Self = Timeline.type
 
-  type Ref = TimelineComponent with dom.HTMLElement
+  type Ref = TimelineComponent & dom.HTMLElement
 
   // -- Attributes --
 

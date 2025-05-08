@@ -17,7 +17,7 @@ object SearchMessageArea extends WebComponent("ui5-search-message-area") {
 
   type Self = SearchMessageArea.type
 
-  type Ref = SearchMessageAreaComponent with dom.HTMLElement
+  type Ref = SearchMessageAreaComponent & dom.HTMLElement
 
   // -- Attributes --
 

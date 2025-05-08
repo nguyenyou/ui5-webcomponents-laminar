@@ -17,7 +17,7 @@ object ButtonBadge extends WebComponent("ui5-button-badge") {
 
   type Self = ButtonBadge.type
 
-  type Ref = ButtonBadgeComponent with dom.HTMLElement
+  type Ref = ButtonBadgeComponent & dom.HTMLElement
 
   // -- Attributes --
 

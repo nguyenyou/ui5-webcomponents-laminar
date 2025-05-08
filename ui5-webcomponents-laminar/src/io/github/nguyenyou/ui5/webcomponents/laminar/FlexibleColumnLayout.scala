@@ -18,7 +18,7 @@ object FlexibleColumnLayout extends WebComponent("ui5-flexible-column-layout") {
 
   type Self = FlexibleColumnLayout.type
 
-  type Ref = FlexibleColumnLayoutComponent with dom.HTMLElement
+  type Ref = FlexibleColumnLayoutComponent & dom.HTMLElement
 
   // -- Attributes --
 

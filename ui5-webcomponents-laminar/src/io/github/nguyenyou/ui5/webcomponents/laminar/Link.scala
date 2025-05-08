@@ -18,7 +18,7 @@ object Link extends WebComponent("ui5-link") {
 
   type Self = Link.type
 
-  type Ref = LinkComponent with dom.HTMLElement
+  type Ref = LinkComponent & dom.HTMLElement
 
   // -- Attributes --
 

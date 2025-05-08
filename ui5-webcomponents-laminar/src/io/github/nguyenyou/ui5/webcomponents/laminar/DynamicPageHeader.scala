@@ -14,7 +14,7 @@ object DynamicPageHeader extends WebComponent("ui5-dynamic-page-header") {
 
   type Self = DynamicPageHeader.type
 
-  type Ref = DynamicPageHeaderComponent with dom.HTMLElement
+  type Ref = DynamicPageHeaderComponent & dom.HTMLElement
 
   // -- Attributes --
 

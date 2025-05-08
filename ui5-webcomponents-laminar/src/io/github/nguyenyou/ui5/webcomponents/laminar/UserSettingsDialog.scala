@@ -18,7 +18,7 @@ object UserSettingsDialog extends WebComponent("ui5-user-settings-dialog") {
 
   type Self = UserSettingsDialog.type
 
-  type Ref = UserSettingsDialogComponent with dom.HTMLElement
+  type Ref = UserSettingsDialogComponent & dom.HTMLElement
 
   // -- Attributes --
 

@@ -17,7 +17,7 @@ object SortItem extends WebComponent("ui5-sort-item") {
 
   type Self = SortItem.type
 
-  type Ref = SortItemComponent with dom.HTMLElement
+  type Ref = SortItemComponent & dom.HTMLElement
 
   // -- Attributes --
 

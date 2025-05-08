@@ -17,7 +17,7 @@ object DynamicPage extends WebComponent("ui5-dynamic-page") {
 
   type Self = DynamicPage.type
 
-  type Ref = DynamicPageComponent with dom.HTMLElement
+  type Ref = DynamicPageComponent & dom.HTMLElement
 
   // -- Attributes --
 
