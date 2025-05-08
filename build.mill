@@ -115,6 +115,7 @@ object website extends WebModule with Scalafix {
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
+/* 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents`
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
@@ -128,3 +129,4 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
     "@ui5/webcomponents-base"
   )
 }
+ */
