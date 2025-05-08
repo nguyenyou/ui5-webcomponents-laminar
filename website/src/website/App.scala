@@ -2,6 +2,7 @@ package website
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import website.BuildInfo
 import website.components.Sidebar
 import website.components.TableOfContents
 import website.components.ThemeToggle
@@ -33,7 +34,7 @@ case class App() {
                     "Laminar UI5",
                     div(
                       tw.absolute.left_0.bottom_1.text_xs.font_normal.font_mono,
-                      "v2.10.0"
+                      s"v${BuildInfo.version}"
                     )
                   )
                 )

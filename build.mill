@@ -12,6 +12,8 @@ import mill.contrib.sonatypecentral.SonatypeCentralPublishModule.{
   defaultConnectTimeout,
   defaultReadTimeout,
 }
+import $ivy.`com.lihaoyi::mill-contrib-buildinfo:`
+import mill.contrib.buildinfo.BuildInfo
 
 object Versions {
   val scala3 = "3.7.0"
@@ -103,7 +105,7 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Sca
 }
 
 
-object website extends WebModule with Scalafix {
+object website extends WebModule with Scalafix with BuildInfo {
   def moduleKind = ModuleKind.ESModule
   
   def ivyDeps = super.ivyDeps() ++
@@ -111,6 +113,11 @@ object website extends WebModule with Scalafix {
     Dependencies.macrotask ++
     Dependencies.borer
   def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+
+  val buildInfoPackageName = "website"
+  def buildInfoMembers = Seq(
+    BuildInfo.Value("version", Versions.`ui5-webcomponents-laminar`)
+  )
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
