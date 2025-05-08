@@ -30,6 +30,17 @@ object IllustratedMessage extends WebComponent("ui5-illustrated-message") {
     */
   lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
+  /** Defines whether the illustration is decorative.
+    *
+    * When set to `true`, the attributes `role="presentation"` and `aria-hidden="true"` are applied to the SVG element.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents-fiori**.
+    *
+    * Default: false
+    */
+  lazy val decorative: HtmlAttr[Boolean] = htmlAttr("decorative", BooleanAsAttrPresenceCodec)
+
   /** Determines which illustration breakpoint variant is used.
     *
     * As `IllustratedMessage` adapts itself around the `Illustration`, the other elements of the component are displayed

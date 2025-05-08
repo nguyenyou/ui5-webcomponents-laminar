@@ -4,6 +4,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.Button as ButtonComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonClickEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -138,11 +139,16 @@ object Button extends WebComponent("ui5-button") {
     *
     * **Note:** The event will not be fired if the `disabled` property is set to `true`.
     *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
+    * |     ✅      |    ✅    |
     */
-  lazy val onClick: EventProp[dom.Event] = new EventProp("click")
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ButtonClickEventDetail]] = new EventProp("click")
 
   // -- Slots --
 

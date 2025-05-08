@@ -21,6 +21,15 @@ object Form extends WebComponent("ui5-form") {
 
   // -- Attributes --
 
+  /** Defines the accessible ARIA name of the component.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
+
   /** Defines the number of cells that are empty at the end of each form item, configurable by breakpoint.
     *
     * By default, a form item spans 12 cells, fully divided between its label (4 cells) and field (8 cells), with no
@@ -38,6 +47,16 @@ object Form extends WebComponent("ui5-form") {
     * Default: "S0 M0 L0 XL0"
     */
   lazy val emptySpan: HtmlAttr[String] = htmlAttr("empty-span", StringAsIsCodec)
+
+  /** Defines the compoennt heading level, set by the `headerText`.
+    *
+    * **Note:** Available since [v2.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.10.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "H2"
+    */
+  lazy val headerLevel: HtmlAttr[TitleLevel] = htmlAttr("header-level", StringUnionCodec[TitleLevel])
+  type TitleLevel = "H1" | "H2" | "H3" | "H4" | "H5" | "H6"
 
   /** Defines the header text of the component.
     *

@@ -4,21 +4,21 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchFieldMod.SearchFieldScopeSelectionChangeDetails
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchMod.Search as SearchComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarSearchMod.ShellBarSearch as ShellBarSearchComponent
 import org.scalajs.dom
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object Search extends WebComponent("ui5-search") {
+object ShellBarSearch extends WebComponent("ui5-shellbar-search") {
 
-  @JSImport("@ui5/webcomponents-fiori/dist/Search.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarSearch.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
-  type Self = Search.type
+  type Self = ShellBarSearch.type
 
-  type Ref = SearchComponent with dom.HTMLElement
+  type Ref = ShellBarSearchComponent with dom.HTMLElement
 
   // -- Attributes --
 

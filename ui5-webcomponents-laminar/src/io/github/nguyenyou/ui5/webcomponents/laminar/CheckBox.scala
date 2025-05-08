@@ -102,6 +102,9 @@ object CheckBox extends WebComponent("ui5-checkbox") {
 
   /** Defines whether the component is required.
     *
+    * **Note:** We advise against using the text property of the checkbox when there is a label associated with it to
+    * avoid having two required asterisks.
+    *
     * **Note:** Available since [v1.3.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.3.0) of
     * **@ui5/webcomponents**.
     *
