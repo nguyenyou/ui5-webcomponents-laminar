@@ -13,6 +13,12 @@ object MultiInputView extends ExampleView("Multi Input") {
         title = "Basic Sample",
         content = Source.annotate {
           MultiInput(
+            _.onTokenDelete.map { event =>
+              val tokens = event.detail.tokens
+              tokens.foreach { token =>
+                token.remove()
+              }
+            } --> Observer.empty,
             _.tokens := Token(
               _.text := "Argentina"
             )(),

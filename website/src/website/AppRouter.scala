@@ -17,43 +17,44 @@ import views.HomeView
 object Pages {
 
   sealed trait Page(val title: String, val url: String = "") {
-    def path = if (url.isEmpty) title.toLowerCase.replace(" ", "-") else url
+    def path = if (url.isEmpty) title else url
   }
 
   case object HomePage                extends Page("Home")
   case object NotFoundPage            extends Page("Not Found")
   case object AvatarPage              extends Page("Avatar")
-  case object AvatarGroupPage         extends Page("Avatar Group")
+  case object AvatarGroupPage         extends Page("AvatarGroup")
   case object BarPage                 extends Page("Bar")
   case object BreadcrumbsPage         extends Page("Breadcrumbs")
-  case object BusyIndicatorPage       extends Page("Busy Indicator")
+  case object BusyIndicatorPage       extends Page("BusyIndicator")
   case object ButtonPage              extends Page("Button")
   case object CalendarPage            extends Page("Calendar")
-  case object CalendarLegendPage      extends Page("Calendar Legend")
+  case object CalendarLegendPage      extends Page("CalendarLegend")
   case object CardPage                extends Page("Card")
   case object CarouselPage            extends Page("Carousel")
   case object CheckBoxPage            extends Page("CheckBox")
-  case object ColorPalettePage        extends Page("Color Palette")
-  case object ColorPalettePopoverPage extends Page("Color Palette Popover")
-  case object ColorPickerPage         extends Page("Color Picker")
+  case object ColorPalettePage        extends Page("ColorPalette")
+  case object ColorPalettePopoverPage extends Page("ColorPalettePopover")
+  case object ColorPickerPage         extends Page("ColorPicker")
   case object ComboBoxPage            extends Page("ComboBox")
-  case object DatePickerPage          extends Page("Date Picker")
-  case object DateRangePickerPage     extends Page("Date Range Picker")
-  case object DateTimePickerPage      extends Page("Date Time Picker")
+  case object DatePickerPage          extends Page("DatePicker")
+  case object DateRangePickerPage     extends Page("DateRangePicker")
+  case object DateTimePickerPage      extends Page("DateTimePicker")
   case object DialogPage              extends Page("Dialog")
   case object InputPage               extends Page("Input")
   case object LabelPage               extends Page("Label")
   case object LinkPage                extends Page("Link")
   case object ListViewPage            extends Page("List")
   case object MenuPage                extends Page("Menu")
-  case object MessageStripPage        extends Page("Message Strip")
-  case object MultiComboBoxPage       extends Page("Multi Combo Box")
-  case object RadioButtonPage         extends Page("Radio Button")
-  case object RangeSliderPage         extends Page("Range Slider")
-  case object RatingIndicatorPage     extends Page("Rating Indicator")
-  case object SplitButtonPage         extends Page("Split Button")
+  case object MessageStripPage        extends Page("MessageStrip")
+  case object MultiComboBoxPage       extends Page("MultiComboBox")
+  case object MultiInputPage          extends Page("MultiInput")
+  case object RadioButtonPage         extends Page("RadioButton")
+  case object RangeSliderPage         extends Page("RangeSlider")
+  case object RatingIndicatorPage     extends Page("RatingIndicator")
+  case object SplitButtonPage         extends Page("SplitButton")
   case object SelectPage              extends Page("Select")
-  case object SegmentedButtonPage     extends Page("Segmented Button")
+  case object SegmentedButtonPage     extends Page("SegmentedButton")
   case object SwitchPage              extends Page("Switch")
   case object SliderPage              extends Page("Slider")
   case object ToastPage               extends Page("Toast")
@@ -61,13 +62,12 @@ object Pages {
   case object TextPage                extends Page("Text")
   case object TitlePage               extends Page("Title")
   case object PanelPage               extends Page("Panel")
-  case object ProgressIndicatorPage   extends Page("Progress Indicator")
+  case object ProgressIndicatorPage   extends Page("ProgressIndicator")
   case object PopoverPage             extends Page("Popover")
   case object TreeViewPage            extends Page("Tree")
-  case object ToggleButtonPage        extends Page("Toggle Button")
+  case object ToggleButtonPage        extends Page("ToggleButton")
   case object TokenPage               extends Page("Token")
   case object TextAreaPage            extends Page("TextArea")
-  case object MultiInputPage          extends Page("MultiInput")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -297,9 +297,9 @@ object AppRouter
       routeFallback = _ => NotFoundPage
     ) {
 
-  currentPageSignal.foreach { page =>
+  currentPageSignal.foreach { _ =>
     // Reset scroll position (see Waypoint docs for caveats / more details)
     dom.window.scrollTo(x = 0, y = 0)
-  }(owner)
+  }(using owner)
 
 }

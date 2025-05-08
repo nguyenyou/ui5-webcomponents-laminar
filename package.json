@@ -7,6 +7,7 @@
     "create-wrappers:only": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers",
     "collect-enums": "yarn workspace ui5-webcomponents-laminar-cli collect-enums",
     "generate-facades": "./mill ui5-webcomponents.scalablyTypedImportTask",
+    "generate-icons": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers-icons",
     "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",
     "release:ui5-webcomponents-laminar": "./mill -i ui5-webcomponents-laminar.publishSonatypeCentral",
     "dev": "yarn website:dev && concurrently -c \"auto\" \"yarn website:dev-watch\" \"yarn website:dev-server\"",

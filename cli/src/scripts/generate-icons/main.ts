@@ -46,12 +46,13 @@ function generateIconImportsFileContent(iconNames: string[], fullPackageName: st
   return `
 package ${fullPackageName}
 
+import scala.annotation.unused
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
 
 //noinspection NoTargetNameAnnotationForOperatorLikeDefinition
 private[${packageName}] object IconImports {
-  @inline def _iconName(obj: js.Object, name: String): IconName =
+  @inline def _iconName(@unused obj: js.Object, name: String): IconName =
     name.asInstanceOf[IconName] // scalafix:ok
 
 ${allIconImports.join("\n")}
@@ -67,7 +68,7 @@ function generateIconValuesFileContent(iconNames: string[], fullPackageName: str
   return `
 package ${fullPackageName}
 
-import com.raquo.laminar.codecs.{Codec, StringAsIsCodec}
+import com.raquo.laminar.codecs.Codec
 import ${fullPackageName}.IconImports.*
 
 import scala.scalajs.js
