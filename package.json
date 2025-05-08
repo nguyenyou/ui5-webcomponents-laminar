@@ -17,7 +17,7 @@
     "website:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ website.sources",
     "website:fix": "./mill website.fix",
     "ui5-webcomponents-laminar:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ ui5-webcomponents-laminar.sources",
-    "ui5-webcomponents-laminar:fix": "./mill clean ui5-webcomponents-laminar && ./mill ui5-webcomponents-laminar.fix"
+    "ui5-webcomponents-laminar:fix": "./mill ui5-webcomponents-laminar.fix"
   },
   "packageManager": "yarn@4.9.1",
   "workspaces": [

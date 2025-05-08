@@ -4,7 +4,6 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.Button as ButtonComponent
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonClickEventDetail
 import org.scalajs.dom
 

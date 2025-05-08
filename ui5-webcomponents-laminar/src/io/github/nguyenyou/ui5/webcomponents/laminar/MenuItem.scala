@@ -6,7 +6,6 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeOpenEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItem as MenuItemComponent
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItemAccessibilityAttributes
 import org.scalajs.dom
 
 import scala.scalajs.js

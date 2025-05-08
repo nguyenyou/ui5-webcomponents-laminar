@@ -4,7 +4,6 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.Link as LinkComponent
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkClickEventDetail
 import org.scalajs.dom
 

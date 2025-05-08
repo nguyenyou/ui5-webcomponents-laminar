@@ -4,7 +4,6 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContent as DynamicSideContentComponent
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContentAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicSideContentMod.DynamicSideContentLayoutChangeEventDetail
 import org.scalajs.dom
 

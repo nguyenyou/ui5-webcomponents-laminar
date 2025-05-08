@@ -5,7 +5,6 @@ import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeOpenEventDetail
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuItemAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distUserMenuItemMod.UserMenuItem as UserMenuItemComponent
 import org.scalajs.dom
 

@@ -3,7 +3,6 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.ButtonClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToggleButtonMod.ToggleButton as ToggleButtonComponent
 import org.scalajs.dom

@@ -4,7 +4,6 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBar as ShellBarComponent
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarContentItemVisibilityChangeEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarLogoClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarMenuItemClickEventDetail
