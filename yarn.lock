@@ -8326,7 +8326,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "quickstart@workspace:examples/quickstart"
   dependencies:
-    "@ui5/webcomponents": "npm:2.9.0"
+    "@ui5/webcomponents": "npm:2.10.0"
     concurrently: "npm:9.1.2"
     vite: "npm:6.3.4"
   languageName: unknown
