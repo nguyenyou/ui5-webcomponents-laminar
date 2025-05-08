@@ -242,6 +242,7 @@ case class Tailwind() {
   def max_w_2xl                       = this
   def hidden                          = this
   def text_sm                         = this
+  def text_xs                         = this
   def block                           = this
   def top_0                           = this
   def top_20                          = this
@@ -327,4 +328,17 @@ case class Tailwind() {
   def p_6                             = this
   def text_2xl                        = this
   def mt_0                            = this
+  def text_gray_500                   = this
+  def pl_4                            = this
+  def pl_10                           = this
+  def pl_12                           = this
+  def pl_14                           = this
+  def right_0                         = this
+  def _right_2                        = this
+  def bottom_1                        = this
+  def bottom_0                        = this
+  def left_0                          = this
+  def _bottom_2                       = this
+  def _bottom_4                       = this
+  def font_mono                       = this
 }

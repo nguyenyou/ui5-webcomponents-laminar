@@ -20,17 +20,21 @@ case class App() {
             div(
               tw.container.flex.h_14.items_center.gap_2.md(tw.gap_4),
               div(
-                tw.mr_4.flex,
+                tw.mr_4.flex.h_full,
                 a(
                   href := "/",
-                  tw.mr_4.flex.items_center.gap_2.lg(tw.mr_6),
+                  tw.h_full.mr_4.flex.items_center.gap_2.lg(tw.mr_6),
                   img(
                     src := "/logo.png",
                     tw.h_6.w_6.object_contain
                   ),
-                  span(
-                    tw.inline_block.font_bold,
-                    "Laminar UI5"
+                  div(
+                    tw.font_mono.h_full.flex.items_center.inline_block.relative.font_bold,
+                    "Laminar UI5",
+                    div(
+                      tw.absolute.left_0.bottom_1.text_xs.font_normal.font_mono,
+                      "v2.10.0"
+                    )
                   )
                 )
               ),
