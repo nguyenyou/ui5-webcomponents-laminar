@@ -81,6 +81,16 @@ object distFormGroupMod {
     @JSName("colsXl")
     var colsXl_FormGroup: Double = js.native
     
+    /**
+      * Defines the compoennt heading level,
+      * set by the `headerText`.
+      * @default "H3"
+      * @public
+      * @since 2.10.0
+      */
+    @JSName("headerLevel")
+    var headerLevel_FormGroup: /* template literal string: ${TitleLevel} */ String = js.native
+    
     @JSName("isGroup")
     def isGroup_MFormGroup: Boolean = js.native
     

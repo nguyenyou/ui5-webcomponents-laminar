@@ -1,7 +1,8 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod
 
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarItemMod.ShellBarItemAccessibilityAttributes
-import org.scalajs.dom.MouseEvent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.click
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,13 @@ trait IShelBarItemInfo
   
   var order: js.UndefOr[Double] = js.undefined
   
-  def press(e: MouseEvent): Unit
+  @JSName("press")
+  def press_click(
+    e: UI5CustomEvent[
+      io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+      click
+    ]
+  ): Unit
   
   var profile: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +45,15 @@ trait IShelBarItemInfo
 }
 object IShelBarItemInfo {
   
-  inline def apply(classes: String, id: String, press: MouseEvent => Unit, show: Boolean): IShelBarItemInfo = {
+  inline def apply(
+    classes: String,
+    id: String,
+    press: UI5CustomEvent[
+      io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+      click
+    ] => Unit,
+    show: Boolean
+  ): IShelBarItemInfo = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], press = js.Any.fromFunction1(press), show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShelBarItemInfo]
   }
@@ -70,7 +85,12 @@ object IShelBarItemInfo {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setPress(value: MouseEvent => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
+    inline def setPress(
+      value: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ] => Unit
+    ): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
     
     inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     

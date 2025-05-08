@@ -7,13 +7,18 @@ import $ivy.`com.lihaoyi::mill-contrib-sonatypecentral:`
 import mill.contrib.sonatypecentral.SonatypeCentralPublishModule
 import $ivy.`com.goyeau::mill-scalafix::0.5.0`
 import com.goyeau.mill.scalafix.ScalafixModule
+import mill.contrib.sonatypecentral.SonatypeCentralPublishModule.{
+  defaultAwaitTimeout,
+  defaultConnectTimeout,
+  defaultReadTimeout,
+}
 
 object Versions {
   val scala3 = "3.3.5"
   val sjs = "1.19.0"
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
-  val `ui5-webcomponents` = "2.9.0"
+  val `ui5-webcomponents` = "2.10.0"
   val `ui5-webcomponents-laminar` = "2.9.1"
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
@@ -51,11 +56,13 @@ object Dependencies {
   )
 }
 
-trait WebModule extends ScalaJSModule with ScalafixModule with NoDoc {
+trait Scalafix extends ScalafixModule {
+  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
+}
+
+trait WebModule extends ScalaJSModule with NoDoc {
   def scalaVersion = Versions.scala3
   def scalaJSVersion = Versions.sjs
-
-  def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
 
 trait NoDoc extends ScalaModule {
@@ -67,6 +74,12 @@ trait NoDoc extends ScalaModule {
 }
 
 trait CommonPublish extends SonatypeCentralPublishModule {
+  def sonatypeCentralConnectTimeout: T[Int] = Task { defaultConnectTimeout * 5 }
+
+  def sonatypeCentralReadTimeout: T[Int] = Task { defaultReadTimeout * 5 }
+
+  def sonatypeCentralAwaitTimeout: T[Int] = Task { defaultAwaitTimeout * 5 }
+
   def pomSettings = PomSettings(
     description = "UI5 Webcomponents Facades",
     organization = "io.github.nguyenyou",
@@ -78,7 +91,7 @@ trait CommonPublish extends SonatypeCentralPublishModule {
 }
 
 
-object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
+object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Scalafix {
   def publishVersion = Versions.`ui5-webcomponents-laminar`
   def ivyDeps = super.ivyDeps() ++ 
   Dependencies.laminar ++ 
@@ -90,7 +103,7 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish {
 }
 
 
-object website extends WebModule {
+object website extends WebModule with Scalafix {
   def moduleKind = ModuleKind.ESModule
   
   def ivyDeps = super.ivyDeps() ++
@@ -103,7 +116,6 @@ object website extends WebModule {
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
-/*
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents`
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
@@ -117,4 +129,3 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
     "@ui5/webcomponents-base"
   )
 }
-*/

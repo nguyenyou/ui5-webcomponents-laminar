@@ -411,6 +411,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SEARCH_FIELD_CLEAR_ICON: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SEARCH_FIELD_LABEL")
+  @js.native
+  val SEARCH_FIELD_LABEL: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SEARCH_FIELD_SCOPE_SELECT_LABEL")
   @js.native
   val SEARCH_FIELD_SCOPE_SELECT_LABEL: I18nText = js.native
@@ -479,6 +483,14 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SHELLBAR_SEARCH_BTN_OPEN: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SHELLBAR_SEARCH_COLLAPSED")
+  @js.native
+  val SHELLBAR_SEARCH_COLLAPSED: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SHELLBAR_SEARCH_EXPANDED")
+  @js.native
+  val SHELLBAR_SEARCH_EXPANDED: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SHELLBAR_SEARCH_FIELD")
   @js.native
   val SHELLBAR_SEARCH_FIELD: I18nText = js.native
@@ -491,9 +503,13 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SIDE_NAVIGATION_COLLAPSED_LIST_ITEMS_ARIA_ROLE_DESC: I18nText = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SIDE_NAVIGATION_GROUP_HEADER_DESC")
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SIDE_NAVIGATION_ICON_COLLAPSE")
   @js.native
-  val SIDE_NAVIGATION_GROUP_HEADER_DESC: I18nText = js.native
+  val SIDE_NAVIGATION_ICON_COLLAPSE: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SIDE_NAVIGATION_ICON_EXPAND")
+  @js.native
+  val SIDE_NAVIGATION_ICON_EXPAND: I18nText = js.native
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults", "SIDE_NAVIGATION_LIST_ARIA_ROLE_DESC")
   @js.native

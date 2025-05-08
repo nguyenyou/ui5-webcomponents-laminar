@@ -173,6 +173,13 @@ object distMenuMod {
       */
     var headerText: js.UndefOr[String] = js.native
     
+    /**
+      * Determines the horizontal alignment of the menu relative to its opener control.
+      * @default "Start"
+      * @public
+      */
+    var horizontalAlign: /* template literal string: ${PopoverHorizontalAlign} */ String = js.native
+    
     def isPhone: Boolean = js.native
     
     def isRtl: Boolean = js.native
@@ -196,7 +203,7 @@ object distMenuMod {
     var loading: Boolean = js.native
     
     /**
-      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding ui5-menu popover..
+      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding ui5-menu popover.
       * @default 1000
       * @public
       * @since 1.13.0
@@ -204,7 +211,7 @@ object distMenuMod {
     var loadingDelay: Double = js.native
     
     /**
-      * Indicates if the menu is open
+      * Indicates if the menu is open.
       * @public
       * @default false
       * @since 1.10.0

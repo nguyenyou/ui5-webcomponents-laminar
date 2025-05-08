@@ -56,6 +56,8 @@ object distToggleButtonMod {
   trait ToggleButton
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default {
     
+    def _onclick(): Unit = js.native
+    
     /**
       * Determines whether the component is displayed as pressed.
       * @default false

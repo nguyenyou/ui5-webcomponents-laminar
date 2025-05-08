@@ -33,6 +33,18 @@ object distSideNavigationItemMod {
   @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationItem", JSImport.Default)
   @js.native
   open class default () extends SideNavigationItem
+  object default {
+    
+    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationItem", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationItem", "default.i18nBundle")
+    @js.native
+    def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
+    inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
+  }
   
   inline def isInstanceOfSideNavigationItem(`object`: Any): /* is @ui5/webcomponents-fiori.@ui5/webcomponents-fiori/dist/SideNavigationItem.SideNavigationItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOfSideNavigationItem")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is @ui5/webcomponents-fiori.@ui5/webcomponents-fiori/dist/SideNavigationItem.SideNavigationItem */ Boolean]
   
@@ -61,6 +73,8 @@ object distSideNavigationItemMod {
     def _ariaChecked: js.UndefOr[Boolean] = js.native
     
     def _ariaHasPopup: js.UndefOr[AriaHasPopup] = js.native
+    
+    def _arrowTooltip: String = js.native
     
     def _expanded: js.UndefOr[Boolean] = js.native
     

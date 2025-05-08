@@ -104,9 +104,13 @@ object distTableSelectionMultiMod {
       * @param row starting row
       * @private
       */
-    def _startRangeSelection(row: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default): Unit = js.native
     def _startRangeSelection(
       row: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default,
+      selected: Boolean
+    ): Unit = js.native
+    def _startRangeSelection(
+      row: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default,
+      selected: Boolean,
       isMouse: Boolean
     ): Unit = js.native
     

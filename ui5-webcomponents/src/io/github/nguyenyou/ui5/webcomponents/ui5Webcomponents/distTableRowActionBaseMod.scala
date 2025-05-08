@@ -2,8 +2,9 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Click
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Interactive
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.HTMLElement
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +60,13 @@ object distTableRowActionBaseMod {
     
     def _isInteractive: Boolean = js.native
     
-    def _onActionClick(e: MouseEvent): Unit = js.native
+    @JSName("_onActionClick")
+    def _onActionClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _text: String = js.native
     

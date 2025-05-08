@@ -11,10 +11,12 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsSt
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.Multiple
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.None
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-multi-combobox-valueStateDesc`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.Timeout
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesValueStateMod.ValueState
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.ClipboardEvent
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.FocusEvent
@@ -22,7 +24,6 @@ import org.scalajs.dom.FormData
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.HTMLInputElement
 import org.scalajs.dom.KeyboardEvent
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -438,7 +439,13 @@ object distMultiComboBoxMod {
     
     var filterSelected: Boolean = js.native
     
-    def filterSelectedItems(e: MouseEvent): Unit = js.native
+    @JSName("filterSelectedItems")
+    def filterSelectedItems_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToggleButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def fireSelectionChange(): Boolean = js.native
     

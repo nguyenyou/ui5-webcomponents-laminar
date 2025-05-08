@@ -26,6 +26,15 @@ object distTableUtilsMod {
   
   inline def isSelectionCheckbox(e: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionCheckbox")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  /**
+    * Checks if a given width is valid for a column.
+    *
+    * @param width Width string to check
+    * @returns {boolean} true if the width is valid, false otherwise
+    */
+  inline def isValidColumnWidth(): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColumnWidth")().asInstanceOf[/* is string */ Boolean]
+  inline def isValidColumnWidth(width: String): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColumnWidth")(width.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
   inline def scrollElementIntoView(
     scrollContainer: HTMLElement,
     element: HTMLElement,

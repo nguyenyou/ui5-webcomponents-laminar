@@ -10,12 +10,14 @@ trait ClearIcon extends StObject {
   
   var scope: String
   
+  var searchFieldAriaLabel: String
+  
   var searchIcon: String
 }
 object ClearIcon {
   
-  inline def apply(clearIcon: String, scope: String, searchIcon: String): ClearIcon = {
-    val __obj = js.Dynamic.literal(clearIcon = clearIcon.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], searchIcon = searchIcon.asInstanceOf[js.Any])
+  inline def apply(clearIcon: String, scope: String, searchFieldAriaLabel: String, searchIcon: String): ClearIcon = {
+    val __obj = js.Dynamic.literal(clearIcon = clearIcon.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], searchFieldAriaLabel = searchFieldAriaLabel.asInstanceOf[js.Any], searchIcon = searchIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearIcon]
   }
   
@@ -25,6 +27,8 @@ object ClearIcon {
     inline def setClearIcon(value: String): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setSearchFieldAriaLabel(value: String): Self = StObject.set(x, "searchFieldAriaLabel", value.asInstanceOf[js.Any])
     
     inline def setSearchIcon(value: String): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
   }

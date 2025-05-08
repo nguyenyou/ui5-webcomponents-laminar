@@ -73,6 +73,8 @@ object distSideNavigationGroupMod {
   trait SideNavigationGroup
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default {
     
+    def _arrowTooltip: String = js.native
+    
     def _expanded: js.UndefOr[Boolean] = js.native
     
     def _groupId: js.UndefOr[String] = js.native
@@ -84,8 +86,6 @@ object distSideNavigationGroupMod {
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
     def _toggle(): Unit = js.native
-    
-    def accDescription: String = js.native
     
     def allItems: js.Array[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default

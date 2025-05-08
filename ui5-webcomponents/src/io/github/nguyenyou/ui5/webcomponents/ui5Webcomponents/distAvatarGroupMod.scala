@@ -15,8 +15,10 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsSt
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.XL
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.XS
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.button
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.group
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.EventListenerOptions
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.HTMLElement
@@ -303,7 +305,13 @@ object distAvatarGroupMod {
     
     def onAvatarUI5Click(e: MouseEvent): Unit = js.native
     
-    def onOverflowButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("onOverflowButtonClick")
+    def onOverflowButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     /**
       * Defines the overflow button of the component.

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShellBarAccessibilityAttributes extends StObject {
   
+  var branding: js.UndefOr[ShellBarBrandingAccessibilityAttributes] = js.undefined
+  
   var logo: js.UndefOr[ShellBarLogoAccessibilityAttributes] = js.undefined
   
   var notifications: js.UndefOr[ShellBarAreaAccessibilityAttributes] = js.undefined
@@ -27,6 +29,10 @@ object ShellBarAccessibilityAttributes {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ShellBarAccessibilityAttributes] (val x: Self) extends AnyVal {
+    
+    inline def setBranding(value: ShellBarBrandingAccessibilityAttributes): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
+    
+    inline def setBrandingUndefined: Self = StObject.set(x, "branding", js.undefined)
     
     inline def setLogo(value: ShellBarLogoAccessibilityAttributes): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     

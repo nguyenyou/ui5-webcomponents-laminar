@@ -2,6 +2,8 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ArrowButton
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Arrowclick
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.Event
 import org.scalajs.dom.FocusEvent
@@ -158,13 +160,19 @@ object distSplitButtonMod {
     def _fireClick(): Unit = js.native
     def _fireClick(e: Event): Unit = js.native
     
+    def _handleArrowButtonAction(e: KeyboardEvent): Unit = js.native
     /**
       * Handles the click event and the focus on the arrow button.
       * @param e - keyboard event
       * @private
       */
-    def _handleArrowButtonAction(e: KeyboardEvent): Unit = js.native
-    def _handleArrowButtonAction(e: MouseEvent): Unit = js.native
+    @JSName("_handleArrowButtonAction")
+    def _handleArrowButtonAction_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     /**
       * Handles the default action and the active state of the respective button.
@@ -173,7 +181,13 @@ object distSplitButtonMod {
       */
     def _handleDefaultAction(e: KeyboardEvent): Unit = js.native
     
-    def _handleMouseClick(e: MouseEvent): Unit = js.native
+    @JSName("_handleMouseClick")
+    def _handleMouseClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _handleShiftOrEscapePressed(): Unit = js.native
     

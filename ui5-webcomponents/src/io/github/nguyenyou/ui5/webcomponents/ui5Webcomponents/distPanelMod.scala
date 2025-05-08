@@ -7,7 +7,9 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesPanelAcce
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`0`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.heading
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
@@ -166,7 +168,13 @@ object distPanelMod {
     
     def _headerOnTarget(target: HTMLElement): Boolean = js.native
     
-    def _toggleButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("_toggleButtonClick")
+    def _toggleButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _toggleOpen(): Unit = js.native
     

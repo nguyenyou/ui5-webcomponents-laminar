@@ -6,13 +6,13 @@ import io.github.nguyenyou.ui5.webcomponents.std.HTMLElement
 import io.github.nguyenyou.ui5.webcomponents.std.Record
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Activestatechange
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteMod.ColorPaletteNavigationItem
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-button-hiddenText-type`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.I18nText
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaRole
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.LowercaseString
 import org.scalajs.dom.EventListenerOptions
 import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
 import org.scalajs.dom.Node
 import org.scalajs.dom.TouchEvent
 import org.scalablytyped.runtime.StObject
@@ -169,7 +169,7 @@ object distButtonMod {
       */
     var _isTouch: Boolean = js.native
     
-    def _onclick(): Unit = js.native
+    def _onclick(e: MouseEvent): Unit = js.native
     
     def _onfocusout(): Unit = js.native
     
@@ -246,8 +246,6 @@ object distButtonMod {
       * @private
       */
     var active: Boolean = js.native
-    
-    def ariaDescribedbyText: js.UndefOr[`ui5-button-hiddenText-type`] = js.native
     
     def ariaDescriptionText: js.UndefOr[String] = js.native
     
@@ -355,8 +353,6 @@ object distButtonMod {
     
     def shouldRenderBadge: Boolean = js.native
     
-    def showIconTooltip: Boolean = js.native
-    
     /**
       * When set to `true`, the component will
       * automatically submit the nearest HTML form element on `press`.
@@ -429,6 +425,40 @@ object distButtonMod {
       inline def setHasPopup(value: AriaHasPopup): Self = StObject.set(x, "hasPopup", value.asInstanceOf[js.Any])
       
       inline def setHasPopupUndefined: Self = StObject.set(x, "hasPopup", js.undefined)
+    }
+  }
+  
+  trait ButtonClickEventDetail extends StObject {
+    
+    var altKey: Boolean
+    
+    var ctrlKey: Boolean
+    
+    var metaKey: Boolean
+    
+    var originalEvent: MouseEvent
+    
+    var shiftKey: Boolean
+  }
+  object ButtonClickEventDetail {
+    
+    inline def apply(altKey: Boolean, ctrlKey: Boolean, metaKey: Boolean, originalEvent: MouseEvent, shiftKey: Boolean): ButtonClickEventDetail = {
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ButtonClickEventDetail]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonClickEventDetail] (val x: Self) extends AnyVal {
+      
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     }
   }
   

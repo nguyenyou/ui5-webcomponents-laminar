@@ -4,12 +4,13 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Active
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.HTMLElementindividualSlot
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Navigate
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Navigation
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateScrollEnablementMod.ScrollEnablementEventListenerParam
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
-import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -148,7 +149,13 @@ object distCarouselMod {
     
     var _lastFocusedElements: js.Array[HTMLElement] = js.native
     
-    def _navButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("_navButtonClick")
+    def _navButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _onResize(): Unit = js.native
     

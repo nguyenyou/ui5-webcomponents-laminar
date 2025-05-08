@@ -3,7 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distLinkMod.LinkAccessibilityAttributes
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.Space
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`DotDotDot `
-import org.scalajs.dom.MouseEvent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,7 +101,13 @@ object distExpandableTextMod {
     
     var _expanded: Boolean = js.native
     
-    def _handleCloseButtonClick(e: MouseEvent): Unit = js.native
+    @JSName("_handleCloseButtonClick")
+    def _handleCloseButtonClick_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def _handlePopoverClose(): Unit = js.native
     

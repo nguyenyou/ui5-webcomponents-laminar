@@ -7,7 +7,9 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelec
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListSelectionModeMod.ListSelectionMode.None
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`-1`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.HTMLElement
@@ -319,7 +321,13 @@ object distTokenizerMod {
     
     def handleClearAll(): Unit = js.native
     
-    def handleDialogButtonPress(e: MouseEvent): Unit = js.native
+    @JSName("handleDialogButtonPress")
+    def handleDialogButtonPress_click(
+      e: UI5CustomEvent[
+          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+          click
+        ]
+    ): Unit = js.native
     
     def hasTokens: Boolean = js.native
     
@@ -438,6 +446,10 @@ object distTokenizerMod {
     
     def tokenizerLabel: String = js.native
     
+    /**
+      * Defines the tokens to be displayed.
+      * @public
+      */
     var tokens: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTokenMod.default] = js.native
   }
   

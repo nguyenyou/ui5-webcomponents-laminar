@@ -2,12 +2,14 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBar
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.IButton
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Branding
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.ContentInfo
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Contentitemvisibilitychange
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Notifications
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.SearchField
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings._empty
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.button
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.group
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.link
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.toolbar
@@ -15,7 +17,6 @@ import org.scalajs.dom.CSSStyleDeclaration
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
-import org.scalajs.dom.MouseEvent
 import org.scalajs.dom.MutationObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,6 +60,8 @@ trait ShellBar
   
   var _autoRestoreSearchField: Boolean = js.native
   
+  def _brandingText: js.UndefOr[String] = js.native
+  
   var _cachedHiddenContent: js.Array[HTMLElement] = js.native
   
   def _calculateCSSREMValue(styleSet: CSSStyleDeclaration, propertyName: String): Double = js.native
@@ -69,9 +72,11 @@ trait ShellBar
   
   def _contentItemsRole: js.UndefOr[group] = js.native
   
-  def _contentItemsText: String = js.native
+  def _contentItemsText: js.UndefOr[String] = js.native
   
   var _defaultItemPressPrevented: Boolean = js.native
+  
+  def _enableContentAreaAccessibility: Boolean = js.native
   
   def _fireContentItemVisibilityChangeEvent(): Unit = js.native
   
@@ -104,13 +109,31 @@ trait ShellBar
   
   def _handleCancelButtonPress(): Unit = js.native
   
-  def _handleCustomActionPress(e: MouseEvent): Unit = js.native
+  @JSName("_handleCustomActionPress")
+  def _handleCustomActionPress_click(
+    e: UI5CustomEvent[
+      io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+      click
+    ]
+  ): Unit = js.native
   
-  def _handleNotificationsPress(e: MouseEvent): Unit = js.native
+  @JSName("_handleNotificationsPress")
+  def _handleNotificationsPress_click(
+    e: UI5CustomEvent[
+      io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+      click
+    ]
+  ): Unit = js.native
   
   def _handleOverflowPress(): Unit = js.native
   
-  def _handleProductSwitchPress(e: MouseEvent): Unit = js.native
+  @JSName("_handleProductSwitchPress")
+  def _handleProductSwitchPress_click(
+    e: UI5CustomEvent[
+      io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default, 
+      click
+    ]
+  ): Unit = js.native
   
   def _handleProfilePress(): Unit = js.native
   
@@ -172,8 +195,6 @@ trait ShellBar
   
   def _overflowText: String = js.native
   
-  def _parsePxValue(styleSet: CSSStyleDeclaration, propertyName: String): Double = js.native
-  
   def _productSwitchBtnText: String = js.native
   
   def _productsText: String = js.native
@@ -194,6 +215,8 @@ trait ShellBar
   
   def _shellbarText: String = js.native
   
+  var _showSearchField: Boolean = js.native
+  
   def _toggleActionPopover(): Unit = js.native
   
   def _updateContentInfo(newContentInfo: js.Array[IShellBarContentItem]): Unit = js.native
@@ -204,7 +227,7 @@ trait ShellBar
   
   def _updateSearchFieldState(): Unit = js.native
   
-  def accInfo: Notifications = js.native
+  def accInfo: Branding = js.native
   
   def accLogoRole: link | button = js.native
   
@@ -220,6 +243,7 @@ trait ShellBar
     * - **product** - `product.expanded` and `product.hasPopup`.
     * - **search** - `search.hasPopup`.
     * - **overflow** - `overflow.expanded` and `overflow.hasPopup`.
+    * - **branding** - `branding.name`.
     *
     * The accessibility attributes support the following values:
     *
@@ -296,6 +320,15 @@ trait ShellBar
   
   def customItemsInfo: js.Array[IShelBarItemInfo] = js.native
   
+  /**
+    * Disables the automatic search field expansion/collapse when the available space is not enough.
+    *
+    * **Note:** The `disableSearchCollapse` property is in an experimental state and is a subject to change.
+    * @default false
+    * @public
+    */
+  var disableSearchCollapse: Boolean = js.native
+  
   def domCalculatedValues(cssVar: String): Double = js.native
   
   def endContent: js.Array[
@@ -306,6 +339,14 @@ trait ShellBar
   
   @JSName("eventDetails")
   var eventDetails_ShellBar: Contentitemvisibilitychange = js.native
+  
+  /**
+    * Returns the `search` icon DOM ref.
+    * @returns The search icon DOM ref
+    * @public
+    * @since 2.10.0
+    */
+  def getSearchButtonDomRef(): js.Promise[HTMLElement | Null] = js.native
   
   def hasAssistant: Boolean = js.native
   
@@ -323,15 +364,24 @@ trait ShellBar
   
   def hasSearchField: Boolean = js.native
   
+  def hasSelfCollapsibleSearch: Boolean = js.native
+  
   def hidableDomElements: js.Array[HTMLElement] = js.native
+  
+  /**
+    * Defines the visibility state of the search button.
+    *
+    * **Note:** The `hideSearchButton` property is in an experimental state and is a subject to change.
+    * @default false
+    * @public
+    */
+  var hideSearchButton: Boolean = js.native
   
   def imageBtnText: js.UndefOr[String] = js.native
   
   def isIconHidden(name: String): Boolean = js.native
   
   def isSBreakPoint: Boolean = js.native
-  
-  def isSearchFieldVisible: Double = js.native
   
   /**
     * Defines the `ui5-shellbar` additional items.
@@ -457,6 +507,8 @@ trait ShellBar
     */
   def profileDomRef: HTMLElement | Null = js.native
   
+  def search: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default | Null = js.native
+  
   /**
     * Defines the `ui5-input`, that will be used as a search field.
     * @public
@@ -471,6 +523,12 @@ trait ShellBar
     * @public
     */
   var secondaryTitle: js.UndefOr[String] = js.native
+  
+  /**
+    * Use this method to change the state of the search filed according to internal logic.
+    * An event is fired to notify the change.
+    */
+  def setSearchState(expanded: Boolean): js.Promise[Unit] = js.native
   
   def shouldIncludeSeparator(itemInfo: IShellBarContentItem, contentInfo: js.Array[IShellBarContentItem]): Boolean = js.native
   def shouldIncludeSeparator(itemInfo: Unit, contentInfo: js.Array[IShellBarContentItem]): Boolean = js.native
@@ -497,6 +555,7 @@ trait ShellBar
     */
   var showProductSwitch: Boolean = js.native
   
+  def showSearchField: Boolean = js.native
   /**
     * Defines, if the Search Field would be displayed when there is a valid `searchField` slot.
     *
@@ -504,7 +563,7 @@ trait ShellBar
     * @default false
     * @public
     */
-  var showSearchField: Boolean = js.native
+  def showSearchField_=(value: Boolean): Unit = js.native
   
   def showStartSeparator: Boolean = js.native
   

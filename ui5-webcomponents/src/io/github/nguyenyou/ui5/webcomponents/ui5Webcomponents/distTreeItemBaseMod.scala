@@ -5,6 +5,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.PreContent
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Stepin
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`navigation-down-arrow`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`navigation-right-arrow`
+import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -59,6 +60,11 @@ object distTreeItemBaseMod {
       */
     var _fixed: Boolean = js.native
     
+    /**
+      * @private
+      */
+    var _hasImage: Boolean = js.native
+    
     def _toggleClick(e: KeyboardEvent): Unit = js.native
     def _toggleClick(e: MouseEvent): Unit = js.native
     
@@ -109,6 +115,8 @@ object distTreeItemBaseMod {
       */
     var hasChildren: Boolean = js.native
     
+    def hasImage: Boolean = js.native
+    
     def hasParent: Boolean = js.native
     
     /**
@@ -119,6 +127,17 @@ object distTreeItemBaseMod {
     var icon: js.UndefOr[String] = js.native
     
     def iconAccessibleName: String = js.native
+    
+    /**
+      * **Note:** While the slot allows option for setting custom avatar, to match the
+      * design guidelines, please use the `ui5-avatar` with size XS.
+      *
+      * **Note:** If bigger `ui5-avatar` needs to be used, then the size of the
+      * `ui5-tree-item` should be customized in order to fit.
+      * @since 2.10.0
+      * @public
+      */
+    var image: js.Array[HTMLElement] = js.native
     
     /**
       * Defines whether the selection of a tree node is displayed as partially selected.
