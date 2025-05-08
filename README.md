@@ -151,6 +151,17 @@ I'd love to hear from you! If you're using this library, have questions, or want
 
 This project is meant to serve the community, and I'm eager to learn from your insights and experiences.
 
+## Development
+
+### Website
+
+```sh
+corepack enable
+yarn insall
+yarn dev
+```
+
+Open: http://localhost:5173
 ## Credits
 
 This project wouldn't be possible without the brilliant work and generous sharing of knowledge from many wonderful people:
