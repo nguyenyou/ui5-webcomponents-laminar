@@ -29,7 +29,7 @@ object DialogView extends ExampleView("Dialog") {
           |    _.headerText := "Register Form",
           |    sectionTag(
           |      div(
-          |        cls("grid grid-cols-2"),
+          |        tw.grid.grid_cols_2,
           |        Label(
           |          _.forId := "username",
           |          _.required := true,
@@ -38,7 +38,7 @@ object DialogView extends ExampleView("Dialog") {
           |        Input(_.id := "username")
           |      ),
           |      div(
-          |        cls("grid grid-cols-2"),
+          |        tw.grid.grid_cols_2,
           |        Label(
           |          _.forId := "password",
           |          _.required := true,
@@ -51,7 +51,7 @@ object DialogView extends ExampleView("Dialog") {
           |        )
           |      ),
           |      div(
-          |        cls("grid grid-cols-2"),
+          |        tw.grid.grid_cols_2,
           |        Label(
           |          _.forId := "email",
           |          _.required := true,
@@ -61,7 +61,7 @@ object DialogView extends ExampleView("Dialog") {
           |      ),
           |    ),
           |    _.slots.footer := div(
-          |      cls("w-full flex items-center justify-end py-4 gap-2"),
+          |      tw.w_full.flex.items_center.justify_end.py_4.gap_2,
           |      Button(
           |        _.design := ButtonDesign.Emphasized,
           |        "Submit",

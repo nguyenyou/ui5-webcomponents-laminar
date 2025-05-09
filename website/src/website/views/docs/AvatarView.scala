@@ -208,7 +208,7 @@ object AvatarView extends ExampleView("Avatar") {
             cls("border-[var(--sapField_BorderColor)]"),
             img(
               src := Images.lampAvatar1,
-              cls("w-full h-full object-contain"),
+              tw.w_full.h_full.object_contain,
               alt := "Lamp"
             )
           )

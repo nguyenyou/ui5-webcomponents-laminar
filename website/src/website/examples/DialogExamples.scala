@@ -2,6 +2,7 @@ package website.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import website.libs.scalawind.*
 
 object DialogExampleBasic extends ExampleRenderer {
 
@@ -9,7 +10,7 @@ object DialogExampleBasic extends ExampleRenderer {
     val openDialogVar = Var(false)
 
     div(
-      cls("p-4"),
+      tw.p_4,
       Button(
         _.design := "Emphasized",
         _.onClick.mapTo(true) --> openDialogVar.writer
@@ -19,7 +20,7 @@ object DialogExampleBasic extends ExampleRenderer {
         _.onClose.mapTo(false) --> openDialogVar.writer,
         _.headerText := "Register Form",
         _.footer := div(
-          cls("w-full flex items-center justify-end py-4 gap-2"),
+          tw.w_full.flex.items_center.justify_end.py_4.gap_2,
           Button(
             _.design := "Emphasized",
             _.onClick.mapTo(false) --> openDialogVar.writer
@@ -32,7 +33,7 @@ object DialogExampleBasic extends ExampleRenderer {
       )(
         sectionTag(
           div(
-            cls("grid grid-cols-2"),
+            tw.grid.grid_cols_2,
             Label(
               _.forId    := "username",
               _.required := true
@@ -40,7 +41,7 @@ object DialogExampleBasic extends ExampleRenderer {
             Input(_.id := "username")()
           ),
           div(
-            cls("grid grid-cols-2"),
+            tw.grid.grid_cols_2,
             Label(
               _.forId    := "password",
               _.required := true
@@ -52,7 +53,7 @@ object DialogExampleBasic extends ExampleRenderer {
             )()
           ),
           div(
-            cls("grid grid-cols-2"),
+            tw.grid.grid_cols_2,
             Label(
               _.forId    := "email",
               _.required := true

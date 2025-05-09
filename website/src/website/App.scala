@@ -55,11 +55,8 @@ case class App() {
             tw.container_wrapper.border_l.border_r.border_grid.flex_1.flex.flex_col,
             div(
               tw.container.flex_1.items_start,
-              tw.md(tw.grid.gap_6),
-              tw.lg(tw.grid.gap_10),
-              cls(
-                "md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[240px_minmax(0,1fr)]"
-              ),
+              tw.md(tw.grid.gap_6.grid_cols_("220px_minmax(0,1fr)")),
+              tw.lg(tw.grid.gap_10.grid_cols_("240px_minmax(0,1fr)")),
               Sidebar()(),
               mainTag(
                 tw.relative.py_6
@@ -73,7 +70,7 @@ case class App() {
                   tw.hidden.text_sm.xl(tw.block),
                   div(
                     tw.sticky.top_20._mt_6.pt_4,
-                    cls("h-[calc(100vh-3.5rem)]"),
+                    tw.h_("calc(100vh-3.5rem)"),
                     TableOfContents()()
                   )
                 )

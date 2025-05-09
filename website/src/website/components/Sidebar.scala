@@ -112,7 +112,7 @@ case class Sidebar() {
     asideTag(
       tw.relative.border_grid.fixed.top_14.z_30.hidden,
       tw.w_full.shrink_0.border_r.md(tw.sticky.block),
-      cls("h-[calc(100vh-3.5rem)]"),
+      tw.h_("calc(100vh-3.5rem)"),
       hoverIndicator,
       scrollContainer.amend(
         tw.no_scrollbar.h_full.overflow_auto.py_6.pr_4.lg(tw.py_8),

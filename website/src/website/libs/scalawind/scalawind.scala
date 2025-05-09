@@ -232,6 +232,7 @@ case class Tailwind() {
   def gap_10                          = this
   def items_start                     = this
   def grid                            = this
+  def grid_cols_2                     = this
   def py_0                            = this
   def py_4                            = this
   def py_6                            = this
