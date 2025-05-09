@@ -4,6 +4,7 @@ object ExampleRegistry {
 
   val examples = List(
     DialogExampleBasic,
+    DialogExampleStates,
     PopoverExampleBasic,
     ToastExampleBasic,
     ToastExampleDuration,
