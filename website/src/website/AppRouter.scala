@@ -69,6 +69,7 @@ object Pages {
   case object TokenPage                extends Page("Token")
   case object TextAreaPage             extends Page("TextArea")
   case object BarcodeScannerDialogPage extends Page("BarcodeScannerDialog")
+  case object FormPage                 extends Page("Form")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -127,6 +128,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(MultiInputPage)(MultiInputView())
   .handleValue(AiButtonPage)(AiButtonView())
   .handleValue(BarcodeScannerDialogPage)(BarcodeScannerDialogView())
+  .handleValue(FormPage)(FormView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -177,7 +179,8 @@ val docPages: List[Page] = List(
   PanelPage,
   ProgressIndicatorPage,
   PopoverPage,
-  TreeViewPage
+  TreeViewPage,
+  FormPage
 )
 
 // Step 4: Map URL to Page
@@ -288,7 +291,9 @@ object AppRouter
         Route
           .static(AiButtonPage, root / AiButtonPage.path / endOfSegments, "/docs"),
         Route
-          .static(BarcodeScannerDialogPage, root / BarcodeScannerDialogPage.path / endOfSegments, "/docs")
+          .static(BarcodeScannerDialogPage, root / BarcodeScannerDialogPage.path / endOfSegments, "/docs"),
+        Route
+          .static(FormPage, root / FormPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
