@@ -70,6 +70,7 @@ object Pages {
   case object TextAreaPage             extends Page("TextArea")
   case object BarcodeScannerDialogPage extends Page("BarcodeScannerDialog")
   case object FormPage                 extends Page("Form")
+  case object ResponsivePopoverPage    extends Page("ResponsivePopover")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -129,6 +130,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(AiButtonPage)(AiButtonView())
   .handleValue(BarcodeScannerDialogPage)(BarcodeScannerDialogView())
   .handleValue(FormPage)(FormView())
+  .handleValue(ResponsivePopoverPage)(ResponsivePopoverView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -137,11 +139,12 @@ val docPages: List[Page] = List(
   AvatarPage,
   AvatarGroupPage,
   BarPage,
+  BarcodeScannerDialogPage,
   BreadcrumbsPage,
   BusyIndicatorPage,
   ButtonPage,
-  CalendarPage,
   CalendarLegendPage,
+  CalendarPage,
   CardPage,
   CarouselPage,
   CheckBoxPage,
@@ -153,34 +156,35 @@ val docPages: List[Page] = List(
   DateRangePickerPage,
   DateTimePickerPage,
   DialogPage,
+  FormPage,
   InputPage,
   LabelPage,
   LinkPage,
   ListViewPage,
   MenuPage,
   MessageStripPage,
-  MultiInputPage,
   MultiComboBoxPage,
+  MultiInputPage,
+  PanelPage,
+  PopoverPage,
+  ProgressIndicatorPage,
   RadioButtonPage,
   RangeSliderPage,
   RatingIndicatorPage,
-  SplitButtonPage,
-  SelectPage,
+  ResponsivePopoverPage,
   SegmentedButtonPage,
-  SwitchPage,
+  SelectPage,
   SliderPage,
-  ToastPage,
-  ToggleButtonPage,
-  TokenPage,
+  SplitButtonPage,
+  SwitchPage,
   TagPage,
   TextAreaPage,
   TextPage,
   TitlePage,
-  PanelPage,
-  ProgressIndicatorPage,
-  PopoverPage,
-  TreeViewPage,
-  FormPage
+  ToastPage,
+  ToggleButtonPage,
+  TokenPage,
+  TreeViewPage
 )
 
 // Step 4: Map URL to Page
@@ -293,7 +297,9 @@ object AppRouter
         Route
           .static(BarcodeScannerDialogPage, root / BarcodeScannerDialogPage.path / endOfSegments, "/docs"),
         Route
-          .static(FormPage, root / FormPage.path / endOfSegments, "/docs")
+          .static(FormPage, root / FormPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ResponsivePopoverPage, root / ResponsivePopoverPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
