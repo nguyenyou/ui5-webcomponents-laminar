@@ -116,7 +116,28 @@ object DialogView extends ExampleView("Dialog") {
         example = DialogExampleStates,
         title = "States",
         iframeHeight = 400
-      )()
+      )(),
+      Demo(
+        title = "Stretch",
+        content = Source.annotate {
+          val openEventBus = EventBus[Boolean]()
+
+          val button = Button(
+            _.onClick.mapTo(true) --> openEventBus
+          )("Open Dialog")
+
+          div(
+            compactSize(true),
+            button,
+            Dialog(
+              _.open <-- openEventBus,
+              _.stretch := true
+            )(
+              p("This dialog is stretched to the width of the screen. Press ESC to close it.")
+            )
+          )
+        }
+      )
     )
   }
 
