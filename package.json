@@ -1,5 +1,5 @@
 {
-  "name": "ui5-webcomponents-laminar-monorepo",
+  "name": "ui5-webcomponents-laminar",
   "version": "0.0.1",
   "private": true,
   "scripts": {

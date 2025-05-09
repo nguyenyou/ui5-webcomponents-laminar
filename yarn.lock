@@ -9646,9 +9646,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ui5-webcomponents-laminar-monorepo@workspace:.":
+"ui5-webcomponents-laminar@workspace:.":
   version: 0.0.0-use.local
-  resolution: "ui5-webcomponents-laminar-monorepo@workspace:."
+  resolution: "ui5-webcomponents-laminar@workspace:."
   dependencies:
     "@ui5/webcomponents": "npm:2.10.0"
     "@ui5/webcomponents-ai": "npm:2.10.0"
