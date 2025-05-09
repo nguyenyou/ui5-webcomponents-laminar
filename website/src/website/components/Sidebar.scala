@@ -95,6 +95,19 @@ case class Sidebar() {
       case None => ()
     }
 
+  def Section(title: String, pages: List[Page]) = {
+    div(
+      div(
+        tw.rounded_md.px_2.py_1.text_sm.font_medium,
+        title
+      ),
+      div(
+        tw.grid.grid_flow_row.auto_rows_max.`gap_0.5`.text_sm,
+        pages.map(page => pageLink(page))
+      )
+    )
+  }
+
   def apply(): HtmlElement = {
     asideTag(
       tw.relative.border_grid.fixed.top_14.z_30.hidden,
@@ -105,23 +118,17 @@ case class Sidebar() {
         tw.no_scrollbar.h_full.overflow_auto.py_6.pr_4.lg(tw.py_8),
         div(
           tw.flex.flex_col.gap_6,
-          div(
-            div(
-              tw.rounded_md.px_2.py_1.text_sm.font_medium,
-              "Components"
-            ),
-            div(
-              tw.grid.grid_flow_row.auto_rows_max.`gap_0.5`.text_sm,
-              docPages.map(page => pageLink(page))
-            ),
-            div(
-              tw.rounded_md.px_2.py_1.text_sm.font_medium,
-              "AI"
-            ),
-            div(
-              tw.grid.grid_flow_row.auto_rows_max.`gap_0.5`.text_sm,
-              pageLink(AiButtonPage)
-            )
+          Section(
+            title = "Main",
+            pages = docPages
+          ),
+          Section(
+            title = "Fiori",
+            pages = List(BarcodeScannerDialogPage)
+          ),
+          Section(
+            title = "AI",
+            pages = List(AiButtonPage)
           )
         )
       )
