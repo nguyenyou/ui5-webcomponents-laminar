@@ -31,10 +31,12 @@ case class App() {
                   ),
                   div(
                     tw.font_mono.h_full.flex.items_center.relative.font_bold,
-                    "Laminar UI5",
                     div(
-                      tw.absolute.left_0.bottom_1.text_xs.font_normal.font_mono,
-                      s"v${BuildInfo.version}"
+                      "UI5 Laminar",
+                      span(
+                        tw.text_xs.font_normal.font_mono.ml_2,
+                        s"v${BuildInfo.version}"
+                      )
                     )
                   )
                 )

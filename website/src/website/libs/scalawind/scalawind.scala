@@ -194,6 +194,7 @@ case class Tailwind() {
   def group                           = this
   def flex                            = this
   def flex_1                          = this
+  def items_end                       = this
   def flex_col                        = this
   def min_h_svh                       = this
   def justify_center                  = this
@@ -342,4 +343,5 @@ case class Tailwind() {
   def _bottom_2                       = this
   def _bottom_4                       = this
   def font_mono                       = this
+  def ml_1                            = this
 }
