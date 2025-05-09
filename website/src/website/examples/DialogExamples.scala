@@ -3,10 +3,11 @@ package website.examples
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.libs.scalawind.*
+import website.macros.Source
 
 object DialogExampleBasic extends ExampleRenderer {
 
-  override def component: HtmlElement = {
+  override def content = Source.annotate {
     val openDialogVar = Var(false)
 
     div(
@@ -64,5 +65,4 @@ object DialogExampleBasic extends ExampleRenderer {
       )
     )
   }
-
 }

@@ -14,69 +14,7 @@ object DialogView extends ExampleView("Dialog") {
         example = DialogExampleBasic,
         title = "Basic",
         iframeHeight = 400
-      ) {
-        """
-          |val openDialogBus = EventBus[Boolean]()
-          |
-          |div(
-          |  Button(
-          |    _.design := ButtonDesign.Emphasized,
-          |    "Open Dialog",
-          |    _.events.onClick.mapTo(true) --> openDialogBus
-          |  ),
-          |  Dialog(
-          |    _.open <-- openDialogBus,
-          |    _.headerText := "Register Form",
-          |    sectionTag(
-          |      div(
-          |        tw.grid.grid_cols_2,
-          |        Label(
-          |          _.forId := "username",
-          |          _.required := true,
-          |          "Username:"
-          |        ),
-          |        Input(_.id := "username")
-          |      ),
-          |      div(
-          |        tw.grid.grid_cols_2,
-          |        Label(
-          |          _.forId := "password",
-          |          _.required := true,
-          |          "Password:"
-          |        ),
-          |        Input(
-          |          _.id := "password",
-          |          _.tpe := InputType.Password,
-          |          _.valueState := ValueState.Negative
-          |        )
-          |      ),
-          |      div(
-          |        tw.grid.grid_cols_2,
-          |        Label(
-          |          _.forId := "email",
-          |          _.required := true,
-          |          "Email:"
-          |        ),
-          |        Input(_.id := "email", _.tpe := InputType.Email)
-          |      ),
-          |    ),
-          |    _.slots.footer := div(
-          |      tw.w_full.flex.items_center.justify_end.py_4.gap_2,
-          |      Button(
-          |        _.design := ButtonDesign.Emphasized,
-          |        "Submit",
-          |        _.events.onClick.mapTo(false) --> openDialogBus
-          |      ),
-          |      Button(
-          |        _.design := ButtonDesign.Transparent,
-          |        "Cancel",
-          |        _.events.onClick.mapTo(false) --> openDialogBus
-          |      )
-          |    )
-          |  )
-          |)
-         """.stripMargin
-      }
+      )()
     )
   }
 

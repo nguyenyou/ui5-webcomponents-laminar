@@ -5,9 +5,12 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThem
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
 import org.scalajs.dom
 import website.facades.GlobalConfig
+
 trait ExampleRenderer {
   def id: String = this.getClass.getSimpleName
-  def component: HtmlElement
+  def content: (String, HtmlElement)
+  def source: String         = content._1
+  def component: HtmlElement = content._2
 
   def apply() = {
     val previewContainer = dom.document.getElementById(id)

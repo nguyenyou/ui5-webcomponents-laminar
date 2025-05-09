@@ -2,10 +2,11 @@ package website.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import website.macros.Source
 
 object PopoverExampleBasic extends ExampleRenderer {
 
-  override def component: HtmlElement = {
+  override def content = Source.annotate {
     val openVar: Var[Boolean] = Var(false)
 
     div(

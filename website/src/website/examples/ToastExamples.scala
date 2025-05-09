@@ -2,10 +2,11 @@ package website.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import website.macros.Source
 
 case object ToastExampleBasic extends ExampleRenderer {
 
-  override def component: HtmlElement = {
+  override def content = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(
@@ -21,7 +22,7 @@ case object ToastExampleBasic extends ExampleRenderer {
 
 case object ToastExampleDuration extends ExampleRenderer {
 
-  override def component: HtmlElement = {
+  override def content = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(
@@ -38,7 +39,7 @@ case object ToastExampleDuration extends ExampleRenderer {
 
 case object ToastExamplePlacement extends ExampleRenderer {
 
-  override def component: HtmlElement = {
+  override def content = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(

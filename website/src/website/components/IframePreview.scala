@@ -91,7 +91,11 @@ object IframePreview {
           }
       )
     } {
-      sourceCode
+      if (sourceCode.isEmpty) {
+        example.source
+      } else {
+        sourceCode
+      }
     }
   }
 
