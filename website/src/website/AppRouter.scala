@@ -139,7 +139,6 @@ val docPages: List[Page] = List(
   AvatarPage,
   AvatarGroupPage,
   BarPage,
-  BarcodeScannerDialogPage,
   BreadcrumbsPage,
   BusyIndicatorPage,
   ButtonPage,
