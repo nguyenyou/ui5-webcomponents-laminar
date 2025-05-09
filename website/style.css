@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@source "../out/website/fullLinkJS.dest";
+
+@theme {
+  --font-sans: "Geist", "sans-serif";
+  --font-mono: "Geist Mono", "monospace";
+  --color-primary: rgb(205, 37, 41);
+  --color-sap-brand: var(--sapBrandColor);
+  --color-sap-text: var(--sapTextColor);
+  --color-sap-neutral: var(--sapNeutralColor);
+  --color-sap-background: var(--sapBackgroundColor);
+}
 
 html,
 body {

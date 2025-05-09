@@ -30,7 +30,7 @@ case class App() {
                     tw.h_6.w_6.object_contain
                   ),
                   div(
-                    tw.font_mono.h_full.flex.items_center.inline_block.relative.font_bold,
+                    tw.font_mono.h_full.flex.items_center.relative.font_bold,
                     "Laminar UI5",
                     div(
                       tw.absolute.left_0.bottom_1.text_xs.font_normal.font_mono,
