@@ -29,7 +29,7 @@ object ResponsivePopoverView extends ExampleView("ResponsivePopover") {
             compactSize(true),
             Button(
               _.id := openerId,
-              _.onClick.map { event =>
+              _.onClick.map { _ =>
                 popover.ref.open = !popover.ref.open
               } --> Observer.empty
             )("Open ResponsivePopover"),
