@@ -1,11 +1,11 @@
-package website.views.docs
+package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.CalendarWeekNumbering
-import website.components.Demo
-import website.libs.scalawind.*
-import website.macros.Source
+import www.components.Demo
+import www.libs.scalawind.*
+import www.macros.Source
 
 object DatePickerView extends ExampleView("Date Picker") {
   @SuppressWarnings(

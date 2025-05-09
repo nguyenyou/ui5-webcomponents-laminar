@@ -1,13 +1,13 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
 import org.scalajs.dom
 import org.scalajs.dom.IntersectionObserver
 import org.scalajs.dom.IntersectionObserverEntry
-import website.AppRouter.currentPageSignal
-import website.facades.ScrollOptions
-import website.facades.scrollIntoViewIfNeeded
-import website.libs.scalawind.*
+import www.AppRouter.currentPageSignal
+import www.facades.ScrollOptions
+import www.facades.scrollIntoViewIfNeeded
+import www.libs.scalawind.*
 
 import scala.scalajs.js
 import scala.util.Random

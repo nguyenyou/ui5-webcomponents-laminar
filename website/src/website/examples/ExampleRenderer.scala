@@ -1,10 +1,10 @@
-package website.examples
+package www.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
 import org.scalajs.dom
-import website.facades.GlobalConfig
+import www.facades.GlobalConfig
 
 trait ExampleRenderer {
   def id: String = this.getClass.getSimpleName

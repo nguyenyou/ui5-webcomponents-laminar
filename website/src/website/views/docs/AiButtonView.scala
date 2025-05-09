@@ -1,4 +1,4 @@
-package website.views.docs
+package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
@@ -7,8 +7,8 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.MenuItem
 import io.github.nguyenyou.ui5.webcomponents.laminar.MenuSeparator
 import io.github.nguyenyou.ui5.webcomponents.laminar.ai.Button
 import io.github.nguyenyou.ui5.webcomponents.laminar.ai.ButtonState
-import website.components.Demo
-import website.macros.Source
+import www.components.Demo
+import www.macros.Source
 
 object AiButtonView extends ExampleView("AI Button") {
 

@@ -1,4 +1,4 @@
-package website.macros
+package www.macros
 
 import com.raquo.laminar.api.L
 

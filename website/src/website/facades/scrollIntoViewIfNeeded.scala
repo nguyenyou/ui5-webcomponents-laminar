@@ -1,4 +1,4 @@
-package website.facades
+package www.facades
 
 import org.scalajs.dom
 

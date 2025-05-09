@@ -1,14 +1,14 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.Assets
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
 import org.scalajs.dom
-import website.components.ThemeProvider.contentDensitySignal
-import website.components.ThemeProvider.directionSignal
-import website.components.ThemeProvider.websiteThemeSignal
-import website.facades.GlobalConfig
+import www.components.ThemeProvider.contentDensitySignal
+import www.components.ThemeProvider.directionSignal
+import www.components.ThemeProvider.websiteThemeSignal
+import www.facades.GlobalConfig
 
 case class ThemeProvider() {
   // Documentation: https://sap.github.io/ui5-webcomponents/docs/development/styling/#theming-assets

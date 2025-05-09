@@ -105,7 +105,7 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Sca
 }
 
 
-object website extends WebModule with Scalafix with BuildInfo {
+object www extends WebModule with Scalafix with BuildInfo {
   def moduleKind = ModuleKind.ESModule
   
   def ivyDeps = super.ivyDeps() ++
@@ -114,7 +114,7 @@ object website extends WebModule with Scalafix with BuildInfo {
     Dependencies.borer
   def moduleDeps = Seq(`ui5-webcomponents-laminar`)
 
-  val buildInfoPackageName = "website"
+  val buildInfoPackageName = "www"
   def buildInfoMembers = Seq(
     BuildInfo.Value("version", Versions.`ui5-webcomponents-laminar`)
   )

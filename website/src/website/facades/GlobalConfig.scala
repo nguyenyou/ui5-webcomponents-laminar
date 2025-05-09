@@ -1,4 +1,4 @@
-package website.facades
+package www.facades
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSGlobalScope

@@ -2,7 +2,7 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
-@source "../out/website/fullLinkJS.dest";
+@source "../out/www/fullLinkJS.dest";
 
 @theme {
   --font-sans: "Geist", "sans-serif";

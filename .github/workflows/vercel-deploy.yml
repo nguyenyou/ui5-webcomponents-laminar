@@ -43,10 +43,10 @@ jobs:
            ${{ runner.os }}-mill-
           
       - name: Build ScalaJS
-        run: ./mill -i website.fullLinkJS
+        run: ./mill -i www.fullLinkJS
         
       - name: Build Vite
-        run: yarn workspace website build:vercel
+        run: yarn workspace www build:vercel
           
       - name: Install and use Vercel CLI
         run: yarn dlx vercel@latest pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}

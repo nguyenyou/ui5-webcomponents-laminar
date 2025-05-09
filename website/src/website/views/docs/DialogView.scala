@@ -1,12 +1,12 @@
-package website.views.docs
+package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
-import website.components.*
-import website.examples.*
-import website.macros.Source
+import www.components.*
+import www.examples.*
+import www.macros.Source
 
 object DialogView extends ExampleView("Dialog") {
 

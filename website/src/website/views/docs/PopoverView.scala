@@ -1,10 +1,10 @@
-package website.views.docs
+package www.views.docs
 
 import com.raquo.laminar.api.L.*
-import website.components.Demo
-import website.components.IframePreview
-import website.examples.PopoverExampleBasic
-import website.macros.Source
+import www.components.Demo
+import www.components.IframePreview
+import www.examples.PopoverExampleBasic
+import www.macros.Source
 
 object PopoverView extends ExampleView("Popover") {
 

@@ -1,4 +1,4 @@
-package website.utils
+package www.utils
 
 import scala.scalajs.LinkingInfo.developmentMode
 

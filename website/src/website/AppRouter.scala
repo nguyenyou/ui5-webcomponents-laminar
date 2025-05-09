@@ -1,4 +1,4 @@
-package website
+package www
 
 import com.raquo.laminar.api.L.*
 import com.raquo.waypoint
@@ -6,7 +6,7 @@ import com.raquo.waypoint.*
 import io.bullet.borer.*
 import io.bullet.borer.derivation.MapBasedCodecs.*
 import org.scalajs.dom
-import website.utils.JsonUtils.*
+import www.utils.JsonUtils.*
 
 import Pages.*
 import AppRouter.*

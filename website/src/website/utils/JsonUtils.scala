@@ -1,4 +1,4 @@
-package website.utils
+package www.utils
 
 import io.bullet.borer.*
 import io.bullet.borer.Json.DecodingConfig

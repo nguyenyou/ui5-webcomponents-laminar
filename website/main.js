@@ -1,2 +1,2 @@
 import "./style.css"
-import "../out/website/fullLinkJS.dest/main"
+import "../out/www/fullLinkJS.dest/main"

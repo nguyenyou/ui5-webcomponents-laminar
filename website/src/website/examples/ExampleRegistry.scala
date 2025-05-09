@@ -1,4 +1,4 @@
-package website.examples
+package www.examples
 
 object ExampleRegistry {
 

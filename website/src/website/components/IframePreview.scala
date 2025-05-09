@@ -1,14 +1,14 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.StringAsIsCodec
 import com.raquo.laminar.keys.HtmlAttr
-import website.components.ThemeProvider.contentDensitySignal
-import website.components.ThemeProvider.directionSignal
-import website.components.ThemeProvider.websiteThemeSignal
-import website.examples.ExampleRenderer
-import website.libs.scalawind.*
-import website.utils.isDevelopment
+import www.components.ThemeProvider.contentDensitySignal
+import www.components.ThemeProvider.directionSignal
+import www.components.ThemeProvider.websiteThemeSignal
+import www.examples.ExampleRenderer
+import www.libs.scalawind.*
+import www.utils.isDevelopment
 
 val srcDocAttr = HtmlAttr[String]("srcDoc", StringAsIsCodec)
 

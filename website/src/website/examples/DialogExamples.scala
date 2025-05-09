@@ -1,11 +1,11 @@
-package website.examples
+package www.examples
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
-import website.libs.scalawind.*
-import website.macros.Source
+import www.libs.scalawind.*
+import www.macros.Source
 
 object DialogExampleBasic extends ExampleRenderer {
 

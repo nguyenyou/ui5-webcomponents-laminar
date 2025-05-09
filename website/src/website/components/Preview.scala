@@ -1,7 +1,7 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
-import website.libs.scalawind.*
+import www.libs.scalawind.*
 
 object Preview {
 

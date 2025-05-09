@@ -10,13 +10,13 @@
     "generate-icons": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers-icons",
     "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",
     "release:ui5-webcomponents-laminar": "./mill -i ui5-webcomponents-laminar.publishSonatypeCentral",
-    "dev": "yarn website:dev && concurrently -c \"auto\" \"yarn website:dev-watch\" \"yarn website:dev-server\"",
-    "website:dev": "./mill website.fullLinkJS",
-    "website:dev-watch": "./mill -w website.fullLinkJS",
-    "website:dev-server": "yarn workspace website dev",
-    "website:prod": "./mill website.fullLinkJS && yarn workspace website build",
-    "website:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ website.sources",
-    "website:fix": "./mill website.fix",
+    "dev": "yarn www:dev && concurrently -c \"auto\" \"yarn www:dev-watch\" \"yarn www:dev-server\"",
+    "www:dev": "./mill www.fullLinkJS",
+    "www:dev-watch": "./mill -w www.fullLinkJS",
+    "www:dev-server": "yarn workspace www dev",
+    "www:prod": "./mill www.fullLinkJS && yarn workspace www build",
+    "www:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ www.sources",
+    "www:fix": "./mill www.fix",
     "ui5-webcomponents-laminar:fmt": "./mill mill.scalalib.scalafmt.ScalafmtModule/ ui5-webcomponents-laminar.sources",
     "ui5-webcomponents-laminar:fix": "./mill ui5-webcomponents-laminar.fix"
   },
@@ -24,7 +24,7 @@
   "workspaces": [
     "cli",
     "examples/*",
-    "website"
+    "www"
   ],
   "dependencies": {
     "@ui5/webcomponents": "2.10.0",

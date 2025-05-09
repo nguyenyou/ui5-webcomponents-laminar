@@ -1,4 +1,4 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
 

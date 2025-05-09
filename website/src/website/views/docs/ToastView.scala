@@ -1,8 +1,8 @@
-package website.views.docs
+package www.views.docs
 
 import com.raquo.laminar.api.L.*
-import website.components.IframePreview
-import website.examples.*
+import www.components.IframePreview
+import www.examples.*
 
 object ToastView extends ExampleView("Toast") {
 

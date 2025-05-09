@@ -1,9 +1,9 @@
-package website.components
+package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import website.facades.hljs
-import website.libs.scalawind.*
+import www.facades.hljs
+import www.libs.scalawind.*
 
 object Codeblock {
 
