@@ -65,7 +65,7 @@ case class App() {
                   .lg(tw.gap_10.py_8)
                   .xl(tw.grid.grid_cols_("1fr_300px")),
                 div(
-                  tw.mx_auto.w_full.min_w_0.max_w_2xl,
+                  tw.mx_auto.w_full.min_w_0.max_w_3xl,
                   child <-- pageViews
                 ),
                 div(
