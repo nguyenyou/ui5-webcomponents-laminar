@@ -22,13 +22,6 @@ trait ExampleView(val name: String) {
     val sample3      = "/img/sample3.jpg"
   }
 
-  def Variants(children: HtmlElement*) = {
-    div(
-      tw.flex.flex_wrap.gap_2,
-      children
-    )
-  }
-
   def apply(): HtmlElement = {
     div(
       tw.p_6,

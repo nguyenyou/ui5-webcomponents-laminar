@@ -4,6 +4,7 @@ import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.CalendarWeekNumbering
 import website.components.Demo
+import website.libs.scalawind.*
 import website.macros.Source
 
 object DatePickerView extends ExampleView("Date Picker") {
@@ -23,7 +24,8 @@ object DatePickerView extends ExampleView("Date Picker") {
       Demo(
         title = "States",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             DatePicker(
               _.value             := "2024-02-29",
               _.valueState        := "Information",

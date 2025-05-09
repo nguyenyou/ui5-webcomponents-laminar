@@ -12,9 +12,9 @@ object ButtonView extends ExampleView("Button") {
       Demo(
         title = "Basic",
         content = Source.annotate {
-          Variants(
-            Button(
-            )("Press"),
+          div(
+            tw.flex.flex_wrap.gap_2,
+            Button()("Press"),
             Button(
               _.icon := IconName.edit
             )("Edit"),
@@ -27,7 +27,8 @@ object ButtonView extends ExampleView("Button") {
       Demo(
         title = "Design",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Button(
               _.design := "Default"
             )("Default"),
@@ -52,7 +53,8 @@ object ButtonView extends ExampleView("Button") {
       Demo(
         title = "Icon Only",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Button(
               _.icon    := IconName.edit,
               _.design  := "Default",
@@ -69,7 +71,8 @@ object ButtonView extends ExampleView("Button") {
       Demo(
         title = "Text and Icon",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Button(
               _.icon := IconName.edit
             )("Edit"),
@@ -82,7 +85,8 @@ object ButtonView extends ExampleView("Button") {
       Demo(
         title = "Icon at the End",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Button(
               _.endIcon := IconName.navigationDownArrow
             )("Button with Icon at the end"),

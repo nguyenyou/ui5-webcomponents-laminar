@@ -21,7 +21,8 @@ object AvatarView extends ExampleView("Avatar") {
       Demo(
         title = "Shapes",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Avatar(
               _.shape    := "Circle",
               _.size     := "M",
@@ -38,7 +39,8 @@ object AvatarView extends ExampleView("Avatar") {
       Demo(
         title = "Sizes",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Avatar(
               _.size     := "XS",
               _.initials := "XS"
@@ -74,7 +76,8 @@ object AvatarView extends ExampleView("Avatar") {
       Demo(
         title = "Color Schemes",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Avatar(
               _.colorScheme := "Accent1"
             )(),
@@ -114,7 +117,8 @@ object AvatarView extends ExampleView("Avatar") {
       Demo(
         title = "With Icon",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Avatar(
               _.icon := IconName.filter,
               _.size := "XS"
@@ -141,7 +145,8 @@ object AvatarView extends ExampleView("Avatar") {
       Demo(
         title = "With Image",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Avatar(
               _.size := "XS"
             )(

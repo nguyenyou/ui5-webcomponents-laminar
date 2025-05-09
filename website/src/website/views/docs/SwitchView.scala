@@ -3,6 +3,7 @@ package website.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
+import website.libs.scalawind.*
 import website.macros.Source
 
 object SwitchView extends ExampleView("Switch") {
@@ -12,7 +13,8 @@ object SwitchView extends ExampleView("Switch") {
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Switch()(),
             Switch(
               _.checked := true
@@ -30,7 +32,8 @@ object SwitchView extends ExampleView("Switch") {
       Demo(
         title = "Design",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             Switch(
               _.design := "Graphical"
             )(),

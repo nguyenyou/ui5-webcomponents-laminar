@@ -3,6 +3,7 @@ package website.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import website.components.Demo
+import website.libs.scalawind.*
 import website.macros.Source
 
 object CheckboxView extends ExampleView("Checkbox") {
@@ -30,7 +31,8 @@ object CheckboxView extends ExampleView("Checkbox") {
       Demo(
         title = "States",
         content = Source.annotate {
-          Variants(
+          div(
+            tw.flex.flex_wrap.gap_2,
             // Value States
             CheckBox(
               _.text       := "Positive",
