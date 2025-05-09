@@ -177,8 +177,7 @@ val docPages: List[Page] = List(
   PanelPage,
   ProgressIndicatorPage,
   PopoverPage,
-  TreeViewPage,
-  BarcodeScannerDialogPage
+  TreeViewPage
 )
 
 // Step 4: Map URL to Page
