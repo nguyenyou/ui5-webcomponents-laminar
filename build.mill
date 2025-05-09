@@ -21,7 +21,7 @@ object Versions {
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
   val `ui5-webcomponents` = "2.10.0"
-  val `ui5-webcomponents-laminar` = "2.10.4"
+  val `ui5-webcomponents-laminar` = "2.10.5"
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
   val borer = "1.14.0"
@@ -82,14 +82,6 @@ trait CommonPublish extends SonatypeCentralPublishModule {
 
   def sonatypeCentralAwaitTimeout: T[Int] = Task { defaultAwaitTimeout * 5 }
 
-  def pomSettings = PomSettings(
-    description = "UI5 Webcomponents Facades",
-    organization = "io.github.nguyenyou",
-    url = "https://github.com/nguyenyou/ui5-webcomponents-laminar",
-    licenses = Seq(License.MIT),
-    versionControl = VersionControl.github("nguyenyou", "ui5-webcomponents-laminar"),
-    developers = Seq(Developer("nguyenyou", "Nguyen You", "https://github.com/nguyenyou")),
-  )
 }
 
 
@@ -101,6 +93,15 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Sca
   Dependencies.`ui5-webcomponents`
 
   // def moduleDeps = Seq(`ui5-webcomponents`)
+
+  def pomSettings = PomSettings(
+    description = "Laminar wrapper for UI5 Webcomponents",
+    organization = "io.github.nguyenyou",
+    url = "https://github.com/nguyenyou/ui5-webcomponents-laminar",
+    licenses = Seq(License.MIT),
+    versionControl = VersionControl.github("nguyenyou", "ui5-webcomponents-laminar"),
+    developers = Seq(Developer("nguyenyou", "Nguyen You", "https://github.com/nguyenyou")),
+  )
 
 }
 
@@ -124,6 +125,16 @@ object www extends WebModule with Scalafix with BuildInfo {
 /* 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def publishVersion = Versions.`ui5-webcomponents`
+
+  def pomSettings = PomSettings(
+    description = "UI5 Webcomponents Facades",
+    organization = "io.github.nguyenyou",
+    url = "https://github.com/nguyenyou/ui5-webcomponents-laminar",
+    licenses = Seq(License.MIT),
+    versionControl = VersionControl.github("nguyenyou", "ui5-webcomponents-laminar"),
+    developers = Seq(Developer("nguyenyou", "Nguyen You", "https://github.com/nguyenyou")),
+  )
+
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
   override def stOutputPackage = "io.github.nguyenyou.ui5.webcomponents"
   override def stOutputPath = millSourcePath / "src"
