@@ -137,7 +137,7 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
 
   def ivyDeps = super.ivyDeps() ++ Dependencies.scalajsDom
   override def stOutputPackage = "io.github.nguyenyou.ui5.webcomponents"
-  override def stOutputPath = millSourcePath / "src"
+  override def stOutputPath = moduleDir / "src"
   override def stMinimize = MinimizeSelection.AllExcept(
     "@ui5/webcomponents", 
     "@ui5/webcomponents-fiori", 

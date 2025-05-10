@@ -2,10 +2,6 @@ package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.compat.Table
-import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableCell
-import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableColumn
-import io.github.nguyenyou.ui5.webcomponents.laminar.compat.TableRow
 import www.components.Demo
 import www.libs.scalawind.*
 import www.macros.Source
@@ -84,24 +80,19 @@ object CardView extends ExampleView("Card") {
             )()
           )(
             Table(
-              _.columns := TableColumn(
-              )(
-                Label()("Sales Order")
-              ),
-              _.columns := TableColumn(
-              )(
-                Label()("Customer")
-              ),
-              _.columns := TableColumn(
-              )(
-                Label()("Net Amount")
-              ),
-              _.columns := TableColumn(
-                _.popinText   := "Status",
-                _.minWidth    := 450,
-                _.demandPopin := true
-              )(
-                Label()("Status")
+              _.headerRow := TableHeaderRow()(
+                TableHeaderCell()(
+                  Label()("Sales Order")
+                ),
+                TableHeaderCell()(
+                  Label()("Customer")
+                ),
+                TableHeaderCell()(
+                  Label()("Net Amount")
+                ),
+                TableHeaderCell()(
+                  Label()("Status")
+                )
               )
             )(
               TableRow()(
@@ -130,20 +121,6 @@ object CardView extends ExampleView("Card") {
                 ),
                 TableCell()(
                   Text()(tw.text_red_500, "Rejected")
-                )
-              ),
-              TableRow()(
-                TableCell()(
-                  Label()("5000010052")
-                ),
-                TableCell()(
-                  Label()("Robert Brown Ent.")
-                ),
-                TableCell()(
-                  Label()("17k USD")
-                ),
-                TableCell()(
-                  Text()(tw.text_orange_500, "Pending")
                 )
               )
             )

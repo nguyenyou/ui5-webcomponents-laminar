@@ -71,6 +71,8 @@ object Pages {
   case object BarcodeScannerDialogPage extends Page("BarcodeScannerDialog")
   case object FormPage                 extends Page("Form")
   case object ResponsivePopoverPage    extends Page("ResponsivePopover")
+  case object ExpandableTextPage       extends Page("ExpandableText")
+  case object TablePage                extends Page("Table")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -131,6 +133,8 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(BarcodeScannerDialogPage)(BarcodeScannerDialogView())
   .handleValue(FormPage)(FormView())
   .handleValue(ResponsivePopoverPage)(ResponsivePopoverView())
+  .handleValue(ExpandableTextPage)(ExpandableTextView())
+  .handleValue(TablePage)(TableView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -155,6 +159,7 @@ val docPages: List[Page] = List(
   DateRangePickerPage,
   DateTimePickerPage,
   DialogPage,
+  ExpandableTextPage,
   FormPage,
   InputPage,
   LabelPage,
@@ -176,6 +181,7 @@ val docPages: List[Page] = List(
   SliderPage,
   SplitButtonPage,
   SwitchPage,
+  TablePage,
   TagPage,
   TextAreaPage,
   TextPage,
@@ -298,7 +304,11 @@ object AppRouter
         Route
           .static(FormPage, root / FormPage.path / endOfSegments, "/docs"),
         Route
-          .static(ResponsivePopoverPage, root / ResponsivePopoverPage.path / endOfSegments, "/docs")
+          .static(ResponsivePopoverPage, root / ResponsivePopoverPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ExpandableTextPage, root / ExpandableTextPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TablePage, root / TablePage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>

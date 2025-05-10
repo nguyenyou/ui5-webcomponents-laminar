@@ -16,6 +16,15 @@ object ColorPickerView extends ExampleView("Color Picker") {
             _.value := "rgba(220, 208, 255, 1)"
           )()
         }
+      ),
+      Demo(
+        title = "Simplified Picker",
+        content = Source.annotate {
+          ColorPicker(
+            _.value      := "#F6A192",
+            _.simplified := true
+          )()
+        }
       )
     )
   }
