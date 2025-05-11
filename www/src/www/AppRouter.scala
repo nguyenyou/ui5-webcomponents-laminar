@@ -73,6 +73,8 @@ object Pages {
   case object ResponsivePopoverPage    extends Page("ResponsivePopover")
   case object ExpandableTextPage       extends Page("ExpandableText")
   case object TablePage                extends Page("Table")
+  case object FileUploaderPage         extends Page("FileUploader")
+  case object IconPage                 extends Page("Icon")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -135,6 +137,8 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(ResponsivePopoverPage)(ResponsivePopoverView())
   .handleValue(ExpandableTextPage)(ExpandableTextView())
   .handleValue(TablePage)(TableView())
+  .handleValue(FileUploaderPage)(FileUploaderView())
+  .handleValue(IconPage)(IconView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -160,7 +164,9 @@ val docPages: List[Page] = List(
   DateTimePickerPage,
   DialogPage,
   ExpandableTextPage,
+  FileUploaderPage,
   FormPage,
+  IconPage,
   InputPage,
   LabelPage,
   LinkPage,
@@ -244,6 +250,8 @@ object AppRouter
         Route
           .static(DialogPage, root / DialogPage.path / endOfSegments, "/docs"),
         Route
+          .static(FileUploaderPage, root / FileUploaderPage.path / endOfSegments, "/docs"),
+        Route
           .static(InputPage, root / InputPage.path / endOfSegments, "/docs"),
         Route
           .static(LabelPage, root / LabelPage.path / endOfSegments, "/docs"),
@@ -308,7 +316,11 @@ object AppRouter
         Route
           .static(ExpandableTextPage, root / ExpandableTextPage.path / endOfSegments, "/docs"),
         Route
-          .static(TablePage, root / TablePage.path / endOfSegments, "/docs")
+          .static(TablePage, root / TablePage.path / endOfSegments, "/docs"),
+        Route
+          .static(FileUploaderPage, root / FileUploaderPage.path / endOfSegments, "/docs"),
+        Route
+          .static(IconPage, root / IconPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
