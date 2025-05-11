@@ -9,6 +9,7 @@ private[laminar] object IconImports {
   @inline def _iconName(@unused obj: js.Object, name: String): IconName =
     name.asInstanceOf[IconName] // scalafix:ok
 
+  // Standard Icons
   @js.native @JSImport("@ui5/webcomponents-icons/dist/AllIcons-fetch.js", JSImport.Namespace)
   object `import-AllIcons-fetch` extends js.Object
 
@@ -2123,5 +2124,1174 @@ private[laminar] object IconImports {
 
   @js.native @JSImport("@ui5/webcomponents-icons/dist/zoom-out.js", JSImport.Namespace)
   object `import-zoom-out` extends js.Object
+
+
+  // Business Suite Icons
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/1x2-grid-layout.js", JSImport.Namespace)
+  object `import-bs-1x2-grid-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/2x1-grid-layout.js", JSImport.Namespace)
+  object `import-bs-2x1-grid-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/2x2-grid-layout.js", JSImport.Namespace)
+  object `import-bs-2x2-grid-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/3d.js", JSImport.Namespace)
+  object `import-bs-3d` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/4x4-grid-layout.js", JSImport.Namespace)
+  object `import-bs-4x4-grid-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/ab-testing.js", JSImport.Namespace)
+  object `import-bs-ab-testing` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/activate.js", JSImport.Namespace)
+  object `import-bs-activate` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/activity.js", JSImport.Namespace)
+  object `import-bs-activity` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/activity-element.js", JSImport.Namespace)
+  object `import-bs-activity-element` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-component.js", JSImport.Namespace)
+  object `import-bs-add-component` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-note.js", JSImport.Namespace)
+  object `import-bs-add-note` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-outside.js", JSImport.Namespace)
+  object `import-bs-add-outside` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-point.js", JSImport.Namespace)
+  object `import-bs-add-point` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-polygon.js", JSImport.Namespace)
+  object `import-bs-add-polygon` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/add-polyline.js", JSImport.Namespace)
+  object `import-bs-add-polyline` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/adhoc-analysis.js", JSImport.Namespace)
+  object `import-bs-adhoc-analysis` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/after-total.js", JSImport.Namespace)
+  object `import-bs-after-total` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/aggregated-view.js", JSImport.Namespace)
+  object `import-bs-aggregated-view` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/alarm.js", JSImport.Namespace)
+  object `import-bs-alarm` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/alert-groups.js", JSImport.Namespace)
+  object `import-bs-alert-groups` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/allergies.js", JSImport.Namespace)
+  object `import-bs-allergies` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/alternative-sequence.js", JSImport.Namespace)
+  object `import-bs-alternative-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/answered.js", JSImport.Namespace)
+  object `import-bs-answered` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/answered-change-request.js", JSImport.Namespace)
+  object `import-bs-answered-change-request` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/applied_filter.js", JSImport.Namespace)
+  object `import-bs-applied_filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/approved.js", JSImport.Namespace)
+  object `import-bs-approved` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/asterisk.js", JSImport.Namespace)
+  object `import-bs-asterisk` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/back-to-search.js", JSImport.Namespace)
+  object `import-bs-back-to-search` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bank-account.js", JSImport.Namespace)
+  object `import-bs-bank-account` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/barge.js", JSImport.Namespace)
+  object `import-bs-barge` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/before-total.js", JSImport.Namespace)
+  object `import-bs-before-total` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/birthday.js", JSImport.Namespace)
+  object `import-bs-birthday` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/blocked.js", JSImport.Namespace)
+  object `import-bs-blocked` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/blood-pressure.js", JSImport.Namespace)
+  object `import-bs-blood-pressure` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/blood-test.js", JSImport.Namespace)
+  object `import-bs-blood-test` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bold.js", JSImport.Namespace)
+  object `import-bs-bold` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bottle.js", JSImport.Namespace)
+  object `import-bs-bottle` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bottle-cap.js", JSImport.Namespace)
+  object `import-bs-bottle-cap` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bottom.js", JSImport.Namespace)
+  object `import-bs-bottom` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/box-truck.js", JSImport.Namespace)
+  object `import-bs-box-truck` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/box-truck-empty.js", JSImport.Namespace)
+  object `import-bs-box-truck-empty` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bullet-chart.js", JSImport.Namespace)
+  object `import-bs-bullet-chart` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/bulleting-with-numbers.js", JSImport.Namespace)
+  object `import-bs-bulleting-with-numbers` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-objects-folder.js", JSImport.Namespace)
+  object `import-bs-business-objects-folder` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner.js", JSImport.Namespace)
+  object `import-bs-business-partner` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-anonymous.js", JSImport.Namespace)
+  object `import-bs-business-partner-anonymous` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-self-identified.js", JSImport.Namespace)
+  object `import-bs-business-partner-self-identified` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-verified.js", JSImport.Namespace)
+  object `import-bs-business-partner-verified` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/call-center.js", JSImport.Namespace)
+  object `import-bs-call-center` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/causes.js", JSImport.Namespace)
+  object `import-bs-causes` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cell-lock.js", JSImport.Namespace)
+  object `import-bs-cell-lock` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/change-analysis.js", JSImport.Namespace)
+  object `import-bs-change-analysis` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/change-log.js", JSImport.Namespace)
+  object `import-bs-change-log` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/change-request.js", JSImport.Namespace)
+  object `import-bs-change-request` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/change-time-horizon.js", JSImport.Namespace)
+  object `import-bs-change-time-horizon` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/checklist.js", JSImport.Namespace)
+  object `import-bs-checklist` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/checklist-item.js", JSImport.Namespace)
+  object `import-bs-checklist-item` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/circuit-breaker.js", JSImport.Namespace)
+  object `import-bs-circuit-breaker` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/class.js", JSImport.Namespace)
+  object `import-bs-class` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/classification.js", JSImport.Namespace)
+  object `import-bs-classification` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cluster-chained.js", JSImport.Namespace)
+  object `import-bs-cluster-chained` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/coins.js", JSImport.Namespace)
+  object `import-bs-coins` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/collaboration-manager.js", JSImport.Namespace)
+  object `import-bs-collaboration-manager` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/collapse-overlap.js", JSImport.Namespace)
+  object `import-bs-collapse-overlap` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/collapse-utilization.js", JSImport.Namespace)
+  object `import-bs-collapse-utilization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/collected-change-request.js", JSImport.Namespace)
+  object `import-bs-collected-change-request` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/column-selected.js", JSImport.Namespace)
+  object `import-bs-column-selected` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/column-unselected.js", JSImport.Namespace)
+  object `import-bs-column-unselected` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/comparison-chart.js", JSImport.Namespace)
+  object `import-bs-comparison-chart` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/completed.js", JSImport.Namespace)
+  object `import-bs-completed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/component.js", JSImport.Namespace)
+  object `import-bs-component` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/component-private.js", JSImport.Namespace)
+  object `import-bs-component-private` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/compressor.js", JSImport.Namespace)
+  object `import-bs-compressor` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/confirmed.js", JSImport.Namespace)
+  object `import-bs-confirmed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/consumer.js", JSImport.Namespace)
+  object `import-bs-consumer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/consumer-switch.js", JSImport.Namespace)
+  object `import-bs-consumer-switch` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/container.js", JSImport.Namespace)
+  object `import-bs-container` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/container-closed.js", JSImport.Namespace)
+  object `import-bs-container-closed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/container-loading.js", JSImport.Namespace)
+  object `import-bs-container-loading` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/context-menu.js", JSImport.Namespace)
+  object `import-bs-context-menu` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/contract.js", JSImport.Namespace)
+  object `import-bs-contract` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/control-group.js", JSImport.Namespace)
+  object `import-bs-control-group` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/create-dashboard.js", JSImport.Namespace)
+  object `import-bs-create-dashboard` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/created.js", JSImport.Namespace)
+  object `import-bs-created` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cross-order.js", JSImport.Namespace)
+  object `import-bs-cross-order` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cross-sequence.js", JSImport.Namespace)
+  object `import-bs-cross-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cross-target.js", JSImport.Namespace)
+  object `import-bs-cross-target` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/cross-union.js", JSImport.Namespace)
+  object `import-bs-cross-union` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/current-stock.js", JSImport.Namespace)
+  object `import-bs-current-stock` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/data-access.js", JSImport.Namespace)
+  object `import-bs-data-access` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/debit-card.js", JSImport.Namespace)
+  object `import-bs-debit-card` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/decrease.js", JSImport.Namespace)
+  object `import-bs-decrease` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/decrease-indent.js", JSImport.Namespace)
+  object `import-bs-decrease-indent` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/define-shortage.js", JSImport.Namespace)
+  object `import-bs-define-shortage` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/dehydrator.js", JSImport.Namespace)
+  object `import-bs-dehydrator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/delay.js", JSImport.Namespace)
+  object `import-bs-delay` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/delegated-important-task.js", JSImport.Namespace)
+  object `import-bs-delegated-important-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/demand-unit.js", JSImport.Namespace)
+  object `import-bs-demand-unit` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/descending-bars.js", JSImport.Namespace)
+  object `import-bs-descending-bars` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/descending-stacked-bars.js", JSImport.Namespace)
+  object `import-bs-descending-stacked-bars` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/detailed-view.js", JSImport.Namespace)
+  object `import-bs-detailed-view` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/dispatched-deallocate.js", JSImport.Namespace)
+  object `import-bs-dispatched-deallocate` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/display-ads.js", JSImport.Namespace)
+  object `import-bs-display-ads` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/distribute-segments.js", JSImport.Namespace)
+  object `import-bs-distribute-segments` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/district-heating.js", JSImport.Namespace)
+  object `import-bs-district-heating` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/door.js", JSImport.Namespace)
+  object `import-bs-door` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/draw-circle.js", JSImport.Namespace)
+  object `import-bs-draw-circle` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/draw-freehand.js", JSImport.Namespace)
+  object `import-bs-draw-freehand` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/driver.js", JSImport.Namespace)
+  object `import-bs-driver` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/driver-warning.js", JSImport.Namespace)
+  object `import-bs-driver-warning` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/due-date.js", JSImport.Namespace)
+  object `import-bs-due-date` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/early-widthdrawal-for-time-deposits.js", JSImport.Namespace)
+  object `import-bs-early-widthdrawal-for-time-deposits` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/effects.js", JSImport.Namespace)
+  object `import-bs-effects` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/email-not-opened.js", JSImport.Namespace)
+  object `import-bs-email-not-opened` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/email-send-delayed.js", JSImport.Namespace)
+  object `import-bs-email-send-delayed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/empty-order.js", JSImport.Namespace)
+  object `import-bs-empty-order` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/empty-sequence.js", JSImport.Namespace)
+  object `import-bs-empty-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/empty-trailer.js", JSImport.Namespace)
+  object `import-bs-empty-trailer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/empty-union.js", JSImport.Namespace)
+  object `import-bs-empty-union` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/empty-warning.js", JSImport.Namespace)
+  object `import-bs-empty-warning` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/equal.js", JSImport.Namespace)
+  object `import-bs-equal` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/equalizer.js", JSImport.Namespace)
+  object `import-bs-equalizer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/equipment.js", JSImport.Namespace)
+  object `import-bs-equipment` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/event.js", JSImport.Namespace)
+  object `import-bs-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/event2.js", JSImport.Namespace)
+  object `import-bs-event2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/excelsius-file.js", JSImport.Namespace)
+  object `import-bs-excelsius-file` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/exclude-segment.js", JSImport.Namespace)
+  object `import-bs-exclude-segment` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expand-all.js", JSImport.Namespace)
+  object `import-bs-expand-all` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expand-collapse-level-2.js", JSImport.Namespace)
+  object `import-bs-expand-collapse-level-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expand-collapse-level-3.js", JSImport.Namespace)
+  object `import-bs-expand-collapse-level-3` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expand-overlap.js", JSImport.Namespace)
+  object `import-bs-expand-overlap` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expand-utilization.js", JSImport.Namespace)
+  object `import-bs-expand-utilization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/expedite.js", JSImport.Namespace)
+  object `import-bs-expedite` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-astonished.js", JSImport.Namespace)
+  object `import-bs-face-astonished` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-awful.js", JSImport.Namespace)
+  object `import-bs-face-awful` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-bad.js", JSImport.Namespace)
+  object `import-bs-face-bad` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-devastated.js", JSImport.Namespace)
+  object `import-bs-face-devastated` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-happy.js", JSImport.Namespace)
+  object `import-bs-face-happy` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-neutral.js", JSImport.Namespace)
+  object `import-bs-face-neutral` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-okey-dokey.js", JSImport.Namespace)
+  object `import-bs-face-okey-dokey` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-skeptical.js", JSImport.Namespace)
+  object `import-bs-face-skeptical` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-very-bad.js", JSImport.Namespace)
+  object `import-bs-face-very-bad` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/face-very-happy.js", JSImport.Namespace)
+  object `import-bs-face-very-happy` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/feature-dictionary.js", JSImport.Namespace)
+  object `import-bs-feature-dictionary` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/female.js", JSImport.Namespace)
+  object `import-bs-female` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/filter-menu.js", JSImport.Namespace)
+  object `import-bs-filter-menu` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/fire.js", JSImport.Namespace)
+  object `import-bs-fire` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/firmed.js", JSImport.Namespace)
+  object `import-bs-firmed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/fixed-cell.js", JSImport.Namespace)
+  object `import-bs-fixed-cell` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/fma-analytics.js", JSImport.Namespace)
+  object `import-bs-fma-analytics` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/fma-management.js", JSImport.Namespace)
+  object `import-bs-fma-management` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/fma-validation.js", JSImport.Namespace)
+  object `import-bs-fma-validation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/foil.js", JSImport.Namespace)
+  object `import-bs-foil` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/foot-steps.js", JSImport.Namespace)
+  object `import-bs-foot-steps` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/forklift.js", JSImport.Namespace)
+  object `import-bs-forklift` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/function-alert.js", JSImport.Namespace)
+  object `import-bs-function-alert` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/function-hierarchy.js", JSImport.Namespace)
+  object `import-bs-function-hierarchy` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/gas.js", JSImport.Namespace)
+  object `import-bs-gas` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/gas-2.js", JSImport.Namespace)
+  object `import-bs-gas-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/gate.js", JSImport.Namespace)
+  object `import-bs-gate` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/gender-male-and-female.js", JSImport.Namespace)
+  object `import-bs-gender-male-and-female` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/generation.js", JSImport.Namespace)
+  object `import-bs-generation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/gis-layer.js", JSImport.Namespace)
+  object `import-bs-gis-layer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/goods.js", JSImport.Namespace)
+  object `import-bs-goods` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/grid.js", JSImport.Namespace)
+  object `import-bs-grid` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/grip.js", JSImport.Namespace)
+  object `import-bs-grip` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/health-tracking.js", JSImport.Namespace)
+  object `import-bs-health-tracking` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/heart.js", JSImport.Namespace)
+  object `import-bs-heart` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/heater-treater.js", JSImport.Namespace)
+  object `import-bs-heater-treater` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/hourglass.js", JSImport.Namespace)
+  object `import-bs-hourglass` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/immunization.js", JSImport.Namespace)
+  object `import-bs-immunization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/increase.js", JSImport.Namespace)
+  object `import-bs-increase` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/increase-indent.js", JSImport.Namespace)
+  object `import-bs-increase-indent` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/indicator-groups.js", JSImport.Namespace)
+  object `import-bs-indicator-groups` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/ingredients.js", JSImport.Namespace)
+  object `import-bs-ingredients` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/input.js", JSImport.Namespace)
+  object `import-bs-input` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/intersection.js", JSImport.Namespace)
+  object `import-bs-intersection` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/inverse-t-layout.js", JSImport.Namespace)
+  object `import-bs-inverse-t-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/italic.js", JSImport.Namespace)
+  object `import-bs-italic` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/jam.js", JSImport.Namespace)
+  object `import-bs-jam` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/keep-segment.js", JSImport.Namespace)
+  object `import-bs-keep-segment` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/kohorte.js", JSImport.Namespace)
+  object `import-bs-kohorte` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/late.js", JSImport.Namespace)
+  object `import-bs-late` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/layer.js", JSImport.Namespace)
+  object `import-bs-layer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/legal-section.js", JSImport.Namespace)
+  object `import-bs-legal-section` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/lighthouse.js", JSImport.Namespace)
+  object `import-bs-lighthouse` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/line-bar-chart.js", JSImport.Namespace)
+  object `import-bs-line-bar-chart` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/link-not-clicked.js", JSImport.Namespace)
+  object `import-bs-link-not-clicked` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/liquid.js", JSImport.Namespace)
+  object `import-bs-liquid` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/loading-point.js", JSImport.Namespace)
+  object `import-bs-loading-point` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/main-milestone.js", JSImport.Namespace)
+  object `import-bs-main-milestone` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/main-sequence.js", JSImport.Namespace)
+  object `import-bs-main-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/male.js", JSImport.Namespace)
+  object `import-bs-male` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/manage-budget.js", JSImport.Namespace)
+  object `import-bs-manage-budget` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/manage-charging-stations.js", JSImport.Namespace)
+  object `import-bs-manage-charging-stations` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/map-navigation.js", JSImport.Namespace)
+  object `import-bs-map-navigation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/margin-decomposition.js", JSImport.Namespace)
+  object `import-bs-margin-decomposition` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/marital-status.js", JSImport.Namespace)
+  object `import-bs-marital-status` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/marked-for-deletion.js", JSImport.Namespace)
+  object `import-bs-marked-for-deletion` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/match-case.js", JSImport.Namespace)
+  object `import-bs-match-case` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/match-whole-word.js", JSImport.Namespace)
+  object `import-bs-match-whole-word` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/material.js", JSImport.Namespace)
+  object `import-bs-material` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/max-container.js", JSImport.Namespace)
+  object `import-bs-max-container` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/max-interval.js", JSImport.Namespace)
+  object `import-bs-max-interval` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/medicine-drops.js", JSImport.Namespace)
+  object `import-bs-medicine-drops` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/medicine-inhaler.js", JSImport.Namespace)
+  object `import-bs-medicine-inhaler` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/medicine-ointment.js", JSImport.Namespace)
+  object `import-bs-medicine-ointment` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/medicine-pill.js", JSImport.Namespace)
+  object `import-bs-medicine-pill` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/medicine-syrup.js", JSImport.Namespace)
+  object `import-bs-medicine-syrup` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/meter-chained.js", JSImport.Namespace)
+  object `import-bs-meter-chained` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/milestone.js", JSImport.Namespace)
+  object `import-bs-milestone` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/min-interval.js", JSImport.Namespace)
+  object `import-bs-min-interval` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/mirrored-task.js", JSImport.Namespace)
+  object `import-bs-mirrored-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/model.js", JSImport.Namespace)
+  object `import-bs-model` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/money-withdrawal.js", JSImport.Namespace)
+  object `import-bs-money-withdrawal` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/monitor-assembly-sequence.js", JSImport.Namespace)
+  object `import-bs-monitor-assembly-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/monitor-just-in-time-calls.js", JSImport.Namespace)
+  object `import-bs-monitor-just-in-time-calls` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/move-folder.js", JSImport.Namespace)
+  object `import-bs-move-folder` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/movement-warning.js", JSImport.Namespace)
+  object `import-bs-movement-warning` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/multi-container.js", JSImport.Namespace)
+  object `import-bs-multi-container` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/multiple-charts.js", JSImport.Namespace)
+  object `import-bs-multiple-charts` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/multiple-warnings.js", JSImport.Namespace)
+  object `import-bs-multiple-warnings` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/network-header.js", JSImport.Namespace)
+  object `import-bs-network-header` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/neutral.js", JSImport.Namespace)
+  object `import-bs-neutral` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/next-open-item.js", JSImport.Namespace)
+  object `import-bs-next-open-item` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/no-filter.js", JSImport.Namespace)
+  object `import-bs-no-filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/no-time-change.js", JSImport.Namespace)
+  object `import-bs-no-time-change` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/non-stackable.js", JSImport.Namespace)
+  object `import-bs-non-stackable` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/not-equal.js", JSImport.Namespace)
+  object `import-bs-not-equal` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/official-service-group.js", JSImport.Namespace)
+  object `import-bs-official-service-group` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/open-folder.js", JSImport.Namespace)
+  object `import-bs-open-folder` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/operator.js", JSImport.Namespace)
+  object `import-bs-operator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/outbound-delivery.js", JSImport.Namespace)
+  object `import-bs-outbound-delivery` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/outbound-delivery-active.js", JSImport.Namespace)
+  object `import-bs-outbound-delivery-active` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/outbound-delivery-inactive.js", JSImport.Namespace)
+  object `import-bs-outbound-delivery-inactive` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/outdoor.js", JSImport.Namespace)
+  object `import-bs-outdoor` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/overdue.js", JSImport.Namespace)
+  object `import-bs-overdue` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/overlap.js", JSImport.Namespace)
+  object `import-bs-overlap` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/overview.js", JSImport.Namespace)
+  object `import-bs-overview` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/page-down.js", JSImport.Namespace)
+  object `import-bs-page-down` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/page-up.js", JSImport.Namespace)
+  object `import-bs-page-up` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/paid-search.js", JSImport.Namespace)
+  object `import-bs-paid-search` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/pallet.js", JSImport.Namespace)
+  object `import-bs-pallet` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/parallel-sequence.js", JSImport.Namespace)
+  object `import-bs-parallel-sequence` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/partially-delivered.js", JSImport.Namespace)
+  object `import-bs-partially-delivered` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/partially-fixed-cell.js", JSImport.Namespace)
+  object `import-bs-partially-fixed-cell` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/pharmacy.js", JSImport.Namespace)
+  object `import-bs-pharmacy` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/phase.js", JSImport.Namespace)
+  object `import-bs-phase` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/pipeline.js", JSImport.Namespace)
+  object `import-bs-pipeline` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/pipette.js", JSImport.Namespace)
+  object `import-bs-pipette` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/plain-grid-layout.js", JSImport.Namespace)
+  object `import-bs-plain-grid-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/polygon.js", JSImport.Namespace)
+  object `import-bs-polygon` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/polygon-black.js", JSImport.Namespace)
+  object `import-bs-polygon-black` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/polygon-white.js", JSImport.Namespace)
+  object `import-bs-polygon-white` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/postpone.js", JSImport.Namespace)
+  object `import-bs-postpone` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/priority-1.js", JSImport.Namespace)
+  object `import-bs-priority-1` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/priority-2.js", JSImport.Namespace)
+  object `import-bs-priority-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/producer-switch.js", JSImport.Namespace)
+  object `import-bs-producer-switch` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/product-view.js", JSImport.Namespace)
+  object `import-bs-product-view` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/production.js", JSImport.Namespace)
+  object `import-bs-production` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/products.js", JSImport.Namespace)
+  object `import-bs-products` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/program.js", JSImport.Namespace)
+  object `import-bs-program` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/project-definition.js", JSImport.Namespace)
+  object `import-bs-project-definition` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/project-definition-2.js", JSImport.Namespace)
+  object `import-bs-project-definition-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/ps-text.js", JSImport.Namespace)
+  object `import-bs-ps-text` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/pump.js", JSImport.Namespace)
+  object `import-bs-pump` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/quarter.js", JSImport.Namespace)
+  object `import-bs-quarter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/radio.js", JSImport.Namespace)
+  object `import-bs-radio` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/radius.js", JSImport.Namespace)
+  object `import-bs-radius` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/railcar.js", JSImport.Namespace)
+  object `import-bs-railcar` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/raw-material.js", JSImport.Namespace)
+  object `import-bs-raw-material` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/recipe.js", JSImport.Namespace)
+  object `import-bs-recipe` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/recycle.js", JSImport.Namespace)
+  object `import-bs-recycle` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/refinery.js", JSImport.Namespace)
+  object `import-bs-refinery` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/relationship.js", JSImport.Namespace)
+  object `import-bs-relationship` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/reminder.js", JSImport.Namespace)
+  object `import-bs-reminder` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/remove-filter.js", JSImport.Namespace)
+  object `import-bs-remove-filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/remove-folder.js", JSImport.Namespace)
+  object `import-bs-remove-folder` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/remove-total.js", JSImport.Namespace)
+  object `import-bs-remove-total` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/repeatable.js", JSImport.Namespace)
+  object `import-bs-repeatable` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/requirement-model.js", JSImport.Namespace)
+  object `import-bs-requirement-model` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/rescheduling.js", JSImport.Namespace)
+  object `import-bs-rescheduling` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/rescheduling2.js", JSImport.Namespace)
+  object `import-bs-rescheduling2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/resequencing.js", JSImport.Namespace)
+  object `import-bs-resequencing` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/resequencing2.js", JSImport.Namespace)
+  object `import-bs-resequencing2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/responsible-area.js", JSImport.Namespace)
+  object `import-bs-responsible-area` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/return-delivery.js", JSImport.Namespace)
+  object `import-bs-return-delivery` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/return-order.js", JSImport.Namespace)
+  object `import-bs-return-order` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/review-demands.js", JSImport.Namespace)
+  object `import-bs-review-demands` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/review-supplies.js", JSImport.Namespace)
+  object `import-bs-review-supplies` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/rfid.js", JSImport.Namespace)
+  object `import-bs-rfid` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/road.js", JSImport.Namespace)
+  object `import-bs-road` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/row-selected.js", JSImport.Namespace)
+  object `import-bs-row-selected` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/row-unselected.js", JSImport.Namespace)
+  object `import-bs-row-unselected` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/save-as.js", JSImport.Namespace)
+  object `import-bs-save-as` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/savings-account.js", JSImport.Namespace)
+  object `import-bs-savings-account` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/scatter-plot.js", JSImport.Namespace)
+  object `import-bs-scatter-plot` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/section.js", JSImport.Namespace)
+  object `import-bs-section` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/segment-preview-reference-objects.js", JSImport.Namespace)
+  object `import-bs-segment-preview-reference-objects` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/segmentation.js", JSImport.Namespace)
+  object `import-bs-segmentation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/separate-segments.js", JSImport.Namespace)
+  object `import-bs-separate-segments` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/separator.js", JSImport.Namespace)
+  object `import-bs-separator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/set-as-default.js", JSImport.Namespace)
+  object `import-bs-set-as-default` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/shared-by-me.js", JSImport.Namespace)
+  object `import-bs-shared-by-me` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/shared-with-me.js", JSImport.Namespace)
+  object `import-bs-shared-with-me` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/ship.js", JSImport.Namespace)
+  object `import-bs-ship` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/side-panel-left-layout.js", JSImport.Namespace)
+  object `import-bs-side-panel-left-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/side-top-panel-layout.js", JSImport.Namespace)
+  object `import-bs-side-top-panel-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/sidepanel.js", JSImport.Namespace)
+  object `import-bs-sidepanel` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/smart-matcher.js", JSImport.Namespace)
+  object `import-bs-smart-matcher` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/sms.js", JSImport.Namespace)
+  object `import-bs-sms` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/sms-send-delayed.js", JSImport.Namespace)
+  object `import-bs-sms-send-delayed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/snapshot.js", JSImport.Namespace)
+  object `import-bs-snapshot` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/social.js", JSImport.Namespace)
+  object `import-bs-social` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/software-item.js", JSImport.Namespace)
+  object `import-bs-software-item` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/software-item-variant.js", JSImport.Namespace)
+  object `import-bs-software-item-variant` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/source.js", JSImport.Namespace)
+  object `import-bs-source` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/spill.js", JSImport.Namespace)
+  object `import-bs-spill` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/split-screen.js", JSImport.Namespace)
+  object `import-bs-split-screen` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/split-segmentation.js", JSImport.Namespace)
+  object `import-bs-split-segmentation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/stages-warning.js", JSImport.Namespace)
+  object `import-bs-stages-warning` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/stock-requirements.js", JSImport.Namespace)
+  object `import-bs-stock-requirements` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/stock-warehouse.js", JSImport.Namespace)
+  object `import-bs-stock-warehouse` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/storage.js", JSImport.Namespace)
+  object `import-bs-storage` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/storage-switch.js", JSImport.Namespace)
+  object `import-bs-storage-switch` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/stratification.js", JSImport.Namespace)
+  object `import-bs-stratification` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/strike-through.js", JSImport.Namespace)
+  object `import-bs-strike-through` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/stripes-pattern.js", JSImport.Namespace)
+  object `import-bs-stripes-pattern` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/sub-project.js", JSImport.Namespace)
+  object `import-bs-sub-project` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/subclass.js", JSImport.Namespace)
+  object `import-bs-subclass` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/submission.js", JSImport.Namespace)
+  object `import-bs-submission` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/substraction-a-b.js", JSImport.Namespace)
+  object `import-bs-substraction-a-b` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/substraction-b-a.js", JSImport.Namespace)
+  object `import-bs-substraction-b-a` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/subtraction-a-b.js", JSImport.Namespace)
+  object `import-bs-subtraction-a-b` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/subtraction-b-a.js", JSImport.Namespace)
+  object `import-bs-subtraction-b-a` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/sum.js", JSImport.Namespace)
+  object `import-bs-sum` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/t-layout.js", JSImport.Namespace)
+  object `import-bs-t-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/table-chart-customization.js", JSImport.Namespace)
+  object `import-bs-table-chart-customization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/tank-chained.js", JSImport.Namespace)
+  object `import-bs-tank-chained` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/target.js", JSImport.Namespace)
+  object `import-bs-target` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/target-filter.js", JSImport.Namespace)
+  object `import-bs-target-filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/target-to-date.js", JSImport.Namespace)
+  object `import-bs-target-to-date` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/temperature.js", JSImport.Namespace)
+  object `import-bs-temperature` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/terminal.js", JSImport.Namespace)
+  object `import-bs-terminal` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/thumb-down-filled.js", JSImport.Namespace)
+  object `import-bs-thumb-down-filled` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/thumb-sideway.js", JSImport.Namespace)
+  object `import-bs-thumb-sideway` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/thumb-sideway-filled.js", JSImport.Namespace)
+  object `import-bs-thumb-sideway-filled` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/thumb-up-filled.js", JSImport.Namespace)
+  object `import-bs-thumb-up-filled` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/time-change.js", JSImport.Namespace)
+  object `import-bs-time-change` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/time-deposit.js", JSImport.Namespace)
+  object `import-bs-time-deposit` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/timeseries-waterfall-chart.js", JSImport.Namespace)
+  object `import-bs-timeseries-waterfall-chart` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/top.js", JSImport.Namespace)
+  object `import-bs-top` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/top-panel-layout.js", JSImport.Namespace)
+  object `import-bs-top-panel-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/top-recipe.js", JSImport.Namespace)
+  object `import-bs-top-recipe` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/top-side-panel-layout.js", JSImport.Namespace)
+  object `import-bs-top-side-panel-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/tractor.js", JSImport.Namespace)
+  object `import-bs-tractor` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/traffic-cone.js", JSImport.Namespace)
+  object `import-bs-traffic-cone` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/traffic-jam.js", JSImport.Namespace)
+  object `import-bs-traffic-jam` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/traffic-lights.js", JSImport.Namespace)
+  object `import-bs-traffic-lights` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/trailer.js", JSImport.Namespace)
+  object `import-bs-trailer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/transformer.js", JSImport.Namespace)
+  object `import-bs-transformer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/tray.js", JSImport.Namespace)
+  object `import-bs-tray` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/truck-driver.js", JSImport.Namespace)
+  object `import-bs-truck-driver` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/truck-driver-2.js", JSImport.Namespace)
+  object `import-bs-truck-driver-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/truck-load.js", JSImport.Namespace)
+  object `import-bs-truck-load` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/truck-load-unload.js", JSImport.Namespace)
+  object `import-bs-truck-load-unload` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/truck-unload.js", JSImport.Namespace)
+  object `import-bs-truck-unload` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/tv.js", JSImport.Namespace)
+  object `import-bs-tv` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/underline.js", JSImport.Namespace)
+  object `import-bs-underline` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/undesirable-customer.js", JSImport.Namespace)
+  object `import-bs-undesirable-customer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/unfirmed.js", JSImport.Namespace)
+  object `import-bs-unfirmed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/union.js", JSImport.Namespace)
+  object `import-bs-union` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/unknown-dependency.js", JSImport.Namespace)
+  object `import-bs-unknown-dependency` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/unsaved-changes.js", JSImport.Namespace)
+  object `import-bs-unsaved-changes` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/update-filter.js", JSImport.Namespace)
+  object `import-bs-update-filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/utilization.js", JSImport.Namespace)
+  object `import-bs-utilization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/variant-configuration.js", JSImport.Namespace)
+  object `import-bs-variant-configuration` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/variant-planning.js", JSImport.Namespace)
+  object `import-bs-variant-planning` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/vessel.js", JSImport.Namespace)
+  object `import-bs-vessel` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/vip-customer.js", JSImport.Namespace)
+  object `import-bs-vip-customer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/warehouse.js", JSImport.Namespace)
+  object `import-bs-warehouse` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/water.js", JSImport.Namespace)
+  object `import-bs-water` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/water-2.js", JSImport.Namespace)
+  object `import-bs-water-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/weight.js", JSImport.Namespace)
+  object `import-bs-weight` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/well.js", JSImport.Namespace)
+  object `import-bs-well` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/well-completion.js", JSImport.Namespace)
+  object `import-bs-well-completion` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/where-used.js", JSImport.Namespace)
+  object `import-bs-where-used` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/workbook-filter.js", JSImport.Namespace)
+  object `import-bs-workbook-filter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/year.js", JSImport.Namespace)
+  object `import-bs-year` extends js.Object
 
 }

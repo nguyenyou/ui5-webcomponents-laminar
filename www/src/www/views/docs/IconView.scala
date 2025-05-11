@@ -3,6 +3,7 @@ package www.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import www.components.Demo
+import www.libs.scalawind.*
 import www.macros.Source
 
 object IconView extends ExampleView("Icon") {
@@ -13,6 +14,7 @@ object IconView extends ExampleView("Icon") {
         title = "Basic Sample",
         content = Source.annotate {
           div(
+            tw.space_x_2,
             Icon(
               _.name := IconName.home
             )(),
@@ -35,6 +37,7 @@ object IconView extends ExampleView("Icon") {
         title = "Design",
         content = Source.annotate {
           div(
+            tw.space_x_2,
             Icon(
               _.name   := IconName.da2,
               _.design := "Default"
@@ -74,6 +77,7 @@ object IconView extends ExampleView("Icon") {
         title = "Custom Styling",
         content = Source.annotate {
           div(
+            tw.space_x_2,
             Icon(
               _.name := IconName.home
             )(
@@ -109,6 +113,40 @@ object IconView extends ExampleView("Icon") {
               height.rem(2),
               color("olivedrab")
             )
+          )
+        }
+      ),
+      Demo(
+        title = "Interactive",
+        content = Source.annotate {
+          div(
+            Icon(
+              _.name := IconName.home,
+              _.mode := "Interactive"
+            )()
+          )
+        }
+      ),
+      Demo(
+        title = "SAP Business Suite Icons",
+        content = Source.annotate {
+          div(
+            tw.space_x_2,
+            Icon(
+              _.name := IconName.bsAddPolygon
+            )(),
+            Icon(
+              _.name := IconName.bs2x1GridLayout
+            )(),
+            Icon(
+              _.name := IconName.bsActivate
+            )(),
+            Icon(
+              _.name := IconName.bs3d
+            )(),
+            Icon(
+              _.name := IconName.bs4x4GridLayout
+            )()
           )
         }
       )
