@@ -3294,4 +3294,540 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/year.js", JSImport.Namespace)
   object `import-bs-year` extends js.Object
 
+
+  // TNT Icons
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/actor.js", JSImport.Namespace)
+  object `import-tnt-actor` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ad-hoc-marker.js", JSImport.Namespace)
+  object `import-tnt-ad-hoc-marker` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/aggregation.js", JSImport.Namespace)
+  object `import-tnt-aggregation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/aggregator.js", JSImport.Namespace)
+  object `import-tnt-aggregator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ai-1.js", JSImport.Namespace)
+  object `import-tnt-ai-1` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ai-2.js", JSImport.Namespace)
+  object `import-tnt-ai-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/antenna.js", JSImport.Namespace)
+  object `import-tnt-antenna` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/any.js", JSImport.Namespace)
+  object `import-tnt-any` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/api.js", JSImport.Namespace)
+  object `import-tnt-api` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/application.js", JSImport.Namespace)
+  object `import-tnt-application` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/application-service.js", JSImport.Namespace)
+  object `import-tnt-application-service` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/array.js", JSImport.Namespace)
+  object `import-tnt-array` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/arrow.js", JSImport.Namespace)
+  object `import-tnt-arrow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/association.js", JSImport.Namespace)
+  object `import-tnt-association` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/auto-layout.js", JSImport.Namespace)
+  object `import-tnt-auto-layout` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/batch-processing.js", JSImport.Namespace)
+  object `import-tnt-batch-processing` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/bdd-diagram.js", JSImport.Namespace)
+  object `import-tnt-bdd-diagram` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/bill-of-material.js", JSImport.Namespace)
+  object `import-tnt-bill-of-material` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/binary.js", JSImport.Namespace)
+  object `import-tnt-binary` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/block.js", JSImport.Namespace)
+  object `import-tnt-block` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/boolean.js", JSImport.Namespace)
+  object `import-tnt-boolean` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/bound-validation-rule.js", JSImport.Namespace)
+  object `import-tnt-bound-validation-rule` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/boundary-interrupting.js", JSImport.Namespace)
+  object `import-tnt-boundary-interrupting` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/boundary-non-interrupting.js", JSImport.Namespace)
+  object `import-tnt-boundary-non-interrupting` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/build-apps.js", JSImport.Namespace)
+  object `import-tnt-build-apps` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/build-code.js", JSImport.Namespace)
+  object `import-tnt-build-code` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/build-process-automation.js", JSImport.Namespace)
+  object `import-tnt-build-process-automation` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/build-work-zone.js", JSImport.Namespace)
+  object `import-tnt-build-work-zone` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/business-accelerator.js", JSImport.Namespace)
+  object `import-tnt-business-accelerator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/business-application-studio.js", JSImport.Namespace)
+  object `import-tnt-business-application-studio` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/business-capability.js", JSImport.Namespace)
+  object `import-tnt-business-capability` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/business-service.js", JSImport.Namespace)
+  object `import-tnt-business-service` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/catching-message.js", JSImport.Namespace)
+  object `import-tnt-catching-message` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/clear-all-mapping.js", JSImport.Namespace)
+  object `import-tnt-clear-all-mapping` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/clone-from-git.js", JSImport.Namespace)
+  object `import-tnt-clone-from-git` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/code1.js", JSImport.Namespace)
+  object `import-tnt-code1` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/code2.js", JSImport.Namespace)
+  object `import-tnt-code2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/communication-path.js", JSImport.Namespace)
+  object `import-tnt-communication-path` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/composition.js", JSImport.Namespace)
+  object `import-tnt-composition` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/connector.js", JSImport.Namespace)
+  object `import-tnt-connector` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/constrain-block.js", JSImport.Namespace)
+  object `import-tnt-constrain-block` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/constrains.js", JSImport.Namespace)
+  object `import-tnt-constrains` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/content-enricher.js", JSImport.Namespace)
+  object `import-tnt-content-enricher` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/content-modifier.js", JSImport.Namespace)
+  object `import-tnt-content-modifier` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/converter.js", JSImport.Namespace)
+  object `import-tnt-converter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/cursor.js", JSImport.Namespace)
+  object `import-tnt-cursor` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/data.js", JSImport.Namespace)
+  object `import-tnt-data` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/data-input-arrow.js", JSImport.Namespace)
+  object `import-tnt-data-input-arrow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/data-output-arrow.js", JSImport.Namespace)
+  object `import-tnt-data-output-arrow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/data-store.js", JSImport.Namespace)
+  object `import-tnt-data-store` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/database-consistency.js", JSImport.Namespace)
+  object `import-tnt-database-consistency` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/dependency.js", JSImport.Namespace)
+  object `import-tnt-dependency` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/deployment-instance.js", JSImport.Namespace)
+  object `import-tnt-deployment-instance` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/document-info-recording.js", JSImport.Namespace)
+  object `import-tnt-document-info-recording` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/end-event.js", JSImport.Namespace)
+  object `import-tnt-end-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/error-end-event.js", JSImport.Namespace)
+  object `import-tnt-error-end-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/error-start-event.js", JSImport.Namespace)
+  object `import-tnt-error-start-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/escalation-boundary-interrupting.js", JSImport.Namespace)
+  object `import-tnt-escalation-boundary-interrupting` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/escalation-boundary-non-interrupting.js", JSImport.Namespace)
+  object `import-tnt-escalation-boundary-non-interrupting` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/escalation-end-event.js", JSImport.Namespace)
+  object `import-tnt-escalation-end-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/escalation-throwing.js", JSImport.Namespace)
+  object `import-tnt-escalation-throwing` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/etl-job.js", JSImport.Namespace)
+  object `import-tnt-etl-job` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/exceptions.js", JSImport.Namespace)
+  object `import-tnt-exceptions` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/exclusive-gateway.js", JSImport.Namespace)
+  object `import-tnt-exclusive-gateway` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/fiori-application.js", JSImport.Namespace)
+  object `import-tnt-fiori-application` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/firewall.js", JSImport.Namespace)
+  object `import-tnt-firewall` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/float.js", JSImport.Namespace)
+  object `import-tnt-float` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/flow.js", JSImport.Namespace)
+  object `import-tnt-flow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/full-port.js", JSImport.Namespace)
+  object `import-tnt-full-port` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/gateway.js", JSImport.Namespace)
+  object `import-tnt-gateway` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/generalization.js", JSImport.Namespace)
+  object `import-tnt-generalization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/github.js", JSImport.Namespace)
+  object `import-tnt-github` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/hub.js", JSImport.Namespace)
+  object `import-tnt-hub` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/indicator.js", JSImport.Namespace)
+  object `import-tnt-indicator` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/indicator-active.js", JSImport.Namespace)
+  object `import-tnt-indicator-active` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/insights.js", JSImport.Namespace)
+  object `import-tnt-insights` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/instance-specification.js", JSImport.Namespace)
+  object `import-tnt-instance-specification` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/integer.js", JSImport.Namespace)
+  object `import-tnt-integer` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/interface.js", JSImport.Namespace)
+  object `import-tnt-interface` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/interface-block.js", JSImport.Namespace)
+  object `import-tnt-interface-block` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/intermediate-message.js", JSImport.Namespace)
+  object `import-tnt-intermediate-message` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/internal-block-diagram.js", JSImport.Namespace)
+  object `import-tnt-internal-block-diagram` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/intranet.js", JSImport.Namespace)
+  object `import-tnt-intranet` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/item-flow.js", JSImport.Namespace)
+  object `import-tnt-item-flow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/java.js", JSImport.Namespace)
+  object `import-tnt-java` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/local-process-call.js", JSImport.Namespace)
+  object `import-tnt-local-process-call` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/manual-task.js", JSImport.Namespace)
+  object `import-tnt-manual-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/map-all-fields.js", JSImport.Namespace)
+  object `import-tnt-map-all-fields` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/marquee.js", JSImport.Namespace)
+  object `import-tnt-marquee` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/message-end-event.js", JSImport.Namespace)
+  object `import-tnt-message-end-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/message-start-event.js", JSImport.Namespace)
+  object `import-tnt-message-start-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/mobile-network.js", JSImport.Namespace)
+  object `import-tnt-mobile-network` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/modem.js", JSImport.Namespace)
+  object `import-tnt-modem` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/more.js", JSImport.Namespace)
+  object `import-tnt-more` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/network.js", JSImport.Namespace)
+  object `import-tnt-network` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/network-node.js", JSImport.Namespace)
+  object `import-tnt-network-node` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/note.js", JSImport.Namespace)
+  object `import-tnt-note` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/note-connection.js", JSImport.Namespace)
+  object `import-tnt-note-connection` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/o-data.js", JSImport.Namespace)
+  object `import-tnt-o-data` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/operations.js", JSImport.Namespace)
+  object `import-tnt-operations` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/package-diagram.js", JSImport.Namespace)
+  object `import-tnt-package-diagram` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/parallel-gateway.js", JSImport.Namespace)
+  object `import-tnt-parallel-gateway` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/parts.js", JSImport.Namespace)
+  object `import-tnt-parts` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/pattern.js", JSImport.Namespace)
+  object `import-tnt-pattern` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/pool.js", JSImport.Namespace)
+  object `import-tnt-pool` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/port.js", JSImport.Namespace)
+  object `import-tnt-port` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/private-cloud.js", JSImport.Namespace)
+  object `import-tnt-private-cloud` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/process-kpis.js", JSImport.Namespace)
+  object `import-tnt-process-kpis` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/process-package.js", JSImport.Namespace)
+  object `import-tnt-process-package` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/progress-group.js", JSImport.Namespace)
+  object `import-tnt-progress-group` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/provided-interface.js", JSImport.Namespace)
+  object `import-tnt-provided-interface` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/proxy-port.js", JSImport.Namespace)
+  object `import-tnt-proxy-port` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/python.js", JSImport.Namespace)
+  object `import-tnt-python` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/quantity-kind.js", JSImport.Namespace)
+  object `import-tnt-quantity-kind` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/raise-fault.js", JSImport.Namespace)
+  object `import-tnt-raise-fault` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/realization.js", JSImport.Namespace)
+  object `import-tnt-realization` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/receive-task.js", JSImport.Namespace)
+  object `import-tnt-receive-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/receptions.js", JSImport.Namespace)
+  object `import-tnt-receptions` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/references.js", JSImport.Namespace)
+  object `import-tnt-references` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/repeater.js", JSImport.Namespace)
+  object `import-tnt-repeater` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/required-interface.js", JSImport.Namespace)
+  object `import-tnt-required-interface` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/requirement-containment-relationship.js", JSImport.Namespace)
+  object `import-tnt-requirement-containment-relationship` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/requirement-diagram.js", JSImport.Namespace)
+  object `import-tnt-requirement-diagram` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/robot.js", JSImport.Namespace)
+  object `import-tnt-robot` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/router.js", JSImport.Namespace)
+  object `import-tnt-router` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/satellite.js", JSImport.Namespace)
+  object `import-tnt-satellite` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/script-task.js", JSImport.Namespace)
+  object `import-tnt-script-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/select.js", JSImport.Namespace)
+  object `import-tnt-select` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/send-task.js", JSImport.Namespace)
+  object `import-tnt-send-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/service-task.js", JSImport.Namespace)
+  object `import-tnt-service-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/signal.js", JSImport.Namespace)
+  object `import-tnt-signal` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/solution.js", JSImport.Namespace)
+  object `import-tnt-solution` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/solution-not-licensed.js", JSImport.Namespace)
+  object `import-tnt-solution-not-licensed` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/spike-arrest.js", JSImport.Namespace)
+  object `import-tnt-spike-arrest` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/splitter.js", JSImport.Namespace)
+  object `import-tnt-splitter` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/start-event.js", JSImport.Namespace)
+  object `import-tnt-start-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/start-timer-event.js", JSImport.Namespace)
+  object `import-tnt-start-timer-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/status-activating.js", JSImport.Namespace)
+  object `import-tnt-status-activating` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/status-suspended.js", JSImport.Namespace)
+  object `import-tnt-status-suspended` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/status-suspending.js", JSImport.Namespace)
+  object `import-tnt-status-suspending` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/status-terminated.js", JSImport.Namespace)
+  object `import-tnt-status-terminated` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/status-terminating.js", JSImport.Namespace)
+  object `import-tnt-status-terminating` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/string.js", JSImport.Namespace)
+  object `import-tnt-string` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/sub-content.js", JSImport.Namespace)
+  object `import-tnt-sub-content` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/sub-process-marker.js", JSImport.Namespace)
+  object `import-tnt-sub-process-marker` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/subject.js", JSImport.Namespace)
+  object `import-tnt-subject` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/swimlane.js", JSImport.Namespace)
+  object `import-tnt-swimlane` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/switch.js", JSImport.Namespace)
+  object `import-tnt-switch` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/system.js", JSImport.Namespace)
+  object `import-tnt-system` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/system-2.js", JSImport.Namespace)
+  object `import-tnt-system-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/system-hana.js", JSImport.Namespace)
+  object `import-tnt-system-hana` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/systemabap.js", JSImport.Namespace)
+  object `import-tnt-systemabap` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/systemjava.js", JSImport.Namespace)
+  object `import-tnt-systemjava` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/systemrecommendations.js", JSImport.Namespace)
+  object `import-tnt-systemrecommendations` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/systemtracks.js", JSImport.Namespace)
+  object `import-tnt-systemtracks` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/systemtrex.js", JSImport.Namespace)
+  object `import-tnt-systemtrex` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/task.js", JSImport.Namespace)
+  object `import-tnt-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/task-done.js", JSImport.Namespace)
+  object `import-tnt-task-done` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/task-optional.js", JSImport.Namespace)
+  object `import-tnt-task-optional` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/technicalinstance.js", JSImport.Namespace)
+  object `import-tnt-technicalinstance` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/technicalscenario.js", JSImport.Namespace)
+  object `import-tnt-technicalscenario` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/technicalsystem.js", JSImport.Namespace)
+  object `import-tnt-technicalsystem` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/terminate-end-event.js", JSImport.Namespace)
+  object `import-tnt-terminate-end-event` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/throughput-backlog.js", JSImport.Namespace)
+  object `import-tnt-throughput-backlog` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/throwing-message.js", JSImport.Namespace)
+  object `import-tnt-throwing-message` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/unit.js", JSImport.Namespace)
+  object `import-tnt-unit` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/use-case.js", JSImport.Namespace)
+  object `import-tnt-use-case` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/use-case-diagram.js", JSImport.Namespace)
+  object `import-tnt-use-case-diagram` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/use-case-extension-point.js", JSImport.Namespace)
+  object `import-tnt-use-case-extension-point` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/user.js", JSImport.Namespace)
+  object `import-tnt-user` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/uuid.js", JSImport.Namespace)
+  object `import-tnt-uuid` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/value-flow.js", JSImport.Namespace)
+  object `import-tnt-value-flow` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/value-mapping.js", JSImport.Namespace)
+  object `import-tnt-value-mapping` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/value-stream.js", JSImport.Namespace)
+  object `import-tnt-value-stream` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/value-type.js", JSImport.Namespace)
+  object `import-tnt-value-type` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/values.js", JSImport.Namespace)
+  object `import-tnt-values` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/verify-api.js", JSImport.Namespace)
+  object `import-tnt-verify-api` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/workflow-editor.js", JSImport.Namespace)
+  object `import-tnt-workflow-editor` extends js.Object
+
 }

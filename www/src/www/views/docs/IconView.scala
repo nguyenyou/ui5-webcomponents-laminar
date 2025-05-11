@@ -128,6 +128,29 @@ object IconView extends ExampleView("Icon") {
         }
       ),
       Demo(
+        title = "SAP Fiori Tools Icons",
+        content = Source.annotate {
+          div(
+            tw.space_x_2,
+            Icon(
+              _.name := IconName.tntActor
+            )(),
+            Icon(
+              _.name := IconName.tntAggregator
+            )(),
+            Icon(
+              _.name := IconName.tntAssociation
+            )(),
+            Icon(
+              _.name := IconName.tntNetwork
+            )(),
+            Icon(
+              _.name := IconName.tntRepeater
+            )()
+          )
+        }
+      ),
+      Demo(
         title = "SAP Business Suite Icons",
         content = Source.annotate {
           div(
