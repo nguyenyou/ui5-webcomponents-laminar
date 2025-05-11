@@ -48,6 +48,143 @@ object ListView extends ExampleView("List") {
             )
           )
         }
+      ),
+      Demo(
+        title = "Selection Modes",
+        content = Source.annotate {
+          div(
+            List(
+              _.selectionMode := "Single",
+              _.headerText    := "Single Select Mode"
+            )(
+              ListItemStandard(
+                _.icon     := IconName.map,
+                _.iconEnd  := true,
+                _.selected := true
+              )(
+                "Argentina"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "Bulgaria"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "China"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true,
+                _.tpe     := "Inactive"
+              )(
+                "Denmark (ui5-li type='Inactive')"
+              )
+            ),
+            br(),
+            List(
+              _.selectionMode := "SingleStart",
+              _.headerText    := "Single Select Begin Mode"
+            )(
+              ListItemStandard(
+                _.icon     := IconName.map,
+                _.iconEnd  := true,
+                _.selected := true
+              )(
+                "Argentina"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "Bulgaria"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "China"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true,
+                _.tpe     := "Inactive"
+              )(
+                "Denmark (ui5-li type='Inactive')"
+              )
+            ),
+            br(),
+            List(
+              _.selectionMode := "SingleEnd",
+              _.headerText    := "Single Select End Mode"
+            )(
+              ListItemStandard(
+                _.icon     := IconName.map,
+                _.iconEnd  := true,
+                _.selected := true
+              )(
+                "Argentina"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "Bulgaria"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true
+              )(
+                "China"
+              ),
+              ListItemStandard(
+                _.icon    := IconName.map,
+                _.iconEnd := true,
+                _.tpe     := "Inactive"
+              )(
+                "Denmark (ui5-li type='Inactive')"
+              )
+            ),
+            br(),
+            List(
+              _.selectionMode := "Multiple",
+              _.headerText    := "Multi Select Mode"
+            )(
+              ListItemStandard()(
+                "Pineapple"
+              ),
+              ListItemStandard(
+                _.selected := true
+              )(
+                "Orange"
+              ),
+              ListItemStandard()(
+                "Banana"
+              ),
+              ListItemStandard()(
+                "Mango"
+              )
+            ),
+            br(),
+            List(
+              _.selectionMode := "Delete",
+              _.headerText    := "Delete Mode"
+            )(
+              ListItemStandard()(
+                "Argentina"
+              ),
+              ListItemStandard()(
+                "Bulgaria"
+              ),
+              ListItemStandard()(
+                "China"
+              )
+            )
+          )
+        }
       )
     )
   }
