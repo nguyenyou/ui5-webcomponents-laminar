@@ -345,5 +345,6 @@ case class Tailwind() {
   def font_mono                       = this
   def ml_1                            = this
   def max_w_3xl                       = this
+  def max_w_4xl                       = this
   def py_2                            = this
 }
