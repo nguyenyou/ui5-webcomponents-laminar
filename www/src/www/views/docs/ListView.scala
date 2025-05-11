@@ -3,13 +3,16 @@ package www.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
+import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.components.Demo
+import www.libs.scalawind.*
 import www.macros.Source
 
 object ListView extends ExampleView("List") {
 
   override def component: HtmlElement = {
     div(
+      compactSize(true),
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
@@ -45,6 +48,58 @@ object ListView extends ExampleView("List") {
               _.additionalTextState := "Negative"
             )(
               "Mango"
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Grouping",
+        content = Source.annotate {
+          div(
+            List(_.selectionMode := "Multiple")(
+              ListItemGroup(_.headerText := "Front End Developers")(
+                ListItemStandard(
+                  _.icon    := IconName.navigationRightArrow,
+                  _.iconEnd := true,
+                  _.image := Avatar(
+                    _.shape := "Square"
+                  )(
+                    img(
+                      src := Images.womanAvatar3
+                    )
+                  )
+                )("Jennifer"),
+                ListItemStandard(
+                  _.icon    := IconName.navigationRightArrow,
+                  _.iconEnd := true,
+                  _.image := Avatar(
+                    _.shape := "Square"
+                  )(
+                    img(
+                      src := Images.womanAvatar4
+                    )
+                  )
+                )("Lora")
+              )
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Separators",
+        content = Source.annotate {
+          div(
+            List(_.separators := "None")(
+              ListItemStandard(_.icon := IconName.product)("Item #1"),
+              ListItemStandard(_.icon := IconName.product)("Item #2"),
+              ListItemStandard(_.icon := IconName.product)("Item #3")
+            ),
+            br(),
+            br(),
+            List(_.separators := "Inner")(
+              ListItemStandard(_.icon := IconName.shippingStatus)("Item #1"),
+              ListItemStandard(_.icon := IconName.shippingStatus)("Item #2"),
+              ListItemStandard(_.icon := IconName.shippingStatus)("Item #3")
             )
           )
         }
@@ -182,6 +237,123 @@ object ListView extends ExampleView("List") {
               ListItemStandard()(
                 "China"
               )
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Multiple Developer Groups",
+        content = Source.annotate {
+          List(_.selectionMode := "Multiple")(
+            ListItemGroup(_.headerText := "Front End Developers")(
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_3.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Jennifer"),
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_4.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Lora"),
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_5.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Carlotta")
+            ),
+            ListItemGroup(_.headerText := "Back End Developers")(
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/man_avatar_1.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Clark"),
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_1.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Ellen"),
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/man_avatar_2.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Adam")
+            ),
+            ListItemGroup(
+              _.header := div(
+                tw.w_full.flex.space_between.items_center,
+                span("Back End Developers"),
+                Icon(
+                  _.name := IconName.navigationRightArrow
+                )()
+              )
+            )(
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/woman_avatar_1.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Ellen"),
+              ListItemStandard(
+                _.icon    := IconName.navigationRightArrow,
+                _.iconEnd := true,
+                _.image := Avatar(
+                  _.shape := "Square"
+                )(
+                  img(
+                    src := "https://sap.github.io/ui5-webcomponents/images/avatars/man_avatar_2.png",
+                    alt := "Woman image"
+                  )
+                )
+              )("Adam")
             )
           )
         }

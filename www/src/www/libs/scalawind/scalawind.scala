@@ -193,11 +193,13 @@ case class Tailwind() {
   def grid_cols_(@unused tw: String)  = this
   def group                           = this
   def flex                            = this
+  def space_between                   = this
   def flex_1                          = this
   def items_end                       = this
   def flex_col                        = this
   def min_h_svh                       = this
   def justify_center                  = this
+  def justify_between                 = this
   def relative                        = this
   def bg_sap_brand                    = this
   def bg_sap_background               = this
