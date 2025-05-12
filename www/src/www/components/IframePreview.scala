@@ -6,7 +6,6 @@ import com.raquo.laminar.keys.HtmlAttr
 import www.components.ThemeProvider.contentDensitySignal
 import www.components.ThemeProvider.directionSignal
 import www.components.ThemeProvider.websiteThemeSignal
-import www.examples.ExampleRenderer
 import www.libs.scalawind.*
 import www.utils.isDevelopment
 

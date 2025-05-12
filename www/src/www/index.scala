@@ -4,8 +4,8 @@ import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
 import org.scalajs.dom
 import www.components.ThemeProvider
-import www.examples.ExampleRegistry
 import www.facades.GlobalConfig
+import www.views.docs.*
 
 @main
 def main(): Unit = {
@@ -20,5 +20,12 @@ def main(): Unit = {
 
   val container = dom.document.getElementById("app")
   Option(container).foreach(render(_, ThemeProvider()(App()())))
-  ExampleRegistry.run()
+
+  // Iframe preview examples
+  ToastExampleBasic()
+  ToastExamplePlacement()
+  ToastExampleDuration()
+  DialogExampleBasic()
+  DialogExampleStates()
+  PopoverExampleBasic()
 }

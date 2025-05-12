@@ -1,4 +1,4 @@
-package www.examples
+package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThemeMod.setTheme
