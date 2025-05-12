@@ -1,7 +1,7 @@
 package www.facades
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, JSName}
+import scala.scalajs.js.annotation.JSImport
 
 object Marked {
   @js.native

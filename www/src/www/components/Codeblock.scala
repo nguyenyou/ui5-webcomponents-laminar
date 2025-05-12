@@ -2,11 +2,13 @@ package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import www.facades.CodeToHtmlOptions
+import www.facades.Shiki
 import www.libs.scalawind.*
-import www.facades.{Shiki, CodeToHtmlOptions}
+
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.Failure
 import scala.util.Success
-import scala.concurrent.ExecutionContext.Implicits.global
 
 object Codeblock {
 

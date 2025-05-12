@@ -1,7 +1,7 @@
 package www.facades
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, JSName}
+import scala.scalajs.js.annotation.JSImport
 
 object Shiki {
   @js.native
@@ -10,21 +10,18 @@ object Shiki {
 }
 
 trait CodeToHtmlOptions extends js.Object {
-  val lang: js.UndefOr[String] = js.undefined
+  val lang: js.UndefOr[String]  = js.undefined
   val theme: js.UndefOr[String] = js.undefined
 }
 
 object CodeToHtmlOptions {
   def apply(
-    lang: js.UndefOr[String] = js.undefined,
-    theme: js.UndefOr[String] = js.undefined
+      lang: js.UndefOr[String] = js.undefined,
+      theme: js.UndefOr[String] = js.undefined
   ): CodeToHtmlOptions = {
     val options = js.Dynamic.literal()
     lang.foreach(options.lang = _)
     theme.foreach(options.theme = _)
-    options.asInstanceOf[CodeToHtmlOptions]
+    options.asInstanceOf[CodeToHtmlOptions] // scalafix:ok
   }
 }
-
-
-
