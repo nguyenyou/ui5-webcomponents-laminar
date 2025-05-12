@@ -174,9 +174,16 @@ This project wouldn't be possible without the brilliant work and generous sharin
 
 I'm truly standing on the shoulders of giants, and I'm deeply grateful for all their contributions.
 
-## What's next
+## What's Next
 
 This project was initially created in just a week, and I'm still learning and discovering new approaches every day. Each day brings new insights, unlocks new use cases, and yes, reveals new bugs! I will improve this project over time, so stay tuned.
+
+## Useful Resources
+
+- https://www.sap.com/design-system/fiori-design-web
+- https://experience.sap.com/fiori-design-web
+- https://sap.github.io/ui5-webcomponents/
+- https://sap.github.io/ui5-webcomponents-react
 
 ## License
 
