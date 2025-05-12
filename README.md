@@ -181,7 +181,7 @@ This project was initially created in just a week, and I'm still learning and di
 ## Useful Resources
 
 - https://www.sap.com/design-system/fiori-design-web
-- https://experience.sap.com/fiori-design-web
+- https://experience.sap.com/fiori-design-web/web-components-overview/
 - https://sap.github.io/ui5-webcomponents/
 - https://sap.github.io/ui5-webcomponents-react
 
