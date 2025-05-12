@@ -77,7 +77,7 @@ object InputView extends ExampleView("Input") {
           Input(
             _.placeholder     := "Type 'a'",
             _.showSuggestions := true,
-            _.value <-- valueVar.signal.distinct,
+            _.value <-- valueSignal,
             _.onInput.map(_.target.value) --> valueVar.writer
           )(
             children <-- suggestionsSignal.map {
