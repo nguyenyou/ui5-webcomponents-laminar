@@ -133,3 +133,12 @@ pre, code {
   -ms-overflow-style: none;
   scrollbar-width: none
 }
+
+@layer components {
+  .typography {
+    p {
+      font-size: 0.875rem;
+      color: var(--sapTextColor);
+    }
+  }
+}
