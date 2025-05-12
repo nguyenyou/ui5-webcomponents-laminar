@@ -357,6 +357,40 @@ object ListView extends ExampleView("List") {
             )
           )
         }
+      ),
+      Demo(
+        title = "Wrapping Behavior",
+        content = Source.annotate {
+          div(
+            List(
+              _.headerText := "List Item Wrapping Examples"
+            )(
+              // Default Behavior (Truncating)
+              ListItemStandard(
+                _.text := "Long list item title that gets truncated when it exceeds the width of the container. This allows users to see the beginning of the text and understand what the item is about. Long list item title that gets truncated when it exceeds the width of the container. This allows users to see the beginning of the text and understand what the item is about.",
+                _.description := "This description is truncated by default and shows an ellipsis at the end when the text is too long to fit in a single line. This description is truncated by default and shows an ellipsis at the end when the text is too long to fit in a single line.",
+                _.additionalText := "Truncated",
+                _.image := Avatar()(
+                  img(
+                    src := Images.manAvatar1
+                  )
+                )
+              )(),
+              // Wrapped Behavior
+              ListItemStandard(
+                _.wrappingType := "Normal",
+                _.text := "Long list item title that gets wrapped when it exceeds the width of the container. This allows users to read the full title without requiring interaction. Long list item title that gets wrapped when it exceeds the width of the container. This allows users to read the full title without requiring interaction. Long list item title that gets wrapped when it exceeds the width of the container. This allows users to read the full title without requiring interaction.",
+                _.description := "This description gets wrapped when the 'wrappingType' property is set to 'Normal', and the content flows to multiple lines instead of being truncated. This allows users to read lengthy descriptions without requiring interaction. This description gets wrapped when the 'wrappingType' property is set to 'Normal', and the content flows to multiple lines instead of being truncated. This allows users to read lengthy descriptions without requiring interaction.",
+                _.additionalText := "Wrapped",
+                _.image := Avatar()(
+                  img(
+                    src := Images.manAvatar2
+                  )
+                )
+              )()
+            )
+          )
+        }
       )
     )
   }
