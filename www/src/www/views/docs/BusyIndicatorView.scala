@@ -58,6 +58,46 @@ object BusyIndicatorView extends ExampleView("Busy Indicator") {
             )
           )
         }
+      ),
+      Demo(
+        title = "Busy component",
+        description = "The BusyIndicator can be placed over another web component.",
+        content = Source.annotate {
+          val busyVar  = Var(false)
+          val itemsVar = Var(List.empty[String])
+
+          div(
+            tw.flex.flex_col.gap_4,
+            Button(
+              _.onClick --> Observer { _ =>
+                busyVar.set(true)
+                org.scalajs.dom.window.setTimeout(
+                  () => {
+                    itemsVar.update { _ ++ List("UI5", "Web", "Components") }
+                    busyVar.set(false)
+                  },
+                  3000
+                )
+              }
+            )("Fetch List Data"),
+            BusyIndicator(
+              _.active <-- busyVar.signal.distinct
+            )(
+              Lis(
+                _.noDataText := "No Data",
+                _.headerText := "Available Items"
+              )(
+                children <-- itemsVar.signal.map(items =>
+                  items.map(item =>
+                    ListItemStandard(
+                      _.text := item
+                    )()
+                  )
+                )
+              )
+            )
+          )
+        }
       )
     )
   }
