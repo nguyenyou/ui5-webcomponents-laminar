@@ -2125,7 +2125,6 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons/dist/zoom-out.js", JSImport.Namespace)
   object `import-zoom-out` extends js.Object
 
-
   // Business Suite Icons
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/1x2-grid-layout.js", JSImport.Namespace)
   object `import-bs-1x2-grid-layout` extends js.Object
@@ -2265,7 +2264,10 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-anonymous.js", JSImport.Namespace)
   object `import-bs-business-partner-anonymous` extends js.Object
 
-  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-self-identified.js", JSImport.Namespace)
+  @js.native @JSImport(
+    "@ui5/webcomponents-icons-business-suite/dist/business-partner-self-identified.js",
+    JSImport.Namespace
+  )
   object `import-bs-business-partner-self-identified` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/business-partner-verified.js", JSImport.Namespace)
@@ -2460,7 +2462,10 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/due-date.js", JSImport.Namespace)
   object `import-bs-due-date` extends js.Object
 
-  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/early-widthdrawal-for-time-deposits.js", JSImport.Namespace)
+  @js.native @JSImport(
+    "@ui5/webcomponents-icons-business-suite/dist/early-widthdrawal-for-time-deposits.js",
+    JSImport.Namespace
+  )
   object `import-bs-early-widthdrawal-for-time-deposits` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/effects.js", JSImport.Namespace)
@@ -3021,7 +3026,10 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/section.js", JSImport.Namespace)
   object `import-bs-section` extends js.Object
 
-  @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/segment-preview-reference-objects.js", JSImport.Namespace)
+  @js.native @JSImport(
+    "@ui5/webcomponents-icons-business-suite/dist/segment-preview-reference-objects.js",
+    JSImport.Namespace
+  )
   object `import-bs-segment-preview-reference-objects` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/segmentation.js", JSImport.Namespace)
@@ -3293,7 +3301,6 @@ private[laminar] object IconImports {
 
   @js.native @JSImport("@ui5/webcomponents-icons-business-suite/dist/year.js", JSImport.Namespace)
   object `import-bs-year` extends js.Object
-
 
   // TNT Icons
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/actor.js", JSImport.Namespace)

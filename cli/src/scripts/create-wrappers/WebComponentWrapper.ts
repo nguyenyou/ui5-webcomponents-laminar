@@ -123,6 +123,9 @@ export class WebComponentWrapper {
     if (componentName === "Option") {
       return "Opt"
     }
+    if (componentName === "List") {
+      return "Lis"
+    }
     return componentName
   }
 

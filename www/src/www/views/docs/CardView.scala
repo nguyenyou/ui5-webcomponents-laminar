@@ -24,7 +24,7 @@ object CardView extends ExampleView("Card") {
               )()
             )()
           )(
-            List(
+            Lis(
               _.separators := "None"
             )(
               ListItemStandard(

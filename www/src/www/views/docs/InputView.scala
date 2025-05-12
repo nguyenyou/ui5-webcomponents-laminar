@@ -31,7 +31,7 @@ object InputView extends ExampleView("Input") {
         content = Source.annotate {
           val valueVar    = Var("")
           val valueSignal = valueVar.signal.distinct
-          val databaseEntries = Seq(
+          val databaseEntries = List(
             "Argentina",
             "Albania",
             "Algeria",
@@ -70,7 +70,7 @@ object InputView extends ExampleView("Input") {
             if (value.nonEmpty) {
               databaseEntries.filter(entry => entry.toLowerCase.contains(value.toLowerCase))
             } else {
-              Seq.empty[String]
+              List.empty[String]
             }
           }
 

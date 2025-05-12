@@ -16,7 +16,7 @@ object ListView extends ExampleView("List") {
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          List()(
+          Lis()(
             ListItemStandard(
               _.icon                := IconName.nutritionActivity,
               _.description         := "Tropical plant with an edible fruit",
@@ -56,7 +56,7 @@ object ListView extends ExampleView("List") {
         title = "Grouping",
         content = Source.annotate {
           div(
-            List(_.selectionMode := "Multiple")(
+            Lis(_.selectionMode := "Multiple")(
               ListItemGroup(_.headerText := "Front End Developers")(
                 ListItemStandard(
                   _.icon    := IconName.navigationRightArrow,
@@ -89,14 +89,14 @@ object ListView extends ExampleView("List") {
         title = "Separators",
         content = Source.annotate {
           div(
-            List(_.separators := "None")(
+            Lis(_.separators := "None")(
               ListItemStandard(_.icon := IconName.product)("Item #1"),
               ListItemStandard(_.icon := IconName.product)("Item #2"),
               ListItemStandard(_.icon := IconName.product)("Item #3")
             ),
             br(),
             br(),
-            List(_.separators := "Inner")(
+            Lis(_.separators := "Inner")(
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #1"),
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #2"),
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #3")
@@ -108,7 +108,7 @@ object ListView extends ExampleView("List") {
         title = "Selection Modes",
         content = Source.annotate {
           div(
-            List(
+            Lis(
               _.selectionMode := "Single",
               _.headerText    := "Single Select Mode"
             )(
@@ -140,7 +140,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            List(
+            Lis(
               _.selectionMode := "SingleStart",
               _.headerText    := "Single Select Begin Mode"
             )(
@@ -172,7 +172,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            List(
+            Lis(
               _.selectionMode := "SingleEnd",
               _.headerText    := "Single Select End Mode"
             )(
@@ -204,7 +204,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            List(
+            Lis(
               _.selectionMode := "Multiple",
               _.headerText    := "Multi Select Mode"
             )(
@@ -224,7 +224,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            List(
+            Lis(
               _.selectionMode := "Delete",
               _.headerText    := "Delete Mode"
             )(
@@ -244,7 +244,7 @@ object ListView extends ExampleView("List") {
       Demo(
         title = "Multiple Developer Groups",
         content = Source.annotate {
-          List(_.selectionMode := "Multiple")(
+          Lis(_.selectionMode := "Multiple")(
             ListItemGroup(_.headerText := "Front End Developers")(
               ListItemStandard(
                 _.icon    := IconName.navigationRightArrow,
@@ -362,7 +362,7 @@ object ListView extends ExampleView("List") {
         title = "Wrapping Behavior",
         content = Source.annotate {
           div(
-            List(
+            Lis(
               _.headerText := "List Item Wrapping Examples"
             )(
               // Default Behavior (Truncating)

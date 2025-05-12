@@ -15,13 +15,13 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object List extends WebComponent("ui5-list") {
+object Lis extends WebComponent("ui5-list") {
 
   @JSImport("@ui5/webcomponents/dist/List.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
-  type Self = List.type
+  type Self = Lis.type
 
   type Ref = ListComponent & dom.HTMLElement
 
