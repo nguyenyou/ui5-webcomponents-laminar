@@ -65,6 +65,14 @@ pre, code {
   @apply font-mono;
 }
 
+pre.shiki {
+  @apply m-0 whitespace-pre-wrap text-sm rounded-md overflow-hidden;
+}
+
+pre.shiki code {
+  @apply px-8 py-6 block;
+}
+
 .border-grid {
   border-style: dashed;
   border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)

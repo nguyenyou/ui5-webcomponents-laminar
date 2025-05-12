@@ -1,10 +1,10 @@
 package www.facades
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.JSGlobal
+import scala.scalajs.js.annotation.{JSImport, JSName}
 
-@js.native
-@JSGlobal
-object marked extends js.Object {
+object Marked {
+  @js.native
+  @JSImport("marked", "parse")
   def parse(markdown: String): String = js.native
 }

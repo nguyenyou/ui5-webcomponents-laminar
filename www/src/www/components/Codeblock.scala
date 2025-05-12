@@ -2,22 +2,35 @@ package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import www.facades.hljs
 import www.libs.scalawind.*
+import www.facades.{Shiki, CodeToHtmlOptions}
+import scala.util.Failure
+import scala.util.Success
+import scala.concurrent.ExecutionContext.Implicits.global
 
 object Codeblock {
 
   def apply(source: String): HtmlElement = {
     div(
       tw.relative,
-      pre(
-        tw.m_0.whitespace_pre_wrap.text_sm.rounded_md.overflow_hidden
-          .raw("language-scala"),
-        code(
-          tw.block.important(tw.px_8.py_6),
-          onMountCallback(mnt => hljs.highlightElement(mnt.thisNode.ref)),
-          source.trim
-        )
+      div(
+        onMountCallback { ctx =>
+          Shiki
+            .codeToHtml(
+              source,
+              CodeToHtmlOptions(
+                lang = "scala",
+                theme = "github-dark-dimmed"
+              )
+            )
+            .toFuture
+            .onComplete {
+              case Failure(_) => ()
+              case Success(value) =>
+                ctx.thisNode.ref.innerHTML = value
+            }
+        },
+        source.trim
       ),
       Copy(
         content = Val(source.trim),

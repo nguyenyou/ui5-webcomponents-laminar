@@ -11,9 +11,7 @@
     },
     "./package.json": "./package.json"
   },
-  "bin": {
-    "ui5-webcomponents-laminar-cli": "dist/bin/index.js"
-  },
+  "bin": "dist/bin/index.js",
   "scripts": {
     "build": "tsc --build tsconfig.build.json && yarn copy-files",
     "copy-files": "cp -r src/scripts/copy-files/shared dist/scripts/copy-files/",

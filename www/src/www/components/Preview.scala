@@ -1,7 +1,7 @@
 package www.components
 
 import com.raquo.laminar.api.L.*
-import www.facades.marked
+import www.facades.Marked
 import www.libs.scalawind.*
 
 object Preview {
@@ -112,8 +112,6 @@ object Preview {
 
     // Create an ID from the title for use in the URL hash
     val titleId = title.toLowerCase.replace(" ", "-")
-    val xxx     = marked.parse(description)
-    println(xxx)
 
     div(
       tw.space_y_2.mb_4,
@@ -132,7 +130,7 @@ object Preview {
       div(
         cls("typography"),
         onMountCallback { ctx =>
-          ctx.thisNode.ref.innerHTML = marked.parse(description)
+          ctx.thisNode.ref.innerHTML = Marked.parse(description)
         }
       ),
       div(

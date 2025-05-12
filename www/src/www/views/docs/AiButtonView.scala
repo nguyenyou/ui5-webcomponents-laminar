@@ -35,7 +35,6 @@ object AiButtonView extends ExampleView("AI Button") {
               _.id := menuOpenerId,
               _.state <-- buttonStateVar.signal,
               _.onClick.map { event =>
-                println(event.target.state)
                 event.target.state.toOption.foreach { state =>
                   menuOpenVar.set(false)
 
@@ -79,7 +78,6 @@ object AiButtonView extends ExampleView("AI Button") {
                   _.id         := "menuBasic",
                   _.openerId   := menuOpenerId,
                   _.onItemClick.map { event =>
-                    println(event)
                     event.detail.text match {
                       case "Regenerate" =>
                         buttonStateVar.set("generating")
