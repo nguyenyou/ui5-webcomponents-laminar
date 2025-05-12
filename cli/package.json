@@ -1,7 +1,6 @@
 {
   "name": "ui5-webcomponents-laminar-cli",
   "version": "0.0.1",
-  "private": true,
   "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
@@ -12,9 +11,12 @@
     },
     "./package.json": "./package.json"
   },
-  "bin": "./dist/bin/index.js",
+  "bin": {
+    "ui5-webcomponents-laminar-cli": "dist/bin/index.js"
+  },
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc --build tsconfig.build.json && yarn copy-files",
+    "copy-files": "cp -r src/scripts/copy-files/shared dist/scripts/copy-files/",
     "create-wrappers": "concurrently -c \"auto\" \"npm:create-wrappers-*\"",
     "create-wrappers-base": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
     "create-wrappers-fiori": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-fiori --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
