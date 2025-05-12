@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_254_9)">
+<rect width="1200" height="630" fill="#0040B0"/>
+<g filter="url(#filter0_d_254_9)">
+<path d="M-598.75 770.583L124.45 770.583L870.963 5.285e-05L-598.75 0V770.583Z" fill="#0057D2"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M255 130.083V499.917H604.056L945.667 130.083H255Z" stroke="#C2FCEE" stroke-width="19.8333"/>
+</g>
+<defs>
+<filter id="filter0_d_254_9" x="-676.192" y="-58.0812" width="1624.6" height="925.467" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="19.3604"/>
+<feGaussianBlur stdDeviation="38.7208"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.133333 0 0 0 0 0.211765 0 0 0 0 0.286275 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_254_9"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_254_9" result="shape"/>
+</filter>
+<clipPath id="clip0_254_9">
+<rect width="1200" height="630" fill="white"/>
+</clipPath>
+</defs>
+</svg>
