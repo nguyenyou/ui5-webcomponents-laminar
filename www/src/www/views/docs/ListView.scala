@@ -55,6 +55,10 @@ object ListView extends ExampleView("List") {
       ),
       Demo(
         title = "Growing List with Scroll",
+        description = """
+          |The List fires an **load-more** event when the user scrolls to the bottom.
+          |The event can be used for loading more data (items) as shown in the sample.
+          |""".stripMargin,
         content = Source.annotate {
           case class Item(text: String, description: String, additionalText: String, additionalTextState: ValueState)
           val itemsVar = Var(
@@ -111,6 +115,81 @@ object ListView extends ExampleView("List") {
               )
             )
           )
+        }
+      ),
+      Demo(
+        title = "Growing On Button Press",
+        description = """
+          |The List fires an **load-more** event when the user clicks to the "Load More" button at the bottom. 
+          |The event can be used for loading more data (items) as shown in the sample.
+          |""".stripMargin,
+        content = Source.annotate {
+          case class Item(text: String, description: String, additionalText: String, additionalTextState: ValueState)
+          val itemsVar = Var(
+            List(
+              Item("Pineapple", "Tropical plant with an edible fruit", "In-stock", "Positive"),
+              Item("Orange", "Occurs between red and yellow", "Expires", "Critical"),
+              Item("Blueberry", "The yellow lengthy fruit", "Re-stock", "Information"),
+              Item(
+                "Plum",
+                "Small fruit that comes in various colors, including red, purple",
+                "Re-stock",
+                "Information"
+              ),
+              Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
+            )
+          )
+          Lis(
+            _.growing      := "Button",
+            _.loadingDelay := 0,
+            _.onLoadMore.map { event =>
+              event.target.loading = true
+
+              org.scalajs.dom.window.setTimeout(
+                () => {
+                  itemsVar.update { prev =>
+                    prev ++ List(
+                      Item("Pineapple", "Tropical plant with an edible fruit", "In-stock", "Positive"),
+                      Item("Orange", "Occurs between red and yellow", "Expires", "Critical"),
+                      Item("Blueberry", "The yellow lengthy fruit", "Re-stock", "Information"),
+                      Item(
+                        "Plum",
+                        "Small fruit that comes in various colors, including red, purple",
+                        "Re-stock",
+                        "Information"
+                      ),
+                      Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
+                    )
+                  }
+                  event.target.loading = false
+                },
+                1500
+              )
+            } --> Observer.empty
+          )(
+            height.px(300),
+            children <-- itemsVar.signal.map(
+              _.map(item =>
+                ListItemStandard(
+                  _.icon                := IconName.nutritionActivity,
+                  _.description         := item.description,
+                  _.additionalText      := item.additionalText,
+                  _.additionalTextState := item.additionalTextState
+                )(item.text)
+              )
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "No data",
+        description = """You can show a text when there aren't items (data) via the **noDataText** property.""",
+        content = Source.annotate {
+          Lis(
+            _.selectionMode := "None",
+            _.headerText    := "No Data",
+            _.noDataText    := "No Data Available"
+          )()
         }
       ),
       Demo(
@@ -416,6 +495,59 @@ object ListView extends ExampleView("List") {
                 )
               )("Adam")
             )
+          )
+        }
+      ),
+      Demo(
+        title = "Drag And Drop",
+        description = """The list items are draggable through the use of the **movable** property on **ListItem**.""",
+        content = Source.annotate {
+          Lis(
+            _.onMove.map { event =>
+              val source      = event.detail.source
+              val destination = event.detail.destination
+              destination.placement match
+                case "Before" =>
+                  destination.element.before(source.element)
+                case "After" =>
+                  destination.element.after(source.element)
+                case "On" =>
+                  destination.element.prepend(source.element)
+                case _ => ()
+
+            } --> Observer.empty,
+            _.onMoveOver.map { event =>
+              val destination = event.detail.destination
+              val source      = event.detail.source
+              val list        = event.target
+              if (list.contains(source.element)) {
+                if (destination.placement == "Before" || destination.placement == "After") {
+                  event.preventDefault()
+                }
+              }
+
+            } --> Observer.empty
+          )(
+            ListItemStandard(
+              _.icon    := IconName.checklistItem,
+              _.movable := true
+            )("Item #1"),
+            ListItemStandard(
+              _.icon    := IconName.checklistItem,
+              _.movable := true
+            )("Item #2"),
+            ListItemStandard(
+              _.icon    := IconName.checklistItem,
+              _.movable := true
+            )("Item #3"),
+            ListItemStandard(
+              _.icon    := IconName.checklistItem,
+              _.movable := true
+            )("Item #4"),
+            ListItemStandard(
+              _.icon    := IconName.checklistItem,
+              _.movable := true
+            )("Item #5")
           )
         }
       ),
