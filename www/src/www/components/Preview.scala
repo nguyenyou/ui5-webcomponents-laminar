@@ -174,7 +174,7 @@ object Preview {
           div(
             tw.relative.rounded_md.overflow_hidden,
             div(
-              tw.relative.z_10.p_4.rounded_md.overflow_hidden.min_h_("118px"),
+              tw.relative.z_10.p_3.rounded_md.overflow_hidden.min_h_("118px"),
               tw.bg_sap_background.text_sap_text.border.border_grid,
               tw.hidden <-- activeTabSignal.map(_ == "Preview").not,
               preview

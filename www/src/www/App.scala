@@ -58,7 +58,7 @@ case class App() {
             div(
               tw.container.flex_1.items_start,
               tw.md(tw.grid.gap_6.grid_cols_("220px_minmax(0,1fr)")),
-              tw.lg(tw.grid.gap_10.grid_cols_("240px_minmax(0,1fr)")),
+              tw.lg(tw.grid.gap_6.grid_cols_("240px_minmax(0,1fr)")),
               Sidebar()(),
               mainTag(
                 tw.relative.py_6

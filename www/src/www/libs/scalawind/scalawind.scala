@@ -224,6 +224,7 @@ case class Tailwind() {
   def h_6                             = this
   def h_14                            = this
   def w_6                             = this
+  def p_2                             = this
   def object_contain                  = this
   def inline_block                    = this
   def font_bold                       = this
@@ -244,6 +245,7 @@ case class Tailwind() {
   def w_full                          = this
   def min_w_0                         = this
   def max_w_2xl                       = this
+  def max_w_5xl                       = this
   def hidden                          = this
   def text_sm                         = this
   def text_xs                         = this
@@ -292,6 +294,7 @@ case class Tailwind() {
   def bg_neutral_800                  = this
   def px_3                            = this
   def py_1                            = this
+  def p_3                             = this
   def mb_4                            = this
   def font_semibold                   = this
   def text_lg                         = this
