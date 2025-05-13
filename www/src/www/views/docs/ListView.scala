@@ -3,6 +3,7 @@ package www.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
+import io.github.nguyenyou.ui5.webcomponents.laminar.shared.ValueState
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.components.Demo
 import www.libs.scalawind.*
@@ -48,6 +49,66 @@ object ListView extends ExampleView("List") {
               _.additionalTextState := "Negative"
             )(
               "Mango"
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Growing List with Scroll",
+        content = Source.annotate {
+          case class Item(text: String, description: String, additionalText: String, additionalTextState: ValueState)
+          val itemsVar = Var(
+            List(
+              Item("Pineapple", "Tropical plant with an edible fruit", "In-stock", "Positive"),
+              Item("Orange", "Occurs between red and yellow", "Expires", "Critical"),
+              Item("Blueberry", "The yellow lengthy fruit", "Re-stock", "Information"),
+              Item(
+                "Plum",
+                "Small fruit that comes in various colors, including red, purple",
+                "Re-stock",
+                "Information"
+              ),
+              Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
+            )
+          )
+          Lis(
+            _.growing      := "Scroll",
+            _.loadingDelay := 0,
+            _.onLoadMore.map { event =>
+              event.target.loading = true
+
+              org.scalajs.dom.window.setTimeout(
+                () => {
+                  itemsVar.update { prev =>
+                    prev ++ List(
+                      Item("Pineapple", "Tropical plant with an edible fruit", "In-stock", "Positive"),
+                      Item("Orange", "Occurs between red and yellow", "Expires", "Critical"),
+                      Item("Blueberry", "The yellow lengthy fruit", "Re-stock", "Information"),
+                      Item(
+                        "Plum",
+                        "Small fruit that comes in various colors, including red, purple",
+                        "Re-stock",
+                        "Information"
+                      ),
+                      Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
+                    )
+                  }
+                  event.target.loading = false
+                },
+                1500
+              )
+            } --> Observer.empty
+          )(
+            height.px(300),
+            children <-- itemsVar.signal.map(
+              _.map(item =>
+                ListItemStandard(
+                  _.icon                := IconName.nutritionActivity,
+                  _.description         := item.description,
+                  _.additionalText      := item.additionalText,
+                  _.additionalTextState := item.additionalTextState
+                )(item.text)
+              )
             )
           )
         }
