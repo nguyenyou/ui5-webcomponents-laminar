@@ -184,6 +184,8 @@ This project was initially created in just a week, and I'm still learning and di
 - https://experience.sap.com/fiori-design-web/web-components-overview/
 - https://sap.github.io/ui5-webcomponents/
 - https://sap.github.io/ui5-webcomponents-react
+- https://www.sap.com/design-system/fiori-design-web/foundations/visual/design-tokens
+- https://www.sap.com/design-system/fiori-design-web/foundations/visual/colors/morning-horizon
 
 ## License
 
