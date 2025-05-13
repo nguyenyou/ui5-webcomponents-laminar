@@ -99,13 +99,13 @@ object TreeView extends ExampleView("Tree") {
                   _.expanded := true,
                   _.content := Select(
                   )(
-                    Opt()(
+                    UOption()(
                       "Level 2"
                     ),
-                    Opt()(
+                    UOption()(
                       "Option 2.1"
                     ),
-                    Opt()(
+                    UOption()(
                       "Option 2.3"
                     )
                   )

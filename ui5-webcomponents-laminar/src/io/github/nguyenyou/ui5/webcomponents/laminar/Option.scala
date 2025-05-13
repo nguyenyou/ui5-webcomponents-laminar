@@ -9,13 +9,13 @@ import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*
 
-object Opt extends WebComponent("ui5-option") {
+object UOption extends WebComponent("ui5-option") {
 
   @JSImport("@ui5/webcomponents/dist/Option.js", JSImport.Default)
   @js.native
   object RawImport extends js.Object
 
-  type Self = Opt.type
+  type Self = UOption.type
 
   type Ref = OptionComponent & dom.HTMLElement
 

@@ -81,15 +81,15 @@ object DatePickerView extends ExampleView("Date Picker") {
               } --> calendarWeekNumberingVar.writer
             )(
               width.px(300),
-              Opt()(
+              UOption()(
                 dataAttr("calendar-week-numbering") := "ISO_8601",
                 "ISO 8601"
               ),
-              Opt()(
+              UOption()(
                 dataAttr("calendar-week-numbering") := "MiddleEastern",
                 "MiddleEastern"
               ),
-              Opt()(
+              UOption()(
                 dataAttr("calendar-week-numbering") := "WesternTraditional",
                 "WesternTraditional"
               )

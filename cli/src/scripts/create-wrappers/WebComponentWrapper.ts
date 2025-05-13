@@ -120,11 +120,9 @@ export class WebComponentWrapper {
   }
 
   handleReservedScalaKeywords(componentName: string) {
-    if (componentName === "Option") {
-      return "Opt"
-    }
-    if (componentName === "List") {
-      return "Lis"
+    const reservedKeywords = ["Option", "List"]
+    if (reservedKeywords.includes(componentName)) {
+      return `U${componentName}`
     }
     return componentName
   }

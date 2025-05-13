@@ -16,9 +16,9 @@ object SelectView extends ExampleView("Select") {
         title = "Basic Sample",
         content = Source.annotate {
           Select()(
-            Opt(_.icon := IconName.laptop)("Desktop"),
-            Opt(_.icon := IconName.ipad, _.selected := true)("Tablet"),
-            Opt(_.icon := IconName.phone)("Phone")
+            UOption(_.icon := IconName.laptop)("Desktop"),
+            UOption(_.icon := IconName.ipad, _.selected := true)("Tablet"),
+            UOption(_.icon := IconName.phone)("Phone")
           )
         }
       ),
@@ -29,52 +29,52 @@ object SelectView extends ExampleView("Select") {
             Select(
               _.valueState := "Positive"
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.valueState := "Information"
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.valueState := "Critical"
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.valueState := "Negative"
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.valueState        := "Negative",
               _.valueStateMessage := div("Please provide valid value")
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.readonly := true
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             ),
             Select(
               _.disabled := true
             )(
-              Opt(_.icon := IconName.meal, _.selected := true)("Apple"),
-              Opt(_.icon := IconName.meal)("Avocado"),
-              Opt(_.icon := IconName.phone)("Mango")
+              UOption(_.icon := IconName.meal, _.selected := true)("Apple"),
+              UOption(_.icon := IconName.meal)("Avocado"),
+              UOption(_.icon := IconName.phone)("Mango")
             )
           )
         }
@@ -83,11 +83,11 @@ object SelectView extends ExampleView("Select") {
         title = "Options with additional text",
         content = Source.annotate {
           Select()(
-            Opt(_.additionalText := "AT")("Austria"),
-            Opt(_.additionalText := "BE")("Belgium"),
-            Opt(_.additionalText := "BR")("Brazil"),
-            Opt(_.additionalText := "BG")("Bulgaria"),
-            Opt(_.additionalText := "CA")("Canada")
+            UOption(_.additionalText := "AT")("Austria"),
+            UOption(_.additionalText := "BE")("Belgium"),
+            UOption(_.additionalText := "BR")("Brazil"),
+            UOption(_.additionalText := "BG")("Bulgaria"),
+            UOption(_.additionalText := "CA")("Canada")
           )
         }
       ),

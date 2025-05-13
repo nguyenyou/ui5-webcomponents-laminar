@@ -17,7 +17,7 @@ object ListView extends ExampleView("List") {
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
-          Lis()(
+          UList()(
             ListItemStandard(
               _.icon                := IconName.nutritionActivity,
               _.description         := "Tropical plant with an edible fruit",
@@ -75,7 +75,7 @@ object ListView extends ExampleView("List") {
               Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
             )
           )
-          Lis(
+          UList(
             _.growing      := "Scroll",
             _.loadingDelay := 0,
             _.onLoadMore.map { event =>
@@ -139,7 +139,7 @@ object ListView extends ExampleView("List") {
               Item("Mango", "The tropical stone fruit", "Re-stock", "Negative")
             )
           )
-          Lis(
+          UList(
             _.growing      := "Button",
             _.loadingDelay := 0,
             _.onLoadMore.map { event =>
@@ -185,7 +185,7 @@ object ListView extends ExampleView("List") {
         title = "No data",
         description = """You can show a text when there aren't items (data) via the **noDataText** property.""",
         content = Source.annotate {
-          Lis(
+          UList(
             _.selectionMode := "None",
             _.headerText    := "No Data",
             _.noDataText    := "No Data Available"
@@ -196,7 +196,7 @@ object ListView extends ExampleView("List") {
         title = "Grouping",
         content = Source.annotate {
           div(
-            Lis(_.selectionMode := "Multiple")(
+            UList(_.selectionMode := "Multiple")(
               ListItemGroup(_.headerText := "Front End Developers")(
                 ListItemStandard(
                   _.icon    := IconName.navigationRightArrow,
@@ -229,14 +229,14 @@ object ListView extends ExampleView("List") {
         title = "Separators",
         content = Source.annotate {
           div(
-            Lis(_.separators := "None")(
+            UList(_.separators := "None")(
               ListItemStandard(_.icon := IconName.product)("Item #1"),
               ListItemStandard(_.icon := IconName.product)("Item #2"),
               ListItemStandard(_.icon := IconName.product)("Item #3")
             ),
             br(),
             br(),
-            Lis(_.separators := "Inner")(
+            UList(_.separators := "Inner")(
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #1"),
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #2"),
               ListItemStandard(_.icon := IconName.shippingStatus)("Item #3")
@@ -248,7 +248,7 @@ object ListView extends ExampleView("List") {
         title = "Selection Modes",
         content = Source.annotate {
           div(
-            Lis(
+            UList(
               _.selectionMode := "Single",
               _.headerText    := "Single Select Mode"
             )(
@@ -280,7 +280,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            Lis(
+            UList(
               _.selectionMode := "SingleStart",
               _.headerText    := "Single Select Begin Mode"
             )(
@@ -312,7 +312,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            Lis(
+            UList(
               _.selectionMode := "SingleEnd",
               _.headerText    := "Single Select End Mode"
             )(
@@ -344,7 +344,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            Lis(
+            UList(
               _.selectionMode := "Multiple",
               _.headerText    := "Multi Select Mode"
             )(
@@ -364,7 +364,7 @@ object ListView extends ExampleView("List") {
               )
             ),
             br(),
-            Lis(
+            UList(
               _.selectionMode := "Delete",
               _.headerText    := "Delete Mode"
             )(
@@ -384,7 +384,7 @@ object ListView extends ExampleView("List") {
       Demo(
         title = "Multiple Developer Groups",
         content = Source.annotate {
-          Lis(_.selectionMode := "Multiple")(
+          UList(_.selectionMode := "Multiple")(
             ListItemGroup(_.headerText := "Front End Developers")(
               ListItemStandard(
                 _.icon    := IconName.navigationRightArrow,
@@ -502,7 +502,7 @@ object ListView extends ExampleView("List") {
         title = "Drag And Drop",
         description = """The list items are draggable through the use of the **movable** property on **ListItem**.""",
         content = Source.annotate {
-          Lis(
+          UList(
             _.onMove.map { event =>
               val source      = event.detail.source
               val destination = event.detail.destination
@@ -555,7 +555,7 @@ object ListView extends ExampleView("List") {
         title = "Wrapping Behavior",
         content = Source.annotate {
           div(
-            Lis(
+            UList(
               _.headerText := "List Item Wrapping Examples"
             )(
               // Default Behavior (Truncating)

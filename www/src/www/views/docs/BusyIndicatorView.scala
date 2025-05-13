@@ -83,7 +83,7 @@ object BusyIndicatorView extends ExampleView("Busy Indicator") {
             BusyIndicator(
               _.active <-- busyVar.signal.distinct
             )(
-              Lis(
+              UList(
                 _.noDataText := "No Data",
                 _.headerText := "Available Items"
               )(
