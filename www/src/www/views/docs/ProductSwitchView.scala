@@ -4,14 +4,7 @@ import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import www.components.Demo
 import www.macros.Source
-//  <ui5-product-switch>
-//         <ui5-product-switch-item title-text="Home" subtitle-text="Central Home" icon="home"></ui5-product-switch-item>
-//         <ui5-product-switch-item title-text="Analytics Cloud" subtitle-text="Analytics Cloud"
-//             icon="business-objects-experience"></ui5-product-switch-item>
-//         <ui5-product-switch-item title-text="Catalog" subtitle-text="Ariba" icon="contacts"></ui5-product-switch-item>
-//         <ui5-product-switch-item title-text="Travel &amp; Expense" subtitle-text="Concur"
-//             icon="flight"></ui5-product-switch-item>
-//     </ui5-product-switch>
+
 object ProductSwitchView extends ExampleView("Product Switch") {
 
   override def component: HtmlElement = {
@@ -37,7 +30,7 @@ object ProductSwitchView extends ExampleView("Product Switch") {
                 _.icon         := IconName.contacts
               )(),
               ProductSwitchItem(
-                _.titleText    := "Travel &amp; Expense",
+                _.titleText    := "Travel & Expense",
                 _.subtitleText := "Concur",
                 _.icon         := IconName.flight
               )()
