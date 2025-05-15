@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object FilterItemOption extends WebComponent("ui5-filter-item-option") {
 
   @JSImport("@ui5/webcomponents-fiori/dist/FilterItemOption.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = FilterItemOption.type
 
@@ -21,20 +20,23 @@ object FilterItemOption extends WebComponent("ui5-filter-item-option") {
 
   // -- Attributes --
 
-  /** Defines if the component is selected.
-    *
-    * Default: false
-    */
+  /**
+   * Defines if the component is selected.
+   *
+   * Default: false
+   */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-
-  /** Defines the text of the component.
-    *
-    * Default: undefined
-    */
+  /**
+   * Defines the text of the component.
+   *
+   * Default: undefined
+   */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
+
   // -- Slots --
 
 }
+

@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object ToolbarSelectOption extends WebComponent("ui5-toolbar-select-option") {
 
   @JSImport("@ui5/webcomponents/dist/ToolbarSelectOption.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = ToolbarSelectOption.type
 
@@ -21,14 +20,17 @@ object ToolbarSelectOption extends WebComponent("ui5-toolbar-select-option") {
 
   // -- Attributes --
 
-  /** Defines the selected state of the component.
-    *
-    * Default: false
-    */
+  /**
+   * Defines the selected state of the component.
+   *
+   * Default: false
+   */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
+
   // -- Slots --
 
 }
+

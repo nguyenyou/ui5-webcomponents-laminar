@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object TableSelectionSingle extends WebComponent("ui5-table-selection-single") {
 
   @JSImport("@ui5/webcomponents/dist/TableSelectionSingle.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = TableSelectionSingle.type
 
@@ -21,22 +20,25 @@ object TableSelectionSingle extends WebComponent("ui5-table-selection-single") {
 
   // -- Attributes --
 
-  /** Defines the `row-key` value of the selected row.
-    *
-    * Default: undefined
-    */
+  /**
+   * Defines the `row-key` value of the selected row.
+   *
+   * Default: undefined
+   */
   lazy val selected: HtmlAttr[String] = htmlAttr("selected", StringAsIsCodec)
 
   // -- Events --
 
-  /** Fired when the selection is changed by user interaction.
-    *
-    * | cancelable | bubbles |
-    * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
-    */
-  lazy val onChange: EventProp[Ui5CustomEvent[Ref]] = new EventProp("change")
+  /**
+   * Fired when the selection is changed by user interaction.
+   *
+  * | cancelable | bubbles |
+  * | :--------: | :-----: |
+  * | ❌|✅|
+   */
+  lazy val onChange: EventProp[Ui5CustomEvent[Ref]]  = new EventProp("change")
 
   // -- Slots --
 
 }
+

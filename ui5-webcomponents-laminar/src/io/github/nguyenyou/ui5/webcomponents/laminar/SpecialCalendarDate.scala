@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object SpecialCalendarDate extends WebComponent("ui5-special-date") {
 
   @JSImport("@ui5/webcomponents/dist/SpecialCalendarDate.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = SpecialCalendarDate.type
 
@@ -21,18 +20,22 @@ object SpecialCalendarDate extends WebComponent("ui5-special-date") {
 
   // -- Attributes --
 
-  /** Defines the type of the special date.
-    *
-    * Default: "None"
-    */
+  /**
+   * Defines the type of the special date.
+   *
+   * Default: "None"
+   */
   lazy val tpe: HtmlAttr[CalendarLegendItemType] = htmlAttr("type", StringUnionCodec[CalendarLegendItemType])
-
-  /** The date formatted according to the `formatPattern` property of the `Calendar` that hosts the component.
-    */
+  /**
+   * The date formatted according to the `formatPattern` property
+   * of the `Calendar` that hosts the component.
+   */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
 
   // -- Events --
 
+
   // -- Slots --
 
 }
+

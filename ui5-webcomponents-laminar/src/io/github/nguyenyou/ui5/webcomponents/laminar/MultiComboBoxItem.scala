@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object MultiComboBoxItem extends WebComponent("ui5-mcb-item") {
 
   @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = MultiComboBoxItem.type
 
@@ -21,26 +20,29 @@ object MultiComboBoxItem extends WebComponent("ui5-mcb-item") {
 
   // -- Attributes --
 
-  /** Defines the additional text of the component.
-    *
-    * Default: undefined
-    */
+  /**
+   * Defines the additional text of the component.
+   *
+   * Default: undefined
+   */
   lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
-
-  /** Defines the selected state of the component.
-    *
-    * Default: false
-    */
+  /**
+   * Defines the selected state of the component.
+   *
+   * Default: false
+   */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-
-  /** Defines the text of the component.
-    *
-    * Default: undefined
-    */
+  /**
+   * Defines the text of the component.
+   *
+   * Default: undefined
+   */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
+
   // -- Slots --
 
 }
+

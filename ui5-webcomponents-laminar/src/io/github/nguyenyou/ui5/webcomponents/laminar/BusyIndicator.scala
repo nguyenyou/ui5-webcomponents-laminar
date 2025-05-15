@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.*
 object BusyIndicator extends WebComponent("ui5-busy-indicator") {
 
   @JSImport("@ui5/webcomponents/dist/BusyIndicator.js", JSImport.Default)
-  @js.native
-  object RawImport extends js.Object
+  @js.native object RawImport extends js.Object
 
   type Self = BusyIndicator.type
 
@@ -21,39 +20,41 @@ object BusyIndicator extends WebComponent("ui5-busy-indicator") {
 
   // -- Attributes --
 
-  /** Defines if the busy indicator is visible on the screen. By default it is not.
-    *
-    * Default: false
-    */
+  /**
+   * Defines if the busy indicator is visible on the screen. By default it is not.
+   *
+   * Default: false
+   */
   lazy val active: HtmlAttr[Boolean] = htmlAttr("active", BooleanAsAttrPresenceCodec)
-
-  /** Defines the delay in milliseconds, after which the busy indicator will be visible on the screen.
-    *
-    * Default: 1000
-    */
+  /**
+   * Defines the delay in milliseconds, after which the busy indicator will be visible on the screen.
+   *
+   * Default: 1000
+   */
   lazy val delay: HtmlAttr[Double] = htmlAttr("delay", DoubleAsStringCodec)
-
-  /** Defines the size of the component.
-    *
-    * Default: "M"
-    */
+  /**
+   * Defines the size of the component.
+   *
+   * Default: "M"
+   */
   lazy val size: HtmlAttr[BusyIndicatorSize] = htmlAttr("size", StringUnionCodec[BusyIndicatorSize])
-
-  /** Defines text to be displayed below the component. It can be used to inform the user of the current operation.
-    *
-    * Default: undefined
-    */
+  /**
+   * Defines text to be displayed below the component. It can be used to inform the user of the current operation.
+   *
+   * Default: undefined
+   */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
-
-  /** Defines the placement of the text.
-    *
-    * Default: "Bottom"
-    */
-  lazy val textPlacement: HtmlAttr[BusyIndicatorTextPlacement] =
-    htmlAttr("text-placement", StringUnionCodec[BusyIndicatorTextPlacement])
+  /**
+   * Defines the placement of the text.
+   *
+   * Default: "Bottom"
+   */
+  lazy val textPlacement: HtmlAttr[BusyIndicatorTextPlacement] = htmlAttr("text-placement", StringUnionCodec[BusyIndicatorTextPlacement])
 
   // -- Events --
+
 
   // -- Slots --
 
 }
+
