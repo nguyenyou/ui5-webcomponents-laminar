@@ -15,8 +15,35 @@ switch (command) {
   }
 
   case 'generate-icons': {
+    const generateIconsOptions = {
+      packageName: {
+        type: 'string' as const
+      },
+      out: {
+        type: 'string' as const,
+        short: 'o'
+      }
+    };
+    const { values } = parseArgs({ options: generateIconsOptions, allowPositionals: true });
+    const { packageName, out } = values;
+    const missingParameters = [];
+    if (!packageName) {
+      missingParameters.push('--packageName');
+    }
+    if (!out) {
+      missingParameters.push('--out');
+    }
+    if (missingParameters.length > 0) {
+      console.error(`
+      Missing parameters: ${missingParameters.join(', ')}
+      `);
+      process.exit(1);
+    }
+    
+    const outDir = resolve(process.cwd(), values.out!);
+    console.log('outDir', outDir);
     const generateIconsModule = await import('../scripts/generate-icons/main.js');
-    await generateIconsModule.default();
+    await generateIconsModule.default(packageName!, outDir);
     break;
   }
 

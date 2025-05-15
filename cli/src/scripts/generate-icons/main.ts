@@ -134,7 +134,10 @@ ${allTntIconValues.map(line => "  " + line).join("\n")}
 `.trim();
 }
 
-export default async function generateIcons(): Promise<void> {
+export default async function generateIcons(
+  packageName: string,
+  outDir: string
+): Promise<void> {
   try {
     const standardIconsDir = path.join(workspaceRoot, 'node_modules', '@ui5', 'webcomponents-icons', 'dist');
     const businessSuiteIconsDir = path.join(workspaceRoot, 'node_modules', '@ui5', 'webcomponents-icons-business-suite', 'dist');
@@ -167,23 +170,9 @@ export default async function generateIcons(): Promise<void> {
         .sort()
       : [];
     
-    // Define destination and package info
-    const destinationFolder = path.join(
-      workspaceRoot, 
-      'ui5-webcomponents-laminar', 
-      'src', 
-      'io', 
-      'github', 
-      'nguyenyou', 
-      'ui5', 
-      'webcomponents',
-      "laminar"
-    );
-    const fullPackageName = "io.github.nguyenyou.ui5.webcomponents.laminar";
-    
     // Ensure directory exists
-    if (!fs.existsSync(destinationFolder)) {
-      fs.mkdirSync(destinationFolder, { recursive: true });
+    if (!fs.existsSync(outDir)) {
+      fs.mkdirSync(outDir, { recursive: true });
     }
     
     // Generate and write IconImports.scala
@@ -191,9 +180,9 @@ export default async function generateIcons(): Promise<void> {
       standardIconNames, 
       businessSuiteIconNames,
       tntIconNames,
-      fullPackageName
+      packageName
     );
-    const iconImportsFile = path.join(destinationFolder, 'IconImports.scala');
+    const iconImportsFile = path.join(outDir, 'IconImports.scala');
     fs.writeFileSync(iconImportsFile, iconImportsContent);
     
     // Generate and write IconName.scala
@@ -201,12 +190,12 @@ export default async function generateIcons(): Promise<void> {
       standardIconNames, 
       businessSuiteIconNames,
       tntIconNames,
-      fullPackageName
+      packageName
     );
-    const iconNameFile = path.join(destinationFolder, 'IconName.scala');
+    const iconNameFile = path.join(outDir, 'IconName.scala');
     fs.writeFileSync(iconNameFile, iconNameContent);
     
-    console.log(`Generated icon files at ${destinationFolder}`);
+    console.log(`Generated icon files at ${outDir}`);
     console.log(`Found ${standardIconNames.length} standard icons, ${businessSuiteIconNames.length} business suite icons, and ${tntIconNames.length} TNT icons`);
   } catch (error) {
     console.error('Error generating icon files:', error);

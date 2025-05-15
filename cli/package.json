@@ -21,7 +21,7 @@
     "create-wrappers-ai": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-ai --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar/ai",
     "create-wrappers-compat": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-compat --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar/compat",
     "create-wrappers-copy-files": "bun src/bin/index.ts copy-files --packageName io.github.nguyenyou.ui5.webcomponents.laminar.shared --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
-    "create-wrappers-icons": "bun src/bin/index.ts generate-icons",
+    "create-wrappers-icons": "bun src/bin/index.ts generate-icons --packageName io.github.nguyenyou.ui5.webcomponents.laminar --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
     "collect-enums": "bun src/bin/index.ts collect-enums"
   },
   "devDependencies": {
