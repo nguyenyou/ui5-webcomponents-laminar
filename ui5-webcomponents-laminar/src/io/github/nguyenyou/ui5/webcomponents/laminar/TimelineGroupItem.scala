@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object TimelineGroupItem extends WebComponent("ui5-timeline-group-item") {
 
   @JSImport("@ui5/webcomponents-fiori/dist/TimelineGroupItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = TimelineGroupItem.type
 
@@ -20,31 +21,28 @@ object TimelineGroupItem extends WebComponent("ui5-timeline-group-item") {
 
   // -- Attributes --
 
-  /**
-   * Determines if the group is collapsed or expanded.
-   *
-   * Default: false
-   */
+  /** Determines if the group is collapsed or expanded.
+    *
+    * Default: false
+    */
   lazy val collapsed: HtmlAttr[Boolean] = htmlAttr("collapsed", BooleanAsAttrPresenceCodec)
-  /**
-   * Defines the text of the button that expands and collapses the group.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the text of the button that expands and collapses the group.
+    *
+    * Default: undefined
+    */
   lazy val groupName: HtmlAttr[String] = htmlAttr("group-name", StringAsIsCodec)
 
   // -- Events --
 
-  /**
-   * Fired when the group item is expanded or collapsed.
-   *
-  * | cancelable | bubbles |
-  * | :--------: | :-----: |
-  * | ❌|✅|
-   */
-  lazy val onToggle: EventProp[Ui5CustomEvent[Ref]]  = new EventProp("toggle")
+  /** Fired when the group item is expanded or collapsed.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onToggle: EventProp[Ui5CustomEvent[Ref]] = new EventProp("toggle")
 
   // -- Slots --
 
 }
-

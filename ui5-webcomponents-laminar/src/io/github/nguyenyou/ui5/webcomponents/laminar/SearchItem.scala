@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object SearchItem extends WebComponent("ui5-search-item") {
 
   @JSImport("@ui5/webcomponents-fiori/dist/SearchItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = SearchItem.type
 
@@ -20,39 +21,36 @@ object SearchItem extends WebComponent("ui5-search-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines the icon name of the search item.
-   */
+  /** Defines the icon name of the search item.
+    */
   lazy val icon: HtmlAttr[IconName] = htmlAttr("icon", IconName.AsStringCodec)
-  /**
-   * Defines the scope of the search item
-   *
-   * Default: false
-   */
+
+  /** Defines the scope of the search item
+    *
+    * Default: false
+    */
   lazy val scopeName: HtmlAttr[String] = htmlAttr("scope-name", StringAsIsCodec)
-  /**
-   * Defines whether the search item is selected.
-   *
-   * Default: false
-   */
+
+  /** Defines whether the search item is selected.
+    *
+    * Default: false
+    */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-  /**
-   * Defines the heading text of the search item.
-   */
+
+  /** Defines the heading text of the search item.
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-  /**
-   * Fired when delete button is pressed.
-   *
-  * | cancelable | bubbles |
-  * | :--------: | :-----: |
-  * | ❌|❌|
-   */
-  lazy val onDelete: EventProp[Ui5CustomEvent[Ref]]  = new EventProp("delete")
+  /** Fired when delete button is pressed.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ❌    |
+    */
+  lazy val onDelete: EventProp[Ui5CustomEvent[Ref]] = new EventProp("delete")
 
   // -- Slots --
 
 }
-

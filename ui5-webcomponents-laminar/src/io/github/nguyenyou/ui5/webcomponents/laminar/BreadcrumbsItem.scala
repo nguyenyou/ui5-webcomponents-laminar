@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object BreadcrumbsItem extends WebComponent("ui5-breadcrumbs-item") {
 
   @JSImport("@ui5/webcomponents/dist/BreadcrumbsItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = BreadcrumbsItem.type
 
@@ -20,41 +21,38 @@ object BreadcrumbsItem extends WebComponent("ui5-breadcrumbs-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines the accessible ARIA name of the item.
-   *
-   * Default: undefined
-   */
+  /** Defines the accessible ARIA name of the item.
+    *
+    * Default: undefined
+    */
   lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
-  /**
-   * Defines the link href.
-   * 
-   * **Note:** Standard hyperlink behavior is supported.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the link href.
+    *
+    * **Note:** Standard hyperlink behavior is supported.
+    *
+    * Default: undefined
+    */
   lazy val href: HtmlAttr[String] = htmlAttr("href", StringAsIsCodec)
-  /**
-   * Defines the link target.
-   * 
-   * Available options are:
-   * 
-   * - `_self`
-   * - `_top`
-   * - `_blank`
-   * - `_parent`
-   * - `_search`
-   * 
-   * **Note:** This property must only be used when the `href` property is set.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the link target.
+    *
+    * Available options are:
+    *
+    *   - `_self`
+    *   - `_top`
+    *   - `_blank`
+    *   - `_parent`
+    *   - `_search`
+    *
+    * **Note:** This property must only be used when the `href` property is set.
+    *
+    * Default: undefined
+    */
   lazy val target: HtmlAttr[String] = htmlAttr("target", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

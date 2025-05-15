@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object TableHeaderRow extends WebComponent("ui5-table-header-row") {
 
   @JSImport("@ui5/webcomponents/dist/TableHeaderRow.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = TableHeaderRow.type
 
@@ -20,19 +21,17 @@ object TableHeaderRow extends WebComponent("ui5-table-header-row") {
 
   // -- Attributes --
 
-  /**
-   * Sticks the `TableHeaderRow` to the top of a table.
-   * 
-   * Note: If used in combination with overflowMode "Scroll", the table needs a defined height for the sticky header to work as expected.
-   *
-   * Default: false
-   */
+  /** Sticks the `TableHeaderRow` to the top of a table.
+    *
+    * Note: If used in combination with overflowMode "Scroll", the table needs a defined height for the sticky header to
+    * work as expected.
+    *
+    * Default: false
+    */
   lazy val sticky: HtmlAttr[Boolean] = htmlAttr("sticky", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

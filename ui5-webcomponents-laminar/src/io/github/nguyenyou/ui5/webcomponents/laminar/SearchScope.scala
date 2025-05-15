@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object SearchScope extends WebComponent("ui5-search-scope") {
 
   @JSImport("@ui5/webcomponents-fiori/dist/SearchScope.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = SearchScope.type
 
@@ -20,21 +21,18 @@ object SearchScope extends WebComponent("ui5-search-scope") {
 
   // -- Attributes --
 
-  /**
-   * Indicates whether the item is selected
-   *
-   * Default: false
-   */
+  /** Indicates whether the item is selected
+    *
+    * Default: false
+    */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-  /**
-   * Defines the text of the component.
-   */
+
+  /** Defines the text of the component.
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

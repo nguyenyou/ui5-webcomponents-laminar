@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object SortItem extends WebComponent("ui5-sort-item") {
 
   @JSImport("@ui5/webcomponents-fiori/dist/SortItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = SortItem.type
 
@@ -20,23 +21,20 @@ object SortItem extends WebComponent("ui5-sort-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines if the component is selected.
-   *
-   * Default: false
-   */
+  /** Defines if the component is selected.
+    *
+    * Default: false
+    */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-  /**
-   * Defines the text of the component.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the text of the component.
+    *
+    * Default: undefined
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

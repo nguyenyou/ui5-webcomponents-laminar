@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object ToolbarSeparator extends WebComponent("ui5-toolbar-separator") {
 
   @JSImport("@ui5/webcomponents/dist/ToolbarSeparator.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = ToolbarSeparator.type
 
@@ -20,25 +21,22 @@ object ToolbarSeparator extends WebComponent("ui5-toolbar-separator") {
 
   // -- Attributes --
 
-  /**
-   * Property used to define the access of the item to the overflow Popover. If "NeverOverflow" option is set,
-   * the item never goes in the Popover, if "AlwaysOverflow" - it never comes out of it.
-   *
-   * Default: "Default"
-   */
-  lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] = htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
-  /**
-   * Defines if the toolbar overflow popup should close upon intereaction with the item.
-   * It will close by default.
-   *
-   * Default: false
-   */
+  /** Property used to define the access of the item to the overflow Popover. If "NeverOverflow" option is set, the item
+    * never goes in the Popover, if "AlwaysOverflow" - it never comes out of it.
+    *
+    * Default: "Default"
+    */
+  lazy val overflowPriority: HtmlAttr[ToolbarItemOverflowBehavior] =
+    htmlAttr("overflow-priority", StringUnionCodec[ToolbarItemOverflowBehavior])
+
+  /** Defines if the toolbar overflow popup should close upon intereaction with the item. It will close by default.
+    *
+    * Default: false
+    */
   lazy val preventOverflowClosing: HtmlAttr[Boolean] = htmlAttr("prevent-overflow-closing", BooleanAsAttrPresenceCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

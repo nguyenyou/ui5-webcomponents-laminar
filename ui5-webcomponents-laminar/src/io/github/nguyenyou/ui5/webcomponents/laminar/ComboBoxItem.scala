@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object ComboBoxItem extends WebComponent("ui5-cb-item") {
 
   @JSImport("@ui5/webcomponents/dist/ComboBoxItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = ComboBoxItem.type
 
@@ -20,23 +21,20 @@ object ComboBoxItem extends WebComponent("ui5-cb-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines the additional text of the component.
-   *
-   * Default: undefined
-   */
+  /** Defines the additional text of the component.
+    *
+    * Default: undefined
+    */
   lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
-  /**
-   * Defines the text of the component.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the text of the component.
+    *
+    * Default: undefined
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

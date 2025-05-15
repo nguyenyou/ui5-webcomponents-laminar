@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object ExpandableText extends WebComponent("ui5-expandable-text") {
 
   @JSImport("@ui5/webcomponents/dist/ExpandableText.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = ExpandableText.type
 
@@ -20,35 +21,35 @@ object ExpandableText extends WebComponent("ui5-expandable-text") {
 
   // -- Attributes --
 
-  /**
-   * Specifies if an empty indicator should be displayed when there is no text.
-   *
-   * Default: "Off"
-   */
-  lazy val emptyIndicatorMode: HtmlAttr[TextEmptyIndicatorMode] = htmlAttr("empty-indicator-mode", StringUnionCodec[TextEmptyIndicatorMode])
-  /**
-   * Maximum number of characters to be displayed initially. If the text length exceeds this limit, the text will be truncated with an ellipsis, and the "More" link will be displayed.
-   *
-   * Default: 100
-   */
+  /** Specifies if an empty indicator should be displayed when there is no text.
+    *
+    * Default: "Off"
+    */
+  lazy val emptyIndicatorMode: HtmlAttr[TextEmptyIndicatorMode] =
+    htmlAttr("empty-indicator-mode", StringUnionCodec[TextEmptyIndicatorMode])
+
+  /** Maximum number of characters to be displayed initially. If the text length exceeds this limit, the text will be
+    * truncated with an ellipsis, and the "More" link will be displayed.
+    *
+    * Default: 100
+    */
   lazy val maxCharacters: HtmlAttr[Double] = htmlAttr("max-characters", DoubleAsStringCodec)
-  /**
-   * Determines how the full text will be displayed.
-   *
-   * Default: "InPlace"
-   */
-  lazy val overflowMode: HtmlAttr[ExpandableTextOverflowMode] = htmlAttr("overflow-mode", StringUnionCodec[ExpandableTextOverflowMode])
-  /**
-   * Text of the component.
-   *
-   * Default: undefined
-   */
+
+  /** Determines how the full text will be displayed.
+    *
+    * Default: "InPlace"
+    */
+  lazy val overflowMode: HtmlAttr[ExpandableTextOverflowMode] =
+    htmlAttr("overflow-mode", StringUnionCodec[ExpandableTextOverflowMode])
+
+  /** Text of the component.
+    *
+    * Default: undefined
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

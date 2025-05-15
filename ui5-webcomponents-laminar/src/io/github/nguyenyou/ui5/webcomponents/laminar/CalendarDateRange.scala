@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object CalendarDateRange extends WebComponent("ui5-date-range") {
 
   @JSImport("@ui5/webcomponents/dist/CalendarDateRange.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = CalendarDateRange.type
 
@@ -20,21 +21,17 @@ object CalendarDateRange extends WebComponent("ui5-date-range") {
 
   // -- Attributes --
 
-  /**
-   * End of date range formatted according to the `formatPattern` property
-   * of the `Calendar` that hosts the component.
-   */
+  /** End of date range formatted according to the `formatPattern` property of the `Calendar` that hosts the component.
+    */
   lazy val endValue: HtmlAttr[String] = htmlAttr("end-value", StringAsIsCodec)
-  /**
-   * Start of date range formatted according to the `formatPattern` property
-   * of the `Calendar` that hosts the component.
-   */
+
+  /** Start of date range formatted according to the `formatPattern` property of the `Calendar` that hosts the
+    * component.
+    */
   lazy val startValue: HtmlAttr[String] = htmlAttr("start-value", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

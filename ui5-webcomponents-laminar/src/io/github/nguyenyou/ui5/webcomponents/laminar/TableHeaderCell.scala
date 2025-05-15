@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
 
   @JSImport("@ui5/webcomponents/dist/TableHeaderCell.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = TableHeaderCell.type
 
@@ -20,95 +21,99 @@ object TableHeaderCell extends WebComponent("ui5-table-header-cell") {
 
   // -- Attributes --
 
-  /**
-   * Determines the horizontal alignment of table cells.
-   *
-   * Default: undefined
-   */
-  lazy val horizontalAlign: HtmlAttr[TableCellHorizontalAlign] = htmlAttr("horizontal-align", StringUnionCodec[TableCellHorizontalAlign])
-  /**
-   * Defines the importance of the column.
-   * 
-   * This property affects the popin behaviour.
-   * Columns with higher importance will move into the popin area later then less important
-   * columns.
-   *
-   * Default: 0
-   */
+  /** Determines the horizontal alignment of table cells.
+    *
+    * Default: undefined
+    */
+  lazy val horizontalAlign: HtmlAttr[TableCellHorizontalAlign] =
+    htmlAttr("horizontal-align", StringUnionCodec[TableCellHorizontalAlign])
+
+  /** Defines the importance of the column.
+    *
+    * This property affects the popin behaviour. Columns with higher importance will move into the popin area later then
+    * less important columns.
+    *
+    * Default: 0
+    */
   lazy val importance: HtmlAttr[Double] = htmlAttr("importance", DoubleAsStringCodec)
-  /**
-   * Defines the minimum width of the column.
-   * 
-   * If the table is in `Popin` mode and the minimum width does not fit anymore,
-   * the column will move into the popin.
-   * 
-   * By default, the table prevents the column from becoming too small.
-   * Changing this value to a small value might lead to accessibility issues.
-   * 
-   * **Note:** This property only takes effect for columns with a [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) value
-   * or the default width.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the minimum width of the column.
+    *
+    * If the table is in `Popin` mode and the minimum width does not fit anymore, the column will move into the popin.
+    *
+    * By default, the table prevents the column from becoming too small. Changing this value to a small value might lead
+    * to accessibility issues.
+    *
+    * **Note:** This property only takes effect for columns with a
+    * [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) value or the default width.
+    *
+    * Default: undefined
+    */
   lazy val minWidth: HtmlAttr[String] = htmlAttr("min-width", StringAsIsCodec)
-  /**
-   * Defines if the column is hidden in the popin.
-   * 
-   * **Note:** Please be aware that hiding the column in the popin might lead to accessibility issues as
-   * users might not be able to access the content of the column on small screens.
-   *
-   * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of **@ui5/webcomponents**.
-   *
-   * Default: false
-   */
+
+  /** Defines if the column is hidden in the popin.
+    *
+    * **Note:** Please be aware that hiding the column in the popin might lead to accessibility issues as users might
+    * not be able to access the content of the column on small screens.
+    *
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: false
+    */
   lazy val popinHidden: HtmlAttr[Boolean] = htmlAttr("popin-hidden", BooleanAsAttrPresenceCodec)
-  /**
-   * The text for the column when it pops in.
-   *
-   * **Note:** Available since [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of **@ui5/webcomponents**.
-   *
-   * Default: undefined
-   */
+
+  /** The text for the column when it pops in.
+    *
+    * **Note:** Available since [v2.7.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.7.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
   lazy val popinText: HtmlAttr[String] = htmlAttr("popin-text", StringAsIsCodec)
-  /**
-   * Defines the sort indicator of the column.
-   *
-   * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of **@ui5/webcomponents**.
-   *
-   * Default: "None"
-   */
+
+  /** Defines the sort indicator of the column.
+    *
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "None"
+    */
   lazy val sortIndicator: HtmlAttr[SortOrder] = htmlAttr("sort-indicator", StringUnionCodec[SortOrder])
-  /**
-   * Defines the width of the column.
-   * 
-   * By default, the column will grow and shrink according to the available space.
-   * This will distribute the space proportionally among all columns with no specific width set.
-   * 
-   * See [\<length\>](https://developer.mozilla.org/en-US/docs/Web/CSS/length) and
-   * [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) for possible width values.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the width of the column.
+    *
+    * By default, the column will grow and shrink according to the available space. This will distribute the space
+    * proportionally among all columns with no specific width set.
+    *
+    * See [\<length\>](https://developer.mozilla.org/en-US/docs/Web/CSS/length) and
+    * [\<percentage\>](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) for possible width values.
+    *
+    * Default: undefined
+    */
   lazy val width: HtmlAttr[String] = htmlAttr("width", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
-  /**
-   * Defines the action of the column.
-   * 
-   * **Note:** While multiple actions are technically possible, this is not supported.
-   *
-   * __Note:__ The content of the prop will be rendered into a [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="action"`).
-   * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to manually mount them as part of the component's children, especially when facing problems with the reading order of screen readers.
-   *
-   * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the `slot` prop and appends it to the most outer element of your component.
-  * Learn more about it [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
-   *
-   * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of **@ui5/webcomponents**.
-   */
+  /** Defines the action of the column.
+    *
+    * **Note:** While multiple actions are technically possible, this is not supported.
+    *
+    * __Note:__ The content of the prop will be rendered into a
+    * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective
+    * [slot](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/slot) attribute (`slot="action"`).
+    * Since you can't change the DOM order of slots when declaring them within a prop, it might prove beneficial to
+    * manually mount them as part of the component's children, especially when facing problems with the reading order of
+    * screen readers.
+    *
+    * __Note:__ When passing a custom React component to this prop, you have to make sure your component reads the
+    * `slot` prop and appends it to the most outer element of your component. Learn more about it
+    * [here](https://sap.github.io/ui5-webcomponents-react/v2/?path=/docs/knowledge-base-handling-slots--docs).
+    *
+    * **Note:** Available since [v2.8.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.8.0) of
+    * **@ui5/webcomponents**.
+    */
   lazy val action: Slot = new Slot("action")
 }
-

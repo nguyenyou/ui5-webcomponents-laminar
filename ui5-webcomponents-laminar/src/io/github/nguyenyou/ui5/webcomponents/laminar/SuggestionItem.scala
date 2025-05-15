@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object SuggestionItem extends WebComponent("ui5-suggestion-item") {
 
   @JSImport("@ui5/webcomponents/dist/SuggestionItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = SuggestionItem.type
 
@@ -20,23 +21,20 @@ object SuggestionItem extends WebComponent("ui5-suggestion-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines the `additionalText`, displayed in the end of the item.
-   *
-   * Default: undefined
-   */
+  /** Defines the `additionalText`, displayed in the end of the item.
+    *
+    * Default: undefined
+    */
   lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
-  /**
-   * Defines the text of the component.
-   *
-   * Default: undefined
-   */
+
+  /** Defines the text of the component.
+    *
+    * Default: undefined
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

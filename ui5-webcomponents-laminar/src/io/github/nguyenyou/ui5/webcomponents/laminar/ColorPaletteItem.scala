@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object ColorPaletteItem extends WebComponent("ui5-color-palette-item") {
 
   @JSImport("@ui5/webcomponents/dist/ColorPaletteItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = ColorPaletteItem.type
 
@@ -20,28 +21,26 @@ object ColorPaletteItem extends WebComponent("ui5-color-palette-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines if the component is selected.
-   * 
-   * **Note:** Only one item must be selected per <code>ui5-color-palette</code>.
-   * If more than one item is defined as selected, the last one would be considered as the selected one.
-   *
-   * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of **@ui5/webcomponents**.
-   *
-   * Default: false
-   */
+  /** Defines if the component is selected.
+    *
+    * **Note:** Only one item must be selected per <code>ui5-color-palette</code>. If more than one item is defined as
+    * selected, the last one would be considered as the selected one.
+    *
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: false
+    */
   lazy val selected: HtmlAttr[Boolean] = htmlAttr("selected", BooleanAsAttrPresenceCodec)
-  /**
-   * Defines the colour of the component.
-   * 
-   * **Note:** The value should be a valid CSS color.
-   */
+
+  /** Defines the colour of the component.
+    *
+    * **Note:** The value should be a valid CSS color.
+    */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

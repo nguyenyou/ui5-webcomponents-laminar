@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.*
 object CalendarLegendItem extends WebComponent("ui5-calendar-legend-item") {
 
   @JSImport("@ui5/webcomponents/dist/CalendarLegendItem.js", JSImport.Default)
-  @js.native object RawImport extends js.Object
+  @js.native
+  object RawImport extends js.Object
 
   type Self = CalendarLegendItem.type
 
@@ -20,23 +21,20 @@ object CalendarLegendItem extends WebComponent("ui5-calendar-legend-item") {
 
   // -- Attributes --
 
-  /**
-   * Defines the text content of the Calendar Legend Item.
-   *
-   * Default: undefined
-   */
+  /** Defines the text content of the Calendar Legend Item.
+    *
+    * Default: undefined
+    */
   lazy val text: HtmlAttr[String] = htmlAttr("text", StringAsIsCodec)
-  /**
-   * Defines the type of the Calendar Legend Item.
-   *
-   * Default: "None"
-   */
+
+  /** Defines the type of the Calendar Legend Item.
+    *
+    * Default: "None"
+    */
   lazy val tpe: HtmlAttr[CalendarLegendItemType] = htmlAttr("type", StringUnionCodec[CalendarLegendItemType])
 
   // -- Events --
 
-
   // -- Slots --
 
 }
-

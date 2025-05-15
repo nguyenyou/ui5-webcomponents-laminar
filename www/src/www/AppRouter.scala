@@ -75,6 +75,7 @@ object Pages {
   case object TablePage                extends Page("Table")
   case object FileUploaderPage         extends Page("FileUploader")
   case object IconPage                 extends Page("Icon")
+  case object ProductSwitchPage        extends Page("ProductSwitch")
 
   // AI
   case object AiButtonPage extends Page("AI Button")
@@ -139,6 +140,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(TablePage)(TableView())
   .handleValue(FileUploaderPage)(FileUploaderView())
   .handleValue(IconPage)(IconView())
+  .handleValue(ProductSwitchPage)(ProductSwitchView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -195,7 +197,8 @@ val docPages: List[Page] = List(
   ToastPage,
   ToggleButtonPage,
   TokenPage,
-  TreeViewPage
+  TreeViewPage,
+  ProductSwitchPage
 )
 
 // Step 4: Map URL to Page
@@ -320,7 +323,9 @@ object AppRouter
         Route
           .static(FileUploaderPage, root / FileUploaderPage.path / endOfSegments, "/docs"),
         Route
-          .static(IconPage, root / IconPage.path / endOfSegments, "/docs")
+          .static(IconPage, root / IconPage.path / endOfSegments, "/docs"),
+        Route
+          .static(ProductSwitchPage, root / ProductSwitchPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>
