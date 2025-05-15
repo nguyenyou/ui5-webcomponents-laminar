@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsc --build tsconfig.build.json && yarn copy-files",
     "copy-files": "cp -r src/scripts/copy-files/shared dist/scripts/copy-files/",
-    "create-wrappers": "concurrently -c \"auto\" \"npm:create-wrappers-*\"",
+    "create-wrappers": "concurrently -c \"auto\" \"npm:create-wrappers-*\" && yarn collect-enums",
     "create-wrappers-base": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
     "create-wrappers-fiori": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-fiori --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar",
     "create-wrappers-ai": "bun src/bin/index.ts create-wrappers --packageName @ui5/webcomponents-ai --out ../ui5-webcomponents-laminar/src/io/github/nguyenyou/ui5/webcomponents/laminar/ai",
