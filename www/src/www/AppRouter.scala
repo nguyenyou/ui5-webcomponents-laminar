@@ -77,6 +77,7 @@ object Pages {
   case object IconPage                 extends Page("Icon")
   case object ProductSwitchPage        extends Page("ProductSwitch")
   case object SearchPage               extends Page("Search")
+  case object TabPage                  extends Page("Tab")
   // AI
   case object AiButtonPage extends Page("AI Button")
   given pageCodec: Codec[Page] = deriveAllCodecs
@@ -142,6 +143,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(IconPage)(IconView())
   .handleValue(ProductSwitchPage)(ProductSwitchView())
   .handleValue(SearchPage)(SearchView())
+  .handleValue(TabPage)(TabView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -190,6 +192,7 @@ val docPages: List[Page] = List(
   SliderPage,
   SplitButtonPage,
   SwitchPage,
+  TabPage,
   TablePage,
   TagPage,
   TextAreaPage,
@@ -198,7 +201,11 @@ val docPages: List[Page] = List(
   ToastPage,
   ToggleButtonPage,
   TokenPage,
-  TreeViewPage,
+  TreeViewPage
+)
+
+val fioriPages: List[Page] = List(
+  BarcodeScannerDialogPage,
   ProductSwitchPage,
   SearchPage
 )
@@ -329,7 +336,9 @@ object AppRouter
         Route
           .static(ProductSwitchPage, root / ProductSwitchPage.path / endOfSegments, "/docs"),
         Route
-          .static(SearchPage, root / SearchPage.path / endOfSegments, "/docs")
+          .static(SearchPage, root / SearchPage.path / endOfSegments, "/docs"),
+        Route
+          .static(TabPage, root / TabPage.path / endOfSegments, "/docs")
       ),
       getPageTitle =
         page =>

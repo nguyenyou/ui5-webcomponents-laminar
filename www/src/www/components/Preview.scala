@@ -1,7 +1,6 @@
 package www.components
 
 import com.raquo.laminar.api.L.*
-import www.facades.Marked
 import www.libs.scalawind.*
 
 object Preview {
@@ -115,24 +114,23 @@ object Preview {
 
     div(
       tw.space_y_2.mb_4,
-      h2(
-        tw.font_semibold.text_lg.group,
-        idAttr := titleId,
-        a(
-          href := s"#${titleId}",
-          tw.flex.items_center.gap_1.relative,
-          span(
-            dataAttr("heading-title") := "true",
-            title
+      when(title.nonEmpty) {
+        h2(
+          tw.font_semibold.text_lg.group,
+          idAttr := titleId,
+          a(
+            href := s"#${titleId}",
+            tw.flex.items_center.gap_1.relative,
+            span(
+              dataAttr("heading-title") := "true",
+              title
+            )
           )
         )
-      ),
-      div(
-        cls("typography"),
-        onMountCallback { ctx =>
-          ctx.thisNode.ref.innerHTML = Marked.parse(description)
-        }
-      ),
+      },
+      when(description.nonEmpty) {
+        Markdown(description)
+      },
       div(
         tw.relative,
         onMountCallback { _ =>

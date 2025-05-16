@@ -7,6 +7,7 @@ import www.Pages.*
 import www.docPages
 import www.facades.ScrollOptions
 import www.facades.scrollIntoViewIfNeeded
+import www.fioriPages
 import www.libs.scalawind.*
 
 case class Sidebar() {
@@ -124,7 +125,7 @@ case class Sidebar() {
           ),
           Section(
             title = "Fiori",
-            pages = List(BarcodeScannerDialogPage)
+            pages = fioriPages
           ),
           Section(
             title = "AI",
