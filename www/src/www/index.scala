@@ -28,4 +28,5 @@ def main(): Unit = {
   DialogExampleBasic()
   DialogExampleStates()
   PopoverExampleBasic()
+  PopoverOpenerDomElement()
 }
