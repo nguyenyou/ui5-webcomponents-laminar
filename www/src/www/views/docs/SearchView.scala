@@ -67,6 +67,8 @@ object SearchView extends ExampleView("Search") {
             )
           )
         }
+      ),
+      div(
       )
     )
   }

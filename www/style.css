@@ -147,6 +147,14 @@ pre.shiki code {
     p {
       font-size: 0.875rem;
       color: var(--sapTextColor);
+      line-height: 1.5;
+    }
+    code {
+      @apply font-mono;
+      color: var(--sapTextColor);
+      background-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent);
+      padding: 0.5px 4px;
+      border-radius: 4px;
     }
   }
 }

@@ -3,15 +3,44 @@ package www.views.docs
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
-import www.components.Demo
+import www.components.*
+import www.components.Codeblock
 import www.libs.scalawind.*
 import www.macros.Source
 
 object SelectView extends ExampleView("Select") {
 
+  val recipeSelectedItemContent = Source.annotate {
+    type Item = (id: String, text: String)
+    val items = List[Item](
+      ("1", "Option 1"),
+      ("2", "Option 2")
+    )
+    Select(
+      _.onChange.map { event =>
+        // event.detail.selectedOption is a reference to the selected HTML Element
+        // dataset contains all attributes that were passed with the data- prefix.
+        event.detail.selectedOption.dataset.get("id").foreach { id =>
+          println(s"Selected item ID: $id")
+        }
+      } --> Observer.empty
+    )(
+      items.map { item =>
+        UOption()(
+          dataAttr("id") := item.id,
+          item.text
+        )
+      }
+    )
+  }
+
   override def component: HtmlElement = {
     div(
       compactSize(true),
+      h2(
+        tw.font_semibold.text_xl,
+        "Samples"
+      ),
       Demo(
         title = "Basic Sample",
         content = Source.annotate {
@@ -127,6 +156,23 @@ object SelectView extends ExampleView("Select") {
             )
           )
         }
+      ),
+      h2(
+        tw.font_semibold.text_xl,
+        "Recipes"
+      ),
+      h3(
+        tw.font_semibold.text_lg,
+        "Get the ID of the selected item with onChange"
+      ),
+      Markdown("""
+      With the help of the HTML5 `data-` API you can define any primitive value (like numbers, strings) 
+      as an attribute on an element. This data will be available on the onChange event as 
+      part of the `dataset` object of the `selectedOption`:
+      """),
+      Codeblock(recipeSelectedItemContent.source).amend(tw.mb_2),
+      Demo(
+        content = recipeSelectedItemContent
       )
     )
   }

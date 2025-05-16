@@ -115,7 +115,7 @@ object Preview {
     div(
       tw.space_y_2.mb_4,
       when(title.nonEmpty) {
-        h2(
+        h3(
           tw.font_semibold.text_lg.group,
           idAttr := titleId,
           a(
@@ -181,7 +181,9 @@ object Preview {
           div(
             tw.relative,
             tw.hidden <-- activeTabSignal.map(_ == "Code").not,
-            Codeblock(sourceCode)
+            Codeblock(
+              source = sourceCode
+            )
           )
         )
       )

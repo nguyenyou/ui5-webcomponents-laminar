@@ -296,8 +296,10 @@ case class Tailwind() {
   def py_1                            = this
   def p_3                             = this
   def mb_4                            = this
+  def mb_2                            = this
   def font_semibold                   = this
   def text_lg                         = this
+  def text_xl                         = this
   def px_8                            = this
   def gap_1                           = this
   def mb_5                            = this

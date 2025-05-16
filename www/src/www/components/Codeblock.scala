@@ -2,8 +2,7 @@ package www.components
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import www.facades.CodeToHtmlOptions
-import www.facades.Shiki
+import www.facades.*
 import www.libs.scalawind.*
 
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -11,31 +10,48 @@ import scala.util.Failure
 import scala.util.Success
 
 object Codeblock {
+  val themeVar    = Var("github-dark-dimmed")
+  val themeSignal = themeVar.signal.distinct
+
+  val ThemeSwitcher = div(
+    Select()(
+      UOption()("github-dark-dimmed"),
+      UOption()("monokai")
+    )
+  )
 
   def apply(source: String): HtmlElement = {
+    val codeNode = div()
+    val dedented = source.trim
+
     div(
       tw.relative,
-      div(
-        onMountCallback { ctx =>
+      codeNode.amendThis { thisNode =>
+        themeSignal --> Observer[String] { theme =>
           Shiki
             .codeToHtml(
-              source,
+              dedented,
               CodeToHtmlOptions(
                 lang = "scala",
-                theme = "github-dark-dimmed"
+                theme = theme
               )
             )
             .toFuture
             .onComplete {
               case Failure(_) => ()
               case Success(value) =>
-                ctx.thisNode.ref.innerHTML = value
+                thisNode.ref.innerHTML = value
             }
-        },
-        source.trim
+        }
+      },
+      codeNode.amend(
+        pre(
+          cls("shiki"),
+          code(dedented)
+        )
       ),
       Copy(
-        content = Val(source.trim),
+        content = Val(dedented),
         renderChildren = renderer => {
           div(
             tw.absolute.top_4.right_6,
