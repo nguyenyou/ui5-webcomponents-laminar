@@ -85,6 +85,8 @@ export function mapWebComponentTypeToPrimitive(type: string): string | null {
       return 'Boolean';
     case 'unknown':
       return 'unknown';
+    case 'File | null':
+      // UploadCollectionItem has this attribute, not supported at the moment
     default:
       return null;
   }
