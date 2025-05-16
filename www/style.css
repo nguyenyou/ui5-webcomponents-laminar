@@ -144,6 +144,14 @@ pre.shiki code {
 
 @layer components {
   .typography {
+    h2 {
+      @apply font-semibold text-xl;
+    }
+    
+    h3 {
+      @apply font-semibold text-lg;
+    }
+
     p {
       font-size: 0.875rem;
       color: var(--sapTextColor);

@@ -157,15 +157,11 @@ object SelectView extends ExampleView("Select") {
           )
         }
       ),
-      h2(
-        tw.font_semibold.text_xl,
-        "Recipes"
-      ),
-      h3(
-        tw.font_semibold.text_lg,
-        "Get the ID of the selected item with onChange"
-      ),
       Markdown("""
+      ## Recipes
+
+      ### Get the ID of the selected item with onChange
+
       With the help of the HTML5 `data-` API you can define any primitive value (like numbers, strings) 
       as an attribute on an element. This data will be available on the onChange event as 
       part of the `dataset` object of the `selectedOption`:
