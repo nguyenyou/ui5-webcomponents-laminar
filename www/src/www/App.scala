@@ -2,7 +2,9 @@ package www
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.BuildInfo
+import www.components.Codeblock
 import www.components.Sidebar
 import www.components.TableOfContents
 import www.components.ThemeToggle
@@ -45,6 +47,8 @@ case class App() {
                 tw.ml_auto.flex.items_center.gap_2.md(tw.flex_1.justify_end),
                 navTag(
                   tw.flex.items_center.gap_2,
+                  compactSize(true),
+                  Codeblock.ThemeSwitcher,
                   ThemeToggle()()
                 )
               )

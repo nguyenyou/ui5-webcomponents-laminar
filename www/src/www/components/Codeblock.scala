@@ -1,5 +1,6 @@
 package www.components
 
+import com.raquo.airstream.web.WebStorageVar
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import www.facades.*
@@ -10,13 +11,91 @@ import scala.util.Failure
 import scala.util.Success
 
 object Codeblock {
-  val themeVar    = Var("github-dark-dimmed")
+  val themeVar: WebStorageVar[String] = WebStorageVar
+    .localStorage(key = "codeTheme", syncOwner = None)
+    .text(default = "github-dark-dimmed")
   val themeSignal = themeVar.signal.distinct
 
+  val themes = List(
+    "andromeeda",
+    "aurora-x",
+    "ayu-dark",
+    "catppuccin-frappe",
+    "catppuccin-latte",
+    "catppuccin-macchiato",
+    "catppuccin-mocha",
+    "dark-plus",
+    "dracula",
+    "dracula-soft",
+    "everforest-dark",
+    "everforest-light",
+    "github-dark",
+    "github-dark-default",
+    "github-dark-dimmed",
+    "github-dark-high-contrast",
+    "github-light",
+    "github-light-default",
+    "github-light-high-contrast",
+    "gruvbox-dark-hard",
+    "gruvbox-dark-medium",
+    "gruvbox-dark-soft",
+    "gruvbox-light-hard",
+    "gruvbox-light-medium",
+    "gruvbox-light-soft",
+    "houston",
+    "kanagawa-dragon",
+    "kanagawa-lotus",
+    "kanagawa-wave",
+    "laserwave",
+    "light-plus",
+    "material-theme",
+    "material-theme-darker",
+    "material-theme-lighter",
+    "material-theme-ocean",
+    "material-theme-palenight",
+    "min-dark",
+    "min-light",
+    "monokai",
+    "night-owl",
+    "nord",
+    "one-dark-pro",
+    "one-light",
+    "plastic",
+    "poimandres",
+    "red",
+    "rose-pine",
+    "rose-pine-dawn",
+    "rose-pine-moon",
+    "slack-dark",
+    "slack-ochin",
+    "snazzy-light",
+    "solarized-dark",
+    "solarized-light",
+    "synthwave-84",
+    "tokyo-night",
+    "vesper",
+    "vitesse-black",
+    "vitesse-dark",
+    "vitesse-light"
+  )
+
   val ThemeSwitcher = div(
-    Select()(
-      UOption()("github-dark-dimmed"),
-      UOption()("monokai")
+    tw.hidden.md(tw.block),
+    Select(
+      _.onChange.map { event =>
+        event.detail.selectedOption.dataset.get("id").collect { case id: String =>
+          themeVar.set(id)
+        }
+      } --> Observer.empty
+    )(
+      themes.map { theme =>
+        UOption(
+          _.selected <-- themeVar.signal.map(_ == theme)
+        )(
+          dataAttr("id") := theme,
+          theme
+        )
+      }
     )
   )
 
