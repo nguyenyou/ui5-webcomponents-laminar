@@ -121,7 +121,8 @@ object TabView extends ExampleView("Tab") {
           TabContainer()(
             List.tabulate(23)(i =>
               Tab(
-                _.text := s"Tab ${i + 1}"
+                _.text     := s"Tab ${i + 1}",
+                _.selected := i == 12
               )()
             )
           )
@@ -188,6 +189,92 @@ object TabView extends ExampleView("Tab") {
               )
             )(
               "Orders go here ..."
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Tabs Overflow Mode",
+        description = "The overflowMode is 'End' by default:",
+        content = Source.annotate {
+          TabContainer(
+            _.overflowMode := "End",
+            _.collapsed    := true
+          )(
+            List.tabulate(23)(i =>
+              Tab(
+                _.text     := s"Tab ${i + 1}",
+                _.selected := i == 12
+              )()
+            )
+          )
+        }
+      ),
+      Demo(
+        description = "It can be switched to 'StartAndEnd:",
+        content = Source.annotate {
+          TabContainer(
+            _.overflowMode := "StartAndEnd",
+            _.collapsed    := true
+          )(
+            List.tabulate(23)(i =>
+              Tab(
+                _.text     := s"Tab ${i + 1}",
+                _.selected := i == 12
+              )()
+            )
+          )
+        }
+      ),
+      Demo(
+        title = "Transparent design",
+        description =
+          """The inner TabContainer has headerBackgroundDesign and contentBackgroundDesign set to "Transparent":""",
+        content = Source.annotate {
+          div(
+            TabContainer(
+              _.headerBackgroundDesign  := "Solid",
+              _.contentBackgroundDesign := "Transparent"
+            )(
+              Tab(
+                _.text     := "Tab 1",
+                _.selected := true
+              )(
+                TabContainer(
+                  _.headerBackgroundDesign  := "Transparent",
+                  _.contentBackgroundDesign := "Transparent"
+                )(
+                  Tab(
+                    _.text     := "Tab 1",
+                    _.selected := true
+                  )(
+                    Text()(
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates accusamus est quibusdam inventore ipsam?"
+                    )
+                  ),
+                  Tab(
+                    _.text := "Tab 2"
+                  )(
+                    Text()(
+                      "Accusamus minus aperiam sunt ipsam eos quos et maxime facilis tempora neque ratione nemo laborum expedita aliquid officiis nisi, necessitatibus quasi distinctio?"
+                    )
+                  ),
+                  Tab(
+                    _.text := "Tab 3"
+                  )(
+                    Text()(
+                      "Dolores totam perferendis numquam incidunt obcaecati, id quo at alias rem deserunt praesentium repellat ipsum commodi consequuntur veniam et ducimus animi qui nobis accusantium tenetur eveniet culpa non!"
+                    )
+                  )
+                )
+              ),
+              Tab(
+                _.text := "Tab 2"
+              )(
+                Text()(
+                  "Accusamus minus aperiam sunt ipsam eos quos et maxime facilis tempora neque ratione nemo laborum expedita aliquid officiis nisi, necessitatibus quasi distinctio?"
+                )
+              )
             )
           )
         }
