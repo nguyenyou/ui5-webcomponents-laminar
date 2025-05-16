@@ -30,7 +30,6 @@ object SearchView extends ExampleView("Search") {
             }
           }
 
-          
           div(
             Search(
               _.showClearIcon := true,
