@@ -26,6 +26,7 @@ object Versions {
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
   val borer = "1.14.0"
+  val utest = "0.8.5"
 }
 
 object Dependencies {
@@ -57,6 +58,10 @@ object Dependencies {
     ivy"io.bullet::borer-core::${Versions.borer}",
     ivy"io.bullet::borer-derivation::${Versions.borer}",
   )
+
+  val utest = Agg(
+    ivy"com.lihaoyi::utest::${Versions.utest}"
+  ) 
 }
 
 object Constants {
@@ -136,6 +141,11 @@ object www extends WebModule with Scalafix with BuildInfo {
     BuildInfo.Value("organization", Constants.organization),
     BuildInfo.Value("description", Constants.description),
   )
+
+  object test extends ScalaJSTests {
+    def ivyDeps = Dependencies.utest
+    def testFramework = "utest.runner.Framework"
+  }
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents

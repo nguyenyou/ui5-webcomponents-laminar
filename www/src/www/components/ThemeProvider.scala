@@ -20,7 +20,6 @@ case class ThemeProvider() {
   Icons.registerCustomIcons()
 
   def apply(child: HtmlElement): HtmlElement = {
-    println("custom/github".substring(7))
     child.amend(
       websiteThemeSignal.changes --> Observer[String] { theme =>
         setTheme(theme)

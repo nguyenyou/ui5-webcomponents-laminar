@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.JSImport
   *   https://github.com/stipsan/scroll-into-view-if-needed
   */
 @js.native
-@JSImport("scroll-into-view-if-needed", JSImport.Default)
+@JSImport("scroll-into-view-if-needed", JSImport.Default) // import scrollIntoViewIfNeeded from 'scroll-into-view-if-needed';
 object scrollIntoViewIfNeeded extends js.Object {
 
   /** Scrolls an element into view if needed

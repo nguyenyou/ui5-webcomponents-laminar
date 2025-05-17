@@ -58,7 +58,6 @@ case class App() {
                     Button(
                       _.design := "Transparent"
                     )(
-                      Icons.icon := "Github"
                     )
                   )
                 )
