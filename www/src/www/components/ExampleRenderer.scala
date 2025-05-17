@@ -13,7 +13,7 @@ trait ExampleRenderer {
   def source: String         = content.source
   def component: HtmlElement = content.element
 
-  def apply() = {
+  def apply(): Unit = {
     val previewContainer = dom.document.getElementById(id)
     Option(previewContainer).foreach { container =>
       setTheme(GlobalConfig.initialTheme)

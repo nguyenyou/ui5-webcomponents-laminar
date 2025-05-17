@@ -7,10 +7,11 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.A
 import www.components.*
 import www.libs.scalawind.*
 import www.macros.Source
+import www.macros.Source.AnnotationType
 
 object DialogExampleBasic extends ExampleRenderer {
 
-  override def content = Source.annotate {
+  override def content: AnnotationType = Source.annotate {
     val openDialogEventBus = EventBus[Boolean]()
 
     div(
@@ -72,7 +73,7 @@ object DialogExampleBasic extends ExampleRenderer {
 
 object DialogExampleStates extends ExampleRenderer {
 
-  override def content = Source.annotate {
+  override def content: AnnotationType = Source.annotate {
     val openerId = "dialogOpener"
     val dialogId = "dialog"
 
@@ -109,9 +110,6 @@ object DialogExampleStates extends ExampleRenderer {
 }
 
 object DialogView extends ExampleView("Dialog") {
-
-  val openDialogBus = EventBus[Boolean]()
-
   override def component: HtmlElement = {
     div(
       IframePreview(
