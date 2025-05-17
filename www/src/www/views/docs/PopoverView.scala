@@ -105,7 +105,7 @@ object PopoverOpenerDomElement2 extends ExampleRenderer {
     div(
       Button(
         _.design := "Emphasized",
-        _.onClick.map(_.target).map(Option(_)) --> openEventBus
+        _.onClick.map(_.target).map(Some(_)) --> openEventBus
       )(
         "Open Popover"
       ),
