@@ -5,9 +5,10 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import www.components.ExampleRenderer
 import www.components.IframePreview
 import www.macros.Source
+import www.macros.Source.AnnotationType
 
 case object ToastExampleBasic extends ExampleRenderer {
-  override def content = Source.annotate {
+  override def content: AnnotationType = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(
@@ -22,7 +23,7 @@ case object ToastExampleBasic extends ExampleRenderer {
 
 case object ToastExampleDuration extends ExampleRenderer {
 
-  override def content = Source.annotate {
+  override def content: AnnotationType = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(
@@ -39,7 +40,7 @@ case object ToastExampleDuration extends ExampleRenderer {
 
 case object ToastExamplePlacement extends ExampleRenderer {
 
-  override def content = Source.annotate {
+  override def content: AnnotationType = Source.annotate {
     val toastBus = EventBus[Boolean]()
     div(
       Button(

@@ -6,7 +6,6 @@ import scala.quoted.*
 
 object Source {
 
-  // @TODO: find out how to convert this to case class
   type AnnotationType = (source: String, element: L.HtmlElement)
 
   // source: https://github.com/japgolly/scalajs-react/blob/master/

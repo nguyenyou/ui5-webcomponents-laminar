@@ -5,12 +5,13 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distConfigThem
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distLocaleApplyDirectionMod
 import org.scalajs.dom
 import www.facades.GlobalConfig
+import www.macros.Source.AnnotationType
 
 trait ExampleRenderer {
   def id: String = this.getClass.getSimpleName
-  def content: (String, HtmlElement)
-  def source: String         = content._1
-  def component: HtmlElement = content._2
+  def content: AnnotationType
+  def source: String         = content.source
+  def component: HtmlElement = content.element
 
   def apply() = {
     val previewContainer = dom.document.getElementById(id)
