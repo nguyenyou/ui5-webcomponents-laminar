@@ -59,6 +59,15 @@ object Dependencies {
   )
 }
 
+object Constants {
+  val repoUrl = "https://github.com/nguyenyou/ui5-webcomponents-laminar"
+  val githubUsername = "nguyenyou"
+  val githubProfile = s"https://github.com/$githubUsername"
+  val author = "Tu Nguyen"
+  val organization = "io.github.nguyenyou"
+  val description = "Laminar wrappers for UI5 Webcomponents"
+}
+
 trait Scalafix extends ScalafixModule {
   def scalacOptions = super.scalacOptions() ++ Seq("-Wunused:all", "-Wunused:imports")
 }
@@ -87,6 +96,7 @@ trait CommonPublish extends SonatypeCentralPublishModule {
 
 
 object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Scalafix {
+  def artifactName = "ui5-webcomponents-laminar"
   def publishVersion = Versions.`ui5-webcomponents-laminar`
   def ivyDeps = super.ivyDeps() ++ 
   Dependencies.laminar ++ 
@@ -96,12 +106,12 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Sca
   // def moduleDeps = Seq(`ui5-webcomponents`)
 
   def pomSettings = PomSettings(
-    description = "Laminar wrapper for UI5 Webcomponents",
-    organization = "io.github.nguyenyou",
-    url = "https://github.com/nguyenyou/ui5-webcomponents-laminar",
+    description = Constants.description,
+    organization = Constants.organization,
+    url = Constants.repoUrl,
     licenses = Seq(License.MIT),
-    versionControl = VersionControl.github("nguyenyou", "ui5-webcomponents-laminar"),
-    developers = Seq(Developer("nguyenyou", "Nguyen You", "https://github.com/nguyenyou")),
+    versionControl = VersionControl.github(Constants.githubUsername, "ui5-webcomponents-laminar"),
+    developers = Seq(Developer(Constants.githubUsername, Constants.author, Constants.githubProfile)),
   )
 
 }
@@ -118,13 +128,20 @@ object www extends WebModule with Scalafix with BuildInfo {
 
   val buildInfoPackageName = "www"
   def buildInfoMembers = Seq(
-    BuildInfo.Value("version", Versions.`ui5-webcomponents-laminar`)
+    BuildInfo.Value("version", Versions.`ui5-webcomponents-laminar`),
+    BuildInfo.Value("repoUrl", Constants.repoUrl),
+    BuildInfo.Value("githubUsername", Constants.githubUsername),
+    BuildInfo.Value("githubProfile", Constants.githubProfile),
+    BuildInfo.Value("author", Constants.author),
+    BuildInfo.Value("organization", Constants.organization),
+    BuildInfo.Value("description", Constants.description),
   )
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
 /* 
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
+  def artifactName = "ui5-webcomponents"
   def publishVersion = Versions.`ui5-webcomponents`
 
   def pomSettings = PomSettings(

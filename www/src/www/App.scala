@@ -5,6 +5,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.BuildInfo
 import www.components.Codeblock
+import www.components.Icons
 import www.components.Sidebar
 import www.components.TableOfContents
 import www.components.ThemeToggle
@@ -46,10 +47,20 @@ case class App() {
               div(
                 tw.ml_auto.flex.items_center.gap_2.md(tw.flex_1.justify_end),
                 navTag(
-                  tw.flex.items_center.gap_2,
+                  tw.flex.items_center.gap_1,
                   compactSize(true),
                   Codeblock.ThemeSwitcher,
-                  ThemeToggle()()
+                  ThemeToggle()(),
+                  a(
+                    href   := BuildInfo.repoUrl,
+                    target := "_blank",
+                    rel    := "noopener noreferrer",
+                    Button(
+                      _.design := "Transparent"
+                    )(
+                      Icons.icon := "Github"
+                    )
+                  )
                 )
               )
             )
@@ -95,13 +106,13 @@ case class App() {
                   .md(tw.text_left),
                 "Built by ",
                 Link(
-                  _.href   := "https://github.com/nguyenyou",
+                  _.href   := BuildInfo.githubProfile,
                   _.target := "_blank",
                   _.design := "Subtle"
-                )("Tu Nguyen"),
+                )(BuildInfo.author),
                 ". The source code is available on ",
                 Link(
-                  _.href   := "https://github.com/nguyenyou/ui5-webcomponents-laminar",
+                  _.href   := BuildInfo.repoUrl,
                   _.target := "_blank",
                   _.design := "Subtle"
                 )("GitHub")
