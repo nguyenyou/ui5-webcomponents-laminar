@@ -100,12 +100,12 @@ object PopoverOpenerDomElement extends ExampleRenderer {
 object PopoverOpenerDomElement2 extends ExampleRenderer {
 
   override def content: AnnotationType = Source.annotate {
-    val openVar: Var[Option[dom.HTMLElement]] = Var(None)
+    val openEventBus = EventBus[Option[dom.HTMLElement]]()
 
     div(
       Button(
         _.design := "Emphasized",
-        _.onClick.map(_.target) --> openVar.someWriter
+        _.onClick.map(_.target).map(Option(_)) --> openEventBus
       )(
         "Open Popover"
       ),
@@ -119,7 +119,7 @@ object PopoverOpenerDomElement2 extends ExampleRenderer {
         )
       )(
         inContext { thisNode =>
-          openVar.signal.distinct --> Observer[Option[dom.HTMLElement]] {
+          openEventBus --> Observer[Option[dom.HTMLElement]] {
             case Some(opener) =>
               thisNode.ref.opener = opener
               thisNode.ref.open = true
