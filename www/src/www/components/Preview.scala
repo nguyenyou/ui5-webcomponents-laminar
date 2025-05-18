@@ -1,6 +1,7 @@
 package www.components
 
 import com.raquo.laminar.api.L.*
+import www.components.WebsiteIcons
 import www.libs.scalawind.*
 
 object Preview {
@@ -36,8 +37,8 @@ object Preview {
         onMouseLeave.mapTo(None) --> hoverTabVar,
         onClick.mapTo(name) --> activeTabVar,
         name match {
-          case "Preview" => Icons.windowIcon
-          case "Code"    => Icons.codeIcon
+          case "Preview" => WebsiteIcons.windowIcon
+          case "Code"    => WebsiteIcons.codeIcon
         },
         name
       )

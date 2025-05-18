@@ -20,8 +20,9 @@ object SelectView extends ExampleView("Select") {
       _.onChange.map { event =>
         // event.detail.selectedOption is a reference to the selected HTML Element
         // dataset contains all attributes that were passed with the data- prefix.
-        event.detail.selectedOption.dataset.get("id").foreach { id =>
-          println(s"Selected item ID: $id")
+        event.detail.selectedOption.dataset.get("id").map(_.toOption).foreach {
+          case Some(value) => println(s"Selected item with id: $value")
+          case None        => println("No item selected")
         }
       } --> Observer.empty
     )(

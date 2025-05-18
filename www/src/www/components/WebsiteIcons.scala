@@ -9,10 +9,10 @@ import org.scalablytyped.runtime.StringDictionary
 
 import scala.scalajs.js
 
-object Icons {
+object WebsiteIcons {
 
-  object CustomIconCodec {
-    val collectionName = "custom"
+  object WebsiteIconCodec {
+    val collectionName = "Website"
     val prefix         = s"${collectionName}/"
 
     def apply[T <: String]: Codec[T, String] = new Codec[T, String] {
@@ -22,8 +22,8 @@ object Icons {
     }
   }
 
-  type CustomIcon = "Github" | "Download"
-  lazy val icon: HtmlAttr[CustomIcon] = htmlAttr("icon", CustomIconCodec[CustomIcon])
+  type WebsiteIcon = "Github" | "Download"
+  lazy val icon: HtmlAttr[WebsiteIcon] = htmlAttr("icon", WebsiteIconCodec[WebsiteIcon])
 
   def scaleSvgPath(path: String, scaleFactor: Double = 32): String = {
     // Regular expression to find all numbers in the path
@@ -53,7 +53,7 @@ object Icons {
   def IconPath(d: String): Acc = {
     Acc().setPath(d)
   }
-  val customIconsLoader: js.Function1[String, js.Promise[CollectionData]] = name => {
+  val iconsLoader: js.Function1[String, js.Promise[CollectionData]] = name => {
     val data = CollectionData(
       collection = name,
       data = StringDictionary[Acc](
@@ -70,8 +70,8 @@ object Icons {
     )
     js.Promise.resolve(data)
   }
-  def registerCustomIcons(): Unit = {
-    registerIconLoader(CustomIconCodec.collectionName, customIconsLoader)
+  def registerIcons(): Unit = {
+    registerIconLoader(WebsiteIconCodec.collectionName, iconsLoader)
   }
 
   def Icon(

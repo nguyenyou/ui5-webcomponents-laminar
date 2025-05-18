@@ -5,10 +5,10 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.BuildInfo
 import www.components.Codeblock
-import www.components.Icons
 import www.components.Sidebar
 import www.components.TableOfContents
 import www.components.ThemeToggle
+import www.components.WebsiteIcons
 import www.libs.scalawind.*
 
 case class App() {
@@ -58,7 +58,7 @@ case class App() {
                     Button(
                       _.design := "Transparent"
                     )(
-                      Icons.icon := "Github"
+                      WebsiteIcons.icon := "Github"
                     )
                   )
                 )

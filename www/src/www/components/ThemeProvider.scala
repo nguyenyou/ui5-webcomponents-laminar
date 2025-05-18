@@ -17,7 +17,8 @@ case class ThemeProvider() {
   Assets.WebComponentsCompat
   Assets.WebComponentsAi
 
-  Icons.registerCustomIcons()
+  WebsiteIcons.registerIcons()
+  CustomIcons.registerIcons()
 
   def apply(child: HtmlElement): HtmlElement = {
     child.amend(
