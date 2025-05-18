@@ -5,6 +5,7 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.BuildInfo
 import www.components.Codeblock
+import www.components.Icons
 import www.components.Sidebar
 import www.components.TableOfContents
 import www.components.ThemeToggle
@@ -57,6 +58,7 @@ case class App() {
                     Button(
                       _.design := "Transparent"
                     )(
+                      Icons.icon := "Github"
                     )
                   )
                 )
