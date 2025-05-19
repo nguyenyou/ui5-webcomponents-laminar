@@ -15,15 +15,17 @@ import www.components.WebsiteIcons
 import www.libs.scalawind.*
 
 case class App() {
-  enum Layout {
+  enum Layout derives CanEqual {
     case Docs
     case Icons
   }
+
   val layoutSignal = AppRouter.currentPageSignal.map { page =>
     page match
       case IconsPage => Layout.Icons
       case _         => Layout.Docs
   }.distinct
+
   def renderIconsLayout() = {
     mainTag(
       tw.flex.flex_1.flex_col,
@@ -53,6 +55,7 @@ case class App() {
       )
     )
   }
+
   def renderDocsLayout() = {
     mainTag(
       tw.flex.flex_1.flex_col,
@@ -85,7 +88,7 @@ case class App() {
     )
   }
 
-  def renderDefaultLayout(): HtmlElement = {
+  def renderApp(): HtmlElement = {
     div(
       tw.relative.flex.min_h_svh.flex_col.bg_sap_background,
       div(
@@ -150,10 +153,9 @@ case class App() {
             )
           )
         ),
-        child <-- layoutSignal.map { layout =>
-          layout match
-            case Layout.Icons => renderIconsLayout()
-            case Layout.Docs  => renderDocsLayout()
+        child <-- layoutSignal.map {
+          case Layout.Icons => renderIconsLayout()
+          case Layout.Docs  => renderDocsLayout()
         },
         footerTag(
           tw.border_grid.border_t.py_6.md(tw.py_0),
@@ -182,10 +184,6 @@ case class App() {
         )
       )
     )
-  }
-
-  def renderApp(): HtmlElement = {
-    renderDefaultLayout()
   }
 
   def apply(): HtmlElement = {
