@@ -352,6 +352,8 @@ case class Tailwind() {
   def leading_tight                   = this
   def tracking_tighter                = this
   def mt_0                            = this
+  def mt_2                            = this
+  def mt_4                            = this
   def text_gray_500                   = this
   def pl_4                            = this
   def pl_10                           = this
