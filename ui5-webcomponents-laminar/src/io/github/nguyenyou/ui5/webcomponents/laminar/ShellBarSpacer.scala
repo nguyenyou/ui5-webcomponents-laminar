@@ -1,5 +1,4 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
-
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarSpacerMod.ShellBarSpacer as ShellBarSpacerComponent
 import org.scalajs.dom

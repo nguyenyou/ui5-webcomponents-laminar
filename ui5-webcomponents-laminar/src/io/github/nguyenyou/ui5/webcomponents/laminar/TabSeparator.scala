@@ -1,5 +1,4 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
-
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTabSeparatorMod.TabSeparator as TabSeparatorComponent
 import org.scalajs.dom

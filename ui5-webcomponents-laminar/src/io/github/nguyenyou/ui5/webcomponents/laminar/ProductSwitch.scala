@@ -1,5 +1,4 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
-
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distProductSwitchMod.ProductSwitch as ProductSwitchComponent
 import org.scalajs.dom

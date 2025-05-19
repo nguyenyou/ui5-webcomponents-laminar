@@ -11,6 +11,7 @@ import www.utils.JsonUtils.*
 import Pages.*
 import AppRouter.*
 import views.docs.*
+import views.icons.IconsView
 import views.HomeView
 
 // Step 1: Define Pages
@@ -78,6 +79,7 @@ object Pages {
   case object ProductSwitchPage        extends Page("ProductSwitch")
   case object SearchPage               extends Page("Search")
   case object TabPage                  extends Page("Tab")
+  case object IconsPage                extends Page("Icons")
   // AI
   case object AiButtonPage extends Page("AI Button")
   given pageCodec: Codec[Page] = deriveAllCodecs
@@ -144,6 +146,7 @@ val pageViews: Signal[HtmlElement] = AppRouter.currentPageSignal.splitMatchOne
   .handleValue(ProductSwitchPage)(ProductSwitchView())
   .handleValue(SearchPage)(SearchView())
   .handleValue(TabPage)(TabView())
+  .handleValue(IconsPage)(IconsView())
   .handleValue(NotFoundPage)(div("Not Found"))
   .toSignal
 
@@ -338,7 +341,9 @@ object AppRouter
         Route
           .static(SearchPage, root / SearchPage.path / endOfSegments, "/docs"),
         Route
-          .static(TabPage, root / TabPage.path / endOfSegments, "/docs")
+          .static(TabPage, root / TabPage.path / endOfSegments, "/docs"),
+        Route
+          .static(IconsPage, root / "icons" / endOfSegments)
       ),
       getPageTitle =
         page =>

@@ -200,6 +200,8 @@ case class Tailwind() {
   def min_h_svh                       = this
   def justify_center                  = this
   def justify_between                 = this
+  def border_all                      = this
+  def size_10                         = this
   def relative                        = this
   def bg_sap_brand                    = this
   def bg_sap_background               = this
@@ -225,6 +227,7 @@ case class Tailwind() {
   def h_14                            = this
   def w_6                             = this
   def p_2                             = this
+  def py_10                           = this
   def object_contain                  = this
   def inline_block                    = this
   def font_bold                       = this
@@ -241,13 +244,18 @@ case class Tailwind() {
   def py_4                            = this
   def py_6                            = this
   def py_8                            = this
+  def py_12                           = this
   def mx_auto                         = this
   def w_full                          = this
   def min_w_0                         = this
   def max_w_2xl                       = this
+  def text_base                       = this
+  def font_light                      = this
+  def text_foreground                 = this
   def max_w_5xl                       = this
   def hidden                          = this
   def text_sm                         = this
+  def truncate                        = this
   def text_xs                         = this
   def block                           = this
   def top_0                           = this
@@ -270,6 +278,8 @@ case class Tailwind() {
   def opacity_100                     = this
   def border_0                        = this
   def rounded                         = this
+  def shadow_sm                       = this
+  def shadow_md                       = this
   def transition_all                  = this
   def duration_300                    = this
   def `gap_0.5`                       = this
@@ -281,6 +291,7 @@ case class Tailwind() {
   def h_9                             = this
   def transition_colors               = this
   def m_0                             = this
+  def p_0                             = this
   def whitespace_pre_wrap             = this
   def rounded_md                      = this
   def overflow_hidden                 = this
@@ -336,6 +347,10 @@ case class Tailwind() {
   def text_orange_500                 = this
   def p_6                             = this
   def text_2xl                        = this
+  def text_3xl                        = this
+  def text_4xl                        = this
+  def leading_tight                   = this
+  def tracking_tighter                = this
   def mt_0                            = this
   def text_gray_500                   = this
   def pl_4                            = this

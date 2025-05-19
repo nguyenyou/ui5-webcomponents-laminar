@@ -55,6 +55,11 @@ body {
   border-bottom-width: 0;
   border-left-width: 0;
 }
+
+.border-all {
+  border-width: 1px;
+}
+
 a {
   color: inherit;
   -webkit-text-decoration: inherit;

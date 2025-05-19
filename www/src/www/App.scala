@@ -3,7 +3,10 @@ package www
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
+import www.AppRouter.navigateTo
 import www.BuildInfo
+import www.Pages.AvatarPage
+import www.Pages.IconsPage
 import www.components.Codeblock
 import www.components.Sidebar
 import www.components.TableOfContents
@@ -12,6 +15,76 @@ import www.components.WebsiteIcons
 import www.libs.scalawind.*
 
 case class App() {
+  enum Layout {
+    case Docs
+    case Icons
+  }
+  val layoutSignal = AppRouter.currentPageSignal.map { page =>
+    page match
+      case IconsPage => Layout.Icons
+      case _         => Layout.Docs
+  }.distinct
+  def renderIconsLayout() = {
+    mainTag(
+      tw.flex.flex_1.flex_col,
+      sectionTag(
+        tw.border_grid.border_b,
+        div(
+          tw.container_wrapper.border_l.border_r.border_grid,
+          div(
+            tw.container.flex.flex_col.items_start.gap_1.py_8.md(tw.py_10).lg(tw.py_12),
+            h1(
+              tw.text_2xl.font_bold.leading_tight.tracking_tighter.sm(tw.text_3xl).md(tw.text_4xl).m_0.p_0,
+              "Icons"
+            ),
+            p(
+              tw.max_w_2xl.text_base.font_light.sm(tw.text_lg).m_0.p_0,
+              "Icons are a great way to add visual identity to your application. They can be used to represent actions, entities, or concepts."
+            )
+          )
+        )
+      ),
+      div(
+        tw.container_wrapper.border_l.border_r.border_grid.flex_1,
+        div(
+          tw.container.py_6,
+          child <-- pageViews
+        )
+      )
+    )
+  }
+  def renderDocsLayout() = {
+    mainTag(
+      tw.flex.flex_1.flex_col,
+      div(
+        tw.container_wrapper.border_l.border_r.border_grid.flex_1.flex.flex_col,
+        div(
+          tw.container.flex_1.items_start,
+          tw.md(tw.grid.gap_6.grid_cols_("220px_minmax(0,1fr)")),
+          tw.lg(tw.grid.gap_6.grid_cols_("240px_minmax(0,1fr)")),
+          Sidebar()(),
+          mainTag(
+            tw.relative.py_6
+              .lg(tw.gap_10.py_8)
+              .xl(tw.grid.grid_cols_("1fr_300px")),
+            div(
+              tw.mx_auto.w_full.min_w_0.max_w_4xl,
+              child <-- pageViews
+            ),
+            div(
+              tw.hidden.text_sm.xl(tw.block),
+              div(
+                tw.sticky.top_20._mt_6.pt_4,
+                tw.h_("calc(100vh-3.5rem)"),
+                TableOfContents()()
+              )
+            )
+          )
+        )
+      )
+    )
+  }
+
   def renderDefaultLayout(): HtmlElement = {
     div(
       tw.relative.flex.min_h_svh.flex_col.bg_sap_background,
@@ -42,6 +115,17 @@ case class App() {
                       )
                     )
                   )
+                ),
+                navTag(
+                  tw.flex.items_center.gap_4.text_sm.xl(tw.gap_6),
+                  a(
+                    navigateTo(AvatarPage),
+                    "Docs"
+                  ),
+                  a(
+                    navigateTo(IconsPage),
+                    "Icons"
+                  )
                 )
               ),
               div(
@@ -66,35 +150,11 @@ case class App() {
             )
           )
         ),
-        mainTag(
-          tw.flex.flex_1.flex_col,
-          div(
-            tw.container_wrapper.border_l.border_r.border_grid.flex_1.flex.flex_col,
-            div(
-              tw.container.flex_1.items_start,
-              tw.md(tw.grid.gap_6.grid_cols_("220px_minmax(0,1fr)")),
-              tw.lg(tw.grid.gap_6.grid_cols_("240px_minmax(0,1fr)")),
-              Sidebar()(),
-              mainTag(
-                tw.relative.py_6
-                  .lg(tw.gap_10.py_8)
-                  .xl(tw.grid.grid_cols_("1fr_300px")),
-                div(
-                  tw.mx_auto.w_full.min_w_0.max_w_4xl,
-                  child <-- pageViews
-                ),
-                div(
-                  tw.hidden.text_sm.xl(tw.block),
-                  div(
-                    tw.sticky.top_20._mt_6.pt_4,
-                    tw.h_("calc(100vh-3.5rem)"),
-                    TableOfContents()()
-                  )
-                )
-              )
-            )
-          )
-        ),
+        child <-- layoutSignal.map { layout =>
+          layout match
+            case Layout.Icons => renderIconsLayout()
+            case Layout.Docs  => renderDocsLayout()
+        },
         footerTag(
           tw.border_grid.border_t.py_6.md(tw.py_0),
           div(
