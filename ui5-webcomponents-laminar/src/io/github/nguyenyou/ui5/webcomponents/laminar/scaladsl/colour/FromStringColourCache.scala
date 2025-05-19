@@ -40,6 +40,11 @@ object FromStringColourCache {
     }
   }
 
+  @SuppressWarnings(
+    Array(
+      "scalafix:unused"
+    )
+  )
   def lastNCache(cacheSize: Int): FromStringColourCache = new FromStringColourCache {
     var oldestCacheValue: String                  = "white"
     var cachedValues: mutable.Map[String, Colour] = mutable.Map("white" -> Colour.white)
