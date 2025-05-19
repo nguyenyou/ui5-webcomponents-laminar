@@ -142,6 +142,10 @@ pre.shiki code {
   scrollbar-width: none
 }
 
+ui5-icon[name^="Custom/"] {
+  fill-rule: evenodd;
+}
+
 @layer components {
   .typography {
     h2 {
