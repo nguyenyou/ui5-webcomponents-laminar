@@ -149,6 +149,7 @@ pre.shiki code {
 
 ui5-icon[name^="Custom/"] {
   fill-rule: evenodd;
+  clip-rule: evenodd;
 }
 
 @layer components {

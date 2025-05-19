@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.laminar.scaladsl.colour
 import org.scalajs.dom
 
 import scala.collection.mutable
+import scala.annotation.nowarn
 
 /** The purpose of a [[FromStringColourCache]] is to circumvent the fact that actually pulling a [[Colour]] from a
   * [[String]] is a quite expensive operation. Indeed, one has to create an actual canvas, paint to it, and retrieve the
@@ -24,7 +25,7 @@ object FromStringColourCache {
 
   val noCache: FromStringColourCache = new FromStringColourCache {
     val canvas = new dom.OffscreenCanvas(1, 1)
-    val ctx    = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D]
+    val ctx    = canvas.getContext("2d").asInstanceOf[dom.CanvasRenderingContext2D] // scalafix: ok
 
     def fromString(colourString: String): Colour = {
       ctx.clearRect(0, 0, 1, 1) // reset the single pixel to transparent black
@@ -40,14 +41,12 @@ object FromStringColourCache {
     }
   }
 
-  @SuppressWarnings(
-    Array(
-      "scalafix:unused"
-    )
-  )
   def lastNCache(cacheSize: Int): FromStringColourCache = new FromStringColourCache {
+    @nowarn
     var oldestCacheValue: String                  = "white"
+    @nowarn
     var cachedValues: mutable.Map[String, Colour] = mutable.Map("white" -> Colour.white)
+    @nowarn
     var numberOfCachedValues: Int                 = 0
 
     def fromString(colourString: String): Colour =

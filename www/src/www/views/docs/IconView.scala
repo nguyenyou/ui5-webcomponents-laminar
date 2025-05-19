@@ -2,6 +2,7 @@ package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
+import www.components.CustomIcons
 import www.components.Demo
 import www.libs.scalawind.*
 import www.macros.Source
@@ -170,6 +171,24 @@ object IconView extends ExampleView("Icon") {
             Icon(
               _.name := IconName.bs4x4GridLayout
             )()
+          )
+        }
+      ),
+      Demo(
+        title = "Custom Icons",
+        content = Source.annotate {
+          div(
+            tw.flex.gap_2.items_center,
+            Icon()(
+              CustomIcons.name := "Sign"
+            ),
+            Button()(
+              CustomIcons.icon := "Sign",
+              "Sign"
+            ),
+            Button()(
+              CustomIcons.icon := "Download"
+            )
           )
         }
       )
