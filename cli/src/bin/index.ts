@@ -47,41 +47,6 @@ switch (command) {
     break;
   }
 
-  case 'copy-files': {
-    const copySharedFilesOptions = {
-      packageName: {
-        type: 'string' as const
-      },
-      out: {
-        type: 'string' as const,
-        short: 'o'
-      }
-    };
-    const { values } = parseArgs({ options: copySharedFilesOptions, allowPositionals: true });
-    const { packageName, out } = values;
-    const missingParameters = [];
-    if (!packageName) {
-      missingParameters.push('--packageName');
-    }
-    if (!out) {
-      missingParameters.push('--out');
-    }
-    if (missingParameters.length > 0) {
-      console.error(`
-      Missing parameters: ${missingParameters.join(', ')}
-      Example: ui5-webcomponents-laminar-cli copy-files --packageName @ui5/webcomponents --out ./src/components
-      
-      Please add the missing parameters and try again.
-      `);
-      process.exit(1);
-    }
-    const outDir = resolve(process.cwd(), values.out!);
-    console.log('outDir', outDir);
-    const copySharedFilesModule = await import('../scripts/copy-files/main.js');
-    await copySharedFilesModule.default(packageName!, outDir);
-    break;
-  }
-
   case 'create-wrappers': {
     const wrapperOptions = {
       packageName: {
