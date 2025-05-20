@@ -147,7 +147,7 @@ pre.shiki code {
   scrollbar-width: none
 }
 
-ui5-icon[name^="Custom/"] {
+ui5-icon[name^="Custom/"], ui5-button::part(icon), ui5-button::part(endIcon) {
   fill-rule: evenodd;
   clip-rule: evenodd;
 }

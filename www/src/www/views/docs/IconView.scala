@@ -179,15 +179,28 @@ object IconView extends ExampleView("Icon") {
         content = Source.annotate {
           div(
             tw.flex.gap_2.items_center,
-            Icon()(
-              CustomIcons.name := "Sign"
-            ),
             Button()(
+              CustomIcons.icon    := "FileGeneric",
+              CustomIcons.endIcon := "CaretDown",
+              "Please choose an option"
+            ),
+            Button(
+              _.design := "Emphasized"
+            )(
               CustomIcons.icon := "Sign",
               "Sign"
             ),
+            Button(
+              _.design := "Negative"
+            )(
+              CustomIcons.icon := "Trash",
+              "Delete"
+            ),
             Button()(
               CustomIcons.icon := "Download"
+            ),
+            Icon()(
+              CustomIcons.name := "Sign"
             )
           )
         }
