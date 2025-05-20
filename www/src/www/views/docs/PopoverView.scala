@@ -17,17 +17,17 @@ object PopoverExampleBasic extends ExampleRenderer {
       Button(
         _.id     := "openPopoverButton",
         _.design := "Emphasized",
-        _.onClick.mapTo(true) --> openVar.writer
+        _.onClick.mapTo(true) --> openVar
       )("Open Popover"),
       Popover(
         _.openerId := "openPopoverButton",
-        _.open <-- openVar.signal,
+        _.open <-- openVar,
         _.headerText := "Newsletter subscription",
         _.footer := div(
           tw.flex.justify_end.flex_1.py_1,
           Button(
             _.design := "Emphasized",
-            _.onClick.mapTo(false) --> openVar.writer
+            _.onClick.mapTo(false) --> openVar
           )("Subscribe")
         )
       )(
