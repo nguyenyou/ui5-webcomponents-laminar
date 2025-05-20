@@ -190,14 +190,14 @@ object IconView extends ExampleView("Icon") {
               CustomIcons.icon := "Sign",
               "Sign"
             ),
+            Button()(
+              CustomIcons.icon := "Download"
+            ),
             Button(
               _.design := "Negative"
             )(
               CustomIcons.icon := "Trash",
               "Delete"
-            ),
-            Button()(
-              CustomIcons.icon := "Download"
             ),
             Icon()(
               CustomIcons.name := "Sign"
