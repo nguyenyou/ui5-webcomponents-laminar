@@ -17,7 +17,7 @@ object distNotificationListInternalMod {
     *
     * @private
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListInternal", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListInternal.js", JSImport.Default)
   @js.native
   open class default () extends NotificationListInternal
   

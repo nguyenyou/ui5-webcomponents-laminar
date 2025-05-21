@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDatesCalendarDateMod {
   
-  @JSImport("@ui5/webcomponents-localization/dist/dates/CalendarDate", JSImport.Default)
+  @JSImport("@ui5/webcomponents-localization/dist/dates/CalendarDate.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject

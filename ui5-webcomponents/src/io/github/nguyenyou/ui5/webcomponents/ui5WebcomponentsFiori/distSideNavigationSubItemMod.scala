@@ -23,7 +23,7 @@ object distSideNavigationSubItemMod {
     * @abstract
     * @since 1.0.0-rc.8
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSubItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSubItem.js", JSImport.Default)
   @js.native
   open class default () extends SideNavigationSubItem
   

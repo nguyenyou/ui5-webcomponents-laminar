@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSelectPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/SelectPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/SelectPopover.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}
     */ String = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSearchMessageAreaDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SearchMessageArea.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SearchMessageArea.css.js", JSImport.Default)
   @js.native
   val default: /* :host{width:calc(100% - .5rem);border-bottom:1px solid var(--sapGroup_TitleBorderColor);box-sizing:border-box;display:inline-block;margin-left:.25rem;margin-right:.25rem}.ui5-search-message-area-wrapper{padding:.5rem;box-sizing:border-box}.ui5-search-message-area-description{margin-top:.25rem;font-size:.75rem;color:var(--sapContent_LabelColor)}
     */ String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSplitButtonTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/SplitButtonTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/SplitButtonTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

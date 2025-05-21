@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* note: abstract class */ @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component")
+/* note: abstract class */ @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component")
 @js.native
 open class Component[P, S] () extends StObject {
   def this(props: P) = this()
@@ -75,26 +75,26 @@ open class Component[P, S] () extends StObject {
 /* static members */
 object Component {
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component")
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component.contextType")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component.contextType")
   @js.native
   def contextType: js.UndefOr[Context[Any]] = js.native
   inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component.defaultProps")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component.defaultProps")
   @js.native
   def defaultProps: js.UndefOr[Any] = js.native
   inline def defaultProps_=(x: js.UndefOr[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component.displayName")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component.displayName")
   @js.native
   def displayName: js.UndefOr[String] = js.native
   inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component.getDerivedStateFromError")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component.getDerivedStateFromError")
   @js.native
   def getDerivedStateFromError: js.UndefOr[js.Function1[/* error */ Any, js.Object | Null]] = js.native
   inline def getDerivedStateFromError_=(x: js.UndefOr[js.Function1[/* error */ Any, js.Object | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromError")(x.asInstanceOf[js.Any])
@@ -105,7 +105,7 @@ object Component {
   // constraint under no circumstances, see #1356.In general type arguments
   // seem to be a bit buggy and not supported well at the time of this
   // writing with TS 3.3.3333.
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module", "Component.getDerivedStateFromProps")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/preact.module.js", "Component.getDerivedStateFromProps")
   @js.native
   def getDerivedStateFromProps: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ js.Object, js.Object | Null]] = js.native
   inline def getDerivedStateFromProps_=(x: js.UndefOr[js.Function2[/* props */ js.Object, /* state */ js.Object, js.Object | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])

@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTntUnsuccessfulAuthMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth.js", JSImport.Default)
   @js.native
   val default: tntSlashUnsuccessfulAuth = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/UnsuccessfulAuth.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

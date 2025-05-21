@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTagDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TagDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TagDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -30,7 +30,7 @@ object distTypesTagDesignMod {
   
   @js.native
   sealed trait TagDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TagDesign", "TagDesign")
+  @JSImport("@ui5/webcomponents/dist/types/TagDesign.js", "TagDesign")
   @js.native
   object TagDesign extends StObject {
     

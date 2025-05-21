@@ -43,7 +43,7 @@ object distDelegateItemNavigationMod {
     * @class
     * @public
     */
-  @JSImport("@ui5/webcomponents-base/dist/delegate/ItemNavigation", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/delegate/ItemNavigation.js", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject

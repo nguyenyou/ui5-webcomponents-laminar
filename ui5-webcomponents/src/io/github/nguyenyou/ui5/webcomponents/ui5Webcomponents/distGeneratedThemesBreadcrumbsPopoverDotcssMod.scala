@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesBreadcrumbsPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/BreadcrumbsPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/BreadcrumbsPopover.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-breadcrumbs-popover::part(content){padding:0}.ui5-breadcrumbs-popover-footer{display:flex;justify-content:flex-end;width:100%;padding-right:.5rem;align-items:center}
     */ String = js.native

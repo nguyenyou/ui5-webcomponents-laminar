@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesNavigationModeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/NavigationMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/NavigationMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesNavigationModeMod {
   
   @js.native
   sealed trait NavigationMode extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/NavigationMode", "NavigationMode")
+  @JSImport("@ui5/webcomponents-base/dist/types/NavigationMode.js", "NavigationMode")
   @js.native
   object NavigationMode extends StObject {
     

@@ -18,7 +18,7 @@ object distShellBarSpacerMod {
     * @abstract
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarSpacer", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarSpacer.js", JSImport.Default)
   @js.native
   open class default () extends ShellBarSpacer
   

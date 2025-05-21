@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDelegateScrollEnablementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/delegate/ScrollEnablement", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/delegate/ScrollEnablement.js", JSImport.Default)
   @js.native
   open class default protected () extends ScrollEnablement {
     def this(containerComponent: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default) = this()

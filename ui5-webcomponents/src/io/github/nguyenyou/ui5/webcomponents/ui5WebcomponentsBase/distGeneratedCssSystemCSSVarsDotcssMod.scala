@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedCssSystemCSSVarsDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/css/SystemCSSVars.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/generated/css/SystemCSSVars.css.js", JSImport.Default)
   @js.native
   val default: /* :root{--_ui5_content_density:cozy}.sapUiSizeCompact,.ui5-content-density-compact,[data-ui5-compact-size]{--_ui5_content_density:compact} */ String = js.native
   

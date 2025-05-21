@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distThirdpartyMergeMod_ {
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/_merge", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/_merge.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/_merge", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/_merge.js", JSImport.Default)
   @js.native
   def default: js.Function4[
     /* arg1 */ js.UndefOr[Any], 

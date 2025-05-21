@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distToggleSpinButtonTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ToggleSpinButtonTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ToggleSpinButtonTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

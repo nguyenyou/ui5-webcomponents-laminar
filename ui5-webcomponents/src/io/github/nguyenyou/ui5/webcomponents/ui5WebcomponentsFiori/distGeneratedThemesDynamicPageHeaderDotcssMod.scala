@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesDynamicPageHeaderDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/DynamicPageHeader.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/DynamicPageHeader.css.js", JSImport.Default)
   @js.native
   val default: /* :host{background-color:var(--_ui5-v2-10-0_dynamic_page_header_background_color);display:block;box-shadow:var(--_ui5-v2-10-0_dynamic_page_header-box-shadow)}.ui5-dynamic-page-header-root{background:inherit}
     */ String = js.native

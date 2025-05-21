@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTableCellDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-compat/dist/generated/themes/TableCell.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-compat/dist/generated/themes/TableCell.css.js", JSImport.Default)
   @js.native
   val default: /* :host{display:table-cell;font-family:"72override",var(--sapFontFamily);font-size:.875rem;height:var(--ui5-v2-10-0_table_row_height);box-sizing:border-box;color:var(--sapList_TextColor);word-break:break-word;vertical-align:middle}td{display:contents}:host([popined]){padding-left:0;padding-top:.25rem}:host([_popined-inline]){padding-top:0}::slotted([ui5-label]){color:inherit}
     */ String = js.native

@@ -39,7 +39,7 @@ object distButtonMod {
     * @public
     * @experimental The Button and ButtonState web components are availabe since 2.0 under an experimental flag and their API and behaviour are subject to change.
     */
-  @JSImport("@ui5/webcomponents-ai/dist/Button", JSImport.Default)
+  @JSImport("@ui5/webcomponents-ai/dist/Button.js", JSImport.Default)
   @js.native
   open class default () extends Button
   

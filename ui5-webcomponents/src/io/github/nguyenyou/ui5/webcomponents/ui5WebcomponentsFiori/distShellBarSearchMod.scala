@@ -15,7 +15,7 @@ object distShellBarSearchMod {
     * @since 2.10.0
     * @experimental
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarSearch", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarSearch.js", JSImport.Default)
   @js.native
   open class default () extends ShellBarSearch
   

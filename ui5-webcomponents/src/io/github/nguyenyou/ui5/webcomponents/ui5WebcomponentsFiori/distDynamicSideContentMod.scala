@@ -81,17 +81,17 @@ object distDynamicSideContentMod {
     * @since 1.1.0
     * @slot {Array<HTMLElement>} default - Defines the main content.
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent.js", JSImport.Default)
   @js.native
   open class default () extends DynamicSideContent
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/DynamicSideContent.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

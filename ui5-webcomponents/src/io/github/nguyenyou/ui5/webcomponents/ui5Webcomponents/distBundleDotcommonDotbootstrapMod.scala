@@ -16,16 +16,16 @@ object distBundleDotcommonDotbootstrapMod {
   
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", "default.ResizeHandler")
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", "default.ResizeHandler")
     @js.native
     open class ResizeHandler ()
       extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.default
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", "default.ResizeHandler")
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", "default.ResizeHandler")
     @js.native
     def ResizeHandler: (Instantiable0[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.default
@@ -44,12 +44,12 @@ object distBundleDotcommonDotbootstrapMod {
     
     inline def attachThemeLoaded(listener: js.Function1[/* theme */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachThemeLoaded")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", "default.configuration")
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", "default.configuration")
     @js.native
     def configuration: GetAnimationMode = js.native
     inline def configuration_=(x: GetAnimationMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configuration")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", "default.defaultTexts")
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", "default.defaultTexts")
     @js.native
     def defaultTexts: TypeofdefaultTexts = js.native
     inline def defaultTexts_=(x: TypeofdefaultTexts): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTexts")(x.asInstanceOf[js.Any])
@@ -74,7 +74,7 @@ object distBundleDotcommonDotbootstrapMod {
     
     inline def ignoreCustomElements(tagPrefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreCustomElements")(tagPrefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap", "default.invisibleMessage")
+    @JSImport("@ui5/webcomponents/dist/bundle.common.bootstrap.js", "default.invisibleMessage")
     @js.native
     def invisibleMessage: Announce = js.native
     inline def invisibleMessage_=(x: Announce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisibleMessage")(x.asInstanceOf[js.Any])

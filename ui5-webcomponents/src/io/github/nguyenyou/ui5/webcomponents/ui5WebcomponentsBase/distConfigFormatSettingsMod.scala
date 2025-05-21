@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distConfigFormatSettingsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/config/FormatSettings", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/config/FormatSettings.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

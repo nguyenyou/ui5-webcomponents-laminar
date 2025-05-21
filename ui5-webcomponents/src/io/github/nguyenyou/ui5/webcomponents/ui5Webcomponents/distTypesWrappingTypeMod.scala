@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesWrappingTypeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/WrappingType", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/WrappingType.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesWrappingTypeMod {
   
   @js.native
   sealed trait WrappingType extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/WrappingType", "WrappingType")
+  @JSImport("@ui5/webcomponents/dist/types/WrappingType.js", "WrappingType")
   @js.native
   object WrappingType extends StObject {
     

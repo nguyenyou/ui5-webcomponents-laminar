@@ -27,7 +27,7 @@ object distWizardTabMod {
     * @extends UI5Element
     * @private
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/WizardTab", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/WizardTab.js", JSImport.Default)
   @js.native
   open class default () extends WizardTab
   

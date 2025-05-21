@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distConfigFontsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/config/Fonts", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/config/Fonts.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

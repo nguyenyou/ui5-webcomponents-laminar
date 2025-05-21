@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesListSelectionModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ListSelectionMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ListSelectionMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -30,7 +30,7 @@ object distTypesListSelectionModeMod {
   
   @js.native
   sealed trait ListSelectionMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ListSelectionMode", "ListSelectionMode")
+  @JSImport("@ui5/webcomponents/dist/types/ListSelectionMode.js", "ListSelectionMode")
   @js.native
   object ListSelectionMode extends StObject {
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesBorderDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/BorderDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/BorderDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesBorderDesignMod {
   
   @js.native
   sealed trait BorderDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/BorderDesign", "BorderDesign")
+  @JSImport("@ui5/webcomponents/dist/types/BorderDesign.js", "BorderDesign")
   @js.native
   object BorderDesign extends StObject {
     

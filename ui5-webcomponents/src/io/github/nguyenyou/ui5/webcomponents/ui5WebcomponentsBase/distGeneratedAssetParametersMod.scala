@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedAssetParametersMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters", "DEFAULT_LANGUAGE")
+  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters.js", "DEFAULT_LANGUAGE")
   @js.native
   val DEFAULT_LANGUAGE: String = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters", "DEFAULT_LOCALE")
+  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters.js", "DEFAULT_LOCALE")
   @js.native
   val DEFAULT_LOCALE: String = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters", "DEFAULT_THEME")
+  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters.js", "DEFAULT_THEME")
   @js.native
   val DEFAULT_THEME: String = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters", "SUPPORTED_LOCALES")
+  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters.js", "SUPPORTED_LOCALES")
   @js.native
   val SUPPORTED_LOCALES: js.Array[String] = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters", "SUPPORTED_THEMES")
+  @JSImport("@ui5/webcomponents-base/dist/generated/AssetParameters.js", "SUPPORTED_THEMES")
   @js.native
   val SUPPORTED_THEMES: js.Array[String] = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRatingIndicatorTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/RatingIndicatorTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/RatingIndicatorTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

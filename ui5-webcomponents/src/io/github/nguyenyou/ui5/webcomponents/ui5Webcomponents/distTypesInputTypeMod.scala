@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesInputTypeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/InputType", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/InputType.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -30,7 +30,7 @@ object distTypesInputTypeMod {
   
   @js.native
   sealed trait InputType extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/InputType", "InputType")
+  @JSImport("@ui5/webcomponents/dist/types/InputType.js", "InputType")
   @js.native
   object InputType extends StObject {
     

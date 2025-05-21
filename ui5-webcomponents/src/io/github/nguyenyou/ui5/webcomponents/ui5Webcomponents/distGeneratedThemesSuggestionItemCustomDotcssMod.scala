@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSuggestionItemCustomDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/SuggestionItemCustom.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/SuggestionItemCustom.css.js", JSImport.Default)
   @js.native
   val default: /* :host{height:var(--_ui5-v2-10-0_list_item_dropdown_base_height)}
     */ String = js.native

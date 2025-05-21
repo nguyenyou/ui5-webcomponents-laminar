@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTabTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/TabTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/TabTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

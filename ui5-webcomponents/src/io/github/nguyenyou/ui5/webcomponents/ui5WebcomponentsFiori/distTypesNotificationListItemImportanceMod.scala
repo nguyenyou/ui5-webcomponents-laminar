@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesNotificationListItemImportanceMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/NotificationListItemImportance", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/NotificationListItemImportance.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesNotificationListItemImportanceMod {
   
   @js.native
   sealed trait NotificationListItemImportance extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/NotificationListItemImportance", "NotificationListItemImportance")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/NotificationListItemImportance.js", "NotificationListItemImportance")
   @js.native
   object NotificationListItemImportance extends StObject {
     

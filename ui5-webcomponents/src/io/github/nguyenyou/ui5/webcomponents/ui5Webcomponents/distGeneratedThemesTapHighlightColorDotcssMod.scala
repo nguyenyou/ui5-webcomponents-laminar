@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTapHighlightColorDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/TapHighlightColor.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/TapHighlightColor.css.js", JSImport.Default)
   @js.native
   val default: /* :host{-webkit-tap-highlight-color:rgba(0,0,0,0)}
     */ String = js.native

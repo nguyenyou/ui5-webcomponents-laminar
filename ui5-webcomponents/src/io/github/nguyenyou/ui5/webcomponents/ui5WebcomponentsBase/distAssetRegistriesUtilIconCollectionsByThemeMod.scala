@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAssetRegistriesUtilIconCollectionsByThemeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsByTheme", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsByTheme.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   @js.native
   sealed trait RegisteredIconCollection extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsByTheme", "RegisteredIconCollection")
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsByTheme.js", "RegisteredIconCollection")
   @js.native
   object RegisteredIconCollection extends StObject {
     

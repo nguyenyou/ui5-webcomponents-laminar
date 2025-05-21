@@ -23,7 +23,7 @@ object distSortItemMod {
     * @since 1.0.0-rc.16
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SortItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SortItem.js", JSImport.Default)
   @js.native
   open class default () extends SortItem
   

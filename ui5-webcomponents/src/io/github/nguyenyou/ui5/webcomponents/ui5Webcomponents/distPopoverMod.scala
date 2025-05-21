@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPopoverMod {
   
-  @JSImport("@ui5/webcomponents/dist/Popover", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/Popover.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -54,7 +54,7 @@ object distPopoverMod {
     * @csspart content - Used to style the content of the component
     * @csspart footer - Used to style the footer of the component
     */
-  @JSImport("@ui5/webcomponents/dist/Popover", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Popover.js", JSImport.Default)
   @js.native
   open class default () extends Popover
   

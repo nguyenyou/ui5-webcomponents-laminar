@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAvatarTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/AvatarTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/AvatarTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

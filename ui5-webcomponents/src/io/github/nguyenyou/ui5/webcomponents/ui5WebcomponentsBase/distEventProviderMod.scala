@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distEventProviderMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/EventProvider", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/EventProvider.js", JSImport.Default)
   @js.native
   open class default[EventListenerParam, EventListenerReturn] ()
     extends StObject

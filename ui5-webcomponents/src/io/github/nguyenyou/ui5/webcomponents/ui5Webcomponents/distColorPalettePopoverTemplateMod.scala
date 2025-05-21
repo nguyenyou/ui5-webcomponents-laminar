@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distColorPalettePopoverTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ColorPalettePopoverTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ColorPalettePopoverTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

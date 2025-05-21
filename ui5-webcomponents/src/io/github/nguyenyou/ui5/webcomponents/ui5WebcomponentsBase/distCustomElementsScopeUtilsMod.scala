@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCustomElementsScopeUtilsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScopeUtils", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScopeUtils.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

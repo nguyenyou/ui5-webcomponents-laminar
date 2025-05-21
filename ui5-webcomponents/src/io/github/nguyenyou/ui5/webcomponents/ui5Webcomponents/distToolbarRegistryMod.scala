@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distToolbarRegistryMod {
   
-  @JSImport("@ui5/webcomponents/dist/ToolbarRegistry", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ToolbarRegistry.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

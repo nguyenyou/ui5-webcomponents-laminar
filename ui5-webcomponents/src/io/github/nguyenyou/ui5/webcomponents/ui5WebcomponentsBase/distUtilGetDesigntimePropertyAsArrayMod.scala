@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilGetDesigntimePropertyAsArrayMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/getDesigntimePropertyAsArray", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/getDesigntimePropertyAsArray.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

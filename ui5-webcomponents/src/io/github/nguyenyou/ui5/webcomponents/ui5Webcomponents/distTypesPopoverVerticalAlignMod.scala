@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPopoverVerticalAlignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/PopoverVerticalAlign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/PopoverVerticalAlign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesPopoverVerticalAlignMod {
   
   @js.native
   sealed trait PopoverVerticalAlign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/PopoverVerticalAlign", "PopoverVerticalAlign")
+  @JSImport("@ui5/webcomponents/dist/types/PopoverVerticalAlign.js", "PopoverVerticalAlign")
   @js.native
   object PopoverVerticalAlign extends StObject {
     

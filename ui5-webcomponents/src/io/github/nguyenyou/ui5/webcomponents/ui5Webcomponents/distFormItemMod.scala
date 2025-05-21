@@ -34,7 +34,7 @@ object distFormItemMod {
     * @since 2.0.0
     * @extends UI5Element
     */
-  @JSImport("@ui5/webcomponents/dist/FormItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/FormItem.js", JSImport.Default)
   @js.native
   open class default () extends FormItem
   

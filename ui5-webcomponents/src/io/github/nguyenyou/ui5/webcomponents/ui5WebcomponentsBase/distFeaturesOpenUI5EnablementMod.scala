@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesOpenUI5EnablementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Enablement", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Enablement.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with OpenUI5Enablement
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Enablement", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Enablement.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

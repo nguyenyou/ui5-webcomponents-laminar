@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesWizardContentLayoutMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/WizardContentLayout", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/WizardContentLayout.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesWizardContentLayoutMod {
   
   @js.native
   sealed trait WizardContentLayout extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/WizardContentLayout", "WizardContentLayout")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/WizardContentLayout.js", "WizardContentLayout")
   @js.native
   object WizardContentLayout extends StObject {
     

@@ -22,7 +22,7 @@ object distListItemBaseMod {
     * @extends UI5Element
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ListItemBase", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ListItemBase.js", JSImport.Default)
   @js.native
   open class default () extends ListItemBase
   

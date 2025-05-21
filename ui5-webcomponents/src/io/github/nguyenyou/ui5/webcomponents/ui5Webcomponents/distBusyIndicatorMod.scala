@@ -48,17 +48,17 @@ object distBusyIndicatorMod {
     * @slot {Array<Node>} default - Determines the content over which the component will appear.
     * @since 0.12.0
     */
-  @JSImport("@ui5/webcomponents/dist/BusyIndicator", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/BusyIndicator.js", JSImport.Default)
   @js.native
   open class default () extends BusyIndicator
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/BusyIndicator", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/BusyIndicator.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/BusyIndicator", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/BusyIndicator.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

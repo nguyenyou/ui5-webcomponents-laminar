@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMovePlacementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/MovePlacement", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/MovePlacement.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesMovePlacementMod {
   
   @js.native
   sealed trait MovePlacement extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/MovePlacement", "MovePlacement")
+  @JSImport("@ui5/webcomponents-base/dist/types/MovePlacement.js", "MovePlacement")
   @js.native
   object MovePlacement extends StObject {
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesUploadCollectionSelectionModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionSelectionMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionSelectionMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distTypesUploadCollectionSelectionModeMod {
   
   @js.native
   sealed trait UploadCollectionSelectionMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionSelectionMode", "UploadCollectionSelectionMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionSelectionMode.js", "UploadCollectionSelectionMode")
   @js.native
   object UploadCollectionSelectionMode extends StObject {
     

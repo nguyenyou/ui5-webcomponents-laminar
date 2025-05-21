@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesPopupGlobalDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/PopupGlobal.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/PopupGlobal.css.js", JSImport.Default)
   @js.native
   val default: `Dotui5-popup-scroll-blockerLeftcurlybracketoverflowColonhiddenRightcurlybracketLinefeed` = js.native
   

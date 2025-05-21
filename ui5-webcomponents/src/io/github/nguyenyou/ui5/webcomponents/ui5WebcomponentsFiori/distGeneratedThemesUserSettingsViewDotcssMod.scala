@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesUserSettingsViewDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/UserSettingsView.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/UserSettingsView.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-user-settings-view-container{container-type:inline-size}.ui5-user-settings-view{padding:1rem}@container (width > 37.5rem){.ui5-user-settings-view{padding-inline:2rem}}
     */ String = js.native

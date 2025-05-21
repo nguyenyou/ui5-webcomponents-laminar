@@ -26,7 +26,7 @@ object distTreeItemCustomMod {
     * @public
     * @since 1.9.2
     */
-  @JSImport("@ui5/webcomponents/dist/TreeItemCustom", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TreeItemCustom.js", JSImport.Default)
   @js.native
   open class default () extends TreeItemCustom
   

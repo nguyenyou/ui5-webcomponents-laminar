@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTimepickerUtilsTimeSliderMod {
   
-  @JSImport("@ui5/webcomponents/dist/timepicker-utils/TimeSlider", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/timepicker-utils/TimeSlider.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

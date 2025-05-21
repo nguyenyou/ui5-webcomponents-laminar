@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesBackgroundDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/BackgroundDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/BackgroundDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesBackgroundDesignMod {
   
   @js.native
   sealed trait BackgroundDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/BackgroundDesign", "BackgroundDesign")
+  @JSImport("@ui5/webcomponents/dist/types/BackgroundDesign.js", "BackgroundDesign")
   @js.native
   object BackgroundDesign extends StObject {
     

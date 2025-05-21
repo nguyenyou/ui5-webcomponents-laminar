@@ -20,7 +20,7 @@ object distCalendarDateRangeMod {
     * @public
     * @since 2.0.0
     */
-  @JSImport("@ui5/webcomponents/dist/CalendarDateRange", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/CalendarDateRange.js", JSImport.Default)
   @js.native
   open class default () extends CalendarDateRange
   

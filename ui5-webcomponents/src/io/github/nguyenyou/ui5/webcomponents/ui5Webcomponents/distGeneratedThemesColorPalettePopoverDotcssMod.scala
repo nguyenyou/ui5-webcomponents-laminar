@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesColorPalettePopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ColorPalettePopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ColorPalettePopover.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-cp-header{width:100%;height:var(--_ui5-v2-10-0_color-palette-button-height);display:flex;align-items:center}.ui5-cp-footer{width:100%;display:flex;justify-content:flex-end;align-items:center;margin:.1875rem 0}[ui5-responsive-popover]::part(content){padding:0}.ui5-cp-item-container{padding:.3125rem .6875rem}
     */ String = js.native

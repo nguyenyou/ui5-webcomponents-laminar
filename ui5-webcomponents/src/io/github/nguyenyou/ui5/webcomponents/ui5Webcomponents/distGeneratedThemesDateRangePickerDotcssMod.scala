@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesDateRangePickerDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/DateRangePicker.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/DateRangePicker.css.js", JSImport.Default)
   @js.native
   val default: /* :host(:not([hidden])){display:inline-block}:host{min-width:15rem;color:var(--sapField_TextColor);background-color:var(--sapField_Background)}:host .ui5-date-picker-input{width:100%;min-width:inherit;color:inherit;background-color:inherit}
     */ String = js.native

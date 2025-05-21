@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesButtonBadgeDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ButtonBadge.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ButtonBadge.css.js", JSImport.Default)
   @js.native
   val default: /* [ui5-tag]::part(root){border:.0625rem solid var(--sapContent_BadgeBorderColor);background-color:var(--sapContent_BadgeBackground);color:var(--sapContent_BadgeTextColor);height:1rem;border-radius:.5rem}:host([design="AttentionDot"]) [ui5-tag]::part(root){min-width:var(--_ui5-v2-10-0-button-badge-diameter);min-height:var(--_ui5-v2-10-0-button-badge-diameter);height:var(--_ui5-v2-10-0-button-badge-diameter);width:var(--_ui5-v2-10-0-button-badge-diameter);border-radius:100%}
     */ String = js.native

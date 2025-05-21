@@ -5,6 +5,7 @@
   "scripts": {
     "create-wrappers": "yarn create-wrappers:only && yarn ui5-webcomponents-laminar:fmt && yarn ui5-webcomponents-laminar:fix",
     "create-wrappers:only": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers",
+    "append-js-extension": "node append-js-extension.js",
     "generate-facades": "./mill ui5-webcomponents.scalablyTypedImportTask",
     "generate-icons": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers-icons",
     "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",

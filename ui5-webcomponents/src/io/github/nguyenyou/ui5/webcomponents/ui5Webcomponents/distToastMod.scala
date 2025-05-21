@@ -45,7 +45,7 @@ object distToastMod {
     *
     * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
     */
-  @JSImport("@ui5/webcomponents/dist/Toast", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Toast.js", JSImport.Default)
   @js.native
   open class default () extends Toast
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTableHeaderCellActionBaseDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/TableHeaderCellActionBase.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/TableHeaderCellActionBase.css.js", JSImport.Default)
   @js.native
   val default: /* :host{flex-shrink:0}:host([_popin]){margin-inline:.0625rem 0}[ui5-button]{min-width:1.625rem;width:1.625rem;height:1.625rem}[ui5-button]::part(icon){width:1rem;height:1rem}:host([_popin]) [ui5-button]::part(icon){width:.75rem;height:.75rem}
     */ String = js.native

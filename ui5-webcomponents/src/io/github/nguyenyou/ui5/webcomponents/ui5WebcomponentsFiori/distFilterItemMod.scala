@@ -23,7 +23,7 @@ object distFilterItemMod {
     * @since 1.0.0-rc.16
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/FilterItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/FilterItem.js", JSImport.Default)
   @js.native
   open class default () extends FilterItem
   

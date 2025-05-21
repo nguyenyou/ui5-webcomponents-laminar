@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSideNavigationPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SideNavigationPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SideNavigationPopover.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-side-navigation-popover::part(content){padding:0}.ui5-hidden-text{position:absolute;clip:rect(1px,1px,1px,1px);user-select:none;left:-1000px;top:-1000px;pointer-events:none;font-size:0}
     */ String = js.native

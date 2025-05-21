@@ -1,0 +1,81 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
+
+const readFile = util.promisify(fs.readFile);
+const writeFile = util.promisify(fs.writeFile);
+const readdir = util.promisify(fs.readdir);
+const stat = util.promisify(fs.stat);
+
+// Regex to find @JSImport annotations
+const jsImportRegex = /@JSImport\("([^"]+)"([^)]*)\)/g;
+
+async function processFile(filePath) {
+  try {
+    // Read file content
+    const content = await readFile(filePath, 'utf8');
+    
+    // Replace @JSImport paths without .js extension
+    const updatedContent = content.replace(jsImportRegex, (match, importPath, rest) => {
+      // Only append .js if:
+      // 1. It doesn't already end with .js
+      // 2. It's not a namespace import (ending with /)
+      // 3. It contains "/dist/" or starts with "dist/"
+      if (!importPath.endsWith('.js') && 
+          !importPath.endsWith('/') && 
+          (importPath.includes('/dist/') || importPath.startsWith('dist/'))) {
+        return `@JSImport("${importPath}.js"${rest})`;
+      }
+      return match;
+    });
+    
+    // Only write if content was changed
+    if (content !== updatedContent) {
+      await writeFile(filePath, updatedContent);
+      console.log(`Updated: ${filePath}`);
+    }
+  } catch (error) {
+    console.error(`Error processing file ${filePath}:`, error);
+  }
+}
+
+async function traverseDirectory(dirPath) {
+  try {
+    const entries = await readdir(dirPath);
+    
+    for (const entry of entries) {
+      const entryPath = path.join(dirPath, entry);
+      const stats = await stat(entryPath);
+      
+      if (stats.isDirectory()) {
+        // Recursively process subdirectories
+        await traverseDirectory(entryPath);
+      } else if (stats.isFile() && entryPath.endsWith('.scala')) {
+        // Process .scala files
+        await processFile(entryPath);
+      }
+    }
+  } catch (error) {
+    console.error(`Error traversing directory ${dirPath}:`, error);
+  }
+}
+
+async function main() {
+  // Get target directory from command line argument or use default
+  const targetDir = process.argv[2] || './ui5-webcomponents';
+  
+  console.log(`Processing .scala files in ${targetDir}...`);
+  console.log(`Only appending .js to imports from 'dist/' paths`);
+  
+  try {
+    await traverseDirectory(targetDir);
+    console.log('Done!');
+  } catch (error) {
+    console.error('Error:', error);
+    process.exit(1);
+  }
+}
+
+main(); 

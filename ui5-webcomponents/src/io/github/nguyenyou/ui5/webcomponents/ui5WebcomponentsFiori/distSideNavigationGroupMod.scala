@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSideNavigationGroupMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -33,17 +33,17 @@ object distSideNavigationGroupMod {
     * @abstract
     * @since 1.24.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup.js", JSImport.Default)
   @js.native
   open class default () extends SideNavigationGroup
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationGroup.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

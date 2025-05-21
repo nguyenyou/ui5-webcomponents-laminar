@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCarouselTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/CarouselTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/CarouselTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

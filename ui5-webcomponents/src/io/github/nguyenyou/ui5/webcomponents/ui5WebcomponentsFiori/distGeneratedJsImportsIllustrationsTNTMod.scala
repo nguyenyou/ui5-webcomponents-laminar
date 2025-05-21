@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedJsImportsIllustrationsTNTMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/js-imports/IllustrationsTNT", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/js-imports/IllustrationsTNT.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

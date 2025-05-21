@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSegmentedButtonSelectionModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/SegmentedButtonSelectionMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/SegmentedButtonSelectionMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesSegmentedButtonSelectionModeMod {
   
   @js.native
   sealed trait SegmentedButtonSelectionMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/SegmentedButtonSelectionMode", "SegmentedButtonSelectionMode")
+  @JSImport("@ui5/webcomponents/dist/types/SegmentedButtonSelectionMode.js", "SegmentedButtonSelectionMode")
   @js.native
   object SegmentedButtonSelectionMode extends StObject {
     

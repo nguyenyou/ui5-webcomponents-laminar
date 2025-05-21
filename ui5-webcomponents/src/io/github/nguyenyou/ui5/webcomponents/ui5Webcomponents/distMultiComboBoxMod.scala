@@ -72,12 +72,12 @@ object distMultiComboBoxMod {
     * @since 0.11.0
     * @csspart token-\{index\} - Used to style each token(where `token-0` corresponds to the first item)
     */
-  @JSImport("@ui5/webcomponents/dist/MultiComboBox", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/MultiComboBox.js", JSImport.Default)
   @js.native
   open class default () extends MultiComboBox
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/MultiComboBox", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/MultiComboBox.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -94,7 +94,7 @@ object distMultiComboBoxMod {
     ): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("_groupItemFilter")(item.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], allItems.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/MultiComboBox", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/MultiComboBox.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

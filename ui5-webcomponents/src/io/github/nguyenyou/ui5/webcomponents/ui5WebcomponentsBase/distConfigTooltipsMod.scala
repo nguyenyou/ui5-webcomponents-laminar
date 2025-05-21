@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distConfigTooltipsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/config/Tooltips", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/config/Tooltips.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

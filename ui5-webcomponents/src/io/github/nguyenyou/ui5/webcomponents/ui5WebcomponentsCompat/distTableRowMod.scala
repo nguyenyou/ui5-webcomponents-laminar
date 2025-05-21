@@ -27,17 +27,17 @@ object distTableRowMod {
     * @csspart row - Used to style the native `tr` element
     * @csspart popin-row - Used to style the `tr` element when a row pops in
     */
-  @JSImport("@ui5/webcomponents-compat/dist/TableRow", JSImport.Default)
+  @JSImport("@ui5/webcomponents-compat/dist/TableRow.js", JSImport.Default)
   @js.native
   open class default () extends TableRow
   object default {
     
-    @JSImport("@ui5/webcomponents-compat/dist/TableRow", JSImport.Default)
+    @JSImport("@ui5/webcomponents-compat/dist/TableRow.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-compat/dist/TableRow", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-compat/dist/TableRow.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

@@ -27,7 +27,7 @@ object distToggleButtonMod {
     * @extends Button
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ToggleButton", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ToggleButton.js", JSImport.Default)
   @js.native
   open class default () extends ToggleButton
   

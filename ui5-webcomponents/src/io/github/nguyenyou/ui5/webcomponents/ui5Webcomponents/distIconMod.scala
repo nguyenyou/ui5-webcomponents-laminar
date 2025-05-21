@@ -87,7 +87,7 @@ object distIconMod {
     * @implements {IIcon}
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/Icon", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Icon.js", JSImport.Default)
   @js.native
   open class default () extends Icon
   

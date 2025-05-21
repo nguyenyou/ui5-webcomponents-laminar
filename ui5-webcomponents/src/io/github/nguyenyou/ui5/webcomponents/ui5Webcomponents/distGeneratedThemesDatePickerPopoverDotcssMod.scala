@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesDatePickerPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/DatePickerPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/DatePickerPopover.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-date-picker-popover{width:20rem;.ui5-popover-header{width:100%}}[ui5-calendar]{width:100%;display:flex;justify-content:center}[ui5-responsive-popover]::part(content){padding:0}
     */ String = js.native

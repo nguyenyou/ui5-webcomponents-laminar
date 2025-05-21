@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSearchItemGroupDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SearchItemGroup.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SearchItemGroup.css.js", JSImport.Default)
   @js.native
   val default: /* [ui5-li-group-header]::part(native-li){height:100%;padding:.5625rem .5rem}[ui5-li-group-header]{height:2rem}[ui5-li-group-header]::part(native-li):focus:after{inset:0!important;border-radius:8px}
     */ String = js.native

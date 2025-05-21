@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesListItemAdditionalTextDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ListItemAdditionalText.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ListItemAdditionalText.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-li-additional-text{margin:0 .25rem;color:var(--sapNeutralTextColor);font-size:var(--sapFontSize);min-width:3.75rem;text-align:end;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     */ String = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDatesUniversalDateMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-localization/dist/dates/UniversalDate", JSImport.Default)
+  @JSImport("@ui5/webcomponents-localization/dist/dates/UniversalDate.js", JSImport.Default)
   @js.native
   val default: UniversalDate = js.native
   

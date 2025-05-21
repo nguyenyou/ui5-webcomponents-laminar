@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSortOrderMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/SortOrder", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/SortOrder.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesSortOrderMod {
   
   @js.native
   sealed trait SortOrder extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/SortOrder", "SortOrder")
+  @JSImport("@ui5/webcomponents-base/dist/types/SortOrder.js", "SortOrder")
   @js.native
   object SortOrder extends StObject {
     

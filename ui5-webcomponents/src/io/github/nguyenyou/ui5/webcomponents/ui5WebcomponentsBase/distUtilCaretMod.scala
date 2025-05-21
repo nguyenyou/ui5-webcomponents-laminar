@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilCaretMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/Caret", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/Caret.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

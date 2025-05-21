@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTimelineLayoutMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineLayout", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineLayout.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTimelineLayoutMod {
   
   @js.native
   sealed trait TimelineLayout extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineLayout", "TimelineLayout")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineLayout.js", "TimelineLayout")
   @js.native
   object TimelineLayout extends StObject {
     

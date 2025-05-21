@@ -31,7 +31,7 @@ object distProductSwitchItemMod {
     * @implements {IProductSwitchItem}
     * @since 1.0.0-rc.5
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/ProductSwitchItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/ProductSwitchItem.js", JSImport.Default)
   @js.native
   open class default () extends ProductSwitchItem
   

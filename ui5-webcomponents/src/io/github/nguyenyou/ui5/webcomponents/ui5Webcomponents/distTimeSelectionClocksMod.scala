@@ -14,7 +14,7 @@ object distTimeSelectionClocksMod {
   /**
     * Fired when the picker is being closed.
     */
-  @JSImport("@ui5/webcomponents/dist/TimeSelectionClocks", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TimeSelectionClocks.js", JSImport.Default)
   @js.native
   open class default () extends TimeSelectionClocks
   

@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsSignOutMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut.js", JSImport.Default)
   @js.native
   val default: SignOut = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SignOut.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

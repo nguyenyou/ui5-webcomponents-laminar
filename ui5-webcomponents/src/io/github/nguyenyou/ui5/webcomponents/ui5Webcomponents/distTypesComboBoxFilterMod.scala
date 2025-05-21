@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesComboBoxFilterMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ComboBoxFilter", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ComboBoxFilter.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesComboBoxFilterMod {
   
   @js.native
   sealed trait ComboBoxFilter extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ComboBoxFilter", "ComboBoxFilter")
+  @JSImport("@ui5/webcomponents/dist/types/ComboBoxFilter.js", "ComboBoxFilter")
   @js.native
   object ComboBoxFilter extends StObject {
     

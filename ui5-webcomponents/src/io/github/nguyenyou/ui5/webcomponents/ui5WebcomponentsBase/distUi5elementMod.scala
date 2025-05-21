@@ -76,7 +76,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUi5elementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/UI5Element", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -87,7 +87,7 @@ object distUi5elementMod {
     * @extends HTMLElement
     * @public
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents-base/dist/UI5Element", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
@@ -356,18 +356,18 @@ object distUi5elementMod {
   }
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default._metadata")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default._metadata")
     @js.native
     def _metadata: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementmetadataMod.default = js.native
     inline def _metadata_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementmetadataMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_metadata")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.asyncFinished")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.asyncFinished")
     @js.native
     def asyncFinished: Boolean = js.native
     inline def asyncFinished_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asyncFinished")(x.asInstanceOf[js.Any])
@@ -383,7 +383,7 @@ object distUi5elementMod {
     inline def define(): TypeofUI5Element & Instantiable0[UI5Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[TypeofUI5Element & Instantiable0[UI5Element]]
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.definePromise")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.definePromise")
     @js.native
     def definePromise: js.UndefOr[js.Promise[Unit]] = js.native
     inline def definePromise_=(x: js.UndefOr[js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("definePromise")(x.asInstanceOf[js.Any])
@@ -425,7 +425,7 @@ object distUi5elementMod {
     inline def getUniqueDependencies(): js.Array[TypeofUI5Element & Instantiable0[UI5Element]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUniqueDependencies")().asInstanceOf[js.Array[TypeofUI5Element & Instantiable0[UI5Element]]]
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.i18nBundleStorage")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.i18nBundleStorage")
     @js.native
     def i18nBundleStorage: Record[
         String, 
@@ -443,7 +443,7 @@ object distUi5elementMod {
       * @protected
       */
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.metadata")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.metadata")
     @js.native
     def metadata: Metadata = js.native
     inline def metadata_=(x: Metadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
@@ -464,7 +464,7 @@ object distUi5elementMod {
     inline def onDefine(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onDefine")().asInstanceOf[js.Promise[Unit]]
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.renderer")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.renderer")
     @js.native
     def renderer: Renderer = js.native
     inline def renderer_=(x: Renderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderer")(x.asInstanceOf[js.Any])
@@ -474,13 +474,13 @@ object distUi5elementMod {
       * @protected
       */
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.styles")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.styles")
     @js.native
     def styles: ComponentStylesData = js.native
     inline def styles_=(x: ComponentStylesData): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/UI5Element", "default.template")
+    @JSImport("@ui5/webcomponents-base/dist/UI5Element.js", "default.template")
     @js.native
     def template: js.UndefOr[TemplateFunction] = js.native
     inline def template_=(x: js.UndefOr[TemplateFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("template")(x.asInstanceOf[js.Any])

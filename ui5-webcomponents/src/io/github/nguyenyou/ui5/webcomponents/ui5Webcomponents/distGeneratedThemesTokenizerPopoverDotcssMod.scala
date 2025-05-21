@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTokenizerPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/TokenizerPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/TokenizerPopover.css.js", JSImport.Default)
   @js.native
   val default: /* [ui5-responsive-popover]::part(header),[ui5-responsive-popover]::part(content){padding:0}[ui5-responsive-popover] .ui5-responsive-popover-header{min-height:2rem}[ui5-responsive-popover] .ui5-responsive-popover-header .row{justify-content:left}[ui5-responsive-popover] [ui5-button]{height:100%;min-width:4rem}[ui5-responsive-popover]{margin-top:var(--_ui5-v2-10-0_tokenizer-popover_offset);margin-inline-start:calc(-1 * var(--_ui5-v2-10-0_tokenizer_padding))}.ui5-responsive-popover-footer [ui5-button]:first-child{margin-right:1rem}
     */ String = js.native

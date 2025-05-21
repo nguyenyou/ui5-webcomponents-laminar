@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSegmentedButtonItemTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/SegmentedButtonItemTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/SegmentedButtonItemTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

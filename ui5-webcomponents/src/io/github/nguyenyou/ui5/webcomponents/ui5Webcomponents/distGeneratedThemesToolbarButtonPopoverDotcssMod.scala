@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesToolbarButtonPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ToolbarButtonPopover.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ToolbarButtonPopover.css.js", JSImport.Default)
   @js.native
   val default: /* :not([icon-only]).ui5-tb-popover-button::part(button){justify-content:start}
     */ String = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesHighlightMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/Highlight", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/Highlight.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -26,7 +26,7 @@ object distTypesHighlightMod {
   
   @js.native
   sealed trait Highlight extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/Highlight", "Highlight")
+  @JSImport("@ui5/webcomponents/dist/types/Highlight.js", "Highlight")
   @js.native
   object Highlight extends StObject {
     

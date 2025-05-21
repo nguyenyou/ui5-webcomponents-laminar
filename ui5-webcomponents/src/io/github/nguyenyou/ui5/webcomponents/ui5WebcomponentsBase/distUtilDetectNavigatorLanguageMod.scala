@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilDetectNavigatorLanguageMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/detectNavigatorLanguage", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/detectNavigatorLanguage.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

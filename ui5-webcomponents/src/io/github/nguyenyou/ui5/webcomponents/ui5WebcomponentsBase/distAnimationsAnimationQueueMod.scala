@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAnimationsAnimationQueueMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/animations/AnimationQueue", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/animations/AnimationQueue.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with AnimationQueue
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/animations/AnimationQueue", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/animations/AnimationQueue.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

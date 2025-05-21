@@ -13,7 +13,7 @@ object distUtilDragAndDropDragRegistryMod {
   
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/util/dragAndDrop/DragRegistry", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/util/dragAndDrop/DragRegistry.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

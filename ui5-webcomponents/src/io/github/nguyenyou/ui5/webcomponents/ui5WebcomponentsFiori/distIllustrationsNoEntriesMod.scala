@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsNoEntriesMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries.js", JSImport.Default)
   @js.native
   val default: NoEntries = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoEntries.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

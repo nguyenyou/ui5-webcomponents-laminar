@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesBusyIndicatorSizeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/BusyIndicatorSize", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/BusyIndicatorSize.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesBusyIndicatorSizeMod {
   
   @js.native
   sealed trait BusyIndicatorSize extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/BusyIndicatorSize", "BusyIndicatorSize")
+  @JSImport("@ui5/webcomponents/dist/types/BusyIndicatorSize.js", "BusyIndicatorSize")
   @js.native
   object BusyIndicatorSize extends StObject {
     

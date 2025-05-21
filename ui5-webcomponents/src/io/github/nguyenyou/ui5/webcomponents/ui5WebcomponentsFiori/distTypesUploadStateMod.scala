@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesUploadStateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadState", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadState.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesUploadStateMod {
   
   @js.native
   sealed trait UploadState extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadState", "UploadState")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadState.js", "UploadState")
   @js.native
   object UploadState extends StObject {
     

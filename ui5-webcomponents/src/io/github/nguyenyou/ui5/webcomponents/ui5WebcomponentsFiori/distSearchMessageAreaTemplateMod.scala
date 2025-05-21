@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSearchMessageAreaTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/SearchMessageAreaTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/SearchMessageAreaTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

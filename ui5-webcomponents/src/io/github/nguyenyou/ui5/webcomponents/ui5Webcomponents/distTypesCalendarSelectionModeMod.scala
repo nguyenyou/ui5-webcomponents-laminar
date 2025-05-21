@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesCalendarSelectionModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/CalendarSelectionMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/CalendarSelectionMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesCalendarSelectionModeMod {
   
   @js.native
   sealed trait CalendarSelectionMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/CalendarSelectionMode", "CalendarSelectionMode")
+  @JSImport("@ui5/webcomponents/dist/types/CalendarSelectionMode.js", "CalendarSelectionMode")
   @js.native
   object CalendarSelectionMode extends StObject {
     

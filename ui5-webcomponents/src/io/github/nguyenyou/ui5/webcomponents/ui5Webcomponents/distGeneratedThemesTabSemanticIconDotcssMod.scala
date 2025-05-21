@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTabSemanticIconDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/TabSemanticIcon.css", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/TabSemanticIcon.css.js", JSImport.Default)
   @js.native
   val default: /* .ui5-tab-semantic-icon{display:var(--_ui5-v2-10-0_tc_headerItemSemanticIcon_display);height:var(--_ui5-v2-10-0_tc_headerItemSemanticIcon_size);width:var(--_ui5-v2-10-0_tc_headerItemSemanticIcon_size);margin-inline-end:.5rem}.ui5-tab-semantic-icon--positive{color:var(--sapPositiveTextColor)}.ui5-tab-semantic-icon--negative{color:var(--sapNegativeTextColor)}.ui5-tab-semantic-icon--critical{color:var(--sapCriticalTextColor)}
     */ String = js.native

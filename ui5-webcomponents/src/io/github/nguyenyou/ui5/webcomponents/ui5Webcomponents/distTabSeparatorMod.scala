@@ -22,7 +22,7 @@ object distTabSeparatorMod {
     * @abstract
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/TabSeparator", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TabSeparator.js", JSImport.Default)
   @js.native
   open class default () extends TabSeparator
   

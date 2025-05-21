@@ -31,7 +31,7 @@ object distWizardStepMod {
     * @public
     * @slot {Node[]} default - Defines the step content.
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/WizardStep", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/WizardStep.js", JSImport.Default)
   @js.native
   open class default () extends WizardStep
   

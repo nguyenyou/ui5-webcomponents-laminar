@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLocaleGetLocaleMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/locale/getLocale", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/locale/getLocale.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

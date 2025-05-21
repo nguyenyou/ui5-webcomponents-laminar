@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distComboBoxTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ComboBoxTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ComboBoxTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

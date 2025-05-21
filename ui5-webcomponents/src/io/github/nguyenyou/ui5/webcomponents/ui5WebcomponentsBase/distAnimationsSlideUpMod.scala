@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAnimationsSlideUpMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/animations/slideUp", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/animations/slideUp.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

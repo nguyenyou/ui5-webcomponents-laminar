@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsEmptyPlanningCalendarMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar.js", JSImport.Default)
   @js.native
   val default: EmptyPlanningCalendar = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/EmptyPlanningCalendar.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

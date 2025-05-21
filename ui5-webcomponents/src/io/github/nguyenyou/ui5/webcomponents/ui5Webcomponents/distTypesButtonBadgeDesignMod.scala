@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesButtonBadgeDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ButtonBadgeDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ButtonBadgeDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesButtonBadgeDesignMod {
   
   @js.native
   sealed trait ButtonBadgeDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ButtonBadgeDesign", "ButtonBadgeDesign")
+  @JSImport("@ui5/webcomponents/dist/types/ButtonBadgeDesign.js", "ButtonBadgeDesign")
   @js.native
   object ButtonBadgeDesign extends StObject {
     
