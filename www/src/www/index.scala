@@ -27,7 +27,4 @@ def main(): Unit = {
   ToastExampleDuration()
   DialogExampleBasic()
   DialogExampleStates()
-  PopoverExampleBasic()
-  PopoverOpenerDomElement()
-  PopoverOpenerDomElement2()
 }
