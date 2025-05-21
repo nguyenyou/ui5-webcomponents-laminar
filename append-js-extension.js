@@ -1,13 +1,7 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
-
-const readFile = util.promisify(fs.readFile);
-const writeFile = util.promisify(fs.writeFile);
-const readdir = util.promisify(fs.readdir);
-const stat = util.promisify(fs.stat);
+import * as fs from 'fs/promises';
+import * as path from 'path';
 
 // Regex to find @JSImport annotations
 const jsImportRegex = /@JSImport\("([^"]+)"([^)]*)\)/g;
@@ -15,7 +9,7 @@ const jsImportRegex = /@JSImport\("([^"]+)"([^)]*)\)/g;
 async function processFile(filePath) {
   try {
     // Read file content
-    const content = await readFile(filePath, 'utf8');
+    const content = await fs.readFile(filePath, 'utf8');
     
     // Replace @JSImport paths without .js extension
     const updatedContent = content.replace(jsImportRegex, (match, importPath, rest) => {
@@ -33,7 +27,7 @@ async function processFile(filePath) {
     
     // Only write if content was changed
     if (content !== updatedContent) {
-      await writeFile(filePath, updatedContent);
+      await fs.writeFile(filePath, updatedContent);
       console.log(`Updated: ${filePath}`);
     }
   } catch (error) {
@@ -43,11 +37,11 @@ async function processFile(filePath) {
 
 async function traverseDirectory(dirPath) {
   try {
-    const entries = await readdir(dirPath);
+    const entries = await fs.readdir(dirPath);
     
     for (const entry of entries) {
       const entryPath = path.join(dirPath, entry);
-      const stats = await stat(entryPath);
+      const stats = await fs.stat(entryPath);
       
       if (stats.isDirectory()) {
         // Recursively process subdirectories

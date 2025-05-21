@@ -2,6 +2,7 @@
   "name": "ui5-webcomponents-laminar",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "create-wrappers": "yarn create-wrappers:only && yarn ui5-webcomponents-laminar:fmt && yarn ui5-webcomponents-laminar:fix",
     "create-wrappers:only": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers",
