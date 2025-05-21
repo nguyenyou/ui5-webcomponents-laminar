@@ -149,6 +149,7 @@ object www extends WebModule with Scalafix with BuildInfo {
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
+/*
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def artifactName = "ui5-webcomponents"
   def publishVersion = Versions.`ui5-webcomponents`
@@ -173,3 +174,4 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
     "@ui5/webcomponents-base"
   )
 }
+*/
