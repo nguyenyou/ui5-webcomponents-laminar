@@ -143,19 +143,6 @@ object PopoverView extends ExampleView("Popover") {
       Demo(
         title = "3rd Opener Dom Element",
         content = Source.annotate {
-
-          def showAtAndCloseFromEvents(eventStream: EventStream[Option[dom.HTMLElement]]): Modifier[Popover.Element] = {
-            inContext[Popover.Element] { element =>
-              eventStream --> Observer[Option[dom.HTMLElement]] {
-                case Some(opener) =>
-                  element.ref.opener = opener
-                  element.ref.open = true
-                case None =>
-                  element.ref.open = false
-              }
-            }
-          }
-
           val openEventBus = EventBus[Option[dom.HTMLElement]]()
 
           div(
@@ -168,6 +155,7 @@ object PopoverView extends ExampleView("Popover") {
             ),
             Popover(
               _.headerText := "Newsletter subscription",
+              _.openerRef(openEventBus.events),
               _.footer := div(
                 tw.flex.justify_end.flex_1.py_2,
                 Button(
@@ -175,7 +163,6 @@ object PopoverView extends ExampleView("Popover") {
                 )("Subscribe")
               )
             )(
-              showAtAndCloseFromEvents(openEventBus.events),
               div(
                 Label(
                   _.forId    := "emailInput",

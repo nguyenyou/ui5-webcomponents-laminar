@@ -57,7 +57,7 @@ object Colour {
   def fromIntColour(colour: Int): Colour = apply(
     colour >> 16,
     (colour % (256 << 8)) / 256,
-    colour % 256
+    colour  % 256
   )
 
   /** Turns a valid CSS string into its corresponding [[Colour]].

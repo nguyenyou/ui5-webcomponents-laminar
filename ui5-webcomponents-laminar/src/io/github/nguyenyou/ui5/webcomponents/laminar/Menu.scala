@@ -76,6 +76,18 @@ object Menu extends WebComponent("ui5-menu") {
     */
   lazy val openerId: HtmlAttr[String] = htmlAttr("opener", StringAsIsCodec)
 
+  def openerRef(eventStream: EventStream[Option[dom.HTMLElement]]): Modifier[Element] = {
+    inContext[Element] { element =>
+      eventStream --> Observer[Option[dom.HTMLElement]] {
+        case Some(opener) =>
+          element.ref.opener = opener
+          element.ref.open = true
+        case None =>
+          element.ref.open = false
+      }
+    }
+  }
+
   // -- Events --
 
   /** Fired before the menu is closed. This event can be cancelled, which will prevent the menu from closing.

@@ -110,6 +110,18 @@ object ResponsivePopover extends WebComponent("ui5-responsive-popover") {
     */
   lazy val openerId: HtmlAttr[String] = htmlAttr("opener", StringAsIsCodec)
 
+  def openerRef(eventStream: EventStream[Option[dom.HTMLElement]]): Modifier[Element] = {
+    inContext[Element] { element =>
+      eventStream --> Observer[Option[dom.HTMLElement]] {
+        case Some(opener) =>
+          element.ref.opener = opener
+          element.ref.open = true
+        case None =>
+          element.ref.open = false
+      }
+    }
+  }
+
   /** Determines on which side the component is placed at.
     *
     * Default: "End"

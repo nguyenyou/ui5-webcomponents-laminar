@@ -50,6 +50,18 @@ object ColorPalettePopover extends WebComponent("ui5-color-palette-popover") {
     */
   lazy val openerId: HtmlAttr[String] = htmlAttr("opener", StringAsIsCodec)
 
+  def openerRef(eventStream: EventStream[Option[dom.HTMLElement]]): Modifier[Element] = {
+    inContext[Element] { element =>
+      eventStream --> Observer[Option[dom.HTMLElement]] {
+        case Some(opener) =>
+          element.ref.opener = opener
+          element.ref.open = true
+        case None =>
+          element.ref.open = false
+      }
+    }
+  }
+
   /** Defines whether the user can choose the default color from a button.
     *
     * Default: false

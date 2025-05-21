@@ -52,6 +52,7 @@ export function normalizeModuleName(module: string) {
   });
 }
 
+export const OPENER_ID = "openerId";
 export function normalizeScalaSymbolName(str: string) {
   switch(str) {
     case "type":
@@ -59,7 +60,7 @@ export function normalizeScalaSymbolName(str: string) {
     case "for":
       return "forId"
     case "opener":
-      return "openerId"
+      return OPENER_ID
     default:
       return str
   }

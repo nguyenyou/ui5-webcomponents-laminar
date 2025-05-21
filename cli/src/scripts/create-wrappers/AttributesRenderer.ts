@@ -8,6 +8,7 @@ import {
   isScalaPrimitive,
   mapWebComponentTypeToPrimitive,
   normalizeScalaSymbolName,
+  OPENER_ID,
   propDescriptionFormatter,
   sinceFilter,
   snakeCaseToCamelCase,
@@ -107,7 +108,9 @@ export class AttributesRenderer extends AbstractRenderer {
     writer.writeLine(
       `lazy val ${normalizeScalaSymbolName(
         snakeCaseToCamelCase(attributeName)
-      )}: HtmlAttr[${enumTypeName}] = htmlAttr("${camelCaseToKebabCase(snakeCaseToCamelCase(attributeName))}", StringUnionCodec[${enumTypeName}])`
+      )}: HtmlAttr[${enumTypeName}] = htmlAttr("${camelCaseToKebabCase(
+        snakeCaseToCamelCase(attributeName)
+      )}", StringUnionCodec[${enumTypeName}])`
     );
   }
 
@@ -116,7 +119,7 @@ export class AttributesRenderer extends AbstractRenderer {
     context: WebComponentWrapper,
     writer: CodeBlockWriter
   ) {
-    const attrName = attribute.name
+    const attrName = attribute.name;
     const normalizedNamed = normalizeScalaSymbolName(
       snakeCaseToCamelCase(attribute.name)
     );
@@ -130,10 +133,15 @@ export class AttributesRenderer extends AbstractRenderer {
       references?.length > 0 &&
       attribute.default !== "{}";
 
-    if (["icon", "endIcon"].includes(normalizedNamed) || (attribute.name === "name" && context.componentName === "Icon")) {
+    if (
+      ["icon", "endIcon"].includes(normalizedNamed) ||
+      (attribute.name === "name" && context.componentName === "Icon")
+    ) {
       writer.writeLine(`${this.descriptionBuilder(attribute, context)}`);
       writer.writeLine(
-        `lazy val ${normalizedNamed}: HtmlAttr[IconName] = htmlAttr("${camelCaseToKebabCase(attrName)}", IconName.AsStringCodec)`
+        `lazy val ${normalizedNamed}: HtmlAttr[IconName] = htmlAttr("${camelCaseToKebabCase(
+          attrName
+        )}", IconName.AsStringCodec)`
       );
       return;
     }
@@ -142,13 +150,19 @@ export class AttributesRenderer extends AbstractRenderer {
       // Add the source file to the project
       for (const reference of references || []) {
         if (reference.name && reference.package && reference.module) {
-          let typeName = reference.name
-          if(context.isCompatPackage) {
-            typeName = `Compat${reference.name}`
+          let typeName = reference.name;
+          if (context.isCompatPackage) {
+            typeName = `Compat${reference.name}`;
           }
           // Skip if this enum has already been processed
           if (this.processedEnums.has(typeName)) {
-            this.createHtmlAttrForEnum(attribute, context, attribute.name, typeName, writer);
+            this.createHtmlAttrForEnum(
+              attribute,
+              context,
+              attribute.name,
+              typeName,
+              writer
+            );
             return;
           }
 
@@ -189,8 +203,8 @@ export class AttributesRenderer extends AbstractRenderer {
                   typeName,
                   writer
                 );
-                
-                const unionType = `type ${typeName} = ${type}`
+
+                const unionType = `type ${typeName} = ${type}`;
                 context.enumSet.add(unionType);
                 return;
               }
@@ -203,8 +217,33 @@ export class AttributesRenderer extends AbstractRenderer {
     } else if (isScalaPrimitive(type)) {
       writer.writeLine(`${this.descriptionBuilder(attribute, context)}`);
       writer.writeLine(
-        `lazy val ${normalizedNamed}: HtmlAttr[${type}] = htmlAttr("${camelCaseToKebabCase(attrName)}", ${this.typeToCodec(type)})`
+        `lazy val ${normalizedNamed}: HtmlAttr[${type}] = htmlAttr("${camelCaseToKebabCase(
+          attrName
+        )}", ${this.typeToCodec(type)})`
       );
+      if (normalizedNamed === OPENER_ID) {
+        writer
+          .blankLine()
+          .write(
+            `def openerRef(eventStream: EventStream[Option[dom.HTMLElement]]): Modifier[Element] =`
+          )
+          .block(() => {
+            writer.writeLine(`inContext[Element] { element => `).indent(() => {
+              writer
+                .write(`eventStream --> Observer[Option[dom.HTMLElement]]`)
+                .block(() => {
+                  writer.write(`case Some(opener) =>`).indent(() => {
+                    writer.writeLine(`element.ref.opener = opener`);
+                    writer.writeLine(`element.ref.open = true`);
+                  });
+                  writer.write(`case None =>`).indent(() => {
+                    writer.writeLine(`element.ref.open = false`);
+                  });
+                });
+            });
+            writer.writeLine(`}`);
+          });
+      }
       return;
     } else {
       /*
@@ -233,12 +272,18 @@ export class AttributesRenderer extends AbstractRenderer {
       .writeLine(`@JSImport("${context.modulePath}", JSImport.Default)`)
       .writeLine("@js.native object RawImport extends js.Object")
       .blankLine()
-      .writeLine(`type Self = ${context.handleReservedScalaKeywords(context.componentName)}.type`)
+      .writeLine(
+        `type Self = ${context.handleReservedScalaKeywords(
+          context.componentName
+        )}.type`
+      )
       .blankLine()
-      .writeLine(`type Ref = ${context.componentName}Component & dom.HTMLElement`)
+      .writeLine(
+        `type Ref = ${context.componentName}Component & dom.HTMLElement`
+      )
       .blankLine()
       .writeLine(`// -- Attributes --`)
-      .blankLine()
+      .blankLine();
     this._attributes.forEach((attribute) => {
       this.propTyping(attribute, context, writer);
     });
