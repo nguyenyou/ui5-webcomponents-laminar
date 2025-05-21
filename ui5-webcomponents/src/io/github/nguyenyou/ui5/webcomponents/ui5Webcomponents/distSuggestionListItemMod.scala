@@ -19,7 +19,7 @@ object distSuggestionListItemMod {
     * @csspart description - Used to style the description of the suggestion list item
     * @csspart info - Used to style the info of the suggestion list item
     */
-  @JSImport("@ui5/webcomponents/dist/SuggestionListItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/SuggestionListItem.js", JSImport.Default)
   @js.native
   open class default () extends SuggestionListItem
   

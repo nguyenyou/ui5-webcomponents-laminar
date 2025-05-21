@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLocaleLocaleMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/locale/Locale", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/locale/Locale.js", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject

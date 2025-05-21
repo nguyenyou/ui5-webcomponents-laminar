@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesFcllayoutMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/FCLLayout", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/FCLLayout.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -38,7 +38,7 @@ object distTypesFcllayoutMod {
   
   @js.native
   sealed trait FCLLayout extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/FCLLayout", "FCLLayout")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/FCLLayout.js", "FCLLayout")
   @js.native
   object FCLLayout extends StObject {
     

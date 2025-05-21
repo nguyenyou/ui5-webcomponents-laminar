@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPropertiesFileFormatMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/PropertiesFileFormat", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/PropertiesFileFormat.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

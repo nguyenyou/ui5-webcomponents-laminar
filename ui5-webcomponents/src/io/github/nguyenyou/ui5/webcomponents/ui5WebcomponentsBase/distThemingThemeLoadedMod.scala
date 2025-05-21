@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distThemingThemeLoadedMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/theming/ThemeLoaded", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/theming/ThemeLoaded.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

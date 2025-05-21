@@ -16,7 +16,7 @@ object distSuggestionItemMod {
     * @implements { IInputSuggestionItemSelectable }
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/SuggestionItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/SuggestionItem.js", JSImport.Default)
   @js.native
   open class default () extends SuggestionItem
   

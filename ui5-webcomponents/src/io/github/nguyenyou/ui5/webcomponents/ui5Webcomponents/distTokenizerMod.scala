@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTokenizerMod {
   
-  @JSImport("@ui5/webcomponents/dist/Tokenizer", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/Tokenizer.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -63,17 +63,17 @@ object distTokenizerMod {
     * @since 2.0.0
     * @experimental This component is availabe since 2.0 under an experimental flag and its API and behaviour are subject to change.
     */
-  @JSImport("@ui5/webcomponents/dist/Tokenizer", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Tokenizer.js", JSImport.Default)
   @js.native
   open class default () extends Tokenizer
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Tokenizer", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Tokenizer.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Tokenizer", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/Tokenizer.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
@@ -81,7 +81,7 @@ object distTokenizerMod {
   
   @js.native
   sealed trait ClipboardDataOperation extends StObject
-  @JSImport("@ui5/webcomponents/dist/Tokenizer", "ClipboardDataOperation")
+  @JSImport("@ui5/webcomponents/dist/Tokenizer.js", "ClipboardDataOperation")
   @js.native
   object ClipboardDataOperation extends StObject {
     

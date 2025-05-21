@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPopupAccessibleRoleMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/PopupAccessibleRole", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/PopupAccessibleRole.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesPopupAccessibleRoleMod {
   
   @js.native
   sealed trait PopupAccessibleRole extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/PopupAccessibleRole", "PopupAccessibleRole")
+  @JSImport("@ui5/webcomponents/dist/types/PopupAccessibleRole.js", "PopupAccessibleRole")
   @js.native
   object PopupAccessibleRole extends StObject {
     

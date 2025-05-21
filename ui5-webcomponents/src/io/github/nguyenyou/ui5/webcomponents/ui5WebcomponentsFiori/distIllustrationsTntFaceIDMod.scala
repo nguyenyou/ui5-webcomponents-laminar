@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTntFaceIDMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID.js", JSImport.Default)
   @js.native
   val default: tntSlashFaceID = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/FaceID.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

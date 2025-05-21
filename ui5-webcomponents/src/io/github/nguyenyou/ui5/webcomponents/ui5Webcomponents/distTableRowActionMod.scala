@@ -23,7 +23,7 @@ object distTableRowActionMod {
     * @public
     * @experimental
     */
-  @JSImport("@ui5/webcomponents/dist/TableRowAction", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableRowAction.js", JSImport.Default)
   @js.native
   open class default () extends TableRowAction
   

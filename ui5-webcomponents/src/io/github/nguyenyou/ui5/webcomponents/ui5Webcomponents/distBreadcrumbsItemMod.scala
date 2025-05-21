@@ -22,7 +22,7 @@ object distBreadcrumbsItemMod {
     * @since 1.0.0-rc.15
     * @abstract
     */
-  @JSImport("@ui5/webcomponents/dist/BreadcrumbsItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/BreadcrumbsItem.js", JSImport.Default)
   @js.native
   open class default () extends BreadcrumbsItem
   

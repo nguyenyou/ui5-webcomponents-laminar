@@ -37,7 +37,7 @@ object distMediaGalleryItemMod {
     * @implements {IMediaGalleryItem}
     * @since 1.1.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/MediaGalleryItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/MediaGalleryItem.js", JSImport.Default)
   @js.native
   open class default () extends MediaGalleryItem
   

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFclUtilsFcllayoutMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/fcl-utils/FCLLayout", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/fcl-utils/FCLLayout.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/fcl-utils/FCLLayout", "FCLLayout")
+  @JSImport("@ui5/webcomponents-fiori/dist/fcl-utils/FCLLayout.js", "FCLLayout")
   @js.native
   object FCLLayout extends StObject {
     

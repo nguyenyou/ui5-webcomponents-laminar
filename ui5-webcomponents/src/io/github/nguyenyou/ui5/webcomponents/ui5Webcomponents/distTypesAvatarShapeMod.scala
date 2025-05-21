@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesAvatarShapeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/AvatarShape", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/AvatarShape.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesAvatarShapeMod {
   
   @js.native
   sealed trait AvatarShape extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/AvatarShape", "AvatarShape")
+  @JSImport("@ui5/webcomponents/dist/types/AvatarShape.js", "AvatarShape")
   @js.native
   object AvatarShape extends StObject {
     

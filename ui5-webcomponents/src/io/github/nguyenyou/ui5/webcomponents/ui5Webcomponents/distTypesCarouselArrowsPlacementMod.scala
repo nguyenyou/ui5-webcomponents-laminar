@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesCarouselArrowsPlacementMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/CarouselArrowsPlacement", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/CarouselArrowsPlacement.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesCarouselArrowsPlacementMod {
   
   @js.native
   sealed trait CarouselArrowsPlacement extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/CarouselArrowsPlacement", "CarouselArrowsPlacement")
+  @JSImport("@ui5/webcomponents/dist/types/CarouselArrowsPlacement.js", "CarouselArrowsPlacement")
   @js.native
   object CarouselArrowsPlacement extends StObject {
     

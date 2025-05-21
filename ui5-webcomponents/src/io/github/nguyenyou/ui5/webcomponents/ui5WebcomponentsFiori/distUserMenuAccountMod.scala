@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUserMenuAccountMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/UserMenuAccount", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/UserMenuAccount.js", JSImport.Default)
   @js.native
   open class default () extends UserMenuAccount
   

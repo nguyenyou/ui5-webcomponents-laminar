@@ -17,22 +17,22 @@ object distTableRowActionBaseMod {
     * @public
     * @since 2.9.0
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableRowActionBase", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableRowActionBase.js", JSImport.Default)
   @js.native
   open class default () extends TableRowActionBase
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/TableRowActionBase", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/TableRowActionBase.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/TableRowActionBase", "default._menu")
+    @JSImport("@ui5/webcomponents/dist/TableRowActionBase.js", "default._menu")
     @js.native
     def menu: Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/TableRowActionBase", "default._menuItems")
+    @JSImport("@ui5/webcomponents/dist/TableRowActionBase.js", "default._menuItems")
     @js.native
     def menuItems: Any = js.native
     

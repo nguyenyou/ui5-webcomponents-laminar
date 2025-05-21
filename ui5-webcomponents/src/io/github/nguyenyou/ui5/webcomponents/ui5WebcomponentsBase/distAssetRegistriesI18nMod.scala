@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAssetRegistriesI18nMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/i18n", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/i18n.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

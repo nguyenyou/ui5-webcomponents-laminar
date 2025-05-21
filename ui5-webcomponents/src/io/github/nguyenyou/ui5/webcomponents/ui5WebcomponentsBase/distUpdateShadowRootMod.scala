@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUpdateShadowRootMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/updateShadowRoot", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/updateShadowRoot.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

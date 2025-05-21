@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableColumnPopinDisplayMod {
   
-  @JSImport("@ui5/webcomponents-compat/dist/types/TableColumnPopinDisplay", JSImport.Default)
+  @JSImport("@ui5/webcomponents-compat/dist/types/TableColumnPopinDisplay.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTableColumnPopinDisplayMod {
   
   @js.native
   sealed trait TableColumnPopinDisplay extends StObject
-  @JSImport("@ui5/webcomponents-compat/dist/types/TableColumnPopinDisplay", "TableColumnPopinDisplay")
+  @JSImport("@ui5/webcomponents-compat/dist/types/TableColumnPopinDisplay.js", "TableColumnPopinDisplay")
   @js.native
   object TableColumnPopinDisplay extends StObject {
     

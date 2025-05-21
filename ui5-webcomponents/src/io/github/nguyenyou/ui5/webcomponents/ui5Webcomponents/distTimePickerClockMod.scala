@@ -35,7 +35,7 @@ object distTimePickerClockMod {
     * @since 1.15.0
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/TimePickerClock", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TimePickerClock.js", JSImport.Default)
   @js.native
   open class default () extends TimePickerClock
   

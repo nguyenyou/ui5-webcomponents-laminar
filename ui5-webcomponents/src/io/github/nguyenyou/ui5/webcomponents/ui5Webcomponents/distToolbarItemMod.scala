@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distToolbarItemMod {
   
-  @JSImport("@ui5/webcomponents/dist/ToolbarItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ToolbarItem.js", JSImport.Default)
   @js.native
   open class default () extends ToolbarItem
   

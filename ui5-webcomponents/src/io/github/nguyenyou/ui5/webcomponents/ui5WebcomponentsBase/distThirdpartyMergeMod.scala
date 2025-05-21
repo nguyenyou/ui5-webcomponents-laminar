@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distThirdpartyMergeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/merge", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/merge.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

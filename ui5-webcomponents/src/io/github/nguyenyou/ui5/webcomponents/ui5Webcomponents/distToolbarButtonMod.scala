@@ -25,7 +25,7 @@ object distToolbarButtonMod {
     * @public
     * @since 1.17.0
     */
-  @JSImport("@ui5/webcomponents/dist/ToolbarButton", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ToolbarButton.js", JSImport.Default)
   @js.native
   open class default () extends ToolbarButton
   

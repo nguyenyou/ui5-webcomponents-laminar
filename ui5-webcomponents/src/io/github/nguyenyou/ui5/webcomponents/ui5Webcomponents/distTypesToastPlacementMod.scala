@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesToastPlacementMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ToastPlacement", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ToastPlacement.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -34,7 +34,7 @@ object distTypesToastPlacementMod {
   
   @js.native
   sealed trait ToastPlacement extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ToastPlacement", "ToastPlacement")
+  @JSImport("@ui5/webcomponents/dist/types/ToastPlacement.js", "ToastPlacement")
   @js.native
   object ToastPlacement extends StObject {
     

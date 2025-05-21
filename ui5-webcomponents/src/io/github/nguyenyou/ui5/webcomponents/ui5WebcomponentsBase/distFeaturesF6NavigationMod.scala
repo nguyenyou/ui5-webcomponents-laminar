@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesF6NavigationMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/features/F6Navigation", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/features/F6Navigation.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with F6Navigation
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/features/F6Navigation", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/features/F6Navigation.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

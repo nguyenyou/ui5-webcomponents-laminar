@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsUnableToUploadMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload.js", JSImport.Default)
   @js.native
   val default: UnableToUpload = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToUpload.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

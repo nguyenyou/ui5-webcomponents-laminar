@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilGetSingletonElementInstanceMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/getSingletonElementInstance", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/getSingletonElementInstance.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

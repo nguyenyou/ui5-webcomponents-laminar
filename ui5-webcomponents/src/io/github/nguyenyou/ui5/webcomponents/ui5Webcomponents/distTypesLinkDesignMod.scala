@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesLinkDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/LinkDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/LinkDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesLinkDesignMod {
   
   @js.native
   sealed trait LinkDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/LinkDesign", "LinkDesign")
+  @JSImport("@ui5/webcomponents/dist/types/LinkDesign.js", "LinkDesign")
   @js.native
   object LinkDesign extends StObject {
     

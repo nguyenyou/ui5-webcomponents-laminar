@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAnimationsAnimateMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/animations/animate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/animations/animate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def default(options: AnimateOptions): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Promise]
   
-  @JSImport("@ui5/webcomponents-base/dist/animations/animate", "duration")
+  @JSImport("@ui5/webcomponents-base/dist/animations/animate.js", "duration")
   @js.native
   val duration: /* 400 */ Double = js.native
   

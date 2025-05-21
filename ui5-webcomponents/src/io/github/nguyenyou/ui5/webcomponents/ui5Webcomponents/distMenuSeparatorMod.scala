@@ -15,7 +15,7 @@ object distMenuSeparatorMod {
     * @public
     * @since 2.0.0
     */
-  @JSImport("@ui5/webcomponents/dist/MenuSeparator", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/MenuSeparator.js", JSImport.Default)
   @js.native
   open class default () extends MenuSeparator
   

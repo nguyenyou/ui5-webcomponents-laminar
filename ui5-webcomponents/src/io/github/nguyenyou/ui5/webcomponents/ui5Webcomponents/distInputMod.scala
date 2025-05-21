@@ -75,17 +75,17 @@ object distInputMod {
     * @csspart input - Used to style the native input element
     * @csspart clear-icon - Used to style the clear icon, which can be pressed to clear user input text
     */
-  @JSImport("@ui5/webcomponents/dist/Input", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Input.js", JSImport.Default)
   @js.native
   open class default () extends Input
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Input", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Input.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Input", "default.SuggestionsClass")
+    @JSImport("@ui5/webcomponents/dist/Input.js", "default.SuggestionsClass")
     @js.native
     def SuggestionsClass: js.UndefOr[
         (Instantiable4[
@@ -109,7 +109,7 @@ object distInputMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuggestionsClass")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Input", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/Input.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
@@ -117,7 +117,7 @@ object distInputMod {
   
   @js.native
   sealed trait INPUT_ACTIONS extends StObject
-  @JSImport("@ui5/webcomponents/dist/Input", "INPUT_ACTIONS")
+  @JSImport("@ui5/webcomponents/dist/Input.js", "INPUT_ACTIONS")
   @js.native
   object INPUT_ACTIONS extends StObject {
     

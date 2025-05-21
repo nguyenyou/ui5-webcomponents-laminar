@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTableDragAndDropMod {
   
-  @JSImport("@ui5/webcomponents/dist/TableDragAndDrop", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableDragAndDrop.js", JSImport.Default)
   @js.native
   open class default protected () extends TableDragAndDrop {
     def this(table: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.default) = this()

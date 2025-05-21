@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFileUploaderTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/FileUploaderTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/FileUploaderTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

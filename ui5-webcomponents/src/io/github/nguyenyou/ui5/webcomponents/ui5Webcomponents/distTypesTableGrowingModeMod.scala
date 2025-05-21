@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableGrowingModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TableGrowingMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TableGrowingMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTableGrowingModeMod {
   
   @js.native
   sealed trait TableGrowingMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TableGrowingMode", "TableGrowingMode")
+  @JSImport("@ui5/webcomponents/dist/types/TableGrowingMode.js", "TableGrowingMode")
   @js.native
   object TableGrowingMode extends StObject {
     

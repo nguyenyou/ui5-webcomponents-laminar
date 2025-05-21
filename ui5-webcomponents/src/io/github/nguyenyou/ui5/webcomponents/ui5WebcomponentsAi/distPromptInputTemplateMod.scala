@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPromptInputTemplateMod {
   
-  @JSImport("@ui5/webcomponents-ai/dist/PromptInputTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-ai/dist/PromptInputTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

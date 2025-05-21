@@ -31,13 +31,13 @@ object distTableVirtualizerMod {
     * @public
     * @experimental This component is not intended to be used in a productive enviroment. The API is under development and may be changed in the future.
     */
-  @JSImport("@ui5/webcomponents/dist/TableVirtualizer", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableVirtualizer.js", JSImport.Default)
   @js.native
   open class default () extends TableVirtualizer
   
   @js.native
   sealed trait TabBlocking extends StObject
-  @JSImport("@ui5/webcomponents/dist/TableVirtualizer", "TabBlocking")
+  @JSImport("@ui5/webcomponents/dist/TableVirtualizer.js", "TabBlocking")
   @js.native
   object TabBlocking extends StObject {
     

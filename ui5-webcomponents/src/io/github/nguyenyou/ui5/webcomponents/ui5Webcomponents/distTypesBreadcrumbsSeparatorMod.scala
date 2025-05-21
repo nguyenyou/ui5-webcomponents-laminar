@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesBreadcrumbsSeparatorMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/BreadcrumbsSeparator", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/BreadcrumbsSeparator.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distTypesBreadcrumbsSeparatorMod {
   
   @js.native
   sealed trait BreadcrumbsSeparator extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/BreadcrumbsSeparator", "BreadcrumbsSeparator")
+  @JSImport("@ui5/webcomponents/dist/types/BreadcrumbsSeparator.js", "BreadcrumbsSeparator")
   @js.native
   object BreadcrumbsSeparator extends StObject {
     

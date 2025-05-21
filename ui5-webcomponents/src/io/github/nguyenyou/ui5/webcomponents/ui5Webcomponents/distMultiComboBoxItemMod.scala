@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distMultiComboBoxItemMod {
   
-  @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -19,17 +19,17 @@ object distMultiComboBoxItemMod {
     * @implements {IMultiComboBoxItem}
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem.js", JSImport.Default)
   @js.native
   open class default () extends MultiComboBoxItem
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/MultiComboBoxItem.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ object distTypesInvisibleMessageModeMod {
       * Indicates that updates to the region have the highest priority and should be presented to the user immediately.
       * @public
       */
-    @JSImport("@ui5/webcomponents-base/dist/types/InvisibleMessageMode", "default.Assertive")
+    @JSImport("@ui5/webcomponents-base/dist/types/InvisibleMessageMode.js", "default.Assertive")
     @js.native
     val Assertive: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.Assertive = js.native
     
@@ -21,7 +21,7 @@ object distTypesInvisibleMessageModeMod {
       * such as at the end of reading the current sentence, or when the user pauses typing.
       * @public
       */
-    @JSImport("@ui5/webcomponents-base/dist/types/InvisibleMessageMode", "default.Polite")
+    @JSImport("@ui5/webcomponents-base/dist/types/InvisibleMessageMode.js", "default.Polite")
     @js.native
     val Polite: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.Polite = js.native
   }

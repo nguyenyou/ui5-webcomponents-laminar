@@ -40,7 +40,7 @@ object distDateRangePickerMod {
     * @since 1.0.0-rc.8
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/DateRangePicker", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/DateRangePicker.js", JSImport.Default)
   @js.native
   open class default () extends DateRangePicker
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableSelectionModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TableSelectionMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TableSelectionMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesTableSelectionModeMod {
   
   @js.native
   sealed trait TableSelectionMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TableSelectionMode", "TableSelectionMode")
+  @JSImport("@ui5/webcomponents/dist/types/TableSelectionMode.js", "TableSelectionMode")
   @js.native
   object TableSelectionMode extends StObject {
     

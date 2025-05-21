@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilGetFastNavigationGroupsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/getFastNavigationGroups", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/getFastNavigationGroups.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

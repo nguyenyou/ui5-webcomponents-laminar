@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageType", JSImport.Default)
+@JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageType.js", JSImport.Default)
 @js.native
 object default extends StObject {
   

@@ -70,7 +70,7 @@ object distDateTimePickerMod {
     * @since 1.0.0-rc.7
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/DateTimePicker", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/DateTimePicker.js", JSImport.Default)
   @js.native
   open class default () extends DateTimePicker
   

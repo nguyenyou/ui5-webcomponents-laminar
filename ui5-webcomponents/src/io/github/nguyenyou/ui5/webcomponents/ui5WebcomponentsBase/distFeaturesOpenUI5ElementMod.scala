@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesOpenUI5ElementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Element", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Element.js", JSImport.Default)
   @js.native
   open class default () extends OpenUI5Element
   

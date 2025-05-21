@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSideContentVisibilityMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentVisibility", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentVisibility.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -26,7 +26,7 @@ object distTypesSideContentVisibilityMod {
   
   @js.native
   sealed trait SideContentVisibility extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentVisibility", "SideContentVisibility")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentVisibility.js", "SideContentVisibility")
   @js.native
   object SideContentVisibility extends StObject {
     

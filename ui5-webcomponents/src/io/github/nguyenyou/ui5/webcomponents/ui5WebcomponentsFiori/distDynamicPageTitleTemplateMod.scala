@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDynamicPageTitleTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPageTitleTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPageTitleTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

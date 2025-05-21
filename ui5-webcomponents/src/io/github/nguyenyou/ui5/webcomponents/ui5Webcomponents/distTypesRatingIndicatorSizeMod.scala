@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesRatingIndicatorSizeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/RatingIndicatorSize", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/RatingIndicatorSize.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesRatingIndicatorSizeMod {
   
   @js.native
   sealed trait RatingIndicatorSize extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/RatingIndicatorSize", "RatingIndicatorSize")
+  @JSImport("@ui5/webcomponents/dist/types/RatingIndicatorSize.js", "RatingIndicatorSize")
   @js.native
   object RatingIndicatorSize extends StObject {
     

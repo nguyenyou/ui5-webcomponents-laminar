@@ -73,17 +73,17 @@ object distDynamicPageMod {
     * @csspart fit-content - Used to style the fit content container of the component.
     * @csspart footer - Used to style the footer of the component
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage.js", JSImport.Default)
   @js.native
   open class default () extends DynamicPage
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/DynamicPage.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

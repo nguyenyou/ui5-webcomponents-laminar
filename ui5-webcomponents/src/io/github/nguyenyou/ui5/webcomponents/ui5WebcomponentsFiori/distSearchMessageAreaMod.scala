@@ -15,7 +15,7 @@ object distSearchMessageAreaMod {
     * @since 2.9.0
     * @experimental
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SearchMessageArea", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SearchMessageArea.js", JSImport.Default)
   @js.native
   open class default () extends SearchMessageArea
   

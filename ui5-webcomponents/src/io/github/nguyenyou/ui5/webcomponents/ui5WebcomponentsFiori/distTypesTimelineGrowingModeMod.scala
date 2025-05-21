@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTimelineGrowingModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineGrowingMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineGrowingMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesTimelineGrowingModeMod {
   
   @js.native
   sealed trait TimelineGrowingMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineGrowingMode", "TimelineGrowingMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/TimelineGrowingMode.js", "TimelineGrowingMode")
   @js.native
   object TimelineGrowingMode extends StObject {
     

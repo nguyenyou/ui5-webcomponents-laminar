@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableOverflowModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TableOverflowMode", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TableOverflowMode.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTableOverflowModeMod {
   
   @js.native
   sealed trait TableOverflowMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TableOverflowMode", "TableOverflowMode")
+  @JSImport("@ui5/webcomponents/dist/types/TableOverflowMode.js", "TableOverflowMode")
   @js.native
   object TableOverflowMode extends StObject {
     

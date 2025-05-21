@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesIconDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/IconDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/IconDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -32,7 +32,7 @@ object distTypesIconDesignMod {
   
   @js.native
   sealed trait IconDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/IconDesign", "IconDesign")
+  @JSImport("@ui5/webcomponents/dist/types/IconDesign.js", "IconDesign")
   @js.native
   object IconDesign extends StObject {
     

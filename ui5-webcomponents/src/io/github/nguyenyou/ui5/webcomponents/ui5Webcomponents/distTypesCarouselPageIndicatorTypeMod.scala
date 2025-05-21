@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesCarouselPageIndicatorTypeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/CarouselPageIndicatorType", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/CarouselPageIndicatorType.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesCarouselPageIndicatorTypeMod {
   
   @js.native
   sealed trait CarouselPageIndicatorType extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/CarouselPageIndicatorType", "CarouselPageIndicatorType")
+  @JSImport("@ui5/webcomponents/dist/types/CarouselPageIndicatorType.js", "CarouselPageIndicatorType")
   @js.native
   object CarouselPageIndicatorType extends StObject {
     

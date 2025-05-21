@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLocaleRtlawareregistryMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/locale/RTLAwareRegistry", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/locale/RTLAwareRegistry.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

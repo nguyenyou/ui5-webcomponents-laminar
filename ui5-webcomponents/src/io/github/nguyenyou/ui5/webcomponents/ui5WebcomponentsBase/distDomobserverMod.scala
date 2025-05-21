@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDomobserverMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/DOMObserver", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/DOMObserver.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

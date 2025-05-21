@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilHash2strMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/hash2str", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/hash2str.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -25,7 +25,7 @@ object distUi5elementmetadataMod {
     * @class
     * @public
     */
-  @JSImport("@ui5/webcomponents-base/dist/UI5ElementMetadata", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/UI5ElementMetadata.js", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
@@ -172,7 +172,7 @@ object distUi5elementmetadataMod {
   }
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/UI5ElementMetadata", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/UI5ElementMetadata.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

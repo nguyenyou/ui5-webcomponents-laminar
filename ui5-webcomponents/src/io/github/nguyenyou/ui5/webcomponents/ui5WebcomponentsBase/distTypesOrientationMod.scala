@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesOrientationMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/Orientation", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/Orientation.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesOrientationMod {
   
   @js.native
   sealed trait Orientation extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/Orientation", "Orientation")
+  @JSImport("@ui5/webcomponents-base/dist/types/Orientation.js", "Orientation")
   @js.native
   object Orientation extends StObject {
     

@@ -13,14 +13,14 @@ object distDelegateResizeHandlerMod {
     * @public
     * @class
     */
-  @JSImport("@ui5/webcomponents-base/dist/delegate/ResizeHandler", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/delegate/ResizeHandler.js", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with ResizeHandler
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/delegate/ResizeHandler", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/delegate/ResizeHandler.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

@@ -39,17 +39,17 @@ object distNotificationListMod {
     * @since 2.0.0
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NotificationList", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationList.js", JSImport.Default)
   @js.native
   open class default () extends NotificationList
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/NotificationList", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/NotificationList.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/NotificationList", "default.i18nFioriBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/NotificationList.js", "default.i18nFioriBundle")
     @js.native
     def i18nFioriBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nFioriBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nFioriBundle")(x.asInstanceOf[js.Any])

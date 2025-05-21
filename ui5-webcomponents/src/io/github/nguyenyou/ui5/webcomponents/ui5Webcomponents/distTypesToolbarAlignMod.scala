@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesToolbarAlignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarAlign", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarAlign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesToolbarAlignMod {
   
   @js.native
   sealed trait ToolbarAlign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarAlign", "ToolbarAlign")
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarAlign.js", "ToolbarAlign")
   @js.native
   object ToolbarAlign extends StObject {
     

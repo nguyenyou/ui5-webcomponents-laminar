@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distNavigationMenuTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/NavigationMenuTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/NavigationMenuTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

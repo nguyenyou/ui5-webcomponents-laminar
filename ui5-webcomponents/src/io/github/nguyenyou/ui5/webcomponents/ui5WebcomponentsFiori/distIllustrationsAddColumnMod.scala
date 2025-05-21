@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsAddColumnMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn.js", JSImport.Default)
   @js.native
   val default: AddColumn = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn.js", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn.js", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn.js", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddColumn.js", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

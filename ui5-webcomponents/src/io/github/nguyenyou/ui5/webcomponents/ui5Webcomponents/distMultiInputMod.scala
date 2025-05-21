@@ -37,7 +37,7 @@ object distMultiInputMod {
     * @since 1.0.0-rc.9
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/MultiInput", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/MultiInput.js", JSImport.Default)
   @js.native
   open class default () extends MultiInput
   

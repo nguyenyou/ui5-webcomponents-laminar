@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPageBackgroundDesignMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/PageBackgroundDesign", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/PageBackgroundDesign.js", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesPageBackgroundDesignMod {
   
   @js.native
   sealed trait PageBackgroundDesign extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/PageBackgroundDesign", "PageBackgroundDesign")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/PageBackgroundDesign.js", "PageBackgroundDesign")
   @js.native
   object PageBackgroundDesign extends StObject {
     

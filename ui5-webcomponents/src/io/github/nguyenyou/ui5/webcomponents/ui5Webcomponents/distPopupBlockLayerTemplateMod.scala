@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPopupBlockLayerTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/PopupBlockLayerTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/PopupBlockLayerTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

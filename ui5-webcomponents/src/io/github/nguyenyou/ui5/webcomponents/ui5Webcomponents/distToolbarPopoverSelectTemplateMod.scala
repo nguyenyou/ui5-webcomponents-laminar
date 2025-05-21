@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distToolbarPopoverSelectTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ToolbarPopoverSelectTemplate", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ToolbarPopoverSelectTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

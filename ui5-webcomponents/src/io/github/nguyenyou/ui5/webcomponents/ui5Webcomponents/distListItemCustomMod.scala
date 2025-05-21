@@ -24,7 +24,7 @@ object distListItemCustomMod {
     * @extends ListItem
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ListItemCustom", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ListItemCustom.js", JSImport.Default)
   @js.native
   open class default () extends ListItemCustom
   

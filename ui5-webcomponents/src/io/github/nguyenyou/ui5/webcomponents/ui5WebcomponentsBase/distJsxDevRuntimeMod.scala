@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distJsxDevRuntimeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/jsx-dev-runtime", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/jsx-dev-runtime.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

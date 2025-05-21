@@ -104,17 +104,17 @@ object distWizardMod {
     * @csspart navigator - Used to style the progress navigator of the `ui5-wizard`.
     * @csspart step-content - Used to style a `ui5-wizard-step` container.
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/Wizard", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/Wizard.js", JSImport.Default)
   @js.native
   open class default () extends Wizard
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/Wizard", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/Wizard.js", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/Wizard", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/Wizard.js", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
