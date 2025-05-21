@@ -67,17 +67,17 @@ object distSliderMod {
     * @csspart progress-bar - Used to style the progress bar, which shows the progress of the `ui5-slider`.
     * @csspart handle - Used to style the handle of the `ui5-slider`.
     */
-  @JSImport("@ui5/webcomponents/dist/Slider.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Slider", JSImport.Default)
   @js.native
   open class default () extends Slider
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Slider.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Slider", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Slider.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/Slider", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

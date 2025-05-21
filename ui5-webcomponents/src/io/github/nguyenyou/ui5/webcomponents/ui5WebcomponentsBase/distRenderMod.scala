@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRenderMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/Render.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/Render", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

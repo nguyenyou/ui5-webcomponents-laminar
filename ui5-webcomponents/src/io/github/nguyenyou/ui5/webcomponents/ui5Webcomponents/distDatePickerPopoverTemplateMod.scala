@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDatePickerPopoverTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/DatePickerPopoverTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/DatePickerPopoverTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

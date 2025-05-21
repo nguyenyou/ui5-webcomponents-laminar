@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsUploadCollectionMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection", JSImport.Default)
   @js.native
   val default: UploadCollection = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UploadCollection", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

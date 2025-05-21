@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTagSizeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TagSize.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TagSize", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTagSizeMod {
   
   @js.native
   sealed trait TagSize extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TagSize.js", "TagSize")
+  @JSImport("@ui5/webcomponents/dist/types/TagSize", "TagSize")
   @js.native
   object TagSize extends StObject {
     

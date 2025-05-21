@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsAddDimensionsMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions", JSImport.Default)
   @js.native
   val default: AddDimensions = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/AddDimensions", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

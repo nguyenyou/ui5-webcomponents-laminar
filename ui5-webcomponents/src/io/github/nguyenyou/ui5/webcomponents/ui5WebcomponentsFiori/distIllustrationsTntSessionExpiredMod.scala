@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTntSessionExpiredMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired", JSImport.Default)
   @js.native
   val default: tntSlashSessionExpired = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/SessionExpired", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

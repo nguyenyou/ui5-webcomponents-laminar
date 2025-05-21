@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesInputKeyHintMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/InputKeyHint.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/InputKeyHint", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -30,7 +30,7 @@ object distTypesInputKeyHintMod {
   
   @js.native
   sealed trait InputKeyHint extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/InputKeyHint.js", "InputKeyHint")
+  @JSImport("@ui5/webcomponents/dist/types/InputKeyHint", "InputKeyHint")
   @js.native
   object InputKeyHint extends StObject {
     

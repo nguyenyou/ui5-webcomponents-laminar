@@ -28,7 +28,7 @@ object distShellBarItemMod {
     * @abstract
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarItem", JSImport.Default)
   @js.native
   open class default () extends ShellBarItem
   

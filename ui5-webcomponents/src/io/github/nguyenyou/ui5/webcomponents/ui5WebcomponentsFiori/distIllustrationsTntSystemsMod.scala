@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTntSystemsMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems", JSImport.Default)
   @js.native
   val default: tntSlashSystems = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Systems", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

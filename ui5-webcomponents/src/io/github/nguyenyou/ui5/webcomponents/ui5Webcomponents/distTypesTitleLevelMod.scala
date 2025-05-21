@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTitleLevelMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TitleLevel.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TitleLevel", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distTypesTitleLevelMod {
   
   @js.native
   sealed trait TitleLevel extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TitleLevel.js", "TitleLevel")
+  @JSImport("@ui5/webcomponents/dist/types/TitleLevel", "TitleLevel")
   @js.native
   object TitleLevel extends StObject {
     

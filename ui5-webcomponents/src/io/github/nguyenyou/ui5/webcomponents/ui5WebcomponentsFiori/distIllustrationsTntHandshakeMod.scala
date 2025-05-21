@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTntHandshakeMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake", JSImport.Default)
   @js.native
   val default: tntSlashHandshake = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/tnt/Handshake", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

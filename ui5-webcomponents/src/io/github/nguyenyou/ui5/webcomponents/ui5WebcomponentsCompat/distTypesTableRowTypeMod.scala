@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableRowTypeMod {
   
-  @JSImport("@ui5/webcomponents-compat/dist/types/TableRowType.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-compat/dist/types/TableRowType", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTableRowTypeMod {
   
   @js.native
   sealed trait TableRowType extends StObject
-  @JSImport("@ui5/webcomponents-compat/dist/types/TableRowType.js", "TableRowType")
+  @JSImport("@ui5/webcomponents-compat/dist/types/TableRowType", "TableRowType")
   @js.native
   object TableRowType extends StObject {
     

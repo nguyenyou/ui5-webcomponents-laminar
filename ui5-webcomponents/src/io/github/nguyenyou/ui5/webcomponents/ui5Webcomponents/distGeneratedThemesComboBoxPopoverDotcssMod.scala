@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesComboBoxPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ComboBoxPopover.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ComboBoxPopover.css", JSImport.Default)
   @js.native
   val default: /* .ui5-combobox-busy{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:42;display:flex;justify-content:center;align-items:center;pointer-events:all;width:100%}.ui5-combobox-busy:not([active]){display:none}
     */ String = js.native

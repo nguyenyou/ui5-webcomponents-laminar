@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsV5TntHcChartBPMNFlowMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow", JSImport.Default)
   @js.native
   val default: tntSlashChartBPMNFlow = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/ChartBPMNFlow", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

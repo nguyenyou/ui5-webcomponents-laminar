@@ -19,7 +19,7 @@ object distButtonBadgeMod {
     * @since 2.7.0
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ButtonBadge.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ButtonBadge", JSImport.Default)
   @js.native
   open class default () extends ButtonBadge
   

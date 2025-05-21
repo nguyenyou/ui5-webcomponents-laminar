@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesFormItemSpacingMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/FormItemSpacing.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/FormItemSpacing", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesFormItemSpacingMod {
   
   @js.native
   sealed trait FormItemSpacing extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/FormItemSpacing.js", "FormItemSpacing")
+  @JSImport("@ui5/webcomponents/dist/types/FormItemSpacing", "FormItemSpacing")
   @js.native
   object FormItemSpacing extends StObject {
     

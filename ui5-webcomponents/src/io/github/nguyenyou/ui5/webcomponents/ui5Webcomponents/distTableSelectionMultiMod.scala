@@ -39,7 +39,7 @@ object distTableSelectionMultiMod {
     * @since 2.8.0
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/TableSelectionMulti.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableSelectionMulti", JSImport.Default)
   @js.native
   open class default () extends TableSelectionMulti
   

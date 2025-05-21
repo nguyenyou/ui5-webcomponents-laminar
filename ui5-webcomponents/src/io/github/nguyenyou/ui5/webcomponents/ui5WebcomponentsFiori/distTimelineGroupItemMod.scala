@@ -24,7 +24,7 @@ object distTimelineGroupItemMod {
     * @public
     * @since 2.1.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/TimelineGroupItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/TimelineGroupItem", JSImport.Default)
   @js.native
   open class default () extends TimelineGroupItem
   

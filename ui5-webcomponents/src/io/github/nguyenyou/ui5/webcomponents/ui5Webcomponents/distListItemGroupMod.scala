@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distListItemGroupMod {
   
-  @JSImport("@ui5/webcomponents/dist/ListItemGroup.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ListItemGroup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -29,7 +29,7 @@ object distListItemGroupMod {
     * @public
     * @since 2.0.0
     */
-  @JSImport("@ui5/webcomponents/dist/ListItemGroup.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ListItemGroup", JSImport.Default)
   @js.native
   open class default () extends ListItemGroup
   

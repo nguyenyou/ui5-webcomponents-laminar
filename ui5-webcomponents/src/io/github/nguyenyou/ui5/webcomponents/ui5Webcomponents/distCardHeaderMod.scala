@@ -35,17 +35,17 @@ object distCardHeaderMod {
     * @csspart subtitle - Used to style the subtitle of the CardHeader
     * @csspart additional-text - Used to style the additional text of the CardHeader
     */
-  @JSImport("@ui5/webcomponents/dist/CardHeader.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/CardHeader", JSImport.Default)
   @js.native
   open class default () extends CardHeader
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/CardHeader.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/CardHeader", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/CardHeader.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/CardHeader", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

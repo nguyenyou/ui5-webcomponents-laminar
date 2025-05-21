@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsV5TntTeamsMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams", JSImport.Default)
   @js.native
   val default: tntSlashTeams = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/Teams", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

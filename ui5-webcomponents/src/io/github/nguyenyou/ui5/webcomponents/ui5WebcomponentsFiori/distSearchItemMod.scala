@@ -25,7 +25,7 @@ object distSearchItemMod {
     * @since 2.9.0
     * @experimental
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SearchItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SearchItem", JSImport.Default)
   @js.native
   open class default () extends SearchItem
   

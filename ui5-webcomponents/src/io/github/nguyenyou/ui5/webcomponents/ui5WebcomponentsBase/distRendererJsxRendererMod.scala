@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRendererJsxRendererMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-base/dist/renderer/JsxRenderer.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/renderer/JsxRenderer", JSImport.Default)
   @js.native
   val default: Renderer = js.native
   

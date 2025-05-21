@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSearchModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SearchMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SearchMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesSearchModeMod {
   
   @js.native
   sealed trait SearchMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SearchMode.js", "SearchMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SearchMode", "SearchMode")
   @js.native
   object SearchMode extends StObject {
     

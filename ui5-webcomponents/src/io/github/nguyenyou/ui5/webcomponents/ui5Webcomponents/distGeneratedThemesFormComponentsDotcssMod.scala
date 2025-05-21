@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesFormComponentsDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/FormComponents.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/FormComponents.css", JSImport.Default)
   @js.native
   val default: `ColonhostLeftcurlybracketvertical-alignColonmiddleRightcurlybracketLinefeed` = js.native
   

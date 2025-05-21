@@ -37,17 +37,17 @@ object distColorPalettePopoverMod {
     * @public
     * @since 1.0.0-rc.16
     */
-  @JSImport("@ui5/webcomponents/dist/ColorPalettePopover.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ColorPalettePopover", JSImport.Default)
   @js.native
   open class default () extends ColorPalettePopover
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/ColorPalettePopover.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/ColorPalettePopover", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/ColorPalettePopover.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/ColorPalettePopover", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

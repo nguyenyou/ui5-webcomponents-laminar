@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesListItemTypeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ListItemType.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ListItemType", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesListItemTypeMod {
   
   @js.native
   sealed trait ListItemType extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ListItemType.js", "ListItemType")
+  @JSImport("@ui5/webcomponents/dist/types/ListItemType", "ListItemType")
   @js.native
   object ListItemType extends StObject {
     

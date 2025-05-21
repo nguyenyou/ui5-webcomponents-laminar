@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distThirdpartyIsPlainObjectMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/isPlainObject.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/isPlainObject", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/isPlainObject.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/isPlainObject", JSImport.Default)
   @js.native
   def default: js.Function1[/* obj */ js.Object, Boolean] = js.native
   inline def default_=(x: js.Function1[/* obj */ js.Object, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])

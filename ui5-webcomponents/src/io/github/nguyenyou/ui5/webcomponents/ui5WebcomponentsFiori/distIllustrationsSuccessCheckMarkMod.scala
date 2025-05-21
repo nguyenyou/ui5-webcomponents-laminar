@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsSuccessCheckMarkMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark", JSImport.Default)
   @js.native
   val default: SuccessCheckMark = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessCheckMark", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

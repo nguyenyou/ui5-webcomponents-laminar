@@ -15,7 +15,7 @@ object distSuggestionItemGroupMod {
     * @public
     * @since 2.0.0
     */
-  @JSImport("@ui5/webcomponents/dist/SuggestionItemGroup.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/SuggestionItemGroup", JSImport.Default)
   @js.native
   open class default () extends SuggestionItemGroup
   

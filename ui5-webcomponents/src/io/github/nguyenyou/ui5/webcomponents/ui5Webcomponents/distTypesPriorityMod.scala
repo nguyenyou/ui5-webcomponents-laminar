@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPriorityMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/Priority.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/Priority", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesPriorityMod {
   
   @js.native
   sealed trait Priority extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/Priority.js", "Priority")
+  @JSImport("@ui5/webcomponents/dist/types/Priority", "Priority")
   @js.native
   object Priority extends StObject {
     

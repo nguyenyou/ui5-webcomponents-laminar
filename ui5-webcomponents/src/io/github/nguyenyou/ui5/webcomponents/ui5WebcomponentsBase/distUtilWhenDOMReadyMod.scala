@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilWhenDOMReadyMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/whenDOMReady.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/whenDOMReady", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMediaGalleryMenuVerticalAlignMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryMenuVerticalAlign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryMenuVerticalAlign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesMediaGalleryMenuVerticalAlignMod {
   
   @js.native
   sealed trait MediaGalleryMenuVerticalAlign extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryMenuVerticalAlign.js", "MediaGalleryMenuVerticalAlign")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryMenuVerticalAlign", "MediaGalleryMenuVerticalAlign")
   @js.native
   object MediaGalleryMenuVerticalAlign extends StObject {
     

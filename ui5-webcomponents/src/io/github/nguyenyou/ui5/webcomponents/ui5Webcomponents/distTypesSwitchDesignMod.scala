@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSwitchDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/SwitchDesign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/SwitchDesign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesSwitchDesignMod {
   
   @js.native
   sealed trait SwitchDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/SwitchDesign.js", "SwitchDesign")
+  @JSImport("@ui5/webcomponents/dist/types/SwitchDesign", "SwitchDesign")
   @js.native
   object SwitchDesign extends StObject {
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesListSeparatorMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ListSeparator.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ListSeparator", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesListSeparatorMod {
   
   @js.native
   sealed trait ListSeparator extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ListSeparator.js", "ListSeparator")
+  @JSImport("@ui5/webcomponents/dist/types/ListSeparator", "ListSeparator")
   @js.native
   object ListSeparator extends StObject {
     

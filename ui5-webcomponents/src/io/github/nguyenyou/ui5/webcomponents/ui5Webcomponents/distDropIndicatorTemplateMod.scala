@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDropIndicatorTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/DropIndicatorTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/DropIndicatorTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

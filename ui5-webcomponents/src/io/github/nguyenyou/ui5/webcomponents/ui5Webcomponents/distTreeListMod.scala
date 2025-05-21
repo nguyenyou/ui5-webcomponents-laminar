@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTreeListMod {
   
-  @JSImport("@ui5/webcomponents/dist/TreeList.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TreeList", JSImport.Default)
   @js.native
   open class default () extends TreeList
   

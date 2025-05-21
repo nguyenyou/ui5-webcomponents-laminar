@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distComboBoxItemGroupMod {
   
-  @JSImport("@ui5/webcomponents/dist/ComboBoxItemGroup.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ComboBoxItemGroup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -21,7 +21,7 @@ object distComboBoxItemGroupMod {
     * @implements {IComboBoxItem}
     * @since 1.0.0-rc.15
     */
-  @JSImport("@ui5/webcomponents/dist/ComboBoxItemGroup.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ComboBoxItemGroup", JSImport.Default)
   @js.native
   open class default () extends ComboBoxItemGroup
   

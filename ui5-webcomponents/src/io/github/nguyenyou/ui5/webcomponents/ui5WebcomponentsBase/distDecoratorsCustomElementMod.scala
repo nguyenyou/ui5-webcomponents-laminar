@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDecoratorsCustomElementMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/decorators/customElement.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/decorators/customElement", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -27,17 +27,17 @@ object distCalendarLegendItemMod {
     * @since 1.23.0
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/CalendarLegendItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/CalendarLegendItem", JSImport.Default)
   @js.native
   open class default () extends CalendarLegendItem
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/CalendarLegendItem.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/CalendarLegendItem", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/CalendarLegendItem.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/CalendarLegendItem", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

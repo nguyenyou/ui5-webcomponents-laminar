@@ -15,7 +15,7 @@ object distComboBoxItemMod {
     * @implements {IComboBoxItem}
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ComboBoxItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ComboBoxItem", JSImport.Default)
   @js.native
   open class default () extends ComboBoxItem
   

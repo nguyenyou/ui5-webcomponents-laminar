@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDateFormatMod {
   
-  @JSImport("@ui5/webcomponents-localization/dist/DateFormat.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-localization/dist/DateFormat", JSImport.Default)
   @js.native
   open class default ()
     extends io.github.nguyenyou.ui5.webcomponents.openui5.sapUiCoreFormatDateFormatMod.default

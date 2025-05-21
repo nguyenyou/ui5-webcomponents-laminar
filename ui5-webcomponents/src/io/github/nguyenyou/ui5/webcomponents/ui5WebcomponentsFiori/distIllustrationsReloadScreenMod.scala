@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsReloadScreenMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen", JSImport.Default)
   @js.native
   val default: ReloadScreen = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/ReloadScreen", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

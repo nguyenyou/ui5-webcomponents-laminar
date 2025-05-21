@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSideContentPositionMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentPosition.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentPosition", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesSideContentPositionMod {
   
   @js.native
   sealed trait SideContentPosition extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentPosition.js", "SideContentPosition")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentPosition", "SideContentPosition")
   @js.native
   object SideContentPosition extends StObject {
     

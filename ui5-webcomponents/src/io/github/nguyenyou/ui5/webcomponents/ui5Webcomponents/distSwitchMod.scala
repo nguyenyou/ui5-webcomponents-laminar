@@ -44,17 +44,17 @@ object distSwitchMod {
     * @csspart text-off - Used to style the `textOff` property text
     * @csspart handle - Used to style the handle of the switch
     */
-  @JSImport("@ui5/webcomponents/dist/Switch.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Switch", JSImport.Default)
   @js.native
   open class default () extends Switch
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Switch.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Switch", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Switch.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/Switch", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

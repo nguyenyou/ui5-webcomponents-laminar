@@ -45,7 +45,7 @@ object distBarMod {
     * @public
     * @since 1.0.0-rc.11
     */
-  @JSImport("@ui5/webcomponents/dist/Bar.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Bar", JSImport.Default)
   @js.native
   open class default () extends Bar
   

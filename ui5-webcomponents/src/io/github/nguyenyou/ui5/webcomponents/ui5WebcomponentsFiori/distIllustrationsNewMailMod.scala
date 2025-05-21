@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsNewMailMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail", JSImport.Default)
   @js.native
   val default: NewMail = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NewMail", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

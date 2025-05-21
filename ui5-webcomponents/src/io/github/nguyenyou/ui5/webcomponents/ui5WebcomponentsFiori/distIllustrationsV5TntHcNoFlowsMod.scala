@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsV5TntHcNoFlowsMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows", JSImport.Default)
   @js.native
   val default: tntSlashNoFlows = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations-v5/tnt/hc/NoFlows", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

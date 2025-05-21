@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPanelAccessibleRoleMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/PanelAccessibleRole.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/PanelAccessibleRole", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesPanelAccessibleRoleMod {
   
   @js.native
   sealed trait PanelAccessibleRole extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/PanelAccessibleRole.js", "PanelAccessibleRole")
+  @JSImport("@ui5/webcomponents/dist/types/PanelAccessibleRole", "PanelAccessibleRole")
   @js.native
   object PanelAccessibleRole extends StObject {
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRenderQueueMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/RenderQueue.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/RenderQueue", JSImport.Default)
   @js.native
   open class default ()
     extends StObject

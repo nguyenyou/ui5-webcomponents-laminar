@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSideNavigationSelectableItemBaseMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSelectableItemBase.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSelectableItemBase", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -24,7 +24,7 @@ object distSideNavigationSelectableItemBaseMod {
     *
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSelectableItemBase.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSelectableItemBase", JSImport.Default)
   @js.native
   open class default () extends SideNavigationSelectableItemBase
   

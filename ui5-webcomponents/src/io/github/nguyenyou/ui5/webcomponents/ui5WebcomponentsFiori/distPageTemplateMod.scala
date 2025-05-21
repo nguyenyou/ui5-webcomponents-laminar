@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distPageTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/PageTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/PageTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

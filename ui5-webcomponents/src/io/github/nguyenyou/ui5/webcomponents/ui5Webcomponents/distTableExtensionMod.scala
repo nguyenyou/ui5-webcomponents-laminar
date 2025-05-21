@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTableExtensionMod {
   
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableExtension.js", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableExtension", JSImport.Default)
   @js.native
   open class default ()
     extends StObject

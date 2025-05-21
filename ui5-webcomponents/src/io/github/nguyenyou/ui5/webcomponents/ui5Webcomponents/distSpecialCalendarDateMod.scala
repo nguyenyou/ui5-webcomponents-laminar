@@ -19,7 +19,7 @@ object distSpecialCalendarDateMod {
     * @public
     * @since 1.23.0
     */
-  @JSImport("@ui5/webcomponents/dist/SpecialCalendarDate.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/SpecialCalendarDate", JSImport.Default)
   @js.native
   open class default () extends SpecialCalendarDate
   

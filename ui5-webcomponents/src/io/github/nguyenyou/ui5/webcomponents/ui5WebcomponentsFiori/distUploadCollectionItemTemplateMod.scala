@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUploadCollectionItemTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItemTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItemTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

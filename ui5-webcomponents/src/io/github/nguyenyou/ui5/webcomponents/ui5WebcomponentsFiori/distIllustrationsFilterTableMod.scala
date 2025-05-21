@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsFilterTableMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable", JSImport.Default)
   @js.native
   val default: FilterTable = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/FilterTable", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesLegacyDateFormatsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/features/LegacyDateFormats.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/features/LegacyDateFormats", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with LegacyDateFormats
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/features/LegacyDateFormats.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/features/LegacyDateFormats", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

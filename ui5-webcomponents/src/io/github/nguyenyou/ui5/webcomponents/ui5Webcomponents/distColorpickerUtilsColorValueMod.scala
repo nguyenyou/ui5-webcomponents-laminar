@@ -18,7 +18,7 @@ object distColorpickerUtilsColorValueMod {
     * A color can be represented using RGB, HSL or HEX values. A color also has an alpha value.
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/colorpicker-utils/ColorValue.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/colorpicker-utils/ColorValue", JSImport.Default)
   @js.native
   open class default ()
     extends StObject

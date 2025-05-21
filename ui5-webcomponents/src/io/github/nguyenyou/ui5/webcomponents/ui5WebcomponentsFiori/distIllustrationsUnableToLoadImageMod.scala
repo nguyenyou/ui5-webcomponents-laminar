@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsUnableToLoadImageMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage", JSImport.Default)
   @js.native
   val default: UnableToLoadImage = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/UnableToLoadImage", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

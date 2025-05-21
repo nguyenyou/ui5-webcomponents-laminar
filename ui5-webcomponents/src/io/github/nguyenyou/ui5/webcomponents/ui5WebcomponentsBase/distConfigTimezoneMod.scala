@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distConfigTimezoneMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/config/Timezone.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/config/Timezone", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

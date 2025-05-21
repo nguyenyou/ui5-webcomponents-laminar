@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesPopupBlockLayerDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/PopupBlockLayer.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/PopupBlockLayer.css", JSImport.Default)
   @js.native
   val default: /* .ui5-block-layer{position:fixed;z-index:-1;display:none;inset:-500px;outline:none;pointer-events:all}
     */ String = js.native

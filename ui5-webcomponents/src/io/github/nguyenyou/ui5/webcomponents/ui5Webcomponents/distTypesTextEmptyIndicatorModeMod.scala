@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTextEmptyIndicatorModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TextEmptyIndicatorMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TextEmptyIndicatorMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTextEmptyIndicatorModeMod {
   
   @js.native
   sealed trait TextEmptyIndicatorMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TextEmptyIndicatorMode.js", "TextEmptyIndicatorMode")
+  @JSImport("@ui5/webcomponents/dist/types/TextEmptyIndicatorMode", "TextEmptyIndicatorMode")
   @js.native
   object TextEmptyIndicatorMode extends StObject {
     

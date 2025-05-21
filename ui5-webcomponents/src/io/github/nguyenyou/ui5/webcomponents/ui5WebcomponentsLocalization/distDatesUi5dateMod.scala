@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDatesUi5dateMod {
   
-  @JSImport("@ui5/webcomponents-localization/dist/dates/UI5Date.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-localization/dist/dates/UI5Date", JSImport.Default)
   @js.native
   open class default ()
     extends io.github.nguyenyou.ui5.webcomponents.openui5.sapUiCoreDateUi5dateMod.default

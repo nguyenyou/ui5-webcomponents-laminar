@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCardHeaderTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/CardHeaderTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/CardHeaderTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesSapHorizonDarkParametersBundleDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-ai/dist/generated/themes/sap_horizon_dark/parameters-bundle.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-ai/dist/generated/themes/sap_horizon_dark/parameters-bundle.css", JSImport.Default)
   @js.native
   val default: _empty = js.native
   

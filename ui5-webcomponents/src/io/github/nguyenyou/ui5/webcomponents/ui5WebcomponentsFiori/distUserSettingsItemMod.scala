@@ -29,7 +29,7 @@ object distUserSettingsItemMod {
     * @public
     * @since 2.8.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsItem", JSImport.Default)
   @js.native
   open class default () extends UserSettingsItem
   

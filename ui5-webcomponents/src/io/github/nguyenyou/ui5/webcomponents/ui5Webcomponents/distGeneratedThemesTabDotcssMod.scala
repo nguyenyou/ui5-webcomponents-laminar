@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesTabDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/Tab.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/Tab.css", JSImport.Default)
   @js.native
   val default: /* :host{display:inline-block;width:100%}.ui5-tab-root{width:100%;height:100%}
     */ String = js.native

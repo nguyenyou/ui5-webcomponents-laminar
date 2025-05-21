@@ -40,23 +40,23 @@ object distFileUploaderMod {
     * @extends UI5Element
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/FileUploader.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/FileUploader", JSImport.Default)
   @js.native
   open class default () extends FileUploader
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/FileUploader.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/FileUploader", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/FileUploader.js", "default.emptyInput")
+    @JSImport("@ui5/webcomponents/dist/FileUploader", "default.emptyInput")
     @js.native
     def emptyInput: HTMLInputElement = js.native
     inline def emptyInput_=(x: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyInput")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/FileUploader.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/FileUploader", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

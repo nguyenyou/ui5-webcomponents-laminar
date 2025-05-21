@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLocaleGetEffectiveDirMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/locale/getEffectiveDir.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/locale/getEffectiveDir", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

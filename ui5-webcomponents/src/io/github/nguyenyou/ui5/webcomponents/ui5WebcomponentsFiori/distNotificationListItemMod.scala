@@ -62,7 +62,7 @@ object distNotificationListItemMod {
     * @public
     * @csspart title-text - Used to style the titleText of the notification list item
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListItem", JSImport.Default)
   @js.native
   open class default () extends NotificationListItem
   

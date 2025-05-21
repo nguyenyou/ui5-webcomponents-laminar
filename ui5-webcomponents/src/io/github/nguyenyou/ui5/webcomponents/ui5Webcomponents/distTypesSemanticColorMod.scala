@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSemanticColorMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/SemanticColor.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/SemanticColor", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -26,7 +26,7 @@ object distTypesSemanticColorMod {
   
   @js.native
   sealed trait SemanticColor extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/SemanticColor.js", "SemanticColor")
+  @JSImport("@ui5/webcomponents/dist/types/SemanticColor", "SemanticColor")
   @js.native
   object SemanticColor extends StObject {
     

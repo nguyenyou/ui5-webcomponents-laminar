@@ -57,7 +57,7 @@ object distTreeMod {
     * @public
     * @since 1.0.0-rc.8
     */
-  @JSImport("@ui5/webcomponents/dist/Tree.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Tree", JSImport.Default)
   @js.native
   open class default () extends Tree
   

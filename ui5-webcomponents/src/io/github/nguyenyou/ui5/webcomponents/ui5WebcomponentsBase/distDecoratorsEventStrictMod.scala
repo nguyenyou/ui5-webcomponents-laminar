@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDecoratorsEventStrictMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/decorators/event-strict.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/decorators/event-strict", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

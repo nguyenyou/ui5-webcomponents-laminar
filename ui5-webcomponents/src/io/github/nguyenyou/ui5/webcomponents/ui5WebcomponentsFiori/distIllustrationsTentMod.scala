@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsTentMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent", JSImport.Default)
   @js.native
   val default: Tent = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/Tent", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distLocationMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/Location.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/Location", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -23,7 +23,7 @@ object distLocationMod {
   
   object internals {
     
-    @JSImport("@ui5/webcomponents-base/dist/Location.js", "internals")
+    @JSImport("@ui5/webcomponents-base/dist/Location", "internals")
     @js.native
     val ^ : js.Any = js.native
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distButtonTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ButtonTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ButtonTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

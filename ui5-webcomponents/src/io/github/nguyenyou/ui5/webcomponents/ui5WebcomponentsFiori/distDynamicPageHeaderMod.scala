@@ -35,7 +35,7 @@ object distDynamicPageHeaderMod {
     * @public
     * @since 2.0.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPageHeader.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/DynamicPageHeader", JSImport.Default)
   @js.native
   open class default () extends DynamicPageHeader
   

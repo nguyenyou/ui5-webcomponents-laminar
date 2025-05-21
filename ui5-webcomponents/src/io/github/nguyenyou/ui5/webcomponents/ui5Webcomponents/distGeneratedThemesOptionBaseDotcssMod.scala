@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesOptionBaseDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/OptionBase.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/OptionBase.css", JSImport.Default)
   @js.native
   val default: /* :host{height:var(--_ui5-v2-10-0_list_item_dropdown_base_height);--_ui5-v2-10-0_list_item_title_size: var(--sapFontSize)}
     */ String = js.native

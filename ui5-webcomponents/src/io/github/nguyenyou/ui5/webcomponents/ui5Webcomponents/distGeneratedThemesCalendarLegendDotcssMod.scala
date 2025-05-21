@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesCalendarLegendDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/CalendarLegend.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/CalendarLegend.css", JSImport.Default)
   @js.native
   val default: /* .ui5-calendar-legend-root{column-width:7.5rem;gap:.5rem;padding:var(--_ui5-v2-10-0-calendar-legend-root-padding);margin:1rem 0;width:var(--_ui5-v2-10-0-calendar-legend-root-width);background-color:var(--sapList_Background)}
     */ String = js.native

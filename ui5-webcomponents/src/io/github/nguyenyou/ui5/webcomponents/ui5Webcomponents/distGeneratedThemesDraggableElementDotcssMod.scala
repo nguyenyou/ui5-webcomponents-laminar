@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesDraggableElementDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/DraggableElement.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/DraggableElement.css", JSImport.Default)
   @js.native
   val default: /* [draggable=true]{cursor:grab!important}[draggable=true][data-moving]{cursor:grabbing!important;opacity:var(--sapContent_DisabledOpacity)}
     */ String = js.native

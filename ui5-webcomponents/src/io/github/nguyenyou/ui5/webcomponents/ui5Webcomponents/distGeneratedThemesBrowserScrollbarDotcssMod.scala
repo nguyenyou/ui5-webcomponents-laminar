@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesBrowserScrollbarDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/BrowserScrollbar.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/BrowserScrollbar.css", JSImport.Default)
   @js.native
   val default: /* ::-webkit-scrollbar:horizontal{height:var(--sapScrollBar_Dimension)}::-webkit-scrollbar:vertical{width:var(--sapScrollBar_Dimension)}::-webkit-scrollbar{background-color:var(--sapScrollBar_TrackColor);border-left:none}::-webkit-scrollbar-thumb{border-radius:var(--sapElement_BorderCornerRadius);background-color:var(--sapScrollBar_FaceColor)}::-webkit-scrollbar-thumb:hover{background-color:var(--sapScrollBar_Hover_FaceColor)}::-webkit-scrollbar-corner{background-color:var(--sapScrollBar_TrackColor)}
     */ String = js.native

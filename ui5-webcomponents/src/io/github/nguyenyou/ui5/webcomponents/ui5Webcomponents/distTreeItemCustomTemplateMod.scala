@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTreeItemCustomTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/TreeItemCustomTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/TreeItemCustomTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

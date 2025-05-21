@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTimelineTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/TimelineTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/TimelineTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

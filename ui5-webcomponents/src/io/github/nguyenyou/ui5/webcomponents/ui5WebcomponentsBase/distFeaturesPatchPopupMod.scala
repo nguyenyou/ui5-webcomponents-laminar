@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesPatchPopupMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/features/patchPopup.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/features/patchPopup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

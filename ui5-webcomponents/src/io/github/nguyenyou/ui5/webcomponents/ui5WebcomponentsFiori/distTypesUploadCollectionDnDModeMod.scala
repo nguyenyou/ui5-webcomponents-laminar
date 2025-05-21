@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesUploadCollectionDnDModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionDnDMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionDnDMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesUploadCollectionDnDModeMod {
   
   @js.native
   sealed trait UploadCollectionDnDOverlayMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionDnDMode.js", "UploadCollectionDnDOverlayMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/UploadCollectionDnDMode", "UploadCollectionDnDOverlayMode")
   @js.native
   object UploadCollectionDnDOverlayMode extends StObject {
     

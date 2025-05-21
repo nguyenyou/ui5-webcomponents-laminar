@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesToolbarDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarDesign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarDesign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesToolbarDesignMod {
   
   @js.native
   sealed trait ToolbarDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarDesign.js", "ToolbarDesign")
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarDesign", "ToolbarDesign")
   @js.native
   object ToolbarDesign extends StObject {
     

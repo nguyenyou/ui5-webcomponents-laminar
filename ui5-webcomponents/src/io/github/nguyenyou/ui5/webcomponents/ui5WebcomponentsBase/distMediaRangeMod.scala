@@ -12,11 +12,11 @@ object distMediaRangeMod {
     */
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/MediaRange.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/MediaRange", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/MediaRange.js", "default.RANGESETS")
+    @JSImport("@ui5/webcomponents-base/dist/MediaRange", "default.RANGESETS")
     @js.native
     def RANGESETS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RANGESETS */ Any = js.native
     inline def RANGESETS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RANGESETS */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RANGESETS")(x.asInstanceOf[js.Any])
@@ -34,7 +34,7 @@ object distMediaRangeMod {
     *
     * @public
     */
-  @JSImport("@ui5/webcomponents-base/dist/MediaRange.js", "RANGESETS")
+  @JSImport("@ui5/webcomponents-base/dist/MediaRange", "RANGESETS")
   @js.native
   object RANGESETS extends StObject {
     

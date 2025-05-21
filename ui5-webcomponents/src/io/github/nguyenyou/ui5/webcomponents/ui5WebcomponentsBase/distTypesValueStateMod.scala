@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesValueStateMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/ValueState.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/ValueState", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -26,7 +26,7 @@ object distTypesValueStateMod {
   
   @js.native
   sealed trait ValueState extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/ValueState.js", "ValueState")
+  @JSImport("@ui5/webcomponents-base/dist/types/ValueState", "ValueState")
   @js.native
   object ValueState extends StObject {
     

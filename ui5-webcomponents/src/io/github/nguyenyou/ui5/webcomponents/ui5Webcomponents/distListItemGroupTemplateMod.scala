@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distListItemGroupTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ListItemGroupTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/ListItemGroupTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

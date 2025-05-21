@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distI18nBundleMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/i18nBundle.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/i18nBundle", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -15,7 +15,7 @@ object distI18nBundleMod {
     * @class
     * @public
     */
-  @JSImport("@ui5/webcomponents-base/dist/i18nBundle.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/i18nBundle", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject

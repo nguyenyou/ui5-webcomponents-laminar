@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCalendarLegendItemTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/CalendarLegendItemTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/CalendarLegendItemTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

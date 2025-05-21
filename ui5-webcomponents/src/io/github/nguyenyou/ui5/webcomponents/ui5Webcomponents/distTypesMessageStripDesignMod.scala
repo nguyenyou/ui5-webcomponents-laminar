@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMessageStripDesignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/MessageStripDesign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/MessageStripDesign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distTypesMessageStripDesignMod {
   
   @js.native
   sealed trait MessageStripDesign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/MessageStripDesign.js", "MessageStripDesign")
+  @JSImport("@ui5/webcomponents/dist/types/MessageStripDesign", "MessageStripDesign")
   @js.native
   object MessageStripDesign extends StObject {
     

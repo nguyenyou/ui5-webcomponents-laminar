@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGridWalkerMod {
   
-  @JSImport("@ui5/webcomponents/dist/GridWalker.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/GridWalker", JSImport.Default)
   @js.native
   open class default ()
     extends StObject

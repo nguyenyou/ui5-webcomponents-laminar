@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAssetRegistriesUtilIconCollectionsAliasMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distAssetRegistriesUtilIconCollectionsAliasMod {
   
   @js.native
   sealed trait IconCollectionsAlias extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias.js", "IconCollectionsAlias")
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/IconCollectionsAlias", "IconCollectionsAlias")
   @js.native
   object IconCollectionsAlias extends StObject {
     

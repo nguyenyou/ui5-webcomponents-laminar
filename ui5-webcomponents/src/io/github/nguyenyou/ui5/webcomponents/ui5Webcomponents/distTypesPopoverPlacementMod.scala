@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPopoverPlacementMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/PopoverPlacement.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/PopoverPlacement", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesPopoverPlacementMod {
   
   @js.native
   sealed trait PopoverPlacement extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/PopoverPlacement.js", "PopoverPlacement")
+  @JSImport("@ui5/webcomponents/dist/types/PopoverPlacement", "PopoverPlacement")
   @js.native
   object PopoverPlacement extends StObject {
     

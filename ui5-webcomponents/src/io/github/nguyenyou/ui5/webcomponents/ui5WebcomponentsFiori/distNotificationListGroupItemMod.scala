@@ -44,7 +44,7 @@ object distNotificationListGroupItemMod {
     * @since 1.0.0-rc.8
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListGroupItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NotificationListGroupItem", JSImport.Default)
   @js.native
   open class default () extends NotificationListGroupItem
   

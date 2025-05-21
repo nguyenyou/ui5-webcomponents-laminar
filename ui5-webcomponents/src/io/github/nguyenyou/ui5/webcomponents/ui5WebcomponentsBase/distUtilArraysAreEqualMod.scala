@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilArraysAreEqualMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/arraysAreEqual.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/arraysAreEqual", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

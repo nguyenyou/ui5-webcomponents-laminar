@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesNotificationListDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/NotificationList.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/NotificationList.css", JSImport.Default)
   @js.native
   val default: /* :host(:not([hidden])){display:block}[ui5-notification-list-internal]{height:100%}
     */ String = js.native

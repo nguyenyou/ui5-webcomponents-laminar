@@ -93,17 +93,17 @@ object distTableMod {
     * and will be maintained until the new Table is experimental.
     * Keep in mind that you can use either the compat/Table, or the main/Table - you can't use them both as they both define the `ui5-table` tag name.
     */
-  @JSImport("@ui5/webcomponents/dist/Table.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Table", JSImport.Default)
   @js.native
   open class default () extends Table
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Table.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Table", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/Table.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/Table", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilFocusableElementsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/FocusableElements.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/FocusableElements", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -24,7 +24,7 @@ object distTreeItemMod {
     * @public
     * @since 1.0.0-rc.8
     */
-  @JSImport("@ui5/webcomponents/dist/TreeItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TreeItem", JSImport.Default)
   @js.native
   open class default () extends TreeItem
   

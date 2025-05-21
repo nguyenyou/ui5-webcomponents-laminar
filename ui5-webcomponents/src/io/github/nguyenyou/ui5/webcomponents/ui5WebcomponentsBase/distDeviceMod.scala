@@ -6,63 +6,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDeviceMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/Device.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/Device", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   object internals {
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.android")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.android")
     @js.native
     val android: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.androidPhone")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.androidPhone")
     @js.native
     val androidPhone: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.chrome")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.chrome")
     @js.native
     val chrome: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.firefox")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.firefox")
     @js.native
     val firefox: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.iOS")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.iOS")
     @js.native
     val iOS: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.ipad")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.ipad")
     @js.native
     val ipad: Boolean = js.native
     
     inline def isPhone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isPhone")().asInstanceOf[Boolean]
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.macOS")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.macOS")
     @js.native
     val macOS: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.safari")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.safari")
     @js.native
     val safari: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.touch")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.touch")
     @js.native
     val touch: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.userAgent")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.userAgent")
     @js.native
     val userAgent: String = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.webkit")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.webkit")
     @js.native
     val webkit: Boolean = js.native
     
-    @JSImport("@ui5/webcomponents-base/dist/Device.js", "internals.windows")
+    @JSImport("@ui5/webcomponents-base/dist/Device", "internals.windows")
     @js.native
     val windows: Boolean = js.native
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAssetRegistriesUtilGetIconCollectionByThemeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/getIconCollectionByTheme.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/util/getIconCollectionByTheme", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

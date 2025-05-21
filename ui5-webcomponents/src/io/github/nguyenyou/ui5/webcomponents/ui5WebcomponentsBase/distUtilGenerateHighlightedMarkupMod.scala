@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distUtilGenerateHighlightedMarkupMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/util/generateHighlightedMarkup.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/util/generateHighlightedMarkup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

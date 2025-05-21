@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distBarcodeScannerDialogTemplateMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/BarcodeScannerDialogTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/BarcodeScannerDialogTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

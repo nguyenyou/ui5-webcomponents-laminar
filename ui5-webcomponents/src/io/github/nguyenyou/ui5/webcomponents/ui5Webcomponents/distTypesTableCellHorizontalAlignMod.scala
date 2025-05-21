@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTableCellHorizontalAlignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TableCellHorizontalAlign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TableCellHorizontalAlign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -26,7 +26,7 @@ object distTypesTableCellHorizontalAlignMod {
   
   @js.native
   sealed trait TableCellHorizontalAlign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TableCellHorizontalAlign.js", "TableCellHorizontalAlign")
+  @JSImport("@ui5/webcomponents/dist/types/TableCellHorizontalAlign", "TableCellHorizontalAlign")
   @js.native
   object TableCellHorizontalAlign extends StObject {
     

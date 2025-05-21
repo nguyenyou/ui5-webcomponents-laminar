@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesListItemIconDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ListItemIcon.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ListItemIcon.css", JSImport.Default)
   @js.native
   val default: /* .ui5-li-icon{color:var(--sapList_TextColor);min-width:var(--_ui5-v2-10-0_list_item_icon_size);min-height:var(--_ui5-v2-10-0_list_item_icon_size);padding-inline-end:var(--_ui5-v2-10-0_list_item_icon_padding-inline-end)}
     */ String = js.native

@@ -19,7 +19,7 @@ object distUserSettingsViewMod {
     * @public
     * @since 2.8.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsView.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/UserSettingsView", JSImport.Default)
   @js.native
   open class default () extends UserSettingsView
   

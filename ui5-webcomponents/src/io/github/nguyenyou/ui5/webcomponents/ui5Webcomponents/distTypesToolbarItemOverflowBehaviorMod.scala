@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesToolbarItemOverflowBehaviorMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarItemOverflowBehavior.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarItemOverflowBehavior", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesToolbarItemOverflowBehaviorMod {
   
   @js.native
   sealed trait ToolbarItemOverflowBehavior extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/ToolbarItemOverflowBehavior.js", "ToolbarItemOverflowBehavior")
+  @JSImport("@ui5/webcomponents/dist/types/ToolbarItemOverflowBehavior", "ToolbarItemOverflowBehavior")
   @js.native
   object ToolbarItemOverflowBehavior extends StObject {
     

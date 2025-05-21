@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesViewSettingsDialogModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/ViewSettingsDialogMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/ViewSettingsDialogMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesViewSettingsDialogModeMod {
   
   @js.native
   sealed trait ViewSettingsDialogMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/ViewSettingsDialogMode.js", "ViewSettingsDialogMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/ViewSettingsDialogMode", "ViewSettingsDialogMode")
   @js.native
   object ViewSettingsDialogMode extends StObject {
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCheckBoxTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/CheckBoxTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/CheckBoxTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

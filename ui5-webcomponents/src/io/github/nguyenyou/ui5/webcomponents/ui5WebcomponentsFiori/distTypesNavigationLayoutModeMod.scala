@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesNavigationLayoutModeMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/NavigationLayoutMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/NavigationLayoutMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -22,7 +22,7 @@ object distTypesNavigationLayoutModeMod {
   
   @js.native
   sealed trait NavigationLayoutMode extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/NavigationLayoutMode.js", "NavigationLayoutMode")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/NavigationLayoutMode", "NavigationLayoutMode")
   @js.native
   object NavigationLayoutMode extends StObject {
     

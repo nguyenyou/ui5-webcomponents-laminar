@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesPopoverHorizontalAlignMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/PopoverHorizontalAlign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/PopoverHorizontalAlign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesPopoverHorizontalAlignMod {
   
   @js.native
   sealed trait PopoverHorizontalAlign extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/PopoverHorizontalAlign.js", "PopoverHorizontalAlign")
+  @JSImport("@ui5/webcomponents/dist/types/PopoverHorizontalAlign", "PopoverHorizontalAlign")
   @js.native
   object PopoverHorizontalAlign extends StObject {
     

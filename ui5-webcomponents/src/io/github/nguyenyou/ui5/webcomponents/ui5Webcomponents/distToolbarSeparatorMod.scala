@@ -18,7 +18,7 @@ object distToolbarSeparatorMod {
     * @abstract
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ToolbarSeparator.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ToolbarSeparator", JSImport.Default)
   @js.native
   open class default () extends ToolbarSeparator
   

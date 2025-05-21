@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distAssetRegistriesIconsMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/asset-registries/Icons.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/asset-registries/Icons", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

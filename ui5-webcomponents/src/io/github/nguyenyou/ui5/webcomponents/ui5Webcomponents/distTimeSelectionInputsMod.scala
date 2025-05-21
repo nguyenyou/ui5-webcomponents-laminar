@@ -29,7 +29,7 @@ object distTimeSelectionInputsMod {
     * @since 1.18.0
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/TimeSelectionInputs.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TimeSelectionInputs", JSImport.Default)
   @js.native
   open class default () extends TimeSelectionInputs
   

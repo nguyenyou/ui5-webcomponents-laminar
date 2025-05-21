@@ -25,16 +25,16 @@ object distBundleDotesmMod {
   
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.ResizeHandler")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.ResizeHandler")
     @js.native
     open class ResizeHandler ()
       extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.ResizeHandler
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.ResizeHandler")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.ResizeHandler")
     @js.native
     def ResizeHandler: TypeofResizeHandler & Instantiable0[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.ResizeHandler] = js.native
     inline def ResizeHandler_=(
@@ -49,19 +49,19 @@ object distBundleDotesmMod {
     
     inline def attachThemeLoaded(listener: js.Function1[/* theme */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachThemeLoaded")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.configuration")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.configuration")
     @js.native
     def configuration: GetAnimationMode = js.native
     inline def configuration_=(x: GetAnimationMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configuration")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.defaultTexts")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.defaultTexts")
     @js.native
     def defaultTexts: TypeofimportedI18nDefau = js.native
     inline def defaultTexts_=(x: TypeofimportedI18nDefau): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTexts")(x.asInstanceOf[js.Any])
     
     inline def detachThemeLoaded(listener: js.Function1[/* theme */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachThemeLoaded")(listener.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.generateHighlightedMarkup")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.generateHighlightedMarkup")
     @js.native
     def generateHighlightedMarkup: js.Function2[/* text */ String, /* textToHighlight */ String, String] = js.native
     inline def generateHighlightedMarkup(text: String, textToHighlight: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateHighlightedMarkup")(text.asInstanceOf[js.Any], textToHighlight.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -95,7 +95,7 @@ object distBundleDotesmMod {
     
     inline def ignoreCustomElements(tagPrefix: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreCustomElements")(tagPrefix.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ui5/webcomponents/dist/bundle.esm.js", "default.invisibleMessage")
+    @JSImport("@ui5/webcomponents/dist/bundle.esm", "default.invisibleMessage")
     @js.native
     def invisibleMessage: Announce = js.native
     inline def invisibleMessage_=(x: Announce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisibleMessage")(x.asInstanceOf[js.Any])

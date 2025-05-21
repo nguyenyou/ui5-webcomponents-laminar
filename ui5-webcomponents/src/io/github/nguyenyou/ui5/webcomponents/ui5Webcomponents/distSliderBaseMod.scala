@@ -27,12 +27,12 @@ object distSliderBaseMod {
     * Fired when the value changes and the user has finished interacting with the slider.
     * @public
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/SliderBase.js", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/SliderBase", JSImport.Default)
   @js.native
   open class default () extends SliderBase
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/SliderBase.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/SliderBase", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

@@ -20,7 +20,7 @@ object distToolbarSpacerMod {
     * @since 1.17.0
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ToolbarSpacer.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ToolbarSpacer", JSImport.Default)
   @js.native
   open class default () extends ToolbarSpacer
   

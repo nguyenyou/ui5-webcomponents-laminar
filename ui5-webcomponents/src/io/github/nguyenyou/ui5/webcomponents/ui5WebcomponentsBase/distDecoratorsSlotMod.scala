@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distDecoratorsSlotMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/decorators/slot.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/decorators/slot", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesItemNavigationBehaviorMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/ItemNavigationBehavior.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/ItemNavigationBehavior", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesItemNavigationBehaviorMod {
   
   @js.native
   sealed trait ItemNavigationBehavior extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/ItemNavigationBehavior.js", "ItemNavigationBehavior")
+  @JSImport("@ui5/webcomponents-base/dist/types/ItemNavigationBehavior", "ItemNavigationBehavior")
   @js.native
   object ItemNavigationBehavior extends StObject {
     

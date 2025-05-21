@@ -18,7 +18,7 @@ object distFeaturesInputSuggestionsMod {
     * @class
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/features/InputSuggestions.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/features/InputSuggestions", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
@@ -27,18 +27,18 @@ object distFeaturesInputSuggestionsMod {
   }
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions.js", "default.SCROLL_STEP")
+    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions", "default.SCROLL_STEP")
     @js.native
     def SCROLL_STEP: Double = js.native
     inline def SCROLL_STEP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_STEP")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/features/InputSuggestions", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

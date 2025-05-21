@@ -29,7 +29,7 @@ object distNavigationMenuItemMod {
     * @since 1.22.0
     * @private
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NavigationMenuItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NavigationMenuItem", JSImport.Default)
   @js.native
   open class default () extends NavigationMenuItem
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait IllustrationMessageType extends StObject
-@JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageType.js", "IllustrationMessageType")
+@JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageType", "IllustrationMessageType")
 @js.native
 object IllustrationMessageType extends StObject {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMediaGalleryItemLayoutMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryItemLayout.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryItemLayout", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesMediaGalleryItemLayoutMod {
   
   @js.native
   sealed trait MediaGalleryItemLayout extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryItemLayout.js", "MediaGalleryItemLayout")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/MediaGalleryItemLayout", "MediaGalleryItemLayout")
   @js.native
   object MediaGalleryItemLayout extends StObject {
     

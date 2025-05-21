@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesOverflowModeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/OverflowMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/OverflowMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesOverflowModeMod {
   
   @js.native
   sealed trait OverflowMode extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/OverflowMode.js", "OverflowMode")
+  @JSImport("@ui5/webcomponents/dist/types/OverflowMode", "OverflowMode")
   @js.native
   object OverflowMode extends StObject {
     

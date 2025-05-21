@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedI18nI18nDefaultsMod {
   
-  @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults.js", "PROMPT_INPUT_CHARACTERS_EXCEEDED")
+  @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults", "PROMPT_INPUT_CHARACTERS_EXCEEDED")
   @js.native
   val PROMPT_INPUT_CHARACTERS_EXCEEDED: I18nText = js.native
   
-  @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults.js", "PROMPT_INPUT_CHARACTERS_LEFT")
+  @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults", "PROMPT_INPUT_CHARACTERS_LEFT")
   @js.native
   val PROMPT_INPUT_CHARACTERS_LEFT: I18nText = js.native
 }

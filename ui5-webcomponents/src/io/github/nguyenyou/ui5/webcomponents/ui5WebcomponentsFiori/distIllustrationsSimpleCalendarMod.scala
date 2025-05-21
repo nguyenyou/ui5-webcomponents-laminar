@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsSimpleCalendarMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar", JSImport.Default)
   @js.native
   val default: SimpleCalendar = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SimpleCalendar", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

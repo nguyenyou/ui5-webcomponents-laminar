@@ -42,7 +42,7 @@ object distPageMod {
     * @public
     * @csspart content - Used to style the content section of the component
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/Page.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/Page", JSImport.Default)
   @js.native
   open class default () extends Page
   

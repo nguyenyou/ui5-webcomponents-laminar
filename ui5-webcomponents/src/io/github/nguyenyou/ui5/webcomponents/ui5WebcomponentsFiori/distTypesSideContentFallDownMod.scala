@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSideContentFallDownMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentFallDown.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentFallDown", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesSideContentFallDownMod {
   
   @js.native
   sealed trait SideContentFallDown extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentFallDown.js", "SideContentFallDown")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideContentFallDown", "SideContentFallDown")
   @js.native
   object SideContentFallDown extends StObject {
     

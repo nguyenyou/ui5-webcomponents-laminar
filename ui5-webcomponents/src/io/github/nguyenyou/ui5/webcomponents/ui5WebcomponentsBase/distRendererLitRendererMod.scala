@@ -19,11 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRendererLitRendererMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer", JSImport.Default)
   @js.native
   val default: Renderer = js.native
   
@@ -33,7 +33,7 @@ object distRendererLitRendererMod {
   
   inline def ifDefined[T](value: T): js.Symbol | NonNullable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifDefined")(value.asInstanceOf[js.Any]).asInstanceOf[js.Symbol | NonNullable[T]]
   
-  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer.js", "repeat")
+  @JSImport("@ui5/webcomponents-base/dist/renderer/LitRenderer", "repeat")
   @js.native
   val repeat: RepeatDirectiveFn = js.native
   

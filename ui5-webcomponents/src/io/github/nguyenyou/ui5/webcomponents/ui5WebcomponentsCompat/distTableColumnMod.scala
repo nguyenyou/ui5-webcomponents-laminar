@@ -19,7 +19,7 @@ object distTableColumnMod {
     * @slot {Node[]} default - Defines the content of the column header
     * @csspart column - Used to style the native `th` element
     */
-  @JSImport("@ui5/webcomponents-compat/dist/TableColumn.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-compat/dist/TableColumn", JSImport.Default)
   @js.native
   open class default () extends TableColumn
   

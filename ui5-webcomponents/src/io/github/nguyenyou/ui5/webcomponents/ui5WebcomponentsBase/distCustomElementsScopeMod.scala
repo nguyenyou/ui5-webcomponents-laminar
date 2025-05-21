@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distCustomElementsScopeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", "LitStatic")
+  @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", "LitStatic")
   @js.native
   open class LitStatic () extends StObject
   object LitStatic {
     
-    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", "LitStatic")
+    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", "LitStatic")
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", "LitStatic.html")
+    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", "LitStatic.html")
     @js.native
     def html: js.Function2[/* strings */ TemplateStringsArray, /* repeated */ Any, TemplateResult[ResultType]] = js.native
     inline def html_=(
@@ -32,7 +32,7 @@ object distCustomElementsScopeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("html")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", "LitStatic.svg")
+    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", "LitStatic.svg")
     @js.native
     def svg: js.Function2[/* strings */ TemplateStringsArray, /* repeated */ Any, TemplateResult[ResultType]] = js.native
     inline def svg_=(
@@ -40,7 +40,7 @@ object distCustomElementsScopeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("svg")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope.js", "LitStatic.unsafeStatic")
+    @JSImport("@ui5/webcomponents-base/dist/CustomElementsScope", "LitStatic.unsafeStatic")
     @js.native
     def unsafeStatic: js.Function1[/* value */ String, js.Object] = js.native
     inline def unsafeStatic_=(x: js.Function1[/* value */ String, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsafeStatic")(x.asInstanceOf[js.Any])

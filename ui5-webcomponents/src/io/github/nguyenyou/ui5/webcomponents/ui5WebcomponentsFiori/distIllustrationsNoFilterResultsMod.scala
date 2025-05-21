@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsNoFilterResultsMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults", JSImport.Default)
   @js.native
   val default: NoFilterResults = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoFilterResults", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

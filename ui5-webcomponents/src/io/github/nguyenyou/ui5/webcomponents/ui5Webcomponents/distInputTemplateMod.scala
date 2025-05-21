@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distInputTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/InputTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/InputTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

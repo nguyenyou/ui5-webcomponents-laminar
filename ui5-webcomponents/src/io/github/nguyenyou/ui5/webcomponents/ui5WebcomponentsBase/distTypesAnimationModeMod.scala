@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesAnimationModeMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/types/AnimationMode.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-base/dist/types/AnimationMode", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -24,7 +24,7 @@ object distTypesAnimationModeMod {
   
   @js.native
   sealed trait AnimationMode extends StObject
-  @JSImport("@ui5/webcomponents-base/dist/types/AnimationMode.js", "AnimationMode")
+  @JSImport("@ui5/webcomponents-base/dist/types/AnimationMode", "AnimationMode")
   @js.native
   object AnimationMode extends StObject {
     

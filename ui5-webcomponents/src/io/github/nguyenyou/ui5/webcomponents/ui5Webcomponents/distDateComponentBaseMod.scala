@@ -25,17 +25,17 @@ object distDateComponentBaseMod {
     * @extends UI5Element
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/DateComponentBase.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/DateComponentBase", JSImport.Default)
   @js.native
   open class default () extends DateComponentBase
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/DateComponentBase.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/DateComponentBase", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/DateComponentBase.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents/dist/DateComponentBase", "default.i18nBundle")
     @js.native
     def i18nBundle: js.UndefOr[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default

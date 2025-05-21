@@ -25,7 +25,7 @@ object distTableRowMod {
     * @public
     * @experimental This web component is available since 2.0 with an experimental flag and its API and behavior are subject to change.
     */
-  @JSImport("@ui5/webcomponents/dist/TableRow.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableRow", JSImport.Default)
   @js.native
   open class default () extends TableRow
   

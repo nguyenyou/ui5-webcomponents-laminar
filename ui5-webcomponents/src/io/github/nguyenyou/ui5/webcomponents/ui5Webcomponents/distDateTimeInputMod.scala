@@ -13,7 +13,7 @@ object distDateTimeInputMod {
     * @class
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/DateTimeInput.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/DateTimeInput", JSImport.Default)
   @js.native
   open class default () extends DateTimeInput
   

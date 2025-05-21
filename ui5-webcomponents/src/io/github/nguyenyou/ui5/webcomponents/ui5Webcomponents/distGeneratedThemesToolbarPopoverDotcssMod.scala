@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesToolbarPopoverDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/ToolbarPopover.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/ToolbarPopover.css", JSImport.Default)
   @js.native
   val default: /* .ui5-overflow-popover::part(content){padding:var(--_ui5-v2-10-0_toolbar_overflow_padding)}.ui5-overflow-list{display:flex;flex-direction:column;justify-content:center;align-items:center}.ui5-tb-popover-item{width:100%}.ui5-tb-popover-item:not(:last-child){margin-bottom:.25rem}.ui5-tb-separator-in-overflow{display:none;height:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}.ui5-tb-separator-in-overflow[visible]{display:block}
     */ String = js.native

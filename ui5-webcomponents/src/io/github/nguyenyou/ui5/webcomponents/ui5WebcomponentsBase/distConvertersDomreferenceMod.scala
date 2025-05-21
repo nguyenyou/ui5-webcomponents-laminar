@@ -9,7 +9,7 @@ object distConvertersDomreferenceMod {
   
   object default {
     
-    @JSImport("@ui5/webcomponents-base/dist/converters/DOMReference.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents-base/dist/converters/DOMReference", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

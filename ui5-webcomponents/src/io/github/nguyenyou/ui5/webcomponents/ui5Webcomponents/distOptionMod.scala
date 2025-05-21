@@ -23,7 +23,7 @@ object distOptionMod {
     * @implements {IOption}
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/Option.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Option", JSImport.Default)
   @js.native
   open class default () extends Option
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesInteractiveAreaSizeMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/InteractiveAreaSize.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/InteractiveAreaSize", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesInteractiveAreaSizeMod {
   
   @js.native
   sealed trait InteractiveAreaSize extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/InteractiveAreaSize.js", "InteractiveAreaSize")
+  @JSImport("@ui5/webcomponents/dist/types/InteractiveAreaSize", "InteractiveAreaSize")
   @js.native
   object InteractiveAreaSize extends StObject {
     

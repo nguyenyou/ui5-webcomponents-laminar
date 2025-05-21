@@ -34,17 +34,17 @@ object distListItemStandardMod {
     * @extends ListItem
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/ListItemStandard.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/ListItemStandard", JSImport.Default)
   @js.native
   open class default () extends ListItemStandard
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/ListItemStandard.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/ListItemStandard", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/ListItemStandard.js", "default.ExpandableTextTemplate")
+    @JSImport("@ui5/webcomponents/dist/ListItemStandard", "default.ExpandableTextTemplate")
     @js.native
     def ExpandableTextTemplate: js.UndefOr[
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemStandardMod.ExpandableTextTemplate

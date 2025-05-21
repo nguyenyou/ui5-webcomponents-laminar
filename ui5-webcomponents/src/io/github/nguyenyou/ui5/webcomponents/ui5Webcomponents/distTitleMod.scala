@@ -25,7 +25,7 @@ object distTitleMod {
     * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/Title.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/Title", JSImport.Default)
   @js.native
   open class default () extends Title
   

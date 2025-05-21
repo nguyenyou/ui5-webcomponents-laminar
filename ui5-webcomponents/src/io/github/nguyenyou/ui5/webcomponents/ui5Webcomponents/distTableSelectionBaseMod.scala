@@ -13,7 +13,7 @@ object distTableSelectionBaseMod {
     *
     * @public
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableSelectionBase.js", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableSelectionBase", JSImport.Default)
   @js.native
   open class default () extends TableSelectionBase
   

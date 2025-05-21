@@ -31,17 +31,17 @@ object distUploadCollectionItemMod {
     * @slot {Node[]} default - Hold the description of the `ui5-upload-collection-item`. Will be shown below the file name.
     * @since 1.0.0-rc.7
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem", JSImport.Default)
   @js.native
   open class default () extends UploadCollectionItem
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem.js", "default.i18nFioriBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/UploadCollectionItem", "default.i18nFioriBundle")
     @js.native
     def i18nFioriBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nFioriBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nFioriBundle")(x.asInstanceOf[js.Any])

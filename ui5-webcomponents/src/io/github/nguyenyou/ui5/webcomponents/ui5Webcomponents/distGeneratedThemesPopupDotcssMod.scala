@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesPopupDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents/dist/generated/themes/Popup.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/generated/themes/Popup.css", JSImport.Default)
   @js.native
   val default: /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}
     */ String = js.native

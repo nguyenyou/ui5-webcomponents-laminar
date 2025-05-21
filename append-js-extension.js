@@ -11,13 +11,18 @@ async function processFile(filePath) {
     // Read file content
     const content = await fs.readFile(filePath, 'utf8');
     
-    // Replace @JSImport paths without .js extension
+    // Replace @JSImport paths without any extension
     const updatedContent = content.replace(jsImportRegex, (match, importPath, rest) => {
+      // Extract the last part of the path (after the last slash or the whole path if no slash)
+      const lastSegment = importPath.split('/').pop();
+      // Check if the last segment has an extension (contains a period)
+      const hasExtension = lastSegment.includes('.');
+      
       // Only append .js if:
-      // 1. It doesn't already end with .js
+      // 1. It doesn't already have any extension
       // 2. It's not a namespace import (ending with /)
       // 3. It contains "/dist/" or starts with "dist/"
-      if (!importPath.endsWith('.js') && 
+      if (!hasExtension && 
           !importPath.endsWith('/') && 
           (importPath.includes('/dist/') || importPath.startsWith('dist/'))) {
         return `@JSImport("${importPath}.js"${rest})`;

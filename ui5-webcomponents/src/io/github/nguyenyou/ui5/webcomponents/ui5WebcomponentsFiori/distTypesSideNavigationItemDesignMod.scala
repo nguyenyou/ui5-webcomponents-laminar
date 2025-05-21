@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesSideNavigationItemDesignMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideNavigationItemDesign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideNavigationItemDesign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesSideNavigationItemDesignMod {
   
   @js.native
   sealed trait SideNavigationItemDesign extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/SideNavigationItemDesign.js", "SideNavigationItemDesign")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/SideNavigationItemDesign", "SideNavigationItemDesign")
   @js.native
   object SideNavigationItemDesign extends StObject {
     

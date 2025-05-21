@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesIllustrationMessageDesignMod {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageDesign.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageDesign", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -28,7 +28,7 @@ object distTypesIllustrationMessageDesignMod {
   
   @js.native
   sealed trait IllustrationMessageDesign extends StObject
-  @JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageDesign.js", "IllustrationMessageDesign")
+  @JSImport("@ui5/webcomponents-fiori/dist/types/IllustrationMessageDesign", "IllustrationMessageDesign")
   @js.native
   object IllustrationMessageDesign extends StObject {
     

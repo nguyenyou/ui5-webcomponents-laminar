@@ -19,7 +19,7 @@ object distTableNavigationMod {
     * @class
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/TableNavigation.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/TableNavigation", JSImport.Default)
   @js.native
   open class default protected () extends TableNavigation {
     def this(table: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.default) = this()

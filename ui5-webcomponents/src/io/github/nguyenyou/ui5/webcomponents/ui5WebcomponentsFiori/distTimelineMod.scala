@@ -29,17 +29,17 @@ object distTimelineMod {
     * @public
     * @since 0.8.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/Timeline.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/Timeline", JSImport.Default)
   @js.native
   open class default () extends Timeline
   object default {
     
-    @JSImport("@ui5/webcomponents-fiori/dist/Timeline.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents-fiori/dist/Timeline", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ui5/webcomponents-fiori/dist/Timeline.js", "default.i18nBundle")
+    @JSImport("@ui5/webcomponents-fiori/dist/Timeline", "default.i18nBundle")
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])

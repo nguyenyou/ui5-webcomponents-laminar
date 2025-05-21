@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFeaturesColorPaletteMoreColorsTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/features/ColorPaletteMoreColorsTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/features/ColorPaletteMoreColorsTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -29,7 +29,7 @@ object distUserMenuItemMod {
     * @public
     * @since 2.5.0
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/UserMenuItem.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/UserMenuItem", JSImport.Default)
   @js.native
   open class default () extends UserMenuItem
   

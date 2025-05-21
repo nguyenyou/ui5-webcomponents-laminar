@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distThirdpartyPreactJsxRuntimeDotmoduleMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/jsxRuntime.module.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/jsxRuntime.module", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/jsxRuntime.module.js", "Fragment")
+  @JSImport("@ui5/webcomponents-base/dist/thirdparty/preact/jsxRuntime.module", "Fragment")
   @js.native
   def Fragment: FunctionComponent[js.Object] = js.native
   inline def Fragment_=(x: FunctionComponent[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fragment")(x.asInstanceOf[js.Any])

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTabSeparatorInStripTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/TabSeparatorInStripTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents/dist/TabSeparatorInStripTemplate", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

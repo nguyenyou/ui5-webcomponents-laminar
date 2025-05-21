@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsNoColumnsSetMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet", JSImport.Default)
   @js.native
   val default: NoColumnsSet = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/NoColumnsSet", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

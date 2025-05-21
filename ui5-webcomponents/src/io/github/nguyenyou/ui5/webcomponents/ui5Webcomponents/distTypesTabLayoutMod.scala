@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesTabLayoutMod {
   
-  @JSImport("@ui5/webcomponents/dist/types/TabLayout.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/types/TabLayout", JSImport.Default)
   @js.native
   object default extends StObject {
     
@@ -20,7 +20,7 @@ object distTypesTabLayoutMod {
   
   @js.native
   sealed trait TabLayout extends StObject
-  @JSImport("@ui5/webcomponents/dist/types/TabLayout.js", "TabLayout")
+  @JSImport("@ui5/webcomponents/dist/types/TabLayout", "TabLayout")
   @js.native
   object TabLayout extends StObject {
     

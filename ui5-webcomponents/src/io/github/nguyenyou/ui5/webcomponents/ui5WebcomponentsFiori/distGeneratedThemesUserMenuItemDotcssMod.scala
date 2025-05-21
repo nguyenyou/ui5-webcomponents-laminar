@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedThemesUserMenuItemDotcssMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/UserMenuItem.css.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/UserMenuItem.css", JSImport.Default)
   @js.native
   val default: /* :host{height:40px;margin-block:.5rem}:host(:last-of-type){margin-bottom:0}:host(:first-of-type){margin-top:0}
     */ String = js.native

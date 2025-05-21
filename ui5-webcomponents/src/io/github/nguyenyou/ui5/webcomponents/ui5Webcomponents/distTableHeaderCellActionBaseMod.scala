@@ -18,7 +18,7 @@ object distTableHeaderCellActionBaseMod {
     * @public
     * @since 2.8.0
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableHeaderCellActionBase.js", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/TableHeaderCellActionBase", JSImport.Default)
   @js.native
   open class default () extends TableHeaderCellActionBase
   

@@ -17,7 +17,7 @@ object distCalendarPartMod {
     * @extends DateComponentBase
     * @public
     */
-  @JSImport("@ui5/webcomponents/dist/CalendarPart.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/CalendarPart", JSImport.Default)
   @js.native
   open class default () extends CalendarPart
   

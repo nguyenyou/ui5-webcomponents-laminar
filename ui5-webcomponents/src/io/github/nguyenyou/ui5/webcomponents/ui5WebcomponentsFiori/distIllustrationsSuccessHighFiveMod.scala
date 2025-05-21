@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distIllustrationsSuccessHighFiveMod extends Shortcut {
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive", JSImport.Default)
   @js.native
   val default: SuccessHighFive = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive.js", "dialogSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive", "dialogSvg")
   @js.native
   val dialogSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive.js", "dotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive", "dotSvg")
   @js.native
   val dotSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive.js", "sceneSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive", "sceneSvg")
   @js.native
   val sceneSvg: String = js.native
   
-  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive.js", "spotSvg")
+  @JSImport("@ui5/webcomponents-fiori/dist/illustrations/SuccessHighFive", "spotSvg")
   @js.native
   val spotSvg: String = js.native
   

@@ -42,12 +42,12 @@ object distPopupMod {
     * @extends UI5Element
     * @public
     */
-  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/Popup.js", JSImport.Default)
+  /* note: abstract class */ @JSImport("@ui5/webcomponents/dist/Popup", JSImport.Default)
   @js.native
   open class default () extends Popup
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/Popup.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/Popup", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     

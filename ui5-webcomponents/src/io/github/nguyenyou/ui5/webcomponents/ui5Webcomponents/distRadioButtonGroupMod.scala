@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRadioButtonGroupMod {
   
-  @JSImport("@ui5/webcomponents/dist/RadioButtonGroup.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/RadioButtonGroup", JSImport.Default)
   @js.native
   open class default ()
     extends StObject
        with RadioButtonGroup
   object default {
     
-    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup.js", JSImport.Default)
+    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -25,7 +25,7 @@ object distRadioButtonGroupMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToGroup")(radioBtn.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup.js", "default._checkedRadios")
+    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup", "default._checkedRadios")
     @js.native
     def checkedRadios: Map[
         String, 
@@ -73,7 +73,7 @@ object distRadioButtonGroupMod {
       ]]
     
     /* static member */
-    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup.js", "default._groups")
+    @JSImport("@ui5/webcomponents/dist/RadioButtonGroup", "default._groups")
     @js.native
     def groups: Map[
         String, 

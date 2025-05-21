@@ -34,7 +34,7 @@ object distNavigationLayoutMod {
     * @since 2.4.0
     * @public
     */
-  @JSImport("@ui5/webcomponents-fiori/dist/NavigationLayout.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents-fiori/dist/NavigationLayout", JSImport.Default)
   @js.native
   open class default () extends NavigationLayout
   

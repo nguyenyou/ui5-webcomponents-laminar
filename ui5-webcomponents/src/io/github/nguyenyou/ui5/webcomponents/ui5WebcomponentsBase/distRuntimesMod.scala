@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRuntimesMod {
   
-  @JSImport("@ui5/webcomponents-base/dist/Runtimes.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-base/dist/Runtimes", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

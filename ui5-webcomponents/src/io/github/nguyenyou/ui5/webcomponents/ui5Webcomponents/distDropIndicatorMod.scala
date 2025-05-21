@@ -24,7 +24,7 @@ object distDropIndicatorMod {
     * @extends UI5Element
     * @private
     */
-  @JSImport("@ui5/webcomponents/dist/DropIndicator.js", JSImport.Default)
+  @JSImport("@ui5/webcomponents/dist/DropIndicator", JSImport.Default)
   @js.native
   open class default () extends DropIndicator
   
