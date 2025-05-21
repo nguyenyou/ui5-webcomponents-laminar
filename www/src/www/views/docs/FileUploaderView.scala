@@ -2,7 +2,6 @@ package www.views.docs
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import org.scalajs.dom.FileList
 import org.scalajs.dom.URL
 import www.components.Demo

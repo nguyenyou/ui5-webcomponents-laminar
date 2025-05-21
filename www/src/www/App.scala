@@ -2,7 +2,6 @@ package www
 
 import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
-import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.AppRouter.navigateTo
 import www.BuildInfo
 import www.Pages.AvatarPage

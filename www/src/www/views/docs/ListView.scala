@@ -4,7 +4,6 @@ import com.raquo.laminar.api.L.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.IconName
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.ValueState
-import io.github.nguyenyou.ui5.webcomponents.laminar.shared.compactSize
 import www.components.Demo
 import www.libs.scalawind.*
 import www.macros.Source
