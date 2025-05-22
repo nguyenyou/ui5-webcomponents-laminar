@@ -5,8 +5,8 @@
 @source "../out/www/fullLinkJS.dest";
 
 @theme {
-  --font-sans: "Geist", "sans-serif";
-  --font-mono: "Geist Mono", "monospace";
+  --font-sans: "Inter", "sans-serif";
+  --font-mono: "Source Code Pro", "sans-serif";
   --color-primary: rgb(205, 37, 41);
   --color-sap-brand: var(--sapBrandColor);
   --color-sap-text: var(--sapTextColor);

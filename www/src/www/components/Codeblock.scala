@@ -13,7 +13,7 @@ import scala.util.Success
 object Codeblock {
   val themeVar: WebStorageVar[String] = WebStorageVar
     .localStorage(key = "codeTheme", syncOwner = None)
-    .text(default = "vitesse-dark")
+    .text(default = "github-dark-dimmed")
   val themeSignal = themeVar.signal.distinct
 
   val themes = List(
