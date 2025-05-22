@@ -78,6 +78,21 @@ pre.shiki code {
   @apply px-8 py-6 block;
 }
 
+.shiki code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+.shiki code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-align: right;
+  color: rgba(115,138,148,.4)
+}
+
 .border-grid {
   border-style: dashed;
   border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)
