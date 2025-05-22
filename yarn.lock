@@ -1216,6 +1216,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sap-theming/theming-base-content@npm:^11.29.3":
+  version: 11.29.3
+  resolution: "@sap-theming/theming-base-content@npm:11.29.3"
+  checksum: 10c0/8da4e8c0dafce793fb410832534eebf1f35eb1eb15f55f030810cfd32a15d45778ead2b89b04418f4e187f62f4af5afacf9a8191a7b2d5b91253715878be058e
+  languageName: node
+  linkType: hard
+
 "@shikijs/core@npm:3.4.0":
   version: 3.4.0
   resolution: "@shikijs/core@npm:3.4.0"
@@ -10321,6 +10328,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ui5-webcomponents-laminar@workspace:."
   dependencies:
+    "@sap-theming/theming-base-content": "npm:^11.29.3"
     "@ui5/webcomponents": "npm:2.10.0"
     "@ui5/webcomponents-ai": "npm:2.10.0"
     "@ui5/webcomponents-base": "npm:2.10.0"

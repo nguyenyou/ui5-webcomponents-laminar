@@ -105,7 +105,8 @@ case class App() {
 
   def renderApp(): HtmlElement = {
     div(
-      tw.relative.flex.min_h_svh.flex_col.bg_sap_background,
+      tw.relative.flex.min_h_svh.flex_col,
+      backgroundColor(ThemingParameters.sapBackgroundColor),
       div(
         tw.flex.flex_col.flex_1,
         headerTag(

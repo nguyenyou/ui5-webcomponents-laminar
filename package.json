@@ -28,6 +28,7 @@
     "www"
   ],
   "dependencies": {
+    "@sap-theming/theming-base-content": "11.29.3",
     "@ui5/webcomponents": "2.10.0",
     "@ui5/webcomponents-ai": "2.10.0",
     "@ui5/webcomponents-base": "2.10.0",
