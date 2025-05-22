@@ -1228,6 +1228,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shikijs/core@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@shikijs/core@npm:3.4.2"
+  dependencies:
+    "@shikijs/types": "npm:3.4.2"
+    "@shikijs/vscode-textmate": "npm:^10.0.2"
+    "@types/hast": "npm:^3.0.4"
+    hast-util-to-html: "npm:^9.0.5"
+  checksum: 10c0/702469d9c80fc80e2b81dd10407cc946771dcf355d56048e1dab43e40d144395c14a6ecde92e03c70a35249ad6634ef4605bd17ad6974a2b4e04f9efccf24414
+  languageName: node
+  linkType: hard
+
 "@shikijs/engine-javascript@npm:3.4.0":
   version: 3.4.0
   resolution: "@shikijs/engine-javascript@npm:3.4.0"
@@ -1267,6 +1279,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@shikijs/transformers@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@shikijs/transformers@npm:3.4.2"
+  dependencies:
+    "@shikijs/core": "npm:3.4.2"
+    "@shikijs/types": "npm:3.4.2"
+  checksum: 10c0/68fb2a80b171f673a2043d962f87c68bf2e4cc6189a87662f25c9d8c533c1572eb32d15d303e15e48c60c42bfba8f55da1c9881e36dca79f9a8cbed342dd65e4
+  languageName: node
+  linkType: hard
+
 "@shikijs/types@npm:3.4.0":
   version: 3.4.0
   resolution: "@shikijs/types@npm:3.4.0"
@@ -1274,6 +1296,16 @@ __metadata:
     "@shikijs/vscode-textmate": "npm:^10.0.2"
     "@types/hast": "npm:^3.0.4"
   checksum: 10c0/3a2d51208981e1ca70101dc5575e60cffca223cdc0aeb1683b3b4a582205edf185c104b41c5092b2dfca96d1f81a88d12e16161cb8288287949b90ac5eabf531
+  languageName: node
+  linkType: hard
+
+"@shikijs/types@npm:3.4.2":
+  version: 3.4.2
+  resolution: "@shikijs/types@npm:3.4.2"
+  dependencies:
+    "@shikijs/vscode-textmate": "npm:^10.0.2"
+    "@types/hast": "npm:^3.0.4"
+  checksum: 10c0/a20d3535cc0d61a55d0c0d4dfcd33a52229ec8a4c650613cb0f424dcb499bcdf0230e007f70a18e12c102a04820557ff120f41f18b15a94f95f9ec343592906b
   languageName: node
   linkType: hard
 
@@ -10974,6 +11006,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "www@workspace:www"
   dependencies:
+    "@shikijs/transformers": "npm:^3.4.2"
     "@tailwindcss/vite": "npm:^4.1.5"
     dedent: "npm:^1.6.0"
     marked: "npm:^15.0.11"

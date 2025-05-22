@@ -13,7 +13,7 @@ import scala.util.Success
 object Codeblock {
   val themeVar: WebStorageVar[String] = WebStorageVar
     .localStorage(key = "codeTheme", syncOwner = None)
-    .text(default = "github-dark-dimmed")
+    .text(default = "vitesse-dark")
   val themeSignal = themeVar.signal.distinct
 
   val themes = List(
@@ -112,7 +112,11 @@ object Codeblock {
               dedented,
               CodeToHtmlOptions(
                 lang = "scala",
-                theme = theme
+                theme = theme,
+                transformers = scalajs.js.Array(
+                  ShikiTransformers.transformerNotationDiff(),
+                  ShikiTransformers.transformerNotationHighlight()
+                )
               )
             )
             .toFuture

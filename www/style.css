@@ -71,7 +71,7 @@ pre, code {
 }
 
 pre.shiki {
-  @apply m-0 whitespace-pre-wrap text-sm rounded-md overflow-hidden;
+  @apply m-0 whitespace-pre-wrap text-sm rounded-md overflow-hidden leading-6;
 }
 
 pre.shiki code {
@@ -91,6 +91,32 @@ pre.shiki code {
   display: inline-block;
   text-align: right;
   color: rgba(115,138,148,.4)
+}
+
+.shiki code .diff.remove {
+  background-color: rgba(244, 63, 94, .16);
+  opacity: 0.7;
+}
+
+.shiki code .diff.add {
+  background-color: rgba(16, 185, 129, .16);
+}
+
+.shiki code .diff {
+  width: calc(100% + 64px);
+  display: inline-block;
+  transition: background-color 0.5s;
+  margin: 0px -32px;
+  padding: 0px 32px;
+}
+
+.shiki code .highlighted {
+  background-color: rgba(101, 117, 133, .16);
+  width: calc(100% + 64px);
+  display: inline-block;
+  transition: background-color 0.5s;
+  margin: 0px -32px;
+  padding: 0px 32px;
 }
 
 .border-grid {

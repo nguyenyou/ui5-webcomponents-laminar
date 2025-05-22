@@ -70,33 +70,6 @@ object IconsView {
   def apply(): HtmlElement = {
     sectionTag(
       div(
-        h2("Base"),
-        div(
-          tw.flex.flex_wrap.gap_2,
-          IconCollection.base.map { item =>
-            renderIconCard(item)
-          }
-        )
-      ),
-      div(
-        h2("Business Suite"),
-        div(
-          tw.flex.flex_wrap.gap_2,
-          IconCollection.businessSuite.map { item =>
-            renderIconCard(item)
-          }
-        )
-      ),
-      div(
-        h2("TNT"),
-        div(
-          tw.flex.flex_wrap.gap_2,
-          IconCollection.tnt.map { item =>
-            renderIconCard(item)
-          }
-        )
-      ),
-      div(
         h2("Custom"),
         renderCustomIcons(CustomIcons.iconData)
       )

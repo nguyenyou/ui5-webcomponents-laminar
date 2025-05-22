@@ -14,18 +14,18 @@ object PopoverView extends ExampleView("Popover") {
       Demo(
         title = "Basic",
         content = Source.annotate {
-          val openVar: Var[Boolean] = Var(false)
+          val openVar: Var[Boolean] = Var(false) // [!code highlight]
 
           div(
             compactSize(true),
             Button(
-              _.id     := "openPopoverButton",
+              _.id     := "openPopoverButton", // [!code highlight]
               _.design := "Emphasized",
-              _.onClick.mapTo(true) --> openVar
+              _.onClick.mapTo(true) --> openVar // [!code highlight]
             )("Open Popover"),
             Popover(
-              _.openerId := "openPopoverButton",
-              _.open <-- openVar,
+              _.openerId := "openPopoverButton", // [!code highlight]
+              _.open <-- openVar, // [!code highlight]
               _.headerText := "Newsletter subscription",
               _.footer := div(
                 tw.flex.justify_end.flex_1.py_2,
@@ -53,11 +53,11 @@ object PopoverView extends ExampleView("Popover") {
       Demo(
         title = "Opener Dom Element",
         content = Source.annotate {
-          val openVar: Var[Boolean] = Var(false)
+          val openVar: Var[Boolean] = Var(false) // [!code highlight]
 
           val btn = Button(
             _.design := "Emphasized",
-            _.onClick.mapTo(true) --> openVar.writer
+            _.onClick.mapTo(true) --> openVar.writer // [!code highlight]
           )("Open Popover")
 
           div(
@@ -74,6 +74,7 @@ object PopoverView extends ExampleView("Popover") {
                 )("Subscribe")
               )
             )(
+              // [!code highlight:3]
               onMountCallback { ctx =>
                 ctx.thisNode.ref.opener = btn.ref
               },
@@ -97,13 +98,13 @@ object PopoverView extends ExampleView("Popover") {
       Demo(
         title = "2nd Opener Dom Element",
         content = Source.annotate {
-          val openEventBus = EventBus[Option[dom.HTMLElement]]()
+          val openEventBus = EventBus[Option[dom.HTMLElement]]() // [!code highlight]
 
           div(
             compactSize(true),
             Button(
               _.design := "Emphasized",
-              _.onClick.map(_.target).map(Some(_)) --> openEventBus
+              _.onClick.map(_.target).map(Some(_)) --> openEventBus // [!code highlight]
             )(
               "Open Popover"
             ),
@@ -116,6 +117,7 @@ object PopoverView extends ExampleView("Popover") {
                 )("Subscribe")
               )
             )(
+              // [!code highlight:9]
               inContext { thisNode =>
                 openEventBus --> Observer[Option[dom.HTMLElement]] {
                   case Some(opener) =>
@@ -143,19 +145,19 @@ object PopoverView extends ExampleView("Popover") {
       Demo(
         title = "3rd Opener Dom Element",
         content = Source.annotate {
-          val openEventBus = EventBus[Option[dom.HTMLElement]]()
+          val openEventBus = EventBus[Option[dom.HTMLElement]]() // [!code highlight]
 
           div(
             compactSize(true),
             Button(
               _.design := "Emphasized",
-              _.onClick.map(_.target).map(Some(_)) --> openEventBus
+              _.onClick.map(_.target).map(Some(_)) --> openEventBus // [!code highlight]
             )(
               "Open Popover"
             ),
             Popover(
               _.headerText := "Newsletter subscription",
-              _.openerRef(openEventBus.events),
+              _.openerRef(openEventBus.events), // [!code highlight]
               _.footer := div(
                 tw.flex.justify_end.flex_1.py_2,
                 Button(
