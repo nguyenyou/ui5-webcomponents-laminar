@@ -54,44 +54,44 @@ object ThemeProvider {
     case SapHorizon
         extends Theme(
           "sap_horizon",
-          "Morning Horizon (Light)",
+          "Horizon Light",
           "sap_horizon_dark",
           true
         )
     case SapHorizonDark
         extends Theme(
           "sap_horizon_dark",
-          "Evening Horizon (Dark)",
+          "Horizon Dark",
           "sap_horizon",
           false
         )
+    case SapFiori3     extends Theme("sap_fiori_3", "Quartz Light", "sap_fiori_3_dark", true)
+    case SapFiori3Dark extends Theme("sap_fiori_3_dark", "Quartz Dark", "sap_fiori_3", false)
     case SapHorizonHcb
         extends Theme(
           "sap_horizon_hcb",
-          "Horizon High Contrast Black",
+          "Horizon Black HC",
           "sap_horizon_hcw",
           false
         )
     case SapHorizonHcw
         extends Theme(
           "sap_horizon_hcw",
-          "Horizon High Contrast White",
+          "Horizon White HC",
           "sap_horizon_hcb",
           true
         )
-    case SapFiori3     extends Theme("sap_fiori_3", "Quartz Light", "sap_fiori_3_dark", true)
-    case SapFiori3Dark extends Theme("sap_fiori_3_dark", "Quartz Dark", "sap_fiori_3", false)
     case SapFiori3Hcb
         extends Theme(
           "sap_fiori_3_hcb",
-          "Quartz High Contrast Black",
+          "Quartz Black HC",
           "sap_fiori_3_hcw",
           false
         )
     case SapFiori3Hcw
         extends Theme(
           "sap_fiori_3_hcw",
-          "Quartz High Contrast White",
+          "Quartz White HC",
           "sap_fiori_3_hcb",
           true
         )

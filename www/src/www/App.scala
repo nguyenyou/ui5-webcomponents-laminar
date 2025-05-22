@@ -5,27 +5,27 @@ import io.github.nguyenyou.ui5.webcomponents.laminar.*
 import www.AppRouter.navigateTo
 import www.BuildInfo
 import www.Pages.AvatarPage
-import www.Pages.IconsPage
+import www.Pages.ThemesPage
 import www.components.Codeblock
 import www.components.Sidebar
 import www.components.TableOfContents
+import www.components.ThemeProvider
 import www.components.ThemeToggle
 import www.components.WebsiteIcons
 import www.libs.scalawind.*
 
 case class App() {
-  enum Layout derives CanEqual {
+  private enum Layout derives CanEqual {
     case Docs
-    case Icons
+    case Themes
   }
 
-  val layoutSignal = AppRouter.currentPageSignal.map { page =>
-    page match
-      case IconsPage => Layout.Icons
-      case _         => Layout.Docs
+  private val layoutSignal: Signal[Layout] = AppRouter.currentPageSignal.map {
+    case ThemesPage => Layout.Themes
+    case _          => Layout.Docs
   }.distinct
 
-  def renderIconsLayout() = {
+  def renderThemesLayout(): HtmlElement = {
     mainTag(
       tw.flex.flex_1.flex_col,
       sectionTag(
@@ -36,12 +36,28 @@ case class App() {
             tw.container.flex.flex_col.items_start.gap_1.py_8.md(tw.py_10).lg(tw.py_12),
             h1(
               tw.text_2xl.font_bold.leading_tight.tracking_tighter.sm(tw.text_3xl).md(tw.text_4xl).m_0.p_0,
-              "Icons"
+              "Add colors. Make it yours."
             ),
             p(
               tw.max_w_2xl.text_base.font_light.sm(tw.text_lg).m_0.p_0,
-              "Icons are a great way to add visual identity to your application. They can be used to represent actions, entities, or concepts."
+              "Changing the theme of your application is a great way to add visual identity to your application. You can change the theme of your application to match your brand colors, or to match the colors of your application."
             )
+          )
+        )
+      ),
+      div(
+        tw.border_grid.border_b,
+        div(
+          tw.container_wrapper.border_l.border_r.border_grid.flex_1,
+          div(
+            tw.container.flex.gap_2.py_4,
+            ThemeProvider.Theme.values.toList.map { theme =>
+              Button(
+                _.onClick.mapTo(theme.key) --> ThemeProvider.websiteThemeVar.writer
+              )(
+                theme.name
+              )
+            }
           )
         )
       ),
@@ -55,7 +71,7 @@ case class App() {
     )
   }
 
-  def renderDocsLayout() = {
+  def renderDocsLayout(): HtmlElement = {
     mainTag(
       tw.flex.flex_1.flex_col,
       div(
@@ -125,8 +141,8 @@ case class App() {
                     "Docs"
                   ),
                   a(
-                    navigateTo(IconsPage),
-                    "Icons"
+                    navigateTo(ThemesPage),
+                    "Themes"
                   )
                 )
               ),
@@ -153,8 +169,8 @@ case class App() {
           )
         ),
         child <-- layoutSignal.map {
-          case Layout.Icons => renderIconsLayout()
-          case Layout.Docs  => renderDocsLayout()
+          case Layout.Themes => renderThemesLayout()
+          case Layout.Docs   => renderDocsLayout()
         },
         footerTag(
           tw.border_grid.border_t.py_6.md(tw.py_0),
