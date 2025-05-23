@@ -11,22 +11,22 @@ object ThemesView {
         tw.flex.gap_2,
         Button(
           _.design := "Default"
-        )("Button"),
+        )("Default"),
         Button(
           _.design := "Emphasized"
-        )("Button"),
+        )("Emphasized"),
         Button(
           _.design := "Positive"
-        )("Button"),
+        )("Positive"),
         Button(
           _.design := "Negative"
-        )("Button"),
+        )("Negative"),
         Button(
           _.design := "Attention"
-        )("Button"),
+        )("Attention"),
         Button(
           _.design := "Transparent"
-        )("Button")
+        )("Transparent")
       )
     )
   }
