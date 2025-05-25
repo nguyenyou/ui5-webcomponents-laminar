@@ -123,8 +123,13 @@ object `ui5-webcomponents-laminar` extends WebModule with CommonPublish with Sca
 
 
 object www extends WebModule with Scalafix with BuildInfo {
+
   def moduleKind = ModuleKind.ESModule
-  
+
+  def baseUrlInput = Task.Input {
+  Task.env.getOrElse("PAGES_BASE_PATH", "")
+}
+
   def ivyDeps = super.ivyDeps() ++
     Dependencies.waypoint ++
     Dependencies.macrotask ++
@@ -140,6 +145,7 @@ object www extends WebModule with Scalafix with BuildInfo {
     BuildInfo.Value("author", Constants.author),
     BuildInfo.Value("organization", Constants.organization),
     BuildInfo.Value("description", Constants.description),
+    BuildInfo.Value("baseUrl", baseUrlInput()),
   )
 
   object test extends ScalaJSTests {

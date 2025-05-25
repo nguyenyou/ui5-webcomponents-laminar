@@ -18,7 +18,7 @@ jobs:
       - run: |
           corepack enable
           yarn install
-          
+
       - name: Setup Pages
         id: setup_pages
         uses: actions/configure-pages@v5
@@ -40,11 +40,14 @@ jobs:
 
       - name: Build ScalaJS
         run: ./mill www.fullLinkJS
+        env:
+          PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
       - name: Build Vite
         run: yarn workspace www build:gh-pages
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
