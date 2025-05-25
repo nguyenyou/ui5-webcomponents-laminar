@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:vercel": "IS_VERCEL=true vite build",
-    "build:gh-pages": "vite build --base=/ui5-webcomponents-laminar/",
+    "build:gh-pages": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
