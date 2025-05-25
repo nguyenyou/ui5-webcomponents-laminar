@@ -13,6 +13,11 @@ import www.components.ThemeProvider
 import www.components.ThemeToggle
 import www.components.WebsiteIcons
 import www.libs.scalawind.*
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSImport
+
+@js.native @JSImport("/logo.png", JSImport.Default)
+val logo: String = js.native
 
 case class App() {
   private enum Layout derives CanEqual {
@@ -121,7 +126,7 @@ case class App() {
                   href := "/",
                   tw.h_full.mr_4.flex.items_center.gap_2.lg(tw.mr_6),
                   img(
-                    src := "/logo.png",
+                    src := logo,
                     tw.h_6.w_6.object_contain
                   ),
                   div(
