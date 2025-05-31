@@ -14,6 +14,8 @@ object Shiki {
 object ShikiTransformers extends js.Object {
   def transformerNotationDiff(): js.Object      = js.native
   def transformerNotationHighlight(): js.Object = js.native
+  def transformerNotationFocus(): js.Object = js.native
+  def transformerNotationWordHighlight(): js.Object = js.native
 }
 
 trait CodeToHtmlOptions extends js.Object {

@@ -24,15 +24,15 @@ object AvatarView extends ExampleView("Avatar") {
           div(
             tw.flex.flex_wrap.gap_2,
             Avatar(
-              _.shape    := "Circle",
-              _.size     := "M",
+              _.shape    := "Circle", // [!code highlight]
+              _.size     := "M", 
               _.initials := "CI"
             )(),
             Avatar(
-              _.shape    := "Square",
+              _.shape    := "Square", // [!code highlight]
               _.size     := "M",
               _.initials := "Sq"
-            )()
+            )(),
           )
         }
       ),

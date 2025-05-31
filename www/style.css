@@ -119,6 +119,29 @@ pre.shiki code {
   padding: 0px 32px;
 }
 
+.shiki.has-focused .line:not(.focused) {
+  filter: blur(.095rem);
+  opacity: .4;
+  transition: filter .35s,opacity .35s
+}
+
+.shiki.has-focused .line:not(.focused) {
+  opacity: .7;
+  transition: filter .35s,opacity .35s
+}
+
+.shiki.has-focused:hover .line:not(.focused) {
+  filter: blur(0);
+  opacity: 1
+}
+
+.shiki .highlighted-word {
+ color: var(--sapTextColor);
+      background-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent);
+      padding: 0.5px 4px;
+      border-radius: 4px;
+}
+
 .border-grid {
   border-style: dashed;
   border-color: color-mix(in oklab,var(--sapNeutralColor)20%,transparent)

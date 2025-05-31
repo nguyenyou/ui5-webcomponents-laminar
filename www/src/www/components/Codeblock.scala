@@ -115,7 +115,9 @@ object Codeblock {
                 theme = theme,
                 transformers = scalajs.js.Array(
                   ShikiTransformers.transformerNotationDiff(),
-                  ShikiTransformers.transformerNotationHighlight()
+                  ShikiTransformers.transformerNotationHighlight(),
+                  ShikiTransformers.transformerNotationFocus(),
+                  ShikiTransformers.transformerNotationWordHighlight()
                 )
               )
             )
