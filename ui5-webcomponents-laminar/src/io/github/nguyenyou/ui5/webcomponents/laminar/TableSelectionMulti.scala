@@ -21,6 +21,15 @@ object TableSelectionMulti extends WebComponent("ui5-table-selection-multi") {
 
   // -- Attributes --
 
+  /** Defines the selection behavior.
+    *
+    * **Note:** Available since [v2.11](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.11) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "RowSelector"
+    */
+  lazy val behavior: HtmlAttr[TableSelectionBehavior] = htmlAttr("behavior", StringUnionCodec[TableSelectionBehavior])
+
   /** Defines the `row-key` values of selected rows, with each value separated by a space.
     *
     * Default: undefined

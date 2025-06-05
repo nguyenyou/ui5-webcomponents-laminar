@@ -3,6 +3,8 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 object IconCollection {
   type IconItem = (name: String, iconName: IconName)
   val base = List[IconItem](
+    ("AllIconsNode", IconName.AllIconsNode),
+    ("AssetsNode", IconName.AssetsNode),
     ("ChartTreeMap", IconName.ChartTreeMap),
     ("NetweaverBusinessClient", IconName.NetweaverBusinessClient),
     ("accelerated", IconName.accelerated),

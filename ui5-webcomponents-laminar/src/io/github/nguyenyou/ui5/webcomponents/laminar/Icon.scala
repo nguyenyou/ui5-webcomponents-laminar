@@ -80,6 +80,19 @@ object Icon extends WebComponent("ui5-icon") {
 
   // -- Events --
 
+  /** Fired on mouseup, `SPACE` and `ENTER`.
+    *   - on mouse click, the icon fires native `click` event
+    *   - on `SPACE` and `ENTER`, the icon fires custom `click` event
+    *
+    * **Note:** Available since [v2.11.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.11.0) of
+    * **@ui5/webcomponents**.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp("click")
+
   // -- Slots --
 
 }

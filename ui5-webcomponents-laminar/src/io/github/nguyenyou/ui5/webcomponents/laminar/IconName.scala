@@ -12,7 +12,9 @@ sealed trait IconName extends js.Any
 object IconName {
   // Standard icons
   def AllIconsFetch: IconName           = _iconName(`import-AllIcons-fetch`, "AllIcons-fetch")
+  def AllIconsNode: IconName            = _iconName(`import-AllIcons-node`, "AllIcons-node")
   def AssetsFetch: IconName             = _iconName(`import-Assets-fetch`, "Assets-fetch")
+  def AssetsNode: IconName              = _iconName(`import-Assets-node`, "Assets-node")
   def ChartTreeMap: IconName            = _iconName(`import-Chart-Tree-Map`, "Chart-Tree-Map")
   def NetweaverBusinessClient: IconName = _iconName(`import-Netweaver-business-client`, "Netweaver-business-client")
   def accelerated: IconName             = _iconName(`import-accelerated`, "accelerated")

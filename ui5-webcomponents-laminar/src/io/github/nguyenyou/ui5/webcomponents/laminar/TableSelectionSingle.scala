@@ -21,6 +21,15 @@ object TableSelectionSingle extends WebComponent("ui5-table-selection-single") {
 
   // -- Attributes --
 
+  /** Defines the selection behavior.
+    *
+    * **Note:** Available since [v2.11](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.11) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: "RowSelector"
+    */
+  lazy val behavior: HtmlAttr[TableSelectionBehavior] = htmlAttr("behavior", StringUnionCodec[TableSelectionBehavior])
+
   /** Defines the `row-key` value of the selected row.
     *
     * Default: undefined

@@ -111,6 +111,19 @@ object Avatar extends WebComponent("ui5-avatar") {
 
   // -- Events --
 
+  /** Fired on mouseup, space and enter if avatar is interactive
+    *
+    * **Note:** The event will not be fired if the `disabled` property is set to `true`.
+    *
+    * **Note:** Available since [v2.11.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.11.0) of
+    * **@ui5/webcomponents**.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp("click")
+
   // -- Slots --
 
   /** Defines the optional badge that will be used for visual affordance.

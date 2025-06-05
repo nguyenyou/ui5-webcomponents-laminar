@@ -13,7 +13,8 @@ type FCLLayout = "OneColumn" | "TwoColumnsStartExpanded" | "TwoColumnsMidExpande
   "ThreeColumnsEndExpanded" | "ThreeColumnsStartExpandedEndHidden" | "ThreeColumnsMidExpandedEndHidden" |
   "ThreeColumnsStartHiddenMidExpanded" | "ThreeColumnsStartHiddenEndExpanded" | "MidColumnFullScreen" |
   "EndColumnFullScreen"
-type IllustrationMessageDesign       = "Auto" | "Base" | "Dot" | "Spot" | "Dialog" | "Scene"
+type IllustrationMessageDesign = "Auto" | "Base" | "Dot" | "Spot" | "Dialog" | "Scene" | "ExtraSmall" | "Small" |
+  "Medium" | "Large"
 type MediaGalleryLayout              = "Auto" | "Vertical" | "Horizontal"
 type MediaGalleryMenuHorizontalAlign = "Left" | "Right"
 type MediaGalleryMenuVerticalAlign   = "Top" | "Bottom"
@@ -36,6 +37,7 @@ type AvatarColorScheme = "Auto" | "Accent1" | "Accent2" | "Accent3" | "Accent4" 
 type AvatarShape       = "Circle" | "Square"
 type AvatarSize        = "XS" | "S" | "M" | "L" | "XL"
 type AvatarGroupType   = "Group" | "Individual"
+type BarAccessibleRole = "Toolbar" | "None"
 type BarDesign         = "Header" | "Subheader" | "Footer" | "FloatingFooter"
 type BreadcrumbsDesign = "Standard" | "NoCurrentPage"
 type BreadcrumbsSeparator = "Slash" | "BackSlash" | "DoubleBackSlash" | "DoubleGreaterThan" | "DoubleSlash" |
@@ -88,6 +90,7 @@ type TableCellHorizontalAlign     = "Left" | "Start" | "Right" | "End" | "Center
 type TableGrowingMode             = "Button" | "Scroll"
 type SortOrder                    = "None" | "Ascending" | "Descending"
 type TableSelectionMode           = "None" | "Single" | "Multiple"
+type TableSelectionBehavior       = "RowSelector" | "RowOnly"
 type TagDesign                    = "Set1" | "Set2" | "Neutral" | "Information" | "Positive" | "Negative" | "Critical"
 type TagSize                      = "S" | "L"
 type ToastPlacement = "TopStart" | "TopCenter" | "TopEnd" | "MiddleStart" | "MiddleCenter" | "MiddleEnd" |

@@ -58,6 +58,15 @@ object Tab extends WebComponent("ui5-tab") {
     */
   lazy val icon: HtmlAttr[IconName] = htmlAttr("icon", IconName.AsStringCodec)
 
+  /** Defines if the tab is movable.
+    *
+    * **Note:** Available since [v2.0.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.0.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: false
+    */
+  lazy val movable: HtmlAttr[Boolean] = htmlAttr("movable", BooleanAsAttrPresenceCodec)
+
   /** Specifies if the component is selected.
     *
     * Default: false

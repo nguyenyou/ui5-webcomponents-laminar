@@ -125,6 +125,9 @@ object Table extends WebComponent("ui5-table") {
 
   /** Fired when an interactive row is clicked.
     *
+    * **Note:** This event is not fired if the `behavior` property of the selection component is set to `RowOnly`. In
+    * that case, use the `change` event of the selection component instead.
+    *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
     * |     ❌      |    ✅    |

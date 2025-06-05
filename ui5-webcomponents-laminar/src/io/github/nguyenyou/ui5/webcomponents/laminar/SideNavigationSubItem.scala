@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.laminar
 import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.SideNavigationItemClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSubItemMod.SideNavigationSubItem as SideNavigationSubItemComponent
 import org.scalajs.dom
 
@@ -127,11 +128,15 @@ object SideNavigationSubItem extends WebComponent("ui5-side-navigation-sub-item"
 
   /** Fired when the component is activated either with a click/tap or by using the [Enter] or [Space] keys.
     *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
+    * |     ✅      |    ✅    |
     */
-  lazy val onClick: EventProp[Ui5CustomEvent[Ref]] = new EventProp("click")
+  lazy val onClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[SideNavigationItemClickEventDetail]] = new EventProp(
+    "click"
+  )
 
   // -- Slots --
 

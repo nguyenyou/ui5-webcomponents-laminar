@@ -9,6 +9,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeIt
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemMouseoutEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemMouseoverEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeItemToggleEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeMoveEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTreeMod.TreeSelectionChangeEventDetail
 import org.scalajs.dom
 
@@ -152,6 +153,28 @@ object Tree extends WebComponent("ui5-tree") {
   lazy val onItemToggle: EventProp[Ui5CustomEvent[Ref] & EventDetail[TreeItemToggleEventDetail]] = new EventProp(
     "item-toggle"
   )
+
+  /** Fired when a movable tree item is moved over a potential drop target during a drag-and-drop operation.
+    *
+    * If the new position is valid, prevent the default action of the event using `preventDefault()`.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onMove: EventProp[Ui5CustomEvent[Ref] & EventDetail[TreeMoveEventDetail]] = new EventProp("move")
+
+  /** Fired when a movable tree item is dropped onto a drop target.
+    *
+    * **Note:** The `move` event is fired only if there was a preceding `move-over` event with prevented default action.
+    *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ✅      |    ✅    |
+    */
+  lazy val onMoveOver: EventProp[Ui5CustomEvent[Ref] & EventDetail[TreeMoveEventDetail]] = new EventProp("move-over")
 
   /** Fired when selection is changed by user interaction in `Single`, `SingleStart`, `SingleEnd` and `Multiple` modes.
     *
