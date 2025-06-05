@@ -67,6 +67,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val FCL_START_SEPARATOR_TOOLTIP: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_SUBTITLE_ACHIEVEMENT")
+  @js.native
+  val IM_SUBTITLE_ACHIEVEMENT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_SUBTITLE_ADDCOLUMN")
   @js.native
   val IM_SUBTITLE_ADDCOLUMN: I18nText = js.native
@@ -191,6 +195,14 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val IM_SUBTITLE_UPLOADTOCLOUD: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_SUBTITLE_USERHASSIGNEDUP")
+  @js.native
+  val IM_SUBTITLE_USERHASSIGNEDUP: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_TITLE_ACHIEVEMENT")
+  @js.native
+  val IM_TITLE_ACHIEVEMENT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_TITLE_ADDCOLUMN")
   @js.native
   val IM_TITLE_ADDCOLUMN: I18nText = js.native
@@ -314,6 +326,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_TITLE_UPLOADTOCLOUD")
   @js.native
   val IM_TITLE_UPLOADTOCLOUD: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "IM_TITLE_USERHASSIGNEDUP")
+  @js.native
+  val IM_TITLE_USERHASSIGNEDUP: I18nText = js.native
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "NAVIGATION_MENU_POPOVER_HIDDEN_TEXT")
   @js.native
@@ -503,6 +519,14 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SIDE_NAVIGATION_COLLAPSED_LIST_ITEMS_ARIA_ROLE_DESC: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_FIXED_LIST_LABEL")
+  @js.native
+  val SIDE_NAVIGATION_FIXED_LIST_LABEL: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_FLEXIBLE_LIST_LABEL")
+  @js.native
+  val SIDE_NAVIGATION_FLEXIBLE_LIST_LABEL: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_ICON_COLLAPSE")
   @js.native
   val SIDE_NAVIGATION_ICON_COLLAPSE: I18nText = js.native
@@ -522,6 +546,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_OVERFLOW_ACCESSIBLE_NAME")
   @js.native
   val SIDE_NAVIGATION_OVERFLOW_ACCESSIBLE_NAME: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_OVERFLOW_ITEM_LABEL")
+  @js.native
+  val SIDE_NAVIGATION_OVERFLOW_ITEM_LABEL: I18nText = js.native
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SIDE_NAVIGATION_POPOVER_HIDDEN_TEXT")
   @js.native
@@ -714,6 +742,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "WIZARD_ACTIONSHEET_STEPS_ARIA_LABEL")
   @js.native
   val WIZARD_ACTIONSHEET_STEPS_ARIA_LABEL: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "WIZARD_CANCEL_BUTTON")
+  @js.native
+  val WIZARD_CANCEL_BUTTON: I18nText = js.native
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "WIZARD_LIST_ARIA_DESCRIBEDBY")
   @js.native

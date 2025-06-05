@@ -23,6 +23,10 @@ object distSideNavigationSelectableItemBaseMod {
     * Fired when the component is activated either with a click/tap or by using the [Enter] or [Space] keys.
     *
     * @public
+    * @param {boolean} altKey Returns whether the "ALT" key was pressed when the event was triggered.
+    * @param {boolean} ctrlKey Returns whether the "CTRL" key was pressed when the event was triggered.
+    * @param {boolean} metaKey Returns whether the "META" key was pressed when the event was triggered.
+    * @param {boolean} shiftKey Returns whether the "SHIFT" key was pressed when the event was triggered.
     */
   @JSImport("@ui5/webcomponents-fiori/dist/SideNavigationSelectableItemBase.js", JSImport.Default)
   @js.native
@@ -55,6 +59,10 @@ object distSideNavigationSelectableItemBaseMod {
     * Fired when the component is activated either with a click/tap or by using the [Enter] or [Space] keys.
     *
     * @public
+    * @param {boolean} altKey Returns whether the "ALT" key was pressed when the event was triggered.
+    * @param {boolean} ctrlKey Returns whether the "CTRL" key was pressed when the event was triggered.
+    * @param {boolean} metaKey Returns whether the "META" key was pressed when the event was triggered.
+    * @param {boolean} shiftKey Returns whether the "SHIFT" key was pressed when the event was triggered.
     */
   @js.native
   trait SideNavigationSelectableItemBase
@@ -95,6 +103,15 @@ object distSideNavigationSelectableItemBaseMod {
     var accessibilityAttributes: SideNavigationItemAccessibilityAttributes = js.native
     
     def ariaRole: menuitem | menuitemradio | treeitem = js.native
+    
+    /**
+      * Reference to the original side navigation item that opened the popover.
+      *
+      * @private
+      */
+    var associatedItem: js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default
+      ] = js.native
     
     /**
       * Item design.

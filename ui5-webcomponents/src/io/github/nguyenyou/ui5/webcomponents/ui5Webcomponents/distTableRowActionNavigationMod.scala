@@ -21,7 +21,6 @@ object distTableRowActionNavigationMod {
     * @extends TableRowActionBase
     * @since 2.7.0
     * @public
-    * @experimental
     */
   @JSImport("@ui5/webcomponents/dist/TableRowActionNavigation.js", JSImport.Default)
   @js.native
@@ -54,7 +53,6 @@ object distTableRowActionNavigationMod {
     * @extends TableRowActionBase
     * @since 2.7.0
     * @public
-    * @experimental
     */
   @js.native
   trait TableRowActionNavigation

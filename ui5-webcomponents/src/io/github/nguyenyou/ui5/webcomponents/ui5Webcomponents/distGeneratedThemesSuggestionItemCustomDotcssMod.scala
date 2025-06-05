@@ -9,13 +9,13 @@ object distGeneratedThemesSuggestionItemCustomDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents/dist/generated/themes/SuggestionItemCustom.css", JSImport.Default)
   @js.native
-  val default: /* :host{height:var(--_ui5-v2-10-0_list_item_dropdown_base_height)}
+  val default: /* :host{height:var(--_ui5-v2-11-0_list_item_dropdown_base_height)}
     */ String = js.native
   
-  type _To = /* :host{height:var(--_ui5-v2-10-0_list_item_dropdown_base_height)}
+  type _To = /* :host{height:var(--_ui5-v2-11-0_list_item_dropdown_base_height)}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesSuggestionItemCustomDotcssMod.foo` */
-  override def _to: /* :host{height:var(--_ui5-v2-10-0_list_item_dropdown_base_height)}
+  override def _to: /* :host{height:var(--_ui5-v2-11-0_list_item_dropdown_base_height)}
     */ String = default
 }

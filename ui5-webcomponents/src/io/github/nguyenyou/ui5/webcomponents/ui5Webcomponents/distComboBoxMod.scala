@@ -142,6 +142,8 @@ object distComboBoxMod {
     def _closeRespPopover(): Unit = js.native
     def _closeRespPopover(e: Event): Unit = js.native
     
+    def _dialogOkButtonText: String = js.native
+    
     var _effectiveShowClearIcon: Boolean = js.native
     
     def _filterItems(str: String): js.Array[IComboBoxItem] = js.native

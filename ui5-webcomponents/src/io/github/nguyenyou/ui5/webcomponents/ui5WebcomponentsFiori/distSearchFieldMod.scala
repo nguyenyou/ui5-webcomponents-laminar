@@ -156,6 +156,16 @@ object distSearchFieldMod {
     var eventDetails_SearchField: Input = js.native
     
     /**
+      * Defines the filter button slot, used to display an additional filtering button.
+      * This slot is intended for passing a `ui5-button` with a filter icon to provide extended filtering options.
+      *
+      * **Note:** Scope button and Filter button are mutually exclusive.
+      * @public
+      * @since 2.11.0
+      */
+    var filterButton: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default] = js.native
+    
+    /**
       * @private
       */
     var focusedInnerInput: Boolean = js.native

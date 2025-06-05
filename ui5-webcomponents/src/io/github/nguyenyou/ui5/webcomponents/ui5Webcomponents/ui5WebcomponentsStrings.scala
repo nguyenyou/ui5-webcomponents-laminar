@@ -40,6 +40,10 @@ object ui5WebcomponentsStrings {
   inline def End: End = "End".asInstanceOf[End]
   
   @js.native
+  sealed trait F2 extends StObject
+  inline def F2: F2 = "F2".asInstanceOf[F2]
+  
+  @js.native
   sealed trait FloatingFooter extends StObject
   inline def FloatingFooter: FloatingFooter = "FloatingFooter".asInstanceOf[FloatingFooter]
   
@@ -1672,14 +1676,6 @@ object ui5WebcomponentsStrings {
   inline def `ui5-slider-InputDesc`: `ui5-slider-InputDesc` = "ui5-slider-InputDesc".asInstanceOf[`ui5-slider-InputDesc`]
   
   @js.native
-  sealed trait `ui5-slider-accName ui5-slider-sliderDesc` extends StObject
-  inline def `ui5-slider-accName ui5-slider-sliderDesc`: `ui5-slider-accName ui5-slider-sliderDesc` = ("ui5-slider-accName ui5-slider-sliderDesc").asInstanceOf[`ui5-slider-accName ui5-slider-sliderDesc`]
-  
-  @js.native
-  sealed trait `ui5-slider-sliderDesc` extends StObject
-  inline def `ui5-slider-sliderDesc`: `ui5-slider-sliderDesc` = "ui5-slider-sliderDesc".asInstanceOf[`ui5-slider-sliderDesc`]
-  
-  @js.native
   sealed trait ul extends StObject
   inline def ul: ul = "ul".asInstanceOf[ul]
   
@@ -1748,4 +1744,8 @@ object ui5WebcomponentsStrings {
     extends StObject
        with Picker
   inline def year: year = "year".asInstanceOf[year]
+  
+  @js.native
+  sealed trait yearrange extends StObject
+  inline def yearrange: yearrange = "yearrange".asInstanceOf[yearrange]
 }

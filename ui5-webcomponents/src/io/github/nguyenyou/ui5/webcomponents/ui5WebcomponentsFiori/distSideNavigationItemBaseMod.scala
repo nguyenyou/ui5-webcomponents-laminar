@@ -1,6 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.ClickVoid
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.ClickSideNavigationItemClickEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +44,14 @@ object distSideNavigationItemBaseMod {
     
     def _classes: String = js.native
     
+    /**
+      * Defines if the item's group is disabled.
+      * @private
+      * @default false
+      * @since 2.10.0
+      */
+    var _groupDisabled: Boolean = js.native
+    
     var _sideNavigation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationMod.default = js.native
     
     def _tooltip: js.UndefOr[String] = js.native
@@ -66,12 +74,16 @@ object distSideNavigationItemBaseMod {
       */
     var disabled: Boolean = js.native
     
+    def effectiveDisabled: Boolean = js.native
+    
     def effectiveTabIndex: js.UndefOr[String] = js.native
     
     @JSName("eventDetails")
-    var eventDetails_SideNavigationItemBase: ClickVoid = js.native
+    var eventDetails_SideNavigationItemBase: ClickSideNavigationItemClickEventDetail = js.native
     
     var forcedTabIndex: js.UndefOr[String] = js.native
+    
+    def hasSubItems: Boolean = js.native
     
     var inPopover: Boolean = js.native
     
@@ -105,5 +117,35 @@ object distSideNavigationItemBaseMod {
       * @since 2.0.0
       */
     var tooltip: js.UndefOr[String] = js.native
+  }
+  
+  trait SideNavigationItemClickEventDetail extends StObject {
+    
+    var altKey: Boolean
+    
+    var ctrlKey: Boolean
+    
+    var metaKey: Boolean
+    
+    var shiftKey: Boolean
+  }
+  object SideNavigationItemClickEventDetail {
+    
+    inline def apply(altKey: Boolean, ctrlKey: Boolean, metaKey: Boolean, shiftKey: Boolean): SideNavigationItemClickEventDetail = {
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SideNavigationItemClickEventDetail]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigationItemClickEventDetail] (val x: Self) extends AnyVal {
+      
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    }
   }
 }

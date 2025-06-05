@@ -2,16 +2,13 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.std.EventListener
 import io.github.nguyenyou.ui5.webcomponents.std.Map
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Context
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Mincontentwidthchange
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.OverflowButton
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`before-close`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.toolbar
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
-import org.scalajs.dom.Element
 import org.scalajs.dom.Event
-import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -155,21 +152,9 @@ object distToolbarMod {
     
     def getCachedItemWidth(id: String): js.UndefOr[Double] = js.native
     
-    def getItemByID(id: String): js.UndefOr[
-        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
-      ] = js.native
-    
     def getItemWidth(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default): Double = js.native
     
-    def getItemsInfo(
-      items: js.Array[
-          io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
-        ]
-    ): js.Array[Context] = js.native
-    
     def getOverflowPopover(): io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.default = js.native
-    
-    def getRegisteredToolbarItemByID(id: String): HTMLElement | Null = js.native
     
     /**
       * Accessibility
@@ -177,8 +162,6 @@ object distToolbarMod {
     def hasAriaSemantics: Boolean = js.native
     
     def hasFlexibleSpacers: Boolean = js.native
-    
-    def hasItemWithText: Boolean = js.native
     
     def hideOverflowButton: Boolean = js.native
     
@@ -200,15 +183,11 @@ object distToolbarMod {
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
       ] = js.native
     
-    def itemsDOM: Element | Null = js.native
-    
     var itemsToOverflow: js.Array[
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
       ] = js.native
     
     var itemsWidth: Double = js.native
-    
-    var itemsWidthMeasured: Boolean = js.native
     
     var minContentWidth: Double = js.native
     
@@ -247,13 +226,13 @@ object distToolbarMod {
       */
     def overflowButtonSize: Double = js.native
     
-    def overflowItems: js.Array[Context] = js.native
+    def overflowItems: js.Array[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
+      ] = js.native
     
     def padding: Double = js.native
     
     var popoverOpen: Boolean = js.native
-    
-    def preprocessItems(): Unit = js.native
     
     /**
       * Layout management
@@ -275,7 +254,9 @@ object distToolbarMod {
         ]
     ): Boolean = js.native
     
-    def standardItems: js.Array[Context] = js.native
+    def standardItems: js.Array[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
+      ] = js.native
     
     def storeItemsWidth(): Unit = js.native
     

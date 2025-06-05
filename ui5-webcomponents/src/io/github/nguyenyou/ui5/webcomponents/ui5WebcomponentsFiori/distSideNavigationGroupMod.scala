@@ -91,6 +91,8 @@ object distSideNavigationGroupMod {
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default
       ] = js.native
     
+    var belowGroup: Boolean = js.native
+    
     def belowGroupClassName: _empty | `ui5-sn-item-group-below-group` = js.native
     
     /**

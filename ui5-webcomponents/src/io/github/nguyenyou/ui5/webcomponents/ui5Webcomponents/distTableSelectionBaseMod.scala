@@ -27,12 +27,19 @@ object distTableSelectionBaseMod {
     
     /**
       * Invalidates the table and its rows to re-evaluate the selection.
-      *
-      * @protected
       */
     /* protected */ def _invalidateTableAndRows(): Unit = js.native
     
     /* protected */ var _table: js.UndefOr[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.default] = js.native
+    
+    /**
+      * Defines the selection behavior.
+      *
+      * @default "RowSelector"
+      * @public
+      * @since 2.11
+      */
+    var behavior: /* template literal string: ${TableSelectionBehavior} */ String = js.native
     
     @JSName("eventDetails")
     var eventDetails_TableSelectionBase: ChangeTableSelectionBaseChangeEventDetail = js.native

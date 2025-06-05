@@ -249,7 +249,7 @@ object distButtonMod {
     
     def ariaDescriptionText: js.UndefOr[String] = js.native
     
-    def ariaLabelText: js.UndefOr[String] = js.native
+    def ariaLabelText: String = js.native
     
     /**
       * Adds a badge to the button.
@@ -285,6 +285,8 @@ object distButtonMod {
     var disabled: Boolean = js.native
     
     def effectiveAccRole: AriaRole = js.native
+    
+    def effectiveBadgeDescriptionText: String = js.native
     
     /**
       * Defines the icon, displayed as graphical element within the component after the button text.

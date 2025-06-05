@@ -205,7 +205,8 @@ object distTabMod {
       * Defines if the tab is movable.
       *
       * @default false
-      * @private
+      * @public
+      * @since 2.0.0
       */
     var movable: Boolean = js.native
     

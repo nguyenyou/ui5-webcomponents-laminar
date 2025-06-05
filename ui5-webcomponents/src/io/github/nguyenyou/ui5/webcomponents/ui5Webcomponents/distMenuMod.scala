@@ -135,9 +135,7 @@ object distMenuMod {
     
     def _close(): Unit = js.native
     
-    def _closeItemSubMenu(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
-    
-    def _isInstanceOfMenuItem(`object`: Any): /* is @ui5/webcomponents.@ui5/webcomponents/dist/MenuItem.default */ Boolean = js.native
+    def _closeOtherSubMenus(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
     
     def _itemClick(e: CustomEvent): Unit = js.native
     
@@ -147,11 +145,7 @@ object distMenuMod {
     
     def _menuItems: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default] = js.native
     
-    def _navigateOutOfEndContent(menuItem: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
-    def _navigateOutOfEndContent(
-      menuItem: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default,
-      isDownwards: Boolean
-    ): Unit = js.native
+    def _navigateOutOfEndContent(e: CustomEvent): Unit = js.native
     
     def _openItemSubMenu(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
     

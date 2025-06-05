@@ -21,7 +21,15 @@ object distTypesIllustrationMessageDesignMod {
     
     /* "Dot" */ val Dot: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Dot & String = js.native
     
+    /* "ExtraSmall" */ val ExtraSmall: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.ExtraSmall & String = js.native
+    
+    /* "Large" */ val Large: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Large & String = js.native
+    
+    /* "Medium" */ val Medium: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Medium & String = js.native
+    
     /* "Scene" */ val Scene: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Scene & String = js.native
+    
+    /* "Small" */ val Small: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Small & String = js.native
     
     /* "Spot" */ val Spot: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageDesignMod.IllustrationMessageDesign.Spot & String = js.native
   }
@@ -60,6 +68,7 @@ object distTypesIllustrationMessageDesignMod {
     /**
       * Dialog `Illustration` size (M breakpoint). Suitable for dialogs.
       * @public
+      * @deprecated Since 2.10.0, use Medium instead
       */
     @js.native
     sealed trait Dialog
@@ -69,6 +78,7 @@ object distTypesIllustrationMessageDesignMod {
     /**
       * Dot <code>Illustration</code> size (XS breakpoint). Suitable for table rows.
       * @public
+      * @deprecated Since 2.10.0, use ExtraSmall instead
       */
     @js.native
     sealed trait Dot
@@ -76,8 +86,36 @@ object distTypesIllustrationMessageDesignMod {
          with IllustrationMessageDesign
     
     /**
+      * ExtraSmall <code>Illustration</code> size (XS breakpoint). Suitable for table rows.
+      * @public
+      */
+    @js.native
+    sealed trait ExtraSmall
+      extends StObject
+         with IllustrationMessageDesign
+    
+    /**
+      * Large `Illustration` size (L breakpoint). Suitable for a `Page` or a table.
+      * @public
+      */
+    @js.native
+    sealed trait Large
+      extends StObject
+         with IllustrationMessageDesign
+    
+    /**
+      * Medium `Illustration` size (M breakpoint). Suitable for dialogs.
+      * @public
+      */
+    @js.native
+    sealed trait Medium
+      extends StObject
+         with IllustrationMessageDesign
+    
+    /**
       * Scene `Illustration` size (L breakpoint). Suitable for a `Page` or a table.
       * @public
+      * @deprecated Since 2.10.0, use Large instead
       */
     @js.native
     sealed trait Scene
@@ -85,8 +123,18 @@ object distTypesIllustrationMessageDesignMod {
          with IllustrationMessageDesign
     
     /**
+      * Small <code>Illustration</code> size (S breakpoint). Suitable for cards (four columns).
+      * @public
+      */
+    @js.native
+    sealed trait Small
+      extends StObject
+         with IllustrationMessageDesign
+    
+    /**
       * Spot <code>Illustration</code> size (S breakpoint). Suitable for cards (four columns).
       * @public
+      * @deprecated Since 2.10.0, use Small instead
       */
     @js.native
     sealed trait Spot

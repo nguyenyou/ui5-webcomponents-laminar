@@ -1,12 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuMod.MenuItemClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.ITabbable
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.HTMLElementassociatedItem
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.PickMenuItemClickEventDet
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Selectionchange
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.none
-import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
@@ -76,27 +73,6 @@ object distSideNavigationMod {
     @js.native
     def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
     inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
-  }
-  
-  trait NavigationMenuClickEventDetail
-    extends StObject
-       with MenuItemClickEventDetail {
-    
-    @JSName("item")
-    var item_NavigationMenuClickEventDetail: PickMenuItemClickEventDet
-  }
-  object NavigationMenuClickEventDetail {
-    
-    inline def apply(item: PickMenuItemClickEventDet, text: String): NavigationMenuClickEventDetail = {
-      val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NavigationMenuClickEventDetail]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NavigationMenuClickEventDetail] (val x: Self) extends AnyVal {
-      
-      inline def setItem(value: PickMenuItemClickEventDet): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
-    }
   }
   
   /**
@@ -305,8 +281,6 @@ object distSideNavigationMod {
     
     def getPickerTree(): SideNavigation = js.native
     
-    def handleOverflowItemClick(e: CustomEvent): Unit = js.native
-    
     def handlePopupItemClick(e: KeyboardEvent): Unit = js.native
     def handlePopupItemClick(e: PointerEvent): Unit = js.native
     
@@ -327,6 +301,12 @@ object distSideNavigationMod {
     var header: js.Array[HTMLElement] = js.native
     
     var inPopover: Boolean = js.native
+    
+    def initGroupsSettings(
+      items: js.Array[
+          io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default
+        ]
+    ): Unit = js.native
     
     def isOverflow: Boolean = js.native
     
@@ -349,6 +329,10 @@ object distSideNavigationMod {
     var items: js.Array[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemBaseMod.default
       ] = js.native
+    
+    def navigationMenuFooterHiddenText: String = js.native
+    
+    def navigationMenuPrimaryHiddenText: String = js.native
     
     def openOverflowMenu(opener: HTMLElement): Unit = js.native
     

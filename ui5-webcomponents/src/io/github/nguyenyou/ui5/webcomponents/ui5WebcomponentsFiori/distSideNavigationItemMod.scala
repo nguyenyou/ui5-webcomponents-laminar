@@ -74,6 +74,8 @@ object distSideNavigationItemMod {
     
     def _ariaHasPopup: js.UndefOr[AriaHasPopup] = js.native
     
+    def _ariaLabel: js.UndefOr[String] = js.native
+    
     def _arrowTooltip: String = js.native
     
     def _expanded: js.UndefOr[Boolean] = js.native

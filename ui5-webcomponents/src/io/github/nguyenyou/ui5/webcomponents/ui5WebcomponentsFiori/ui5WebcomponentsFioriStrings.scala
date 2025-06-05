@@ -24,6 +24,10 @@ object ui5WebcomponentsFioriStrings {
   inline def `3Dot5rem`: `3Dot5rem` = "3.5rem".asInstanceOf[`3Dot5rem`]
   
   @js.native
+  sealed trait Achievement extends StObject
+  inline def Achievement: Achievement = "Achievement".asInstanceOf[Achievement]
+  
+  @js.native
   sealed trait AddColumn extends StObject
   inline def AddColumn: AddColumn = "AddColumn".asInstanceOf[AddColumn]
   
@@ -36,6 +40,14 @@ object ui5WebcomponentsFioriStrings {
   inline def AddPeople: AddPeople = "AddPeople".asInstanceOf[AddPeople]
   
   @js.native
+  sealed trait AddPeopleToCalendar extends StObject
+  inline def AddPeopleToCalendar: AddPeopleToCalendar = "AddPeopleToCalendar".asInstanceOf[AddPeopleToCalendar]
+  
+  @js.native
+  sealed trait AddingColumns extends StObject
+  inline def AddingColumns: AddingColumns = "AddingColumns".asInstanceOf[AddingColumns]
+  
+  @js.native
   sealed trait BalloonSky extends StObject
   inline def BalloonSky: BalloonSky = "BalloonSky".asInstanceOf[BalloonSky]
   
@@ -46,6 +58,10 @@ object ui5WebcomponentsFioriStrings {
   @js.native
   sealed trait Connection extends StObject
   inline def Connection: Connection = "Connection".asInstanceOf[Connection]
+  
+  @js.native
+  sealed trait DragFilesToUpload extends StObject
+  inline def DragFilesToUpload: DragFilesToUpload = "DragFilesToUpload".asInstanceOf[DragFilesToUpload]
   
   @js.native
   sealed trait EmptyCalendar extends StObject
@@ -72,12 +88,24 @@ object ui5WebcomponentsFioriStrings {
   inline def FilterTable: FilterTable = "FilterTable".asInstanceOf[FilterTable]
   
   @js.native
+  sealed trait FilteringColumns extends StObject
+  inline def FilteringColumns: FilteringColumns = "FilteringColumns".asInstanceOf[FilteringColumns]
+  
+  @js.native
   sealed trait GroupTable extends StObject
   inline def GroupTable: GroupTable = "GroupTable".asInstanceOf[GroupTable]
   
   @js.native
+  sealed trait GroupingColumns extends StObject
+  inline def GroupingColumns: GroupingColumns = "GroupingColumns".asInstanceOf[GroupingColumns]
+  
+  @js.native
   sealed trait Horizontal extends StObject
   inline def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
+  
+  @js.native
+  sealed trait KeyTask extends StObject
+  inline def KeyTask: KeyTask = "KeyTask".asInstanceOf[KeyTask]
   
   @js.native
   sealed trait MidColumnFullScreen extends StObject
@@ -90,6 +118,10 @@ object ui5WebcomponentsFioriStrings {
   @js.native
   sealed trait NoActivities extends StObject
   inline def NoActivities: NoActivities = "NoActivities".asInstanceOf[NoActivities]
+  
+  @js.native
+  sealed trait NoChartData extends StObject
+  inline def NoChartData: NoChartData = "NoChartData".asInstanceOf[NoChartData]
   
   @js.native
   sealed trait NoColumnsSet extends StObject
@@ -152,12 +184,20 @@ object ui5WebcomponentsFioriStrings {
   inline def PageNotFound: PageNotFound = "PageNotFound".asInstanceOf[PageNotFound]
   
   @js.native
+  sealed trait ReceiveAppreciation extends StObject
+  inline def ReceiveAppreciation: ReceiveAppreciation = "ReceiveAppreciation".asInstanceOf[ReceiveAppreciation]
+  
+  @js.native
   sealed trait ReloadScreen extends StObject
   inline def ReloadScreen: ReloadScreen = "ReloadScreen".asInstanceOf[ReloadScreen]
   
   @js.native
   sealed trait ResizeColumn extends StObject
   inline def ResizeColumn: ResizeColumn = "ResizeColumn".asInstanceOf[ResizeColumn]
+  
+  @js.native
+  sealed trait ResizingColumns extends StObject
+  inline def ResizingColumns: ResizingColumns = "ResizingColumns".asInstanceOf[ResizingColumns]
   
   @js.native
   sealed trait `SAP-icons-v4Slashaccept` extends StObject
@@ -244,6 +284,10 @@ object ui5WebcomponentsFioriStrings {
   inline def SortColumn: SortColumn = "SortColumn".asInstanceOf[SortColumn]
   
   @js.native
+  sealed trait SortingColumns extends StObject
+  inline def SortingColumns: SortingColumns = "SortingColumns".asInstanceOf[SortingColumns]
+  
+  @js.native
   sealed trait SuccessBalloon extends StObject
   inline def SuccessBalloon: SuccessBalloon = "SuccessBalloon".asInstanceOf[SuccessBalloon]
   
@@ -318,6 +362,10 @@ object ui5WebcomponentsFioriStrings {
   @js.native
   sealed trait UploadToCloud extends StObject
   inline def UploadToCloud: UploadToCloud = "UploadToCloud".asInstanceOf[UploadToCloud]
+  
+  @js.native
+  sealed trait UserHasSignedUp extends StObject
+  inline def UserHasSignedUp: UserHasSignedUp = "UserHasSignedUp".asInstanceOf[UserHasSignedUp]
   
   @js.native
   sealed trait Vertical extends StObject

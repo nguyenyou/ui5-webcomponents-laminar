@@ -189,8 +189,6 @@ object distSplitButtonMod {
         ]
     ): Unit = js.native
     
-    def _handleShiftOrEscapePressed(): Unit = js.native
-    
     /**
       * Defines the visibility of the arrow button of the component.
       *
@@ -213,20 +211,7 @@ object distSplitButtonMod {
       */
     def _isDefaultAction(e: KeyboardEvent): Boolean = js.native
     
-    var _isDefaultActionPressed: Boolean = js.native
-    
-    var _isKeyDownOperation: Boolean = js.native
-    
-    /**
-      * Checks if the pressed key is an escape key or shift key.
-      * @param e - keyboard event
-      * @private
-      */
-    def _isShiftOrEscape(e: KeyboardEvent): Boolean = js.native
-    
     def _onArrowButtonActiveStateChange(e: CustomEvent): Unit = js.native
-    
-    def _onFocusIn(): Unit = js.native
     
     def _onFocusOut(): Unit = js.native
     
@@ -236,22 +221,17 @@ object distSplitButtonMod {
     
     def _onKeyUp(e: KeyboardEvent): Unit = js.native
     
+    def _resetActionButtonStates(): Unit = js.native
+    
     def _setTabIndexValue(): Unit = js.native
     def _setTabIndexValue(innerButtonPressed: Boolean): Unit = js.native
     
     /**
-      * Indicates if there is SHIFT or ESCAPE key pressed
+      * Indicates if there is Shift or Escape key pressed while Space key is down.
       * @default false
       * @private
       */
-    var _shiftOrEscapePressed: Boolean = js.native
-    
-    /**
-      * Indicates if there is Space key pressed
-      * @default false
-      * @private
-      */
-    var _spacePressed: Boolean = js.native
+    var _shiftOrEscapePressedDuringSpace: Boolean = js.native
     
     /**
       * Defines the tabIndex of the component.

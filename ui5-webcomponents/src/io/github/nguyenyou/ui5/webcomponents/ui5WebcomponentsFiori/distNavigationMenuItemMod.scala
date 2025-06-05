@@ -1,6 +1,8 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings._empty
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +61,18 @@ object distNavigationMenuItemMod {
   trait NavigationMenuItem
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default {
     
+    def _activate(e: KeyboardEvent): Unit = js.native
+    def _activate(e: MouseEvent): Unit = js.native
+    
+    def _handleFocus(
+      associatedItem: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default
+    ): Unit = js.native
+    
     def _href: js.UndefOr[String] = js.native
+    
+    var associatedItem: js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default
+      ] = js.native
     
     var design: /* template literal string: ${SideNavigationItemDesign} */ String = js.native
     

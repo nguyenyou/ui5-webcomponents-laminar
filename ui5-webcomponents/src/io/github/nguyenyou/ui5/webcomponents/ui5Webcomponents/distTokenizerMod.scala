@@ -151,6 +151,8 @@ object distTokenizerMod {
     
     def _calcNextTokenIndex(focusedToken: IToken, tokens: js.Array[IToken], backwards: Boolean): Double = js.native
     
+    def _cancelButtonText: String = js.native
+    
     def _clearAllText: String = js.native
     
     def _click(e: MouseEvent): Unit = js.native
@@ -216,6 +218,8 @@ object distTokenizerMod {
     def _nMoreListMode: None | Delete = js.native
     
     def _nMoreText: js.UndefOr[String] = js.native
+    
+    def _okButtonText: String = js.native
     
     def _onPopoverListKeydown(e: KeyboardEvent): Unit = js.native
     

@@ -609,6 +609,8 @@ trait ATTRIBUTENODE extends StObject {
   
   var __id: js.UndefOr[String] = js.native
   
+  var __shouldHydrate: Boolean = js.native
+  
   def _assignIndividualSlotsToChildren(): Unit = js.native
   
   def _attachSlotChange(slot: HTMLSlotElement, slotName: String, invalidateOnChildChange: Boolean): Unit = js.native

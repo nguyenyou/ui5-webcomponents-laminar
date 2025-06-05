@@ -119,6 +119,9 @@ object distAvatarMod {
     @JSName("_handleResizeBound")
     var _handleResizeBound_Original: ResizeObserverCallback = js.native
     
+    /**
+      * @private
+      */
     var _hasImage: Boolean = js.native
     
     def _interactive: Boolean = js.native

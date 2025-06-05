@@ -34,13 +34,6 @@ object distToolbarItemMod {
   trait ToolbarItem
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    /**
-      * Returns if the item contains text. Used to position the text properly inside the popover.
-      * Aligned left if the item has text, default aligned otherwise.
-      * @protected
-      */
-    def containsText: Boolean = js.native
-    
     @JSName("eventDetails")
     var eventDetails_ToolbarItem: Closeoverflow = js.native
     
@@ -64,6 +57,14 @@ object distToolbarItemMod {
       * @protected
       */
     def isInteractive: Boolean = js.native
+    
+    /**
+      * Defines if the toolbar item is overflowed.
+      * @default false
+      * @protected
+      * @since 2.11.0
+      */
+    var isOverflowed: Boolean = js.native
     
     /**
       * Returns if the item is separator.

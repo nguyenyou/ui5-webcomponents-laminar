@@ -115,6 +115,14 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val BUTTON_ARIA_TYPE_REJECT: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "BUTTON_BADGE_MANY_ITEMS")
+  @js.native
+  val BUTTON_BADGE_MANY_ITEMS: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "BUTTON_BADGE_ONE_ITEM")
+  @js.native
+  val BUTTON_BADGE_ONE_ITEM: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "CALENDAR_HEADER_NEXT_BUTTON")
   @js.native
   val CALENDAR_HEADER_NEXT_BUTTON: I18nText = js.native
@@ -243,6 +251,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val COMBOBOX_AVAILABLE_OPTIONS: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "COMBOBOX_DIALOG_OK_BUTTON")
+  @js.native
+  val COMBOBOX_DIALOG_OK_BUTTON: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DATEPICKER_DATE_DESCRIPTION")
   @js.native
   val DATEPICKER_DATE_DESCRIPTION: I18nText = js.native
@@ -314,6 +326,38 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DURATION_INPUT_DESCRIPTION")
   @js.native
   val DURATION_INPUT_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_DATERANGE_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_DATERANGE_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_DATE_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_DATE_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_EMPTY_SELECTED_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_EMPTY_SELECTED_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NAVIGATION_ICON_TOOLTIP")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NAVIGATION_ICON_TOOLTIP: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_SELECTED_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_SELECTED_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_TODAY_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_TODAY_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_TOMORROW_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_TOMORROW_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_YESTERDAY_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_YESTERDAY_TEXT: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "EMPTY_INDICATOR_ACCESSIBLE_TEXT")
   @js.native
@@ -402,6 +446,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "INPUT_SUGGESTIONS_NO_HIT")
   @js.native
   val INPUT_SUGGESTIONS_NO_HIT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "INPUT_SUGGESTIONS_OK_BUTTON")
+  @js.native
+  val INPUT_SUGGESTIONS_OK_BUTTON: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "INPUT_SUGGESTIONS_ONE_HIT")
   @js.native
@@ -819,6 +867,14 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val TOKENIZER_CLEAR_ALL: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TOKENIZER_DIALOG_CANCEL_BUTTON")
+  @js.native
+  val TOKENIZER_DIALOG_CANCEL_BUTTON: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TOKENIZER_DIALOG_OK_BUTTON")
+  @js.native
+  val TOKENIZER_DIALOG_OK_BUTTON: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TOKENIZER_POPOVER_REMOVE")
   @js.native
   val TOKENIZER_POPOVER_REMOVE: I18nText = js.native
@@ -894,4 +950,8 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "YEAR_PICKER_DESCRIPTION")
   @js.native
   val YEAR_PICKER_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "YEAR_RANGE_PICKER_DESCRIPTION")
+  @js.native
+  val YEAR_RANGE_PICKER_DESCRIPTION: I18nText = js.native
 }

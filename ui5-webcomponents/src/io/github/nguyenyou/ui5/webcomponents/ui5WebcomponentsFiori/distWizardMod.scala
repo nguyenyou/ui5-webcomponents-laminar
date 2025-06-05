@@ -326,6 +326,8 @@ object distWizardMod {
     
     def _closeRespPopover(): Unit = js.native
     
+    def _dialogCancelButtonText: String = js.native
+    
     /**
       * Stores references to the grouped steps.
       * @private

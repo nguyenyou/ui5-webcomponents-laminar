@@ -6,6 +6,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Selectionchan
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.day
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.month
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.year
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.yearrange
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
@@ -118,7 +119,10 @@ object distCalendarMod {
     * @csspart month-cell-selected-between - Used to style the day cells in between of selected months in range.
     * @csspart year-cell - Used to style the year cells.
     * @csspart year-cell-selected - Used to style the year cells when selected.
-    * @csspart year-cell-selected-between - Used to style the day cells in between of selected years in range.
+    * @csspart year-cell-selected-between - Used to style the year cells in between of selected years in range.
+    * @csspart year-range-cell - Used to style the year range cells.
+    * @csspart year-range-cell-selected - Used to style the year range cells when selected.
+    * @csspart year-range-cell-selected-between - Used to style the year range cells in between of selected year ranges.
     * @since 1.0.0-rc.11
     */
   @JSImport("@ui5/webcomponents/dist/Calendar.js", JSImport.Default)
@@ -240,7 +244,10 @@ object distCalendarMod {
     * @csspart month-cell-selected-between - Used to style the day cells in between of selected months in range.
     * @csspart year-cell - Used to style the year cells.
     * @csspart year-cell-selected - Used to style the year cells when selected.
-    * @csspart year-cell-selected-between - Used to style the day cells in between of selected years in range.
+    * @csspart year-cell-selected-between - Used to style the year cells in between of selected years in range.
+    * @csspart year-range-cell - Used to style the year range cells.
+    * @csspart year-range-cell-selected - Used to style the year range cells when selected.
+    * @csspart year-range-cell-selected-between - Used to style the year range cells in between of selected year ranges.
     * @since 1.0.0-rc.11
     */
   @js.native
@@ -248,12 +255,14 @@ object distCalendarMod {
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distCalendarPartMod.default {
     
     /**
-      * Which picker is currently visible to the user: day/month/year
+      * Which picker is currently visible to the user: day/month/year/yearRange
       * @private
       */
-    var _currentPicker: day | month | year = js.native
+    var _currentPicker: day | month | year | yearrange = js.native
     
     def _currentPickerDOM: ICalendarPicker = js.native
+    
+    def _currentYearRange: CalendarYearRangeT = js.native
     
     def _fireEventAndUpdateSelectedDates(selectedDates: js.Array[Double]): Unit = js.native
     
@@ -262,6 +271,10 @@ object distCalendarMod {
     var _headerYearButtonText: js.UndefOr[String] = js.native
     
     var _headerYearButtonTextSecType: js.UndefOr[String] = js.native
+    
+    var _headerYearRangeButtonText: js.UndefOr[String] = js.native
+    
+    var _headerYearRangeButtonTextSecType: js.UndefOr[String] = js.native
     
     def _isDayPickerHidden: Boolean = js.native
     
@@ -272,16 +285,24 @@ object distCalendarMod {
     def _isHeaderMonthButtonHidden: Boolean = js.native
     
     /**
-      * The year button is hidden when the year picker is shown
+      * The year button is shown only in the day & month pickers
       * @private
       */
     def _isHeaderYearButtonHidden: Boolean = js.native
+    
+    /**
+      * The year range picker button is shown only in the year picker
+      * @private
+      */
+    def _isHeaderYearRangeButtonHidden: Boolean = js.native
     
     def _isMonthPickerHidden: Boolean = js.native
     
     def _isValidCalendarDate(dateString: String): Boolean = js.native
     
     def _isYearPickerHidden: Boolean = js.native
+    
+    def _isYearRangePickerHidden: Boolean = js.native
     
     var _nextButtonDisabled: Boolean = js.native
     
@@ -299,6 +320,8 @@ object distCalendarMod {
     var _pickersMode: /* template literal string: ${CalendarPickersMode} */ String = js.native
     
     var _previousButtonDisabled: Boolean = js.native
+    
+    var _rangeStartYear: js.UndefOr[Double] = js.native
     
     /**
       * @private
@@ -382,6 +405,11 @@ object distCalendarMod {
       */
     def onHeaderShowYearPress(): Unit = js.native
     
+    /**
+      * The user clicked the "year range" button in the YearPicker header
+      */
+    def onHeaderShowYearRangePress(): Unit = js.native
+    
     def onMonthButtonKeyDown(e: KeyboardEvent): Unit = js.native
     
     def onMonthButtonKeyUp(e: KeyboardEvent): Unit = js.native
@@ -398,9 +426,15 @@ object distCalendarMod {
     
     def onSelectedYearChange(e: CustomEvent): Unit = js.native
     
+    def onSelectedYearRangeChange(e: CustomEvent): Unit = js.native
+    
     def onYearButtonKeyDown(e: KeyboardEvent): Unit = js.native
     
     def onYearButtonKeyUp(e: KeyboardEvent): Unit = js.native
+    
+    def onYearRangeButtonKeyDown(e: KeyboardEvent): Unit = js.native
+    
+    def onYearRangeButtonKeyUp(e: KeyboardEvent): Unit = js.native
     
     def secondMonthButtonText: String = js.native
     
@@ -435,6 +469,8 @@ object distCalendarMod {
     def showMonth(): Unit = js.native
     
     def showYear(): Unit = js.native
+    
+    def showYearRange(): Unit = js.native
     
     /**
       * Defines the special dates, visually emphasized in the calendar.
@@ -478,17 +514,37 @@ object distCalendarMod {
     }
   }
   
+  trait CalendarYearRangeT extends StObject {
+    
+    var endYear: Double
+    
+    var startYear: Double
+  }
+  object CalendarYearRangeT {
+    
+    inline def apply(endYear: Double, startYear: Double): CalendarYearRangeT = {
+      val __obj = js.Dynamic.literal(endYear = endYear.asInstanceOf[js.Any], startYear = startYear.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CalendarYearRangeT]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarYearRangeT] (val x: Self) extends AnyVal {
+      
+      inline def setEndYear(value: Double): Self = StObject.set(x, "endYear", value.asInstanceOf[js.Any])
+      
+      inline def setStartYear(value: Double): Self = StObject.set(x, "startYear", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ICalendarPicker extends StObject {
     
     var _autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var _firstYear: js.UndefOr[Double] = js.undefined
+    var _currentYearRange: js.UndefOr[CalendarYearRangeT] = js.undefined
     
     def _hasNextPage(): Boolean
     
     def _hasPreviousPage(): Boolean
-    
-    var _lastYear: js.UndefOr[Double] = js.undefined
     
     def _showNextPage(): Unit
     
@@ -513,17 +569,13 @@ object distCalendarMod {
       
       inline def set_autoFocusUndefined: Self = StObject.set(x, "_autoFocus", js.undefined)
       
-      inline def set_firstYear(value: Double): Self = StObject.set(x, "_firstYear", value.asInstanceOf[js.Any])
+      inline def set_currentYearRange(value: CalendarYearRangeT): Self = StObject.set(x, "_currentYearRange", value.asInstanceOf[js.Any])
       
-      inline def set_firstYearUndefined: Self = StObject.set(x, "_firstYear", js.undefined)
+      inline def set_currentYearRangeUndefined: Self = StObject.set(x, "_currentYearRange", js.undefined)
       
       inline def set_hasNextPage(value: () => Boolean): Self = StObject.set(x, "_hasNextPage", js.Any.fromFunction0(value))
       
       inline def set_hasPreviousPage(value: () => Boolean): Self = StObject.set(x, "_hasPreviousPage", js.Any.fromFunction0(value))
-      
-      inline def set_lastYear(value: Double): Self = StObject.set(x, "_lastYear", value.asInstanceOf[js.Any])
-      
-      inline def set_lastYearUndefined: Self = StObject.set(x, "_lastYear", js.undefined)
       
       inline def set_showNextPage(value: () => Unit): Self = StObject.set(x, "_showNextPage", js.Any.fromFunction0(value))
       

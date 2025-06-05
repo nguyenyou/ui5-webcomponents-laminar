@@ -24,7 +24,6 @@ object distTableCellMod {
     * @extends TableCellBase
     * @since 2.0.0
     * @public
-    * @experimental This web component is available since 2.0 with an experimental flag and its API and behavior are subject to change.
     */
   @JSImport("@ui5/webcomponents/dist/TableCell.js", JSImport.Default)
   @js.native
@@ -46,7 +45,6 @@ object distTableCellMod {
     * @extends TableCellBase
     * @since 2.0.0
     * @public
-    * @experimental This web component is available since 2.0 with an experimental flag and its API and behavior are subject to change.
     */
   @js.native
   trait TableCell

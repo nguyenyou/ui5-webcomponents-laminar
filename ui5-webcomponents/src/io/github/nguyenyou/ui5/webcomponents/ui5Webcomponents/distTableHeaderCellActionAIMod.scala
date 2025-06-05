@@ -21,7 +21,6 @@ object distTableHeaderCellActionAIMod {
     * @extends TableHeaderCellActionBase
     * @since 2.8.0
     * @public
-    * @experimental
     */
   @JSImport("@ui5/webcomponents/dist/TableHeaderCellActionAI.js", JSImport.Default)
   @js.native
@@ -54,7 +53,6 @@ object distTableHeaderCellActionAIMod {
     * @extends TableHeaderCellActionBase
     * @since 2.8.0
     * @public
-    * @experimental
     */
   @js.native
   trait TableHeaderCellActionAI

@@ -887,6 +887,8 @@ object distUi5elementMod {
     
     var __id: js.UndefOr[String] = js.native
     
+    var __shouldHydrate: Boolean = js.native
+    
     /**
       * @private
       */

@@ -11,7 +11,8 @@ object distUtilGetEffectiveScrollbarStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): _empty | (/* ::-webkit-scrollbar:horizontal {
+  inline def default(): _empty | (/* 
+  ::-webkit-scrollbar:horizontal {
   	height: var(--sapScrollBar_Dimension);
   }
   ::-webkit-scrollbar:vertical {
@@ -24,13 +25,15 @@ object distUtilGetEffectiveScrollbarStyleMod {
   ::-webkit-scrollbar-thumb {
   	border-radius: var(--sapElement_BorderCornerRadius);
   	background-color: var(--sapScrollBar_FaceColor);
+  	border: 0.125rem solid var(--sapScrollBar_TrackColor);
   }
   ::-webkit-scrollbar-thumb:hover {
   	background-color: var(--sapScrollBar_Hover_FaceColor);
   }
   ::-webkit-scrollbar-corner {
   	background-color: var(--sapScrollBar_TrackColor);
-  } */ String) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[_empty | (/* ::-webkit-scrollbar:horizontal {
+  } */ String) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[_empty | (/* 
+  ::-webkit-scrollbar:horizontal {
   	height: var(--sapScrollBar_Dimension);
   }
   ::-webkit-scrollbar:vertical {
@@ -43,6 +46,7 @@ object distUtilGetEffectiveScrollbarStyleMod {
   ::-webkit-scrollbar-thumb {
   	border-radius: var(--sapElement_BorderCornerRadius);
   	background-color: var(--sapScrollBar_FaceColor);
+  	border: 0.125rem solid var(--sapScrollBar_TrackColor);
   }
   ::-webkit-scrollbar-thumb:hover {
   	background-color: var(--sapScrollBar_Hover_FaceColor);

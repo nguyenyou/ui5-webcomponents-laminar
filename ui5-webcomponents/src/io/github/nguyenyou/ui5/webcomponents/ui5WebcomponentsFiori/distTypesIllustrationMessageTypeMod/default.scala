@@ -11,17 +11,25 @@ object default extends StObject {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[IllustrationMessageType & String] = js.native
   
+  /* "Achievement" */ val Achievement: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.Achievement & String = js.native
+  
   /* "AddColumn" */ val AddColumn: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.AddColumn & String = js.native
   
   /* "AddDimensions" */ val AddDimensions: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.AddDimensions & String = js.native
   
   /* "AddPeople" */ val AddPeople: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.AddPeople & String = js.native
   
+  /* "AddPeopleToCalendar" */ val AddPeopleToCalendar: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.AddPeopleToCalendar & String = js.native
+  
+  /* "AddingColumns" */ val AddingColumns: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.AddingColumns & String = js.native
+  
   /* "BalloonSky" */ val BalloonSky: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.BalloonSky & String = js.native
   
   /* "BeforeSearch" */ val BeforeSearch: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.BeforeSearch & String = js.native
   
   /* "Connection" */ val Connection: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.Connection & String = js.native
+  
+  /* "DragFilesToUpload" */ val DragFilesToUpload: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.DragFilesToUpload & String = js.native
   
   /* "EmptyCalendar" */ val EmptyCalendar: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.EmptyCalendar & String = js.native
   
@@ -33,11 +41,19 @@ object default extends StObject {
   
   /* "FilterTable" */ val FilterTable: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.FilterTable & String = js.native
   
+  /* "FilteringColumns" */ val FilteringColumns: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.FilteringColumns & String = js.native
+  
   /* "GroupTable" */ val GroupTable: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.GroupTable & String = js.native
+  
+  /* "GroupingColumns" */ val GroupingColumns: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.GroupingColumns & String = js.native
+  
+  /* "KeyTask" */ val KeyTask: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.KeyTask & String = js.native
   
   /* "NewMail" */ val NewMail: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.NewMail & String = js.native
   
   /* "NoActivities" */ val NoActivities: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.NoActivities & String = js.native
+  
+  /* "NoChartData" */ val NoChartData: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.NoChartData & String = js.native
   
   /* "NoColumnsSet" */ val NoColumnsSet: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.NoColumnsSet & String = js.native
   
@@ -67,9 +83,13 @@ object default extends StObject {
   
   /* "PageNotFound" */ val PageNotFound: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.PageNotFound & String = js.native
   
+  /* "ReceiveAppreciation" */ val ReceiveAppreciation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.ReceiveAppreciation & String = js.native
+  
   /* "ReloadScreen" */ val ReloadScreen: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.ReloadScreen & String = js.native
   
   /* "ResizeColumn" */ val ResizeColumn: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.ResizeColumn & String = js.native
+  
+  /* "ResizingColumns" */ val ResizingColumns: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.ResizingColumns & String = js.native
   
   /* "SearchEarth" */ val SearchEarth: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.SearchEarth & String = js.native
   
@@ -108,6 +128,8 @@ object default extends StObject {
   /* "SleepingBell" */ val SleepingBell: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.SleepingBell & String = js.native
   
   /* "SortColumn" */ val SortColumn: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.SortColumn & String = js.native
+  
+  /* "SortingColumns" */ val SortingColumns: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.SortingColumns & String = js.native
   
   /* "SuccessBalloon" */ val SuccessBalloon: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.SuccessBalloon & String = js.native
   
@@ -220,4 +242,6 @@ object default extends StObject {
   /* "UploadCollection" */ val UploadCollection: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.UploadCollection & String = js.native
   
   /* "UploadToCloud" */ val UploadToCloud: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.UploadToCloud & String = js.native
+  
+  /* "UserHasSignedUp" */ val UserHasSignedUp: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.UserHasSignedUp & String = js.native
 }

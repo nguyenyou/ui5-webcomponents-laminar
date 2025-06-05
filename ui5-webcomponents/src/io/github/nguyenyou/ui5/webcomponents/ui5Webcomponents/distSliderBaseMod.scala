@@ -4,9 +4,8 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ChangeInput
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.LabelContainer
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`0`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.F2
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-slider-InputDesc`
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-slider-accName ui5-slider-sliderDesc`
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-slider-sliderDesc`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.left
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.right
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
@@ -140,7 +139,9 @@ object distSliderBaseMod {
     
     def _ariaDescribedByInputText: String = js.native
     
-    def _ariaLabelledByHandleText: (`ui5-slider-accName ui5-slider-sliderDesc`) | `ui5-slider-sliderDesc` = js.native
+    def _ariaKeyshortcuts: js.UndefOr[F2] = js.native
+    
+    def _ariaLabel: String = js.native
     
     def _ariaLabelledByInputText: String = js.native
     

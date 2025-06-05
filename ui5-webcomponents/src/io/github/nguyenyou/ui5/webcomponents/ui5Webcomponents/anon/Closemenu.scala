@@ -2,6 +2,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeCloseEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuBeforeOpenEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.MenuNavigateOutOfEndContentEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ trait Closemenu extends StObject {
   
   var `close-menu`: Unit
   
+  var `exit-end-content`: MenuNavigateOutOfEndContentEventDetail
+  
   var open: Unit
 }
 object Closemenu {
@@ -25,12 +28,14 @@ object Closemenu {
     `before-open`: MenuBeforeOpenEventDetail,
     close: Unit,
     `close-menu`: Unit,
+    `exit-end-content`: MenuNavigateOutOfEndContentEventDetail,
     open: Unit
   ): Closemenu = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.updateDynamic("before-close")(`before-close`.asInstanceOf[js.Any])
     __obj.updateDynamic("before-open")(`before-open`.asInstanceOf[js.Any])
     __obj.updateDynamic("close-menu")(`close-menu`.asInstanceOf[js.Any])
+    __obj.updateDynamic("exit-end-content")(`exit-end-content`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Closemenu]
   }
   
@@ -44,6 +49,8 @@ object Closemenu {
     inline def setClose(value: Unit): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     inline def `setClose-menu`(value: Unit): Self = StObject.set(x, "close-menu", value.asInstanceOf[js.Any])
+    
+    inline def `setExit-end-content`(value: MenuNavigateOutOfEndContentEventDetail): Self = StObject.set(x, "exit-end-content", value.asInstanceOf[js.Any])
     
     inline def setOpen(value: Unit): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }

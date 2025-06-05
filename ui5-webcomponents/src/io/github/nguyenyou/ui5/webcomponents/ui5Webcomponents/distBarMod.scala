@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Label
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.AriaRole
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -95,11 +96,29 @@ object distBarMod {
     def accInfo: Label = js.native
     
     /**
+      * Specifies the ARIA role applied to the component for accessibility purposes.
+      *
+      * **Note:**
+      *
+      * - Set accessibleRole to "toolbar" only when the component contains two or more active, interactive elements (such as buttons, links, or input fields) within the bar.
+      *
+      * - If there is only one or no active element, it is recommended to avoid using the "toolbar" role, as it implies a grouping of multiple interactive controls.
+      *
+      * @public
+      * @default "Toolbar"
+      * @since 2.10.0
+      *
+      */
+    var accessibleRole: /* template literal string: ${BarAccessibleRole} */ String = js.native
+    
+    /**
       * Defines the component's design.
       * @default "Header"
       * @public
       */
     var design: /* template literal string: ${BarDesign} */ String = js.native
+    
+    def effectiveRole: js.UndefOr[AriaRole] = js.native
     
     /**
       * Defines the content at the end of the bar.

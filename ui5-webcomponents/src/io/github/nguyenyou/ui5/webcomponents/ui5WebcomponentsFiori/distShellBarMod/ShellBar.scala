@@ -215,8 +215,6 @@ trait ShellBar
   
   def _shellbarText: String = js.native
   
-  var _showSearchField: Boolean = js.native
-  
   def _toggleActionPopover(): Unit = js.native
   
   def _updateContentInfo(newContentInfo: js.Array[IShellBarContentItem]): Unit = js.native
@@ -451,6 +449,12 @@ trait ShellBar
   
   def onInitialRendering(): js.Promise[Unit] = js.native
   
+  def onSearch(): Unit = js.native
+  
+  def onSearchClose(): Unit = js.native
+  
+  def onSearchOpen(): Unit = js.native
+  
   /**
     * Returns the `overflow` icon DOM ref.
     * @public
@@ -555,7 +559,6 @@ trait ShellBar
     */
   var showProductSwitch: Boolean = js.native
   
-  def showSearchField: Boolean = js.native
   /**
     * Defines, if the Search Field would be displayed when there is a valid `searchField` slot.
     *
@@ -563,7 +566,7 @@ trait ShellBar
     * @default false
     * @public
     */
-  def showSearchField_=(value: Boolean): Unit = js.native
+  var showSearchField: Boolean = js.native
   
   def showStartSeparator: Boolean = js.native
   

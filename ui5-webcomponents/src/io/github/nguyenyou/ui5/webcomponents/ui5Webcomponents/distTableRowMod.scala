@@ -23,7 +23,6 @@ object distTableRowMod {
     * @extends TableRowBase
     * @since 2.0.0
     * @public
-    * @experimental This web component is available since 2.0 with an experimental flag and its API and behavior are subject to change.
     */
   @JSImport("@ui5/webcomponents/dist/TableRow.js", JSImport.Default)
   @js.native
@@ -44,7 +43,6 @@ object distTableRowMod {
     * @extends TableRowBase
     * @since 2.0.0
     * @public
-    * @experimental This web component is available since 2.0 with an experimental flag and its API and behavior are subject to change.
     */
   @js.native
   trait TableRow
@@ -60,7 +58,7 @@ object distTableRowMod {
     
     def _hasOverflowActions: Boolean = js.native
     
-    def _isInteractive: Boolean = js.native
+    def _isInteractive: js.UndefOr[Boolean] = js.native
     
     @JSName("_onOverflowButtonClick")
     def _onOverflowButtonClick_click(

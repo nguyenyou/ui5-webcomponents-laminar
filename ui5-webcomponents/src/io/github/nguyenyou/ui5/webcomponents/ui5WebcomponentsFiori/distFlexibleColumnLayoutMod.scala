@@ -29,6 +29,7 @@ import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
 import org.scalajs.dom.TouchEvent
+import org.scalajs.dom.TransitionEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -424,6 +425,8 @@ object distFlexibleColumnLayoutMod {
     
     def endSeparatorTabIndex: js.UndefOr[`0`] = js.native
     
+    def endSeparatorValue: Double = js.native
+    
     @JSName("eventDetails")
     var eventDetails_FlexibleColumnLayout: LayoutchangeFlexibleColumnLayoutLayoutChangeEventDetail = js.native
     
@@ -491,6 +494,8 @@ object distFlexibleColumnLayoutMod {
     
     def onColumnCollapseAnimationEnd(e: Event): Unit = js.native
     
+    def onColumnCollapseAnimationEndRef(e: TransitionEvent): Unit = js.native
+    
     def onSeparatorMove(e: MouseEvent): Unit = js.native
     def onSeparatorMove(e: TouchEvent): Unit = js.native
     
@@ -541,6 +546,8 @@ object distFlexibleColumnLayoutMod {
     def startSeparatorGripVisibility: js.UndefOr[Boolean] = js.native
     
     def startSeparatorTabIndex: js.UndefOr[`0`] = js.native
+    
+    def startSeparatorValue: Double = js.native
     
     def switchLayoutOnArrowPress(): Unit = js.native
     

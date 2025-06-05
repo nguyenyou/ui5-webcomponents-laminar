@@ -144,7 +144,7 @@ object distYearPickerMod {
     
     def _buildYears(): Unit = js.native
     
-    def _calculateFirstYear(): Unit = js.native
+    var _firstYear: js.UndefOr[Double] = js.native
     
     def _getPageSize(): `8` | `20` = js.native
     

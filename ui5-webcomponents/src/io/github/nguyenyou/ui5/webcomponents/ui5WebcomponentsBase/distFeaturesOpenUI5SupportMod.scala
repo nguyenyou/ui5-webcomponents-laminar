@@ -36,6 +36,12 @@ object distFeaturesOpenUI5SupportMod {
     inline def init(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[Unit]]
     
     /* static member */
+    @JSImport("@ui5/webcomponents-base/dist/features/OpenUI5Support.js", "default.initPromise")
+    @js.native
+    def initPromise: js.UndefOr[js.Promise[Unit]] = js.native
+    inline def initPromise_=(x: js.UndefOr[js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initPromise")(x.asInstanceOf[js.Any])
+    
+    /* static member */
     inline def isAtLeastVersion116(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAtLeastVersion116")().asInstanceOf[Boolean]
     
     /* static member */
