@@ -10,6 +10,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsSt
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.right
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.DOMRect
 import org.scalajs.dom.Event
 import org.scalajs.dom.HTMLElement
@@ -218,13 +219,9 @@ object distSliderBaseMod {
     
     var _oldNumberOfLabels: js.UndefOr[Double] = js.native
     
-    def _onInputChange(): Unit = js.native
-    
-    def _onInputInput(): Unit = js.native
-    
-    def _onInputKeydown(e: KeyboardEvent): Unit = js.native
-    
     def _onKeyupBase(): Unit = js.native
+    
+    def _onTooltipChange(e: CustomEvent): Unit = js.native
     
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
@@ -273,14 +270,12 @@ object distSliderBaseMod {
     /**
       * @private
       */
-    var _tooltipVisibility: String = js.native
+    var _tooltipsOpen: Boolean = js.native
     
     def _upHandler(e: MouseEvent): Unit = js.native
     def _upHandler(e: TouchEvent): Unit = js.native
     
-    def _updateInputValue(): Unit = js.native
-    
-    def _updateValueFromInput(e: Event): Unit = js.native
+    def _updateValueFromInput(fieldValue: String): Unit = js.native
     
     /**
       * Notify in case of a invalid step value type

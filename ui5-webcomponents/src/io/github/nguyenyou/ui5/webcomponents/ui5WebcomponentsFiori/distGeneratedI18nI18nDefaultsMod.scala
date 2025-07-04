@@ -447,6 +447,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SHELLBAR_ADDITIONAL_CONTEXT: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SHELLBAR_BRANDING")
+  @js.native
+  val SHELLBAR_BRANDING: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SHELLBAR_CANCEL")
   @js.native
   val SHELLBAR_CANCEL: I18nText = js.native

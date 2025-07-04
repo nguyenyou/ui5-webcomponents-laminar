@@ -3,6 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 import io.github.nguyenyou.ui5.webcomponents.std.ValidityStateFlags
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.EndHandle
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`true`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.end_
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.start_
+import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.FormData
 import org.scalajs.dom.HTMLElement
@@ -256,6 +259,8 @@ object distRangeSliderMod {
     
     def _handleActionKeyPress(e: KeyboardEvent): Unit = js.native
     
+    def _handleUp(): Unit = js.native
+    
     /**
       * Calculates the start and end values when the 'Home" or 'End' keys
       * are pressed on the selected range bar.
@@ -277,7 +282,7 @@ object distRangeSliderMod {
     
     var _lastValidStartValue: String = js.native
     
-    def _onInputFocusOut(e: FocusEvent): Unit = js.native
+    def _onTooltopForwardFocus(e: CustomEvent): Unit = js.native
     
     def _onfocusin(): Unit = js.native
     
@@ -320,8 +325,6 @@ object distRangeSliderMod {
     def _progressBar: HTMLElement = js.native
     
     var _reversedValues: Boolean = js.native
-    
-    def _saveInputValues(): Unit = js.native
     
     def _saveInteractionStartData(e: MouseEvent, newValue: Double): Unit = js.native
     /**
@@ -414,6 +417,8 @@ object distRangeSliderMod {
     def _updateValueOnRangeDrag(event: TouchEvent): Unit = js.native
     
     var _valueAffected: js.UndefOr[AffectedValue] = js.native
+    
+    def bringToFrontTooltip(handle: start_ | end_): Unit = js.native
     
     /**
       * Defines end point of a selection - position of a second handle on the slider.

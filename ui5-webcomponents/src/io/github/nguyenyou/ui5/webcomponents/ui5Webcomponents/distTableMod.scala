@@ -273,6 +273,8 @@ object distTableMod {
     
     def _isGrowingFeature(feature: Any): Boolean = js.native
     
+    def _isRowSelectorRequired: js.UndefOr[Boolean] = js.native
+    
     var _loadingElement: HTMLElement = js.native
     
     var _noDataRow: js.UndefOr[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default] = js.native

@@ -146,6 +146,8 @@ object distDynamicPageTitleMod {
       */
     var focused: Boolean = js.native
     
+    def forAriaExpanded: js.UndefOr[Boolean] = js.native
+    
     def handleResize(): Unit = js.native
     
     def hasContent: Boolean = js.native

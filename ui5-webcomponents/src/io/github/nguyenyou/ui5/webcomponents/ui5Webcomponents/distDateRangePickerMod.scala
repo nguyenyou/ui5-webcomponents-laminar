@@ -105,6 +105,8 @@ object distDateRangePickerMod {
       */
     def _extractLastTimestamp(value: String): js.UndefOr[Double] = js.native
     
+    def _lastDateRangeForTheCurrentYear: String = js.native
+    
     /* private */ var _prevDelimiter: Any = js.native
     
     def _splitValueByDelimiter(value: String): js.Array[String] = js.native

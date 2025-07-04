@@ -12,7 +12,7 @@ object distDynamicDateRangeOptionsTomorrowMod {
     * @class
     * @constructor
     * @public
-    * @since 2.0.0
+    * @since 2.11.0
     */
   @JSImport("@ui5/webcomponents/dist/dynamic-date-range-options/Tomorrow.js", JSImport.Default)
   @js.native
@@ -46,7 +46,7 @@ object distDynamicDateRangeOptionsTomorrowMod {
     * @class
     * @constructor
     * @public
-    * @since 2.0.0
+    * @since 2.11.0
     */
   @js.native
   trait Tomorrow

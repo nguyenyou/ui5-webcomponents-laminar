@@ -22,7 +22,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Add Column" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use AddingColumns instead
+    * @deprecated Deprecated as of version 2.11.0, use AddingColumns instead.
     */
   @js.native
   sealed trait AddColumn
@@ -41,7 +41,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Add People" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use AddPeopleToCalendar instead
+    * @deprecated Deprecated as of version 2.11.0, use AddPeopleToCalendar instead.
     */
   @js.native
   sealed trait AddPeople
@@ -69,7 +69,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Balloon Sky" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use ReceiveAppreciation instead
+    * @deprecated Deprecated as of version 2.11.0, use ReceiveAppreciation instead.
     */
   @js.native
   sealed trait BalloonSky
@@ -88,7 +88,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Connection" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToLoad instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToLoad instead.
     */
   @js.native
   sealed trait Connection
@@ -107,7 +107,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Empty Calendar" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoActivities instead
+    * @deprecated Deprecated as of version 2.11.0, use NoActivities instead.
     */
   @js.native
   sealed trait EmptyCalendar
@@ -117,7 +117,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Empty List" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoEntries instead
+    * @deprecated Deprecated as of version 2.11.0, use NoEntries instead.
     */
   @js.native
   sealed trait EmptyList
@@ -136,7 +136,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Error Screen" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToUpload instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToUpload instead.
     */
   @js.native
   sealed trait ErrorScreen
@@ -146,7 +146,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Filter Table" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use FilteringColumns instead
+    * @deprecated Deprecated as of version 2.11.0, use FilteringColumns instead.
     */
   @js.native
   sealed trait FilterTable
@@ -165,7 +165,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Group Table" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use GroupingColumns instead
+    * @deprecated Deprecated as of version 2.11.0, use GroupingColumns instead.
     */
   @js.native
   sealed trait GroupTable
@@ -239,7 +239,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "No Dimensions Set" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoChartData instead
+    * @deprecated Deprecated as of version 2.11.0, use NoChartData instead.
     */
   @js.native
   sealed trait NoDimensionsSet
@@ -277,7 +277,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "No Email v1" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoMail instead
+    * @deprecated Deprecated as of version 2.11.0, use NoMail instead.
     */
   @js.native
   sealed trait NoMail_v1
@@ -305,7 +305,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "No Saved Items v1" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoSavedItems instead
+    * @deprecated Deprecated as of version 2.11.0, use NoSavedItems instead.
     */
   @js.native
   sealed trait NoSavedItems_v1
@@ -334,7 +334,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "No Tasks v1" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoTasks instead
+    * @deprecated Deprecated as of version 2.11.0, use NoTasks instead.
     */
   @js.native
   sealed trait NoTasks_v1
@@ -362,7 +362,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Reload Screen" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToLoad instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToLoad instead.
     */
   @js.native
   sealed trait ReloadScreen
@@ -372,7 +372,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Resize Column" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use ResizingColumns instead
+    * @deprecated Deprecated as of version 2.11.0, use ResizingColumns instead.
     */
   @js.native
   sealed trait ResizeColumn
@@ -391,7 +391,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Search Earth" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use BeforeSearch instead
+    * @deprecated Deprecated as of version 2.11.0, use BeforeSearch instead.
     */
   @js.native
   sealed trait SearchEarth
@@ -401,7 +401,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Search Folder" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoSearchResults instead
+    * @deprecated Deprecated as of version 2.11.0, use NoSearchResults instead.
     */
   @js.native
   sealed trait SearchFolder
@@ -420,7 +420,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Balloon" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use ReceiveAppreciation instead
+    * @deprecated Deprecated as of version 2.11.0, use ReceiveAppreciation instead.
     */
   @js.native
   sealed trait SimpleBalloon
@@ -430,7 +430,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Bell" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoNotifications instead
+    * @deprecated Deprecated as of version 2.11.0, use NoNotifications instead.
     */
   @js.native
   sealed trait SimpleBell
@@ -440,7 +440,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Calendar" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoActivities instead
+    * @deprecated Deprecated as of version 2.11.0, use NoActivities instead.
     */
   @js.native
   sealed trait SimpleCalendar
@@ -450,7 +450,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple CheckMark" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use KeyTask instead
+    * @deprecated Deprecated as of version 2.11.0, use KeyTask instead.
     */
   @js.native
   sealed trait SimpleCheckMark
@@ -460,7 +460,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Connection" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToLoad instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToLoad instead.
     */
   @js.native
   sealed trait SimpleConnection
@@ -470,7 +470,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Empty Doc" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoData instead
+    * @deprecated Deprecated as of version 2.11.0, use NoData instead.
     */
   @js.native
   sealed trait SimpleEmptyDoc
@@ -480,7 +480,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Empty List" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoEntries instead
+    * @deprecated Deprecated as of version 2.11.0, use NoEntries instead.
     */
   @js.native
   sealed trait SimpleEmptyList
@@ -490,7 +490,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Error" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToUpload instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToUpload instead.
     */
   @js.native
   sealed trait SimpleError
@@ -500,7 +500,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Magnifier" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use BeforeSearch instead
+    * @deprecated Deprecated as of version 2.11.0, use BeforeSearch instead.
     */
   @js.native
   sealed trait SimpleMagnifier
@@ -510,7 +510,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Mail" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoMail instead
+    * @deprecated Deprecated as of version 2.11.0, use NoMail instead.
     */
   @js.native
   sealed trait SimpleMail
@@ -520,7 +520,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple No Saved Items" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoSavedItems instead
+    * @deprecated Deprecated as of version 2.11.0, use NoSavedItems instead.
     */
   @js.native
   sealed trait SimpleNoSavedItems
@@ -530,7 +530,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Not Found Magnifier" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoSearchResults instead
+    * @deprecated Deprecated as of version 2.11.0, use NoSearchResults instead.
     */
   @js.native
   sealed trait SimpleNotFoundMagnifier
@@ -540,7 +540,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Reload" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use UnableToLoad instead
+    * @deprecated Deprecated as of version 2.11.0, use UnableToLoad instead.
     */
   @js.native
   sealed trait SimpleReload
@@ -550,7 +550,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Simple Task" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoTasks instead
+    * @deprecated Deprecated as of version 2.11.0, use NoTasks instead.
     */
   @js.native
   sealed trait SimpleTask
@@ -560,7 +560,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Sleeping Bell" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoNotifications instead
+    * @deprecated Deprecated as of version 2.11.0, use NoNotifications instead.
     */
   @js.native
   sealed trait SleepingBell
@@ -570,7 +570,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Sort Column" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use SortingColumns instead
+    * @deprecated Deprecated as of version 2.11.0, use SortingColumns instead.
     */
   @js.native
   sealed trait SortColumn
@@ -589,7 +589,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Success Balloon" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use ReceiveAppreciation instead
+    * @deprecated Deprecated as of version 2.11.0, use ReceiveAppreciation instead.
     */
   @js.native
   sealed trait SuccessBalloon
@@ -599,7 +599,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Success CheckMark" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use KeyTask instead
+    * @deprecated Deprecated as of version 2.11.0, use KeyTask instead.
     */
   @js.native
   sealed trait SuccessCheckMark
@@ -609,7 +609,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Success HighFive" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use ReceiveAppreciation instead
+    * @deprecated Deprecated as of version 2.11.0, use ReceiveAppreciation instead.
     */
   @js.native
   sealed trait SuccessHighFive
@@ -619,7 +619,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Success Screen" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use KeyTask instead
+    * @deprecated Deprecated as of version 2.11.0, use KeyTask instead.
     */
   @js.native
   sealed trait SuccessScreen
@@ -638,7 +638,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Tent" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use NoData instead
+    * @deprecated Deprecated as of version 2.11.0, use NoData instead.
     */
   @js.native
   sealed trait Tent
@@ -1080,7 +1080,7 @@ object IllustrationMessageType extends StObject {
   /**
     * "Upload Collection" illustration type.
     * @public
-    * @deprecated Since 2.10.0, use DragFilesToUpload instead
+    * @deprecated Deprecated as of version 2.11.0, use DragFilesToUpload instead.
     */
   @js.native
   sealed trait UploadCollection

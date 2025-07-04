@@ -41,6 +41,11 @@ object distToggleSpinButtonMod {
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToggleButtonMod.default {
     
     /**
+      * Override of the handler in order to prevent button toggle functionality
+      */
+    def _onclick(): Unit = js.native
+    
+    /**
       * Defines the ARIA valuemax of the component.
       * @default -1
       */

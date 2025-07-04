@@ -21,7 +21,7 @@ object Versions {
   val sjs = "1.19.0"
   val scalajsDom = "2.8.0"
   val laminar = "17.2.1"
-  val `ui5-webcomponents` = "2.11.0"
+  val `ui5-webcomponents` = "2.12.0"
   val `ui5-webcomponents-laminar` = "2.11.0"
   val waypoint = "9.0.0"
   val macrotask = "1.1.1"
@@ -155,7 +155,6 @@ object www extends WebModule with Scalafix with BuildInfo {
 }
 
 // We will uncomment this when we need to release a new version of ui5-webcomponents
-/*
 object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPublish {
   def artifactName = "ui5-webcomponents"
   def publishVersion = Versions.`ui5-webcomponents`
@@ -186,4 +185,3 @@ object `ui5-webcomponents` extends WebModule with ScalablyTyped with CommonPubli
     "@ui5/webcomponents-base"
   )
 }
-*/

@@ -1,7 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.std.Map
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ChangeDynamicDateRangeChangeEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ChangeVoid
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesIconModeMod.IconMode.Decorative
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesIconModeMod.IconMode.Interactive
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.JsxTemplate
@@ -17,8 +17,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object distDynamicDateRangeMod {
   
   /**
-    * Fired when the input operation has finished by pressing Enter or on focusout or a value is selected in the popover.
+    * @class
+    *
+    * ### Overview
+    *
+    * The `ui5-dynamic-date-range` component provides a flexible interface to define date ranges using a combination of absolute dates, relative intervals, and preset ranges (e.g., "Today", "Yesterday", etc.).
+    * It allows users to select a date range from a predefined set of options or enter custom dates.
+    *
+    * ### Usage
+    *
+    * The component is typically used in scenarios where users need to filter data based on date ranges, such as in reports, dashboards, or data analysis tools.
+    * It can be used with the predefined options or extended with custom options to suit specific requirements. You can create your own options by extending the `IDynamicDateRangeOption` interface.
+    * Every option should be registered using the `DynamicDateRange.register` method.
+    *
+    * If needed, you can also create a range of dates based on specific option using the `toDates` method.
+    *
+    * ### Standard Options
+    *
+    * The component comes with a set of standard options, including:
+    * - "TODAY" - Represents the current date. An example value is `{ operator: "TODAY"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Today.js";`
+    * - "YESTERDAY" - Represents the previous date. An example value is `{ operator: "YESTERDAY"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Yesterday.js";`
+    * - "TOMORROW" - Represents the next date. An example value is `{ operator: "TOMORROW"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Tomorrow.js";`
+    * - "DATE" - Represents a single date. An example value is `{ operator: "DATE", values: [new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/SingleDate.js";`
+    * - "DATERANGE" - Represents a range of dates. An example value is `{ operator: "DATERANGE", values: [new Date(), new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/DateRange.js";`
+    *
+    * ### ES6 Module Import
+    *
+    * `import "@ui5/webcomponents/dist/DynamicDateRange.js";`
+    *
+    * @constructor
+    * @extends UI5Element
     * @public
+    * @since 2.11.0
     */
   @JSImport("@ui5/webcomponents/dist/DynamicDateRange.js", JSImport.Default)
   @js.native
@@ -55,8 +85,38 @@ object distDynamicDateRangeMod {
   }
   
   /**
-    * Fired when the input operation has finished by pressing Enter or on focusout or a value is selected in the popover.
+    * @class
+    *
+    * ### Overview
+    *
+    * The `ui5-dynamic-date-range` component provides a flexible interface to define date ranges using a combination of absolute dates, relative intervals, and preset ranges (e.g., "Today", "Yesterday", etc.).
+    * It allows users to select a date range from a predefined set of options or enter custom dates.
+    *
+    * ### Usage
+    *
+    * The component is typically used in scenarios where users need to filter data based on date ranges, such as in reports, dashboards, or data analysis tools.
+    * It can be used with the predefined options or extended with custom options to suit specific requirements. You can create your own options by extending the `IDynamicDateRangeOption` interface.
+    * Every option should be registered using the `DynamicDateRange.register` method.
+    *
+    * If needed, you can also create a range of dates based on specific option using the `toDates` method.
+    *
+    * ### Standard Options
+    *
+    * The component comes with a set of standard options, including:
+    * - "TODAY" - Represents the current date. An example value is `{ operator: "TODAY"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Today.js";`
+    * - "YESTERDAY" - Represents the previous date. An example value is `{ operator: "YESTERDAY"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Yesterday.js";`
+    * - "TOMORROW" - Represents the next date. An example value is `{ operator: "TOMORROW"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Tomorrow.js";`
+    * - "DATE" - Represents a single date. An example value is `{ operator: "DATE", values: [new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/SingleDate.js";`
+    * - "DATERANGE" - Represents a range of dates. An example value is `{ operator: "DATERANGE", values: [new Date(), new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/DateRange.js";`
+    *
+    * ### ES6 Module Import
+    *
+    * `import "@ui5/webcomponents/dist/DynamicDateRange.js";`
+    *
+    * @constructor
+    * @extends UI5Element
     * @public
+    * @since 2.11.0
     */
   @js.native
   trait DynamicDateRange
@@ -93,7 +153,7 @@ object distDynamicDateRangeMod {
     def currentValueText: String = js.native
     
     @JSName("eventDetails")
-    var eventDetails_DynamicDateRange: ChangeDynamicDateRangeChangeEventDetail = js.native
+    var eventDetails_DynamicDateRange: ChangeVoid = js.native
     
     def getOption(operator: String): js.UndefOr[IDynamicDateRangeOption] = js.native
     
@@ -131,6 +191,8 @@ object distDynamicDateRangeMod {
     /**
       * Converts a `value` into concrete `startDate` and `endDate` JavaScript `Date` objects.
       *
+      * @public
+      * @param value The option to convert into an array of date ranges
       * @returns An array of two `Date` objects representing the start and end dates.
       */
     def toDates(value: DynamicDateRangeValue): js.Array[js.Date] = js.native
@@ -143,26 +205,6 @@ object distDynamicDateRangeMod {
       * @public
       */
     var value: js.UndefOr[DynamicDateRangeValue] = js.native
-  }
-  
-  trait DynamicDateRangeChangeEventDetail extends StObject {
-    
-    var value: js.UndefOr[DynamicDateRangeValue] = js.undefined
-  }
-  object DynamicDateRangeChangeEventDetail {
-    
-    inline def apply(): DynamicDateRangeChangeEventDetail = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DynamicDateRangeChangeEventDetail]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DynamicDateRangeChangeEventDetail] (val x: Self) extends AnyVal {
-      
-      inline def setValue(value: DynamicDateRangeValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
   }
   
   trait DynamicDateRangeValue extends StObject {
@@ -223,7 +265,7 @@ object distDynamicDateRangeMod {
     * - `isValidString(value: string): boolean`: Validates whether a given string is a valid representation of the dynamic date range value.
     *
     * @public
-    * @since 2.10.0
+    * @since 2.11.0
     */
   trait IDynamicDateRangeOption extends StObject {
     

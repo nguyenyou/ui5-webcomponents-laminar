@@ -279,6 +279,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val DATETIMEPICKER_POPOVER_ACCESSIBLE_NAME: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DATETIME_COMPONENTS_PLACEHOLDER_PREFIX")
+  @js.native
+  val DATETIME_COMPONENTS_PLACEHOLDER_PREFIX: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DATETIME_DESCRIPTION")
   @js.native
   val DATETIME_DESCRIPTION: I18nText = js.native
@@ -703,6 +707,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val TABLE_COLUMN_HEADER_ROW: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_DESELECT_ALL_ROWS")
+  @js.native
+  val TABLE_DESELECT_ALL_ROWS: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_GENERATED_BY_AI")
   @js.native
   val TABLE_GENERATED_BY_AI: I18nText = js.native
@@ -750,6 +758,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_SELECTION")
   @js.native
   val TABLE_SELECTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_SELECT_ALL_ROWS")
+  @js.native
+  val TABLE_SELECT_ALL_ROWS: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TAB_ARIA_DESIGN_CRITICAL")
   @js.native

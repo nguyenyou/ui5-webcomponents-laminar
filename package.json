@@ -7,7 +7,7 @@
     "create-wrappers": "yarn create-wrappers:only && yarn ui5-webcomponents-laminar:fmt && yarn ui5-webcomponents-laminar:fix",
     "create-wrappers:only": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers",
     "append-js-extension": "node append-js-extension.js",
-    "generate-facades": "./mill ui5-webcomponents.scalablyTypedImportTask && yarn append-js-extension",
+    "generate-facades": "rm -rf ui5-webcomponents/src && ./mill ui5-webcomponents.scalablyTypedImportTask && yarn append-js-extension",
     "generate-icons": "yarn workspace ui5-webcomponents-laminar-cli create-wrappers-icons",
     "release:ui5-webcomponents": "./mill -i ui5-webcomponents.publishSonatypeCentral",
     "release:ui5-webcomponents-laminar": "./mill -i ui5-webcomponents-laminar.publishSonatypeCentral",
@@ -28,16 +28,16 @@
     "www"
   ],
   "dependencies": {
-    "@sap-theming/theming-base-content": "11.29.3",
-    "@ui5/webcomponents": "2.11.0",
-    "@ui5/webcomponents-ai": "2.11.0",
-    "@ui5/webcomponents-base": "2.11.0",
-    "@ui5/webcomponents-compat": "2.11.0",
-    "@ui5/webcomponents-fiori": "2.11.0"
+    "@sap-theming/theming-base-content": "11.31.0",
+    "@ui5/webcomponents": "2.12.0",
+    "@ui5/webcomponents-ai": "2.12.0",
+    "@ui5/webcomponents-base": "2.12.0",
+    "@ui5/webcomponents-compat": "2.12.0",
+    "@ui5/webcomponents-fiori": "2.12.0"
   },
   "devDependencies": {
-    "@ui5/webcomponents-tools": "2.11.0",
-    "concurrently": "9.1.2",
+    "@ui5/webcomponents-tools": "2.12.0",
+    "concurrently": "9.2.0",
     "typescript": "5.8.3"
   }
 }

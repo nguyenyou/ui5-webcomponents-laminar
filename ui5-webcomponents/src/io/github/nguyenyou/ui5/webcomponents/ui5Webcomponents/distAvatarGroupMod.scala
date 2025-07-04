@@ -172,7 +172,7 @@ object distAvatarGroupMod {
   trait AvatarGroup
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    def _ariaLabelText: String = js.native
+    def _ariaLabelText: js.UndefOr[String] = js.native
     
     var _colorIndex: Double = js.native
     
@@ -270,6 +270,24 @@ object distAvatarGroupMod {
       * @default {}
       */
     var accessibilityAttributes: AvatarGroupAccessibilityAttributes = js.native
+    
+    /**
+      * Defines the accessible name of the AvatarGroup.
+      * When provided, this will override the default aria-label text.
+      * @default undefined
+      * @public
+      * @since 2.12.0
+      */
+    var accessibleName: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(s) of the elements that describe the AvatarGroup.
+      * When provided, this will be used as aria-labelledby instead of aria-label.
+      * @default undefined
+      * @public
+      * @since 2.12.0
+      */
+    var accessibleNameRef: js.UndefOr[String] = js.native
     
     /**
       * Returns an array containing the `AvatarColorScheme` values that correspond to the avatars in the component.

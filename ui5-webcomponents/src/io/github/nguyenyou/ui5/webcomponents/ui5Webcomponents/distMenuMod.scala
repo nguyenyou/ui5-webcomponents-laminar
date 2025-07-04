@@ -42,7 +42,11 @@ object distMenuMod {
     * - `Arrow Left` or `ArrowRight` - Navigate between the menu item actions and the menu item itself
     * - `Arrow Up` / `Arrow Down` - Navigates up and down the currently visible menu items
     *
-    * Note: if the text ditrection is set to Right-to-left (RTL), `Arrow Right` and `Arrow Left` functionality is swapped.
+    * **Note:** If the text direction is set to Right-to-left (RTL), `Arrow Right` and `Arrow Left` functionality is swapped.
+    *
+    * Application developers are responsible for ensuring that interactive elements placed in the `endContent` slot
+    * have the correct accessibility behaviour, including their enabled or disabled states.
+    * The menu does not manage these aspects when the menu item state changes.
     *
     * ### ES6 Module Import
     *
@@ -78,7 +82,11 @@ object distMenuMod {
   trait IMenuItem
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    var isSeparator: Boolean = js.native
+    var isGroup: js.UndefOr[Boolean] = js.native
+    
+    var isMenuItem: js.UndefOr[Boolean] = js.native
+    
+    var isSeparator: js.UndefOr[Boolean] = js.native
   }
   
   /**
@@ -111,7 +119,11 @@ object distMenuMod {
     * - `Arrow Left` or `ArrowRight` - Navigate between the menu item actions and the menu item itself
     * - `Arrow Up` / `Arrow Down` - Navigates up and down the currently visible menu items
     *
-    * Note: if the text ditrection is set to Right-to-left (RTL), `Arrow Right` and `Arrow Left` functionality is swapped.
+    * **Note:** If the text direction is set to Right-to-left (RTL), `Arrow Right` and `Arrow Left` functionality is swapped.
+    *
+    * Application developers are responsible for ensuring that interactive elements placed in the `endContent` slot
+    * have the correct accessibility behaviour, including their enabled or disabled states.
+    * The menu does not manage these aspects when the menu item state changes.
     *
     * ### ES6 Module Import
     *
@@ -129,6 +141,9 @@ object distMenuMod {
     
     def _afterPopoverOpen(): Unit = js.native
     
+    /** Returns all menu items (including those in groups */
+    def _allMenuItems: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default] = js.native
+    
     def _beforePopoverClose(e: CustomEvent): Unit = js.native
     
     def _beforePopoverOpen(e: CustomEvent): Unit = js.native
@@ -143,13 +158,26 @@ object distMenuMod {
     
     def _itemMouseOver(e: MouseEvent): Unit = js.native
     
+    def _list: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.default | Null = js.native
+    
+    /** Returns menu item groups */
+    def _menuItemGroups: js.Array[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemGroupMod.default
+      ] = js.native
+    
+    /** Returns menu items */
     def _menuItems: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default] = js.native
+    
+    /** Returns menu items included in the ItemNavigation */
+    def _navigatableMenuItems: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default] = js.native
     
     def _navigateOutOfEndContent(e: CustomEvent): Unit = js.native
     
     def _openItemSubMenu(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
     
     def _popover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default = js.native
+    
+    def _setupItemNavigation(): Unit = js.native
     
     def _startOpenTimeout(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemMod.default): Unit = js.native
     

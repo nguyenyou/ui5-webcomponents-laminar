@@ -77,6 +77,7 @@ object distTableMod {
     * @constructor
     * @extends UI5Element
     * @public
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @JSImport("@ui5/webcomponents-compat/dist/Table.js", JSImport.Default)
   @js.native
@@ -206,6 +207,7 @@ object distTableMod {
     * @constructor
     * @extends UI5Element
     * @public
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @js.native
   trait Table

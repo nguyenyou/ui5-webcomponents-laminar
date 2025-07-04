@@ -184,7 +184,7 @@ object distStepInputMod {
     
     def _preciseValue(value: Double): Double = js.native
     
-    var _previousValue: Double = js.native
+    var _previousValue: js.UndefOr[Double] = js.native
     
     /**
       * Resets spin process

@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 import io.github.nguyenyou.ui5.webcomponents.std.ValidityStateFlags
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Handle
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`true`
+import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.Element
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.FormData
@@ -174,6 +175,11 @@ object distSliderMod {
     
     var _handlePositionFromStart: Double = js.native
     
+    /** Called when the user finish interacting with the slider
+      * @private
+      */
+    def _handleUp(): Unit = js.native
+    
     /** Determines if the press is over the handle
       * @private
       */
@@ -181,7 +187,7 @@ object distSliderMod {
     
     var _lastValidInputValue: String = js.native
     
-    def _onInputFocusOut(e: FocusEvent): Unit = js.native
+    def _onTooltopForwardFocus(e: CustomEvent): Unit = js.native
     
     def _onfocusin(): Unit = js.native
     

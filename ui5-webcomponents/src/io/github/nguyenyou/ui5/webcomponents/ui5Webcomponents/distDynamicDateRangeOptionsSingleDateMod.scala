@@ -15,7 +15,7 @@ object distDynamicDateRangeOptionsSingleDateMod {
     * @class
     * @constructor
     * @public
-    * @since 2.0.0
+    * @since 2.11.0
     */
   @JSImport("@ui5/webcomponents/dist/dynamic-date-range-options/SingleDate.js", JSImport.Default)
   @js.native
@@ -49,7 +49,7 @@ object distDynamicDateRangeOptionsSingleDateMod {
     * @class
     * @constructor
     * @public
-    * @since 2.0.0
+    * @since 2.11.0
     */
   @js.native
   trait SingleDate

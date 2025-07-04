@@ -26,6 +26,7 @@ object distTableRowMod {
     * @public
     * @csspart row - Used to style the native `tr` element
     * @csspart popin-row - Used to style the `tr` element when a row pops in
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/TableRow.js` instead.
     */
   @JSImport("@ui5/webcomponents-compat/dist/TableRow.js", JSImport.Default)
   @js.native
@@ -55,6 +56,7 @@ object distTableRowMod {
     * @public
     * @csspart row - Used to style the native `tr` element
     * @csspart popin-row - Used to style the `tr` element when a row pops in
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/TableRow.js` instead.
     */
   @js.native
   trait TableRow extends ITableRow {

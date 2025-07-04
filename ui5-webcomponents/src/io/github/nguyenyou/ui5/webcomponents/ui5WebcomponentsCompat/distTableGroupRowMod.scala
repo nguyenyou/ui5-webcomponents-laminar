@@ -24,6 +24,7 @@ object distTableGroupRowMod {
     *
     * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
     * @csspart group-row - Used to style the native `tr` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @JSImport("@ui5/webcomponents-compat/dist/TableGroupRow.js", JSImport.Default)
   @js.native
@@ -56,6 +57,7 @@ object distTableGroupRowMod {
     *
     * **Note:** Although this slot accepts HTML Elements, it is strongly recommended that you only use text in order to preserve the intended design.
     * @csspart group-row - Used to style the native `tr` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @js.native
   trait TableGroupRow extends ITableRow {

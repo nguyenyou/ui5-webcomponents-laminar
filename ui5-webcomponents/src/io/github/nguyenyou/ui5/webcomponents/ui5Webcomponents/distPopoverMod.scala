@@ -251,7 +251,7 @@ object distPopoverMod {
       */
     var footer: js.Array[HTMLElement] = js.native
     
-    def getActualPlacement(targetRect: DOMRect, popoverSize: PopoverSize): /* template literal string: ${PopoverPlacement} */ String = js.native
+    def getActualPlacement(targetRect: DOMRect): /* template literal string: ${PopoverPlacement} */ String = js.native
     
     /**
       * Calculates the position for the arrow.
@@ -280,6 +280,7 @@ object distPopoverMod {
     def getOpenerHTMLElement(opener: HTMLElement): js.UndefOr[HTMLElement | Null] = js.native
     
     def getPopoverSize(): PopoverSize = js.native
+    def getPopoverSize(calcScrollHeight: Boolean): PopoverSize = js.native
     
     def getRTLCorrectionLeft(): Double = js.native
     

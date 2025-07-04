@@ -14,8 +14,6 @@ trait Handle extends StObject {
   var labelContainer: DictxWidth
   
   var progress: TransformTransformorigin
-  
-  var tooltip: Visibility
 }
 object Handle {
   
@@ -23,10 +21,9 @@ object Handle {
     handle: StringDictionary[String],
     label: Width,
     labelContainer: DictxWidth,
-    progress: TransformTransformorigin,
-    tooltip: Visibility
+    progress: TransformTransformorigin
   ): Handle = {
-    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelContainer = labelContainer.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelContainer = labelContainer.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handle]
   }
   
@@ -40,7 +37,5 @@ object Handle {
     inline def setLabelContainer(value: DictxWidth): Self = StObject.set(x, "labelContainer", value.asInstanceOf[js.Any])
     
     inline def setProgress(value: TransformTransformorigin): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
-    
-    inline def setTooltip(value: Visibility): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

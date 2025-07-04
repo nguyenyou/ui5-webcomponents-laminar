@@ -2,7 +2,9 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Beforeclose
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ContentRoot
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings._empty
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`true`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.accessibleDescription
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.alertdialog
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.dialog
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
@@ -95,6 +97,8 @@ object distPopupMod {
   trait Popup
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    def _accInfoAriaDescription: String = js.native
+    
     /**
       * Adds the popup to the "opened popups registry"
       * @protected
@@ -114,6 +118,12 @@ object distPopupMod {
     def _ariaLabelledBy: js.UndefOr[String] = js.native
     
     def _ariaModal: js.UndefOr[`true`] = js.native
+    
+    /**
+      * Constantly updated value of texts collected from the associated labels.
+      * @private
+      */
+    var _associatedDescriptionRefTexts: js.UndefOr[String] = js.native
     
     var _focusedElementBeforeOpen: js.UndefOr[HTMLElement | Null] = js.native
     
@@ -161,7 +171,25 @@ object distPopupMod {
       */
     def _show(): Unit = js.native
     
+    def _updateAssociatedLabelsTexts(): Unit = js.native
+    
     def _updateMediaRange(): Unit = js.native
+    
+    /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.11.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that describe the component.
+      * @default undefined
+      * @public
+      * @since 2.11.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
     
     /**
       * Defines the accessible name of the component.
@@ -201,6 +229,12 @@ object distPopupMod {
       * @protected
       */
     def applyInitialFocus(): js.Promise[Unit] = js.native
+    
+    def ariaDescribedByIds: String = js.native
+    
+    def ariaDescriptionText: js.UndefOr[String] = js.native
+    
+    def ariaDescriptionTextId: _empty | accessibleDescription = js.native
     
     /**
       * Closes the popup.

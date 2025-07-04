@@ -27,7 +27,14 @@ object distConfigLanguageMod {
     */
   inline def getFetchDefaultLanguage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getFetchDefaultLanguage")().asInstanceOf[Boolean]
   
+  /**
+    * Returns the currently configured language, or the browser language as a fallback.
+    * @public
+    * @returns {string}
+    */
   inline def getLanguage(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def getLanguageChangePending(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageChangePending")().asInstanceOf[Boolean]
   
   /**
     * Defines if the default language, that is inlined, should be

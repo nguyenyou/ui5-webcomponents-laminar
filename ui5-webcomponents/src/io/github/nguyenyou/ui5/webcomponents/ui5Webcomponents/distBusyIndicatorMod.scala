@@ -145,6 +145,8 @@ object distBusyIndicatorMod {
     
     var focusForward: js.UndefOr[Boolean] = js.native
     
+    def hasContent: Boolean = js.native
+    
     def labelId: js.UndefOr[String] = js.native
     
     /**

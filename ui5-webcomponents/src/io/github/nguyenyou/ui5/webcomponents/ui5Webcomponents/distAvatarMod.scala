@@ -7,7 +7,9 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsSt
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.img
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
+import org.scalajs.dom.Event
 import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.HTMLImageElement
 import org.scalajs.dom.HTMLObjectElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MouseEvent
@@ -104,12 +106,18 @@ object distAvatarMod {
     
     def _ariaHasPopup: js.UndefOr[AriaHasPopup] = js.native
     
+    def _attachImageEventHandlers(): Unit = js.native
+    
+    def _checkExistingImageState(): Unit = js.native
+    
     def _checkInitials(): Unit = js.native
     
     /**
       * @private
       */
     var _colorScheme: /* template literal string: ${AvatarColorScheme} */ String = js.native
+    
+    def _detachImageEventHandlers(): Unit = js.native
     
     def _fireClick(): Unit = js.native
     
@@ -124,7 +132,20 @@ object distAvatarMod {
       */
     var _hasImage: Boolean = js.native
     
+    /**
+      * @private
+      */
+    var _imageLoadError: Boolean = js.native
+    
     def _interactive: Boolean = js.native
+    
+    def _onImageError(e: Event): Unit = js.native
+    
+    def _onImageErrorBound(e: Event): Unit = js.native
+    
+    def _onImageLoad(e: Event): Unit = js.native
+    
+    def _onImageLoadBound(e: Event): Unit = js.native
     
     def _onclick(e: MouseEvent): Unit = js.native
     
@@ -267,6 +288,8 @@ object distAvatarMod {
       * @since 1.0.0-rc.15
       */
     var image: js.Array[HTMLElement] = js.native
+    
+    def imageEl: HTMLImageElement | Null = js.native
     
     /**
       * Defines the displayed initials.

@@ -25,7 +25,7 @@ object distCustomElementsScopeUtilsMod {
     * @public
     * @returns {String|undefined}
     */
-  inline def getCustomElementsScopingSuffix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomElementsScopingSuffix")().asInstanceOf[String]
+  inline def getCustomElementsScopingSuffix(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomElementsScopingSuffix")().asInstanceOf[js.UndefOr[String]]
   
   /**
     * Returns the currently set scoping suffix, if any and if the tag should be scoped, or undefined otherwise.

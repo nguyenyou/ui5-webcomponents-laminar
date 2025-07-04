@@ -603,7 +603,7 @@ object mod {
     * @public
     * @returns {String|undefined}
     */
-  inline def getCustomElementsScopingSuffix(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomElementsScopingSuffix")().asInstanceOf[String]
+  inline def getCustomElementsScopingSuffix(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCustomElementsScopingSuffix")().asInstanceOf[js.UndefOr[String]]
   
   /**
     * Returns the configured default icon collection for a given theme.
@@ -684,6 +684,11 @@ object mod {
     io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.I18nBundle
   ]]
   
+  /**
+    * Returns the currently configured language, or the browser language as a fallback.
+    * @public
+    * @returns {string}
+    */
   inline def getLanguage(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguage")().asInstanceOf[js.UndefOr[String]]
   
   /**

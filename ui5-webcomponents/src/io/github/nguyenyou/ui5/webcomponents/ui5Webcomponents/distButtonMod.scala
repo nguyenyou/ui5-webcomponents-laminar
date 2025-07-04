@@ -150,6 +150,8 @@ object distButtonMod {
     
     var _cancelAction: Boolean = js.native
     
+    var _clickHandlerAttached: Boolean = js.native
+    
     def _deactivate(): Unit = js.native
     
     def _hasPopup: js.UndefOr[AriaHasPopup] = js.native
@@ -170,6 +172,8 @@ object distButtonMod {
     var _isTouch: Boolean = js.native
     
     def _onclick(e: MouseEvent): Unit = js.native
+    
+    def _onclickBound(e: MouseEvent): Unit = js.native
     
     def _onfocusout(): Unit = js.native
     

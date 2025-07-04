@@ -124,6 +124,10 @@ object distSideNavigationMod {
   trait SideNavigation
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    var _bn: js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default
+      ] = js.native
+    
     def _findFocusedItem(
       items: js.Array[
           io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationItemMod.default | io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationGroupMod.default
@@ -201,6 +205,8 @@ object distSideNavigationMod {
     
     def _onBeforePopoverOpen(): Unit = js.native
     
+    def _onMenuClose(): Unit = js.native
+    
     def _onkeydownOverflow(e: KeyboardEvent): Unit = js.native
     
     def _onkeyupOverflow(e: KeyboardEvent): Unit = js.native
@@ -236,6 +242,7 @@ object distSideNavigationMod {
     def captureRef(ref: HTMLElementassociatedItem): Unit = js.native
     
     def closeMenu(): Unit = js.native
+    def closeMenu(preventFocusRestore: Boolean): Unit = js.native
     
     def closePicker(): Unit = js.native
     

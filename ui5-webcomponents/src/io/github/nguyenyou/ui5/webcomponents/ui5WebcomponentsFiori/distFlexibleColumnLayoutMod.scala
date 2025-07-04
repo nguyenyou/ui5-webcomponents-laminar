@@ -454,7 +454,13 @@ object distFlexibleColumnLayoutMod {
     
     var initialRendering: Boolean = js.native
     
+    def isEndColumnCollapsing: Boolean = js.native
+    
+    def isMidColumnCollapsing: Boolean = js.native
+    
     /* private */ var isSeparatorAheadOfCursor: Any = js.native
+    
+    def isStartColumnCollapsing: Boolean = js.native
     
     /**
       * Defines the columns layout and their proportion.

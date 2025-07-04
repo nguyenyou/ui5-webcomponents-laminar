@@ -213,6 +213,8 @@ object distTimePickerMod {
     
     def _isPhone: Boolean = js.native
     
+    def _lastAvailableTime: String = js.native
+    
     def _modifyValueBy(amount: Double, unit: String): Unit = js.native
     
     def _onfocusin(e: FocusEvent): Unit = js.native

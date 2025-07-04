@@ -538,6 +538,10 @@ object ui5WebcomponentsStrings {
   inline def endValue: endValue = "endValue".asInstanceOf[endValue]
   
   @js.native
+  sealed trait end_ extends StObject
+  inline def end_ : end_ = "end".asInstanceOf[end_]
+  
+  @js.native
   sealed trait ended extends StObject
   inline def ended: ended = "ended".asInstanceOf[ended]
   
@@ -984,6 +988,14 @@ object ui5WebcomponentsStrings {
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
+  sealed trait menuitemcheckbox extends StObject
+  inline def menuitemcheckbox: menuitemcheckbox = "menuitemcheckbox".asInstanceOf[menuitemcheckbox]
+  
+  @js.native
+  sealed trait menuitemradio extends StObject
+  inline def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
+  
+  @js.native
   sealed trait merror extends StObject
   inline def merror: merror = "merror".asInstanceOf[merror]
   
@@ -1188,10 +1200,6 @@ object ui5WebcomponentsStrings {
   @js.native
   sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
-  
-  @js.native
-  sealed trait on extends StObject
-  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
   sealed trait optgroup extends StObject
@@ -1462,6 +1470,10 @@ object ui5WebcomponentsStrings {
     extends StObject
        with AffectedValue
   inline def startValue: startValue = "startValue".asInstanceOf[startValue]
+  
+  @js.native
+  sealed trait start_ extends StObject
+  inline def start_ : start_ = "start".asInstanceOf[start_]
   
   @js.native
   sealed trait stop extends StObject

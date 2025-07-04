@@ -15,6 +15,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5Webcompone
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.toolbar
 import org.scalajs.dom.CSSStyleDeclaration
 import org.scalajs.dom.CustomEvent
+import org.scalajs.dom.Event
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.MutationObserver
@@ -58,6 +59,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellBar
   extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
   
+  /* private */ var _allowChildNavigation: Any = js.native
+  
+  /* private */ var _allowInputNavigation: Any = js.native
+  
+  def _attachSearchFieldListeners(): Unit = js.native
+  def _attachSearchFieldListeners(searchField: HTMLElement): Unit = js.native
+  
   var _autoRestoreSearchField: Boolean = js.native
   
   def _brandingText: js.UndefOr[String] = js.native
@@ -76,6 +84,9 @@ trait ShellBar
   
   var _defaultItemPressPrevented: Boolean = js.native
   
+  def _detachSearchFieldListeners(): Unit = js.native
+  def _detachSearchFieldListeners(searchField: HTMLElement): Unit = js.native
+  
   def _enableContentAreaAccessibility: Boolean = js.native
   
   def _fireContentItemVisibilityChangeEvent(): Unit = js.native
@@ -93,13 +104,9 @@ trait ShellBar
   
   def _getMenuPopover(): io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.default = js.native
   
-  def _getNavigableContent(): js.Array[HTMLElement] = js.native
-  
   def _getOverflowPopover(): io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.default = js.native
   
   def _getRightChildItems(): js.Array[HTMLElement] = js.native
-  
-  def _getVisibleAndInteractiveItems(): js.Array[HTMLElement] = js.native
   
   def _handleActionListClick(): js.Promise[Unit] = js.native
   
@@ -182,6 +189,18 @@ trait ShellBar
   def _observeContentItems(): Unit = js.native
   
   def _onKeyDown(e: KeyboardEvent): Unit = js.native
+  
+  def _onSearch(e: Event): Unit = js.native
+  
+  def _onSearchBound(e: Event): Unit = js.native
+  
+  def _onSearchClose(e: Event): Unit = js.native
+  
+  def _onSearchCloseBound(e: Event): Unit = js.native
+  
+  def _onSearchOpen(e: Event): Unit = js.native
+  
+  def _onSearchOpenBound(e: Event): Unit = js.native
   
   def _overflowActions(): Unit = js.native
   
@@ -276,6 +295,20 @@ trait ShellBar
   def autoSearchField: Boolean = js.native
   
   /**
+    * Defines the branding slot.
+    * The `ui5-shellbar-branding` component is intended to be placed inside this slot.
+    * Content placed here takes precedence over the `primaryTitle` property and the `logo` content slot.
+    *
+    * **Note:** The `branding` slot is in an experimental state and is a subject to change.
+    *
+    * @since 2.12.0
+    * @public
+    */
+  var branding: js.Array[
+    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarBrandingMod.default
+  ] = js.native
+  
+  /**
     * @private
     */
   var breakpointSize: String = js.native
@@ -347,6 +380,8 @@ trait ShellBar
   def getSearchButtonDomRef(): js.Promise[HTMLElement | Null] = js.native
   
   def hasAssistant: Boolean = js.native
+  
+  def hasBranding: Boolean = js.native
   
   def hasContentItems: Boolean = js.native
   
@@ -448,12 +483,6 @@ trait ShellBar
   def notificationsDomRef: HTMLElement | Null = js.native
   
   def onInitialRendering(): js.Promise[Unit] = js.native
-  
-  def onSearch(): Unit = js.native
-  
-  def onSearchClose(): Unit = js.native
-  
-  def onSearchOpen(): Unit = js.native
   
   /**
     * Returns the `overflow` icon DOM ref.

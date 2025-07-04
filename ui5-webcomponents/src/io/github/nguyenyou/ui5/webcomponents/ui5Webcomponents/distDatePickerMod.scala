@@ -281,6 +281,8 @@ object distDatePickerMod {
       */
     def _iconMode: Decorative | Interactive = js.native
     
+    def _lastDayOfTheYear: String = js.native
+    
     /**
       * @param amount
       * @param unit

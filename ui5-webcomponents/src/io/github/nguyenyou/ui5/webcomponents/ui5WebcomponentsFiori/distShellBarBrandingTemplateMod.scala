@@ -1,12 +1,12 @@
-package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
+package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distToolbarSpacerTemplateMod {
+object distShellBarBrandingTemplateMod {
   
-  @JSImport("@ui5/webcomponents/dist/ToolbarSpacerTemplate.js", JSImport.Namespace)
+  @JSImport("@ui5/webcomponents-fiori/dist/ShellBarBrandingTemplate.js", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

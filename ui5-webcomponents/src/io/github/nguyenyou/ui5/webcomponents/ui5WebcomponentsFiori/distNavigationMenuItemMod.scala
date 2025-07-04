@@ -64,10 +64,6 @@ object distNavigationMenuItemMod {
     def _activate(e: KeyboardEvent): Unit = js.native
     def _activate(e: MouseEvent): Unit = js.native
     
-    def _handleFocus(
-      associatedItem: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default
-    ): Unit = js.native
-    
     def _href: js.UndefOr[String] = js.native
     
     var associatedItem: js.UndefOr[

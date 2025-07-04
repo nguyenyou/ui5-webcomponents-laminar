@@ -18,6 +18,7 @@ object distTableColumnMod {
     * @public
     * @slot {Node[]} default - Defines the content of the column header
     * @csspart column - Used to style the native `th` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @JSImport("@ui5/webcomponents-compat/dist/TableColumn.js", JSImport.Default)
   @js.native
@@ -35,6 +36,7 @@ object distTableColumnMod {
     * @public
     * @slot {Node[]} default - Defines the content of the column header
     * @csspart column - Used to style the native `th` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/Table.js` instead.
     */
   @js.native
   trait TableColumn

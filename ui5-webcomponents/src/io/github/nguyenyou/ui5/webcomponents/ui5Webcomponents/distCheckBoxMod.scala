@@ -5,7 +5,6 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Change
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Critical
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.mixed
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.on
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
@@ -212,7 +211,7 @@ object distCheckBoxMod {
     def formElementAnchor_MCheckBox(): js.Promise[js.UndefOr[HTMLElement]] = js.native
     
     @JSName("formFormattedValue")
-    def formFormattedValue_MCheckBox: on | Null = js.native
+    def formFormattedValue_MCheckBox: String | Null = js.native
     
     @JSName("formValidityMessage")
     def formValidityMessage_MCheckBox: String = js.native
@@ -273,6 +272,20 @@ object distCheckBoxMod {
     var text: js.UndefOr[String] = js.native
     
     def toggle(): this.type = js.native
+    
+    /**
+      * Defines the form value of the component that is submitted when the checkbox is checked.
+      *
+      * When a form containing `ui5-checkbox` elements is submitted, only the values of the
+      * **checked** checkboxes are included in the form data sent to the server. Unchecked
+      * checkboxes do not contribute any data to the form submission.
+      *
+      * This property is particularly useful for **checkbox groups**, where multiple checkboxes with the same `name` but different `value` properties can be used to represent a set of related options.
+      *
+      * @default "on"
+      * @public
+      */
+    var value: String = js.native
     
     /**
       * Defines the value state of the component.

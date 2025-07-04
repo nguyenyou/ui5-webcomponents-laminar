@@ -1,8 +1,11 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Closemenu
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Check
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Detailclick
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuMod.IMenuItem
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.menuitem
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.menuitemcheckbox
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.menuitemradio
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaRole
 import org.scalajs.dom.CustomEvent
@@ -145,7 +148,7 @@ object distMenuItemMod {
   - js.Object because Already inherited
   - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.distUi5elementMod.UI5Element because Already inherited
   - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.distUi5elementMod.default because Already inherited
-  - `io.github.nguyenyou.ui5.webcomponents`.ui5Webcomponents.distMenuMod.IMenuItem because var conflicts: __id, __shouldHydrate, _changedState, _childChangeListeners, _componentStateFinalizedEventProvider, _doNotSyncAttributes, _domRefReadyPromise, _fullyConnected, _getRealDomRef, _inDOM, _individualSlot, _internals, _invalidationEventProvider, _jsxEvents, _jsxProps, _rendered, _slotChangeListeners, _slotsAssignedNodes, _state, _suppressInvalidation, accessKey, ariaAtomic, ariaAutoComplete, ariaBrailleLabel, ariaBrailleRoleDescription, ariaBusy, ariaChecked, ariaColCount, ariaColIndex, ariaColIndexText, ariaColSpan, ariaCurrent, ariaDescription, ariaDisabled, ariaExpanded, ariaHasPopup, ariaHidden, ariaInvalid, ariaKeyShortcuts, ariaLabel, ariaLevel, ariaLive, ariaModal, ariaMultiLine, ariaMultiSelectable, ariaOrientation, ariaPlaceholder, ariaPosInSet, ariaPressed, ariaReadOnly, ariaRelevant, ariaRequired, ariaRoleDescription, ariaRowCount, ariaRowIndex, ariaRowIndexText, ariaRowSpan, ariaSelected, ariaSetSize, ariaSort, ariaValueMax, ariaValueMin, ariaValueNow, ariaValueText, autocapitalize, autofocus, className, contentEditable, dir, draggable, enterKeyHint, eventDetails, hidden, id, inert, initializedProperties, innerHTML, innerText, inputMode, lang, nodeValue, nonce, onabort, onanimationcancel, onanimationend, onanimationiteration, onanimationstart, onauxclick, onbeforeinput, onbeforetoggle, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextlost, oncontextmenu, oncontextrestored, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onformdata, onfullscreenchange, onfullscreenerror, ongotpointercapture, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onlostpointercapture, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onpaste, onpause, onplay, onplaying, onpointercancel, onpointerdown, onpointerenter, onpointerleave, onpointermove, onpointerout, onpointerover, onpointerup, onprogress, onratechange, onreset, onresize, onscroll, onscrollend, onsecuritypolicyviolation, onseeked, onseeking, onselect, onselectionchange, onselectstart, onslotchange, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, ontouchcancel, ontouchend, ontouchmove, ontouchstart, ontransitioncancel, ontransitionend, ontransitionrun, ontransitionstart, onvolumechange, onwaiting, onwebkitanimationend, onwebkitanimationiteration, onwebkitanimationstart, onwebkittransitionend, onwheel, outerHTML, outerText, popover, role, scrollLeft, scrollTop, slot, spellcheck, tabIndex, textContent, title, translate, writingSuggestions. Inlined isSeparator */ @js.native
+  - `io.github.nguyenyou.ui5.webcomponents`.ui5Webcomponents.distMenuMod.IMenuItem because var conflicts: __id, __shouldHydrate, _changedState, _childChangeListeners, _componentStateFinalizedEventProvider, _doNotSyncAttributes, _domRefReadyPromise, _fullyConnected, _getRealDomRef, _inDOM, _individualSlot, _internals, _invalidationEventProvider, _jsxEvents, _jsxProps, _rendered, _slotChangeListeners, _slotsAssignedNodes, _state, _suppressInvalidation, accessKey, ariaAtomic, ariaAutoComplete, ariaBrailleLabel, ariaBrailleRoleDescription, ariaBusy, ariaChecked, ariaColCount, ariaColIndex, ariaColIndexText, ariaColSpan, ariaCurrent, ariaDescription, ariaDisabled, ariaExpanded, ariaHasPopup, ariaHidden, ariaInvalid, ariaKeyShortcuts, ariaLabel, ariaLevel, ariaLive, ariaModal, ariaMultiLine, ariaMultiSelectable, ariaOrientation, ariaPlaceholder, ariaPosInSet, ariaPressed, ariaReadOnly, ariaRelevant, ariaRequired, ariaRoleDescription, ariaRowCount, ariaRowIndex, ariaRowIndexText, ariaRowSpan, ariaSelected, ariaSetSize, ariaSort, ariaValueMax, ariaValueMin, ariaValueNow, ariaValueText, autocapitalize, autofocus, className, contentEditable, dir, draggable, enterKeyHint, eventDetails, hidden, id, inert, initializedProperties, innerHTML, innerText, inputMode, lang, nodeValue, nonce, onabort, onanimationcancel, onanimationend, onanimationiteration, onanimationstart, onauxclick, onbeforeinput, onbeforetoggle, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextlost, oncontextmenu, oncontextrestored, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onformdata, onfullscreenchange, onfullscreenerror, ongotpointercapture, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onlostpointercapture, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseup, onpaste, onpause, onplay, onplaying, onpointercancel, onpointerdown, onpointerenter, onpointerleave, onpointermove, onpointerout, onpointerover, onpointerup, onprogress, onratechange, onreset, onresize, onscroll, onscrollend, onsecuritypolicyviolation, onseeked, onseeking, onselect, onselectionchange, onselectstart, onslotchange, onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, ontouchcancel, ontouchend, ontouchmove, ontouchstart, ontransitioncancel, ontransitionend, ontransitionrun, ontransitionstart, onvolumechange, onwaiting, onwebkitanimationend, onwebkitanimationiteration, onwebkitanimationstart, onwebkittransitionend, onwheel, outerHTML, outerText, popover, role, scrollLeft, scrollTop, slot, spellcheck, tabIndex, textContent, title, translate, writingSuggestions. Inlined isMenuItem, isSeparator, isGroup */ @js.native
   trait MenuItem
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemMod.default {
     
@@ -153,9 +156,19 @@ object distMenuItemMod {
     
     def _afterPopoverOpen(): Unit = js.native
     
+    /** Returns all menu items (including those in groups */
+    def _allMenuItems: js.Array[MenuItem] = js.native
+    
     def _beforePopoverClose(e: CustomEvent): Unit = js.native
     
     def _beforePopoverOpen(e: CustomEvent): Unit = js.native
+    
+    /**
+      * Defines the component's check mode.
+      * @default "None"
+      * @private
+      */
+    var _checkMode: /* template literal string: ${MenuItemGroupCheckMode} */ String = js.native
     
     def _close(): Unit = js.native
     
@@ -171,20 +184,39 @@ object distMenuItemMod {
     
     var _itemNavigation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.default = js.native
     
+    def _list: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.default | Null = js.native
+    
+    def _markChecked: Boolean = js.native
+    
+    /** Returns menu item groups */
+    def _menuItemGroups: js.Array[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distMenuItemGroupMod.default
+      ] = js.native
+    
+    /** Returns menu items */
     def _menuItems: js.Array[MenuItem] = js.native
     
     def _navigableItems: js.Array[HTMLElement] = js.native
+    
+    /** Returns menu items included in the ItemNavigation */
+    def _navigatableMenuItems: js.Array[MenuItem] = js.native
     
     def _navigateOutOfEndContent(e: CustomEvent): Unit = js.native
     
     def _navigateToEndContent(shouldNavigateToPreviousItem: Boolean): Unit = js.native
     
-    def _popover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default = js.native
+    def _popover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default | Null = js.native
+    
+    def _role: menuitem | menuitemcheckbox | menuitemradio = js.native
+    
+    def _setupItemNavigation(): Unit = js.native
     
     /**
       * Indicates whether any of the element siblings have icon.
       */
     var _siblingsWithIcon: Boolean = js.native
+    
+    def _updateCheckedState(): Unit = js.native
     
     /**
       * Defines the additional accessibility attributes that will be applied to the component.
@@ -193,7 +225,6 @@ object distMenuItemMod {
       * - **ariaKeyShortcuts**: Indicated the availability of a keyboard shortcuts defined for the menu item.
       *
       * - **role**: Defines the role of the menu item. If not set, menu item will have default role="menuitem".
-      *
       * @public
       * @since 2.1.0
       * @default {}
@@ -218,6 +249,19 @@ object distMenuItemMod {
     var additionalText: js.UndefOr[String] = js.native
     
     /**
+      * Defines whether menu item is in checked state.
+      *
+      * **Note:** checked state is only taken into account when menu item is added to menu item group
+      * with `checkMode` other than `None`.
+      *
+      * **Note:** A checked menu item has a checkmark displayed at its end.
+      * @default false
+      * @public
+      * @since 2.12.0
+      */
+    var checked: Boolean = js.native
+    
+    /**
       * Defines the components that should be displayed at the end of the menu item.
       *
       * **Note:** It is highly recommended to slot only components of type `ui5-button`,`ui5-link`
@@ -227,13 +271,17 @@ object distMenuItemMod {
       *
       * The priority of what will be displayed at the end of the menu item is as follows:
       * sub-menu arrow (if there are items added in `items` slot) -> components added in `endContent` -> text set to `additionalText`.
+      *
+      * Application developers are responsible for ensuring that interactive elements placed in the `endContent` slot
+      * have the correct accessibility behaviour, including their enabled or disabled states.
+      * The menu does not manage these aspects when the menu item state changes.
       * @public
       * @since 2.0.0
       */
     var endContent: js.Array[HTMLElement] = js.native
     
     @JSName("eventDetails")
-    var eventDetails_MenuItem: (/* import warning: importer.ImportType#apply Failed type conversion: @ui5/webcomponents.@ui5/webcomponents/dist/ListItemBase.default['eventDetails'] */ js.Any) & Detailclick & Closemenu = js.native
+    var eventDetails_MenuItem: (/* import warning: importer.ImportType#apply Failed type conversion: @ui5/webcomponents.@ui5/webcomponents/dist/ListItemBase.default['eventDetails'] */ js.Any) & Detailclick & Check = js.native
     
     def hasEndContent: Boolean = js.native
     
@@ -253,22 +301,24 @@ object distMenuItemMod {
       */
     var icon: js.UndefOr[String] = js.native
     
+    var isGroup: js.UndefOr[Boolean] = js.native
+    
     def isMenuItem: Boolean = js.native
+    @JSName("isMenuItem")
+    var isMenuItem_FMenuItem: js.UndefOr[Boolean] = js.native
     
     def isPhone: Boolean = js.native
     
     def isRtl: Boolean = js.native
     
-    def isSeparator: Boolean = js.native
-    @JSName("isSeparator")
-    var isSeparator_FMenuItem: Boolean = js.native
+    var isSeparator: js.UndefOr[Boolean] = js.native
     
-    def isSubMenuOpen: Boolean = js.native
+    def isSubMenuOpen: js.UndefOr[Boolean] = js.native
     
     /**
       * Defines the items of this component.
       *
-      * **Note:** The slot can hold `ui5-menu-item` and `ui5-menu-separator` items.
+      * **Note:** The slot can hold menu item and menu separator items.
       *
       * If there are items added to this slot, an arrow will be displayed at the end
       * of the item in order to indicate that there are items added. In that case components added
@@ -285,9 +335,9 @@ object distMenuItemMod {
     def labelClose: String = js.native
     
     /**
-      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding ui5-menu popover.
+      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding menu popover.
       *
-      * **Note:** If set to `true` a `ui5-busy-indicator` component will be displayed into the related one to the current `ui5-menu-item` sub-menu popover.
+      * **Note:** If set to `true` a busy indicator component will be displayed into the related one to the current menu item sub-menu popover.
       * @default false
       * @public
       * @since 1.13.0
@@ -295,7 +345,7 @@ object distMenuItemMod {
     var loading: Boolean = js.native
     
     /**
-      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding ui5-menu popover.
+      * Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding menu popover.
       * @default 1000
       * @public
       * @since 1.13.0

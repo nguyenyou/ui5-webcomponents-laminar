@@ -17,6 +17,7 @@ object distTableCellMod {
     * @extends UI5Element
     * @public
     * @csspart cell - Used to style the native `td` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/TableCell.js` instead.
     */
   @JSImport("@ui5/webcomponents-compat/dist/TableCell.js", JSImport.Default)
   @js.native
@@ -44,6 +45,7 @@ object distTableCellMod {
     * @extends UI5Element
     * @public
     * @csspart cell - Used to style the native `td` element
+    * @deprecated Deprecated as of version 2.12.0, use `@ui5/webcomponents/dist/TableCell.js` instead.
     */
   @js.native
   trait TableCell

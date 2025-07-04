@@ -6,7 +6,6 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsIn
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.accept
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.less
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.on
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
@@ -171,7 +170,7 @@ object distSwitchMod {
     def formElementAnchor_MSwitch(): js.Promise[js.UndefOr[HTMLElement]] = js.native
     
     @JSName("formFormattedValue")
-    def formFormattedValue_MSwitch: on | Null = js.native
+    def formFormattedValue_MSwitch: String | Null = js.native
     
     @JSName("formValidityMessage")
     def formValidityMessage_MSwitch: String = js.native
@@ -224,5 +223,13 @@ object distSwitchMod {
       * @since 1.9.0
       */
     var tooltip: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the form value of the component.
+      * @default ""
+      * @since 2.12.0
+      * @public
+      */
+    var value: String = js.native
   }
 }

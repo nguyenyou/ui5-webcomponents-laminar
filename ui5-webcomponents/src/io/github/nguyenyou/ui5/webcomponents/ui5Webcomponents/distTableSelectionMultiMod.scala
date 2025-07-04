@@ -135,6 +135,15 @@ object distTableSelectionMultiMod {
       */
     def getSelectedRows(): js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default] = js.native
     
+    /**
+      * Defines the selector of the header row.
+      *
+      * @default "SelectAll"
+      * @public
+      * @since 2.12
+      */
+    var headerSelector: /* template literal string: ${TableSelectionMultiHeaderSelector} */ String = js.native
+    
     @JSName("onTableBeforeRendering")
     def onTableBeforeRendering_MTableSelectionMulti(): Unit = js.native
     

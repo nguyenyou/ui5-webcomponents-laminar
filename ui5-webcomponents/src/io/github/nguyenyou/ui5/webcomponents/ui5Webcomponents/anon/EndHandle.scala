@@ -16,8 +16,6 @@ trait EndHandle extends StObject {
   var progress: Transformorigin
   
   var startHandle: StringDictionary[String]
-  
-  var tooltip: Visibility
 }
 object EndHandle {
   
@@ -26,10 +24,9 @@ object EndHandle {
     label: Width,
     labelContainer: DictxWidth,
     progress: Transformorigin,
-    startHandle: StringDictionary[String],
-    tooltip: Visibility
+    startHandle: StringDictionary[String]
   ): EndHandle = {
-    val __obj = js.Dynamic.literal(endHandle = endHandle.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelContainer = labelContainer.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], startHandle = startHandle.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(endHandle = endHandle.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelContainer = labelContainer.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], startHandle = startHandle.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndHandle]
   }
   
@@ -45,7 +42,5 @@ object EndHandle {
     inline def setProgress(value: Transformorigin): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     inline def setStartHandle(value: StringDictionary[String]): Self = StObject.set(x, "startHandle", value.asInstanceOf[js.Any])
-    
-    inline def setTooltip(value: Visibility): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

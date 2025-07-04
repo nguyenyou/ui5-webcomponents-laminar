@@ -46,7 +46,7 @@ object distTableRowBaseMod {
   trait TableRowBase
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    def _hasRowSelector: Boolean = js.native
+    def _hasSelector: js.UndefOr[Boolean] = js.native
     
     def _i18nRowSelector: String = js.native
     

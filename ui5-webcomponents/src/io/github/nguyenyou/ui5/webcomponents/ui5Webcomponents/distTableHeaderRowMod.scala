@@ -52,11 +52,19 @@ object distTableHeaderRowMod {
   trait TableHeaderRow
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowBaseMod.default {
     
+    def _hasSelectedRows: Boolean = js.native
+    
+    def _i18nDeselectAllRows: String = js.native
+    
     def _i18nRowActions: String = js.native
     
     def _i18nRowPopin: String = js.native
     
+    def _i18nSelectAllRows: String = js.native
+    
     def _i18nSelection: String = js.native
+    
+    def _shouldRenderClearAll: Boolean = js.native
     
     /**
       * Defines the cells of the component.
