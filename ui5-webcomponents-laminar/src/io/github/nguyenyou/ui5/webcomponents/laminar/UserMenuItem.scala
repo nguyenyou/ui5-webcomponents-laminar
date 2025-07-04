@@ -47,9 +47,23 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
     */
   lazy val additionalText: HtmlAttr[String] = htmlAttr("additional-text", StringAsIsCodec)
 
-  /** Defines whether `ui5-menu-item` is in disabled state.
+  /** Defines whether menu item is in checked state.
     *
-    * **Note:** A disabled `ui5-menu-item` is noninteractive.
+    * **Note:** checked state is only taken into account when menu item is added to menu item group with `checkMode`
+    * other than `None`.
+    *
+    * **Note:** A checked menu item has a checkmark displayed at its end.
+    *
+    * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
+    * **@ui5/webcomponents-fiori**.
+    *
+    * Default: false
+    */
+  lazy val checked: HtmlAttr[Boolean] = htmlAttr("checked", BooleanAsAttrPresenceCodec)
+
+  /** Defines whether menu item is in disabled state.
+    *
+    * **Note:** A disabled menu item is noninteractive.
     *
     * Default: false
     */
@@ -78,10 +92,10 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
   lazy val icon: HtmlAttr[IconName] = htmlAttr("icon", IconName.AsStringCodec)
 
   /** Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding
-    * ui5-menu popover.
+    * menu popover.
     *
-    * **Note:** If set to `true` a `ui5-busy-indicator` component will be displayed into the related one to the current
-    * `ui5-menu-item` sub-menu popover.
+    * **Note:** If set to `true` a busy indicator component will be displayed into the related one to the current menu
+    * item sub-menu popover.
     *
     * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
     * **@ui5/webcomponents-fiori**.
@@ -91,7 +105,7 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
   lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
 
   /** Defines the delay in milliseconds, after which the loading indicator will be displayed inside the corresponding
-    * ui5-menu popover.
+    * menu popover.
     *
     * **Note:** Available since [v1.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.13.0) of
     * **@ui5/webcomponents-fiori**.
@@ -175,6 +189,17 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
     "before-open"
   )
 
+  /** Fired when an item is checked or unchecked.
+    *
+    * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
+    * **@ui5/webcomponents-fiori**.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ❌      |    ✅    |
+    */
+  lazy val onCheck: EventProp[Ui5CustomEvent[Ref]] = new EventProp("check")
+
   /** Fired after the menu is closed.
     *
     * **Note:** Available since [v1.10.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v1.10.0) of
@@ -233,6 +258,10 @@ object UserMenuItem extends WebComponent("ui5-user-menu-item") {
     *
     * The priority of what will be displayed at the end of the menu item is as follows: sub-menu arrow (if there are
     * items added in `items` slot) -> components added in `endContent` -> text set to `additionalText`.
+    *
+    * Application developers are responsible for ensuring that interactive elements placed in the `endContent` slot have
+    * the correct accessibility behaviour, including their enabled or disabled states. The menu does not manage these
+    * aspects when the menu item state changes.
     *
     * __Note:__ The content of the prop will be rendered into a
     * [&lt;slot&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot) by assigning the respective

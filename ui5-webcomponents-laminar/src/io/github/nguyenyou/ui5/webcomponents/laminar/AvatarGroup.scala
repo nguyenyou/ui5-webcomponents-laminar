@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.laminar
 
 import com.raquo.laminar.api.L.*
+import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.AvatarGroup as AvatarGroupComponent
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distAvatarGroupMod.AvatarGroupClickEventDetail
@@ -20,6 +21,25 @@ object AvatarGroup extends WebComponent("ui5-avatar-group") {
   type Ref = AvatarGroupComponent & dom.HTMLElement
 
   // -- Attributes --
+
+  /** Defines the accessible name of the AvatarGroup. When provided, this will override the default aria-label text.
+    *
+    * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
+
+  /** Receives id(s) of the elements that describe the AvatarGroup. When provided, this will be used as aria-labelledby
+    * instead of aria-label.
+    *
+    * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
 
   /** Defines the mode of the `AvatarGroup`.
     *

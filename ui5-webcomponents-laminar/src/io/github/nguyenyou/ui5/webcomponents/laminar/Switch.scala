@@ -120,6 +120,13 @@ object Switch extends WebComponent("ui5-switch") {
     */
   lazy val tooltip: HtmlAttr[String] = htmlAttr("tooltip", StringAsIsCodec)
 
+  /** Defines the form value of the component.
+    *
+    * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
+    * **@ui5/webcomponents**.
+    */
+  lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
+
   // -- Events --
 
   /** Fired when the component checked state changes.

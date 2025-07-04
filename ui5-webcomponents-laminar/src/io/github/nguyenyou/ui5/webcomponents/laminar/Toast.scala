@@ -54,7 +54,7 @@ object Toast extends WebComponent("ui5-toast") {
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
+    * |     ❌      |    ❌    |
     */
   lazy val onClose: EventProp[Ui5CustomEvent[Ref]] = new EventProp("close")
 
