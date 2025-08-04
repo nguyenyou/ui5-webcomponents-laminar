@@ -45,9 +45,6 @@ jobs:
       - name: Build ScalaJS
         run: ./mill -i www.fullLinkJS
         
-      - name: Build Vite
-        run: yarn workspace www build:vercel
-          
       - name: Install and use Vercel CLI
         run: yarn dlx vercel@latest pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
