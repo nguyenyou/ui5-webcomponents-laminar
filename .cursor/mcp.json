@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ui5-webcomponents-laminar-metals": {
+      "url": "http://localhost:51428/sse"
+    }
+  }
+}
