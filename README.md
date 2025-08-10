@@ -1,3 +1,5 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/io.github.nguyenyou/ui5-webcomponents-laminar_sjs1_3)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/nguyenyou/ui5-webcomponents-laminar/main/.github/assets/banner.png" alt="Laminar wrappers for UI5 Web Components">
 </p>
