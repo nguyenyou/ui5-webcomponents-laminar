@@ -24,6 +24,24 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
 
   // -- Attributes --
 
+  /** Defines the accessible description of the component.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescription: HtmlAttr[String] = htmlAttr("accessible-description", StringAsIsCodec)
+
+  /** Receives id(or many ids) of the elements that describe the input.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescriptionRef: HtmlAttr[String] = htmlAttr("accessible-description-ref", StringAsIsCodec)
+
   /** Defines the aria-label attribute for the component.
     *
     * Default: undefined
@@ -55,7 +73,18 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
 
   /** Determines the format, displayed in the input field.
     *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
     * Default: undefined
+    */
+  lazy val displayFormat: HtmlAttr[String] = htmlAttr("display-format", StringAsIsCodec)
+
+  /** Determines the format, displayed in the input field.
+    *
+    * Default: undefined
+    *
+    * Deprecated: Use displayFormat and valueFormat instead
     */
   lazy val formatPattern: HtmlAttr[String] = htmlAttr("format-pattern", StringAsIsCodec)
 
@@ -70,14 +99,14 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
   /** Determines the maximum date available for selection.
     *
     * **Note:** If the formatPattern property is not set, the maxDate value must be provided in the ISO date format
-    * (YYYY-MM-dd).
+    * (yyyy-MM-dd).
     */
   lazy val maxDate: HtmlAttr[String] = htmlAttr("max-date", StringAsIsCodec)
 
   /** Determines the minimum date available for selection.
     *
     * **Note:** If the formatPattern property is not set, the minDate value must be provided in the ISO date format
-    * (YYYY-MM-dd).
+    * (yyyy-MM-dd).
     */
   lazy val minDate: HtmlAttr[String] = htmlAttr("min-date", StringAsIsCodec)
 
@@ -136,6 +165,15 @@ object DateTimePicker extends WebComponent("ui5-datetime-picker") {
   /** Defines a formatted date value.
     */
   lazy val value: HtmlAttr[String] = htmlAttr("value", StringAsIsCodec)
+
+  /** Determines the format, used for the value attribute.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val valueFormat: HtmlAttr[String] = htmlAttr("value-format", StringAsIsCodec)
 
   /** Defines the value state of the component.
     *

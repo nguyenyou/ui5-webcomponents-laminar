@@ -42,8 +42,8 @@ object TableRow extends WebComponent("ui5-table-row") {
     */
   lazy val navigated: HtmlAttr[Boolean] = htmlAttr("navigated", BooleanAsAttrPresenceCodec)
 
-  /** Defines the position of the row related to the total number of rows within the table when the `TableVirtualizer`
-    * feature is used.
+  /** Defines the 0-based position of the row related to the total number of rows within the table when the
+    * `TableVirtualizer` feature is used.
     *
     * **Note:** Available since [v2.5.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.5.0) of
     * **@ui5/webcomponents**.

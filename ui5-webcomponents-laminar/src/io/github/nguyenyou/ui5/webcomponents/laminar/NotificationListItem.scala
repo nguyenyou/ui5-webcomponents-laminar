@@ -81,7 +81,7 @@ object NotificationListItem extends WebComponent("ui5-li-notification") {
     *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
+    * |     ❌      |    ❌    |
     */
   lazy val onClose: EventProp[Ui5CustomEvent[Ref] & EventDetail[NotificationListItemCloseEventDetail]] = new EventProp(
     "close"

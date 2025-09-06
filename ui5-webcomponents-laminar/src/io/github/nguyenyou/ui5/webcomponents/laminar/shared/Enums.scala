@@ -34,7 +34,7 @@ type UploadState                     = "Complete" | "Error" | "Ready" | "Uploadi
 type MenuItemGroupCheckMode          = "None" | "Single" | "Multiple"
 type WizardContentLayout             = "MultipleSteps" | "SingleStep"
 type AvatarColorScheme = "Auto" | "Accent1" | "Accent2" | "Accent3" | "Accent4" | "Accent5" | "Accent6" | "Accent7" |
-  "Accent8" | "Accent9" | "Accent10" | "Placeholder"
+  "Accent8" | "Accent9" | "Accent10" | "Placeholder" | "Transparent"
 type AvatarShape       = "Circle" | "Square"
 type AvatarSize        = "XS" | "S" | "M" | "L" | "XL"
 type AvatarGroupType   = "Group" | "Individual"

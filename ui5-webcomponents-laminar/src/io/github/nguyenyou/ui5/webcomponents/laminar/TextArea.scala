@@ -4,6 +4,7 @@ import com.raquo.laminar.api.L.*
 import com.raquo.laminar.codecs.*
 import io.github.nguyenyou.ui5.webcomponents.laminar.shared.*
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTextAreaMod.TextArea as TextAreaComponent
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTextAreaMod.TextAreaInputEventDetail
 import org.scalajs.dom
 
 import scala.scalajs.js
@@ -133,11 +134,13 @@ object TextArea extends WebComponent("ui5-textarea") {
 
   /** Fired when the value of the component changes at each keystroke or when something is pasted.
     *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
     * | cancelable | bubbles |
     * |:----------:|:-------:|
-    * |     ❌      |    ✅    |
+    * |     ✅      |    ✅    |
     */
-  lazy val onInput: EventProp[Ui5CustomEvent[Ref]] = new EventProp("input")
+  lazy val onInput: EventProp[Ui5CustomEvent[Ref] & EventDetail[TextAreaInputEventDetail]] = new EventProp("input")
 
   /** Fired when textarea is scrolled.
     *

@@ -34,6 +34,12 @@ object ShellBarSearch extends WebComponent("ui5-shellbar-search") {
     */
   lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
 
+  /** Indicates whether the suggestions popover should be opened on focus.
+    *
+    * Default: false
+    */
+  lazy val autoOpen: HtmlAttr[Boolean] = htmlAttr("auto-open", BooleanAsAttrPresenceCodec)
+
   /** Indicates whether a loading indicator should be shown in the popup.
     *
     * Default: false

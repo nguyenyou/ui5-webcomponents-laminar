@@ -3315,6 +3315,12 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ad-hoc-marker.js", JSImport.Namespace)
   object `import-tnt-ad-hoc-marker` extends js.Object
 
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/add-issue.js", JSImport.Namespace)
+  object `import-tnt-add-issue` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/add-project.js", JSImport.Namespace)
+  object `import-tnt-add-project` extends js.Object
+
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/aggregation.js", JSImport.Namespace)
   object `import-tnt-aggregation` extends js.Object
 
@@ -3326,6 +3332,9 @@ private[laminar] object IconImports {
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ai-2.js", JSImport.Namespace)
   object `import-tnt-ai-2` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/ai-feature-estimator.js", JSImport.Namespace)
+  object `import-tnt-ai-feature-estimator` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/antenna.js", JSImport.Namespace)
   object `import-tnt-antenna` extends js.Object
@@ -3407,6 +3416,9 @@ private[laminar] object IconImports {
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/catching-message.js", JSImport.Namespace)
   object `import-tnt-catching-message` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/clean-up.js", JSImport.Namespace)
+  object `import-tnt-clean-up` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/clear-all-mapping.js", JSImport.Namespace)
   object `import-tnt-clear-all-mapping` extends js.Object
@@ -3591,6 +3603,9 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/more.js", JSImport.Namespace)
   object `import-tnt-more` extends js.Object
 
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/navigate-source-code.js", JSImport.Namespace)
+  object `import-tnt-navigate-source-code` extends js.Object
+
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/network.js", JSImport.Namespace)
   object `import-tnt-network` extends js.Object
 
@@ -3666,6 +3681,9 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/references.js", JSImport.Namespace)
   object `import-tnt-references` extends js.Object
 
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/refine-test-data.js", JSImport.Namespace)
+  object `import-tnt-refine-test-data` extends js.Object
+
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/repeater.js", JSImport.Namespace)
   object `import-tnt-repeater` extends js.Object
 
@@ -3684,6 +3702,9 @@ private[laminar] object IconImports {
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/router.js", JSImport.Namespace)
   object `import-tnt-router` extends js.Object
 
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/sap-fiori-tools.js", JSImport.Namespace)
+  object `import-tnt-sap-fiori-tools` extends js.Object
+
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/satellite.js", JSImport.Namespace)
   object `import-tnt-satellite` extends js.Object
 
@@ -3695,6 +3716,9 @@ private[laminar] object IconImports {
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/send-task.js", JSImport.Namespace)
   object `import-tnt-send-task` extends js.Object
+
+  @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/service-estimator.js", JSImport.Namespace)
+  object `import-tnt-service-estimator` extends js.Object
 
   @js.native @JSImport("@ui5/webcomponents-icons-tnt/dist/service-task.js", JSImport.Namespace)
   object `import-tnt-service-task` extends js.Object

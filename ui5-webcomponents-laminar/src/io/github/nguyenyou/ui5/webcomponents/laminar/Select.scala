@@ -23,6 +23,24 @@ object Select extends WebComponent("ui5-select") {
 
   // -- Attributes --
 
+  /** Defines the accessible description of the component.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescription: HtmlAttr[String] = htmlAttr("accessible-description", StringAsIsCodec)
+
+  /** Receives id(or many ids) of the elements that describe the select.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescriptionRef: HtmlAttr[String] = htmlAttr("accessible-description-ref", StringAsIsCodec)
+
   /** Defines the accessible ARIA name of the component.
     *
     * Default: undefined
