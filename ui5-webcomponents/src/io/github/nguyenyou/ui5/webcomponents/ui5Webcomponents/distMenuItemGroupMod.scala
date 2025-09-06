@@ -45,6 +45,18 @@ object distMenuItemGroupMod {
   @JSImport("@ui5/webcomponents/dist/MenuItemGroup.js", JSImport.Default)
   @js.native
   open class default () extends MenuItemGroup
+  object default {
+    
+    @JSImport("@ui5/webcomponents/dist/MenuItemGroup.js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents/dist/MenuItemGroup.js", "default.i18nBundle")
+    @js.native
+    def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
+    inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
+  }
   
   inline def isInstanceOfMenuItemGroup(`object`: Any): /* is @ui5/webcomponents.@ui5/webcomponents/dist/MenuItemGroup.MenuItemGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOfMenuItemGroup")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is @ui5/webcomponents.@ui5/webcomponents/dist/MenuItemGroup.MenuItemGroup */ Boolean]
   
@@ -107,6 +119,8 @@ object distMenuItemGroupMod {
       * @private
       */
     def _updateItemsCheckMode(): Unit = js.native
+    
+    def ariaLabelText: js.UndefOr[String] = js.native
     
     /**
       * Defines the component's check mode.

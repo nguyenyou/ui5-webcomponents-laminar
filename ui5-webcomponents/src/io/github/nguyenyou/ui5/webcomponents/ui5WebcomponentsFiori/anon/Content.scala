@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Content extends StObject {
   
-  var content: Bottom
+  var content: Ui5uccontent
 }
 object Content {
   
-  inline def apply(content: Bottom): Content = {
+  inline def apply(content: Ui5uccontent): Content = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
@@ -18,6 +18,6 @@ object Content {
   @scala.inline
   implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: Bottom): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Ui5uccontent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

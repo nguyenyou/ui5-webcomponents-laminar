@@ -204,8 +204,6 @@ object distDynamicPageMod {
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distDynamicPageHeaderMod.default
       ] = js.native
     
-    def headerAriaExpanded: js.UndefOr[Boolean] = js.native
-    
     def headerAriaHidden: Boolean = js.native
     
     def headerAriaLabel: js.UndefOr[String] = js.native

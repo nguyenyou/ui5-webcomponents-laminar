@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsAi.anon.Arrowbuttonclick
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import org.scalajs.dom.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,6 +43,110 @@ object distButtonMod {
   @JSImport("@ui5/webcomponents-ai/dist/Button.js", JSImport.Default)
   @js.native
   open class default () extends Button
+  object default {
+    
+    @JSImport("@ui5/webcomponents-ai/dist/Button.js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents-ai/dist/Button.js", "default.i18nBundle")
+    @js.native
+    def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
+    inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
+  }
+  
+  trait AIButtonAccessibilityAttributes extends StObject {
+    
+    var arrowButton: js.UndefOr[AIButtonArrowButtonAccessibilityAttributes] = js.undefined
+    
+    var root: js.UndefOr[AIButtonRootAccessibilityAttributes] = js.undefined
+  }
+  object AIButtonAccessibilityAttributes {
+    
+    inline def apply(): AIButtonAccessibilityAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AIButtonAccessibilityAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AIButtonAccessibilityAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setArrowButton(value: AIButtonArrowButtonAccessibilityAttributes): Self = StObject.set(x, "arrowButton", value.asInstanceOf[js.Any])
+      
+      inline def setArrowButtonUndefined: Self = StObject.set(x, "arrowButton", js.undefined)
+      
+      inline def setRoot(value: AIButtonRootAccessibilityAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@ui5/webcomponents-base.@ui5/webcomponents-base/dist/types.AccessibilityAttributes, 'hasPopup' | 'expanded' | 'title'> */
+  trait AIButtonArrowButtonAccessibilityAttributes extends StObject {
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    var hasPopup: js.UndefOr[AriaHasPopup] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object AIButtonArrowButtonAccessibilityAttributes {
+    
+    inline def apply(): AIButtonArrowButtonAccessibilityAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AIButtonArrowButtonAccessibilityAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AIButtonArrowButtonAccessibilityAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setHasPopup(value: AriaHasPopup): Self = StObject.set(x, "hasPopup", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopupUndefined: Self = StObject.set(x, "hasPopup", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@ui5/webcomponents-base.@ui5/webcomponents-base/dist/types.AccessibilityAttributes, 'hasPopup' | 'roleDescription' | 'title'> */
+  trait AIButtonRootAccessibilityAttributes extends StObject {
+    
+    var hasPopup: js.UndefOr[AriaHasPopup] = js.undefined
+    
+    var roleDescription: js.UndefOr[String] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object AIButtonRootAccessibilityAttributes {
+    
+    inline def apply(): AIButtonRootAccessibilityAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AIButtonRootAccessibilityAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AIButtonRootAccessibilityAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setHasPopup(value: AriaHasPopup): Self = StObject.set(x, "hasPopup", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopupUndefined: Self = StObject.set(x, "hasPopup", js.undefined)
+      
+      inline def setRoleDescription(value: String): Self = StObject.set(x, "roleDescription", value.asInstanceOf[js.Any])
+      
+      inline def setRoleDescriptionUndefined: Self = StObject.set(x, "roleDescription", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
   
   /**
     * @class
@@ -77,6 +182,8 @@ object distButtonMod {
   @js.native
   trait Button
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
+    
+    def _computedAccessibilityAttributes: AIButtonAccessibilityAttributes = js.native
     
     /**
       * Keeps the current state object of the component.
@@ -141,6 +248,30 @@ object distButtonMod {
     def _stateIconOnly: Boolean = js.native
     
     def _stateText: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the additional accessibility attributes that will be applied to the component.
+      *
+      * This property allows for fine-tuned control of ARIA attributes for screen reader support.
+      * It accepts an object with the following optional fields:
+      *
+      * - **root**: Accessibility attributes that will be applied to the root element.
+      *   - **hasPopup**: Indicates the availability and type of interactive popup element (such as a menu or dialog).
+      *     Accepts string values: `"dialog"`, `"grid"`, `"listbox"`, `"menu"`, or `"tree"`.
+      *   - **roleDescription**: Defines a human-readable description for the button's role.
+      *     Accepts any string value.
+      *
+      * - **arrowButton**: Accessibility attributes that will be applied to the arrow (split) button element.
+      *   - **hasPopup**: Indicates the type of popup triggered by the arrow button.
+      *     Accepts string values: `"dialog"`, `"grid"`, `"listbox"`, `"menu"`, or `"tree"`.
+      *   - **expanded**: Indicates whether the popup controlled by the arrow button is currently expanded.
+      *     Accepts boolean values: `true` or `false`.
+      *
+      * @public
+      * @since 2.6.0
+      * @default {}
+      */
+    var accessibilityAttributes: AIButtonAccessibilityAttributes = js.native
     
     /**
       * Defines the active state of the arrow button in split mode.

@@ -198,7 +198,9 @@ object distIconMod {
       */
     var accessibleName: js.UndefOr[String] = js.native
     
-    var customSvg: js.UndefOr[js.Object] = js.native
+    var customTemplate: js.UndefOr[js.Object] = js.native
+    
+    var customTemplateAsString: js.UndefOr[String] = js.native
     
     /**
       * Defines the component semantic design.

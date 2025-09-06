@@ -438,6 +438,12 @@ object stdStrings {
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
+  sealed trait `border-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  
+  @js.native
   sealed trait both
     extends StObject
        with FillMode
@@ -732,6 +738,12 @@ object stdStrings {
   inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
+  sealed trait `content-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
+  
+  @js.native
   sealed trait contextlost extends StObject
   inline def contextlost: contextlost = "contextlost".asInstanceOf[contextlost]
   
@@ -880,6 +892,12 @@ object stdStrings {
   @js.native
   sealed trait details extends StObject
   inline def details: details = "details".asInstanceOf[details]
+  
+  @js.native
+  sealed trait `device-pixel-content-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `device-pixel-content-box`: `device-pixel-content-box` = "device-pixel-content-box".asInstanceOf[`device-pixel-content-box`]
   
   @js.native
   sealed trait dfn extends StObject

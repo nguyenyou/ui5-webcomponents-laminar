@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distFlexibleColumnLayoutMod.FCLAccessibilityRoles
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTimelineItemMod.TimelineItemRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1080,6 +1081,12 @@ object ui5WebcomponentsFioriStrings {
   inline def listing: listing = "listing".asInstanceOf[listing]
   
   @js.native
+  sealed trait listitem
+    extends StObject
+       with TimelineItemRole
+  inline def listitem: listitem = "listitem".asInstanceOf[listitem]
+  
+  @js.native
   sealed trait load extends StObject
   inline def load: load = "load".asInstanceOf[load]
   
@@ -1962,7 +1969,9 @@ object ui5WebcomponentsFioriStrings {
   inline def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
   
   @js.native
-  sealed trait treeitem extends StObject
+  sealed trait treeitem
+    extends StObject
+       with TimelineItemRole
   inline def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
   
   @js.native

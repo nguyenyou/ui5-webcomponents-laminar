@@ -4,6 +4,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Element
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Itemdelete
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Placement
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesListAccessibleRoleMod.ListAccessibleRole
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMovePlacementMod.MovePlacement
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.DragEvent
 import org.scalajs.dom.HTMLElement
@@ -108,6 +109,12 @@ object distTreeMod {
   trait Tree
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    var _dragAndDropHandler: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDelegateDragAndDropHandlerMod.default = js.native
+    
+    def _filterPlacements(placements: js.Array[MovePlacement], draggedElement: HTMLElement, targetElement: HTMLElement): js.Array[MovePlacement] = js.native
+    
+    def _getItems(): js.Array[HTMLElement] = js.native
+    
     /**
       * Returns the corresponding list item for a given tree item
       * @param item The tree item
@@ -150,6 +157,10 @@ object distTreeMod {
     def _prepareTreeItems(): Unit = js.native
     
     def _role: ListAccessibleRole = js.native
+    
+    def _transformElement(element: HTMLElement): HTMLElement = js.native
+    
+    def _validateDraggedElement(draggedElement: HTMLElement, targetElement: HTMLElement): Boolean = js.native
     
     /**
       * Defines the accessible description of the component.

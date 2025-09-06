@@ -9,13 +9,13 @@ object distGeneratedThemesToolbarSeparatorDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents/dist/generated/themes/ToolbarSeparator.css", JSImport.Default)
   @js.native
-  val default: /* .ui5-tb-separator{height:var(--_ui5-v2-12-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
+  val default: /* .ui5-tb-separator{height:var(--_ui5-v2-14-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
     */ String = js.native
   
-  type _To = /* .ui5-tb-separator{height:var(--_ui5-v2-12-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
+  type _To = /* .ui5-tb-separator{height:var(--_ui5-v2-14-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesToolbarSeparatorDotcssMod.foo` */
-  override def _to: /* .ui5-tb-separator{height:var(--_ui5-v2-12-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
+  override def _to: /* .ui5-tb-separator{height:var(--_ui5-v2-14-0-toolbar-separator-height);width:.0625rem;background:var(--sapToolbar_SeparatorColor);box-sizing:border-box}
     */ String = default
 }

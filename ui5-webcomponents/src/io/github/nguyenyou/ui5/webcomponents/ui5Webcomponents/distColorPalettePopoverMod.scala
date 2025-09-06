@@ -143,7 +143,7 @@ object distColorPalettePopoverMod {
       * @default undefined
       * @since 1.21.0
       */
-    var opener: js.UndefOr[HTMLElement | String] = js.native
+    var opener: js.UndefOr[HTMLElement | String | Null] = js.native
     
     def respPopover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default = js.native
     

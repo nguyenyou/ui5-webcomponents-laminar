@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.anon.AnimationMode
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.anon.CalendarType
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distAssetRegistriesLocaleDataMod.CLDRData
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesPatchPopupMod.PopupInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,9 @@ object distFeaturesOpenUI5SupportMod {
     val ^ : js.Any = js.native
     
     /* static member */
+    inline def addOpenedPopup(popupInfo: PopupInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOpenedPopup")(popupInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /* static member */
     inline def attachListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachListeners")().asInstanceOf[Unit]
     
     /* static member */
@@ -31,6 +35,9 @@ object distFeaturesOpenUI5SupportMod {
     
     /* static member */
     inline def getLocaleDataObject(): js.UndefOr[CLDRData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleDataObject")().asInstanceOf[js.UndefOr[CLDRData]]
+    
+    /* static member */
+    inline def getTopmostPopup(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopmostPopup")().asInstanceOf[js.Object]
     
     /* static member */
     inline def init(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[Unit]]
@@ -49,6 +56,9 @@ object distFeaturesOpenUI5SupportMod {
     
     /* static member */
     inline def listenForThemeChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_listenForThemeChange")().asInstanceOf[Unit]
+    
+    /* static member */
+    inline def removeOpenedPopup(popup: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOpenedPopup")(popup.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait OpenUI5Support extends StObject

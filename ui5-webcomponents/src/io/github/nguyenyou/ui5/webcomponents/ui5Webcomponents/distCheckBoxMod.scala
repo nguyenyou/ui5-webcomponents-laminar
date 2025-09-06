@@ -1,11 +1,15 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.std.ValidityStateFlags
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.AriaChecked
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Change
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Critical
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.mixed
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaDisabled
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaReadonly
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaRole
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalablytyped.runtime.StObject
@@ -117,6 +121,12 @@ object distCheckBoxMod {
   @js.native
   trait CheckBox extends IFormInputElement {
     
+    /**
+      * Defines custom aria implementation object.
+      * @private
+      */
+    var _accInfo: js.UndefOr[CheckBoxAccInfo] = js.native
+    
     def _deactivate(): Unit = js.native
     
     def _onclick(): Unit = js.native
@@ -130,6 +140,8 @@ object distCheckBoxMod {
     def _onmousedown(): Unit = js.native
     
     def _onmouseup(): Unit = js.native
+    
+    def accInfo: AriaChecked = js.native
     
     /**
       * Defines the accessible ARIA name of the component.
@@ -307,5 +319,57 @@ object distCheckBoxMod {
       * @public
       */
     var wrappingType: /* template literal string: ${WrappingType} */ String = js.native
+  }
+  
+  trait CheckBoxAccInfo extends StObject {
+    
+    var ariaChecked: js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaChecked
+      ] = js.undefined
+    
+    var ariaDisabled: js.UndefOr[AriaDisabled] = js.undefined
+    
+    var ariaReadonly: js.UndefOr[AriaReadonly] = js.undefined
+    
+    var ariaRequired: js.UndefOr[Boolean] = js.undefined
+    
+    var role: js.UndefOr[AriaRole] = js.undefined
+    
+    var tabindex: js.UndefOr[Double] = js.undefined
+  }
+  object CheckBoxAccInfo {
+    
+    inline def apply(): CheckBoxAccInfo = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CheckBoxAccInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxAccInfo] (val x: Self) extends AnyVal {
+      
+      inline def setAriaChecked(value: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaChecked): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
+      
+      inline def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
+      
+      inline def setAriaDisabled(value: AriaDisabled): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
+      
+      inline def setAriaReadonly(value: AriaReadonly): Self = StObject.set(x, "ariaReadonly", value.asInstanceOf[js.Any])
+      
+      inline def setAriaReadonlyUndefined: Self = StObject.set(x, "ariaReadonly", js.undefined)
+      
+      inline def setAriaRequired(value: Boolean): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
+      
+      inline def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
+      
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+      
+      inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+    }
   }
 }

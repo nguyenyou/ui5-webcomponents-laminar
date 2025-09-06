@@ -107,7 +107,7 @@ object distTableSelectionMod {
     
     def _invalidateTableAndRows(): Unit = js.native
     
-    def _onclick(e: MouseEvent): Unit = js.native
+    def _onClickCapture(e: MouseEvent): Unit = js.native
     
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
@@ -150,6 +150,10 @@ object distTableSelectionMod {
     @JSName("eventDetails")
     var eventDetails_TableSelection: ChangeVoid = js.native
     
+    def getAriaDescriptionForColumnHeader(): js.UndefOr[String] = js.native
+    
+    def getAriaDescriptionForTable(): js.UndefOr[String] = js.native
+    
     def getRowKey(row: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowMod.default): String = js.native
     
     def hasSelectedRow(): Boolean = js.native
@@ -170,8 +174,13 @@ object distTableSelectionMod {
       */
     var mode: /* template literal string: ${TableSelectionMode} */ String = js.native
     
+    def onClickCaptureBound(e: MouseEvent): Unit = js.native
+    
     @JSName("onTableActivate")
     def onTableActivate_MTableSelection(table: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableMod.default): Unit = js.native
+    
+    @JSName("onTableAfterRendering")
+    def onTableAfterRendering_MTableSelection(): Unit = js.native
     
     @JSName("onTableBeforeRendering")
     def onTableBeforeRendering_MTableSelection(): Unit = js.native

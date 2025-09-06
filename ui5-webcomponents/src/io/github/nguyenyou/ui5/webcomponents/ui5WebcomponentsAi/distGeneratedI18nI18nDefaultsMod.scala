@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distGeneratedI18nI18nDefaultsMod {
   
+  @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults.js", "BUTTON_TOOLTIP_TEXT")
+  @js.native
+  val BUTTON_TOOLTIP_TEXT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-ai/dist/generated/i18n/i18n-defaults.js", "PROMPT_INPUT_CHARACTERS_EXCEEDED")
   @js.native
   val PROMPT_INPUT_CHARACTERS_EXCEEDED: I18nText = js.native

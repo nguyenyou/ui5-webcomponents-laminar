@@ -56,6 +56,8 @@ object distTimelineMod {
     
     var collapsed: js.UndefOr[Boolean] = js.native
     
+    var effectiveRole: js.UndefOr[String] = js.native
+    
     var firstItemInTimeline: js.UndefOr[Boolean] = js.native
     
     var focusLink: js.UndefOr[js.Function0[Unit]] = js.native
@@ -102,9 +104,6 @@ object distTimelineMod {
     
     def _handleDown(): Unit = js.native
     
-    def _handleNextOrPreviousItem(e: KeyboardEvent): Unit = js.native
-    def _handleNextOrPreviousItem(e: KeyboardEvent, isNext: Boolean): Unit = js.native
-    
     def _handleUp(e: KeyboardEvent): Unit = js.native
     
     var _itemNavigation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.default = js.native
@@ -127,7 +126,7 @@ object distTimelineMod {
     
     def _onfocusin(e: FocusEvent): Unit = js.native
     
-    def _onkeydown(e: KeyboardEvent): Unit = js.native
+    def _onkeydown(e: KeyboardEvent): js.Promise[Unit] = js.native
     
     def _setIsNextItemGroup(): Unit = js.native
     
@@ -186,6 +185,8 @@ object distTimelineMod {
     def growsOnScroll: Boolean = js.native
     
     def growsWithButton: Boolean = js.native
+    
+    def hasGroupItems: Boolean = js.native
     
     var initialIntersection: Boolean = js.native
     

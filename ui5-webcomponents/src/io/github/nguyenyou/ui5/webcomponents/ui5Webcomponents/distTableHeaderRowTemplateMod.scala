@@ -11,4 +11,5 @@ object distTableHeaderRowTemplateMod {
   val ^ : js.Any = js.native
   
   inline def default(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Any]
+  inline def default(ariaColIndex: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ariaColIndex.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

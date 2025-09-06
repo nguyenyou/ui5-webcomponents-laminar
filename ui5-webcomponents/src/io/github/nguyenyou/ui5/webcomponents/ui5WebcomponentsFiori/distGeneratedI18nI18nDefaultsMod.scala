@@ -47,6 +47,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val DYNAMIC_PAGE_ARIA_LABEL_SNAP_HEADER: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_PAGE_ARIA_LABEL_UNPIN_HEADER")
+  @js.native
+  val DYNAMIC_PAGE_ARIA_LABEL_UNPIN_HEADER: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "FCL_END_COLUMN_TXT")
   @js.native
   val FCL_END_COLUMN_TXT: I18nText = js.native
@@ -439,6 +443,18 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val SEARCH_FIELD_SEARCH_ICON: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SEARCH_ITEM_DELETE_BUTTON")
+  @js.native
+  val SEARCH_ITEM_DELETE_BUTTON: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SEARCH_ITEM_SHOW_MORE_COUNT")
+  @js.native
+  val SEARCH_ITEM_SHOW_MORE_COUNT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SEARCH_ITEM_SHOW_MORE_NO_COUNT")
+  @js.native
+  val SEARCH_ITEM_SHOW_MORE_NO_COUNT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SEARCH_SUGGESTIONS")
   @js.native
   val SEARCH_SUGGESTIONS: I18nText = js.native
@@ -446,10 +462,6 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SHELLBAR_ADDITIONAL_CONTEXT")
   @js.native
   val SHELLBAR_ADDITIONAL_CONTEXT: I18nText = js.native
-  
-  @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SHELLBAR_BRANDING")
-  @js.native
-  val SHELLBAR_BRANDING: I18nText = js.native
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/i18n/i18n-defaults.js", "SHELLBAR_CANCEL")
   @js.native

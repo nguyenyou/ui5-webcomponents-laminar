@@ -299,7 +299,7 @@ object distAvatarGroupMod {
     @JSName("eventDetails")
     var eventDetails_AvatarGroup: Overflow = js.native
     
-    def firstAvatarSize: S | L | XS | M | XL = js.native
+    def firstAvatarSize: S | L | M | XS | XL = js.native
     
     /**
       * Returns an array containing the `ui5-avatar` instances that are currently not displayed due to lack of space.

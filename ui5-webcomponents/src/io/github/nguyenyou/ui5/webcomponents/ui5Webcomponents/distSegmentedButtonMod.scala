@@ -82,6 +82,8 @@ object distSegmentedButtonMod {
   trait SegmentedButton
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    var _actionCanceled: Boolean = js.native
+    
     def _applySingleSelection(item: ISegmentedButtonItem): Unit = js.native
     
     var _itemNavigation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.default = js.native
@@ -102,6 +104,22 @@ object distSegmentedButtonMod {
     var _selectedItem: js.UndefOr[ISegmentedButtonItem] = js.native
     
     /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.15.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the IDs of the HTML Elements that describe the component.
+      * @default undefined
+      * @public
+      * @since 2.15.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
+    
+    /**
       * Defines the accessible ARIA name of the component.
       * @default undefined
       * @public
@@ -109,10 +127,20 @@ object distSegmentedButtonMod {
       */
     var accessibleName: js.UndefOr[String] = js.native
     
-    def ariaDescribedBy: String = js.native
+    /**
+      * Defines the IDs of the HTML Elements that label the component.
+      * @default undefined
+      * @public
+      * @since 2.15.0
+      */
+    var accessibleNameRef: js.UndefOr[String] = js.native
     
-    @JSName("ariaDescription")
-    def ariaDescription_MSegmentedButton: String = js.native
+    def ariaDescriptionText: String = js.native
+    
+    def ariaLabelText: js.UndefOr[String] = js.native
+    
+    @JSName("ariaRoleDescription")
+    def ariaRoleDescription_MSegmentedButton: String = js.native
     
     @JSName("eventDetails")
     var eventDetails_SegmentedButton: SelectionchangeSegmentedButtonSelectionChangeEventDetail = js.native

@@ -5,7 +5,10 @@ import io.github.nguyenyou.ui5.webcomponents.std.InputEvent
 import io.github.nguyenyou.ui5.webcomponents.std.Record
 import io.github.nguyenyou.ui5.webcomponents.std.ValidityStateFlags
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Input
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.PopoverHeader
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.PopoverValueStateMessage
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings._empty
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`hiddenText-value-state-link-shortcut`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`value-state-description`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesValueStateMod.ValueState
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesValueStateMod.ValueState.None
@@ -51,6 +54,7 @@ object distComboBoxMod {
     * - [Page Up] - Moves selection up by page size (10 items by default).
     * - [Home] - If focus is in the ComboBox, moves cursor at the beginning of text. If focus is in the picker, selects the first item.
     * - [End] - If focus is in the ComboBox, moves cursor at the end of text. If focus is in the picker, selects the last item.
+    * - [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * ### ES6 Module Import
     *
@@ -105,6 +109,7 @@ object distComboBoxMod {
     * - [Page Up] - Moves selection up by page size (10 items by default).
     * - [Home] - If focus is in the ComboBox, moves cursor at the beginning of text. If focus is in the picker, selects the first item.
     * - [End] - If focus is in the ComboBox, moves cursor at the end of text. If focus is in the picker, selects the last item.
+    * - [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * ### ES6 Module Import
     *
@@ -116,6 +121,8 @@ object distComboBoxMod {
     */
   @js.native
   trait ComboBox extends IFormInputElement {
+    
+    def _addLinksEventListeners(): Unit = js.native
     
     def _afterClosePopover(): Unit = js.native
     
@@ -172,11 +179,21 @@ object distComboBoxMod {
     
     def _handleArrowUp(e: KeyboardEvent, indexOfItem: Double): Unit = js.native
     
+    def _handleCtrlALtF8(): Unit = js.native
+    
     def _handleEnd(e: KeyboardEvent): Unit = js.native
     
     def _handleHome(e: KeyboardEvent): Unit = js.native
     
     def _handleItemNavigation(e: KeyboardEvent, indexOfItem: Double, isForward: Boolean): Unit = js.native
+    
+    /**
+      * Indicates whether link navigation is being handled.
+      * @default false
+      * @since 2.11.0
+      * @private
+      */
+    var _handleLinkNavigation: Boolean = js.native
     
     def _handleMobileInput(e: CustomEvent): Unit = js.native
     
@@ -190,7 +207,7 @@ object distComboBoxMod {
     
     def _handlePopoverKeydown(e: KeyboardEvent): Unit = js.native
     
-    def _handleTypeAhead(value: String, filterValue: String, checkForGroupItem: Boolean): Unit = js.native
+    def _handleTypeAhead(value: String, filterValue: String): Unit = js.native
     
     def _handleValueStatePopoverAfterClose(): Unit = js.native
     
@@ -212,12 +229,6 @@ object distComboBoxMod {
     
     def _isPhone: Boolean = js.native
     
-    /**
-      * Indicates whether the visual focus is on the value state header
-      * @private
-      */
-    var _isValueStateFocused: Boolean = js.native
-    
     var _itemFocused: Boolean = js.native
     
     def _itemMousedown(e: MouseEvent): Unit = js.native
@@ -228,6 +239,11 @@ object distComboBoxMod {
     
     var _lastValue: String = js.native
     
+    /**
+      * @private
+      */
+    var _linksListenersArray: js.Array[js.Function1[/* args */ Any, Unit]] = js.native
+    
     var _listWidth: js.UndefOr[Double] = js.native
     
     def _makeAllVisible(item: IComboBoxItem): Unit = js.native
@@ -237,6 +253,8 @@ object distComboBoxMod {
     def _openRespPopover(): Unit = js.native
     
     def _popupLabel: String = js.native
+    
+    def _removeLinksEventListeners(): Unit = js.native
     
     def _resetFilter(): Unit = js.native
     
@@ -257,6 +275,10 @@ object distComboBoxMod {
     def _toggleRespPopover(): Unit = js.native
     
     var _userTypedValue: String = js.native
+    
+    var _valueStateLinks: js.Array[HTMLElement] = js.native
+    
+    def _valueStateLinksShortcutsTextAccId: _empty | `hiddenText-value-state-link-shortcut` = js.native
     
     /**
       * This method is relevant for sap_horizon theme only
@@ -280,6 +302,8 @@ object distComboBoxMod {
       * @since 1.0.0-rc.15
       */
     var accessibleNameRef: js.UndefOr[String] = js.native
+    
+    def ariaDescribedByText: String = js.native
     
     def ariaLabelText: js.UndefOr[String] = js.native
     
@@ -318,7 +342,7 @@ object distComboBoxMod {
     var filterValue: String = js.native
     
     /**
-      * Indicates whether the input is focssed
+      * Indicates whether the input is focused
       * @private
       */
     var focused: Boolean = js.native
@@ -359,6 +383,8 @@ object distComboBoxMod {
       * @public
       */
     var items: js.Array[IComboBoxItem] = js.native
+    
+    def linksInAriaValueStateHiddenText: js.Array[HTMLElement] = js.native
     
     /**
       * Indicates whether a loading indicator should be shown in the picker.
@@ -427,7 +453,7 @@ object distComboBoxMod {
     
     def storeResponsivePopoverWidth(): Unit = js.native
     
-    def styles: PopoverHeader = js.native
+    def styles: PopoverValueStateMessage = js.native
     
     /**
       * Defines the value of the component.
@@ -446,6 +472,8 @@ object distComboBoxMod {
     var valueState: /* template literal string: ${ValueState} */ String = js.native
     
     def valueStateDefaultText: js.UndefOr[String] = js.native
+    
+    def valueStateLinksShortcutsTextAcc: String = js.native
     
     /**
       * Defines the value state message that will be displayed as pop up under the component.
@@ -467,6 +495,8 @@ object distComboBoxMod {
       */
     var valueStateOpen: Boolean = js.native
     
+    def valueStateTextId: _empty | `value-state-description` = js.native
+    
     def valueStateTextMappings: ValueStateAnnouncement = js.native
     
     def valueStateTypeMappings: ValueStateTypeAnnouncement = js.native
@@ -474,12 +504,12 @@ object distComboBoxMod {
   
   trait ComboBoxSelectionChangeEventDetail extends StObject {
     
-    var item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distComboBoxItemMod.default
+    var item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distComboBoxItemMod.default | Null
   }
   object ComboBoxSelectionChangeEventDetail {
     
-    inline def apply(item: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distComboBoxItemMod.default): ComboBoxSelectionChangeEventDetail = {
-      val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
+    inline def apply(): ComboBoxSelectionChangeEventDetail = {
+      val __obj = js.Dynamic.literal(item = null)
       __obj.asInstanceOf[ComboBoxSelectionChangeEventDetail]
     }
     
@@ -487,6 +517,8 @@ object distComboBoxMod {
     implicit open class MutableBuilder[Self <: ComboBoxSelectionChangeEventDetail] (val x: Self) extends AnyVal {
       
       inline def setItem(value: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distComboBoxItemMod.default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setItemNull: Self = StObject.set(x, "item", null)
     }
   }
   

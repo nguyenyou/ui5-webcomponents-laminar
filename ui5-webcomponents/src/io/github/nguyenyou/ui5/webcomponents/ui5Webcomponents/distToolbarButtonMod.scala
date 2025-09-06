@@ -1,6 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.DisplayString
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.DisplayStringWidth
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.LowercaseString
 import org.scalajs.dom.Event
@@ -124,7 +124,7 @@ object distToolbarButtonMod {
     
     def onClick(e: Event): Unit = js.native
     
-    def styles: DisplayString = js.native
+    def styles: DisplayStringWidth = js.native
     
     /**
       * Button text

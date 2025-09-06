@@ -5,11 +5,13 @@ import io.github.nguyenyou.ui5.webcomponents.std.InputEvent
 import io.github.nguyenyou.ui5.webcomponents.std.Record
 import io.github.nguyenyou.ui5.webcomponents.std.ValidityStateFlags
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ChangeClose
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.PopoverValueStateMessage
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.PopoverHeader
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.Active
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.Inactive
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.Multiple
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.None
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings._empty
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`hiddenText-value-state-link-shortcut`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`ui5-multi-combobox-valueStateDesc`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
@@ -56,6 +58,7 @@ object distMultiComboBoxMod {
     * you can open or close the drop-down by pressing [F4], [Alt] + [Up] or [Alt] + [Down] keys.
     * Once the drop-down is opened, you can use the `UP` and `DOWN` arrow keys
     * to navigate through the available options and select one by pressing the `Space` or `Enter` keys.
+    * [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * #### Tokens
     *
@@ -149,6 +152,7 @@ object distMultiComboBoxMod {
     * you can open or close the drop-down by pressing [F4], [Alt] + [Up] or [Alt] + [Down] keys.
     * Once the drop-down is opened, you can use the `UP` and `DOWN` arrow keys
     * to navigate through the available options and select one by pressing the `Space` or `Enter` keys.
+    * [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * #### Tokens
     *
@@ -167,6 +171,8 @@ object distMultiComboBoxMod {
     */
   @js.native
   trait MultiComboBox extends IFormInputElement {
+    
+    def _addLinksEventListeners(): Unit = js.native
     
     def _afterClose(): Unit = js.native
     
@@ -225,11 +231,17 @@ object distMultiComboBoxMod {
     
     def _handleArrowDown(): js.Promise[Unit] = js.native
     
+    def _handleArrowKey(direction: String): Unit = js.native
+    
     def _handleArrowLeft(): Unit = js.native
     
     def _handleArrowNavigation(e: KeyboardEvent, isDownControl: Boolean): Unit = js.native
     
+    def _handleArrowRight(): Unit = js.native
+    
     def _handleBackspace(e: KeyboardEvent): Unit = js.native
+    
+    def _handleCtrlALtF8(): Unit = js.native
     
     def _handleEnd(e: KeyboardEvent): Unit = js.native
     
@@ -242,6 +254,14 @@ object distMultiComboBoxMod {
     def _handleInsertPaste(e: KeyboardEvent): js.Promise[Unit] = js.native
     
     def _handleItemRangeSelection(e: KeyboardEvent): Unit = js.native
+    
+    /**
+      * Indicates whether link navigation is being handled.
+      * @private
+      * @since 2.11.0
+      * @default false
+      */
+    var _handleLinkNavigation: Boolean = js.native
     
     def _handleMobileInput(e: CustomEvent): Unit = js.native
     
@@ -302,6 +322,11 @@ object distMultiComboBoxMod {
     
     var _lastValue: String = js.native
     
+    /**
+      * @private
+      */
+    var _linksListenersArray: js.Array[js.Function1[/* args */ Any, Unit]] = js.native
+    
     def _listItemsType: Inactive | Active = js.native
     
     def _listSelectionChange(e: CustomEvent): Unit = js.native
@@ -336,6 +361,8 @@ object distMultiComboBoxMod {
     
     var _previouslySelectedItems: js.Array[IMultiComboBoxItem] = js.native
     
+    def _removeLinksEventListeners(): Unit = js.native
+    
     def _resetValueState(valueState: /* template literal string: ${ValueState} */ String): Unit = js.native
     def _resetValueState(valueState: /* template literal string: ${ValueState} */ String, callback: js.Function0[Unit]): Unit = js.native
     
@@ -350,6 +377,8 @@ object distMultiComboBoxMod {
     var _shouldAutocomplete: js.UndefOr[Boolean] = js.native
     
     var _shouldFilterItems: js.UndefOr[Boolean] = js.native
+    
+    def _shouldFocusLastToken: Boolean = js.native
     
     def _showAllItemsButtonPressed: Boolean = js.native
     
@@ -382,6 +411,10 @@ object distMultiComboBoxMod {
     var _validationTimeout: Timeout | Null = js.native
     
     var _valueBeforeOpen: String = js.native
+    
+    var _valueStateLinks: js.Array[HTMLElement] = js.native
+    
+    def _valueStateLinksShortcutsTextAccId: _empty | `hiddenText-value-state-link-shortcut` = js.native
     
     /**
       * This method is relevant for sap_horizon theme only
@@ -463,6 +496,8 @@ object distMultiComboBoxMod {
     @JSName("formValidity")
     def formValidity_MMultiComboBox: ValidityStateFlags = js.native
     
+    def getValueStateLinksShortcutsTextAcc: String = js.native
+    
     def handleBeforeTokenizerPopoverOpen(): Unit = js.native
     
     def handleCancel(): Unit = js.native
@@ -491,6 +526,8 @@ object distMultiComboBoxMod {
       * @public
       */
     var items: js.Array[IMultiComboBoxItem] = js.native
+    
+    def linksInAriaValueStateHiddenText: js.Array[HTMLElement] = js.native
     
     var list: js.UndefOr[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.default] = js.native
     
@@ -575,7 +612,7 @@ object distMultiComboBoxMod {
     
     def storeResponsivePopoverWidth(): Unit = js.native
     
-    def styles: PopoverValueStateMessage = js.native
+    def styles: PopoverHeader = js.native
     
     def togglePopoverByDropdownIcon(): Unit = js.native
     
@@ -634,7 +671,7 @@ object distMultiComboBoxMod {
       */
     var valueStateOpen: Boolean = js.native
     
-    def valueStateTextId: js.UndefOr[`ui5-multi-combobox-valueStateDesc`] = js.native
+    def valueStateTextId: _empty | `ui5-multi-combobox-valueStateDesc` = js.native
     
     def valueStateTextMappings: ValueStateAnnouncement = js.native
     

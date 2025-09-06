@@ -76,7 +76,7 @@ object distSideNavigationItemBaseMod {
     
     def effectiveDisabled: Boolean = js.native
     
-    def effectiveTabIndex: js.UndefOr[String] = js.native
+    def effectiveTabIndex: js.UndefOr[Double] = js.native
     
     @JSName("eventDetails")
     var eventDetails_SideNavigationItemBase: ClickSideNavigationItemClickEventDetail = js.native

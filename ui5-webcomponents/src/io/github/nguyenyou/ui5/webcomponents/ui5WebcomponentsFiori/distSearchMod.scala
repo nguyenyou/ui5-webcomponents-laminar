@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Input
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Open
 import org.scalajs.dom.CustomEvent
+import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.HTMLInputElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalablytyped.runtime.StObject
@@ -122,8 +123,6 @@ object distSearchMod {
     
     def _handleOpen(): Unit = js.native
     
-    def _handleRight(e: KeyboardEvent): Unit = js.native
-    
     def _handleTypeAhead(item: ISearchSuggestionItem): Unit = js.native
     
     /**
@@ -135,13 +134,9 @@ object distSearchMod {
       */
     var _innerValue: js.UndefOr[String] = js.native
     
-    def _isGroupItem(item: ISearchSuggestionItem): Boolean = js.native
+    def _isGroupItem(item: HTMLElement): /* is @ui5/webcomponents-fiori.@ui5/webcomponents-fiori/dist/SearchItemGroup.default */ Boolean = js.native
     
-    /**
-      * True if the first matching item is matched by starts with per term, rather than by starts with.
-      * @private
-      */
-    var _matchedPerTerm: Boolean = js.native
+    def _isShowMoreItem(item: ISearchSuggestionItem): Boolean = js.native
     
     def _onFooterButtonClick(): Unit = js.native
     
@@ -174,6 +169,8 @@ object distSearchMod {
       */
     var _proposedItem: js.UndefOr[ISearchSuggestionItem] = js.native
     
+    def _selectMatchingItem(item: ISearchSuggestionItem): Unit = js.native
+    
     /**
       * Based on the key pressed, determines if the autocomplete should be performed.
       * @private
@@ -183,8 +180,6 @@ object distSearchMod {
     def _shouldPerformSelectionOnMobile(inputType: String): Boolean = js.native
     
     def _startsWithMatchingItems(str: String): js.Array[ISearchSuggestionItem] = js.native
-    
-    def _startsWithPerTermMatchingItems(str: String): js.Array[ISearchSuggestionItem] = js.native
     
     /**
       * Holds the typed value from the user.

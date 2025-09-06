@@ -125,6 +125,8 @@ object distPopupMod {
       */
     var _associatedDescriptionRefTexts: js.UndefOr[String] = js.native
     
+    def _deregisterResizeHandler(): Unit = js.native
+    
     var _focusedElementBeforeOpen: js.UndefOr[HTMLElement | Null] = js.native
     
     def _onfocusout(e: FocusEvent): Unit = js.native
@@ -145,6 +147,8 @@ object distPopupMod {
     def _preventBlockLayerFocus(e: KeyboardEvent): Unit = js.native
     def _preventBlockLayerFocus(e: MouseEvent): Unit = js.native
     
+    def _registerResizeHandler(): Unit = js.native
+    
     /**
       * Removes the popup from the "opened popups registry"
       * @protected
@@ -154,6 +158,9 @@ object distPopupMod {
     def _resize(): Unit = js.native
     
     def _resizeHandler(): js.Promise[Unit] | Unit = js.native
+    
+    var _resizeHandlerRegistered: Boolean = js.native
+    
     @JSName("_resizeHandler")
     var _resizeHandler_Original: ResizeObserverCallback = js.native
     
@@ -270,6 +277,8 @@ object distPopupMod {
       * @private
       */
     def forwardToLast(): js.Promise[Unit] = js.native
+    
+    def handleOpenOnEnterDOM(): Unit = js.native
     
     /**
       * Sets "none" display to the popup

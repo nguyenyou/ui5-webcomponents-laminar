@@ -95,6 +95,22 @@ object distSegmentedButtonItemMod {
     def _onkeyup(e: KeyboardEvent): Unit = js.native
     
     /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.15.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the IDs of the HTML Elements that describe the component.
+      * @default undefined
+      * @public
+      * @since 2.15.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
+    
+    /**
       * Defines the accessible ARIA name of the component.
       * @default undefined
       * @public
@@ -109,6 +125,8 @@ object distSegmentedButtonItemMod {
       * @since 1.1.0
       */
     var accessibleNameRef: js.UndefOr[String] = js.native
+    
+    def ariaDescriptionText: js.UndefOr[String] = js.native
     
     @JSName("ariaDescription")
     def ariaDescription_MSegmentedButtonItem: String = js.native
@@ -143,7 +161,7 @@ object distSegmentedButtonItemMod {
       * @default 0
       * @private
       */
-    var posInSet: Double = js.native
+    var posInSet: js.UndefOr[Double] = js.native
     
     def showIconTooltip: Boolean = js.native
     
@@ -152,7 +170,7 @@ object distSegmentedButtonItemMod {
       * @default 0
       * @private
       */
-    var sizeOfSet: Double = js.native
+    var sizeOfSet: js.UndefOr[Double] = js.native
     
     def tabIndexValue: js.UndefOr[String] = js.native
     

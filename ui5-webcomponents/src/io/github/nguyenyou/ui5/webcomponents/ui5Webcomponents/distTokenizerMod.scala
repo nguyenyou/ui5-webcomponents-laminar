@@ -347,7 +347,7 @@ object distTokenizerMod {
     
     def moreLink: HTMLElement | Null = js.native
     
-    def morePopoverOpener: HTMLElement = js.native
+    def morePopoverOpener: HTMLElement | String | Null = js.native
     
     def morePopoverTitle: String = js.native
     
@@ -379,7 +379,7 @@ object distTokenizerMod {
       * @private
       * @default undefined
       */
-    var opener: js.UndefOr[HTMLElement] = js.native
+    var opener: js.UndefOr[HTMLElement | String | Null] = js.native
     
     def overflownTokens: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTokenMod.default] = js.native
     

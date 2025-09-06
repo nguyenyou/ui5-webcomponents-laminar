@@ -177,6 +177,8 @@ object default extends StObject {
   
   /* "TntDialog" */ val TntDialog: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.TntDialog & String = js.native
   
+  /* "TntEmptyContentPane" */ val TntEmptyContentPane: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.TntEmptyContentPane & String = js.native
+  
   /* "TntExternalLink" */ val TntExternalLink: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.TntExternalLink & String = js.native
   
   /* "TntFaceID" */ val TntFaceID: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distTypesIllustrationMessageTypeMod.IllustrationMessageType.TntFaceID & String = js.native

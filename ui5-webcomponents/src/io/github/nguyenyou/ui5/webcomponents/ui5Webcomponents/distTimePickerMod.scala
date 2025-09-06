@@ -49,7 +49,7 @@ object distTimePickerMod {
     * the input field, it must fit to the used time format.
     *
     * Supported format options are pattern-based on Unicode LDML Date Format notation.
-    * For more information, see [UTS #35: Unicode Locale Data Markup Language](http://unicode.org/reports/tr35/#Date_Field_Symbol_Table).
+    * For more information, see [UTS #35: Unicode Locale Data Markup Language](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
     *
     * For example, if the `format-pattern` is "HH:mm:ss",
     * a valid value string is "11:42:35" and the same is displayed in the input.
@@ -127,7 +127,7 @@ object distTimePickerMod {
     * the input field, it must fit to the used time format.
     *
     * Supported format options are pattern-based on Unicode LDML Date Format notation.
-    * For more information, see [UTS #35: Unicode Locale Data Markup Language](http://unicode.org/reports/tr35/#Date_Field_Symbol_Table).
+    * For more information, see [UTS #35: Unicode Locale Data Markup Language](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
     *
     * For example, if the `format-pattern` is "HH:mm:ss",
     * a valid value string is "11:42:35" and the same is displayed in the input.
@@ -241,6 +241,22 @@ object distTimePickerMod {
     def accInfo: InputAccInfo = js.native
     
     /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that describe the input.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
+    
+    /**
       * Defines the aria-label attribute for the component.
       * @default undefined
       * @public
@@ -256,6 +272,8 @@ object distTimePickerMod {
       */
     var accessibleNameRef: js.UndefOr[String] = js.native
     
+    def ariaLabelText: String = js.native
+    
     def cancelButtonLabel: String = js.native
     
     /**
@@ -264,8 +282,6 @@ object distTimePickerMod {
       * @returns Resolves when the Inputs popover is closed
       */
     def closeInputsPopover(): Unit = js.native
-    
-    def dateAriaDescription: String = js.native
     
     /**
       * Currently selected time represented as JavaScript Date instance
@@ -400,6 +416,8 @@ object distTimePickerMod {
       * @public
       */
     var required: Boolean = js.native
+    
+    def roleDescription: String = js.native
     
     def shouldDisplayDefaultValueStateMessage: Boolean = js.native
     

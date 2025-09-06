@@ -89,19 +89,129 @@ object distColorPaletteMod {
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteItemMod.default
       ] = js.native
     
+    var _defaultColorButton: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default = js.native
+    
     /**
       * Ensures that only one item is selected or only the last selected item remains active if more than one are explicitly set as 'selected'.
       * @private
       */
     def _ensureSingleSelectionOrDeselectAll(): Unit = js.native
     
+    /**
+      * Helper to focus default color button if available
+      * @private
+      */
+    def _focusDefaultColor(): Boolean = js.native
+    
+    /**
+      * Helper to focus the first available element from a list of candidates.
+      *
+      * This method implements a fallback chain pattern for keyboard navigation in the color palette.
+      * It attempts to execute focus actions in priority order, stopping at the first successful one.
+      *
+      * For example when navigating left from the default color button, try these options in order:
+      * this._focusFirstAvailable(
+      *   () => this._focusLastRecentColor(),    // 1st choice: focus last recent color if available
+      *   () => this._focusMoreColors(),         // 2nd choice: focus "More Colors" button if available
+      *   () => this._focusLastDisplayedColor()  // 3rd choice: focus last color in the main palette
+      * );
+      *
+      * @private
+      * @param candidates - Functions that attempt to focus an element. Each function should return true if focus was successful, false otherwise.
+      * @returns True if any candidate successfully focused an element, false if all failed.
+      */
+    def _focusFirstAvailable(candidates: js.Function0[Boolean]*): Boolean = js.native
+    
+    /**
+      * Helper to focus first displayed color if available
+      * @private
+      */
+    def _focusFirstDisplayedColor(): Boolean = js.native
+    
+    /**
+      * Helper to focus first recent color if available
+      * @private
+      */
+    def _focusFirstRecentColor(): Boolean = js.native
+    
+    /**
+      * Helper to focus last displayed color if available
+      * @private
+      */
+    def _focusLastDisplayedColor(): Boolean = js.native
+    
+    /**
+      * Helper to focus last recent color if available
+      * @private
+      */
+    def _focusLastRecentColor(): Boolean = js.native
+    
+    /**
+      * Helper to focus last swatch of last full row if available
+      * @private
+      */
+    def _focusLastSwatchOfLastFullRow(): Boolean = js.native
+    
+    /**
+      * Helper to focus more colors button if available
+      * @private
+      */
+    def _focusMoreColors(): Boolean = js.native
+    
+    /**
+      * Returns the index of the last swatch in the last complete row.
+      * @private
+      */
+    def _getLastCompleteRowEndIndex(total: Double, rowSize: Double): Double = js.native
+    
     def _handleDefaultColorClick(e: KeyboardEvent): Unit = js.native
     
-    def _isUpOrDownNavigatableColorPaletteItem(e: KeyboardEvent): js.UndefOr[Boolean] = js.native
+    def _isFirstSwatch(
+      target: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteItemMod.default,
+      swatches: js.Array[IColorPaletteItem]
+    ): Boolean = js.native
+    
+    def _isLastSwatch(
+      target: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteItemMod.default,
+      swatches: js.Array[IColorPaletteItem]
+    ): Boolean = js.native
+    
+    /**
+      * Checks if the given color swatch is the last swatch of the last full row.
+      *
+      * Example 1: 12 colors with rowSize 5
+      * Row 1: [0, 1, 2, 3, 4]  ← Complete row
+      * Row 2: [5, 6, 7, 8, 9]  ← Complete row (last complete row)
+      * Row 3: [10, 11]         ← Incomplete row
+      *
+      * @param target The color swatch to check.
+      * @returns True if the swatch is the last of the last full row, false otherwise.
+      */
+    def _isLastSwatchOfLastFullRow(target: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteItemMod.default): Boolean = js.native
+    
+    def _isNext(e: KeyboardEvent): Boolean = js.native
+    
+    def _isPrevious(e: KeyboardEvent): Boolean = js.native
+    
+    /**
+      * Helper to check if all displayed colors fit in a single row
+      * @private
+      */
+    def _isSingleRow(): Boolean = js.native
+    
+    def _isSwatchInLastRow(target: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distColorPaletteItemMod.default): Boolean = js.native
+    
+    /**
+      * Checks if the keyboard event is up/down navigation on a displayed color palette item
+      * @private
+      */
+    def _isUpOrDownNavigatableColorPaletteItem(e: KeyboardEvent): Boolean = js.native
     
     var _itemNavigation: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.default = js.native
     
     var _itemNavigationRecentColors: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateItemNavigationMod.default = js.native
+    
+    var _moreColorsButton: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distButtonMod.default = js.native
     
     def _onColorContainerKeyDown(e: KeyboardEvent): Unit = js.native
     
@@ -120,6 +230,8 @@ object distColorPaletteMod {
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
     def _onkeyup(e: KeyboardEvent): Unit = js.native
+    
+    def _onmousedown(e: MouseEvent): Unit = js.native
     
     def _openMoreColorsDialog(): Unit = js.native
     
@@ -150,8 +262,6 @@ object distColorPaletteMod {
     def colorPaletteDialogTitle: String = js.native
     
     def colorPaletteMoreColorsText: String = js.native
-    
-    def colorPaletteNavigationElements: js.Array[ColorPaletteNavigationItem] = js.native
     
     /**
       * @private
@@ -184,8 +294,6 @@ object distColorPaletteMod {
     
     @JSName("eventDetails")
     var eventDetails_ColorPalette: ItemclickColorPaletteItemClickEventDetail = js.native
-    
-    def firstFocusableElement: ColorPaletteNavigationItem = js.native
     
     def focusColorElement(
       element: ColorPaletteNavigationItem,

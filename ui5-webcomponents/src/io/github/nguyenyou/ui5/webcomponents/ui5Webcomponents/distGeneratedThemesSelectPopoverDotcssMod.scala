@@ -9,13 +9,13 @@ object distGeneratedThemesSelectPopoverDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents/dist/generated/themes/SelectPopover.css", JSImport.Default)
   @js.native
-  val default: /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}
+  val default: /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
     */ String = js.native
   
-  type _To = /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}
+  type _To = /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesSelectPopoverDotcssMod.foo` */
-  override def _to: /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}
+  override def _to: /* .ui5-select-popover::part(content),.ui5-select-popover::part(header){padding:0}.ui5-select-popover .ui5-responsive-popover-header .row{justify-content:flex-start}
     */ String = default
 }

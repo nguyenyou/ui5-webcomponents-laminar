@@ -165,7 +165,9 @@ object distToolbarMod {
     
     def hideOverflowButton: Boolean = js.native
     
-    def interactiveItemsCount: Double = js.native
+    def interactiveItems: js.Array[
+        io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distToolbarItemMod.default
+      ] = js.native
     
     /**
       * Returns if the overflow popup is open.

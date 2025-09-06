@@ -87,7 +87,9 @@ object distTableSelectionMultiMod {
       change: Double
     ): Unit = js.native
     
-    def _onclick(e: MouseEvent): Unit = js.native
+    def _onClickCaptureBound(e: MouseEvent): Unit = js.native
+    
+    def _onclickCapture(e: MouseEvent): Unit = js.native
     
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
@@ -143,6 +145,9 @@ object distTableSelectionMultiMod {
       * @since 2.12
       */
     var headerSelector: /* template literal string: ${TableSelectionMultiHeaderSelector} */ String = js.native
+    
+    @JSName("onTableAfterRendering")
+    def onTableAfterRendering_MTableSelectionMulti(): Unit = js.native
     
     @JSName("onTableBeforeRendering")
     def onTableBeforeRendering_MTableSelectionMulti(): Unit = js.native

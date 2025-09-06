@@ -9,13 +9,13 @@ object distGeneratedThemesSearchItemGroupDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents-fiori/dist/generated/themes/SearchItemGroup.css", JSImport.Default)
   @js.native
-  val default: /* [ui5-li-group-header]::part(native-li){height:100%;padding:.5625rem .5rem}[ui5-li-group-header]{height:2rem}[ui5-li-group-header]::part(native-li):focus:after{inset:0!important;border-radius:8px}
+  val default: /* :host{height:2.75rem;background:var(--sapList_GroupHeaderBackground);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}[ui5-li-group-header]{border-bottom:var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor)}
     */ String = js.native
   
-  type _To = /* [ui5-li-group-header]::part(native-li){height:100%;padding:.5625rem .5rem}[ui5-li-group-header]{height:2rem}[ui5-li-group-header]::part(native-li):focus:after{inset:0!important;border-radius:8px}
+  type _To = /* :host{height:2.75rem;background:var(--sapList_GroupHeaderBackground);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}[ui5-li-group-header]{border-bottom:var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor)}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesSearchItemGroupDotcssMod.foo` */
-  override def _to: /* [ui5-li-group-header]::part(native-li){height:100%;padding:.5625rem .5rem}[ui5-li-group-header]{height:2rem}[ui5-li-group-header]::part(native-li):focus:after{inset:0!important;border-radius:8px}
+  override def _to: /* :host{height:2.75rem;background:var(--sapList_GroupHeaderBackground);color:var(--sapList_TableGroupHeaderTextColor)}.ui5-group-li-root{width:100%;height:100%;position:relative;box-sizing:border-box;padding:0;margin:0;list-style-type:none}[ui5-li-group-header]{border-bottom:var(--sapList_BorderWidth) solid var(--sapList_GroupHeaderBorderColor)}
     */ String = default
 }

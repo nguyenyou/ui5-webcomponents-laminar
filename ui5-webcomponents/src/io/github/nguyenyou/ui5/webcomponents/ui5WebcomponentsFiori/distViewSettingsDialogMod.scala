@@ -260,6 +260,8 @@ object distViewSettingsDialogMod {
     
     def _isPhone: Boolean = js.native
     
+    var _list: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.default = js.native
+    
     def _navigateToFilters(): Unit = js.native
     
     def _okButtonLabel: String = js.native

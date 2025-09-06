@@ -149,6 +149,8 @@ object distIllustratedMessageMod {
     
     /**
       * Defines the component actions.
+      *
+      * **Note:** Not displayed when the `design` property is set to `Base`.
       * @public
       */
     var actions: js.Array[IButton] = js.native

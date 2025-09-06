@@ -40,6 +40,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5Webcomponen
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.ltr
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.rtl
 import org.scalablytyped.runtime.Instantiable0
+import org.scalajs.dom.DragEvent
 import org.scalajs.dom.EventTarget
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -918,6 +919,16 @@ object mod {
     */
   inline def slot(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("slot")().asInstanceOf[PropertyDecorator]
   inline def slot(slotData: Slot): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("slot")(slotData.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  
+  /**
+    * Starts a multiple drag operation by creating a drag ghost element.
+    * The drag ghost will be displayed when dragging multiple items.
+    *
+    * @param {number} count - The number of items being dragged.
+    * @param {DragEvent} e - The drag event that triggered the operation.
+    * @public
+    */
+  inline def startMultipleDrag(count: Double, e: DragEvent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startMultipleDrag")(count.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def supportsTouch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsTouch")().asInstanceOf[Boolean]
   

@@ -1,6 +1,7 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Focused
+import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -123,6 +124,16 @@ object distProductSwitchItemMod {
       * @public
       */
     var icon: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines an image to be displayed instead of the standard icon.
+      *
+      * **Note:** The image slot takes precedence over the icon property.
+      * **Note:** We recommend using non-interactive ui5-avatar with size S, Square shape and Transparent colorScheme for best alignment.
+      * @public
+      * @since 2.14.0
+      */
+    var image: js.Array[HTMLElement] = js.native
     
     /**
       * Used to set the selected state of the component. Only one selected in a sequence.

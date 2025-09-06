@@ -1,7 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon
 
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.treeitem
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,9 @@ trait AriaExpanded extends StObject {
   
   var ariaExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var ariaHaspopup: js.UndefOr[AriaHasPopup] = js.undefined
+  var ariaHaspopup: js.UndefOr[/* template literal string: ${AriaHasPopup} */ String] = js.undefined
+  
+  var ariaHidden: js.UndefOr[Boolean] = js.undefined
   
   var ariaKeyShortcuts: js.UndefOr[String] = js.undefined
   
@@ -20,7 +21,7 @@ trait AriaExpanded extends StObject {
   
   var ariaLabelRadioButton: String
   
-  var ariaLevel: Double
+  var ariaLevel: js.UndefOr[Double] = js.undefined
   
   var ariaOwns: js.UndefOr[String] = js.undefined
   
@@ -30,24 +31,18 @@ trait AriaExpanded extends StObject {
   
   var listItemAriaLabel: js.UndefOr[String] = js.undefined
   
-  var posinset: Double
+  var posinset: js.UndefOr[Double] = js.undefined
   
-  var role: treeitem
+  var role: AriaRole
   
-  var setsize: Double
+  var setsize: js.UndefOr[Double] = js.undefined
   
   var tooltip: js.UndefOr[String] = js.undefined
 }
 object AriaExpanded {
   
-  inline def apply(
-    ariaLabel: String,
-    ariaLabelRadioButton: String,
-    ariaLevel: Double,
-    posinset: Double,
-    setsize: Double
-  ): AriaExpanded = {
-    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], ariaLabelRadioButton = ariaLabelRadioButton.asInstanceOf[js.Any], ariaLevel = ariaLevel.asInstanceOf[js.Any], posinset = posinset.asInstanceOf[js.Any], role = "treeitem", setsize = setsize.asInstanceOf[js.Any])
+  inline def apply(ariaLabel: String, ariaLabelRadioButton: String, role: AriaRole): AriaExpanded = {
+    val __obj = js.Dynamic.literal(ariaLabel = ariaLabel.asInstanceOf[js.Any], ariaLabelRadioButton = ariaLabelRadioButton.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[AriaExpanded]
   }
   
@@ -62,9 +57,13 @@ object AriaExpanded {
     
     inline def setAriaExpandedUndefined: Self = StObject.set(x, "ariaExpanded", js.undefined)
     
-    inline def setAriaHaspopup(value: AriaHasPopup): Self = StObject.set(x, "ariaHaspopup", value.asInstanceOf[js.Any])
+    inline def setAriaHaspopup(value: /* template literal string: ${AriaHasPopup} */ String): Self = StObject.set(x, "ariaHaspopup", value.asInstanceOf[js.Any])
     
     inline def setAriaHaspopupUndefined: Self = StObject.set(x, "ariaHaspopup", js.undefined)
+    
+    inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+    
+    inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
     
     inline def setAriaKeyShortcuts(value: String): Self = StObject.set(x, "ariaKeyShortcuts", value.asInstanceOf[js.Any])
     
@@ -75,6 +74,8 @@ object AriaExpanded {
     inline def setAriaLabelRadioButton(value: String): Self = StObject.set(x, "ariaLabelRadioButton", value.asInstanceOf[js.Any])
     
     inline def setAriaLevel(value: Double): Self = StObject.set(x, "ariaLevel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLevelUndefined: Self = StObject.set(x, "ariaLevel", js.undefined)
     
     inline def setAriaOwns(value: String): Self = StObject.set(x, "ariaOwns", value.asInstanceOf[js.Any])
     
@@ -94,9 +95,13 @@ object AriaExpanded {
     
     inline def setPosinset(value: Double): Self = StObject.set(x, "posinset", value.asInstanceOf[js.Any])
     
-    inline def setRole(value: treeitem): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setPosinsetUndefined: Self = StObject.set(x, "posinset", js.undefined)
+    
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setSetsize(value: Double): Self = StObject.set(x, "setsize", value.asInstanceOf[js.Any])
+    
+    inline def setSetsizeUndefined: Self = StObject.set(x, "setsize", js.undefined)
     
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

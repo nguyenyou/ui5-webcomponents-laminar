@@ -10,11 +10,11 @@ trait ResponsivePopover extends StObject {
   
   var responsivePopover: Minwidth
   
-  var responsivePopoverHeader: Display
+  var responsivePopoverHeader: DisplayString
 }
 object ResponsivePopover {
   
-  inline def apply(popoverHeader: MaxwidthString, responsivePopover: Minwidth, responsivePopoverHeader: Display): ResponsivePopover = {
+  inline def apply(popoverHeader: MaxwidthString, responsivePopover: Minwidth, responsivePopoverHeader: DisplayString): ResponsivePopover = {
     val __obj = js.Dynamic.literal(popoverHeader = popoverHeader.asInstanceOf[js.Any], responsivePopover = responsivePopover.asInstanceOf[js.Any], responsivePopoverHeader = responsivePopoverHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsivePopover]
   }
@@ -26,6 +26,6 @@ object ResponsivePopover {
     
     inline def setResponsivePopover(value: Minwidth): Self = StObject.set(x, "responsivePopover", value.asInstanceOf[js.Any])
     
-    inline def setResponsivePopoverHeader(value: Display): Self = StObject.set(x, "responsivePopoverHeader", value.asInstanceOf[js.Any])
+    inline def setResponsivePopoverHeader(value: DisplayString): Self = StObject.set(x, "responsivePopoverHeader", value.asInstanceOf[js.Any])
   }
 }

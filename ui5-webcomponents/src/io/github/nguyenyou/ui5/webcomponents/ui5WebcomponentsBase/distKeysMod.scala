@@ -19,6 +19,8 @@ object distKeysMod {
   
   inline def isCtrlA(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCtrlA")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isCtrlAltF8(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCtrlAltF8")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isCtrlV(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCtrlV")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isDelete(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDelete")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -42,6 +44,10 @@ object distKeysMod {
   inline def isEndShift(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEndShift")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isEnter(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnter")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isEnterAlt(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnterAlt")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isEnterCtrl(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnterCtrl")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isEnterShift(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnterShift")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

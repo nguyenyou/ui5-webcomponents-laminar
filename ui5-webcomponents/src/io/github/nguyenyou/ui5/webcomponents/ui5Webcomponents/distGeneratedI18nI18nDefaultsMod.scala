@@ -339,13 +339,77 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val DYNAMIC_DATE_RANGE_DATE_TEXT: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_DAYS_UNIT_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_DAYS_UNIT_TEXT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_EMPTY_SELECTED_TEXT")
   @js.native
   val DYNAMIC_DATE_RANGE_EMPTY_SELECTED_TEXT: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_INCLUDED_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_INCLUDED_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_COMBINED_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_COMBINED_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_DAYS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_DAYS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_MONTHS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_MONTHS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_QUARTERS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_QUARTERS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_WEEKS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_WEEKS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_LAST_YEARS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_LAST_YEARS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_MONTHS_UNIT_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_MONTHS_UNIT_TEXT: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NAVIGATION_ICON_TOOLTIP")
   @js.native
   val DYNAMIC_DATE_RANGE_NAVIGATION_ICON_TOOLTIP: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_COMBINED_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_COMBINED_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_DAYS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_DAYS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_MONTHS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_MONTHS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_QUARTERS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_QUARTERS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_WEEKS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_WEEKS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_NEXT_YEARS_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_NEXT_YEARS_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_QUARTERS_UNIT_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_QUARTERS_UNIT_TEXT: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_SELECTED_TEXT")
   @js.native
@@ -358,6 +422,22 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_TOMORROW_TEXT")
   @js.native
   val DYNAMIC_DATE_RANGE_TOMORROW_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_UNIT_OF_TIME_LABEL_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_UNIT_OF_TIME_LABEL_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_VALUE_LABEL_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_VALUE_LABEL_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_WEEKS_UNIT_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_WEEKS_UNIT_TEXT: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_YEARS_UNIT_TEXT")
+  @js.native
+  val DYNAMIC_DATE_RANGE_YEARS_UNIT_TEXT: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "DYNAMIC_DATE_RANGE_YESTERDAY_TEXT")
   @js.native
@@ -391,13 +471,29 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val EXPANDABLE_TEXT_SHOW_MORE_POPOVER_ARIA_LABEL: I18nText = js.native
   
-  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_TITLE")
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_CLEAR_ICON_TOOLTIP")
   @js.native
-  val FILEUPLOADER_TITLE: I18nText = js.native
+  val FILEUPLOADER_CLEAR_ICON_TOOLTIP: I18nText = js.native
   
-  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOAD_BROWSE")
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_DEFAULT_MULTIPLE_PLACEHOLDER")
   @js.native
-  val FILEUPLOAD_BROWSE: I18nText = js.native
+  val FILEUPLOADER_DEFAULT_MULTIPLE_PLACEHOLDER: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_DEFAULT_PLACEHOLDER")
+  @js.native
+  val FILEUPLOADER_DEFAULT_PLACEHOLDER: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_INPUT_TOOLTIP")
+  @js.native
+  val FILEUPLOADER_INPUT_TOOLTIP: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_ROLE_DESCRIPTION")
+  @js.native
+  val FILEUPLOADER_ROLE_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FILEUPLOADER_VALUE_HELP_TOOLTIP")
+  @js.native
+  val FILEUPLOADER_VALUE_HELP_TOOLTIP: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "FORM_ACCESSIBLE_NAME")
   @js.native
@@ -518,6 +614,18 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "MENU_CLOSE_BUTTON_ARIA_LABEL")
   @js.native
   val MENU_CLOSE_BUTTON_ARIA_LABEL: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "MENU_ITEM_GROUP_MULTI_ACCESSIBLE_NAME")
+  @js.native
+  val MENU_ITEM_GROUP_MULTI_ACCESSIBLE_NAME: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "MENU_ITEM_GROUP_NONE_ACCESSIBLE_NAME")
+  @js.native
+  val MENU_ITEM_GROUP_NONE_ACCESSIBLE_NAME: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "MENU_ITEM_GROUP_SINGLE_ACCESSIBLE_NAME")
+  @js.native
+  val MENU_ITEM_GROUP_SINGLE_ACCESSIBLE_NAME: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "MENU_POPOVER_ACCESSIBLE_NAME")
   @js.native
@@ -703,6 +811,26 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val TABCONTAINER_SUBTABS_DESCRIPTION: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMNHEADER_CLEARALL_DESCRIPTION")
+  @js.native
+  val TABLE_COLUMNHEADER_CLEARALL_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMNHEADER_CLEARALL_DISABLED")
+  @js.native
+  val TABLE_COLUMNHEADER_CLEARALL_DISABLED: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMNHEADER_SELECTALL_CHECKED")
+  @js.native
+  val TABLE_COLUMNHEADER_SELECTALL_CHECKED: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMNHEADER_SELECTALL_DESCRIPTION")
+  @js.native
+  val TABLE_COLUMNHEADER_SELECTALL_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMNHEADER_SELECTALL_NOT_CHECKED")
+  @js.native
+  val TABLE_COLUMNHEADER_SELECTALL_NOT_CHECKED: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_COLUMN_HEADER_ROW")
   @js.native
   val TABLE_COLUMN_HEADER_ROW: I18nText = js.native
@@ -730,6 +858,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_MORE_DESCRIPTION")
   @js.native
   val TABLE_MORE_DESCRIPTION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_MULTI_SELECTABLE")
+  @js.native
+  val TABLE_MULTI_SELECTABLE: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_NAVIGATION")
   @js.native
@@ -762,6 +894,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_SELECT_ALL_ROWS")
   @js.native
   val TABLE_SELECT_ALL_ROWS: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TABLE_SINGLE_SELECTABLE")
+  @js.native
+  val TABLE_SINGLE_SELECTABLE: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TAB_ARIA_DESIGN_CRITICAL")
   @js.native
@@ -903,6 +1039,10 @@ object distGeneratedI18nI18nDefaultsMod {
   @js.native
   val TOKEN_ARIA_LABEL: I18nText = js.native
   
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TOKEN_ARIA_REMOVE")
+  @js.native
+  val TOKEN_ARIA_REMOVE: I18nText = js.native
+  
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL")
   @js.native
   val TOOLBAR_OVERFLOW_BUTTON_ARIA_LABEL: I18nText = js.native
@@ -934,6 +1074,22 @@ object distGeneratedI18nI18nDefaultsMod {
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_INFORMATION")
   @js.native
   val VALUE_STATE_INFORMATION: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_LINK")
+  @js.native
+  val VALUE_STATE_LINK: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_LINKS")
+  @js.native
+  val VALUE_STATE_LINKS: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_LINKS_MAC")
+  @js.native
+  val VALUE_STATE_LINKS_MAC: I18nText = js.native
+  
+  @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_LINK_MAC")
+  @js.native
+  val VALUE_STATE_LINK_MAC: I18nText = js.native
   
   @JSImport("@ui5/webcomponents/dist/generated/i18n/i18n-defaults.js", "VALUE_STATE_SUCCESS")
   @js.native

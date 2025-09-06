@@ -1,8 +1,9 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ArrowButton
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Arrowclick
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Description
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.click
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.UI5CustomEvent
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.Event
@@ -142,6 +143,8 @@ object distSplitButtonMod {
     
     def _arrowButtonRelease(e: MouseEvent): Unit = js.native
     
+    def _computedAccessibilityAttributes: SplitButtonAccessibilityAttributes = js.native
+    
     /**
       * Defines the display of the end icon as a graphical element within the default action of the component after the button text.
       * The SAP-icons font provides different options.
@@ -249,7 +252,31 @@ object distSplitButtonMod {
     
     def _textButtonRelease(): Unit = js.native
     
-    def accInfo: ArrowButton = js.native
+    def accInfo: Description = js.native
+    
+    /**
+      * Defines the additional accessibility attributes that will be applied to the component.
+      * The `accessibilityAttributes` property accepts an object with the following optional fields:
+      *
+      * - **root**: Attributes that will be applied to the main (text) button.
+      *   - **hasPopup**: Indicates the presence and type of popup triggered by the button.
+      *     Accepts string values: `"dialog"`, `"grid"`, `"listbox"`, `"menu"`, or `"tree"`.
+      *   - **roleDescription**: Provides a human-readable description for the role of the button.
+      *     Accepts any string value.
+      *   - **title**: Specifies a tooltip or description for screen readers.
+      *     Accepts any string value.
+      *
+      * - **arrowButton**: Attributes applied specifically to the arrow (split) button.
+      *   - **hasPopup**: Indicates the presence and type of popup triggered by the arrow button.
+      *     Accepts string values: `"dialog"`, `"grid"`, `"listbox"`, `"menu"`, or `"tree"`.
+      *   - **expanded**: Indicates whether the popup triggered by the arrow button is currently expanded.
+      *     Accepts boolean values: `true` or `false`.
+      *
+      * @default {}
+      * @public
+      * @since 2.13.0
+      */
+    var accessibilityAttributes: SplitButtonAccessibilityAttributes = js.native
     
     /**
       * Defines the accessible ARIA name of the component.
@@ -325,5 +352,97 @@ object distSplitButtonMod {
       ] = js.native
     
     def textButtonAccText: String | Null = js.native
+  }
+  
+  trait SplitButtonAccessibilityAttributes extends StObject {
+    
+    var arrowButton: js.UndefOr[SplitButtonArrowButtonAccAtributes] = js.undefined
+    
+    var root: js.UndefOr[SplitButtonRootAccAttributes] = js.undefined
+  }
+  object SplitButtonAccessibilityAttributes {
+    
+    inline def apply(): SplitButtonAccessibilityAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitButtonAccessibilityAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonAccessibilityAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setArrowButton(value: SplitButtonArrowButtonAccAtributes): Self = StObject.set(x, "arrowButton", value.asInstanceOf[js.Any])
+      
+      inline def setArrowButtonUndefined: Self = StObject.set(x, "arrowButton", js.undefined)
+      
+      inline def setRoot(value: SplitButtonRootAccAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@ui5/webcomponents-base.@ui5/webcomponents-base/dist/types.AccessibilityAttributes, 'hasPopup' | 'expanded' | 'title'> */
+  trait SplitButtonArrowButtonAccAtributes extends StObject {
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    var hasPopup: js.UndefOr[AriaHasPopup] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object SplitButtonArrowButtonAccAtributes {
+    
+    inline def apply(): SplitButtonArrowButtonAccAtributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitButtonArrowButtonAccAtributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonArrowButtonAccAtributes] (val x: Self) extends AnyVal {
+      
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setHasPopup(value: AriaHasPopup): Self = StObject.set(x, "hasPopup", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopupUndefined: Self = StObject.set(x, "hasPopup", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<@ui5/webcomponents-base.@ui5/webcomponents-base/dist/types.AccessibilityAttributes, 'hasPopup' | 'roleDescription' | 'title'> */
+  trait SplitButtonRootAccAttributes extends StObject {
+    
+    var hasPopup: js.UndefOr[AriaHasPopup] = js.undefined
+    
+    var roleDescription: js.UndefOr[String] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object SplitButtonRootAccAttributes {
+    
+    inline def apply(): SplitButtonRootAccAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SplitButtonRootAccAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonRootAccAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setHasPopup(value: AriaHasPopup): Self = StObject.set(x, "hasPopup", value.asInstanceOf[js.Any])
+      
+      inline def setHasPopupUndefined: Self = StObject.set(x, "hasPopup", js.undefined)
+      
+      inline def setRoleDescription(value: String): Self = StObject.set(x, "roleDescription", value.asInstanceOf[js.Any])
+      
+      inline def setRoleDescriptionUndefined: Self = StObject.set(x, "roleDescription", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
   }
 }
