@@ -17,7 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
       - uses: actions/setup-node@v4
         with:
           node-version: 23
@@ -50,9 +52,9 @@ jobs:
       - name: Build Project Artifacts
         run: yarn dlx vercel@latest build --prod --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Remove all
+      - name: Remove all except the .vercel folder
         run: |
-          rm -rf node_modules
-          rm -rf out
+          find . -maxdepth 1 -not -name '.' -not -name '.vercel' -exec rm -rf {} +
+          
       - name: Deploy Project Artifacts to Vercel
-        run: yarn dlx vercel@latest deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: bunx vercel@latest deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
