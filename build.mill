@@ -133,8 +133,9 @@ object www extends WebModule with Scalafix with BuildInfo {
   def ivyDeps = super.ivyDeps() ++
     Dependencies.waypoint ++
     Dependencies.macrotask ++
-    Dependencies.borer
-  def moduleDeps = Seq(`ui5-webcomponents-laminar`)
+    Dependencies.borer ++
+    Dependencies.`ui5-webcomponents-laminar`
+  // def moduleDeps = Seq(`ui5-webcomponents-laminar`)
 
   val buildInfoPackageName = "www"
   def buildInfoMembers = Seq(
