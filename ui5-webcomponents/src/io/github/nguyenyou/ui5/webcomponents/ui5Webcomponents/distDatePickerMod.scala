@@ -53,7 +53,7 @@ object distDatePickerMod {
     * the input field, it must fit to the used date format.
     *
     * Supported format options are pattern-based on Unicode LDML Date Format notation.
-    * For more information, see [UTS #35: Unicode Locale Data Markup Language](http://unicode.org/reports/tr35/#Date_Field_Symbol_Table).
+    * For more information, see [UTS #35: Unicode Locale Data Markup Language](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
     *
     * For example, if the `format-pattern` is "yyyy-MM-dd",
     * a valid value string is "2015-07-30" and the same is displayed in the input.
@@ -149,7 +149,7 @@ object distDatePickerMod {
     * the input field, it must fit to the used date format.
     *
     * Supported format options are pattern-based on Unicode LDML Date Format notation.
-    * For more information, see [UTS #35: Unicode Locale Data Markup Language](http://unicode.org/reports/tr35/#Date_Field_Symbol_Table).
+    * For more information, see [UTS #35: Unicode Locale Data Markup Language](https://unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table).
     *
     * For example, if the `format-pattern` is "yyyy-MM-dd",
     * a valid value string is "2015-07-30" and the same is displayed in the input.
@@ -265,13 +265,18 @@ object distDatePickerMod {
       * @protected
       * @param value
       */
+    def _checkDisplayValueValidity(value: String): Boolean = js.native
+    
+    /**
+      * Checks if the provided value is valid and within valid range.
+      * @protected
+      * @param value
+      */
     def _checkValueValidity(value: String): Boolean = js.native
     
     def _click(e: MouseEvent): Unit = js.native
     
     var _dateTimeInput: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDateTimeInputMod.default = js.native
-    
-    def _displayFormat: String = js.native
     
     def _headerTitleText: String = js.native
     
@@ -342,6 +347,22 @@ object distDatePickerMod {
     def accInfo: InputAccInfo = js.native
     
     /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that describe the input.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
+    
+    /**
       * Defines the aria-label attribute for the component.
       * @default undefined
       * @public
@@ -357,7 +378,7 @@ object distDatePickerMod {
       */
     var accessibleNameRef: js.UndefOr[String] = js.native
     
-    def dateAriaDescription: String = js.native
+    def ariaLabelText: String = js.native
     
     /**
       * Currently selected date represented as a Local JavaScript Date instance.
@@ -374,6 +395,8 @@ object distDatePickerMod {
       * @public
       */
     var disabled: Boolean = js.native
+    
+    def displayValue: String = js.native
     
     @JSName("eventDetails")
     var eventDetails_DatePicker: (/* import warning: importer.ImportType#apply Failed type conversion: @ui5/webcomponents-base.@ui5/webcomponents-base/dist/UI5Element.NotEqual<this, @ui5/webcomponents-base.@ui5/webcomponents-base/dist/UI5Element.UI5Element> extends true ? object : {[k: string] : any} */ js.Any) & Open = js.native
@@ -409,6 +432,10 @@ object distDatePickerMod {
       */
     def formatValue(date: js.Date): String = js.native
     
+    def getDisplayValueFromValue(value: String): String = js.native
+    
+    def getValueFromDisplayValue(value: String): String = js.native
+    
     def hasValueState: Boolean = js.native
     
     def hasValueStateText: Boolean = js.native
@@ -431,12 +458,29 @@ object distDatePickerMod {
       */
     def isInValidRange(value: String): Boolean = js.native
     
+    def isInValidRangeDisplayValue(value: String): Boolean = js.native
+    
+    /**
+      * Checks if a value is valid against the current date format of the DatePicker.
+      * @public
+      * @param value A value to be tested against the current date format
+      * @deprecated Use isValidValue or isValidDisplayValue instead
+      */
+    def isValid(value: String): Boolean = js.native
+    
     /**
       * Checks if a value is valid against the current date format of the DatePicker.
       * @public
       * @param value A value to be tested against the current date format
       */
-    def isValid(value: String): Boolean = js.native
+    def isValidDisplayValue(value: String): Boolean = js.native
+    
+    /**
+      * Checks if a value is valid against the current date format of the DatePicker.
+      * @public
+      * @param value A value to be tested against the current date format
+      */
+    def isValidValue(value: String): Boolean = js.native
     
     var liveValue: js.UndefOr[String] = js.native
     
@@ -448,6 +492,18 @@ object distDatePickerMod {
       * @public
       */
     var name: js.UndefOr[String] = js.native
+    
+    /**
+      * The parser understands many formats, but we need one format
+      * @protected
+      */
+    def normalizeDisplayValue(value: String): String = js.native
+    
+    /**
+      * The parser understands many formats, but we need one format
+      * @protected
+      */
+    def normalizeFormattedValue(value: String): String = js.native
     
     /**
       * The parser understands many formats, but we need one format
@@ -524,6 +580,8 @@ object distDatePickerMod {
     var responsivePopover: js.UndefOr[
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default
       ] = js.native
+    
+    def roleDescription: String = js.native
     
     def shouldDisplayDefaultValueStateMessage: Boolean = js.native
     

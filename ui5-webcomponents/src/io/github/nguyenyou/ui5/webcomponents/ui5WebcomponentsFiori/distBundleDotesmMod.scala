@@ -16,6 +16,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5Webcompone
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.accept
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.tntSlashactor
 import org.scalablytyped.runtime.Instantiable0
+import org.scalajs.dom.DragEvent
 import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -106,5 +107,7 @@ object distBundleDotesmMod {
     inline def resetConfiguration(testEnv: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfiguration")(testEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def shouldIgnoreCustomElement(tag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnoreCustomElement")(tag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def startMultipleDrag(count: Double, e: DragEvent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startMultipleDrag")(count.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
 }

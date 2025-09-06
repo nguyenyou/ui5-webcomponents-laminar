@@ -91,6 +91,12 @@ object distColorpickerUtilsColorValueMod {
     
     def isColorValueValid(): Boolean = js.native
     
+    def normalizeHValue(value: Double): Double = js.native
+    
+    def normalizeRGBValue(value: Double): Double = js.native
+    
+    def normalizeSLValue(value: Double): Double = js.native
+    
     def toRGBString(): String = js.native
     
     def validateHEX(value: String): Unit = js.native

@@ -220,8 +220,7 @@ object distSliderMod {
     
     def inputValue: String = js.native
     
-    @JSName("styles")
-    def styles_MSlider: Handle = js.native
+    def styles: Handle = js.native
     
     def syncUIAndState(): Unit = js.native
     

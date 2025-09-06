@@ -30,5 +30,13 @@ object distShellBarSearchMod {
     */
   @js.native
   trait ShellBarSearch
-    extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchMod.default
+    extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSearchMod.default {
+    
+    /**
+      * Indicates whether the suggestions popover should be opened on focus.
+      * @default false
+      * @public
+      */
+    var autoOpen: Boolean = js.native
+  }
 }

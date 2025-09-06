@@ -78,6 +78,8 @@ object distTableRowMod {
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableRowActionBaseMod.default
       ] = js.native
     
+    def _rowIndex: Double = js.native
+    
     /**
       * Defines the actions of the component.
       *
@@ -126,7 +128,7 @@ object distTableRowMod {
     var navigated: Boolean = js.native
     
     /**
-      * Defines the position of the row related to the total number of rows within the table when the `ui5-table-virtualizer` feature is used.
+      * Defines the 0-based position of the row related to the total number of rows within the table when the `ui5-table-virtualizer` feature is used.
       *
       * @default undefined
       * @since 2.5.0

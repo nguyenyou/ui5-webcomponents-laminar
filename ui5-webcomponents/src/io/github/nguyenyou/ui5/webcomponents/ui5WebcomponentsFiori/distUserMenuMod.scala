@@ -203,7 +203,7 @@ object distUserMenuMod {
       * @public
       * @default undefined
       */
-    var opener: js.UndefOr[HTMLElement | String] = js.native
+    var opener: js.UndefOr[HTMLElement | String | Null] = js.native
     
     /**
       * Defines if the User Menu shows the Edit Accounts option.

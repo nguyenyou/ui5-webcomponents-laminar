@@ -3,7 +3,9 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Element
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Move
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Placement
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMovePlacementMod.MovePlacement
 import org.scalajs.dom.DragEvent
+import org.scalajs.dom.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,6 +55,10 @@ object distListItemGroupMod {
   @js.native
   trait ListItemGroup
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
+    
+    var _dragAndDropHandler: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDelegateDragAndDropHandlerMod.default = js.native
+    
+    def _filterPlacements(placements: js.Array[MovePlacement], draggedElement: HTMLElement, targetElement: HTMLElement): js.Array[MovePlacement] = js.native
     
     def _ondragenter(e: DragEvent): Unit = js.native
     
@@ -112,6 +118,25 @@ object distListItemGroupMod {
     var items: js.Array[
         io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemBaseMod.default
       ] = js.native
+    
+    /**
+      * Defines if the text of the component should wrap when it's too long.
+      * When set to "Normal", the content (title, description) will be wrapped
+      * using the `ui5-expandable-text` component.<br/>
+      *
+      * The text can wrap up to 100 characters on small screens (size S) and
+      * up to 300 characters on larger screens (size M and above). When text exceeds
+      * these limits, it truncates with an ellipsis followed by a text expansion trigger.
+      *
+      * Available options are:
+      * - `None` (default) - The text will truncate with an ellipsis.
+      * - `Normal` - The text will wrap (without truncation).
+      *
+      * @default "None"
+      * @public
+      * @since 2.15.0
+      */
+    var wrappingType: /* template literal string: ${WrappingType} */ String = js.native
   }
   
   trait ListItemGroupMoveEventDetail extends StObject {

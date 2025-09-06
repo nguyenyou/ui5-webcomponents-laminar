@@ -362,5 +362,25 @@ object distTextAreaMod {
     def valueStateTypeMappings: Information = js.native
   }
   
+  trait TextAreaInputEventDetail extends StObject {
+    
+    var escapePressed: js.UndefOr[Boolean] = js.undefined
+  }
+  object TextAreaInputEventDetail {
+    
+    inline def apply(): TextAreaInputEventDetail = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextAreaInputEventDetail]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaInputEventDetail] (val x: Self) extends AnyVal {
+      
+      inline def setEscapePressed(value: Boolean): Self = StObject.set(x, "escapePressed", value.asInstanceOf[js.Any])
+      
+      inline def setEscapePressedUndefined: Self = StObject.set(x, "escapePressed", js.undefined)
+    }
+  }
+  
   type TokenizedText = js.Array[String]
 }

@@ -8,14 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Press extends StObject {
   
+  var _close: NotificationListItemCloseEventDetail
+  
   var _press: NotificationListItemPressEventDetail
   
   var close: NotificationListItemCloseEventDetail
 }
 object Press {
   
-  inline def apply(_press: NotificationListItemPressEventDetail, close: NotificationListItemCloseEventDetail): Press = {
-    val __obj = js.Dynamic.literal(_press = _press.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any])
+  inline def apply(
+    _close: NotificationListItemCloseEventDetail,
+    _press: NotificationListItemPressEventDetail,
+    close: NotificationListItemCloseEventDetail
+  ): Press = {
+    val __obj = js.Dynamic.literal(_close = _close.asInstanceOf[js.Any], _press = _press.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any])
     __obj.asInstanceOf[Press]
   }
   
@@ -23,6 +29,8 @@ object Press {
   implicit open class MutableBuilder[Self <: Press] (val x: Self) extends AnyVal {
     
     inline def setClose(value: NotificationListItemCloseEventDetail): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def set_close(value: NotificationListItemCloseEventDetail): Self = StObject.set(x, "_close", value.asInstanceOf[js.Any])
     
     inline def set_press(value: NotificationListItemPressEventDetail): Self = StObject.set(x, "_press", value.asInstanceOf[js.Any])
   }

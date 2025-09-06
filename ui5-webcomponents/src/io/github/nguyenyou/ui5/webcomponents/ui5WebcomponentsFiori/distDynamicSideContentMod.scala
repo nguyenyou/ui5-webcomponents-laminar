@@ -1,5 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
+import io.github.nguyenyou.ui5.webcomponents.std.ResizeObserver
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Layoutchange
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Root
 import org.scalajs.dom.HTMLElement
@@ -178,23 +179,38 @@ object distDynamicSideContentMod {
       */
     var _currentBreakpoint: js.UndefOr[String] = js.native
     
-    def _handleResizeBound(): Unit = js.native
+    /**
+      * Gets main content visibility by checking CSS display property
+      * @private
+      */
+    def _getMainContentVisibility(): Boolean = js.native
+    
+    /**
+      * Gets side content visibility by checking CSS display property
+      * @private
+      */
+    def _getSideContentVisibility(): Boolean = js.native
+    
+    /**
+      * @private
+      */
+    var _isSideContentBelowMainContent: Boolean = js.native
     
     def _isSideContentFirst: Boolean = js.native
     
     /**
+      * Returns true when the toggleContents functionality should be enabled.
+      * Toggle is available when side content would normally be hidden in the current breakpoint
+      * but can be shown via the toggle mechanism.
       * @private
       */
-    var _mcSpan: String = js.native
+    def _isToggleEnabled: Boolean = js.native
     
-    def _resizeContents(): Unit = js.native
+    var _mainContent: HTMLElement = js.native
     
-    /**
-      * @private
-      */
-    var _scSpan: String = js.native
+    var _resizeObserver: js.UndefOr[ResizeObserver] = js.native
     
-    def _setSpanSizes(mainSize: String, sideSize: String): Unit = js.native
+    var _sideContent: HTMLElement = js.native
     
     /**
       * @private
@@ -235,8 +251,6 @@ object distDynamicSideContentMod {
     @JSName("eventDetails")
     var eventDetails_DynamicSideContent: Layoutchange = js.native
     
-    def handleResize(): Unit = js.native
-    
     /**
       * Defines the visibility of the main content.
       * @default false
@@ -252,6 +266,8 @@ object distDynamicSideContentMod {
       *
       */
     var hideSideContent: Boolean = js.native
+    
+    def isSideContentBelowMainContent: Boolean = js.native
     
     /**
       * Defines the side content.
@@ -291,22 +307,6 @@ object distDynamicSideContentMod {
     def sizeS: String = js.native
     
     def sizeXL: String = js.native
-    
-    def span0: String = js.native
-    
-    def span12: String = js.native
-    
-    def span3: String = js.native
-    
-    def span4: String = js.native
-    
-    def span6: String = js.native
-    
-    def span8: String = js.native
-    
-    def span9: String = js.native
-    
-    def spanFixed: String = js.native
     
     def styles: Root = js.native
     

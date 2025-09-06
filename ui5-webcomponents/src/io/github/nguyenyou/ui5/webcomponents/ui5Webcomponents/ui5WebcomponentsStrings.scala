@@ -352,6 +352,14 @@ object ui5WebcomponentsStrings {
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
+  sealed trait clientX extends StObject
+  inline def clientX: clientX = "clientX".asInstanceOf[clientX]
+  
+  @js.native
+  sealed trait clientY extends StObject
+  inline def clientY: clientY = "clientY".asInstanceOf[clientY]
+  
+  @js.native
   sealed trait clipPath extends StObject
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
@@ -770,6 +778,10 @@ object ui5WebcomponentsStrings {
   inline def `hiddenText-value-help`: `hiddenText-value-help` = "hiddenText-value-help".asInstanceOf[`hiddenText-value-help`]
   
   @js.native
+  sealed trait `hiddenText-value-state-link-shortcut` extends StObject
+  inline def `hiddenText-value-state-link-shortcut`: `hiddenText-value-state-link-shortcut` = "hiddenText-value-state-link-shortcut".asInstanceOf[`hiddenText-value-state-link-shortcut`]
+  
+  @js.native
   sealed trait hour0_11
     extends StObject
        with HourType
@@ -880,6 +892,10 @@ object ui5WebcomponentsStrings {
   @js.native
   sealed trait label extends StObject
   inline def label: label = "label".asInstanceOf[label]
+  
+  @js.native
+  sealed trait last extends StObject
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait left
@@ -1168,6 +1184,10 @@ object ui5WebcomponentsStrings {
   @js.native
   sealed trait `navigation-right-arrow` extends StObject
   inline def `navigation-right-arrow`: `navigation-right-arrow` = "navigation-right-arrow".asInstanceOf[`navigation-right-arrow`]
+  
+  @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait nextid extends StObject
@@ -1698,6 +1718,10 @@ object ui5WebcomponentsStrings {
   @js.native
   sealed trait `value-changed` extends StObject
   inline def `value-changed`: `value-changed` = "value-changed".asInstanceOf[`value-changed`]
+  
+  @js.native
+  sealed trait `value-state-description` extends StObject
+  inline def `value-state-description`: `value-state-description` = "value-state-description".asInstanceOf[`value-state-description`]
   
   @js.native
   sealed trait valueStateDesc extends StObject

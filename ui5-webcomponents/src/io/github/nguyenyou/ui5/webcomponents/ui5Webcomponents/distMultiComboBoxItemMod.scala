@@ -1,5 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.RoleAriaRole
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Selectionrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -83,6 +84,8 @@ object distMultiComboBoxItemMod {
     var _isVisible_MultiComboBoxItem: Boolean = js.native
     
     var _readonly: Boolean = js.native
+    
+    def checkBoxAccInfo: RoleAriaRole = js.native
     
     @JSName("eventDetails")
     var eventDetails_MultiComboBoxItem: (/* import warning: importer.ImportType#apply Failed type conversion: @ui5/webcomponents.@ui5/webcomponents/dist/ListItemBase.default['eventDetails'] */ js.Any) & Selectionrequested = js.native

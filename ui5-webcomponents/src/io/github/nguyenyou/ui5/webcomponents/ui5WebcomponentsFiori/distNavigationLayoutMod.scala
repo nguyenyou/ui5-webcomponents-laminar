@@ -80,6 +80,11 @@ object distNavigationLayoutMod {
     var content: js.Array[HTMLElement] = js.native
     
     /**
+      * @private
+      */
+    var hasSideNavigation: Boolean = js.native
+    
+    /**
       * Defines the header.
       * @public
       */

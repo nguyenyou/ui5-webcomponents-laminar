@@ -55,11 +55,19 @@ object distTimelineItemMod {
   @js.native
   trait TimelineItem extends ITimelineItem {
     
+    def _getAccessibleLabel: String = js.native
+    
     /**
       * Defines the content of the `ui5-timeline-item`.
       * @public
       */
     var content: js.Array[Node] = js.native
+    
+    /**
+      * @private
+      */
+    @JSName("effectiveRole")
+    var effectiveRole_TimelineItem: /* template literal string: ${TimelineItemRole} */ String = js.native
     
     @JSName("eventDetails")
     var eventDetails_TimelineItem: Nameclick = js.native
@@ -133,5 +141,17 @@ object distTimelineItemMod {
       * @public
       */
     var titleText: js.UndefOr[String] = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.listitem
+    - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.treeitem
+  */
+  trait TimelineItemRole extends StObject
+  object TimelineItemRole {
+    
+    inline def listitem: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.listitem = "listitem".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.listitem]
+    
+    inline def treeitem: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.treeitem = "treeitem".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.treeitem]
   }
 }

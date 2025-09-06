@@ -84,6 +84,15 @@ object distDateRangePickerMod {
       * Builds a string value out of two UTC timestamps - this method is the counterpart to _extractFirstTimestamp/_extractLastTimestamp
       * @private
       */
+    def _buildDisplayValue(): String = js.native
+    def _buildDisplayValue(firstDateTimestamp: Double): String = js.native
+    def _buildDisplayValue(firstDateTimestamp: Double, lastDateTimestamp: Double): String = js.native
+    def _buildDisplayValue(firstDateTimestamp: Unit, lastDateTimestamp: Double): String = js.native
+    
+    /**
+      * Builds a string value out of two UTC timestamps - this method is the counterpart to _extractFirstTimestamp/_extractLastTimestamp
+      * @private
+      */
     def _buildValue(): String = js.native
     def _buildValue(firstDateTimestamp: Double): String = js.native
     def _buildValue(firstDateTimestamp: Double, lastDateTimestamp: Double): String = js.native
@@ -92,6 +101,8 @@ object distDateRangePickerMod {
     def _effectiveDelimiter: String = js.native
     
     def _endDateTimestamp: js.UndefOr[Double] = js.native
+    
+    def _exctractDisplayTimestamp(value: String): js.UndefOr[Double] = js.native
     
     /**
       * Returns a UTC timestamp, representing the first date in the value string or undefined if the value is empty

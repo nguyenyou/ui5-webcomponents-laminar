@@ -17,11 +17,15 @@ object distTableDragAndDropMod {
   trait TableDragAndDrop
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTableExtensionMod.default {
     
+    def _ondragend(): Unit = js.native
+    
     def _ondragenter(e: DragEvent): Unit = js.native
     
     def _ondragleave(e: DragEvent): Unit = js.native
     
     def _ondragover(e: DragEvent): Unit = js.native
+    
+    def _ondragstart(e: DragEvent): Unit = js.native
     
     def _ondrop(e: DragEvent): Unit = js.native
     

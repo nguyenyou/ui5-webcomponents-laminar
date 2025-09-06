@@ -45,6 +45,16 @@ object distTableSelectionBaseMod {
     var eventDetails_TableSelectionBase: ChangeTableSelectionBaseChangeEventDetail = js.native
     
     /**
+      * Returns the ARIA description of the selection component displayed in the column header.
+      */
+    def getAriaDescriptionForColumnHeader(): js.UndefOr[String] = js.native
+    
+    /**
+      * Returns the ARIA description of the Table as an alternative to aria-multiselectable.
+      */
+    def getAriaDescriptionForTable(): js.UndefOr[String] = js.native
+    
+    /**
       * Returns the table row instance for the given row key.
       *
       * @param rowKey The row key

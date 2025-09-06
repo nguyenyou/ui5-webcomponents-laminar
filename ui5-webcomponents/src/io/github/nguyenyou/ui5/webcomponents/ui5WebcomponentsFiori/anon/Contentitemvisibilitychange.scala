@@ -7,6 +7,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarM
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProductSwitchClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProfileClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchButtonEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldClearEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldToggleEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +29,8 @@ trait Contentitemvisibilitychange extends StObject {
   
   var `search-button-click`: ShellBarSearchButtonEventDetail
   
+  var `search-field-clear`: ShellBarSearchFieldClearEventDetail
+  
   var `search-field-toggle`: ShellBarSearchFieldToggleEventDetail
 }
 object Contentitemvisibilitychange {
@@ -40,6 +43,7 @@ object Contentitemvisibilitychange {
     `product-switch-click`: ShellBarProductSwitchClickEventDetail,
     `profile-click`: ShellBarProfileClickEventDetail,
     `search-button-click`: ShellBarSearchButtonEventDetail,
+    `search-field-clear`: ShellBarSearchFieldClearEventDetail,
     `search-field-toggle`: ShellBarSearchFieldToggleEventDetail
   ): Contentitemvisibilitychange = {
     val __obj = js.Dynamic.literal()
@@ -50,6 +54,7 @@ object Contentitemvisibilitychange {
     __obj.updateDynamic("product-switch-click")(`product-switch-click`.asInstanceOf[js.Any])
     __obj.updateDynamic("profile-click")(`profile-click`.asInstanceOf[js.Any])
     __obj.updateDynamic("search-button-click")(`search-button-click`.asInstanceOf[js.Any])
+    __obj.updateDynamic("search-field-clear")(`search-field-clear`.asInstanceOf[js.Any])
     __obj.updateDynamic("search-field-toggle")(`search-field-toggle`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contentitemvisibilitychange]
   }
@@ -70,6 +75,8 @@ object Contentitemvisibilitychange {
     inline def `setProfile-click`(value: ShellBarProfileClickEventDetail): Self = StObject.set(x, "profile-click", value.asInstanceOf[js.Any])
     
     inline def `setSearch-button-click`(value: ShellBarSearchButtonEventDetail): Self = StObject.set(x, "search-button-click", value.asInstanceOf[js.Any])
+    
+    inline def `setSearch-field-clear`(value: ShellBarSearchFieldClearEventDetail): Self = StObject.set(x, "search-field-clear", value.asInstanceOf[js.Any])
     
     inline def `setSearch-field-toggle`(value: ShellBarSearchFieldToggleEventDetail): Self = StObject.set(x, "search-field-toggle", value.asInstanceOf[js.Any])
   }

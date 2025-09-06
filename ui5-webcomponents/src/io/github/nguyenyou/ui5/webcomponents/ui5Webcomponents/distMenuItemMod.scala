@@ -178,7 +178,11 @@ object distMenuItemMod {
     
     def _endContentKeyDown(e: KeyboardEvent): Unit = js.native
     
+    def _isCheckable: Boolean = js.native
+    
     def _itemKeyDown(e: KeyboardEvent): Unit = js.native
+    
+    def _itemKeyUp(e: KeyboardEvent): Unit = js.native
     
     def _itemMouseOver(e: MouseEvent): Unit = js.native
     
@@ -210,6 +214,8 @@ object distMenuItemMod {
     def _role: menuitem | menuitemcheckbox | menuitemradio = js.native
     
     def _setupItemNavigation(): Unit = js.native
+    
+    var _shiftPressed: Boolean = js.native
     
     /**
       * Indicates whether any of the element siblings have icon.

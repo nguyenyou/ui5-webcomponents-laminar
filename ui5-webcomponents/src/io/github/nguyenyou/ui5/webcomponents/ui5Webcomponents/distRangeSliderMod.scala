@@ -448,8 +448,7 @@ object distRangeSliderMod {
       */
     var startValue: Double = js.native
     
-    @JSName("styles")
-    def styles_MRangeSlider: EndHandle = js.native
+    def styles: EndHandle = js.native
     
     def syncUIAndState(): Unit = js.native
     

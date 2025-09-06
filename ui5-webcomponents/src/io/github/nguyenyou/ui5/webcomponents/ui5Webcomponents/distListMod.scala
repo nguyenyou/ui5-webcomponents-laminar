@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 import io.github.nguyenyou.ui5.webcomponents.std.IntersectionObserver
 import io.github.nguyenyou.ui5.webcomponents.std.IntersectionObserverEntry
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Itemclose
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Name
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`false`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.list
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.listbox
@@ -173,6 +174,8 @@ object distListMod {
     
     var _beforeElement: js.UndefOr[HTMLElement | Null] = js.native
     
+    var _dragAndDropHandler: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distDelegateDragAndDropHandlerMod.default = js.native
+    
     var _forwardingFocus: Boolean = js.native
     
     def _getDescriptionForGroups(): String = js.native
@@ -253,6 +256,25 @@ object distListMod {
     def _shouldFocusGrowingButton(): Unit = js.native
     
     def _updateAssociatedLabelsTexts(): Unit = js.native
+    
+    /**
+      * Defines additional accessibility attributes on different areas of the component.
+      *
+      * The accessibilityAttributes object has the following field:
+      *
+      *  - **growingButton**: `growingButton.name`.
+      *
+      * The accessibility attributes support the following values:
+      *
+      * - **name**: Defines the accessible ARIA name of the growing button.
+      * Accepts any string.
+      *
+      * **Note:** The `accessibilityAttributes` property is in an experimental state and is a subject to change.
+      * @default {}
+      * @public
+      * @since 2.13.0
+      */
+    var accessibilityAttributes: ListAccessibilityAttributes = js.native
     
     /**
       * Defines the accessible description of the component.
@@ -391,6 +413,10 @@ object distListMod {
       * @public
       */
     var growing: /* template literal string: ${ListGrowingMode} */ String = js.native
+    
+    def growingButtonAriaLabel: js.UndefOr[String] = js.native
+    
+    def growingButtonAriaLabelledBy: js.UndefOr[String] = js.native
     
     /**
       * Defines the text that will be displayed inside the growing button.
@@ -588,6 +614,26 @@ object distListMod {
     def showNoDataText: js.UndefOr[String | `false`] = js.native
     
     def unobserveListEnd(): Unit = js.native
+  }
+  
+  trait ListAccessibilityAttributes extends StObject {
+    
+    var growingButton: js.UndefOr[Name] = js.undefined
+  }
+  object ListAccessibilityAttributes {
+    
+    inline def apply(): ListAccessibilityAttributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListAccessibilityAttributes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListAccessibilityAttributes] (val x: Self) extends AnyVal {
+      
+      inline def setGrowingButton(value: Name): Self = StObject.set(x, "growingButton", value.asInstanceOf[js.Any])
+      
+      inline def setGrowingButtonUndefined: Self = StObject.set(x, "growingButton", js.undefined)
+    }
   }
   
   trait ListItemClickEventDetail extends StObject {

@@ -3,6 +3,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distDelegateResizeHandlerMod.ResizeObserverCallback
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Toggletitle
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriInts.`0`
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.button
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.heading
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.snappedHeading
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.snappedSubheading
@@ -100,7 +101,9 @@ object distDynamicPageTitleMod {
   trait DynamicPageTitle
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    def _ariaDescribedbyText: String = js.native
+    def _ariaDescribedBy: js.UndefOr[String] = js.native
+    
+    def _ariaDescribedbyText: js.UndefOr[String] = js.native
     
     def _ariaLabelledBy: js.UndefOr[String] = js.native
     
@@ -113,6 +116,8 @@ object distDynamicPageTitleMod {
     def _needsSeparator: Boolean = js.native
     
     def _onkeydown(e: KeyboardEvent): Unit = js.native
+    
+    def _role: js.UndefOr[button] = js.native
     
     def _tabIndex: js.UndefOr[`0`] = js.native
     

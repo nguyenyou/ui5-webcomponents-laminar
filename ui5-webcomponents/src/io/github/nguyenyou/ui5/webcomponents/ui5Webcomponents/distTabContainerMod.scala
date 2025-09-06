@@ -14,7 +14,6 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTabSeparatorMo
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTabSeparatorMod.TabSeparatorInStrip
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`slim-arrow-down`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`slim-arrow-up`
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUtilDragAndDropDragRegistryMod.SetDraggedElementFunction
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.DragEvent
 import org.scalajs.dom.Event
@@ -296,8 +295,6 @@ object distTabContainerMod {
     
     def _sendStripPresentationInfos(items: js.Array[ITab]): Unit = js.native
     
-    var _setDraggedElement: js.UndefOr[SetDraggedElementFunction] = js.native
-    
     def _setItemsForStrip(): Unit = js.native
     
     def _setPopoverInitialFocus(): Unit = js.native
@@ -321,6 +318,7 @@ object distTabContainerMod {
     def _updateOverflowCounters(): Unit = js.native
     
     def _updateStartAndEndOverflow(itemsDomRefs: js.Array[TabInStrip | TabSeparatorInStrip]): Unit = js.native
+    def _updateStartAndEndOverflow(itemsDomRefs: js.Array[TabInStrip | TabSeparatorInStrip], firstVisibleIndex: Double): Unit = js.native
     
     var _width: js.UndefOr[Double] = js.native
     

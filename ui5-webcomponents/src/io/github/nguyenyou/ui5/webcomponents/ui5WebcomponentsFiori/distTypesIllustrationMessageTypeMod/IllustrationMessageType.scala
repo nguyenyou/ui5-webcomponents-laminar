@@ -799,6 +799,15 @@ object IllustrationMessageType extends StObject {
        with IllustrationMessageType
   
   /**
+    * "TntEmptyContentPane" illustration type.
+    * @public
+    */
+  @js.native
+  sealed trait TntEmptyContentPane
+    extends StObject
+       with IllustrationMessageType
+  
+  /**
     * "TntExternalLink" illustration type.
     * @public
     */

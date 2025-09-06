@@ -8,12 +8,12 @@ trait DisplayString extends StObject {
   
   var display: String
   
-  var width: js.UndefOr[String] = js.undefined
+  var width: String
 }
 object DisplayString {
   
-  inline def apply(display: String): DisplayString = {
-    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any])
+  inline def apply(display: String, width: String): DisplayString = {
+    val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayString]
   }
   
@@ -23,7 +23,5 @@ object DisplayString {
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

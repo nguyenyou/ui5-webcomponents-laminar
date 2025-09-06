@@ -64,11 +64,19 @@ object distDateComponentBaseMod {
   trait DateComponentBase
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
+    def _displayFormat: String = js.native
+    
     def _formatPattern: String = js.native
     
     def _getCalendarDateFromString(value: String): js.UndefOr[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsLocalization.distDatesCalendarDateMod.default
       ] = js.native
+    
+    def _getCalendarDateFromStringDisplayValue(value: String): js.UndefOr[
+        io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsLocalization.distDatesCalendarDateMod.default
+      ] = js.native
+    
+    def _getDisplayStringFromTimestamp(timestamp: Double): String = js.native
     
     def _getMinMaxCalendarDateFromString(date: String): js.UndefOr[
         io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsLocalization.distDatesCalendarDateMod.default
@@ -78,10 +86,16 @@ object distDateComponentBaseMod {
     
     def _getTimeStampFromString(value: String): js.UndefOr[Double] = js.native
     
+    def _getValueStringFromTimestamp(timestamp: Double): String = js.native
+    
+    def _isDisplayFormatPattern: Boolean = js.native
+    
     def _isPattern: Boolean = js.native
     
+    def _isValueFormatPattern: Boolean = js.native
+    
     /**
-      * Cached instance of DateFormat with a format pattern of "YYYY-MM-dd".
+      * Cached instance of DateFormat with a format pattern of "yyyy-MM-dd".
       * Used by the getISOFormat method to avoid creating a new DateFormat instance on each call.
       * @private
       */
@@ -97,6 +111,8 @@ object distDateComponentBaseMod {
     
     def _secondaryCalendarType: js.UndefOr[CalendarType | Gregorian | Islamic | Japanese | Buddhist | Persian] = js.native
     
+    def _valueFormat: String = js.native
+    
     /**
       * Defines how to calculate calendar weeks and first day of the week.
       * If not set, the calendar will be displayed according to the currently set global configuration.
@@ -109,20 +125,33 @@ object distDateComponentBaseMod {
     /**
       * Determines the format, displayed in the input field.
       * @default undefined
+      * @since 2.14.0
+      * @public
+      */
+    var displayFormat: js.UndefOr[String] = js.native
+    
+    /**
+      * Determines the format, displayed in the input field.
+      * @default undefined
+      * @deprecated Use displayFormat and valueFormat instead
       * @public
       */
     var formatPattern: js.UndefOr[String] = js.native
     
+    def getDisplayFormat(): io.github.nguyenyou.ui5.webcomponents.openui5.sapUiCoreFormatDateFormatMod.default = js.native
+    
     def getFormat(): io.github.nguyenyou.ui5.webcomponents.openui5.sapUiCoreFormatDateFormatMod.default = js.native
     
     def getISOFormat(): io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsLocalization.distDateFormatMod.default = js.native
+    
+    def getValueFormat(): io.github.nguyenyou.ui5.webcomponents.openui5.sapUiCoreFormatDateFormatMod.default = js.native
     
     def hasSecondaryCalendarType: Boolean = js.native
     
     /**
       * Determines the maximum date available for selection.
       *
-      * **Note:** If the formatPattern property is not set, the maxDate value must be provided in the ISO date format (YYYY-MM-dd).
+      * **Note:** If the formatPattern property is not set, the maxDate value must be provided in the ISO date format (yyyy-MM-dd).
       * @default ""
       * @since 1.0.0-rc.6
       * @public
@@ -132,7 +161,7 @@ object distDateComponentBaseMod {
     /**
       * Determines the minimum date available for selection.
       *
-      * **Note:** If the formatPattern property is not set, the minDate value must be provided in the ISO date format (YYYY-MM-dd).
+      * **Note:** If the formatPattern property is not set, the minDate value must be provided in the ISO date format (yyyy-MM-dd).
       * @default ""
       * @since 1.0.0-rc.6
       * @public
@@ -155,5 +184,13 @@ object distDateComponentBaseMod {
       * @public
       */
     var secondaryCalendarType: js.UndefOr[/* template literal string: ${CalendarType} */ String] = js.native
+    
+    /**
+      * Determines the format, used for the value attribute.
+      * @default undefined
+      * @since 2.14.0
+      * @public
+      */
+    var valueFormat: js.UndefOr[String] = js.native
   }
 }

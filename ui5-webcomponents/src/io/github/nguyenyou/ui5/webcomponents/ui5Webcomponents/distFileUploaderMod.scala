@@ -1,15 +1,20 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.std.Record
+import io.github.nguyenyou.ui5.webcomponents.std.SubmitEvent
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.Filesizeexceed
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.InputAccInfo
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
+import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.DragEvent
 import org.scalajs.dom.Event
 import org.scalajs.dom.FileList
 import org.scalajs.dom.FormData
 import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.HTMLFormElement
 import org.scalajs.dom.HTMLInputElement
 import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,13 +116,35 @@ object distFileUploaderMod {
   @js.native
   trait FileUploader extends IFormInputElement {
     
+    def _clearFileSelection(): Unit = js.native
+    
+    def _fileNamesList(files: FileList): js.Array[String] = js.native
+    
+    var _form: HTMLFormElement = js.native
+    
+    def _formWidth: Double = js.native
+    
     def _getExceededFiles(files: FileList): js.Array[FileData] = js.native
     
-    def _getPopover(): io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.default = js.native
+    var _input: HTMLInputElement = js.native
     
-    def _input: HTMLInputElement = js.native
+    var _messagePopover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distPopoverMod.default = js.native
     
     def _onChange(e: Event): Unit = js.native
+    
+    def _onClearIconClick(e: CustomEvent): Unit = js.native
+    
+    def _onFormSubmit(e: SubmitEvent): Unit = js.native
+    
+    def _onNativeInputClick(e: MouseEvent): Unit = js.native
+    
+    def _onTokenizerClick(e: MouseEvent): Unit = js.native
+    
+    def _onTokenizerKeyDown(e: KeyboardEvent): Unit = js.native
+    
+    def _onTokenizerKeyUp(e: KeyboardEvent): Unit = js.native
+    
+    def _onTokenizerMouseDown(e: MouseEvent): Unit = js.native
     
     def _onclick(): Unit = js.native
     
@@ -133,12 +160,17 @@ object distFileUploaderMod {
     
     def _onkeyup(e: KeyboardEvent): Unit = js.native
     
-    def _onmouseout(): Unit = js.native
+    def _onmousedown(e: MouseEvent): Unit = js.native
     
-    def _onmouseover(): Unit = js.native
+    def _openFileBrowser(): Unit = js.native
     
-    def _updateValue(): Unit = js.native
-    def _updateValue(files: FileList): Unit = js.native
+    var _selectedFilesNames: js.Array[String] = js.native
+    
+    var _tokenizer: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTokenizerMod.default = js.native
+    
+    def _tokenizerExpanded: Boolean = js.native
+    
+    var _tokenizerOpen: Boolean = js.native
     
     /**
       * Checks whether all files are below `maxFileSize` (if set),
@@ -152,6 +184,8 @@ object distFileUploaderMod {
       */
     def _valueStateMessageInputIcon: String = js.native
     
+    def accInfo: InputAccInfo = js.native
+    
     /**
       * Comma-separated list of file types that the component should accept.
       *
@@ -161,15 +195,51 @@ object distFileUploaderMod {
       */
     var accept: js.UndefOr[String] = js.native
     
-    def browseText: String = js.native
+    /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that describe the input.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the accessible ARIA name of the component.
+      * @default undefined
+      * @public
+      * @since 2.13.0
+      */
+    var accessibleName: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that label the input.
+      * @default undefined
+      * @public
+      * @since 2.13.0
+      */
+    var accessibleNameRef: js.UndefOr[String] = js.native
+    
+    def clearIconTitle: String = js.native
     
     def closeValueStatePopover(): Unit = js.native
     
+    def computedValue: String = js.native
+    
     /**
-      * By default the component contains a single input field. With this slot you can pass any content that you wish to add. See the samples for more information.
+      * This slot allows you to add custom content to the component, such as a button or any other interactive element to trigger the file selection dialog.
       *
-      * **Note:** If no content is provided in this slot, the component will only consist of an input field and will not be interactable using the keyboard.
-      * Also it is not recommended to use any non-interactable components, as it may lead to poor accessibility experience.
+      * **Note:** For best accessibility experience, set a `tabindex` of "-1" on your interactive element, or it will be set automatically.
+      * This slot is intended for use cases where you want a button-only file uploader.
+      * It is recommended to set `hideInput` property to "true" when using this slot.
+      * Not setting `hideInput` may negatively impact the screen reader users.
       * @public
       */
     var content: js.Array[HTMLElement] = js.native
@@ -206,14 +276,16 @@ object distFileUploaderMod {
     
     def hasValueState: Boolean = js.native
     
-    def hasValueStateText: Boolean = js.native
-    
     /**
       * If set to "true", the input field of component will not be rendered. Only the default slot that is passed will be rendered.
+      *
+      * **Note:** Use this property in combination with the default slot to achieve a button-only file uploader design.
       * @default false
       * @public
       */
     var hideInput: Boolean = js.native
+    
+    def inputTitle: String = js.native
     
     /**
       * Defines the maximum file size in megabytes which prevents the upload if at least one file exceeds it.
@@ -239,15 +311,21 @@ object distFileUploaderMod {
       */
     var placeholder: js.UndefOr[String] = js.native
     
+    /**
+      * Defines whether the component is required.
+      * @default false
+      * @public
+      * @since 2.13.0
+      */
+    var required: Boolean = js.native
+    
+    def resolvedPlaceholder: String = js.native
+    
     def shouldDisplayDefaultValueStateMessage: Boolean = js.native
     
     def shouldOpenValueStateMessagePopover: Boolean = js.native
     
-    def titleText: String = js.native
-    
     def toggleValueStatePopover(open: Boolean): Unit = js.native
-    
-    def ui5Input: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default | Null = js.native
     
     /**
       * Defines the name/names of the file/files to upload.
@@ -257,6 +335,8 @@ object distFileUploaderMod {
       * @public
       */
     var value: String = js.native
+    
+    def valueHelpTitle: String = js.native
     
     /**
       * Defines the value state of the component.

@@ -6,25 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PopoverHeader extends StObject {
   
-  var popoverHeader: Width
+  var popoverHeader: MaxwidthString
   
-  var suggestionPopoverHeader: Display
+  var popoverValueStateMessage: DisplayWidth
   
   var suggestionsPopover: Maxwidth
 }
 object PopoverHeader {
   
-  inline def apply(popoverHeader: Width, suggestionPopoverHeader: Display, suggestionsPopover: Maxwidth): PopoverHeader = {
-    val __obj = js.Dynamic.literal(popoverHeader = popoverHeader.asInstanceOf[js.Any], suggestionPopoverHeader = suggestionPopoverHeader.asInstanceOf[js.Any], suggestionsPopover = suggestionsPopover.asInstanceOf[js.Any])
+  inline def apply(
+    popoverHeader: MaxwidthString,
+    popoverValueStateMessage: DisplayWidth,
+    suggestionsPopover: Maxwidth
+  ): PopoverHeader = {
+    val __obj = js.Dynamic.literal(popoverHeader = popoverHeader.asInstanceOf[js.Any], popoverValueStateMessage = popoverValueStateMessage.asInstanceOf[js.Any], suggestionsPopover = suggestionsPopover.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverHeader]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PopoverHeader] (val x: Self) extends AnyVal {
     
-    inline def setPopoverHeader(value: Width): Self = StObject.set(x, "popoverHeader", value.asInstanceOf[js.Any])
+    inline def setPopoverHeader(value: MaxwidthString): Self = StObject.set(x, "popoverHeader", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionPopoverHeader(value: Display): Self = StObject.set(x, "suggestionPopoverHeader", value.asInstanceOf[js.Any])
+    inline def setPopoverValueStateMessage(value: DisplayWidth): Self = StObject.set(x, "popoverValueStateMessage", value.asInstanceOf[js.Any])
     
     inline def setSuggestionsPopover(value: Maxwidth): Self = StObject.set(x, "suggestionsPopover", value.asInstanceOf[js.Any])
   }

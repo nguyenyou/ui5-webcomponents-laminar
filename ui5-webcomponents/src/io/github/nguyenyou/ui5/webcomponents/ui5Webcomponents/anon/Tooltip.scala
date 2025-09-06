@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Tooltip extends StObject {
   
-  var accessibilityAttributes: ExpandedBoolean
+  var accessibilityAttributes: ExpandedHasPopup
   
   var accessibleName: String
   
@@ -14,7 +14,7 @@ trait Tooltip extends StObject {
 }
 object Tooltip {
   
-  inline def apply(accessibilityAttributes: ExpandedBoolean, accessibleName: String, tooltip: String): Tooltip = {
+  inline def apply(accessibilityAttributes: ExpandedHasPopup, accessibleName: String, tooltip: String): Tooltip = {
     val __obj = js.Dynamic.literal(accessibilityAttributes = accessibilityAttributes.asInstanceOf[js.Any], accessibleName = accessibleName.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltip]
   }
@@ -22,7 +22,7 @@ object Tooltip {
   @scala.inline
   implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
     
-    inline def setAccessibilityAttributes(value: ExpandedBoolean): Self = StObject.set(x, "accessibilityAttributes", value.asInstanceOf[js.Any])
+    inline def setAccessibilityAttributes(value: ExpandedHasPopup): Self = StObject.set(x, "accessibilityAttributes", value.asInstanceOf[js.Any])
     
     inline def setAccessibleName(value: String): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
     

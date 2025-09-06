@@ -46,14 +46,5 @@ object distSideNavigationSubItemMod {
     */
   @js.native
   trait SideNavigationSubItem
-    extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default {
-    
-    /**
-      * Defines if the item's parent is disabled.
-      * @private
-      * @default false
-      * @since 2.10.0
-      */
-    var _parentDisabled: Boolean = js.native
-  }
+    extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default
 }

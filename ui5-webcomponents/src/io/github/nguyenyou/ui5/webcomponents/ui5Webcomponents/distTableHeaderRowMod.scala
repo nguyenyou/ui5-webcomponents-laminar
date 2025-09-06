@@ -64,6 +64,8 @@ object distTableHeaderRowMod {
     
     def _i18nSelection: String = js.native
     
+    def _selectionCellAriaDescription: js.UndefOr[String] = js.native
+    
     def _shouldRenderClearAll: Boolean = js.native
     
     /**

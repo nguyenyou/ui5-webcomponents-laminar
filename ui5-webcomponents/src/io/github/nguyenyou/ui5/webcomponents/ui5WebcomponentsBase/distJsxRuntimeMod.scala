@@ -3011,6 +3011,8 @@ object distJsxRuntimeMod {
       }
     }
     
+    type AriaAttributes = io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.AriaAttributes
+    
     type AriaRole = io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.AriaRole
     
     type DOMAttributes[T /* <: EventTarget */] = io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.DOMAttributes[T]

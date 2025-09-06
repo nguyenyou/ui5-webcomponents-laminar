@@ -146,6 +146,8 @@ object distDateTimePickerMod {
       */
     def _cancelClick(): Unit = js.native
     
+    var _clocks: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTimeSelectionClocksMod.default = js.native
+    
     /**
       * Handles the date/time switch available in `phoneMode` to switch
       * between the date and time views.

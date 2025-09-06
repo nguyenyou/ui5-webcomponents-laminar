@@ -248,7 +248,7 @@ object distMenuMod {
       * @default undefined
       * @since 1.10.0
       */
-    var opener: js.UndefOr[HTMLElement | String] = js.native
+    var opener: js.UndefOr[HTMLElement | String | Null] = js.native
   }
   
   trait MenuBeforeCloseEventDetail extends StObject {

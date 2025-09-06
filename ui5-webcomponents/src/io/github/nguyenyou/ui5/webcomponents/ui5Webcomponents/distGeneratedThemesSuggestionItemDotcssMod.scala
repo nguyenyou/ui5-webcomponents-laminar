@@ -9,13 +9,13 @@ object distGeneratedThemesSuggestionItemDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents/dist/generated/themes/SuggestionItem.css", JSImport.Default)
   @js.native
-  val default: /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+  val default: /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
     */ String = js.native
   
-  type _To = /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+  type _To = /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesSuggestionItemDotcssMod.foo` */
-  override def _to: /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-12-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
+  override def _to: /* :host([ui5-suggestion-item]){height:auto;min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-root{min-height:var(--_ui5-v2-14-0_list_item_base_height)}:host([ui5-suggestion-item]) .ui5-li-content{padding-bottom:.5rem;padding-top:.5rem;box-sizing:border-box}
     */ String = default
 }

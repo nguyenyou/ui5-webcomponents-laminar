@@ -42,10 +42,18 @@ object ui5WebcomponentsBaseStrings {
   inline def ICON_NOT_FOUND: ICON_NOT_FOUND = "ICON_NOT_FOUND".asInstanceOf[ICON_NOT_FOUND]
   
   @js.native
+  sealed trait OpenUI5 extends StObject
+  inline def OpenUI5: OpenUI5 = "OpenUI5".asInstanceOf[OpenUI5]
+  
+  @js.native
   sealed trait Polite
     extends StObject
        with InvisibleMessageMode
   inline def Polite: Polite = "Polite".asInstanceOf[Polite]
+  
+  @js.native
+  sealed trait WebComponent extends StObject
+  inline def WebComponent: WebComponent = "WebComponent".asInstanceOf[WebComponent]
   
   @js.native
   sealed trait _blank
@@ -1367,6 +1375,12 @@ object ui5WebcomponentsBaseStrings {
     extends StObject
        with GlobalHTMLAttributeNames
   inline def exportparts: exportparts = "exportparts".asInstanceOf[exportparts]
+  
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with AriaHasPopup
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait feBlend extends StObject

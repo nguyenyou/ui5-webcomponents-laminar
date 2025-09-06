@@ -1,6 +1,5 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import org.scalajs.dom.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -71,8 +70,6 @@ object distSideNavigationItemMod {
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distSideNavigationSelectableItemBaseMod.default {
     
     def _ariaChecked: js.UndefOr[Boolean] = js.native
-    
-    def _ariaHasPopup: js.UndefOr[AriaHasPopup] = js.native
     
     def _ariaLabel: js.UndefOr[String] = js.native
     

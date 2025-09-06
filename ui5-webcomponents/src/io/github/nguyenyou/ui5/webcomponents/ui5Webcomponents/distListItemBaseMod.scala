@@ -50,6 +50,16 @@ object distListItemBaseMod {
     
     def _handleTabPrevious(e: KeyboardEvent): Unit = js.native
     
+    /**
+      * Override from subcomponent, if needed
+      */
+    def _isEnter(e: KeyboardEvent): Boolean = js.native
+    
+    /**
+      * Override from subcomponent, if needed
+      */
+    def _isSpace(e: KeyboardEvent): Boolean = js.native
+    
     def _onclick(e: MouseEvent): Unit = js.native
     
     def _onfocusin(e: FocusEvent): Unit = js.native
@@ -96,6 +106,8 @@ object distListItemBaseMod {
     var hasBorder: Boolean = js.native
     
     def hasConfigurableMode: Boolean = js.native
+    
+    def isListItemBase: Boolean = js.native
     
     /**
       * Defines whether the item is movable.

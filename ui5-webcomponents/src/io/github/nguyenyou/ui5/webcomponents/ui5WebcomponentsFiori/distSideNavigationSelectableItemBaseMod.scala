@@ -2,6 +2,8 @@ package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.AriaHasPopup
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings._empty
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.a
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.div
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.menuitem
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.menuitemradio
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.page
@@ -73,6 +75,12 @@ object distSideNavigationSelectableItemBaseMod {
     
     def _ariaCurrent: js.UndefOr[page] = js.native
     
+    def _ariaHasPopup: js.UndefOr[AriaHasPopup] = js.native
+    
+    def _ariaSelected: js.UndefOr[Boolean] = js.native
+    
+    def _effectiveTag: a | div = js.native
+    
     def _href: js.UndefOr[String] = js.native
     
     def _onclick(e: MouseEvent): Unit = js.native
@@ -82,6 +90,14 @@ object distSideNavigationSelectableItemBaseMod {
     def _onkeydown(e: KeyboardEvent): Unit = js.native
     
     def _onkeyup(e: KeyboardEvent): Unit = js.native
+    
+    /**
+      * Defines if the item's parent is disabled.
+      * @private
+      * @default false
+      * @since 2.10.0
+      */
+    var _parentDisabled: Boolean = js.native
     
     def _selected: Boolean = js.native
     

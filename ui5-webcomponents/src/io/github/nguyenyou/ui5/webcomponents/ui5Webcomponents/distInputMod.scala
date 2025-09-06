@@ -12,6 +12,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.TypeofInputSu
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distFeaturesInputSuggestionsMod.SuggestionComponent
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.None
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings._empty
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.`hiddenText-value-state-link-shortcut`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.accessibleDescription
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.any
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.descr
@@ -63,6 +64,7 @@ object distInputMod {
     * - [End] - If focus is in the text input, moves caret after the last character. If focus is in the list, highlights the last item and updates the input accordingly.
     * - [Page Up] - If focus is in the list, moves highlight up by page size (10 items by default). If focus is in the input, does nothing.
     * - [Page Down] - If focus is in the list, moves highlight down by page size (10 items by default). If focus is in the input, does nothing.
+    * - [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * ### ES6 Module Import
     *
@@ -181,6 +183,7 @@ object distInputMod {
     * - [End] - If focus is in the text input, moves caret after the last character. If focus is in the list, highlights the last item and updates the input accordingly.
     * - [Page Up] - If focus is in the list, moves highlight up by page size (10 items by default). If focus is in the input, does nothing.
     * - [Page Down] - If focus is in the list, moves highlight down by page size (10 items by default). If focus is in the input, does nothing.
+    * - [Ctrl]+[Alt]+[F8] or [Command]+[Option]+[F8] - Focuses the first link in the value state message, if available. Pressing [Tab] moves the focus to the next link in the value state message, or closes the value state message if there are no more links.
     *
     * ### ES6 Module Import
     *
@@ -237,6 +240,8 @@ object distInputMod {
       */
     var _accessibleLabelsRefTexts: js.UndefOr[String] = js.native
     
+    def _addLinksEventListeners(): Unit = js.native
+    
     def _afterClosePicker(): Unit = js.native
     
     def _afterOpenPicker(): Unit = js.native
@@ -287,6 +292,8 @@ object distInputMod {
     
     def _handleChange(): Unit = js.native
     
+    def _handleCtrlAltF8(): Unit = js.native
+    
     def _handleDown(e: KeyboardEvent): Unit = js.native
     
     def _handleEnd(e: KeyboardEvent): Unit = js.native
@@ -298,6 +305,14 @@ object distInputMod {
     def _handleHome(e: KeyboardEvent): Unit = js.native
     
     def _handleInput(e: CustomEvent): Unit = js.native
+    
+    /**
+      * Indicates whether link navigation is being handled.
+      * @default false
+      * @private
+      * @since 2.11.0
+      */
+    var _handleLinkNavigation: Boolean = js.native
     
     def _handleNativeInput(e: InputEvent): Unit = js.native
     
@@ -371,6 +386,11 @@ object distInputMod {
     
     var _keepInnerValue: Boolean = js.native
     
+    /**
+      * @private
+      */
+    var _linksListenersArray: js.Array[js.Function1[/* args */ Any, Unit]] = js.native
+    
     var _listWidth: js.UndefOr[Double] = js.native
     
     var _nativeInputAttributes: NativeInputAttributes = js.native
@@ -394,6 +414,8 @@ object distInputMod {
     def _popupLabel: String = js.native
     
     def _readonly: Boolean = js.native
+    
+    def _removeLinksEventListeners(): Unit = js.native
     
     @JSName("_scroll")
     def _scroll_scroll(
@@ -421,6 +443,10 @@ object distInputMod {
       * This method is relevant for sap_horizon theme only
       */
     def _valueStateInputIcon: String = js.native
+    
+    var _valueStateLinks: js.Array[HTMLElement] = js.native
+    
+    def _valueStateLinksShortcutsTextAccId: _empty | `hiddenText-value-state-link-shortcut` = js.native
     
     /**
       * This method is relevant for sap_horizon theme only
@@ -592,6 +618,8 @@ object distInputMod {
     
     var lastConfirmedValue: String = js.native
     
+    def linksInAriaValueStateHiddenText: js.Array[HTMLElement] = js.native
+    
     /**
       * Sets the maximum number of characters available in the input field.
       *
@@ -734,6 +762,8 @@ object distInputMod {
       * @public
       */
     var valueState: /* template literal string: ${ValueState} */ String = js.native
+    
+    def valueStateLinksShortcutsTextAcc: String = js.native
     
     /**
       * Defines the value state message that will be displayed as pop up under the component.

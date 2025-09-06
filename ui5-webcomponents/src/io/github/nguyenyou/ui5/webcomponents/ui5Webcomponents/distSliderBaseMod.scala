@@ -1,7 +1,6 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ChangeInput
-import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.LabelContainer
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`0`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.F2
@@ -285,6 +284,8 @@ object distSliderBaseMod {
     
     var _valueOnInteractionStart: js.UndefOr[Double] = js.native
     
+    def _windowMouseoutHandler(e: MouseEvent): Unit = js.native
+    
     /**
       * Defines the accessible ARIA name of the component.
       * @default undefined
@@ -438,8 +439,6 @@ object distSliderBaseMod {
       * @protected
       */
     def storePropertyState(props: String*): Unit = js.native
-    
-    var styles: LabelContainer = js.native
     
     var tickmarksObject: js.Array[Boolean] = js.native
     

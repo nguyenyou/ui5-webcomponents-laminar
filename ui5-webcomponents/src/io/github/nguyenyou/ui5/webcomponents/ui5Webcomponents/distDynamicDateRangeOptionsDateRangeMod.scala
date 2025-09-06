@@ -21,7 +21,7 @@ object distDynamicDateRangeOptionsDateRangeMod {
   @js.native
   open class default ()
     extends StObject
-       with DateRangeRange {
+       with DateRange {
     
     /* CompleteClass */
     override def format(value: DynamicDateRangeValue): String = js.native
@@ -52,27 +52,27 @@ object distDynamicDateRangeOptionsDateRangeMod {
     * @since 2.11.0
     */
   @js.native
-  trait DateRangeRange
+  trait DateRange
     extends StObject
        with IDynamicDateRangeOption {
     
     def getFormat(): io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsLocalization.distDateFormatMod.default = js.native
     
     @JSName("handleSelectionChange")
-    def handleSelectionChange_MDateRangeRange(e: CustomEvent): js.UndefOr[DynamicDateRangeValue] = js.native
+    def handleSelectionChange_MDateRange(e: CustomEvent): js.UndefOr[DynamicDateRangeValue] = js.native
     
     @JSName("icon")
-    def icon_MDateRangeRange: String = js.native
+    def icon_MDateRange: String = js.native
     
     @JSName("operator")
-    def operator_MDateRangeRange: String = js.native
+    def operator_MDateRange: String = js.native
     
     @JSName("template")
-    def template_MDateRangeRange(): JsxTemplateResult = js.native
+    def template_MDateRange(): JsxTemplateResult = js.native
     @JSName("template")
     var template_Original: JsxTemplate = js.native
     
     @JSName("text")
-    def text_MDateRangeRange: String = js.native
+    def text_MDateRange: String = js.native
   }
 }

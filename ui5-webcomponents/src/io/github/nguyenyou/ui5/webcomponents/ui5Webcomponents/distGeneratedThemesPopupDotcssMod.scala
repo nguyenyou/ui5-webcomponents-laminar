@@ -9,13 +9,13 @@ object distGeneratedThemesPopupDotcssMod extends Shortcut {
   
   @JSImport("@ui5/webcomponents/dist/generated/themes/Popup.css", JSImport.Default)
   @js.native
-  val default: /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}
+  val default: /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}:host(:focus-visible){outline:none}
     */ String = js.native
   
-  type _To = /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}
+  type _To = /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}:host(:focus-visible){outline:none}
     */ String
   
   /* This means you don't have to write `default`, but can instead just say `distGeneratedThemesPopupDotcssMod.foo` */
-  override def _to: /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}
+  override def _to: /* :host{min-width:1px;overflow:visible;border:none;inset:unset;margin:0;padding:0}:host(:focus-visible){outline:none}
     */ String = default
 }

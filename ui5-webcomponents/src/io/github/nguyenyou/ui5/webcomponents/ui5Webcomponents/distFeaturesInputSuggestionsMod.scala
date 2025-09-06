@@ -48,8 +48,6 @@ object distFeaturesInputSuggestionsMod {
   trait SuggestionComponent
     extends io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default {
     
-    var _isValueStateFocused: Boolean = js.native
-    
     var focused: Boolean = js.native
     
     var hasSuggestionItemSelected: Boolean = js.native
@@ -81,11 +79,7 @@ object distFeaturesInputSuggestionsMod {
     
     def _clearSelectedSuggestionAndaccInfo(): Unit = js.native
     
-    def _clearValueStateFocus(): Unit = js.native
-    
     def _deselectItems(): Unit = js.native
-    
-    def _focusValueState(): Unit = js.native
     
     def _getComponent(): SuggestionComponent = js.native
     

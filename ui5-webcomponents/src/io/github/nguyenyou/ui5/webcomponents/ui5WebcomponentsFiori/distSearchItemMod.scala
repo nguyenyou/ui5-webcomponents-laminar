@@ -29,6 +29,18 @@ object distSearchItemMod {
   @JSImport("@ui5/webcomponents-fiori/dist/SearchItem.js", JSImport.Default)
   @js.native
   open class default () extends SearchItem
+  object default {
+    
+    @JSImport("@ui5/webcomponents-fiori/dist/SearchItem.js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@ui5/webcomponents-fiori/dist/SearchItem.js", "default.i18nBundle")
+    @js.native
+    def i18nBundle: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default = js.native
+    inline def i18nBundle_=(x: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distI18nBundleMod.default): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("i18nBundle")(x.asInstanceOf[js.Any])
+  }
   
   /**
     * @class
@@ -51,11 +63,20 @@ object distSearchItemMod {
   trait SearchItem
     extends io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListItemBaseMod.default {
     
+    def _deleteButtonTooltip: String = js.native
+    
     var _markupText: String = js.native
     
     def _onDeleteButtonClick(): Unit = js.native
     
     def _onfocusout(): Unit = js.native
+    
+    /**
+      * Defines whether the search item is deletable.
+      * @default false
+      * @public
+      */
+    var deletable: Boolean = js.native
     
     /**
       * Defines the description that appears right under the item text, if available.

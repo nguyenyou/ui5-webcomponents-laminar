@@ -76,6 +76,8 @@ trait ShellBar
   
   def _cancelBtnText: String = js.native
   
+  def _clearSearchFieldValue(): Unit = js.native
+  
   var _contentInfo: js.Array[IShellBarContentItem] = js.native
   
   def _contentItemsRole: js.UndefOr[group] = js.native
@@ -331,21 +333,15 @@ trait ShellBar
     * @public
     * @since 2.7.0
     */
-  var content: js.Array[
-    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default
-  ] = js.native
+  var content: js.Array[HTMLElement] = js.native
   
-  def contentItems: js.Array[
-    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default
-  ] = js.native
+  def contentItems: js.Array[HTMLElement] = js.native
   
   def contentItemsHidden: js.Array[HTMLElement] = js.native
   
   var contentItemsObserver: MutationObserver = js.native
   
-  def contentItemsSorted: js.Array[
-    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default
-  ] = js.native
+  def contentItemsSorted: js.Array[HTMLElement] = js.native
   
   def contentItemsWrappersSorted: js.Array[HTMLElement] = js.native
   
@@ -362,9 +358,7 @@ trait ShellBar
   
   def domCalculatedValues(cssVar: String): Double = js.native
   
-  def endContent: js.Array[
-    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default
-  ] = js.native
+  def endContent: js.Array[HTMLElement] = js.native
   
   def endContentInfoSorted: js.Array[IShellBarContentItem] = js.native
   
@@ -540,13 +534,13 @@ trait ShellBar
     */
   def profileDomRef: HTMLElement | Null = js.native
   
-  def search: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default | Null = js.native
+  def search: IShellBarSearchField | Null = js.native
   
   /**
     * Defines the `ui5-input`, that will be used as a search field.
     * @public
     */
-  var searchField: js.Array[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default] = js.native
+  var searchField: js.Array[IShellBarSearchField] = js.native
   
   /**
     * Defines the `secondaryTitle`.
@@ -609,9 +603,7 @@ trait ShellBar
     */
   var startButton: js.Array[IButton] = js.native
   
-  def startContent: js.Array[
-    io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distUi5elementMod.default
-  ] = js.native
+  def startContent: js.Array[HTMLElement] = js.native
   
   def startContentInfoSorted: js.Array[IShellBarContentItem] = js.native
   

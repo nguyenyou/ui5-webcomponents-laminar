@@ -189,7 +189,7 @@ object distPopoverMod {
     
     var _oldPlacement: js.UndefOr[CalculatedPlacement] = js.native
     
-    var _opener: js.UndefOr[HTMLElement | String] = js.native
+    var _opener: js.UndefOr[HTMLElement | String | Null] = js.native
     
     var _openerRect: js.UndefOr[DOMRect] = js.native
     
@@ -329,7 +329,7 @@ object distPopoverMod {
       */
     var modal: Boolean = js.native
     
-    def opener: js.UndefOr[HTMLElement | String] = js.native
+    def opener: js.UndefOr[HTMLElement | String | Null] = js.native
     /**
       * Defines the ID or DOM Reference of the element at which the popover is shown.
       * When using this attribute in a declarative way, you must only use the `id` (as a string) of the element at which you want to show the popover.
@@ -338,7 +338,7 @@ object distPopoverMod {
       * @default undefined
       * @since 1.2.0
       */
-    def opener_=(value: HTMLElement | String): Unit = js.native
+    def opener_=(value: HTMLElement | String | Null): Unit = js.native
     
     /**
       * Determines on which side the component is placed at.

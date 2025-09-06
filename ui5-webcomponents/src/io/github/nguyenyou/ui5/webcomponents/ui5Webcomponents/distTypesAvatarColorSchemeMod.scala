@@ -36,6 +36,8 @@ object distTypesAvatarColorSchemeMod {
     /* "Auto" */ val Auto: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarColorSchemeMod.AvatarColorScheme.Auto & String = js.native
     
     /* "Placeholder" */ val Placeholder: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarColorSchemeMod.AvatarColorScheme.Placeholder & String = js.native
+    
+    /* "Transparent" */ val Transparent: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesAvatarColorSchemeMod.AvatarColorScheme.Transparent & String = js.native
   }
   
   @js.native
@@ -138,6 +140,14 @@ object distTypesAvatarColorSchemeMod {
       */
     @js.native
     sealed trait Placeholder
+      extends StObject
+         with AvatarColorScheme
+    
+    /**
+      * @public
+      */
+    @js.native
+    sealed trait Transparent
       extends StObject
          with AvatarColorScheme
   }

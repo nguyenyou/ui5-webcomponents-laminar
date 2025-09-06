@@ -265,7 +265,8 @@ object distButtonMod {
       ] = js.native
     
     /**
-      * The current title of the button, either the tooltip property or the icons tooltip. The tooltip property with higher prio.
+      * The button's current title is determined by either the `tooltip` property or the icon's tooltip, with the `tooltip`
+      * property taking precedence if both are set.
       * @private
       */
     var buttonTitle: js.UndefOr[String] = js.native
@@ -350,6 +351,24 @@ object distButtonMod {
     var iconOnly: Boolean = js.native
     
     def isIconOnly: Boolean = js.native
+    
+    /**
+      * Defines whether the button shows a loading indicator.
+      *
+      * **Note:** If set to `true`, a busy indicator component will be displayed on the related button.
+      * @default false
+      * @public
+      * @since 2.13.0
+      */
+    var loading: Boolean = js.native
+    
+    /**
+      * Specifies the delay in milliseconds before the loading indicator appears within the associated button.
+      * @default 1000
+      * @public
+      * @since 2.13.0
+      */
+    var loadingDelay: Double = js.native
     
     /**
       * Indicates if the element is focusable

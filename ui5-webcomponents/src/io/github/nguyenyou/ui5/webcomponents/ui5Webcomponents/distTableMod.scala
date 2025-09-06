@@ -233,11 +233,15 @@ object distTableMod {
     
     var _afterElement: HTMLElement = js.native
     
+    def _ariaColCount: Double = js.native
+    
+    def _ariaDescription: js.UndefOr[String] = js.native
+    
     def _ariaLabel: js.UndefOr[String] = js.native
     
     def _ariaMultiSelectable: js.UndefOr[Boolean] = js.native
     
-    def _ariaRowCount: js.UndefOr[Double] = js.native
+    def _ariaRowCount: Double = js.native
     
     var _beforeElement: HTMLElement = js.native
     

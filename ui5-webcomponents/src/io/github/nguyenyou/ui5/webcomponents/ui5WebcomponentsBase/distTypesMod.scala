@@ -6,6 +6,9 @@ import io.github.nguyenyou.ui5.webcomponents.std.PromiseLike
 import io.github.nguyenyou.ui5.webcomponents.std.Record
 import io.github.nguyenyou.ui5.webcomponents.std.ReturnType
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.anon.FnCall
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.Booleanish
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distThirdpartyPreactJsxMod.JSXInternal.Signalish
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.mixed
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.Event
 import org.scalajs.dom.HTMLElement
@@ -38,6 +41,10 @@ object distTypesMod {
     var name: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
+    
+    var roleDescription: js.UndefOr[String] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
   }
   object AccessibilityAttributes {
     
@@ -91,7 +98,15 @@ object distTypesMod {
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
+      inline def setRoleDescription(value: String): Self = StObject.set(x, "roleDescription", value.asInstanceOf[js.Any])
+      
+      inline def setRoleDescriptionUndefined: Self = StObject.set(x, "roleDescription", js.undefined)
+      
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -162,6 +177,8 @@ object distTypesMod {
   */
   type AriaAutoComplete = js.UndefOr[_AriaAutoComplete]
   
+  type AriaChecked = js.UndefOr[Signalish[js.UndefOr[Booleanish | mixed]]]
+  
   /* Rewritten from type alias, can be one of: 
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.page
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.step
@@ -173,17 +190,22 @@ object distTypesMod {
   */
   type AriaCurrent = js.UndefOr[_AriaCurrent | Boolean]
   
+  type AriaDisabled = js.UndefOr[Signalish[js.UndefOr[Booleanish]]]
+  
   /* Rewritten from type alias, can be one of: 
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.dialog
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.grid
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.listbox
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.menu
     - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.tree
+    - `io.github.nguyenyou.ui5.webcomponents`.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.`false`
   */
   trait AriaHasPopup extends StObject
   object AriaHasPopup {
     
     inline def dialog: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.dialog = "dialog".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.dialog]
+    
+    inline def `false`: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.`false` = "false".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.`false`]
     
     inline def grid: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.grid = "grid".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.grid]
     
@@ -226,6 +248,8 @@ object distTypesMod {
     
     inline def search: io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.search = "search".asInstanceOf[io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.ui5WebcomponentsBaseStrings.search]
   }
+  
+  type AriaReadonly = js.UndefOr[Signalish[js.UndefOr[Booleanish]]]
   
   type AriaRole = io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distJsxRuntimeMod.JSX_.AriaRole
   

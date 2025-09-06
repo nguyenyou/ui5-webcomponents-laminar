@@ -2,6 +2,7 @@ package io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents
 
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesExpandableTextTemplateParamsMod.ExpandableTextTemplateParams
 import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,14 +26,6 @@ object distListItemStandardMod {
     * @csspart delete-button - Used to style the button rendered when the list item is in delete mode
     * @csspart radio - Used to style the radio button rendered when the list item is in single selection mode
     * @csspart checkbox - Used to style the checkbox rendered when the list item is in multiple selection mode
-    * @slot {Node[]} default - Defines the custom formatted text of the component.
-    *
-    * **Note:** For optimal text wrapping and a consistent layout, it is strongly recommended to use the `text` property.
-    *
-    * Use the `default` slot only when custom formatting with HTML elements (e.g., `<b>`, `<i>`) is required.
-    * Be aware that wrapping (via `wrappingType="Normal"`) may not function correctly with custom HTML content in the `default` slot.
-    *
-    * If both `text` and `default` slot are used, the `text` property takes precedence.
     * @constructor
     * @extends ListItem
     * @public
@@ -78,14 +71,6 @@ object distListItemStandardMod {
     * @csspart delete-button - Used to style the button rendered when the list item is in delete mode
     * @csspart radio - Used to style the radio button rendered when the list item is in single selection mode
     * @csspart checkbox - Used to style the checkbox rendered when the list item is in multiple selection mode
-    * @slot {Node[]} default - Defines the custom formatted text of the component.
-    *
-    * **Note:** For optimal text wrapping and a consistent layout, it is strongly recommended to use the `text` property.
-    *
-    * Use the `default` slot only when custom formatting with HTML elements (e.g., `<b>`, `<i>`) is required.
-    * Be aware that wrapping (via `wrappingType="Normal"`) may not function correctly with custom HTML content in the `default` slot.
-    *
-    * If both `text` and `default` slot are used, the `text` property takes precedence.
     * @constructor
     * @extends ListItem
     * @public
@@ -130,6 +115,19 @@ object distListItemStandardMod {
       * @since 1.0.0-rc.15
       */
     var additionalTextState: /* template literal string: ${ValueState} */ String = js.native
+    
+    /**
+      * Defines the custom formatted text of the component.
+      *
+      * **Note:** For optimal text wrapping and a consistent layout, it is strongly recommended to use the `text` property.
+      *
+      * Use the `default` slot only when custom formatting with HTML elements (e.g., `<b>`, `<i>`) is required.
+      * Be aware that wrapping (via `wrappingType="Normal"`) may not function correctly with custom HTML content in the `default` slot.
+      *
+      * If both `text` and `default` slot are used, the `text` property takes precedence.
+      * @public
+      */
+    var content: js.Array[Node] = js.native
     
     /**
       * Defines the description displayed right under the item text, if such is present.

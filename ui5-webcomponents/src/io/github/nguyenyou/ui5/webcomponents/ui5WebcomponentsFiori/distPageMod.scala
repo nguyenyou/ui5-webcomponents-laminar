@@ -1,6 +1,5 @@
 package io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori
 
-import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.anon.Content
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.`0`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.`0rem`
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.ui5WebcomponentsFioriStrings.`2Dot75rem`
@@ -135,7 +134,5 @@ object distPageMod {
       * @public
       */
     var noScrolling: Boolean = js.native
-    
-    def styles: Content = js.native
   }
 }

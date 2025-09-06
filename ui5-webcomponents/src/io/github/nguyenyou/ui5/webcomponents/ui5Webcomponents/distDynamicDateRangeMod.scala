@@ -7,6 +7,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distTypesIconModeM
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.JsxTemplate
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.mod.JsxTemplateResult
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalajs.dom.CustomEvent
 import org.scalajs.dom.Event
 import org.scalajs.dom.KeyboardEvent
@@ -40,6 +41,16 @@ object distDynamicDateRangeMod {
     * - "TOMORROW" - Represents the next date. An example value is `{ operator: "TOMORROW"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Tomorrow.js";`
     * - "DATE" - Represents a single date. An example value is `{ operator: "DATE", values: [new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/SingleDate.js";`
     * - "DATERANGE" - Represents a range of dates. An example value is `{ operator: "DATERANGE", values: [new Date(), new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/DateRange.js";`
+    * - "LASTDAYS" - Represents Last X Days from today. An example value is `{ operator: "LASTDAYS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTWEEKS" - Represents Last X Weeks from today. An example value is `{ operator: "LASTWEEKS", values: [3]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTMONTHS" - Represents Last X Months from today. An example value is `{ operator: "LASTMONTHS", values: [6]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTQUARTERS" - Represents Last X Quarters from today. An example value is `{ operator: "LASTQUARTERS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTYEARS" - Represents Last X Years from today. An example value is `{ operator: "LASTYEARS", values: [1]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "NEXTDAYS" - Represents Next X Days from today. An example value is `{ operator: "NEXTDAYS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTWEEKS" - Represents Next X Weeks from today. An example value is `{ operator: "NEXTWEEKS", values: [3]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTMONTHS" - Represents Next X Months from today. An example value is `{ operator: "NEXTMONTHS", values: [6]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTQUARTERS" - Represents Next X Quarters from today. An example value is `{ operator: "NEXTQUARTERS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTYEARS" - Represents Next X Years from today. An example value is `{ operator: "NEXTYEARS", values: [1]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
     *
     * ### ES6 Module Import
     *
@@ -71,8 +82,16 @@ object distDynamicDateRangeMod {
     /* static member */
     @JSImport("@ui5/webcomponents/dist/DynamicDateRange.js", "default.optionsClasses")
     @js.native
-    def optionsClasses: Map[String, Instantiable0[IDynamicDateRangeOption]] = js.native
-    inline def optionsClasses_=(x: Map[String, Instantiable0[IDynamicDateRangeOption]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsClasses")(x.asInstanceOf[js.Any])
+    def optionsClasses: Map[
+        String, 
+        Instantiable1[/* operators */ js.UndefOr[js.Array[String]], IDynamicDateRangeOption]
+      ] = js.native
+    inline def optionsClasses_=(
+      x: Map[
+          String, 
+          Instantiable1[/* operators */ js.UndefOr[js.Array[String]], IDynamicDateRangeOption]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsClasses")(x.asInstanceOf[js.Any])
     
     /**
       * Registers a new dynamic date range option with a unique key.
@@ -108,6 +127,16 @@ object distDynamicDateRangeMod {
     * - "TOMORROW" - Represents the next date. An example value is `{ operator: "TOMORROW"}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/Tomorrow.js";`
     * - "DATE" - Represents a single date. An example value is `{ operator: "DATE", values: [new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/SingleDate.js";`
     * - "DATERANGE" - Represents a range of dates. An example value is `{ operator: "DATERANGE", values: [new Date(), new Date()]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/DateRange.js";`
+    * - "LASTDAYS" - Represents Last X Days from today. An example value is `{ operator: "LASTDAYS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTWEEKS" - Represents Last X Weeks from today. An example value is `{ operator: "LASTWEEKS", values: [3]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTMONTHS" - Represents Last X Months from today. An example value is `{ operator: "LASTMONTHS", values: [6]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTQUARTERS" - Represents Last X Quarters from today. An example value is `{ operator: "LASTQUARTERS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "LASTYEARS" - Represents Last X Years from today. An example value is `{ operator: "LASTYEARS", values: [1]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/LastOptions.js";`
+    * - "NEXTDAYS" - Represents Next X Days from today. An example value is `{ operator: "NEXTDAYS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTWEEKS" - Represents Next X Weeks from today. An example value is `{ operator: "NEXTWEEKS", values: [3]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTMONTHS" - Represents Next X Months from today. An example value is `{ operator: "NEXTMONTHS", values: [6]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTQUARTERS" - Represents Next X Quarters from today. An example value is `{ operator: "NEXTQUARTERS", values: [2]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
+    * - "NEXTYEARS" - Represents Next X Years from today. An example value is `{ operator: "NEXTYEARS", values: [1]}`. Import: `import "@ui5/webcomponents/dist/dynamic-date-range-options/NextOptions.js";`
     *
     * ### ES6 Module Import
     *
@@ -124,7 +153,14 @@ object distDynamicDateRangeMod {
     
     def _close(): Unit = js.native
     
+    /**
+      * Creates and normalizes options from the options string
+      */
+    def _createNormalizedOptions(): js.Array[IDynamicDateRangeOption] = js.native
+    
     var _currentOption: js.UndefOr[IDynamicDateRangeOption] = js.native
+    
+    def _focusSelectedItem(): Unit = js.native
     
     def _hasCurrentOptionTemplate: Boolean = js.native
     
@@ -137,8 +173,6 @@ object distDynamicDateRangeMod {
     var _input: js.UndefOr[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distInputMod.default] = js.native
     
     var _list: js.UndefOr[io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distListMod.default] = js.native
-    
-    def _optionsTitles: js.Array[String] = js.native
     
     def _selectOption(e: CustomEvent): Unit = js.native
     
@@ -155,6 +189,7 @@ object distDynamicDateRangeMod {
     @JSName("eventDetails")
     var eventDetails_DynamicDateRange: ChangeVoid = js.native
     
+    def getOption(): js.UndefOr[IDynamicDateRangeOption] = js.native
     def getOption(operator: String): js.UndefOr[IDynamicDateRangeOption] = js.native
     
     def handleSelectionChange(e: CustomEvent): Unit = js.native
@@ -187,6 +222,8 @@ object distDynamicDateRangeMod {
     var options: String = js.native
     
     var optionsObjects: js.Array[IDynamicDateRangeOption] = js.native
+    
+    def splitOptions(options: String): js.Array[String] = js.native
     
     /**
       * Converts a `value` into concrete `startDate` and `endDate` JavaScript `Date` objects.
@@ -260,7 +297,7 @@ object distDynamicDateRangeMod {
     * Methods:
     * - `format(value: DynamicDateRangeValue): string`: Formats the given dynamic date range value into a string representation.
     * - `parse(value: string): DynamicDateRangeValue | undefined`: Parses a string into a dynamic date range value.
-    * - `toDates(value: DynamicDateRangeValue): Date[]`: Converts a dynamic date range value into an array of `Date` objects.
+    * - `toDates(value: DynamicDateRangeValue): Array<Date>`: Converts a dynamic date range value into an array of `Date` objects.
     * - `handleSelectionChange?(event: CustomEvent): DynamicDateRangeValue | undefined`: (Optional) Handles selection changes in the UI of the dynamic date range option.
     * - `isValidString(value: string): boolean`: Validates whether a given string is a valid representation of the dynamic date range value.
     *

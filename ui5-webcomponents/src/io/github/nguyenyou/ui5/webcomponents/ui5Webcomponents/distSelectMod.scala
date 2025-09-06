@@ -7,6 +7,8 @@ import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.anon.ResponsivePop
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsBooleans.`true`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`-1`
 import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsInts.`0`
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings._empty
+import io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.ui5WebcomponentsStrings.accessibleDescription
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distFeaturesInputElementsFormSupportMod.IFormInputElement
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsBase.distTypesMod.Timeout
 import org.scalajs.dom.CustomEvent
@@ -198,6 +200,12 @@ object distSelectMod {
     
     def _ariaRoleDescription: String = js.native
     
+    /**
+      * Constantly updated value of texts collected from the associated description texts
+      * @private
+      */
+    var _associatedDescriptionRefTexts: js.UndefOr[String] = js.native
+    
     def _beforeOpen(): Unit = js.native
     
     def _changeSelectedItem(oldIndex: Double, newIndex: Double): Unit = js.native
@@ -294,12 +302,30 @@ object distSelectMod {
     
     var _typingTimeoutID: js.UndefOr[Timeout | Double] = js.native
     
+    def _updateAssociatedLabelsTexts(): Unit = js.native
+    
     /**
       * This method is relevant for sap_horizon theme only
       */
     def _valueStateMessageInputIcon: String = js.native
     
     var _valueStorage: js.UndefOr[String] = js.native
+    
+    /**
+      * Defines the accessible description of the component.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescription: js.UndefOr[String] = js.native
+    
+    /**
+      * Receives id(or many ids) of the elements that describe the select.
+      * @default undefined
+      * @public
+      * @since 2.14.0
+      */
+    var accessibleDescriptionRef: js.UndefOr[String] = js.native
     
     /**
       * Defines the accessible ARIA name of the component.
@@ -316,6 +342,12 @@ object distSelectMod {
       * @since 1.0.0-rc.15
       */
     var accessibleNameRef: js.UndefOr[String] = js.native
+    
+    def ariaDescribedByIds: js.UndefOr[String] = js.native
+    
+    def ariaDescriptionText: js.UndefOr[String] = js.native
+    
+    def ariaDescriptionTextId: _empty | accessibleDescription = js.native
     
     def ariaLabelText: js.UndefOr[String] = js.native
     
@@ -430,6 +462,8 @@ object distSelectMod {
     var required: Boolean = js.native
     
     var responsivePopover: io.github.nguyenyou.ui5.webcomponents.ui5Webcomponents.distResponsivePopoverMod.default = js.native
+    
+    def responsivePopoverId: String = js.native
     
     /**
       * Currently selected `ui5-option` element.
