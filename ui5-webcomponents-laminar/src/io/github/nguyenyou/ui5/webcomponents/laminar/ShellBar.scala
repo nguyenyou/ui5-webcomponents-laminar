@@ -11,6 +11,7 @@ import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarM
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProductSwitchClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarProfileClickEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchButtonEventDetail
+import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldClearEventDetail
 import io.github.nguyenyou.ui5.webcomponents.ui5WebcomponentsFiori.distShellBarMod.ShellBarSearchFieldToggleEventDetail
 import org.scalajs.dom
 
@@ -172,6 +173,24 @@ object ShellBar extends WebComponent("ui5-shellbar") {
     */
   lazy val onSearchButtonClick: EventProp[Ui5CustomEvent[Ref] & EventDetail[ShellBarSearchButtonEventDetail]] =
     new EventProp("search-button-click")
+
+  /** Fired, when the search cancel button is activated.
+    *
+    * **Note:** You can prevent the default behavior (clearing the search field value) by calling
+    * `event.preventDefault()`. The search will still be closed. **Note:** The `search-field-clear` event is in an
+    * experimental state and is a subject to change.
+    *
+    * **Note:** Call `event.preventDefault()` inside the handler of this event to prevent its default action/s.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents-fiori**.
+    *
+    * | cancelable | bubbles |
+    * |:----------:|:-------:|
+    * |     ✅      |    ✅    |
+    */
+  lazy val onSearchFieldClear: EventProp[Ui5CustomEvent[Ref] & EventDetail[ShellBarSearchFieldClearEventDetail]] =
+    new EventProp("search-field-clear")
 
   /** Fired, when the search field is expanded or collapsed.
     *

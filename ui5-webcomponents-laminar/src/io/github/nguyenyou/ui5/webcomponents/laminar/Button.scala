@@ -96,6 +96,26 @@ object Button extends WebComponent("ui5-button") {
     */
   lazy val icon: HtmlAttr[IconName] = htmlAttr("icon", IconName.AsStringCodec)
 
+  /** Defines whether the button shows a loading indicator.
+    *
+    * **Note:** If set to `true`, a busy indicator component will be displayed on the related button.
+    *
+    * **Note:** Available since [v2.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.13.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: false
+    */
+  lazy val loading: HtmlAttr[Boolean] = htmlAttr("loading", BooleanAsAttrPresenceCodec)
+
+  /** Specifies the delay in milliseconds before the loading indicator appears within the associated button.
+    *
+    * **Note:** Available since [v2.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.13.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: 1000
+    */
+  lazy val loadingDelay: HtmlAttr[Double] = htmlAttr("loading-delay", DoubleAsStringCodec)
+
   /** When set to `true`, the component will automatically submit the nearest HTML form element on `press`.
     *
     * **Note:** This property is only applicable within the context of an HTML Form element.`

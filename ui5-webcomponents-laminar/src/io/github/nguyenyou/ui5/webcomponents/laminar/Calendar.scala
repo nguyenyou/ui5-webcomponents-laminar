@@ -35,7 +35,18 @@ object Calendar extends WebComponent("ui5-calendar") {
 
   /** Determines the format, displayed in the input field.
     *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
     * Default: undefined
+    */
+  lazy val displayFormat: HtmlAttr[String] = htmlAttr("display-format", StringAsIsCodec)
+
+  /** Determines the format, displayed in the input field.
+    *
+    * Default: undefined
+    *
+    * Deprecated: Use displayFormat and valueFormat instead
     */
   lazy val formatPattern: HtmlAttr[String] = htmlAttr("format-pattern", StringAsIsCodec)
 
@@ -50,14 +61,14 @@ object Calendar extends WebComponent("ui5-calendar") {
   /** Determines the maximum date available for selection.
     *
     * **Note:** If the formatPattern property is not set, the maxDate value must be provided in the ISO date format
-    * (YYYY-MM-dd).
+    * (yyyy-MM-dd).
     */
   lazy val maxDate: HtmlAttr[String] = htmlAttr("max-date", StringAsIsCodec)
 
   /** Determines the minimum date available for selection.
     *
     * **Note:** If the formatPattern property is not set, the minDate value must be provided in the ISO date format
-    * (YYYY-MM-dd).
+    * (yyyy-MM-dd).
     */
   lazy val minDate: HtmlAttr[String] = htmlAttr("min-date", StringAsIsCodec)
 
@@ -85,6 +96,15 @@ object Calendar extends WebComponent("ui5-calendar") {
     */
   lazy val selectionMode: HtmlAttr[CalendarSelectionMode] =
     htmlAttr("selection-mode", StringUnionCodec[CalendarSelectionMode])
+
+  /** Determines the format, used for the value attribute.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val valueFormat: HtmlAttr[String] = htmlAttr("value-format", StringAsIsCodec)
 
   // -- Events --
 

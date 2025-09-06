@@ -81,6 +81,8 @@ export function mapWebComponentTypeToPrimitive(type: string): string | null {
     case 'string | undefined':
     case 'HTMLElement | string | undefined':
       return 'String';
+    case 'HTMLElement | string | null | undefined':
+      return 'String';
     case 'Boolean':
     case 'boolean':
       return 'Boolean';

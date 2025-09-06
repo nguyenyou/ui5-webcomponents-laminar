@@ -32,6 +32,42 @@ object FileUploader extends WebComponent("ui5-file-uploader") {
     */
   lazy val accept: HtmlAttr[String] = htmlAttr("accept", StringAsIsCodec)
 
+  /** Defines the accessible description of the component.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescription: HtmlAttr[String] = htmlAttr("accessible-description", StringAsIsCodec)
+
+  /** Receives id(or many ids) of the elements that describe the input.
+    *
+    * **Note:** Available since [v2.14.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.14.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescriptionRef: HtmlAttr[String] = htmlAttr("accessible-description-ref", StringAsIsCodec)
+
+  /** Defines the accessible ARIA name of the component.
+    *
+    * **Note:** Available since [v2.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.13.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleName: HtmlAttr[String] = htmlAttr("accessible-name", StringAsIsCodec)
+
+  /** Receives id(or many ids) of the elements that label the input.
+    *
+    * **Note:** Available since [v2.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.13.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleNameRef: HtmlAttr[String] = htmlAttr("accessible-name-ref", StringAsIsCodec)
+
   /** Defines whether the component is in disabled state.
     *
     * **Note:** A disabled component is completely noninteractive.
@@ -42,6 +78,8 @@ object FileUploader extends WebComponent("ui5-file-uploader") {
 
   /** If set to "true", the input field of component will not be rendered. Only the default slot that is passed will be
     * rendered.
+    *
+    * **Note:** Use this property in combination with the default slot to achieve a button-only file uploader design.
     *
     * Default: false
     */
@@ -75,6 +113,15 @@ object FileUploader extends WebComponent("ui5-file-uploader") {
     * Default: undefined
     */
   lazy val placeholder: HtmlAttr[String] = htmlAttr("placeholder", StringAsIsCodec)
+
+  /** Defines whether the component is required.
+    *
+    * **Note:** Available since [v2.13.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.13.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: false
+    */
+  lazy val required: HtmlAttr[Boolean] = htmlAttr("required", BooleanAsAttrPresenceCodec)
 
   /** Defines the name/names of the file/files to upload.
     */

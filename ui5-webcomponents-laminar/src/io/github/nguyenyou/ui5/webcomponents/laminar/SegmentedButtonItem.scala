@@ -21,6 +21,24 @@ object SegmentedButtonItem extends WebComponent("ui5-segmented-button-item") {
 
   // -- Attributes --
 
+  /** Defines the accessible description of the component.
+    *
+    * **Note:** Available since [v2.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.15.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescription: HtmlAttr[String] = htmlAttr("accessible-description", StringAsIsCodec)
+
+  /** Defines the IDs of the HTML Elements that describe the component.
+    *
+    * **Note:** Available since [v2.15.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.15.0) of
+    * **@ui5/webcomponents**.
+    *
+    * Default: undefined
+    */
+  lazy val accessibleDescriptionRef: HtmlAttr[String] = htmlAttr("accessible-description-ref", StringAsIsCodec)
+
   /** Defines the accessible ARIA name of the component.
     *
     * Default: undefined

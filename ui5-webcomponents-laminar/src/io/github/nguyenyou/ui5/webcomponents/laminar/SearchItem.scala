@@ -21,6 +21,12 @@ object SearchItem extends WebComponent("ui5-search-item") {
 
   // -- Attributes --
 
+  /** Defines whether the search item is deletable.
+    *
+    * Default: false
+    */
+  lazy val deletable: HtmlAttr[Boolean] = htmlAttr("deletable", BooleanAsAttrPresenceCodec)
+
   /** Defines the description that appears right under the item text, if available.
     *
     * **Note:** Available since [v2.12.0](https://github.com/SAP/ui5-webcomponents/releases/tag/v2.12.0) of
